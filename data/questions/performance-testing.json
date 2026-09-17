@@ -601,6 +601,1656 @@
       ],
       "correctIndex": 1,
       "explanation": "Even if response time targets are currently met, consistently high resource utilization (like CPU above 90%) indicates little headroom for growth or unexpected spikes, and should be flagged as a risk warranting further investigation or capacity planning, rather than ignored."
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.3",
+      "difficulty": "easy",
+      "question": "Which statement best describes why performance testing matters to business stakeholders?",
+      "options": [
+        "It helps confirm that coding style rules were followed consistently",
+        "It provides evidence that the system can support expected user activity without unacceptable delays that hurt revenue or reputation",
+        "It guarantees that every future release will contain no defects of any kind",
+        "It replaces the need for operational monitoring after go-live"
+      ],
+      "correctIndex": 1,
+      "explanation": "Business stakeholders care because slow or unstable systems can reduce conversions, damage trust, and increase operating cost. Performance testing provides evidence before release.",
+      "id": "pt-041"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.4",
+      "difficulty": "easy",
+      "question": "Which of the following is the BEST example of a measurable performance requirement?",
+      "options": [
+        "The application should feel modern to users",
+        "The system should be fast most of the time",
+        "Ninety-five percent of payment submissions shall complete within 3 seconds at 200 orders per minute",
+        "The website shall use responsive design"
+      ],
+      "correctIndex": 2,
+      "explanation": "A useful performance requirement is measurable and tied to both a metric and a workload. Vague terms like fast or modern are not testable enough.",
+      "id": "pt-042"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.2.4",
+      "difficulty": "easy",
+      "question": "In a workload model, what does think time represent?",
+      "options": [
+        "The time a server thread spends waiting for a database lock",
+        "The pause between one user action and the next, representing how real people interact with the system",
+        "The delay inserted by the monitoring tool before saving results",
+        "The time needed to compile the test scripts"
+      ],
+      "correctIndex": 1,
+      "explanation": "Think time models the natural pause between user actions, such as reading a page or deciding what to click next. Without it, the test may overstate user intensity.",
+      "id": "pt-043"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.2.5",
+      "difficulty": "medium",
+      "question": "What is the main difference between an open workload model and a closed workload model?",
+      "options": [
+        "An open model is based on arriving work over time, while a closed model keeps a fixed set of virtual users cycling through transactions",
+        "An open model uses only public APIs, while a closed model requires authentication",
+        "An open model is for GUI tests only, while a closed model is for protocol tests only",
+        "There is no practical difference between the two models"
+      ],
+      "correctIndex": 0,
+      "explanation": "Open models focus on arrival rate, such as requests per second. Closed models focus on a set number of concurrent users repeatedly executing actions.",
+      "id": "pt-044"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.3.2",
+      "difficulty": "easy",
+      "question": "Why is transaction mix important when defining a workload profile?",
+      "options": [
+        "It determines the color theme of the performance report",
+        "It ensures the test includes the right proportion of different user actions, such as searching, browsing, and purchasing",
+        "It guarantees that no monitoring data will be needed",
+        "It is relevant only after the test has already finished"
+      ],
+      "correctIndex": 1,
+      "explanation": "Different transactions exercise different system components. A realistic mix is needed so the workload reflects actual production behavior.",
+      "id": "pt-045"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.5",
+      "difficulty": "easy",
+      "question": "What does scalability describe in the context of performance testing?",
+      "options": [
+        "How well the system continues to meet performance goals as workload or resources increase",
+        "How attractive the graphical user interface looks on large screens",
+        "How often the development team deploys application changes",
+        "How many functional requirements were approved by stakeholders"
+      ],
+      "correctIndex": 0,
+      "explanation": "Scalability is about how performance changes as demand grows and, where applicable, as capacity is added. It helps teams understand future growth limits.",
+      "id": "pt-046"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.2.6",
+      "difficulty": "medium",
+      "question": "Which statement best distinguishes latency from end-to-end response time?",
+      "options": [
+        "Latency is the full time a user waits for a business process to complete, while response time is only network delay",
+        "Latency typically refers to delay in transmitting or receiving data, while response time covers the total elapsed time for the request and its processing",
+        "Latency and response time are always identical in any system",
+        "Latency is measured only for batch jobs, not online systems"
+      ],
+      "correctIndex": 1,
+      "explanation": "Latency is often one component of the overall wait. Response time usually includes network delay plus application and backend processing.",
+      "id": "pt-047"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.3.3",
+      "difficulty": "easy",
+      "question": "A test plan specifies 1,000 logged-in accounts, but only 150 users will actively perform transactions at the same moment. Which metric is most directly described by 150?",
+      "options": [
+        "Code coverage",
+        "Concurrency",
+        "Data retention period",
+        "Defect density"
+      ],
+      "correctIndex": 1,
+      "explanation": "Concurrency refers to how many users or sessions are active at the same time. Total registered or logged-in accounts do not necessarily equal concurrent activity.",
+      "id": "pt-048"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.4.1",
+      "difficulty": "medium",
+      "question": "What is a key advantage of discussing performance risks during requirements and architecture work rather than waiting until system test?",
+      "options": [
+        "It avoids the need to define measurable acceptance criteria later",
+        "It can reveal costly design issues early, when they are still cheaper to change",
+        "It guarantees that no production monitoring will be necessary",
+        "It removes the need for functional testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Early attention to performance can influence architecture, capacity assumptions, and interfaces before they become expensive to rework. This is a core shift-left benefit.",
+      "id": "pt-049"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.3.4",
+      "difficulty": "hard",
+      "question": "A page appears quick in a developer laptop demo but becomes slow in a realistic performance environment. Which explanation is MOST plausible?",
+      "options": [
+        "The developer laptop is always less powerful than test servers, so the result must be a measurement mistake",
+        "Realistic data volume, network conditions, shared infrastructure, or backend contention may expose delays absent in a simplified local setup",
+        "Performance is determined only by browser rendering, so backend conditions cannot matter",
+        "The difference proves the application contains a functional defect rather than a performance issue"
+      ],
+      "correctIndex": 1,
+      "explanation": "Local demos often omit production-like data size, contention, integration calls, and network effects. Those factors can materially change observed performance.",
+      "id": "pt-050"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.6",
+      "difficulty": "medium",
+      "question": "Which statement BEST reflects how the severity of a performance problem is usually judged?",
+      "options": [
+        "By the programming language used to build the component",
+        "By the business, user, and operational impact of the slowdown or instability under expected conditions",
+        "By whether the problem occurs on a Friday rather than another day",
+        "By the number of screenshots included in the defect report"
+      ],
+      "correctIndex": 1,
+      "explanation": "A small delay in a low-value function may matter less than a moderate slowdown in checkout or login. Severity depends on impact, not just raw milliseconds.",
+      "id": "pt-051"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.7",
+      "difficulty": "easy",
+      "question": "Which of the following is the strongest reason to define performance targets in terms of both workload and quality level?",
+      "options": [
+        "Because a time target without context does not say under what demand it must still be achieved",
+        "Because metrics should always be hidden from stakeholders until the project ends",
+        "Because performance targets are useful only for infrastructure teams",
+        "Because workload definitions are unrelated to user experience"
+      ],
+      "correctIndex": 0,
+      "explanation": "A target such as under 2 seconds is incomplete unless it states the relevant workload, for example at 500 concurrent users or 100 requests per second.",
+      "id": "pt-052"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.2.7",
+      "difficulty": "easy",
+      "question": "In performance testing, what is a business transaction?",
+      "options": [
+        "A meaningful end-user action or workflow, such as placing an order, that the test measures as a unit",
+        "A finance department approval step for buying new servers",
+        "Any line of code changed during a sprint",
+        "A legal agreement between the tool vendor and the project"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance testing often measures business transactions because they represent the activities that matter to users and stakeholders. Examples include login, search, and checkout.",
+      "id": "pt-053"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.2.8",
+      "difficulty": "easy",
+      "question": "Which description BEST matches a bottleneck?",
+      "options": [
+        "A resource or component that limits overall system throughput or causes growing delay under load",
+        "A security certificate used by the load generators",
+        "A script naming convention in the test repository",
+        "A method for compressing log files after the test"
+      ],
+      "correctIndex": 0,
+      "explanation": "A bottleneck is the constraining part of the system. It prevents the rest of the system from delivering better overall performance.",
+      "id": "pt-054"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.3.5",
+      "difficulty": "easy",
+      "question": "Why is a warm-up period often used before collecting formal measurements in a performance test?",
+      "options": [
+        "To allow caches, connections, and just-in-time compilation effects to stabilize so the measurements better reflect steady-state behavior",
+        "To hide defects that occur at the beginning of a test",
+        "To ensure the tool produces exactly zero errors in the logs",
+        "To make throughput numbers appear artificially lower"
+      ],
+      "correctIndex": 0,
+      "explanation": "Many systems behave differently when first started. Warm-up helps separate startup effects from representative steady-state measurements.",
+      "id": "pt-055"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.8",
+      "difficulty": "hard",
+      "question": "Which statement best distinguishes elasticity from scalability?",
+      "options": [
+        "Elasticity is about automatically adjusting capacity as demand changes, while scalability is the broader ability to handle growth effectively",
+        "Elasticity refers only to user interface responsiveness, while scalability refers only to batch processing speed",
+        "Scalability requires cloud infrastructure, while elasticity works only on-premises",
+        "They are unrelated to performance testing concerns"
+      ],
+      "correctIndex": 0,
+      "explanation": "Scalability concerns growth behavior in general. Elasticity is specifically about adapting capacity up or down, often automatically, as load changes.",
+      "id": "pt-056"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.3.6",
+      "difficulty": "medium",
+      "question": "A team models every virtual user as sending requests continuously without pause, even though production users spend time reading screens. What is the main risk?",
+      "options": [
+        "The test may apply an unrealistically intense workload and lead to misleading conclusions about capacity needs",
+        "The test will automatically become a valid spike test",
+        "The system will always appear faster than in production",
+        "The monitoring data will no longer need timestamps"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ignoring realistic think time usually increases request frequency beyond real user behavior. That can distort transaction mix and capacity conclusions.",
+      "id": "pt-057"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.3.7",
+      "difficulty": "medium",
+      "question": "Why should an online workload model sometimes include background jobs such as report generation or scheduled synchronization?",
+      "options": [
+        "Because background activity can consume the same shared resources as interactive users and change observed performance",
+        "Because online and background processing never affect each other",
+        "Because scheduled jobs are relevant only for security testing",
+        "Because including them automatically removes the need for monitoring"
+      ],
+      "correctIndex": 0,
+      "explanation": "Background processing can compete for CPU, memory, I/O, or database capacity. Excluding it may make a test less representative of production behavior.",
+      "id": "pt-058"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.4.2",
+      "difficulty": "hard",
+      "question": "Which requirement is MOST suitable for verifying user experience risk on a busy self-service portal?",
+      "options": [
+        "The portal should use a clean layout and clear navigation labels",
+        "At least 95% of account-balance requests shall finish within 2 seconds during the lunchtime peak profile",
+        "The portal code shall be reviewed before each release",
+        "The operations team shall receive daily status emails"
+      ],
+      "correctIndex": 1,
+      "explanation": "User-experience performance risk is best addressed by a measurable service-level statement tied to a concrete usage period and transaction.",
+      "id": "pt-059"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.4.3",
+      "difficulty": "easy",
+      "question": "A service continues operating under high load by slowing noncritical features first instead of failing everything at once. This is an example of: ",
+      "options": [
+        "Graceful degradation",
+        "Static code analysis",
+        "Data masking",
+        "Functional equivalence partitioning"
+      ],
+      "correctIndex": 0,
+      "explanation": "Graceful degradation means the system preserves critical capability, often by reducing less important work, when demand exceeds ideal operating conditions.",
+      "id": "pt-060"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.3.8",
+      "difficulty": "hard",
+      "question": "Which statement best explains why arrival rate and concurrency should not be treated as interchangeable?",
+      "options": [
+        "Arrival rate is about how much data is stored, while concurrency is about test duration",
+        "Concurrency describes simultaneous active work, while arrival rate describes how frequently new work enters the system; the two can vary independently",
+        "Both metrics are identical whenever think time is greater than zero",
+        "Only concurrency matters in performance testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "A system may have high concurrency with modest arrival rate or vice versa, depending on transaction duration and pacing. Good workload models recognize both dimensions.",
+      "id": "pt-061"
+    },
+    {
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.9",
+      "difficulty": "easy",
+      "question": "Which statement best captures the role of service-level objectives in performance testing?",
+      "options": [
+        "They define measurable expectations that tests can verify against agreed workload conditions",
+        "They are informal notes used only after defects have already been fixed",
+        "They replace the need for test environments and data preparation",
+        "They are useful only for manual exploratory testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Service-level objectives turn stakeholder expectations into measurable targets. Performance tests can then assess whether the system meets them.",
+      "id": "pt-062"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.3.2",
+      "difficulty": "medium",
+      "question": "During a ramp-up, throughput keeps increasing but response time grows rapidly after 400 users. What does this usually suggest?",
+      "options": [
+        "The system is approaching saturation and serving extra work less efficiently",
+        "The workload has become functionally invalid and the results should be ignored automatically",
+        "The test environment now matches production perfectly",
+        "The monitoring agents must have stopped collecting metrics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Near saturation, a system may still process more work but at the cost of disproportionate delay. Queueing effects often become visible at that point.",
+      "id": "pt-063"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.6",
+      "difficulty": "easy",
+      "question": "What is the primary goal of volume testing?",
+      "options": [
+        "To assess behavior when the system handles large amounts of data, such as very large tables, files, or message backlogs",
+        "To identify the precise spelling of database column names",
+        "To verify that the user manual contains all screenshots",
+        "To run the system with a fixed number of users for exactly one minute"
+      ],
+      "correctIndex": 0,
+      "explanation": "Volume testing focuses on data size rather than only user concurrency. Large datasets can affect indexing, search, storage, and processing performance.",
+      "id": "pt-064"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.7",
+      "difficulty": "easy",
+      "question": "What does scalability testing mainly try to discover?",
+      "options": [
+        "Whether the system remains effective as load and, where possible, capacity are increased according to a growth pattern",
+        "Whether a single transaction can be automated with a GUI tool",
+        "Whether defect reports include enough attachments",
+        "Whether the team has selected the cheapest monitoring product"
+      ],
+      "correctIndex": 0,
+      "explanation": "Scalability testing explores how performance changes across growth steps. It helps estimate future limits and the benefit of adding resources.",
+      "id": "pt-065"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.8",
+      "difficulty": "medium",
+      "question": "Which statement BEST distinguishes spike testing from stress testing?",
+      "options": [
+        "Spike testing examines abrupt workload changes, while stress testing is concerned with behavior beyond normal capacity whether or not the increase is sudden",
+        "Stress testing uses metrics, while spike testing does not",
+        "Spike testing is only for mobile apps, while stress testing is only for web apps",
+        "There is no overlap at all between the two test types"
+      ],
+      "correctIndex": 0,
+      "explanation": "Spike testing emphasizes sudden changes in demand and recovery behavior. Stress testing emphasizes operation beyond expected limits and failure characteristics.",
+      "id": "pt-066"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.3.3",
+      "difficulty": "medium",
+      "question": "Why can queue length be a useful supporting metric during performance analysis?",
+      "options": [
+        "It can show work waiting to be processed, which often explains rising response times even before throughput collapses",
+        "It replaces the need to measure response time directly",
+        "It proves that all requests are successful when the queue is non-empty",
+        "It is relevant only for the load generator machines"
+      ],
+      "correctIndex": 0,
+      "explanation": "When demand exceeds service capacity, requests may begin waiting in queues. Growing queue length often correlates with increasing latency and saturation.",
+      "id": "pt-067"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.9",
+      "difficulty": "easy",
+      "question": "Which metric most directly shows how many requests failed during a test?",
+      "options": [
+        "Error rate",
+        "Thread count",
+        "Network bandwidth",
+        "Data retention"
+      ],
+      "correctIndex": 0,
+      "explanation": "Error rate reports the proportion or count of failed transactions. It is essential because fast failures are still failures.",
+      "id": "pt-068"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.3.4",
+      "difficulty": "hard",
+      "question": "Response times worsen during a test while CPU stays moderate, disk wait is high, and database reads increase sharply. Which bottleneck is MOST likely?",
+      "options": [
+        "Disk or storage I/O contention affecting the database layer",
+        "A lack of virtual users in the load generator",
+        "An invalid requirement identifier in the test plan",
+        "Excessive screen resolution in the tester's monitor"
+      ],
+      "correctIndex": 0,
+      "explanation": "High storage wait together with rising read activity points toward I/O contention. Moderate CPU suggests raw compute is not the dominant limit.",
+      "id": "pt-069"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.10",
+      "difficulty": "easy",
+      "question": "If a service is sensitive to network round trips, which change is MOST likely to increase user-perceived delay even when server CPU is unchanged?",
+      "options": [
+        "Higher network latency between clients and the service",
+        "A larger monitor attached to the operator workstation",
+        "Shorter release notes in the deployment ticket",
+        "A lower number of comments in the test script"
+      ],
+      "correctIndex": 0,
+      "explanation": "When interactions involve multiple requests and responses, higher network latency directly increases end-to-end wait time even if server-side processing time stays constant.",
+      "id": "pt-070"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.3.5",
+      "difficulty": "medium",
+      "question": "Why can tail latency be a business risk even when average response time looks acceptable?",
+      "options": [
+        "Because averages may hide a meaningful minority of very slow requests that still damage user experience or time-sensitive operations",
+        "Because averages are never allowed in performance reports",
+        "Because tail latency is relevant only for developer workstations",
+        "Because percentiles and averages always move in opposite directions"
+      ],
+      "correctIndex": 0,
+      "explanation": "Averages smooth out extremes. A system may have an acceptable mean while still delivering too many slow experiences to real users.",
+      "id": "pt-071"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.1.3",
+      "difficulty": "medium",
+      "question": "A system meets current response-time targets but runs with 92% CPU at expected peak. Why is this still a performance risk?",
+      "options": [
+        "Because there is little capacity headroom for growth, noisy neighbors, or traffic spikes",
+        "Because CPU metrics are irrelevant when targets are met",
+        "Because high CPU always proves a memory leak",
+        "Because the workload must have been measured incorrectly"
+      ],
+      "correctIndex": 0,
+      "explanation": "Meeting current targets does not guarantee resilience. High utilization leaves little room for variability, failover scenarios, or future demand increases.",
+      "id": "pt-072"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.1.4",
+      "difficulty": "hard",
+      "question": "An application experiences short demand bursts every time a marketing email is sent. Which risk is MOST relevant?",
+      "options": [
+        "The system may be unable to absorb sudden arrival spikes quickly enough, causing queue growth and temporary failures",
+        "The database schema names may be too short",
+        "The performance report may contain too many charts",
+        "The source repository may exceed file size limits"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bursty demand can overwhelm admission control, queues, connection pools, or autoscaling lag. That makes transient but business-critical degradation a key risk.",
+      "id": "pt-073"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.1.5",
+      "difficulty": "easy",
+      "question": "After a deployment, the first minutes of traffic show slower responses because caches are empty. Which product risk does this illustrate?",
+      "options": [
+        "Cold-start or cache-warm-up performance risk",
+        "Accessibility compliance risk",
+        "Version-control branching risk",
+        "Requirements traceability risk"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cold systems often behave differently from warmed-up systems. Empty caches or freshly started services can temporarily reduce performance after release or restart.",
+      "id": "pt-074"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.12",
+      "difficulty": "easy",
+      "question": "Which statement BEST describes capacity testing?",
+      "options": [
+        "It estimates the load level or data volume the system can support while still meeting defined targets",
+        "It proves that the application contains no logic defects",
+        "It validates that monitoring agents were installed correctly",
+        "It is the same thing as code review"
+      ],
+      "correctIndex": 0,
+      "explanation": "Capacity testing is concerned with supported demand relative to agreed objectives. It is often used to inform scaling and provisioning decisions.",
+      "id": "pt-075"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.3.6",
+      "difficulty": "hard",
+      "question": "Which observation would MOST strongly suggest resource exhaustion rather than a simple one-time slowdown?",
+      "options": [
+        "Available file descriptors or connections steadily approach zero while failures increase under sustained load",
+        "One response takes slightly longer during script startup",
+        "The tester renames a report file after the run",
+        "CPU utilization is low during an idle period"
+      ],
+      "correctIndex": 0,
+      "explanation": "Exhaustion means a finite resource is being consumed until little or none remains. That often leads to escalating failures and unstable recovery.",
+      "id": "pt-076"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.3.7",
+      "difficulty": "hard",
+      "question": "During a test, application pauses occur periodically while memory usage forms a saw-tooth pattern and CPU briefly spikes. What is a likely explanation?",
+      "options": [
+        "Garbage collection or memory reclamation activity affecting latency",
+        "A network cable becoming longer every few minutes",
+        "A hidden defect in the report title",
+        "The workload model switching from closed to open automatically"
+      ],
+      "correctIndex": 0,
+      "explanation": "Saw-tooth memory with periodic pauses is a common sign of garbage collection or similar memory management cycles. These can introduce latency spikes.",
+      "id": "pt-077"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.3.8",
+      "difficulty": "medium",
+      "question": "A team optimizes a slow database query, and later the next test run shows a new hotspot in the application server thread pool. What does this demonstrate?",
+      "options": [
+        "Bottlenecks can shift after an earlier constraint is removed",
+        "The original optimization must have been invalid",
+        "Performance testing should stop after the first defect is fixed",
+        "Thread pools and databases cannot affect each other"
+      ],
+      "correctIndex": 0,
+      "explanation": "Once one limiting factor is relieved, another may become dominant. Performance optimization is often iterative for this reason.",
+      "id": "pt-078"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.13",
+      "difficulty": "medium",
+      "question": "If throughput stops increasing even as more load is added, while latency continues to rise, what is the most likely interpretation?",
+      "options": [
+        "The system has reached or is very near maximum effective capacity",
+        "The tool has automatically converted the test into a functional regression suite",
+        "The workload is too small to produce useful data",
+        "Response time targets have definitely been met"
+      ],
+      "correctIndex": 0,
+      "explanation": "A throughput plateau with rising latency is a common symptom of saturation. More demand is being queued or slowed rather than translated into more useful work.",
+      "id": "pt-079"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.14",
+      "difficulty": "medium",
+      "question": "Which statement about pass/fail decisions in performance testing is MOST appropriate?",
+      "options": [
+        "They should be based on agreed criteria such as response times, throughput, error limits, and business expectations under defined workloads",
+        "They should rely only on whether the graphs look visually smooth",
+        "They should ignore error counts if average latency is low",
+        "They should be made only after the product is released"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance pass or fail should come from explicit acceptance criteria tied to workload and risk. Visual impressions alone are not enough.",
+      "id": "pt-080"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.15",
+      "difficulty": "hard",
+      "question": "Which metric is MOST useful for understanding how efficiently infrastructure is used relative to delivered work?",
+      "options": [
+        "A combination of throughput and resource utilization",
+        "The number of requirement documents approved",
+        "The count of comments in the test script",
+        "The color of the monitoring dashboard"
+      ],
+      "correctIndex": 0,
+      "explanation": "Throughput shows useful work completed, while utilization shows cost in consumed resources. Together they help assess efficiency and headroom.",
+      "id": "pt-081"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.1.6",
+      "difficulty": "easy",
+      "question": "Which of the following is a typical performance-related product risk?",
+      "options": [
+        "An overnight batch may overrun its processing window and delay downstream business activities",
+        "The sprint retrospective may start late",
+        "A tester may forget to attend a planning meeting",
+        "The project wiki may use inconsistent heading styles"
+      ],
+      "correctIndex": 0,
+      "explanation": "Missing a batch window is a classic product risk because it affects the operational usefulness of the system, even if functionality is correct.",
+      "id": "pt-082"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.3.9",
+      "difficulty": "medium",
+      "question": "Why can stable average response time together with increasing timeout errors still indicate a serious performance problem?",
+      "options": [
+        "Because failed requests may be excluded from the average, hiding deteriorating service quality",
+        "Because timeout errors always improve user satisfaction",
+        "Because averages automatically adjust for missing data perfectly",
+        "Because timeouts are unrelated to system performance"
+      ],
+      "correctIndex": 0,
+      "explanation": "Averages can be misleading if slow or failed requests are not fully represented. Error behavior must be analyzed alongside latency metrics.",
+      "id": "pt-083"
+    },
+    {
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.1.7",
+      "difficulty": "hard",
+      "question": "Which risk is MOST relevant when autoscaling takes several minutes to add capacity but traffic can surge in seconds?",
+      "options": [
+        "Short-term overload may occur before additional instances are available",
+        "Functional requirements will become ambiguous",
+        "Source control merge conflicts will increase automatically",
+        "Monitoring graphs will no longer use timestamps"
+      ],
+      "correctIndex": 0,
+      "explanation": "Autoscaling can improve sustained capacity but may not react quickly enough for steep spikes. The lag itself becomes a performance risk.",
+      "id": "pt-084"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.3",
+      "difficulty": "easy",
+      "question": "Which activity should guide the selection of scenarios for a first performance test cycle?",
+      "options": [
+        "Prioritizing transactions based on business criticality and performance risk",
+        "Selecting only the newest user stories regardless of importance",
+        "Choosing scenarios alphabetically by feature name",
+        "Avoiding any scenario that touches the database"
+      ],
+      "correctIndex": 0,
+      "explanation": "Early cycles should focus on the areas with the highest user, business, or architectural risk. Risk-based prioritization improves value.",
+      "id": "pt-085"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.4",
+      "difficulty": "medium",
+      "question": "When performance requirements are incomplete, what is the MOST appropriate tester action during planning?",
+      "options": [
+        "Work with stakeholders to clarify measurable targets, workloads, and priorities before treating the test as fully defined",
+        "Invent pass criteria privately and avoid discussing them to save time",
+        "Skip performance testing until production incidents occur",
+        "Replace all numeric targets with the phrase acceptable performance"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance testing depends on clear expectations. The tester should help elicit and refine measurable criteria rather than guess.",
+      "id": "pt-086"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.7",
+      "difficulty": "easy",
+      "question": "Why is environment isolation desirable for repeatable performance tests?",
+      "options": [
+        "It reduces interference from unrelated workloads that could distort results",
+        "It guarantees production performance will be identical",
+        "It eliminates the need to record test configuration details",
+        "It prevents the use of monitoring tools"
+      ],
+      "correctIndex": 0,
+      "explanation": "Shared activity in the same environment can introduce noise and false conclusions. Isolation improves repeatability and confidence in comparisons.",
+      "id": "pt-087"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.4.2",
+      "difficulty": "easy",
+      "question": "What is the main purpose of seeding realistic test data before a performance run?",
+      "options": [
+        "To ensure the system processes representative data distributions, sizes, and relationships during the test",
+        "To make the scripts shorter to read",
+        "To avoid logging any results to disk",
+        "To increase network latency deliberately"
+      ],
+      "correctIndex": 0,
+      "explanation": "Data shape matters. Empty or tiny datasets may bypass behaviors such as indexing costs, pagination, or cache pressure that exist in production.",
+      "id": "pt-088"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.4.3",
+      "difficulty": "easy",
+      "question": "Why is parameterization important in performance test scripts?",
+      "options": [
+        "It allows varied input values so virtual users do not unrealistically repeat the exact same data in every iteration",
+        "It removes the need for correlation of dynamic values",
+        "It converts a load test into a security test",
+        "It prevents the collection of percentile metrics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Parameterized data helps avoid unrealistic caching, collisions, and duplicate-key failures. It also better reflects how many users behave differently.",
+      "id": "pt-089"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.4.4",
+      "difficulty": "hard",
+      "question": "A script records a login token once and then reuses that fixed token for every user. Which maintenance task is MOST likely needed?",
+      "options": [
+        "Correlation of dynamic values from server responses",
+        "Replacing the script with a unit test",
+        "Removing all think times",
+        "Disabling server-side logging"
+      ],
+      "correctIndex": 0,
+      "explanation": "Many applications return dynamic values such as tokens, IDs, or hidden fields that must be extracted and reused correctly at runtime.",
+      "id": "pt-090"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.2.3",
+      "difficulty": "medium",
+      "question": "Why is a gradual ramp-up often preferred to starting all virtual users at once for a standard load test?",
+      "options": [
+        "It allows observation of how metrics change as demand grows and avoids introducing an artificial shock when that is not the objective",
+        "It guarantees no failures can occur",
+        "It makes monitoring unnecessary during the run",
+        "It causes the workload model to become identical to a soak test"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ramp-up helps identify thresholds and separate normal scaling behavior from sudden-start effects. A full instant start is more appropriate when shock behavior is the goal.",
+      "id": "pt-091"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.2.4",
+      "difficulty": "medium",
+      "question": "Which practice improves the usefulness of metrics collected from multiple tools during one performance run?",
+      "options": [
+        "Synchronizing clocks and capturing a common timeline for load, application, and infrastructure data",
+        "Saving each metric stream in a different time zone on purpose",
+        "Turning off server monitoring until the end of the test",
+        "Comparing only screenshots instead of timestamps"
+      ],
+      "correctIndex": 0,
+      "explanation": "Accurate time alignment is essential when correlating symptoms with possible causes. Unsynchronized data can make root cause analysis unreliable.",
+      "id": "pt-092"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.8",
+      "difficulty": "hard",
+      "question": "Before a full-scale test, why is a small shakedown run valuable?",
+      "options": [
+        "It can expose script, data, environment, or monitoring problems early before expensive long runs are wasted",
+        "It proves the final capacity limit without any need for further testing",
+        "It replaces formal result analysis",
+        "It is useful only when testing static websites"
+      ],
+      "correctIndex": 0,
+      "explanation": "A shakedown run confirms the end-to-end test setup works. It can uncover script errors, broken monitors, or bad data before a long or large execution.",
+      "id": "pt-093"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.2.5",
+      "difficulty": "easy",
+      "question": "During execution, which type of information should be recorded in addition to response times?",
+      "options": [
+        "Resource usage, errors, throughput, and notable environment events such as restarts or configuration changes",
+        "Only the favorite color of the tester on duty",
+        "Only the names of people who watched the dashboard",
+        "Only the number of open browser tabs on the load generator"
+      ],
+      "correctIndex": 0,
+      "explanation": "Good analysis requires more than latency alone. Supporting metrics and environment events provide the context needed for diagnosis and comparison.",
+      "id": "pt-094"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.9",
+      "difficulty": "easy",
+      "question": "When testing a nightly settlement job, which planning detail is especially important?",
+      "options": [
+        "The operational processing window and any dependencies on upstream or downstream systems",
+        "The font used in the test summary slides",
+        "Whether all testers prefer the same keyboard layout",
+        "The number of coffee breaks scheduled for the test day"
+      ],
+      "correctIndex": 0,
+      "explanation": "Batch performance is often meaningful only relative to a business window, such as overnight completion before downstream processing begins.",
+      "id": "pt-095"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.5.1",
+      "difficulty": "medium",
+      "question": "Which approach best supports performance testing in a CI/CD pipeline?",
+      "options": [
+        "Automating a small, repeatable subset of checks that can detect clear regressions quickly on each relevant build",
+        "Running the longest possible endurance test on every code commit regardless of cost",
+        "Avoiding baselines because pipelines should use only absolute numbers",
+        "Collecting no historical trend data between runs"
+      ],
+      "correctIndex": 0,
+      "explanation": "CI/CD performance checks should be fast and focused enough to run regularly while still catching obvious regressions. Longer investigations can remain scheduled separately.",
+      "id": "pt-096"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.5.2",
+      "difficulty": "medium",
+      "question": "What is a practical shift-left performance activity for a service-oriented application?",
+      "options": [
+        "Running lightweight performance checks against critical APIs or components before full system integration testing",
+        "Waiting until production traffic reveals bottlenecks",
+        "Removing all non-functional requirements from backlog refinement",
+        "Testing only the documentation website"
+      ],
+      "correctIndex": 0,
+      "explanation": "Component- or API-level checks can expose inefficient code paths and poor designs early. They complement later end-to-end testing.",
+      "id": "pt-097"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.3.2",
+      "difficulty": "hard",
+      "question": "A test run fails because many requests return unauthorized errors. What should the tester confirm before blaming system capacity?",
+      "options": [
+        "Whether the scripts, credentials, and token handling are correct so that failures are not caused by the test itself",
+        "Whether the final report title has already been drafted",
+        "Whether the load generator CPU is exactly 50%",
+        "Whether all charts use the same background color"
+      ],
+      "correctIndex": 0,
+      "explanation": "Not every failure under load is a capacity problem. Script logic, authentication handling, and test data validity should be ruled out first.",
+      "id": "pt-098"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.10",
+      "difficulty": "hard",
+      "question": "How can production telemetry help performance test planning without replacing performance testing altogether?",
+      "options": [
+        "It can inform realistic workload patterns, peak periods, transaction mixes, and target scenarios for later controlled testing",
+        "It eliminates the need for any non-production environment",
+        "It guarantees future load will match the past exactly",
+        "It should be ignored because production data is never relevant"
+      ],
+      "correctIndex": 0,
+      "explanation": "Operational data is valuable for designing realistic tests, but controlled experiments are still needed to isolate variables and explore risk scenarios.",
+      "id": "pt-099"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.11",
+      "difficulty": "medium",
+      "question": "Why should a performance test plan record key environment details such as instance sizes, configuration, and data snapshot?",
+      "options": [
+        "So results can be reproduced, compared, and interpreted with proper context",
+        "So testers can avoid writing any explanations in the report",
+        "Because environment details affect only functional correctness",
+        "Because configuration never changes between test cycles"
+      ],
+      "correctIndex": 0,
+      "explanation": "Without run context, later comparisons become weak or misleading. Small configuration differences can materially change results.",
+      "id": "pt-100"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.2.6",
+      "difficulty": "hard",
+      "question": "During execution, response times suddenly improve midway through the run because a cache becomes fully warmed. What should the tester do?",
+      "options": [
+        "Document the behavior and analyze warm-up separately so steady-state conclusions are not mixed with transient startup effects",
+        "Delete the early measurements and pretend they never happened",
+        "Assume the production system will never experience cold starts",
+        "Stop collecting infrastructure metrics because the issue is understood"
+      ],
+      "correctIndex": 0,
+      "explanation": "Warm-up effects are important observations. Separating transient and steady-state phases leads to more accurate interpretation and reporting.",
+      "id": "pt-101"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.3.3",
+      "difficulty": "hard",
+      "question": "When investigating a newly observed slowdown, which sequence is generally most effective?",
+      "options": [
+        "Confirm the symptom, correlate it with workload and monitoring data, form hypotheses about constraints, and then retest targeted changes",
+        "Pick a random server setting to modify and hope the issue disappears",
+        "Ignore the workload model and look only at a single average graph",
+        "Rewrite the entire application before gathering evidence"
+      ],
+      "correctIndex": 0,
+      "explanation": "Structured diagnosis reduces wasted effort. Evidence-based correlation and targeted retesting are central to root cause analysis.",
+      "id": "pt-102"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.4.5",
+      "difficulty": "medium",
+      "question": "Why might unique test accounts be required for some performance scenarios?",
+      "options": [
+        "To avoid unrealistic contention or locking caused by many virtual users updating the same record or session",
+        "To make the JSON report file larger",
+        "To disable percentile calculations automatically",
+        "To ensure throughput is always lower than concurrency"
+      ],
+      "correctIndex": 0,
+      "explanation": "Using the same account for every user can create artificial hotspots or invalid behavior. Multiple accounts often produce more realistic access patterns.",
+      "id": "pt-103"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.5.3",
+      "difficulty": "hard",
+      "question": "Why is it risky to place a heavy multi-hour endurance test directly on every pull request in CI?",
+      "options": [
+        "It may create excessive cost and feedback delay, making the pipeline impractical for routine development use",
+        "It would automatically improve the functional coverage of unit tests",
+        "It guarantees better browser compatibility",
+        "It prevents the use of baselines"
+      ],
+      "correctIndex": 0,
+      "explanation": "CI checks need a sustainable signal-to-cost ratio. Very long performance suites are often better scheduled or triggered selectively.",
+      "id": "pt-104"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.3.4",
+      "difficulty": "hard",
+      "question": "If a performance issue appears only in one isolated run and cannot be reproduced, what is the BEST next step?",
+      "options": [
+        "Review run conditions and monitoring for anomalies, then rerun or design a targeted experiment before drawing strong conclusions",
+        "Treat it as proven and redesign the architecture immediately",
+        "Ignore all historical baselines permanently",
+        "Delete the result files to avoid confusion"
+      ],
+      "correctIndex": 0,
+      "explanation": "One-off anomalies can come from environmental noise or transient faults. Reproducibility and targeted follow-up improve confidence in the conclusion.",
+      "id": "pt-105"
+    },
+    {
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.4.6",
+      "difficulty": "medium",
+      "question": "What is the main benefit of refreshing test data between repeated benchmark runs when records are consumed or mutated?",
+      "options": [
+        "It keeps run conditions comparable so later results are not biased by leftover system state",
+        "It guarantees the load generator uses less CPU",
+        "It removes the need to track software versions",
+        "It forces averages and percentiles to match"
+      ],
+      "correctIndex": 0,
+      "explanation": "If previous runs change the underlying data, later runs may no longer represent the same conditions. Data refresh helps preserve fairness in comparisons.",
+      "id": "pt-106"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.2.2",
+      "difficulty": "easy",
+      "question": "When choosing a load tool, which criterion is MOST fundamental?",
+      "options": [
+        "Whether it can drive the protocols or interfaces that the system under test actually uses",
+        "Whether its default charts use three or four colors",
+        "Whether it was released in the same year as the application",
+        "Whether its installer is the smallest file"
+      ],
+      "correctIndex": 0,
+      "explanation": "Protocol and interface support is basic fit-for-purpose. A tool cannot generate meaningful load if it cannot interact with the target system correctly.",
+      "id": "pt-107"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.3",
+      "difficulty": "medium",
+      "question": "In which situation is a browser- or GUI-level test tool especially valuable despite its higher resource cost per user?",
+      "options": [
+        "When the goal includes measuring true client-side rendering and front-end behavior as experienced in a real browser",
+        "When simulating millions of simple protocol requests at minimum cost",
+        "When monitoring disk utilization on the database server",
+        "When editing application requirements"
+      ],
+      "correctIndex": 0,
+      "explanation": "GUI-level tools can capture browser rendering, client script execution, and front-end timing that protocol tools do not see directly.",
+      "id": "pt-108"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.4",
+      "difficulty": "easy",
+      "question": "Why are distributed load generators sometimes needed?",
+      "options": [
+        "Because a single injector may not have enough network, CPU, or memory capacity to produce the required scale alone",
+        "Because they automatically eliminate the need for result analysis",
+        "Because distributed generators can test only batch workloads",
+        "Because one generator is always forbidden in performance testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "At higher scale, the load tool infrastructure itself can become a bottleneck. Distributing injectors allows larger and more realistic traffic generation.",
+      "id": "pt-109"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.5",
+      "difficulty": "medium",
+      "question": "Which tool capability most directly supports realistic variation in test input values?",
+      "options": [
+        "Parameterization from files, data stores, or generated values",
+        "Static dashboard branding",
+        "Source-control branch protection",
+        "Automatic typo correction in defect titles"
+      ],
+      "correctIndex": 0,
+      "explanation": "Parameterization lets scripts use varied credentials, search terms, IDs, or payloads. This improves realism and avoids repeating identical requests.",
+      "id": "pt-110"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.6",
+      "difficulty": "hard",
+      "question": "Which scripting capability is essential for applications that return dynamic session identifiers or anti-forgery tokens?",
+      "options": [
+        "Extraction and reuse of dynamic values from prior responses",
+        "Automatic compression of log archives after execution",
+        "Color-coded chart themes for management reports",
+        "Support for printing paper summaries"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dynamic values must be captured and substituted correctly or later requests become invalid. Tools often call this extraction, correlation, or binding.",
+      "id": "pt-111"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.7",
+      "difficulty": "hard",
+      "question": "Why should monitoring agents or tracing be evaluated for overhead before a large performance campaign?",
+      "options": [
+        "Because instrumentation can alter timings or resource usage enough to affect the results being measured",
+        "Because monitoring is irrelevant once a test starts",
+        "Because overhead matters only in unit testing",
+        "Because any agent automatically invalidates percentile metrics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Instrumentation is useful, but intrusive tooling can perturb the system. Teams should understand and manage that trade-off.",
+      "id": "pt-112"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.8",
+      "difficulty": "medium",
+      "question": "What is the main value of an application performance monitoring tool during a test?",
+      "options": [
+        "It can trace transactions through application components and surface hotspots such as slow methods or external calls",
+        "It replaces the need for workload modeling",
+        "It can author user stories automatically",
+        "It prevents all server-side errors from occurring"
+      ],
+      "correctIndex": 0,
+      "explanation": "APM tools provide code- and transaction-level visibility that complements system metrics. This often speeds up diagnosis of bottlenecks.",
+      "id": "pt-113"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.9",
+      "difficulty": "hard",
+      "question": "Why is time synchronization important across load generators, monitors, and APM tools?",
+      "options": [
+        "So events from different sources can be correlated accurately on a shared timeline",
+        "So each tool can hide its own startup time",
+        "So percentiles are converted into averages automatically",
+        "So the test scripts require fewer parameters"
+      ],
+      "correctIndex": 0,
+      "explanation": "Unsynchronized clocks can make causal analysis confusing or wrong. Accurate timestamps are critical when aligning symptoms with infrastructure events.",
+      "id": "pt-114"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.2.5",
+      "difficulty": "hard",
+      "question": "A system communicates by HTTP for user requests and by a message queue for asynchronous processing. Which tool choice is MOST sensible?",
+      "options": [
+        "Use tools or integrations that can cover both relevant interaction styles, or combine complementary tools where needed",
+        "Use only a slide deck because asynchronous processing cannot be performance tested",
+        "Use a GUI recorder and ignore backend messaging entirely",
+        "Avoid monitoring because two technologies are involved"
+      ],
+      "correctIndex": 0,
+      "explanation": "Many modern systems use multiple protocols. Meaningful testing may require coverage of both the synchronous and asynchronous parts of the workflow.",
+      "id": "pt-115"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.2.6",
+      "difficulty": "medium",
+      "question": "Which limitation should a team check before assuming a load tool can simulate a target peak of 50,000 users?",
+      "options": [
+        "Whether licensing, injector capacity, and script design support that scale in practice",
+        "Whether the test manager prefers pie charts",
+        "Whether the issue tracker supports dark mode",
+        "Whether the tool can export to PDF"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tool claims alone are not enough. Actual scale depends on licensing, protocol efficiency, infrastructure, and script complexity.",
+      "id": "pt-116"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.11",
+      "difficulty": "medium",
+      "question": "Why do protocol-level tools usually achieve higher virtual-user density than full-browser tools?",
+      "options": [
+        "They avoid rendering full user interfaces and often send lighter-weight requests directly at the protocol layer",
+        "They compress business transactions into fewer requirements",
+        "They never need test data",
+        "They execute only on production servers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Skipping browser rendering and client-side script execution reduces per-user overhead. That makes high-scale generation more practical.",
+      "id": "pt-117"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.2.7",
+      "difficulty": "medium",
+      "question": "What is a key advantage of cloud-hosted load generators for a globally used application?",
+      "options": [
+        "They can generate traffic from multiple geographic regions more easily than a single local lab",
+        "They remove the need to estimate workload profiles",
+        "They ensure zero network variability between users and servers",
+        "They prevent all application bottlenecks automatically"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cloud generators can help model geographic distribution and reduce local infrastructure constraints. They do not remove the need for sound test design.",
+      "id": "pt-118"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.2.8",
+      "difficulty": "hard",
+      "question": "Which tool capability is MOST helpful when sensitive production-like data must not be exposed in shared test environments?",
+      "options": [
+        "Support for safe test data generation, masking, or secure parameter sources",
+        "Animated transitions between dashboard pages",
+        "Automatic merging of git branches",
+        "A built-in presentation template for sprint demos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance testing still needs suitable data handling practices. Tooling that supports secure data sourcing or masking reduces operational risk.",
+      "id": "pt-119"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.12",
+      "difficulty": "medium",
+      "question": "Which statement BEST describes the relationship between server-side monitoring tools and client-side timing tools?",
+      "options": [
+        "They provide complementary perspectives and are often stronger together than either one alone",
+        "They always report identical metrics, so one of them is unnecessary",
+        "Client-side timing is useful only for security testing",
+        "Server-side monitoring is used only after the release is complete"
+      ],
+      "correctIndex": 0,
+      "explanation": "Client-side timings reveal what users experience, while server-side metrics help explain why it happened. Combining both improves diagnosis.",
+      "id": "pt-120"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.13",
+      "difficulty": "hard",
+      "question": "A team wants to test an end-to-end checkout journey that includes browser rendering, API calls, and third-party payment redirection. What tool strategy is MOST appropriate?",
+      "options": [
+        "Select tooling that can model the critical journey realistically, potentially combining browser-based and protocol/API-level approaches where justified",
+        "Measure only database CPU because user journeys are too complex to test",
+        "Use a pure unit test framework with no external interactions",
+        "Avoid third-party steps because they are not part of user experience"
+      ],
+      "correctIndex": 0,
+      "explanation": "Complex user journeys sometimes require blended tooling. The choice should reflect what aspects of the experience and architecture need to be measured.",
+      "id": "pt-121"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.2.9",
+      "difficulty": "medium",
+      "question": "Why should tool maintenance effort matter when selecting a performance testing solution?",
+      "options": [
+        "Because fragile or hard-to-update scripts can make regular regression testing expensive and slow",
+        "Because maintenance effort affects only the graphic design team",
+        "Because a hard-to-maintain tool always generates more realistic load",
+        "Because stable tools never require any adaptation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance tests often need to run repeatedly across releases. Maintenance cost strongly affects long-term usefulness and adoption.",
+      "id": "pt-122"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.14",
+      "difficulty": "easy",
+      "question": "What is a sensible use of a recorded user script in a performance tool?",
+      "options": [
+        "Use it as a starting point, then refine it with parameterization, correlation, pacing, and validations",
+        "Trust it unchanged for all future tests regardless of application updates",
+        "Replace all monitoring because the recorder captured enough information",
+        "Assume recorded scripts automatically represent production workload"
+      ],
+      "correctIndex": 0,
+      "explanation": "Recording accelerates script creation, but raw recordings rarely produce robust, scalable, or realistic load without refinement.",
+      "id": "pt-123"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.2.10",
+      "difficulty": "hard",
+      "question": "Which factor is MOST important when deciding between open-source and commercial performance tooling?",
+      "options": [
+        "Fitness for the project's technical, operational, support, and scaling needs rather than license category alone",
+        "Whether the product website uses the most modern font",
+        "Whether the tool name is shorter than ten characters",
+        "Whether another team used it once for a different application"
+      ],
+      "correctIndex": 0,
+      "explanation": "License model is only one consideration. Teams should assess protocol support, scale, expertise, maintenance, reporting, and support requirements.",
+      "id": "pt-124"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.15",
+      "difficulty": "easy",
+      "question": "Which feature is MOST useful for controlling user pacing and arrival patterns in a load test?",
+      "options": [
+        "Timers, pacing controls, and workload scheduling features",
+        "Spell-checking in the report editor",
+        "An embedded screenshot gallery",
+        "Automatic renaming of every result file"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pacing and scheduling features help implement realistic think times, ramp-up shapes, and arrival profiles defined in the workload model.",
+      "id": "pt-125"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.16",
+      "difficulty": "hard",
+      "question": "Why might a team extend a performance tool with custom plugins or scripts?",
+      "options": [
+        "To support project-specific protocols, metrics, validations, or reporting that are not available out of the box",
+        "To avoid ever updating the tool again",
+        "To convert the exercise into manual exploratory testing",
+        "To remove the need for acceptance criteria"
+      ],
+      "correctIndex": 0,
+      "explanation": "Custom extensions can bridge gaps in protocol handling, result processing, or environment integration. They should still be maintained carefully.",
+      "id": "pt-126"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.2.12",
+      "difficulty": "easy",
+      "question": "Which type of tool would BEST help identify whether a database host is saturating CPU, memory, or I/O during a test?",
+      "options": [
+        "An infrastructure or operating-system monitoring tool",
+        "A wireframing tool",
+        "A backlog grooming board",
+        "A password manager"
+      ],
+      "correctIndex": 0,
+      "explanation": "Infrastructure monitoring tools observe host-level resource behavior. They are essential companions to load-generation tools during diagnosis.",
+      "id": "pt-127"
+    },
+    {
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.17",
+      "difficulty": "hard",
+      "question": "Which risk is introduced if the load generation tool itself becomes CPU-bound during the run?",
+      "options": [
+        "The test may under-drive the system under test and produce misleadingly optimistic conclusions",
+        "The application under test automatically becomes faster",
+        "All monitoring timestamps will be corrected automatically",
+        "The results become equivalent to a soak test"
+      ],
+      "correctIndex": 0,
+      "explanation": "If injectors cannot generate the intended workload, the system under test is not truly being challenged as planned. Tool-side bottlenecks must be monitored too.",
+      "id": "pt-128"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.3",
+      "difficulty": "easy",
+      "question": "If the average checkout response time is 1.5 seconds but the 95th percentile is 6 seconds, what is the BEST interpretation?",
+      "options": [
+        "Many checkouts are fast, but a noticeable slower tail exists and should not be ignored",
+        "The average is invalid because percentiles are present",
+        "All users experienced exactly 1.5 seconds",
+        "The test definitely failed regardless of any target"
+      ],
+      "correctIndex": 0,
+      "explanation": "The average alone hides variability. A high 95th percentile indicates a significant minority of users may still have poor experiences.",
+      "id": "pt-129"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.5",
+      "difficulty": "hard",
+      "question": "Several repeated runs of the same scenario produce very similar results. Why does this matter?",
+      "options": [
+        "It increases confidence that the measurements are stable enough to support conclusions",
+        "It proves the application has reached infinite scalability",
+        "It means monitoring should be removed from future tests",
+        "It shows the workload model was unnecessary"
+      ],
+      "correctIndex": 0,
+      "explanation": "Repeatability strengthens trust in observed behavior. Large unexplained variance would make conclusions less certain.",
+      "id": "pt-130"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.6",
+      "difficulty": "medium",
+      "question": "Why are warm-up and cool-down periods often excluded from steady-state analysis?",
+      "options": [
+        "Because they may reflect startup or ramp-down effects rather than the representative operating period being assessed",
+        "Because excluding them always makes the system pass",
+        "Because percentiles cannot be computed when they are included",
+        "Because monitoring tools do not record those intervals"
+      ],
+      "correctIndex": 0,
+      "explanation": "Startup and shutdown behavior can be interesting, but it should usually be analyzed separately from steady-state service levels.",
+      "id": "pt-131"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.7",
+      "difficulty": "hard",
+      "question": "A report shows latency rising at the same time error rates increase and a connection pool becomes exhausted. What is the BEST analytical conclusion?",
+      "options": [
+        "The evidence supports a likely relationship between connection saturation and the observed service degradation",
+        "The rising latency proves the user interface color palette is wrong",
+        "The metrics cannot be related because they come from different charts",
+        "The only reasonable conclusion is to ignore the run"
+      ],
+      "correctIndex": 0,
+      "explanation": "Correlated timing across service symptoms and resource exhaustion forms a strong evidence chain. It supports a focused root cause hypothesis.",
+      "id": "pt-132"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.2",
+      "difficulty": "easy",
+      "question": "How should a summary for senior business stakeholders usually differ from a technical deep-dive report?",
+      "options": [
+        "It should emphasize business impact, readiness, risks, and decisions, with less low-level metric detail",
+        "It should include every raw log line from every server",
+        "It should avoid conclusions and provide only screenshots",
+        "It should omit all references to workload and targets"
+      ],
+      "correctIndex": 0,
+      "explanation": "Different audiences need different levels of detail. Executives usually need implications and decisions, while engineers need diagnostic evidence.",
+      "id": "pt-133"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.3",
+      "difficulty": "hard",
+      "question": "What is the main purpose of using trend analysis across many performance runs?",
+      "options": [
+        "To identify gradual improvement or degradation over time rather than relying on a single isolated result",
+        "To replace acceptance criteria completely",
+        "To guarantee that every future result will be better than the last",
+        "To prove the monitoring tool never misses a sample"
+      ],
+      "correctIndex": 0,
+      "explanation": "Trends reveal direction and rate of change. This is useful for spotting regressions, growth risks, and improvement impact over time.",
+      "id": "pt-134"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.4",
+      "difficulty": "medium",
+      "question": "Which recommendation is MOST appropriate when a system meets today's target load but shows performance degradation growing faster than linearly with each step increase?",
+      "options": [
+        "Investigate scalability limits and estimate when future growth may breach objectives",
+        "Stop monitoring because the target was met today",
+        "Report that the system is future-proof with no additional analysis needed",
+        "Replace percentiles with averages only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Non-linear degradation suggests a threshold or architectural limit may be approaching. Meeting today's target does not remove future capacity risk.",
+      "id": "pt-135"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.8",
+      "difficulty": "medium",
+      "question": "A single run produced much worse results than all other comparable runs. What should be done before declaring a confirmed regression?",
+      "options": [
+        "Check for environmental anomalies or setup differences and rerun if needed to confirm the behavior",
+        "Delete all previous good runs from the dashboard",
+        "Assume the worst run is always the truest run",
+        "Average it together with unrelated scenarios"
+      ],
+      "correctIndex": 0,
+      "explanation": "Outliers may be meaningful or may be noise. Verification improves confidence before the team acts on the result.",
+      "id": "pt-136"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.6",
+      "difficulty": "hard",
+      "question": "If response time targets are met but timeout errors briefly spike during peak minutes, how should the outcome be reported?",
+      "options": [
+        "As a qualified result that notes target compliance for latency but highlights reliability risk due to failed transactions",
+        "As a full pass with no caveats because averages were acceptable",
+        "As a guaranteed production outage",
+        "As irrelevant because errors matter only in functional testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance quality includes successful completion, not just speed. Error spikes are important even when many requests remain fast enough.",
+      "id": "pt-137"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.7",
+      "difficulty": "easy",
+      "question": "What makes a performance recommendation actionable?",
+      "options": [
+        "It links observed evidence to a clear next step, such as tuning, redesign, or further targeted testing",
+        "It uses only generic phrases such as improve performance soon",
+        "It avoids naming any affected component or metric",
+        "It removes all uncertainty by promising a fixed gain without evidence"
+      ],
+      "correctIndex": 0,
+      "explanation": "Useful recommendations connect findings to decisions. They should help the team know what to do next and why.",
+      "id": "pt-138"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.8",
+      "difficulty": "medium",
+      "question": "Why should a performance report document important environmental constraints or deviations from production?",
+      "options": [
+        "Because those differences affect how confidently results can be generalized to real operation",
+        "Because deviations automatically make all testing worthless",
+        "Because only legal teams read performance reports",
+        "Because environment details are needed only for visual appeal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stakeholders need to understand result limitations. Documented constraints help them interpret risk and avoid overclaiming.",
+      "id": "pt-139"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.9",
+      "difficulty": "hard",
+      "question": "Which statement BEST distinguishes a symptom from a probable cause in performance analysis?",
+      "options": [
+        "Slow response time is a symptom; thread-pool saturation could be a cause",
+        "Thread-pool saturation is a symptom; slow response time is always the cause",
+        "Symptoms and causes are the same thing in performance testing",
+        "Neither symptoms nor causes should appear in reports"
+      ],
+      "correctIndex": 0,
+      "explanation": "Observed service degradation is a symptom. The constrained component or behavior that produces it is the probable cause that analysis tries to identify.",
+      "id": "pt-140"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.10",
+      "difficulty": "hard",
+      "question": "Throughput remains flat while queue length and wait time climb sharply. Which performance principle does this most clearly illustrate?",
+      "options": [
+        "Demand is exceeding service capacity, so extra work is accumulating rather than being completed faster",
+        "The system is scaling linearly with perfect efficiency",
+        "User think time is decreasing the need for analysis",
+        "The test has become invalid because queue metrics exist"
+      ],
+      "correctIndex": 0,
+      "explanation": "When capacity is saturated, new work may wait longer without increasing useful output. Queue growth is a classic sign of that state.",
+      "id": "pt-141"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.9",
+      "difficulty": "hard",
+      "question": "A new autoscaling rule keeps average response time stable, but the 99th percentile still spikes during sudden traffic bursts. What should be reported?",
+      "options": [
+        "Average performance improved, but burst-handling risk remains for the slowest requests and may require faster scaling or buffering strategies",
+        "The change solved all performance concerns completely",
+        "Percentiles should be ignored because averages are stable",
+        "The workload definition was probably unnecessary"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stable averages do not guarantee good burst behavior for tail users. The report should distinguish general improvement from remaining edge-case risk.",
+      "id": "pt-142"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.11",
+      "difficulty": "medium",
+      "question": "Why is variance or spread in response times worth analyzing in addition to central tendency?",
+      "options": [
+        "Because two systems with the same average may provide very different consistency to users",
+        "Because variance replaces the need to measure errors",
+        "Because spread matters only when the system is idle",
+        "Because averages become mathematically invalid when spread exists"
+      ],
+      "correctIndex": 0,
+      "explanation": "Consistency matters to users and operations. A service with wide swings in latency may be harder to trust even if the mean is acceptable.",
+      "id": "pt-143"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.10",
+      "difficulty": "easy",
+      "question": "Which statement is most useful in an executive summary after a major performance test?",
+      "options": [
+        "The portal met the agreed launch workload for search and checkout, but payment processing has limited headroom and needs tuning before peak season",
+        "See attached raw logs from twelve servers for details",
+        "Several monitors used different port numbers during execution",
+        "We collected many metrics and charts"
+      ],
+      "correctIndex": 0,
+      "explanation": "An executive summary should quickly state readiness, major risk, and necessary actions in business-relevant language.",
+      "id": "pt-144"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.11",
+      "difficulty": "medium",
+      "question": "Why is it risky to compare two performance runs that used different workload profiles as if they were directly equivalent?",
+      "options": [
+        "Different mixes, pacing, or concurrency can change system behavior, making naive comparisons misleading",
+        "Because workload profiles affect only security, not performance",
+        "Because different profiles automatically invalidate JSON reports",
+        "Because all meaningful comparisons require identical screenshots"
+      ],
+      "correctIndex": 0,
+      "explanation": "If the input conditions differ materially, differences in results may not reflect code or environment changes alone. Context matters in comparisons.",
+      "id": "pt-145"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.12",
+      "difficulty": "hard",
+      "question": "Which conclusion is MOST appropriate when a component's resource use grows roughly linearly with load and stays below critical thresholds across tested levels?",
+      "options": [
+        "The component appears to scale predictably within the tested range, though future limits still require continued observation",
+        "The component is guaranteed never to bottleneck at any higher load",
+        "No further performance testing is ever needed",
+        "All service-level objectives are irrelevant if scaling looks linear"
+      ],
+      "correctIndex": 0,
+      "explanation": "Observed linear behavior within a tested range is encouraging, but it does not prove unlimited capacity. Reports should state scope and limits carefully.",
+      "id": "pt-146"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.12",
+      "difficulty": "easy",
+      "question": "What is the main value of annotating performance graphs with events such as deployments, cache flushes, or failovers?",
+      "options": [
+        "It helps explain sudden metric changes by linking them to known actions or conditions",
+        "It makes the chart colors brighter",
+        "It removes the need for timestamps",
+        "It ensures all percentiles are lower"
+      ],
+      "correctIndex": 0,
+      "explanation": "Annotated events provide context. They can make correlations and root cause hypotheses much easier to see and explain.",
+      "id": "pt-147"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.13",
+      "difficulty": "hard",
+      "question": "When should capacity planning be updated based on performance test findings?",
+      "options": [
+        "When results reveal current headroom, growth trends, or bottlenecks that materially affect future demand assumptions",
+        "Only after the application has already failed in production",
+        "Only if average response time is exactly one second",
+        "Only if no monitoring was used during testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance results are a key input to capacity planning because they show how close the system is to limits and how growth may change that.",
+      "id": "pt-148"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.13",
+      "difficulty": "medium",
+      "question": "If two builds have similar response times but one consumes significantly more CPU for the same throughput, what should analysts note?",
+      "options": [
+        "The newer build may be less resource-efficient and could reduce future headroom even if current user-facing speed is similar",
+        "CPU usage never matters when throughput is equal",
+        "The difference proves the metrics were collected incorrectly",
+        "The build with higher CPU is automatically more scalable"
+      ],
+      "correctIndex": 0,
+      "explanation": "Resource efficiency affects cost and capacity margin. Similar latency does not mean equivalent operational behavior.",
+      "id": "pt-149"
+    },
+    {
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.15",
+      "difficulty": "hard",
+      "question": "Which statement is MOST appropriate when reporting a limitation in the test environment?",
+      "options": [
+        "State the limitation clearly, explain how it may affect interpretation, and avoid claiming more certainty than the evidence supports",
+        "Hide the limitation to keep the summary shorter",
+        "Assume stakeholders will infer the limitation from the graphs",
+        "Discard all results immediately regardless of relevance"
+      ],
+      "correctIndex": 0,
+      "explanation": "Transparent reporting increases trust. Limitations do not always invalidate results, but they do shape how far the conclusions can be extended.",
+      "id": "pt-150"
     }
   ]
 }
