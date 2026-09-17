@@ -4,6 +4,7 @@
  */
 const QAQuest = (() => {
   const STORAGE_KEY = "qaquest_progress_v1";
+  const ADS_PREF_KEY = "qaquest_ads_enabled_v1";
 
   function loadProgress() {
     try {
@@ -89,6 +90,27 @@ const QAQuest = (() => {
     return div.innerHTML;
   }
 
+  /**
+   * Ads are opt-in: until the visitor explicitly chooses to support the
+   * site, no ad slot is rendered or populated at all (not just hidden via
+   * CSS), so the default experience is genuinely ad-free and lightweight.
+   */
+  function areAdsEnabled() {
+    try {
+      return localStorage.getItem(ADS_PREF_KEY) === "true";
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function setAdsEnabled(enabled) {
+    try {
+      localStorage.setItem(ADS_PREF_KEY, enabled ? "true" : "false");
+    } catch (e) {
+      console.warn("QAQuest: could not save ads preference", e);
+    }
+  }
+
   return {
     loadProgress,
     saveProgress,
@@ -101,5 +123,7 @@ const QAQuest = (() => {
     shuffle,
     qs,
     escapeHTML,
+    areAdsEnabled,
+    setAdsEnabled,
   };
 })();

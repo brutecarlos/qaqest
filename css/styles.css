@@ -90,11 +90,24 @@ a:hover {
   font-weight: 800;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .main-nav {
   display: flex;
   gap: 1.25rem;
   font-weight: 600;
   font-size: 0.95rem;
+}
+
+.btn-ads-toggle {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
 }
 
 /* Ad slots */

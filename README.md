@@ -127,11 +127,18 @@ site will build and deploy automatically.
 
 ## Advertising
 
-Ad placements live in `js/layout.js` (`.ad-slot--header`, rendered on every
-page) and inline in `js/layout.js`'s footer partial (`.ad-slot--inline`).
-They're plain placeholder `<div>`s today — swap in your AdSense unit code
-once you have an approved account, keeping placements outside the quiz
-question card so they never interfere with answering.
+Ads are **opt-in and off by default**. `js/layout.js` renders a header
+toggle button ("&#10084;&#65039; Support QAQuest with ads" /
+"&#128683; No ads, just studying") that flips a `localStorage` preference
+(`qaquest_ads_enabled_v1`, exposed via `QAQuest.areAdsEnabled()` /
+`QAQuest.setAdsEnabled()` in `js/storage.js`). Ad-slot elements
+(`#header-ad-mount`, `#footer-ad-mount`) are only ever populated with an
+actual `.ad-slot` `<div>` when the preference is on — when it's off, nothing
+ad-related is created in the DOM (not just hidden via CSS), keeping the
+default page lightweight. Swap the placeholder text in `js/layout.js`
+(`buildAdSlot`) for your real AdSense unit code once you have an approved
+account; placements stay outside the quiz question card so they never
+interfere with answering.
 
 ## License
 
