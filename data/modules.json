@@ -24,7 +24,7 @@
       "examQuestionCount": 40,
       "examDurationMinutes": 60,
       "passPercentage": 65,
-      "status": "coming-soon"
+      "status": "available"
     },
     {
       "id": "al-ta",
@@ -37,7 +37,7 @@
       "examQuestionCount": 40,
       "examDurationMinutes": 90,
       "passPercentage": 65,
-      "status": "coming-soon"
+      "status": "available"
     },
     {
       "id": "al-tta",
@@ -50,7 +50,7 @@
       "examQuestionCount": 40,
       "examDurationMinutes": 90,
       "passPercentage": 65,
-      "status": "coming-soon"
+      "status": "available"
     },
     {
       "id": "al-tm",
@@ -63,7 +63,7 @@
       "examQuestionCount": 65,
       "examDurationMinutes": 180,
       "passPercentage": 65,
-      "status": "coming-soon"
+      "status": "available"
     },
     {
       "id": "test-automation",
@@ -76,7 +76,7 @@
       "examQuestionCount": 40,
       "examDurationMinutes": 60,
       "passPercentage": 65,
-      "status": "coming-soon"
+      "status": "available"
     },
     {
       "id": "performance-testing",
@@ -89,7 +89,7 @@
       "examQuestionCount": 40,
       "examDurationMinutes": 60,
       "passPercentage": 65,
-      "status": "coming-soon"
+      "status": "available"
     }
   ]
 }

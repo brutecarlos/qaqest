@@ -16,6 +16,291 @@
       ],
       "correctIndex": 1,
       "explanation": "Test analysts identify test conditions from the test basis (e.g., requirements, use cases), factoring in quality risks for functional characteristics."
+    },
+    {
+      "id": "al-ta-002",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.1.1",
+      "difficulty": "medium",
+      "question": "In risk-based testing, what is the Test Analyst's PRIMARY contribution during risk identification?",
+      "options": [
+        "Approving the overall project budget",
+        "Contributing domain and functional knowledge to help identify product risks related to functional quality characteristics",
+        "Selecting which programming language will be used",
+        "Deciding the final release date for the product"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test Analysts bring functional and domain expertise to risk workshops, helping identify risks related to functional suitability, correctness, and similar quality characteristics."
+    },
+    {
+      "id": "al-ta-003",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.1.2",
+      "difficulty": "medium",
+      "question": "When performing test analysis on a use case, the Test Analyst should focus on identifying test conditions for:",
+      "options": [
+        "Only the main (basic) success scenario, ignoring alternative flows",
+        "The main success scenario as well as alternative and exception flows",
+        "Only non-functional aspects of the use case",
+        "Only the actors involved, not the flows themselves"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thorough test analysis of use cases considers the main success scenario plus alternative and exception flows, since defects often hide in less common paths."
+    },
+    {
+      "id": "al-ta-004",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.1.1",
+      "difficulty": "hard",
+      "question": "A Test Analyst is designing tests for a form with three independent checkboxes (each can be checked or unchecked). Using classification tree method thinking, how many valid combinations exist if all combinations must be tested (full combinatorial coverage)?",
+      "options": [
+        "3",
+        "6",
+        "8",
+        "9"
+      ],
+      "correctIndex": 2,
+      "explanation": "Each of the 3 independent binary checkboxes has 2 states, so full combinatorial coverage requires 2^3 = 8 combinations."
+    },
+    {
+      "id": "al-ta-005",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.2.1",
+      "difficulty": "hard",
+      "question": "Pairwise (all-pairs) testing is used PRIMARILY to:",
+      "options": [
+        "Guarantee that every possible combination of all parameters is tested",
+        "Reduce the number of test cases needed while still covering all pairs of parameter values, based on the observation that many defects involve interactions between just two parameters",
+        "Replace the need for equivalence partitioning entirely",
+        "Only test boundary values of a single parameter"
+      ],
+      "correctIndex": 1,
+      "explanation": "Pairwise testing systematically covers all pairwise combinations of parameter values with far fewer test cases than exhaustive combinatorial testing, based on the empirical observation that most interaction defects involve only two parameters."
+    },
+    {
+      "id": "al-ta-006",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.3.1",
+      "difficulty": "medium",
+      "question": "Use case testing is particularly useful for verifying:",
+      "options": [
+        "Low-level code structure such as individual statements",
+        "End-to-end business processes and interactions between actors and the system as they would occur in real usage",
+        "Only the visual styling of a user interface",
+        "The internal database schema design"
+      ],
+      "correctIndex": 1,
+      "explanation": "Use case testing derives test cases from use case descriptions, which capture how actors interact with a system to achieve a goal, making it well-suited for testing realistic end-to-end business processes."
+    },
+    {
+      "id": "al-ta-007",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.1.1",
+      "difficulty": "medium",
+      "question": "In defect-based testing, a 'defect taxonomy' is used to:",
+      "options": [
+        "Randomly generate test cases with no structure",
+        "Provide a structured, categorized list of typical defect types to guide test design toward likely problem areas",
+        "Replace all other black-box test design techniques",
+        "Track the salaries of the test team"
+      ],
+      "correctIndex": 1,
+      "explanation": "A defect taxonomy organizes common defect types (e.g. by category, such as data-handling or interface defects) to help testers systematically design tests targeting likely problem areas based on historical data."
+    },
+    {
+      "id": "al-ta-008",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following techniques relies MOST heavily on the Test Analyst's own domain knowledge and intuition rather than a formal model of the software?",
+      "options": [
+        "Decision table testing",
+        "Error guessing",
+        "Boundary value analysis",
+        "State transition testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Error guessing is an experience-based technique where the tester uses their knowledge of common mistakes and past defects to anticipate where problems are likely to occur, without a formal model."
+    },
+    {
+      "id": "al-ta-009",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.1.1",
+      "difficulty": "medium",
+      "question": "As a Test Analyst, which quality characteristic would you PRIMARILY focus on when testing whether an application is easy to learn and operate for new users?",
+      "options": [
+        "Usability",
+        "Portability",
+        "Maintainability",
+        "Reliability"
+      ],
+      "correctIndex": 0,
+      "explanation": "Usability testing (a Test Analyst's primary functional-adjacent focus area) evaluates how easy a system is to learn, operate, and use effectively by its intended users."
+    },
+    {
+      "id": "al-ta-010",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following would be a suitable test objective for functional suitability testing?",
+      "options": [
+        "Confirming the system correctly computes results for a defined set of business rules and inputs",
+        "Confirming the system can be installed on multiple operating systems",
+        "Confirming average response time under 500 concurrent users",
+        "Confirming source code compiles without warnings"
+      ],
+      "correctIndex": 0,
+      "explanation": "Functional suitability testing verifies that functions perform as specified, e.g., that business rule calculations produce correct results for given inputs."
+    },
+    {
+      "id": "al-ta-011",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a key benefit of analyzing acceptance criteria carefully during test analysis?",
+      "options": [
+        "It has no practical benefit and is optional busywork",
+        "It helps ensure test conditions align precisely with what stakeholders consider 'done' and correctly implemented",
+        "It guarantees zero defects in the resulting code",
+        "It removes the need for any further test design activities"
+      ],
+      "correctIndex": 1,
+      "explanation": "Carefully analyzing acceptance criteria ensures the test conditions derived truly reflect stakeholder expectations of correct, complete functionality."
+    },
+    {
+      "id": "al-ta-012",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.1.2",
+      "difficulty": "hard",
+      "question": "When using the classification tree method, 'classes' represent:",
+      "options": [
+        "Object-oriented programming classes in the source code",
+        "Partitions of possible values for each relevant test-relevant aspect (classification) of the test object",
+        "Severity levels assigned to defects",
+        "The seniority level of testers assigned to the project"
+      ],
+      "correctIndex": 1,
+      "explanation": "In the classification tree method, classifications represent relevant aspects of the test object, and classes are the partitions of values within each classification, which are then combined into test cases."
+    },
+    {
+      "id": "al-ta-013",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.2.1",
+      "difficulty": "medium",
+      "question": "Which source of information would be MOST useful for building an organization-specific defect taxonomy?",
+      "options": [
+        "Historical defect data and known common defect types from past projects in the same domain",
+        "The office seating chart",
+        "The project's marketing budget",
+        "The color palette used in the company logo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Defect taxonomies are most useful when informed by real historical defect data and common defect categories observed in similar projects or domains."
+    },
+    {
+      "id": "al-ta-014",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.2",
+      "difficulty": "medium",
+      "question": "'Checklist-based testing' as an experience-based technique differs from ad hoc testing MAINLY because:",
+      "options": [
+        "Checklist-based testing follows a structured list of items to verify, built from experience, standards, or requirements, providing more consistency than unstructured ad hoc testing",
+        "Checklist-based testing cannot be reused across projects",
+        "Ad hoc testing is always more thorough than checklist-based testing",
+        "Checklist-based testing requires no tester experience at all"
+      ],
+      "correctIndex": 0,
+      "explanation": "Checklist-based testing uses a structured, often reusable list of items derived from experience or standards, giving it more consistency and repeatability than fully unstructured ad hoc testing."
+    },
+    {
+      "id": "al-ta-015",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.2.1",
+      "difficulty": "medium",
+      "question": "Which technique would a Test Analyst commonly use to evaluate the accessibility of a web application for users with disabilities?",
+      "options": [
+        "Checking conformance against accessibility guidelines (e.g. WCAG) using both automated scans and manual assistive-technology testing",
+        "Measuring server CPU utilization under load",
+        "Reviewing the database schema for normalization",
+        "Running a static code analysis for unused variables"
+      ],
+      "correctIndex": 0,
+      "explanation": "Accessibility testing typically combines automated checks against established guidelines (like WCAG) with manual testing using assistive technologies such as screen readers."
+    },
+    {
+      "id": "al-ta-016",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.3.2",
+      "difficulty": "medium",
+      "question": "When deriving test cases from a use case with multiple alternative flows, which approach provides the BEST balance of coverage and effort?",
+      "options": [
+        "Only test the main success scenario and ignore all alternatives",
+        "Design at least one test case per alternative/exception flow in addition to the main scenario, prioritized by risk",
+        "Test every possible combination of all flows and sub-flows exhaustively regardless of risk",
+        "Avoid designing any test cases and rely purely on production monitoring"
+      ],
+      "correctIndex": 1,
+      "explanation": "A practical, risk-based approach covers the main scenario plus each alternative/exception flow with at least one test case, prioritizing the highest-risk flows for deeper coverage."
+    },
+    {
+      "id": "al-ta-017",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.2.1",
+      "difficulty": "medium",
+      "question": "During risk analysis, the Test Analyst helps assess the 'likelihood' of a functional risk by considering factors such as:",
+      "options": [
+        "The complexity of the affected code and the experience level of the team who built it",
+        "The color scheme used in the user interface only",
+        "The number of testers physically present in the office",
+        "The name of the project sponsor"
+      ],
+      "correctIndex": 0,
+      "explanation": "Likelihood factors commonly considered include complexity of the code/design, team experience, past defect history, and similar technical factors relevant to functional risks."
+    },
+    {
+      "id": "al-ta-018",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.1.3",
+      "difficulty": "medium",
+      "question": "Which of the following is a valid reason a Test Analyst might raise a review comment during test basis analysis, even before test design begins?",
+      "options": [
+        "An acceptance criterion is ambiguous and could be interpreted in two conflicting ways",
+        "The requirement is written in a font the tester dislikes",
+        "The requirement was written by a specific team member",
+        "The requirement document is more than one page long"
+      ],
+      "correctIndex": 0,
+      "explanation": "Analyzing the test basis often surfaces ambiguities or inconsistencies in requirements/acceptance criteria; raising these early (as a form of static testing) prevents costly misunderstandings later."
+    },
+    {
+      "id": "al-ta-019",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.1.2",
+      "difficulty": "hard",
+      "question": "How does defect-based testing differ from specification-based (black-box) techniques like equivalence partitioning?",
+      "options": [
+        "Defect-based testing derives test conditions from types of defects likely to occur, whereas specification-based techniques derive tests from the test basis's described behavior",
+        "Defect-based testing never uses any test basis at all",
+        "They are identical techniques with different names",
+        "Defect-based testing can only be applied to non-functional testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Defect-based techniques are systematically derived from knowledge of likely defect types (a defect taxonomy), complementing specification-based techniques that derive tests directly from documented behavior."
+    },
+    {
+      "id": "al-ta-020",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.1.3",
+      "difficulty": "medium",
+      "question": "Which of the following is the Test Analyst's typical area of focus regarding 'interoperability' testing?",
+      "options": [
+        "Verifying the system can effectively exchange information and interact correctly with other specified systems",
+        "Verifying the system's source code follows internal style guidelines",
+        "Verifying the system's CPU usage remains under a defined threshold",
+        "Verifying the system's log files rotate correctly"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interoperability testing verifies that a system can correctly exchange data and interact with other specified systems or components, a functional-adjacent quality characteristic Test Analysts often address."
     }
   ]
 }

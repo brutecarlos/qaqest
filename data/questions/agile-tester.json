@@ -31,6 +31,276 @@
       ],
       "correctIndex": 1,
       "explanation": "The whole-team approach means quality and testing responsibility is shared among all team members, not isolated to a single tester role."
+    },
+    {
+      "id": "at-003",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.1.1",
+      "difficulty": "easy",
+      "question": "Which of the following is a common characteristic shared by most agile methods (e.g. Scrum, XP, Kanban)?",
+      "options": [
+        "A single, multi-year release plan with no intermediate deliverables",
+        "Iterative and incremental delivery of working software in short cycles, with frequent feedback",
+        "A strict prohibition on any face-to-face communication",
+        "Complete documentation of all requirements before any coding begins"
+      ],
+      "correctIndex": 1,
+      "explanation": "Agile methods generally favor iterative, incremental development with short cycles and frequent feedback over big-bang, fully-documented-upfront approaches."
+    },
+    {
+      "id": "at-004",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.1.2",
+      "difficulty": "medium",
+      "question": "In Scrum, what is the PRIMARY purpose of a sprint retrospective?",
+      "options": [
+        "To demonstrate completed work to stakeholders",
+        "To reflect on the past sprint and identify process improvements for future sprints",
+        "To estimate the size of upcoming backlog items",
+        "To assign new user stories to the sprint backlog"
+      ],
+      "correctIndex": 1,
+      "explanation": "The sprint retrospective is a Scrum event where the team reflects on how the sprint went (people, process, tools) and identifies improvements to carry into future sprints."
+    },
+    {
+      "id": "at-005",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.1.2",
+      "difficulty": "easy",
+      "question": "Which Scrum artifact represents the ordered list of everything that might be needed in the product?",
+      "options": [
+        "The sprint backlog",
+        "The product backlog",
+        "The burndown chart",
+        "The definition of done"
+      ],
+      "correctIndex": 1,
+      "explanation": "The product backlog is the single, ordered list of features, requirements, and fixes that could be needed in the product, managed by the product owner."
+    },
+    {
+      "id": "at-006",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.2.2",
+      "difficulty": "medium",
+      "question": "What is the purpose of a 'definition of done' in an agile team?",
+      "options": [
+        "To describe the long-term product vision",
+        "To provide a shared, agreed checklist of criteria that a user story or increment must satisfy to be considered complete",
+        "To list only the defects found in the current sprint",
+        "To replace the need for any acceptance criteria on user stories"
+      ],
+      "correctIndex": 1,
+      "explanation": "The definition of done is a shared understanding, agreed by the team, of the criteria (e.g. tested, documented, reviewed) that must be met for work to be considered complete."
+    },
+    {
+      "id": "at-007",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following BEST distinguishes 'acceptance criteria' from 'definition of done'?",
+      "options": [
+        "Acceptance criteria are specific conditions a single user story must satisfy; definition of done is a generic checklist applying to all stories",
+        "They are exactly the same concept and used interchangeably in all agile teams",
+        "Definition of done only applies to non-functional requirements",
+        "Acceptance criteria apply project-wide, while definition of done applies to a single story only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Acceptance criteria describe conditions specific to an individual story, while definition of done is a broader, team-wide checklist applicable across all stories."
+    },
+    {
+      "id": "at-008",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.1.2",
+      "difficulty": "medium",
+      "question": "Which practice BEST supports 'continuous testing' within an agile team?",
+      "options": [
+        "Delaying all testing until the very last day of the sprint",
+        "Integrating test activities throughout the sprint, alongside development, with automated regression suites run frequently",
+        "Testing only once per quarter, regardless of sprint cadence",
+        "Only performing manual exploratory testing after release"
+      ],
+      "correctIndex": 1,
+      "explanation": "Continuous testing means test activities happen throughout development (not just at the end), supported by frequent automated regression execution to give fast feedback."
+    },
+    {
+      "id": "at-009",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.2.1",
+      "difficulty": "medium",
+      "question": "The 'Agile Testing Quadrants' model classifies tests along which two dimensions?",
+      "options": [
+        "Manual vs. automated, and cost vs. benefit",
+        "Business-facing vs. technology-facing, and tests that support the team vs. tests that critique the product",
+        "Fast vs. slow, and cheap vs. expensive",
+        "Functional vs. security only"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Agile Testing Quadrants classify tests by whether they are business-facing or technology-facing, and whether they support the team (guide development) or critique the product (evaluate the finished product)."
+    },
+    {
+      "id": "at-010",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.2.1",
+      "difficulty": "hard",
+      "question": "Which quadrant of the Agile Testing Quadrants would automated unit tests and component tests typically fall into?",
+      "options": [
+        "Q1: Technology-facing tests that support the team",
+        "Q2: Business-facing tests that support the team",
+        "Q3: Business-facing tests that critique the product",
+        "Q4: Technology-facing tests that critique the product"
+      ],
+      "correctIndex": 0,
+      "explanation": "Unit and component tests are technology-facing (focused on internal code correctness) and support the team by giving developers fast feedback during development."
+    },
+    {
+      "id": "at-011",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.3.1",
+      "difficulty": "medium",
+      "question": "In agile teams, why might exploratory testing be particularly valuable near the end of a sprint?",
+      "options": [
+        "Because scripted tests are no longer allowed once a story is coded",
+        "Because it can uncover issues that scripted tests, written from the same assumptions as the story, might miss",
+        "Because exploratory testing always takes less time than any scripted test",
+        "Because it removes the need for a definition of done"
+      ],
+      "correctIndex": 1,
+      "explanation": "Exploratory testing brings a fresh, investigative perspective that can reveal issues scripted tests (derived from the same acceptance criteria) may not cover."
+    },
+    {
+      "id": "at-012",
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following BEST describes the tester's role on a cross-functional agile team?",
+      "options": [
+        "Testers work in isolation and only interact with the team at the very end of the project",
+        "Testers collaborate closely with developers and the product owner throughout the sprint, contributing to story refinement, test design, and quality feedback",
+        "Testers are solely responsible for writing all production code",
+        "Testers never participate in sprint planning or backlog refinement"
+      ],
+      "correctIndex": 1,
+      "explanation": "On agile teams, testers are embedded and collaborate continuously with developers and the product owner \u2014 from story refinement through test design and execution \u2014 rather than working in a separate, siloed phase."
+    },
+    {
+      "id": "at-013",
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following skills is especially valuable for a tester participating in backlog refinement sessions?",
+      "options": [
+        "The ability to ask clarifying questions that reveal missing or ambiguous acceptance criteria before development starts",
+        "The ability to write only automated performance test scripts",
+        "The ability to approve the sprint budget",
+        "The ability to assign story points without consulting the team"
+      ],
+      "correctIndex": 0,
+      "explanation": "A key value testers bring to refinement is asking probing questions about edge cases, ambiguity, and missing acceptance criteria, helping the team define clearer, more testable stories."
+    },
+    {
+      "id": "at-014",
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.2.1",
+      "difficulty": "easy",
+      "question": "Which soft skill is generally considered ESSENTIAL for testers working in agile teams, given the emphasis on collaboration?",
+      "options": [
+        "Strong written and verbal communication to collaborate effectively with developers, product owners, and other stakeholders",
+        "Avoiding all communication with developers to remain independent",
+        "Working exclusively at night to avoid interacting with the team",
+        "Refusing to give feedback during stand-ups"
+      ],
+      "correctIndex": 0,
+      "explanation": "Because agile testers work closely and continuously with the whole team, strong communication and collaboration skills are essential to their effectiveness."
+    },
+    {
+      "id": "at-015",
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.1.1",
+      "difficulty": "medium",
+      "question": "Which test technique is commonly used in agile teams to derive test cases and drive development directly from concrete examples of desired behavior?",
+      "options": [
+        "Behavior-driven development (BDD) using Given-When-Then scenarios",
+        "Waterfall-style big design up front",
+        "Static analysis of legacy code only",
+        "Manual code reviews with no test cases at all"
+      ],
+      "correctIndex": 0,
+      "explanation": "BDD uses concrete, example-based scenarios (often in Given-When-Then format) that are understandable by business and technical stakeholders alike, and that can drive both development and automated testing."
+    },
+    {
+      "id": "at-016",
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.1.2",
+      "difficulty": "medium",
+      "question": "Test-driven development (TDD) is characterized by:",
+      "options": [
+        "Writing a failing automated test first, then writing just enough production code to make it pass, then refactoring",
+        "Writing all production code first, then writing tests only after the release",
+        "Never writing any automated tests at the unit level",
+        "Testing being performed exclusively by a separate QA team, not developers"
+      ],
+      "correctIndex": 0,
+      "explanation": "TDD follows a red-green-refactor cycle: write a failing test, write minimal code to pass it, then refactor, with tests driving the design of the code."
+    },
+    {
+      "id": "at-017",
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a key reason agile teams invest heavily in test automation at the unit and API level?",
+      "options": [
+        "To provide fast, reliable feedback on regressions within short iterations, supporting frequent integration and delivery",
+        "Because manual testing is prohibited by the Agile Manifesto",
+        "Because unit and API tests are the only tests agile teams are allowed to write",
+        "To eliminate the need for any exploratory testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fast, reliable automated tests at the unit/API level give quick regression feedback that fits within the short iteration cycles typical of agile development."
+    },
+    {
+      "id": "at-018",
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.2",
+      "difficulty": "hard",
+      "question": "Which of the following is a common CHALLENGE when maintaining a large suite of agile automated regression tests over time?",
+      "options": [
+        "Automated tests never need to change once written",
+        "As the application evolves, tests can become brittle or outdated, requiring ongoing maintenance to stay valuable and avoid false failures",
+        "Automated tests always run instantly regardless of suite size",
+        "Test automation removes the pesticide paradox entirely"
+      ],
+      "correctIndex": 1,
+      "explanation": "As the application changes, automated tests can become outdated or brittle, generating false failures or missing new risk areas unless actively maintained and reviewed."
+    },
+    {
+      "id": "at-019",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.1.1",
+      "difficulty": "easy",
+      "question": "Which of the following is a value expressed in the Agile Manifesto regarding customer relationships?",
+      "options": [
+        "Customer collaboration over contract negotiation",
+        "Contract negotiation over customer collaboration",
+        "Comprehensive documentation over working software",
+        "Following a plan over responding to change"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Agile Manifesto values customer collaboration over strict contract negotiation, favoring ongoing engagement with customers throughout development."
+    },
+    {
+      "id": "at-020",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following BEST describes 'testing quadrant Q4' (technology-facing tests that critique the product)?",
+      "options": [
+        "Unit tests written by developers before any code exists",
+        "Non-functional tests such as performance, load, and security testing that evaluate the finished product's technical qualities",
+        "User acceptance tests performed by business stakeholders",
+        "Story-writing workshops with the product owner"
+      ],
+      "correctIndex": 1,
+      "explanation": "Quadrant 4 covers technology-facing tests that critique the product, such as performance, load, security, and other non-functional testing typically requiring specialized tools."
     }
   ]
 }

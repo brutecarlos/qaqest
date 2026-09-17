@@ -16,6 +16,291 @@
       ],
       "correctIndex": 1,
       "explanation": "Performance testing evaluates how a system performs (e.g., response time, throughput, resource utilization) under a given workload."
+    },
+    {
+      "id": "pt-002",
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.2",
+      "difficulty": "easy",
+      "question": "Which of the following is an example of a NON-functional performance risk that performance testing aims to reduce?",
+      "options": [
+        "The login form accepts an incorrect password",
+        "The checkout page takes 15 seconds to respond under moderate concurrent load, frustrating users",
+        "The application displays a typo in a confirmation message",
+        "The application uses the wrong currency symbol for a region"
+      ],
+      "correctIndex": 1,
+      "explanation": "Slow response times under load are a classic performance risk, distinct from functional correctness issues like incorrect validation, typos, or wrong formatting."
+    },
+    {
+      "id": "pt-003",
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following BEST distinguishes 'load testing' from 'stress testing'?",
+      "options": [
+        "Load testing evaluates behavior under expected/peak realistic load, while stress testing pushes the system beyond normal capacity to find its breaking point",
+        "Stress testing only checks the visual design of the UI",
+        "Load testing and stress testing are identical concepts with different names",
+        "Stress testing is only performed on the database layer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Load testing evaluates performance under expected or peak realistic load levels, while stress testing intentionally exceeds normal capacity to observe how and when the system fails."
+    },
+    {
+      "id": "pt-004",
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.2.2",
+      "difficulty": "medium",
+      "question": "'Endurance testing' (soak testing) is PRIMARILY designed to detect:",
+      "options": [
+        "Immediate crashes under a single short burst of extremely high load",
+        "Gradual degradation issues, such as memory leaks or resource exhaustion, that only appear after sustained operation over a long period",
+        "Cosmetic UI defects",
+        "Missing translations in the user interface"
+      ],
+      "correctIndex": 1,
+      "explanation": "Endurance/soak testing runs the system under a sustained, realistic load for an extended period to reveal gradual issues like memory leaks that short tests would miss."
+    },
+    {
+      "id": "pt-005",
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.2.3",
+      "difficulty": "medium",
+      "question": "'Spike testing' evaluates how a system behaves when:",
+      "options": [
+        "Load increases gradually and predictably over several days",
+        "Load suddenly and sharply increases for a short period, then returns to normal, e.g. a flash sale event",
+        "The system is completely idle with zero users",
+        "Only a single user interacts with the system"
+      ],
+      "correctIndex": 1,
+      "explanation": "Spike testing evaluates system behavior when load suddenly spikes for a short duration (e.g., a flash sale or viral event) and then subsides, checking for stability and recovery."
+    },
+    {
+      "id": "pt-006",
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a common product risk that justifies performance testing early in a project?",
+      "options": [
+        "The architecture may not scale to the expected number of concurrent users, leading to unacceptable response times at launch",
+        "The requirements document uses British English spelling",
+        "The team prefers a specific IDE for development",
+        "The color scheme does not match the corporate brand guide"
+      ],
+      "correctIndex": 0,
+      "explanation": "A key performance risk is that the chosen architecture might not scale adequately, which is why performance-related risks are often identified and tested for as early as feasible."
+    },
+    {
+      "id": "pt-007",
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following metrics measures the number of transactions successfully completed per unit of time?",
+      "options": [
+        "Response time",
+        "Throughput",
+        "Error rate",
+        "CPU utilization"
+      ],
+      "correctIndex": 1,
+      "explanation": "Throughput measures the rate at which the system processes transactions (e.g., requests per second), a key performance metric alongside response time and resource utilization."
+    },
+    {
+      "id": "pt-008",
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.2",
+      "difficulty": "medium",
+      "question": "Which of the following is generally a MORE informative metric than the average response time alone, when analyzing user experience under load?",
+      "options": [
+        "The 90th or 95th percentile response time, which shows how slow the experience is for a defined proportion of the worst-case requests",
+        "The total number of servers in the data center",
+        "The number of testers who executed the test",
+        "The color of the load testing tool's dashboard"
+      ],
+      "correctIndex": 0,
+      "explanation": "Percentile response times (e.g., 95th percentile) reveal the experience of the slower tail of requests, which averages can mask, giving a more realistic picture of worst-case user experience."
+    },
+    {
+      "id": "pt-009",
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.1",
+      "difficulty": "medium",
+      "question": "During performance test planning, why is it important to define realistic workload models (e.g., typical user behavior patterns)?",
+      "options": [
+        "So results reflect how the system will actually be used in production, rather than an unrealistic or arbitrary usage pattern",
+        "Because workload models have no impact on test validity",
+        "Because realistic workload models eliminate the need for any monitoring during the test",
+        "Because workload models are only relevant for functional testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Realistic workload models (reflecting actual or expected user behavior, transaction mixes, and think times) are essential so that performance test results are meaningful and representative of production conditions."
+    },
+    {
+      "id": "pt-010",
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following is a necessary precondition before running a valid performance test?",
+      "options": [
+        "A test environment that is representative of production in terms of scale, configuration, and data volume, as far as practical",
+        "A test environment that has no similarities to production whatsoever",
+        "Skipping any monitoring during test execution",
+        "Ensuring test data is completely empty with zero records"
+      ],
+      "correctIndex": 0,
+      "explanation": "For results to be meaningful, the performance test environment should be as representative of production as practical, including scale, configuration, and realistic data volumes."
+    },
+    {
+      "id": "pt-011",
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.2.1",
+      "difficulty": "medium",
+      "question": "During performance test execution, which activity is essential alongside simply generating load?",
+      "options": [
+        "Monitoring system resources (CPU, memory, network, database) to correlate load with observed performance behavior",
+        "Disabling all monitoring tools to avoid interfering with the test",
+        "Ensuring no logs are captured during the test run",
+        "Running the test without any defined success criteria"
+      ],
+      "correctIndex": 0,
+      "explanation": "Monitoring system resources during test execution is essential to correlate applied load with performance behavior and to help diagnose bottlenecks."
+    },
+    {
+      "id": "pt-012",
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.1",
+      "difficulty": "medium",
+      "question": "Which capability is a CORE feature expected of most performance/load testing tools?",
+      "options": [
+        "Simulating many concurrent virtual users executing defined transactions against the system under test",
+        "Automatically writing user documentation",
+        "Performing static code analysis on the source code",
+        "Managing the project's budget and invoicing"
+      ],
+      "correctIndex": 0,
+      "explanation": "A core capability of performance testing tools is generating and simulating load, typically by orchestrating many virtual users executing scripted transactions concurrently."
+    },
+    {
+      "id": "pt-013",
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following would typically be part of a performance monitoring tool's dashboard during a load test?",
+      "options": [
+        "Real-time CPU, memory, and response time metrics correlated with the applied virtual user load",
+        "A list of unrelated marketing campaign statistics",
+        "The personal calendar of the test manager",
+        "The source code diff of the latest commit"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance monitoring dashboards typically show real-time system metrics (CPU, memory, response time, etc.) correlated with the load being generated, to help identify bottlenecks."
+    },
+    {
+      "id": "pt-014",
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.1",
+      "difficulty": "medium",
+      "question": "After a load test, response times increase sharply once concurrent users exceed 500, while CPU usage remains low but database connections are maxed out. What does this MOST likely indicate?",
+      "options": [
+        "A CPU-bound bottleneck in the application server",
+        "A bottleneck related to database connection pool sizing or database contention, rather than raw CPU capacity",
+        "A purely cosmetic UI issue",
+        "A problem entirely unrelated to performance"
+      ],
+      "correctIndex": 1,
+      "explanation": "Low CPU usage combined with maxed-out database connections points to a bottleneck in the database connection pool or database layer, not raw CPU capacity."
+    },
+    {
+      "id": "pt-015",
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following should a well-structured performance test report typically include?",
+      "options": [
+        "The workload model used, key metrics observed (response time, throughput, errors), identified bottlenecks, and recommendations",
+        "Only a single pass/fail statement with no supporting data",
+        "The personal opinions of unrelated stakeholders with no data",
+        "A list of unrelated functional defects with no performance context"
+      ],
+      "correctIndex": 0,
+      "explanation": "A useful performance test report documents the workload model, observed metrics, any bottlenecks found, and actionable recommendations, giving stakeholders enough context to make decisions."
+    },
+    {
+      "id": "pt-016",
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.1.2",
+      "difficulty": "hard",
+      "question": "Which of the following is a project (not product) risk specific to performance testing efforts?",
+      "options": [
+        "The application's response time will exceed 5 seconds under peak load",
+        "The performance test environment may not be available in time, delaying the performance test schedule",
+        "The database indexing strategy may be suboptimal",
+        "The caching layer may not be configured correctly"
+      ],
+      "correctIndex": 1,
+      "explanation": "A project risk relates to the management of the testing effort itself, such as environment availability delaying the schedule, as opposed to a product risk about the system's actual performance behavior."
+    },
+    {
+      "id": "pt-017",
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.2.2",
+      "difficulty": "hard",
+      "question": "Why is it important to run a 'baseline' performance test on a stable, known-good version of the system before making architectural changes?",
+      "options": [
+        "So there is a reference point to compare against after future changes, to detect any performance regressions introduced",
+        "Because baseline tests are legally required for all software releases",
+        "Because a baseline test replaces the need for any further performance testing",
+        "Because baseline tests only measure functional correctness"
+      ],
+      "correctIndex": 0,
+      "explanation": "A baseline test establishes a reference point for key performance metrics on a known-good version, allowing later comparisons to detect regressions introduced by subsequent changes."
+    },
+    {
+      "id": "pt-018",
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.1",
+      "difficulty": "easy",
+      "question": "Which of the following stakeholders would typically be MOST interested in performance test results before a major product launch?",
+      "options": [
+        "Operations/infrastructure teams and business stakeholders concerned about capacity, cost, and user experience at scale",
+        "Only the graphic designer responsible for the logo",
+        "Only the legal team handling trademark registration",
+        "Only the office facilities manager"
+      ],
+      "correctIndex": 0,
+      "explanation": "Performance test results are of particular interest to operations/infrastructure teams (capacity planning) and business stakeholders concerned with user experience and cost at scale."
+    },
+    {
+      "id": "pt-019",
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.2.1",
+      "difficulty": "medium",
+      "question": "Which factor should be carefully considered when selecting a performance testing tool for a specific project?",
+      "options": [
+        "Whether the tool supports the protocols and technologies used by the system under test (e.g., HTTP, WebSocket, specific APIs)",
+        "Whether the tool's logo matches the company's branding",
+        "Whether the tool is the most expensive one on the market",
+        "Whether the tool was mentioned in an unrelated magazine article"
+      ],
+      "correctIndex": 0,
+      "explanation": "A key selection criterion for performance testing tools is protocol/technology compatibility with the system under test, ensuring the tool can actually generate and measure the relevant traffic."
+    },
+    {
+      "id": "pt-020",
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.1",
+      "difficulty": "hard",
+      "question": "A performance test shows response times are acceptable at 100 concurrent users but degrade sharply and non-linearly beyond 300 users. This pattern MOST likely indicates:",
+      "options": [
+        "The system has a scalability limit or bottleneck being reached around that concurrency level, requiring further investigation",
+        "The test data was entered in the wrong language",
+        "The test was run on the wrong day of the week",
+        "The results are meaningless and should be discarded"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sharp, non-linear degradation beyond a certain concurrency threshold typically indicates a scalability limit or bottleneck (e.g., thread pool, connection pool, or resource contention) being reached, warranting deeper investigation."
     }
   ]
 }
