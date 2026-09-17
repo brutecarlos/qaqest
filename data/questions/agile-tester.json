@@ -301,6 +301,306 @@
       ],
       "correctIndex": 1,
       "explanation": "Quadrant 4 covers technology-facing tests that critique the product, such as performance, load, security, and other non-functional testing typically requiring specialized tools."
+    },
+    {
+      "id": "at-021",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.1.1",
+      "difficulty": "easy",
+      "question": "Which statement BEST describes the 'whole-team approach' in agile projects?",
+      "options": [
+        "Only testers are responsible for quality throughout the project",
+        "Business representatives, developers, and testers share responsibility for quality with no defined roles",
+        "Testers work alongside developers and business representatives as part of one team, sharing responsibility for quality",
+        "Quality is solely the responsibility of a separate QA department outside the team"
+      ],
+      "correctIndex": 2,
+      "explanation": "The whole-team approach means testers, developers, and business representatives work together as a single team, collaboratively sharing responsibility for quality rather than assigning it to one isolated role."
+    },
+    {
+      "id": "at-022",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.1.2",
+      "difficulty": "easy",
+      "question": "In Scrum, what is the primary purpose of a sprint retrospective?",
+      "options": [
+        "To demonstrate completed features to stakeholders",
+        "To plan the technical design of upcoming features",
+        "To reflect on the team's process and identify improvements for future sprints",
+        "To estimate the size of items in the product backlog"
+      ],
+      "correctIndex": 2,
+      "explanation": "The sprint retrospective is a Scrum event where the team inspects how the last sprint went in terms of people, relationships, process, and tools, and identifies improvements to enact going forward."
+    },
+    {
+      "id": "at-023",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.2.2",
+      "difficulty": "medium",
+      "question": "Which of the following is a key principle behind the Agile Manifesto regarding working software?",
+      "options": [
+        "Comprehensive documentation is the primary measure of progress",
+        "Working software is delivered frequently, with a preference for shorter timescales",
+        "Working software should only be delivered at the end of the project",
+        "Working software is less important than following a detailed plan"
+      ],
+      "correctIndex": 1,
+      "explanation": "One of the twelve Agile Manifesto principles states that working software should be delivered frequently, from a couple of weeks to a couple of months, with a preference for shorter timescales."
+    },
+    {
+      "id": "at-024",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.3.1",
+      "difficulty": "medium",
+      "question": "In Kanban, what is the purpose of setting Work In Progress (WIP) limits?",
+      "options": [
+        "To restrict the number of team members allowed on a project",
+        "To limit the number of items in a given workflow stage at one time, helping identify bottlenecks and improve flow",
+        "To limit the number of story points a team can estimate per sprint",
+        "To cap the total number of defects that can be logged"
+      ],
+      "correctIndex": 1,
+      "explanation": "WIP limits restrict how many work items may be in a particular stage of the workflow simultaneously, which surfaces bottlenecks and encourages a smoother, more predictable flow of work."
+    },
+    {
+      "id": "at-025",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.3.2",
+      "difficulty": "medium",
+      "question": "Which lifecycle characteristic distinguishes Extreme Programming (XP) from many other agile approaches?",
+      "options": [
+        "It forbids any form of automated testing",
+        "It strongly emphasizes technical practices such as test-driven development, pair programming, and continuous integration",
+        "It mandates a fixed one-year release cycle",
+        "It requires a dedicated, separate testing phase after coding is complete"
+      ],
+      "correctIndex": 1,
+      "explanation": "XP places heavy emphasis on technical engineering practices, including test-driven development, pair programming, refactoring, and continuous integration, to support high-quality, frequently released software."
+    },
+    {
+      "id": "at-026",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.1.1",
+      "difficulty": "medium",
+      "question": "How does the role of testing typically differ between agile and traditional sequential development?",
+      "options": [
+        "In agile, testing is a discrete phase that occurs only after all coding is finished",
+        "In agile, testing activities are integrated throughout each iteration alongside development",
+        "In agile, testing is eliminated entirely in favor of manual acceptance by the customer",
+        "In agile, only regression testing is performed, and no new tests are created"
+      ],
+      "correctIndex": 1,
+      "explanation": "Agile approaches integrate testing continuously within each iteration rather than treating it as a separate, later phase, enabling fast feedback on quality throughout development."
+    },
+    {
+      "id": "at-027",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.1.2",
+      "difficulty": "easy",
+      "question": "What is a 'definition of done' used for in agile projects?",
+      "options": [
+        "It specifies the marketing plan for a released feature",
+        "It provides a shared checklist of criteria a work item must satisfy to be considered complete",
+        "It sets the hourly rate for contracted testers",
+        "It replaces the need for any acceptance criteria on user stories"
+      ],
+      "correctIndex": 1,
+      "explanation": "A definition of done is an agreed checklist of criteria (e.g., coded, tested, reviewed, documented) that a backlog item must meet before it can be considered complete."
+    },
+    {
+      "id": "at-028",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.2.1",
+      "difficulty": "medium",
+      "question": "Why is regression testing particularly important in agile iterations?",
+      "options": [
+        "Because agile projects never modify existing code",
+        "Because frequent changes and integrations across short iterations increase the risk of unintended side effects on existing functionality",
+        "Because regression testing replaces the need for unit testing",
+        "Because it is required only during the final release sprint"
+      ],
+      "correctIndex": 1,
+      "explanation": "Since agile iterations involve frequent code changes and integrations, regression testing is critical to catch unintended side effects on previously working functionality as early as possible."
+    },
+    {
+      "id": "at-029",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.2.2",
+      "difficulty": "medium",
+      "question": "In the agile testing quadrants model, where would automated unit tests that support the team (technology-facing) typically be placed?",
+      "options": [
+        "Quadrant 1: technology-facing tests that support the team",
+        "Quadrant 2: business-facing tests that support the team",
+        "Quadrant 3: business-facing tests that critique the product",
+        "Quadrant 4: technology-facing tests that critique the product"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quadrant 1 covers technology-facing tests that support the team, such as unit and component tests, usually automated and run frequently during development."
+    },
+    {
+      "id": "at-030",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.3.1",
+      "difficulty": "hard",
+      "question": "Which agile testing quadrant contains business-facing tests that critique the product, such as exploratory testing and usability testing?",
+      "options": [
+        "Quadrant 1",
+        "Quadrant 2",
+        "Quadrant 3",
+        "Quadrant 4"
+      ],
+      "correctIndex": 2,
+      "explanation": "Quadrant 3 contains business-facing tests that critique the product, including exploratory testing, usability testing, and user acceptance testing, typically performed manually."
+    },
+    {
+      "id": "at-031",
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.1.1",
+      "difficulty": "easy",
+      "question": "Which skill is especially valuable for a tester working within an agile team?",
+      "options": [
+        "The ability to work in isolation without communicating with developers",
+        "Strong collaboration and communication skills to work closely with developers and business representatives",
+        "Exclusive expertise in only one testing tool",
+        "Avoidance of any involvement in requirements discussions"
+      ],
+      "correctIndex": 1,
+      "explanation": "Agile testers need strong interpersonal and communication skills because they collaborate closely and continuously with developers, product owners, and other stakeholders."
+    },
+    {
+      "id": "at-032",
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.1.2",
+      "difficulty": "medium",
+      "question": "What does it mean for an agile tester to have a 'generalizing specialist' skill set?",
+      "options": [
+        "The tester only performs test execution and nothing else",
+        "The tester has deep expertise in testing while also being able to contribute to other project activities, such as requirements or automation",
+        "The tester avoids learning any new tools or techniques",
+        "The tester specializes exclusively in a single technology stack for their entire career"
+      ],
+      "correctIndex": 1,
+      "explanation": "A generalizing specialist has a core area of expertise (such as testing) but is also able to contribute in other areas, increasing flexibility for the whole team."
+    },
+    {
+      "id": "at-033",
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.2.1",
+      "difficulty": "medium",
+      "question": "What value does an agile tester typically add during backlog refinement sessions?",
+      "options": [
+        "Estimating the exact hours developers will spend coding",
+        "Asking clarifying questions and identifying missing acceptance criteria or edge cases in user stories",
+        "Deciding the final release date for the product",
+        "Writing the production code for the story being refined"
+      ],
+      "correctIndex": 1,
+      "explanation": "During backlog refinement, testers contribute a quality perspective by asking questions that uncover ambiguity, missing acceptance criteria, and edge cases before development begins."
+    },
+    {
+      "id": "at-034",
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.2.2",
+      "difficulty": "medium",
+      "question": "Why is it important for agile testers to understand the business domain of the product they are testing?",
+      "options": [
+        "So they can better identify realistic test scenarios and prioritize testing based on business risk and value",
+        "Domain knowledge is not relevant to agile testers",
+        "Because it eliminates the need for the product owner to write acceptance criteria",
+        "So they can write the technical architecture documentation instead of developers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Understanding the business domain helps testers design realistic scenarios and prioritize their efforts based on what matters most to end users and stakeholders."
+    },
+    {
+      "id": "at-035",
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.1.1",
+      "difficulty": "medium",
+      "question": "What is the main purpose of Acceptance Test-Driven Development (ATDD)?",
+      "options": [
+        "To write acceptance tests only after the feature has been fully coded and deployed",
+        "To collaboratively define acceptance criteria and tests, expressed in business terms, before development of a feature begins",
+        "To automate only performance and load testing scenarios",
+        "To replace unit testing entirely with manual acceptance testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "ATDD involves the whole team collaborating to define acceptance tests, written in business-readable terms, before coding starts, guiding development toward satisfying those criteria."
+    },
+    {
+      "id": "at-036",
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.1.2",
+      "difficulty": "medium",
+      "question": "In Behavior-Driven Development (BDD), what is a common format used to express scenarios?",
+      "options": [
+        "UML sequence diagrams",
+        "Given/When/Then structured natural-language statements",
+        "SQL queries against the test database",
+        "Binary decision tables only"
+      ],
+      "correctIndex": 1,
+      "explanation": "BDD commonly expresses scenarios using the Given/When/Then format, which describes preconditions, an action or event, and the expected outcome in a way that is readable by both technical and non-technical stakeholders."
+    },
+    {
+      "id": "at-037",
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.1",
+      "difficulty": "medium",
+      "question": "Which practice involves writing a failing automated test before writing the minimal production code to make it pass?",
+      "options": [
+        "Exploratory testing",
+        "Test-Driven Development (TDD)",
+        "Static analysis",
+        "Risk-based test prioritization"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test-Driven Development (TDD) follows a red-green-refactor cycle: write a failing test first, write minimal code to pass it, then refactor while keeping tests green."
+    },
+    {
+      "id": "at-038",
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.2",
+      "difficulty": "hard",
+      "question": "Which of the following BEST describes exploratory testing in the context of an agile iteration?",
+      "options": [
+        "A fully scripted process with no room for tester judgment",
+        "Simultaneous test design, execution, and learning, guided by the tester's experience and used to complement scripted tests",
+        "A technique used only for load and performance testing",
+        "A documentation review activity performed before coding starts"
+      ],
+      "correctIndex": 1,
+      "explanation": "Exploratory testing combines test design and execution simultaneously, relying on tester skill and creativity to investigate the product, and is often used to complement predefined scripted tests in agile iterations."
+    },
+    {
+      "id": "at-039",
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.3.1",
+      "difficulty": "medium",
+      "question": "What is the primary benefit of maintaining a continuous integration (CI) pipeline that runs automated tests on every commit?",
+      "options": [
+        "It removes the need for any manual testing on the project",
+        "It provides fast feedback on whether new changes have broken existing functionality",
+        "It guarantees that the software has zero defects before release",
+        "It replaces the need for a version control system"
+      ],
+      "correctIndex": 1,
+      "explanation": "Running automated tests on every commit via CI provides rapid feedback to the team about whether recent changes have introduced regressions, supporting agile's emphasis on fast feedback loops."
+    },
+    {
+      "id": "at-040",
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.3.2",
+      "difficulty": "medium",
+      "question": "When selecting tools to support agile testing, which factor should be given the HIGHEST priority?",
+      "options": [
+        "The tool's popularity on social media",
+        "Whether the tool fits the team's technical context, workflow, and integrates well with the existing toolchain",
+        "Choosing the most expensive tool available on the market",
+        "Selecting a tool used by a competitor, regardless of fit"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tool selection in agile testing should be driven by fit with the team's context, existing toolchain, and workflow needs, rather than cost, popularity, or imitation of competitors."
     }
   ]
 }

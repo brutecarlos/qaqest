@@ -301,6 +301,306 @@
       ],
       "correctIndex": 1,
       "explanation": "For high-risk, complex, poorly-covered code, a common technical mitigation is to increase structural coverage and apply focused static/dynamic analysis to reduce the residual risk."
+    },
+    {
+      "id": "al-tta-021",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a primary responsibility of the technical test analyst that differs from the test analyst role?",
+      "options": [
+        "Writing user-facing acceptance criteria for business stakeholders",
+        "Designing and executing tests based on internal code structure and technical risk, such as structure-based and non-functional testing",
+        "Managing the overall project budget",
+        "Facilitating sprint retrospectives"
+      ],
+      "correctIndex": 1,
+      "explanation": "The technical test analyst focuses on structure-based (white-box) testing, technical quality characteristics, and non-functional aspects, which are more code- and architecture-centric than the business-facing test analyst role."
+    },
+    {
+      "id": "al-tta-022",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.1.1",
+      "difficulty": "medium",
+      "question": "From a technical test analyst's perspective, which factor is MOST relevant when assessing the likelihood component of a technical risk?",
+      "options": [
+        "The marketing budget allocated to the feature",
+        "Complexity of the code, technical/organizational factors, and history of defects in similar components",
+        "The color scheme chosen for the user interface",
+        "The number of people who attended the kickoff meeting"
+      ],
+      "correctIndex": 1,
+      "explanation": "Technical test analysts assess likelihood using factors such as code complexity, technical and organizational factors (e.g., time pressure, team experience), and historical defect data in similar components."
+    },
+    {
+      "id": "al-tta-023",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.2.1",
+      "difficulty": "hard",
+      "question": "How should a technical test analyst adjust the test approach for a component identified as high technical risk?",
+      "options": [
+        "Skip testing it since high-risk components are too complex to test effectively",
+        "Apply more rigorous techniques (e.g., higher code coverage targets, more thorough structural testing) and test it earlier",
+        "Test it only after all low-risk components have been fully tested",
+        "Delegate testing entirely to the end users in production"
+      ],
+      "correctIndex": 1,
+      "explanation": "High technical risk components warrant more rigorous test techniques, greater coverage, and earlier test attention to reduce the residual risk before release."
+    },
+    {
+      "id": "al-tta-024",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.1",
+      "difficulty": "medium",
+      "question": "What does 'statement coverage' measure in structural testing?",
+      "options": [
+        "The percentage of decision outcomes (true/false) that have been exercised",
+        "The percentage of executable statements that have been exercised by a test suite",
+        "The percentage of user requirements that have been tested",
+        "The percentage of defects fixed versus reported"
+      ],
+      "correctIndex": 1,
+      "explanation": "Statement coverage measures the percentage of executable statements in the code that have been exercised by the test suite, at least once."
+    },
+    {
+      "id": "al-tta-025",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.2",
+      "difficulty": "medium",
+      "question": "Achieving 100% decision coverage guarantees which of the following?",
+      "options": [
+        "100% multiple condition coverage as well",
+        "100% statement coverage, since every branch (true and false outcome) is exercised, meaning every statement reachable through those branches is executed",
+        "Zero defects remain in the code",
+        "That all possible input combinations were tested"
+      ],
+      "correctIndex": 1,
+      "explanation": "100% decision coverage subsumes 100% statement coverage because every branch (true and false) of every decision is exercised, which necessarily executes every reachable statement, though it does not guarantee all condition combinations or zero defects."
+    },
+    {
+      "id": "al-tta-026",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.3.1",
+      "difficulty": "hard",
+      "question": "Which structural coverage criterion is specifically designed to test all combinations of individual condition outcomes while managing the exponential growth in test cases seen with multiple condition coverage?",
+      "options": [
+        "Statement coverage",
+        "Modified Condition/Decision Coverage (MC/DC)",
+        "Branch coverage",
+        "Loop coverage"
+      ],
+      "correctIndex": 1,
+      "explanation": "MC/DC requires that each condition in a decision be shown to independently affect the decision's outcome, achieving strong fault detection with fewer test cases than full multiple condition coverage."
+    },
+    {
+      "id": "al-tta-027",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.4.1",
+      "difficulty": "hard",
+      "question": "Which of the following BEST describes the purpose of data flow testing as a white-box technique?",
+      "options": [
+        "To verify user interface layout consistency across screens",
+        "To test paths of variables from their definition (where a value is assigned) to their use, revealing anomalies such as using an undefined variable",
+        "To measure the response time of database queries",
+        "To validate GUI accessibility compliance"
+      ],
+      "correctIndex": 1,
+      "explanation": "Data flow testing focuses on the sequences of variable definitions and uses, designing tests that follow paths from where a variable is defined to where it is used, helping reveal data flow anomalies."
+    },
+    {
+      "id": "al-tta-028",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.2.2",
+      "difficulty": "medium",
+      "question": "Why might a technical test analyst prefer branch coverage over pure statement coverage for critical modules?",
+      "options": [
+        "Branch coverage is always easier to achieve than statement coverage",
+        "Branch coverage additionally requires both true and false outcomes of decisions to be exercised, offering a stronger structural coverage guarantee",
+        "Branch coverage does not require the code to compile",
+        "Branch coverage is only applicable to user interface code"
+      ],
+      "correctIndex": 1,
+      "explanation": "Branch (decision) coverage requires that both the true and false outcomes of each decision be exercised, offering stronger fault detection potential than statement coverage alone, especially for critical logic."
+    },
+    {
+      "id": "al-tta-029",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.1.1",
+      "difficulty": "medium",
+      "question": "What is the main goal of static analysis as performed by a technical test analyst?",
+      "options": [
+        "To execute the code against a live production environment",
+        "To detect defects in code or design without executing the software, e.g., using tools to find unreachable code or unused variables",
+        "To measure end-user satisfaction with the product",
+        "To calculate the project's total budget variance"
+      ],
+      "correctIndex": 1,
+      "explanation": "Static analysis examines code or design artifacts without executing the software, using tools (or manual review) to detect issues such as unreachable code, unused variables, or violations of coding standards."
+    },
+    {
+      "id": "al-tta-030",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.2.1",
+      "difficulty": "hard",
+      "question": "Cyclomatic complexity is primarily used by a technical test analyst for which purpose?",
+      "options": [
+        "To estimate the minimum number of independent paths through a piece of code, informing the number of test cases needed for full decision coverage",
+        "To measure the aesthetic quality of the user interface",
+        "To calculate the exact number of defects present in a module",
+        "To determine the marketing priority of a feature"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cyclomatic complexity gives an estimate of the number of independent paths through a code module, which technical test analysts use to gauge testing effort and set targets such as the minimum number of test cases for decision coverage."
+    },
+    {
+      "id": "al-tta-031",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.1",
+      "difficulty": "medium",
+      "question": "Which activity is an example of dynamic analysis, as opposed to static analysis?",
+      "options": [
+        "Reviewing source code for adherence to a coding standard without running it",
+        "Detecting memory leaks or wild pointers by monitoring a program's behavior while it executes",
+        "Reviewing a requirements document for completeness",
+        "Reviewing a test plan document before approval"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dynamic analysis involves evaluating a program's behavior while it is executing, such as detecting memory leaks, wild pointers, or resource usage issues at runtime, unlike static analysis which does not execute the code."
+    },
+    {
+      "id": "al-tta-032",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.1",
+      "difficulty": "medium",
+      "question": "Which quality characteristic is the technical test analyst primarily responsible for when assessing how easily a system can be modified, extended, or corrected?",
+      "options": [
+        "Maintainability",
+        "Usability",
+        "Portability",
+        "Functional suitability"
+      ],
+      "correctIndex": 0,
+      "explanation": "Maintainability concerns the ease with which a system can be modified, corrected, or enhanced, and is a key quality focus of the technical test analyst role."
+    },
+    {
+      "id": "al-tta-033",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.2",
+      "difficulty": "medium",
+      "question": "Security testing performed by a technical test analyst primarily aims to verify which aspect of the system?",
+      "options": [
+        "That data and systems are protected against unauthorized access, use, disclosure, or destruction",
+        "That the marketing copy is grammatically correct",
+        "That the release notes are complete",
+        "That the user interface follows brand guidelines"
+      ],
+      "correctIndex": 0,
+      "explanation": "Security testing evaluates the confidentiality, integrity, authenticity, availability, and non-repudiation of data and systems, verifying protection against unauthorized access, use, disclosure, or destruction."
+    },
+    {
+      "id": "al-tta-034",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.2.1",
+      "difficulty": "hard",
+      "question": "Which of the following is a sub-characteristic of portability that a technical test analyst might test?",
+      "options": [
+        "Adaptability - how well the software can be adapted for different environments",
+        "Functional correctness - whether outputs are accurate",
+        "Time behavior - system response times under load",
+        "Learnability - how easy it is for new users to learn the system"
+      ],
+      "correctIndex": 0,
+      "explanation": "Adaptability, a sub-characteristic of portability, evaluates how effectively and efficiently a system can be adapted for different or evolving hardware, software, or environmental contexts."
+    },
+    {
+      "id": "al-tta-035",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.2.2",
+      "difficulty": "medium",
+      "question": "Reliability testing performed by a technical test analyst most directly evaluates which of the following?",
+      "options": [
+        "The system's ability to perform specified functions under stated conditions for a specified period of time without failure",
+        "The visual consistency of icons across screens",
+        "Whether the requirements document was reviewed by stakeholders",
+        "The cost of the testing tools used"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reliability testing assesses whether a system can perform its required functions under stated conditions for a specified period without failure, often including sub-characteristics like maturity, availability, and fault tolerance."
+    },
+    {
+      "id": "al-tta-036",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.2.1",
+      "difficulty": "medium",
+      "question": "Which task would a technical test analyst typically perform during test implementation for a structure-based test approach?",
+      "options": [
+        "Writing the marketing brochure for the release",
+        "Setting up code coverage measurement tools and instrumenting the code under test",
+        "Negotiating the contract terms with a third-party vendor",
+        "Approving the overall project scope"
+      ],
+      "correctIndex": 1,
+      "explanation": "Technical test analysts set up and configure tools (such as code coverage tools) needed to measure structural coverage during test implementation for structure-based testing approaches."
+    },
+    {
+      "id": "al-tta-037",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.5.1",
+      "difficulty": "hard",
+      "question": "Which testing technique specifically targets loops in code, checking cases such as zero iterations, one iteration, and the maximum number of iterations?",
+      "options": [
+        "Loop testing",
+        "Equivalence partitioning",
+        "Decision table testing",
+        "Pairwise testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Loop testing is a structure-based technique that specifically targets the validity of loop constructs, typically testing boundary conditions such as zero, one, and the maximum number of iterations."
+    },
+    {
+      "id": "al-tta-038",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.3.1",
+      "difficulty": "medium",
+      "question": "In a technical risk assessment, what does 'impact' typically represent?",
+      "options": [
+        "The probability that a defect will occur in a given component",
+        "The consequence or severity of harm that would result if the risk became an actual problem",
+        "The number of test cases required to cover the component",
+        "The number of developers assigned to the component"
+      ],
+      "correctIndex": 1,
+      "explanation": "Impact represents the consequence or severity that would result if the risk materialized into an actual problem, and is combined with likelihood to determine overall risk level."
+    },
+    {
+      "id": "al-tta-039",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.4.1",
+      "difficulty": "medium",
+      "question": "Which of these is a typical benefit of using static analysis tools early in development?",
+      "options": [
+        "It guarantees the software will pass all later dynamic tests",
+        "It can detect certain defects (e.g., unreachable code, undeclared variables) earlier and more cheaply than dynamic testing",
+        "It removes the need for any code reviews",
+        "It replaces the need for a version control system"
+      ],
+      "correctIndex": 1,
+      "explanation": "Static analysis tools can detect certain classes of defects earlier in the lifecycle, before code execution, which is typically cheaper to fix than defects found later via dynamic testing."
+    },
+    {
+      "id": "al-tta-040",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.3.1",
+      "difficulty": "hard",
+      "question": "Compatibility testing, as performed by a technical test analyst, primarily verifies which of the following?",
+      "options": [
+        "That the system can coexist and share resources with other systems without negative impact, and can interoperate as needed",
+        "That the user manual is translated into multiple languages",
+        "That developers followed the agreed sprint schedule",
+        "That the marketing team approved the release notes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Compatibility testing evaluates whether a system can coexist with other systems sharing a common environment and resources, and interoperate correctly where required, without adversely affecting each other."
     }
   ]
 }

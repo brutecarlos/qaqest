@@ -301,6 +301,306 @@
       ],
       "correctIndex": 0,
       "explanation": "A sharp, non-linear degradation beyond a certain concurrency threshold typically indicates a scalability limit or bottleneck (e.g., thread pool, connection pool, or resource contention) being reached, warranting deeper investigation."
+    },
+    {
+      "id": "pt-021",
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.2",
+      "difficulty": "easy",
+      "question": "Which of the following is an example of a non-functional requirement relevant to performance testing?",
+      "options": [
+        "The system shall allow users to reset their password",
+        "The system shall respond to a search query within 2 seconds under a load of 500 concurrent users",
+        "The system shall display a confirmation message after checkout",
+        "The system shall support importing CSV files"
+      ],
+      "correctIndex": 1,
+      "explanation": "Performance requirements are non-functional, typically specifying measurable targets such as response time under a defined load, rather than describing what functionality the system provides."
+    },
+    {
+      "id": "pt-022",
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.2.1",
+      "difficulty": "medium",
+      "question": "What distinguishes 'response time' from 'throughput' as performance metrics?",
+      "options": [
+        "Response time measures the time taken to complete a single request; throughput measures the number of transactions processed per unit of time",
+        "Response time and throughput are two names for the exact same metric",
+        "Throughput measures the time taken to complete a single request; response time measures the number of transactions processed",
+        "Neither metric is relevant to performance testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Response time measures how long an individual request takes to complete, while throughput measures the rate at which the system processes transactions (e.g., transactions per second) \u2014 two related but distinct performance metrics."
+    },
+    {
+      "id": "pt-023",
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.3.1",
+      "difficulty": "medium",
+      "question": "Why is it important to define realistic workload models before executing a performance test?",
+      "options": [
+        "Unrealistic workloads always produce more accurate results",
+        "Realistic workload models ensure the test reflects actual expected usage patterns, producing meaningful and actionable results",
+        "Workload modeling has no impact on the validity of performance test results",
+        "Workload models are only needed for functional testing, not performance testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Performance test results are only meaningful if the workload model realistically reflects expected production usage patterns (e.g., user counts, transaction mix, think times); unrealistic models can produce misleading conclusions."
+    },
+    {
+      "id": "pt-024",
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a typical product risk that performance testing aims to mitigate?",
+      "options": [
+        "The user interface uses an inconsistent font across screens",
+        "The system may become slow or unresponsive under peak load, leading to poor user experience or lost transactions",
+        "The requirements document contains spelling errors",
+        "The test plan was not reviewed by the correct stakeholder"
+      ],
+      "correctIndex": 1,
+      "explanation": "A key product risk addressed by performance testing is that the system may become slow, unresponsive, or unstable under peak or sustained load, directly impacting user experience and business outcomes."
+    },
+    {
+      "id": "pt-025",
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.1",
+      "difficulty": "medium",
+      "question": "What is the primary purpose of load testing?",
+      "options": [
+        "To determine the system's behavior under an anticipated, realistic range of user load conditions",
+        "To test the system's user interface for accessibility compliance",
+        "To review the source code for security vulnerabilities",
+        "To validate the correctness of business logic through functional test cases"
+      ],
+      "correctIndex": 0,
+      "explanation": "Load testing evaluates system behavior under an anticipated, realistic range of load conditions, verifying it meets performance objectives at expected usage levels."
+    },
+    {
+      "id": "pt-026",
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.2",
+      "difficulty": "medium",
+      "question": "What is the primary purpose of stress testing?",
+      "options": [
+        "To evaluate system behavior beyond normal or peak load conditions, often up to and beyond the point of failure, to understand its breaking point and recovery",
+        "To test that all user stories have acceptance criteria",
+        "To verify the accuracy of unit-level calculations",
+        "To measure the visual appeal of the application"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stress testing pushes the system beyond normal or peak load, often to the point of failure, to understand how and when it breaks down and how gracefully (or not) it recovers."
+    },
+    {
+      "id": "pt-027",
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.3",
+      "difficulty": "medium",
+      "question": "What does 'soak testing' (or endurance testing) primarily evaluate?",
+      "options": [
+        "System behavior and stability under sustained load over an extended period of time, looking for issues like memory leaks or resource exhaustion",
+        "The response time for a single isolated transaction",
+        "The correctness of input validation on a form",
+        "The visual layout of the application on mobile devices"
+      ],
+      "correctIndex": 0,
+      "explanation": "Soak (endurance) testing evaluates system stability and behavior under sustained load over an extended duration, aiming to detect issues that only manifest over time, such as memory leaks or gradual resource exhaustion."
+    },
+    {
+      "id": "pt-028",
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.2.4",
+      "difficulty": "medium",
+      "question": "What is the primary purpose of spike testing?",
+      "options": [
+        "To evaluate how the system behaves when subjected to a sudden, significant increase (or decrease) in load over a short period",
+        "To test the system's behavior during a gradual, planned increase in load over many months",
+        "To validate database schema design",
+        "To review the accessibility of error messages"
+      ],
+      "correctIndex": 0,
+      "explanation": "Spike testing evaluates system behavior under sudden, sharp increases (or decreases) in load over a short time period, such as a flash sale or breaking news event driving a rapid traffic surge."
+    },
+    {
+      "id": "pt-029",
+      "chapter": "2. Performance Risks, Metrics, and Test Types",
+      "loRef": "PT-2.3.1",
+      "difficulty": "hard",
+      "question": "Which metric would MOST directly indicate a memory leak during a soak/endurance test?",
+      "options": [
+        "A gradually increasing memory consumption trend over time that does not return to baseline between operations",
+        "A constant, stable response time throughout the test",
+        "A one-time spike in CPU usage during test startup",
+        "A decreasing number of active user sessions at test start"
+      ],
+      "correctIndex": 0,
+      "explanation": "A gradually increasing memory consumption trend that fails to return to baseline over the course of a sustained soak test is a classic indicator of a memory leak."
+    },
+    {
+      "id": "pt-030",
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.1",
+      "difficulty": "medium",
+      "question": "Which task is typically performed FIRST when planning a performance test?",
+      "options": [
+        "Executing the full-scale load test against production",
+        "Defining performance test objectives and acceptance criteria based on stakeholder requirements",
+        "Analyzing the final test report",
+        "Decommissioning the test environment"
+      ],
+      "correctIndex": 1,
+      "explanation": "Performance test planning typically begins with defining clear objectives and acceptance criteria based on stakeholder and business requirements, which then guide workload modeling, environment setup, and execution."
+    },
+    {
+      "id": "pt-031",
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.1.2",
+      "difficulty": "medium",
+      "question": "Why is it important to establish a performance baseline early in the testing process?",
+      "options": [
+        "A baseline provides a reference point against which future test results and system changes can be compared to detect performance regressions",
+        "Baselines are not useful once the system has been optimized",
+        "A baseline replaces the need for any further performance testing",
+        "A baseline is only relevant for functional test cases"
+      ],
+      "correctIndex": 0,
+      "explanation": "A performance baseline provides a reference point for comparison, enabling teams to detect performance regressions or improvements as the system changes over time."
+    },
+    {
+      "id": "pt-032",
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.2.1",
+      "difficulty": "medium",
+      "question": "What is a key task during performance test execution regarding monitoring?",
+      "options": [
+        "Avoid monitoring system resources so as not to affect performance",
+        "Monitor system resources (CPU, memory, network, database) alongside application-level metrics to correlate performance issues with root causes",
+        "Only monitor the tester's own workstation performance",
+        "Disable all logging during test execution to save disk space"
+      ],
+      "correctIndex": 1,
+      "explanation": "Monitoring system resources (CPU, memory, network, disk I/O, database) alongside application-level metrics during test execution helps correlate observed performance issues with their underlying root causes."
+    },
+    {
+      "id": "pt-033",
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.3.1",
+      "difficulty": "hard",
+      "question": "During test execution, response times degrade significantly after 30 minutes under sustained load, then stabilize at a higher plateau. What should the performance tester investigate first?",
+      "options": [
+        "Whether a resource (e.g., a connection pool or cache) reached a threshold or saturation point, causing a shift in system behavior",
+        "Whether the test data used spelling matched the production database's schema exactly",
+        "Whether the marketing team approved the release notes",
+        "Whether the UI color scheme changed during the test"
+      ],
+      "correctIndex": 0,
+      "explanation": "A response time shift that stabilizes at a new, degraded plateau often indicates a resource (such as a connection pool, cache, or thread pool) reaching a saturation point or threshold, which is a natural first investigation area."
+    },
+    {
+      "id": "pt-034",
+      "chapter": "3. Performance Testing Tasks",
+      "loRef": "PT-3.4.1",
+      "difficulty": "medium",
+      "question": "What is an important consideration when preparing test data for a performance test?",
+      "options": [
+        "Test data should be minimal in volume, regardless of production data characteristics",
+        "Test data should represent realistic data volumes and variety similar to production, to produce valid and meaningful results",
+        "Test data preparation is unnecessary since performance tests do not use data",
+        "Test data should always be manually typed in during test execution"
+      ],
+      "correctIndex": 1,
+      "explanation": "Realistic performance test data \u2014 reflecting production-like volumes, distributions, and variety \u2014 is essential to producing valid, meaningful, and representative test results."
+    },
+    {
+      "id": "pt-035",
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a common feature of performance testing tools used to simulate multiple concurrent users?",
+      "options": [
+        "Virtual user (load generation) capability that simulates many simultaneous users interacting with the system",
+        "Automatic generation of the entire product's source code",
+        "Automatic translation of the user interface into multiple languages",
+        "Automatic creation of the project's marketing plan"
+      ],
+      "correctIndex": 0,
+      "explanation": "A core feature of performance testing tools is virtual user (load generation) capability, which simulates many simultaneous users or transactions against the system under test without requiring that many physical users."
+    },
+    {
+      "id": "pt-036",
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.1.2",
+      "difficulty": "medium",
+      "question": "Why might a performance tester choose a protocol-level (e.g., HTTP) load testing tool over a GUI-driven one for large-scale load tests?",
+      "options": [
+        "Protocol-level tools typically require far fewer system resources per virtual user, enabling larger-scale simulations than GUI-driven approaches",
+        "Protocol-level tools cannot generate any meaningful load",
+        "GUI-driven tools always scale better for large numbers of virtual users",
+        "Protocol-level tools are incapable of simulating concurrent users"
+      ],
+      "correctIndex": 0,
+      "explanation": "Protocol-level tools interact directly with the underlying communication protocol (e.g., HTTP) rather than driving a full browser/GUI per virtual user, which typically requires far fewer resources and allows much larger-scale load simulations."
+    },
+    {
+      "id": "pt-037",
+      "chapter": "4. Performance Testing Tools",
+      "loRef": "PT-4.2.1",
+      "difficulty": "medium",
+      "question": "Which type of tool would a performance tester use to correlate application response times with underlying server resource usage during a test?",
+      "options": [
+        "A requirements management tool",
+        "A system/infrastructure monitoring tool (e.g., tracking CPU, memory, disk I/O, and network in real time)",
+        "A defect tracking tool",
+        "A word processor"
+      ],
+      "correctIndex": 1,
+      "explanation": "System/infrastructure monitoring tools capture real-time resource usage (CPU, memory, disk I/O, network), which testers correlate with application-level response times to diagnose performance bottlenecks."
+    },
+    {
+      "id": "pt-038",
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.1",
+      "difficulty": "medium",
+      "question": "When analyzing performance test results, what does a sudden sharp increase in response time at a specific concurrent user count typically suggest?",
+      "options": [
+        "The system has reached a bottleneck or saturation point at that load level",
+        "The test data was entered in the wrong order",
+        "The test was executed on the wrong day of the week",
+        "The tester made a typographical error in the test script"
+      ],
+      "correctIndex": 0,
+      "explanation": "A sharp increase in response time at a specific load level typically indicates the system has reached a bottleneck or resource saturation point, which is a key finding to report and investigate further."
+    },
+    {
+      "id": "pt-039",
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.1.2",
+      "difficulty": "medium",
+      "question": "Why should percentile response times (e.g., 90th or 95th percentile) be reported in addition to the average response time?",
+      "options": [
+        "Percentiles have no additional analytical value beyond the average",
+        "Percentiles reveal the experience of slower-performing requests that an average alone can mask, providing a more complete picture of user experience",
+        "Percentiles are only relevant for functional testing",
+        "Reporting percentiles is required only for stress tests, never for load tests"
+      ],
+      "correctIndex": 1,
+      "explanation": "Averages can mask the experience of a significant portion of users who experience slower response times; percentile metrics (e.g., 95th percentile) reveal this tail-end behavior, giving a more complete picture of real user experience."
+    },
+    {
+      "id": "pt-040",
+      "chapter": "5. Analyzing and Reporting Results",
+      "loRef": "PT-5.2.1",
+      "difficulty": "hard",
+      "question": "A performance test report shows that response times meet targets, but CPU utilization on the application server is consistently above 90% throughout the test. What should the tester recommend?",
+      "options": [
+        "No action is needed since response time targets were met",
+        "Flag the high CPU utilization as a risk, since there may be little headroom for handling higher loads or unexpected spikes, and recommend further investigation or capacity planning",
+        "Immediately conclude the application has failed the performance test regardless of response times",
+        "Recommend removing all monitoring since it is not useful information"
+      ],
+      "correctIndex": 1,
+      "explanation": "Even if response time targets are currently met, consistently high resource utilization (like CPU above 90%) indicates little headroom for growth or unexpected spikes, and should be flagged as a risk warranting further investigation or capacity planning, rather than ignored."
     }
   ]
 }
