@@ -322,15 +322,15 @@
       "chapter": "1. Agile Software Development",
       "loRef": "FL-AT-1.1.2",
       "difficulty": "easy",
-      "question": "In Scrum, what is the primary purpose of a sprint retrospective?",
+      "question": "Which of the following is a typical output of a Scrum sprint planning meeting?",
       "options": [
-        "To demonstrate completed features to stakeholders",
-        "To plan the technical design of upcoming features",
-        "To reflect on the team's process and identify improvements for future sprints",
-        "To estimate the size of items in the product backlog"
+        "A finalized annual product roadmap for the next 12 months",
+        "A sprint goal and a sprint backlog of items the team commits to delivering in the sprint",
+        "A signed contract with an external vendor",
+        "A performance review for each team member"
       ],
-      "correctIndex": 2,
-      "explanation": "The sprint retrospective is a Scrum event where the team inspects how the last sprint went in terms of people, relationships, process, and tools, and identifies improvements to enact going forward."
+      "correctIndex": 1,
+      "explanation": "Sprint planning produces a sprint goal describing the objective of the sprint, along with a sprint backlog listing the specific items the team plans to deliver during that sprint."
     },
     {
       "id": "at-023",
@@ -601,6 +601,1656 @@
       ],
       "correctIndex": 1,
       "explanation": "Tool selection in agile testing should be driven by fit with the team's context, existing toolchain, and workflow needs, rather than cost, popularity, or imitation of competitors."
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.1.3",
+      "difficulty": "hard",
+      "question": "A new legal rule is announced halfway through a sprint and affects the feature currently being built. What is the MOST agile response?",
+      "options": [
+        "Continue as originally planned and discuss the law after the sprint",
+        "Collaborate immediately with the product owner and team to understand impact and adapt the sprint plan as needed",
+        "Freeze all development until a new annual project plan is approved",
+        "Ask testers to document the risk but avoid changing scope"
+      ],
+      "correctIndex": 1,
+      "explanation": "Agile teams respond to significant change quickly through collaboration. They adapt plans based on new information instead of blindly following an outdated plan.",
+      "id": "at-041"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.1.3",
+      "difficulty": "easy",
+      "question": "What is a strong example of testing starting early on an agile story?",
+      "options": [
+        "Writing acceptance examples while the story is still being discussed",
+        "Waiting until coding is finished before thinking about tests",
+        "Running a full regression suite only after deployment",
+        "Logging defects from last sprint without reviewing the new story"
+      ],
+      "correctIndex": 0,
+      "explanation": "Agile testing starts as soon as a story is being shaped. Early examples improve understanding before code exists.",
+      "id": "at-042"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.1.3",
+      "difficulty": "easy",
+      "question": "What is a useful tester contribution during sprint planning?",
+      "options": [
+        "Ensuring testing tasks, environments, and dependencies are considered when selecting stories",
+        "Approving payroll for the sprint team",
+        "Assigning each story to a single specialist before discussion",
+        "Avoiding all estimates so planning stays short"
+      ],
+      "correctIndex": 0,
+      "explanation": "Testers help the team make realistic commitments by surfacing quality work and dependencies early. That improves planning accuracy.",
+      "id": "at-043"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.1.3",
+      "difficulty": "medium",
+      "question": "What is the most useful output of an ATDD-style conversation before coding starts?",
+      "options": [
+        "A set of shared examples that clarify behavior and can later become executable checks",
+        "A complete defect log for the sprint",
+        "A promise that no further clarification will be needed",
+        "A technical architecture diagram approved by management"
+      ],
+      "correctIndex": 0,
+      "explanation": "ATDD aims to build shared understanding through concrete examples. Those examples often become acceptance tests later.",
+      "id": "at-044"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.1.4",
+      "difficulty": "easy",
+      "question": "Why do agile teams prefer delivering small vertical slices of functionality instead of large partially finished components?",
+      "options": [
+        "Small slices reduce the need for any testing",
+        "Small slices let the team get usable feedback sooner on working software",
+        "Large components are banned by agile methods",
+        "Vertical slices remove the need for prioritization"
+      ],
+      "correctIndex": 1,
+      "explanation": "A small vertical slice delivers end-to-end value and can be evaluated by users quickly. That earlier feedback helps the team learn and adjust.",
+      "id": "at-045"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.1.4",
+      "difficulty": "medium",
+      "question": "During backlog refinement, a tester asks, 'What should happen if the discount code is expired?' What is the primary value of that question?",
+      "options": [
+        "It delays planning with unnecessary detail",
+        "It helps reveal missing acceptance criteria and edge cases before implementation starts",
+        "It proves the story should be moved to the next release",
+        "It replaces the need for customer input"
+      ],
+      "correctIndex": 1,
+      "explanation": "Questions about edge cases expose hidden behavior early. That reduces rework and makes the story more testable.",
+      "id": "at-046"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.1.4",
+      "difficulty": "easy",
+      "question": "In a daily stand-up, which update from a tester is MOST valuable?",
+      "options": [
+        "A detailed review of every test case executed yesterday",
+        "A short update on current progress, quality risks, and blockers affecting the sprint goal",
+        "A private complaint sent only to the Scrum Master after the meeting",
+        "A list of defects from previous releases unrelated to current work"
+      ],
+      "correctIndex": 1,
+      "explanation": "Stand-ups work best when updates are brief and relevant to team coordination. Risks and blockers help the whole team adapt.",
+      "id": "at-047"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.1.4",
+      "difficulty": "easy",
+      "question": "In a BDD scenario written as Given/When/Then, what does the 'Then' part describe?",
+      "options": [
+        "The expected outcome after the action occurs",
+        "The deployment steps for the environment",
+        "The people assigned to automate the test",
+        "The historical reason the feature was requested"
+      ],
+      "correctIndex": 0,
+      "explanation": "In Given/When/Then, the Then section states the expected result. It captures what should be observed after the behavior is triggered.",
+      "id": "at-048"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.2.1",
+      "difficulty": "easy",
+      "question": "What is the main purpose of a daily stand-up in an agile team?",
+      "options": [
+        "To approve timesheets for the previous day",
+        "To synchronize the team and plan the next day's work toward the current goal",
+        "To conduct detailed defect triage for all open issues",
+        "To replace backlog refinement meetings"
+      ],
+      "correctIndex": 1,
+      "explanation": "The daily stand-up is a short coordination event. Its purpose is to improve shared awareness and help the team organize its next steps.",
+      "id": "at-049"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.1.5",
+      "difficulty": "easy",
+      "question": "Which activity is the BEST example of a business-facing test that supports the team?",
+      "options": [
+        "Discussing concrete acceptance examples before coding begins",
+        "Stress-testing the production database cluster",
+        "Reviewing CPU utilization after release",
+        "Running a vulnerability scanner against the deployed system"
+      ],
+      "correctIndex": 0,
+      "explanation": "Business-facing tests that support the team help clarify desired behavior before or during development. Acceptance examples are a typical case.",
+      "id": "at-050"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.1.5",
+      "difficulty": "easy",
+      "question": "A product owner writes acceptance criteria that say only 'works as expected.' How can a tester add the MOST value?",
+      "options": [
+        "Accept the wording because details can wait for execution",
+        "Help turn the vague statement into specific examples and observable outcomes",
+        "Replace the criteria with a defect report template",
+        "Estimate the story in hours without further discussion"
+      ],
+      "correctIndex": 1,
+      "explanation": "Testers often add value by making expectations concrete and verifiable. Specific examples reduce misunderstanding later.",
+      "id": "at-051"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.1.5",
+      "difficulty": "easy",
+      "question": "In the TDD cycle, why is the refactor step important after the test passes?",
+      "options": [
+        "It allows the team to improve code design while keeping behavior protected by tests",
+        "It is when acceptance criteria are first written",
+        "It replaces the need for code review",
+        "It should be skipped to preserve velocity"
+      ],
+      "correctIndex": 0,
+      "explanation": "Refactoring improves internal structure without changing behavior. Passing tests give confidence that design improvements did not break intent.",
+      "id": "at-052"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.2.2",
+      "difficulty": "medium",
+      "question": "How does a Definition of Ready help an agile team before work starts on a backlog item?",
+      "options": [
+        "It guarantees the item will be defect-free when delivered",
+        "It provides a shared check that the item is understood well enough to begin without avoidable confusion",
+        "It replaces sprint planning entirely",
+        "It is used only by testers to reject stories"
+      ],
+      "correctIndex": 1,
+      "explanation": "A Definition of Ready helps the team notice when a story is too unclear or incomplete to start efficiently. It reduces churn caused by avoidable ambiguity.",
+      "id": "at-053"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.1.6",
+      "difficulty": "hard",
+      "question": "Within a sprint, what is usually the MOST effective way to get fast confidence on a new story?",
+      "options": [
+        "Rely mainly on a single end-to-end UI test because it looks realistic",
+        "Use a mix of fast lower-level tests and a smaller number of higher-level checks",
+        "Delay all testing until several stories can be tested together",
+        "Skip lower-level testing if exploratory testing is planned"
+      ],
+      "correctIndex": 1,
+      "explanation": "A balanced mix gives fast feedback and broader coverage. Over-relying on a few slow UI tests usually reduces speed and diagnosis quality.",
+      "id": "at-054"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.1.6",
+      "difficulty": "medium",
+      "question": "Why might an agile tester collaborate with operations or platform engineers before release?",
+      "options": [
+        "To define logging, monitoring, or deployment checks that support quality in production-like environments",
+        "To transfer all testing responsibility away from the team",
+        "To avoid discussing non-functional risks during the sprint",
+        "To remove the need for automated tests"
+      ],
+      "correctIndex": 0,
+      "explanation": "Quality feedback does not stop at the test environment. Collaboration with operations can improve observability and deployment confidence.",
+      "id": "at-055"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.1.6",
+      "difficulty": "easy",
+      "question": "What is the main goal of running a CI pipeline on every commit?",
+      "options": [
+        "To delay feedback until the entire sprint is complete",
+        "To provide rapid evidence when a change breaks build or test expectations",
+        "To replace version control branching",
+        "To remove the need for local testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Frequent CI runs shorten the time between introducing a change and learning its effect. Fast feedback is central to agile delivery.",
+      "id": "at-056"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.2.3",
+      "difficulty": "hard",
+      "question": "During sprint planning, the team can either add one more customer-facing story or spend that effort paying down test automation debt that recently slowed delivery. Which choice BEST reflects agile thinking?",
+      "options": [
+        "Always choose the extra story because visible scope matters more than technical work",
+        "Ignore automation debt until the release is complete",
+        "Consider the effect on sustainable delivery and product quality before deciding with the product owner",
+        "Let only the Scrum Master decide because technical debt is not a backlog concern"
+      ],
+      "correctIndex": 2,
+      "explanation": "Agile teams balance immediate feature value with technical work that preserves quality and flow. Technical debt is a product concern because it affects future speed and risk.",
+      "id": "at-057"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.2.3",
+      "difficulty": "hard",
+      "question": "The sprint is almost over and only half of the regression suite can be run. How should testing be prioritized?",
+      "options": [
+        "Execute tests randomly to keep the process fair",
+        "Focus on areas with recent changes, important business flows, and known fragility",
+        "Run only tests owned by the tester who found the most defects last sprint",
+        "Skip regression entirely because agile teams accept constant change"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk-based selection is appropriate when time is limited. Recent changes and critical flows are more likely to expose important regressions.",
+      "id": "at-058"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.1.7",
+      "difficulty": "medium",
+      "question": "How does business domain knowledge help an agile tester most directly?",
+      "options": [
+        "It lets the tester replace the product owner on roadmap decisions",
+        "It helps identify realistic scenarios, risks, and priorities that matter to users",
+        "It removes the need for technical skills",
+        "It guarantees that all defects can be found manually"
+      ],
+      "correctIndex": 1,
+      "explanation": "Knowing the domain helps testers focus on behavior that matters. It improves both scenario design and prioritization.",
+      "id": "at-059"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.3",
+      "difficulty": "hard",
+      "question": "When is service virtualization especially useful in agile testing?",
+      "options": [
+        "When the team depends on an external system that is unavailable, costly, or hard to control during testing",
+        "When all real integrations are fast and always accessible",
+        "When the goal is to eliminate contract checking entirely",
+        "When developers want to avoid learning the real API"
+      ],
+      "correctIndex": 0,
+      "explanation": "Virtual services can remove blockers caused by unavailable or unstable dependencies. They allow earlier and more repeatable testing.",
+      "id": "at-060"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.2.4",
+      "difficulty": "easy",
+      "question": "What does a sustainable pace in agile development primarily aim to achieve?",
+      "options": [
+        "Keeping the team working overtime near the end of every iteration",
+        "Maintaining a rhythm that can continue over time without burning out the team",
+        "Reducing collaboration so people can focus only on their specialty",
+        "Ensuring every story is estimated in hours"
+      ],
+      "correctIndex": 1,
+      "explanation": "A sustainable pace helps the team remain effective over the long term. Constant overtime tends to reduce quality and predictability.",
+      "id": "at-061"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.2.4",
+      "difficulty": "easy",
+      "question": "After fixing a defect in tax calculation, which regression testing choice is MOST sensible?",
+      "options": [
+        "Retest only the exact screen where the defect appeared and nothing related",
+        "Retest the fix and nearby calculation paths that could be affected by the change",
+        "Avoid retesting because the developer already checked it",
+        "Wait until the next major release to run any regression"
+      ],
+      "correctIndex": 1,
+      "explanation": "A defect fix can affect related logic beyond the exact symptom. Agile regression testing should include the changed area and likely side effects.",
+      "id": "at-062"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.1.8",
+      "difficulty": "hard",
+      "question": "A developer says a story is finished, but a key acceptance example still fails. What is the MOST effective tester response?",
+      "options": [
+        "Quietly mark the story done to avoid conflict",
+        "Present the failing evidence and discuss the gap against the agreed completion criteria with the team",
+        "Reassign the defect to the product owner without explanation",
+        "Wait until after release to mention the issue"
+      ],
+      "correctIndex": 1,
+      "explanation": "Agile testers communicate quality concerns with evidence tied to shared agreements. That keeps the conversation objective and collaborative.",
+      "id": "at-063"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.4",
+      "difficulty": "hard",
+      "question": "What is the main purpose of contract tests between collaborating services?",
+      "options": [
+        "To measure page-load speed from the browser",
+        "To verify that each side still honors the agreed interface and data expectations",
+        "To replace all unit tests in both services",
+        "To document deployment runbooks"
+      ],
+      "correctIndex": 1,
+      "explanation": "Contract tests focus on integration expectations between systems. They give earlier warning when interface assumptions drift.",
+      "id": "at-064"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.3.1",
+      "difficulty": "hard",
+      "question": "What is a key benefit of using story mapping when planning a product?",
+      "options": [
+        "It automatically assigns developers to tasks",
+        "It helps the team visualize the user journey and identify thin releases and missing slices",
+        "It replaces the need for acceptance criteria",
+        "It is mainly used to calculate infrastructure cost"
+      ],
+      "correctIndex": 1,
+      "explanation": "Story mapping shows how user activities and stories fit together. That view helps the team find gaps and plan incremental releases.",
+      "id": "at-065"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.2.5",
+      "difficulty": "medium",
+      "question": "What makes an exploratory testing charter useful during a sprint?",
+      "options": [
+        "It gives a focused mission for investigation while still leaving room for tester learning and judgment",
+        "It specifies every test step so nothing unexpected can be explored",
+        "It is only needed when automated testing is impossible",
+        "It replaces all reporting after the session"
+      ],
+      "correctIndex": 0,
+      "explanation": "A charter frames what to investigate without turning the session into a rigid script. That balance supports purposeful exploration.",
+      "id": "at-066"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.2.3",
+      "difficulty": "hard",
+      "question": "A tester and developer disagree about defect severity. What is the BEST way to resolve it?",
+      "options": [
+        "Escalate immediately to senior management",
+        "Discuss user impact, business risk, and evidence using shared severity guidance",
+        "Let the tester decide alone because they found it",
+        "Close the defect to keep the sprint moving"
+      ],
+      "correctIndex": 1,
+      "explanation": "Severity discussions are most productive when grounded in impact and agreed criteria. Shared evidence reduces unhelpful opinion battles.",
+      "id": "at-067"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.5",
+      "difficulty": "easy",
+      "question": "Why are test doubles such as mocks or stubs often used in lower-level automated tests?",
+      "options": [
+        "They help isolate the unit under test and make checks faster and more controllable",
+        "They guarantee that production integrations never need testing",
+        "They are required for every acceptance test",
+        "They replace assertions in test code"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test doubles let the team control dependencies and focus on the behavior being exercised. That usually improves test speed and diagnosis.",
+      "id": "at-068"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.3.2",
+      "difficulty": "hard",
+      "question": "An agile team adds a short research item because a new payment provider has unknown integration constraints. What is the purpose of that spike?",
+      "options": [
+        "To deliver production-ready functionality to customers",
+        "To postpone estimation until after deployment",
+        "To gain knowledge that reduces uncertainty for later implementation work",
+        "To replace exploratory testing with documentation"
+      ],
+      "correctIndex": 2,
+      "explanation": "A spike is a time-boxed investigation used to learn enough to make better delivery decisions. It is about reducing uncertainty, not shipping full functionality.",
+      "id": "at-069"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.2.6",
+      "difficulty": "medium",
+      "question": "In session-based exploratory testing, what is the value of a debrief after a session?",
+      "options": [
+        "It lets the tester discard all notes once time expires",
+        "It helps share findings, risks, and next ideas with the team",
+        "It is used to estimate sprint velocity",
+        "It replaces backlog refinement for the next sprint"
+      ],
+      "correctIndex": 1,
+      "explanation": "A debrief makes exploratory work visible and useful to others. It turns individual learning into shared team insight.",
+      "id": "at-070"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.2.4",
+      "difficulty": "medium",
+      "question": "Which practice is especially helpful for testers on a distributed agile team?",
+      "options": [
+        "Relying mainly on hallway conversations that are not recorded",
+        "Sharing concise written evidence, examples, and session notes asynchronously",
+        "Waiting for monthly status meetings to raise quality risks",
+        "Avoiding screen sharing to protect independence"
+      ],
+      "correctIndex": 1,
+      "explanation": "Distributed teams benefit from lightweight, visible artifacts that others can review later. Good asynchronous communication reduces delays.",
+      "id": "at-071"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.6",
+      "difficulty": "medium",
+      "question": "Why do agile teams often automate many checks at the API or service level instead of only through the UI?",
+      "options": [
+        "API checks are usually faster and less brittle while still validating important business behavior",
+        "UI testing is forbidden in continuous integration",
+        "API checks can verify usability better than humans",
+        "Service-level checks remove the need for any unit tests"
+      ],
+      "correctIndex": 0,
+      "explanation": "Service-level tests often balance realism and speed effectively. They usually fail more precisely and require less maintenance than heavy UI suites.",
+      "id": "at-072"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.3.3",
+      "difficulty": "easy",
+      "question": "In a Kanban system, what does a pull approach encourage?",
+      "options": [
+        "Starting new work as soon as anyone is free, regardless of downstream capacity",
+        "Taking new work only when there is capacity in the next step of the workflow",
+        "Assigning all work from a central project manager",
+        "Moving items to done at the end of each month"
+      ],
+      "correctIndex": 1,
+      "explanation": "A pull system limits overloading downstream stages. Work is started when there is real capacity to handle it.",
+      "id": "at-073"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.2.7",
+      "difficulty": "hard",
+      "question": "A team adds 'search results appear within two seconds for 95% of requests' to a story. How should that statement be treated?",
+      "options": [
+        "As unnecessary detail because agile stories should avoid measurable limits",
+        "As a non-functional acceptance criterion that should influence development and testing within the iteration",
+        "As a release note item only after the feature ships",
+        "As something testers can evaluate only in production"
+      ],
+      "correctIndex": 1,
+      "explanation": "Non-functional needs can be expressed as acceptance criteria when they matter to the story. Making them explicit allows the team to design and test for them early.",
+      "id": "at-074"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.2.5",
+      "difficulty": "medium",
+      "question": "How can a tester coach the team in exploratory testing without becoming a bottleneck?",
+      "options": [
+        "By teaching charters and heuristics so others can investigate risks as well",
+        "By keeping exploratory ideas private until release day",
+        "By insisting only testers are allowed to explore",
+        "By replacing all scripted tests with unscripted sessions"
+      ],
+      "correctIndex": 0,
+      "explanation": "Coaching spreads testing skill across the team. That supports the whole-team approach instead of centralizing knowledge.",
+      "id": "at-075"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.7",
+      "difficulty": "medium",
+      "question": "A test fails intermittently with no product defect found. What is the best team response to that flaky test?",
+      "options": [
+        "Ignore it permanently because occasional failure is normal",
+        "Treat it as a quality problem, investigate the cause, and avoid letting it pollute pipeline feedback",
+        "Count each failure as a confirmed production defect",
+        "Duplicate it ten times so at least one instance passes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Flaky tests erode trust in automation. Teams should address their causes so pipeline results remain meaningful.",
+      "id": "at-076"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.3.4",
+      "difficulty": "medium",
+      "question": "On a cumulative flow diagram, the testing band keeps getting wider over several days. What does that MOST likely suggest?",
+      "options": [
+        "Testing has become a bottleneck and work is accumulating there",
+        "The product owner has reordered the backlog",
+        "The team has reduced cycle time",
+        "Developers have stopped committing code"
+      ],
+      "correctIndex": 0,
+      "explanation": "A widening band shows growing work-in-progress in that stage. That usually indicates reduced flow or a bottleneck.",
+      "id": "at-077"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.3.2",
+      "difficulty": "easy",
+      "question": "Which statement about test levels in agile teams is MOST accurate?",
+      "options": [
+        "Unit, integration, and system testing may overlap within the same iteration",
+        "Only system testing is performed during the sprint",
+        "Each test level must wait for formal sign-off from the previous level",
+        "User acceptance testing always starts after release"
+      ],
+      "correctIndex": 0,
+      "explanation": "Agile work is iterative, so multiple test levels often happen within the same sprint. They are not strictly separated into long phases.",
+      "id": "at-078"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.2.6",
+      "difficulty": "hard",
+      "question": "What value can a tester bring when pairing with a developer on unit-test ideas?",
+      "options": [
+        "A focus on edge cases and failure modes drawn from previous defects and business rules",
+        "Approval authority over coding style",
+        "The ability to skip acceptance criteria",
+        "A guarantee that no further review is needed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Testers often think in terms of boundaries, negative paths, and risks. Bringing those ideas into lower-level tests improves early defect detection.",
+      "id": "at-079"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.8",
+      "difficulty": "easy",
+      "question": "How does static analysis support agile testing?",
+      "options": [
+        "It finds every runtime defect that users might ever see",
+        "It can detect certain issues early without executing the software, adding another fast feedback mechanism",
+        "It replaces all peer review and unit testing",
+        "It is useful only after a feature is released"
+      ],
+      "correctIndex": 1,
+      "explanation": "Static analysis provides quick feedback on some classes of issues before runtime. It complements, rather than replaces, dynamic testing.",
+      "id": "at-080"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.4.1",
+      "difficulty": "easy",
+      "question": "Which action best shows a Scrum Master acting as a servant leader?",
+      "options": [
+        "Assigning each developer a fixed set of tasks for the sprint",
+        "Helping the team remove impediments and improve how they work",
+        "Approving every automated test before it runs",
+        "Owning the product backlog priority order"
+      ],
+      "correctIndex": 1,
+      "explanation": "A servant leader supports the team rather than directing every task. Removing impediments and enabling improvement is a core Scrum Master contribution.",
+      "id": "at-081"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.3.3",
+      "difficulty": "hard",
+      "question": "Why should test data needs be discussed while refining a story instead of during final test execution?",
+      "options": [
+        "Because test data cannot be changed once a sprint starts",
+        "Because early preparation avoids delays and exposes hidden business rules",
+        "Because only developers are allowed to create test data",
+        "Because manual testing should not use data variations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thinking about data early reveals constraints and avoids late surprises. It also helps the team understand how the feature will really be verified.",
+      "id": "at-082"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.2.7",
+      "difficulty": "easy",
+      "question": "Before a sprint review, how can a tester support the team most effectively?",
+      "options": [
+        "Prepare realistic scenarios or data that show whether the delivered behavior meets expectations",
+        "Rewrite the product roadmap for the next quarter",
+        "Suppress known issues so the demo looks smoother",
+        "Approve all backlog estimates personally"
+      ],
+      "correctIndex": 0,
+      "explanation": "A good review benefits from realistic examples of what was built. Testers can help the team show actual behavior clearly.",
+      "id": "at-083"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.2.9",
+      "difficulty": "hard",
+      "question": "Why can code coverage be misleading if used as the main indicator of test quality?",
+      "options": [
+        "High coverage does not show whether the tests assert the right behavior or meaningful risks",
+        "Coverage automatically proves the absence of defects",
+        "Coverage can be collected only for UI tests",
+        "Low coverage always means the product is unsafe to release"
+      ],
+      "correctIndex": 0,
+      "explanation": "Coverage shows what code was executed, not whether the right things were verified. Useful tests require meaningful assertions and good risk focus.",
+      "id": "at-084"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.4.2",
+      "difficulty": "easy",
+      "question": "How does a sprint review differ from a sprint retrospective?",
+      "options": [
+        "The review inspects the product increment with stakeholders, while the retrospective inspects the team's way of working",
+        "The review focuses on team process, while the retrospective approves scope changes",
+        "Both meetings have the same purpose but different names",
+        "The retrospective is only for managers, while the review is only for developers"
+      ],
+      "correctIndex": 0,
+      "explanation": "The sprint review centers on the product and stakeholder feedback. The retrospective focuses on improving the team's process, tools, and collaboration.",
+      "id": "at-085"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.3.4",
+      "difficulty": "hard",
+      "question": "A defect is found late in the sprint. What is the BEST first response from the agile team?",
+      "options": [
+        "Wait for the retrospective before discussing it",
+        "Collaboratively assess impact and decide whether to fix now, defer, or reduce scope",
+        "Close the defect because late issues are expected in agile",
+        "Assign blame to the person who wrote the code"
+      ],
+      "correctIndex": 1,
+      "explanation": "Agile teams handle problems transparently and collaboratively. The immediate goal is to understand impact and make a practical decision together.",
+      "id": "at-086"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.2.8",
+      "difficulty": "hard",
+      "question": "Which statement BEST describes tester independence in a mature agile team?",
+      "options": [
+        "Testers stay fully independent only by avoiding daily collaboration",
+        "Independence comes from bringing objective challenge and evidence, even while working closely with the team",
+        "Independence means testers own the product backlog",
+        "Independence is unnecessary if automated tests exist"
+      ],
+      "correctIndex": 1,
+      "explanation": "Agile teams value close collaboration, but they still need objective thinking. Independence is preserved through mindset, evidence, and willingness to challenge assumptions.",
+      "id": "at-087"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.3.3",
+      "difficulty": "medium",
+      "question": "What is the main benefit of running suitable automated tests in parallel in CI?",
+      "options": [
+        "It shortens feedback time, provided tests remain isolated and repeatable",
+        "It guarantees that every failure is a product defect",
+        "It removes the need for test data management",
+        "It makes slow UI tests more precise than unit tests"
+      ],
+      "correctIndex": 0,
+      "explanation": "Parallel execution can reduce waiting time significantly. The gain depends on tests being independent and stable.",
+      "id": "at-088"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.4.3",
+      "difficulty": "hard",
+      "question": "How should a team use velocity trends during release planning?",
+      "options": [
+        "As a rough forecasting aid rather than a guaranteed commitment",
+        "As a replacement for backlog prioritization",
+        "As proof that every future sprint will deliver the same number of stories",
+        "As a measure of individual tester productivity"
+      ],
+      "correctIndex": 0,
+      "explanation": "Velocity can help forecast likely capacity, but it is not a promise. Agile planning accepts uncertainty and updates forecasts with new data.",
+      "id": "at-089"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.3.5",
+      "difficulty": "hard",
+      "question": "A production defect escaped because no test covered a surprising edge case. What is the MOST useful action in the next retrospective?",
+      "options": [
+        "Ban all exploratory testing",
+        "Identify why the edge case was missed and improve examples, heuristics, or automation accordingly",
+        "Remove the story from the release notes",
+        "Increase documentation volume for every future defect"
+      ],
+      "correctIndex": 1,
+      "explanation": "Retrospectives aim to improve the system of work. Understanding why a gap existed is more useful than simply adding paperwork.",
+      "id": "at-090"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.3.1",
+      "difficulty": "medium",
+      "question": "Why is it valuable for an agile tester to learn some automation skills even if developers write most framework code?",
+      "options": [
+        "It allows the tester to contribute directly to faster feedback and collaborate more effectively on quality risks",
+        "It removes the need for manual or exploratory testing",
+        "It means the tester no longer needs business knowledge",
+        "It is required only so the tester can manage the CI server"
+      ],
+      "correctIndex": 0,
+      "explanation": "Automation skills increase the tester's options and improve collaboration. They help the tester contribute to repeatable checks and better feedback loops.",
+      "id": "at-091"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.3.4",
+      "difficulty": "easy",
+      "question": "Why might a team label a small subset of automated tests as smoke tests?",
+      "options": [
+        "To identify a fast set that gives quick confidence in critical paths after a change",
+        "To mark tests that should never run in CI",
+        "To group only exploratory test session notes",
+        "To separate tests by which developer wrote them"
+      ],
+      "correctIndex": 0,
+      "explanation": "Smoke tests provide a fast first signal on whether the build is fundamentally healthy. They are not a substitute for broader regression coverage.",
+      "id": "at-092"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.4.4",
+      "difficulty": "medium",
+      "question": "Which backlog item BEST reflects the INVEST idea of being small and testable?",
+      "options": [
+        "As a shopper, I can pay by credit card for all order types in every country with all tax rules implemented at once",
+        "Build the complete reporting engine",
+        "As a returning user, I can reset my password by email so I can regain access to my account",
+        "Improve quality"
+      ],
+      "correctIndex": 2,
+      "explanation": "A good INVEST story is specific enough to understand and verify while still delivering user value. The password reset story is bounded and testable.",
+      "id": "at-093"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.3.6",
+      "difficulty": "easy",
+      "question": "Which user story is the MOST testable?",
+      "options": [
+        "Improve reporting",
+        "As an account holder, I can download my monthly statement as a PDF from the billing page",
+        "Make the checkout flow better",
+        "Support all future payment needs"
+      ],
+      "correctIndex": 1,
+      "explanation": "A testable story is concrete and bounded. The PDF statement story is specific enough to derive meaningful checks.",
+      "id": "at-094"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.3.2",
+      "difficulty": "hard",
+      "question": "What can a tester contribute to a retrospective besides a list of open defects?",
+      "options": [
+        "Only personal complaints about other team members",
+        "Observations about escape patterns, unstable areas, and where feedback arrived too late",
+        "A final approval of next sprint scope",
+        "Daily time tracking details for each developer"
+      ],
+      "correctIndex": 1,
+      "explanation": "Useful retrospective input looks for patterns and process improvements. Testers often see where feedback quality or timing can improve.",
+      "id": "at-095"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.3.5",
+      "difficulty": "hard",
+      "question": "Why are short-lived, automatically created test environments useful in agile delivery?",
+      "options": [
+        "They make environment setup less repeatable so teams stay flexible",
+        "They help provide consistent conditions for testing and reduce configuration drift",
+        "They remove the need for production-like data",
+        "They are mainly useful for storing manual test scripts"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ephemeral environments can improve consistency and reduce 'works on my machine' problems. Automation makes them easier to provision when needed.",
+      "id": "at-096"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.4.5",
+      "difficulty": "hard",
+      "question": "A user story covers search, filtering, sorting, exporting, and saved views in one item. What is the BEST agile response?",
+      "options": [
+        "Keep it intact so all related work is finished together",
+        "Split it into smaller slices that still provide user value and can be completed independently",
+        "Estimate it more precisely and start coding immediately",
+        "Move it to the Definition of Done checklist"
+      ],
+      "correctIndex": 1,
+      "explanation": "Large stories reduce feedback and increase risk. Splitting them into smaller valuable slices improves flow and makes planning and testing easier.",
+      "id": "at-097"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.3.7",
+      "difficulty": "hard",
+      "question": "How can independent testing still exist in an agile team without creating a separate late-phase test department?",
+      "options": [
+        "By keeping testers uninvolved until development finishes",
+        "By having testers bring an independent critical perspective while collaborating continuously with the team",
+        "By rotating the product owner into the tester role every sprint",
+        "By forbidding developers from reviewing tests"
+      ],
+      "correctIndex": 1,
+      "explanation": "Independence in agile is often about mindset and perspective rather than organizational distance. Testers can collaborate closely and still provide objective challenge.",
+      "id": "at-098"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.3.3",
+      "difficulty": "easy",
+      "question": "Why is empathy for end users important for an agile tester?",
+      "options": [
+        "It helps the tester imagine realistic workflows, frustrations, and quality expectations",
+        "It allows the tester to ignore technical constraints",
+        "It replaces the need for acceptance criteria",
+        "It matters only for customer support, not testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Empathy improves scenario design and prioritization. It helps the tester notice problems that matter to real users.",
+      "id": "at-099"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.3.6",
+      "difficulty": "medium",
+      "question": "How does infrastructure as code help agile testing and delivery?",
+      "options": [
+        "It keeps environment definitions repeatable, reviewable, and versioned alongside changes",
+        "It guarantees perfect production performance",
+        "It replaces the need for release notes",
+        "It is relevant only to large waterfall programs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Versioned environment definitions improve repeatability and collaboration. They make changes to infrastructure easier to track and review.",
+      "id": "at-100"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.5.1",
+      "difficulty": "easy",
+      "question": "From a Lean perspective, which activity is most clearly waste?",
+      "options": [
+        "Waiting several days for a simple defect clarification because work is handed across departments",
+        "Pairing to solve a tricky integration problem",
+        "Refining the next few stories with the product owner",
+        "Running a fast regression suite after a code change"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lean focuses on eliminating delays, handoff friction, and other non-value-adding work. Long waits for simple clarifications are classic waste.",
+      "id": "at-101"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.3.8",
+      "difficulty": "medium",
+      "question": "Which statement best contrasts confirmatory testing with exploratory testing?",
+      "options": [
+        "Confirmatory testing checks expected behavior, while exploratory testing investigates beyond what was already expected",
+        "Confirmatory testing is manual only, while exploratory testing is automated only",
+        "They are the same activity with different names",
+        "Exploratory testing is done before coding, while confirmatory testing is done after release"
+      ],
+      "correctIndex": 0,
+      "explanation": "Confirmatory testing verifies expected outcomes from known requirements or examples. Exploratory testing looks for additional information, risks, and unexpected behavior.",
+      "id": "at-102"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.3.4",
+      "difficulty": "hard",
+      "question": "How can a tester support product quality after deployment in a DevOps-oriented team?",
+      "options": [
+        "By helping define useful alerts, dashboards, or checks that reveal quality issues in operation",
+        "By refusing to look at production feedback because testing ends at release",
+        "By asking operations to hide incidents from the team",
+        "By removing acceptance testing from the sprint"
+      ],
+      "correctIndex": 0,
+      "explanation": "In a DevOps context, testers can help shape the feedback the team receives from real operation. Production signals are valuable learning inputs.",
+      "id": "at-103"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.3.7",
+      "difficulty": "easy",
+      "question": "Why should automated test scripts and related test assets be kept in version control?",
+      "options": [
+        "So changes are traceable and can evolve with the product",
+        "So testers can hide failures from developers",
+        "To prevent anyone from reviewing old test logic",
+        "To avoid using CI pipelines"
+      ],
+      "correctIndex": 0,
+      "explanation": "Version control supports collaboration, traceability, and synchronized change. Test assets should evolve together with the system.",
+      "id": "at-104"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.5.2",
+      "difficulty": "medium",
+      "question": "What is a practical benefit of collective code ownership in an XP-style team?",
+      "options": [
+        "Only one specialist may change each module, so accidental defects disappear",
+        "More team members can improve or fix code without waiting for a single owner",
+        "It removes the need for code review",
+        "It guarantees identical coding styles without standards"
+      ],
+      "correctIndex": 1,
+      "explanation": "Collective ownership reduces bottlenecks around a single expert. It supports faster flow when combined with good tests and shared standards.",
+      "id": "at-105"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.4.1",
+      "difficulty": "hard",
+      "question": "A sprint ends tomorrow and a high-risk payment change was merged today. Which testing approach is MOST appropriate?",
+      "options": [
+        "Spend the remaining time evenly across all stories",
+        "Prioritize focused testing around the payment change and critical customer journeys it could affect",
+        "Postpone all testing because late changes are not worth examining",
+        "Run only UI smoke tests because they cover every layer"
+      ],
+      "correctIndex": 1,
+      "explanation": "Late high-risk changes deserve focused attention. Agile testing uses risk to guide where limited time will provide the most value.",
+      "id": "at-106"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.3.5",
+      "difficulty": "hard",
+      "question": "During a risk storming workshop, what is a strong tester contribution?",
+      "options": [
+        "Listing only the defects found in the previous sprint",
+        "Identifying fragile flows, unlikely but costly failures, and assumptions that deserve targeted checks",
+        "Estimating velocity for the next four releases",
+        "Replacing the product owner's prioritization completely"
+      ],
+      "correctIndex": 1,
+      "explanation": "Testers are often good at spotting where failures may be subtle or expensive. That perspective strengthens risk-based planning.",
+      "id": "at-107"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.3.8",
+      "difficulty": "medium",
+      "question": "Why is resetting or isolating data between automated test runs important?",
+      "options": [
+        "It reduces hidden coupling so results are more reliable and repeatable",
+        "It makes test execution slower without other benefits",
+        "It guarantees that UI defects disappear",
+        "It is needed only for performance tests"
+      ],
+      "correctIndex": 0,
+      "explanation": "Shared leftover data can create non-deterministic failures. Isolating or resetting state helps keep tests trustworthy.",
+      "id": "at-108"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.5.3",
+      "difficulty": "medium",
+      "question": "Why can pair programming improve quality on agile teams?",
+      "options": [
+        "Because it avoids all need for automated tests",
+        "Because continuous review while coding can catch mistakes and spread knowledge early",
+        "Because it guarantees work is completed twice as fast",
+        "Because one person writes code while the other is inactive"
+      ],
+      "correctIndex": 1,
+      "explanation": "Pair programming provides immediate feedback during implementation. It can reveal defects early and share understanding across teammates.",
+      "id": "at-109"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.4.2",
+      "difficulty": "easy",
+      "question": "Why are executable acceptance tests sometimes called living documentation?",
+      "options": [
+        "Because they never need updating when behavior changes",
+        "Because they describe expected system behavior in a form that can be checked repeatedly",
+        "Because only business analysts can read them",
+        "Because they are archived after each sprint and not reused"
+      ],
+      "correctIndex": 1,
+      "explanation": "When kept current, executable acceptance tests describe behavior and verify it. Their value comes from staying aligned with the software.",
+      "id": "at-110"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.3.6",
+      "difficulty": "hard",
+      "question": "The team can automate one repeated regression check this sprint or run it manually again. How can a tester add value to that discussion?",
+      "options": [
+        "Argue that manual execution is always superior",
+        "Explain the trade-off between one-time automation cost and future feedback savings",
+        "Decide alone without involving the team",
+        "Postpone the decision until after release"
+      ],
+      "correctIndex": 1,
+      "explanation": "Testers can help the team balance short-term effort against recurring value. Repetition and risk often justify automation investment.",
+      "id": "at-111"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.3.9",
+      "difficulty": "easy",
+      "question": "What value does a visible test dashboard provide to an agile team?",
+      "options": [
+        "It replaces all conversation about risk",
+        "It makes quality signals, trends, and failures easier for the team to notice and act on",
+        "It allows managers to approve every commit",
+        "It is mainly a storage place for obsolete test cases"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dashboards can act as information radiators for quality. Their main value is making signals visible enough to prompt useful action.",
+      "id": "at-112"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.5.4",
+      "difficulty": "easy",
+      "question": "If an external dependency is blocking progress on a sprint item, what should the team do first?",
+      "options": [
+        "Hide the issue until the sprint review",
+        "Make the impediment visible and collaborate on options to remove or work around it",
+        "Wait until the next release planning session",
+        "Close the story as done to protect the burn chart"
+      ],
+      "correctIndex": 1,
+      "explanation": "Agile teams make blockers visible quickly. Early collaboration gives the team the best chance to resolve or mitigate the problem.",
+      "id": "at-113"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.4.3",
+      "difficulty": "easy",
+      "question": "What is the main purpose of a Three Amigos discussion?",
+      "options": [
+        "To approve overtime for the sprint",
+        "To build shared understanding of a backlog item from business, development, and testing perspectives",
+        "To decide annual budget targets",
+        "To replace the sprint review"
+      ],
+      "correctIndex": 1,
+      "explanation": "Three Amigos discussions align different viewpoints around a story. That shared understanding improves quality before coding begins.",
+      "id": "at-114"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.3.7",
+      "difficulty": "medium",
+      "question": "Which technical skill most helps a tester diagnose failures quickly on an agile team?",
+      "options": [
+        "Reading logs, API responses, and other technical evidence to narrow possible causes",
+        "Writing only executive summaries for management",
+        "Avoiding all tool output to stay unbiased",
+        "Estimating in ideal days instead of story points"
+      ],
+      "correctIndex": 0,
+      "explanation": "Being able to inspect technical evidence improves communication with developers and speeds up problem isolation.",
+      "id": "at-115"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.4.1",
+      "difficulty": "easy",
+      "question": "How can accessibility-focused automation help an agile team?",
+      "options": [
+        "By catching some obvious accessibility issues early so they can be addressed before later review",
+        "By proving the product is fully accessible in every real-world context",
+        "By replacing all usability testing with disabled users",
+        "By limiting testing to color contrast only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Automated accessibility checks are helpful early filters. They do not prove full accessibility, but they can surface obvious issues quickly.",
+      "id": "at-116"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.5.5",
+      "difficulty": "hard",
+      "question": "Why do small batch sizes often improve flow in agile delivery?",
+      "options": [
+        "They make it easier to detect problems and adjust before too much work is invested",
+        "They eliminate the need for prioritization",
+        "They guarantee that rework will never occur",
+        "They allow the team to skip backlog refinement"
+      ],
+      "correctIndex": 0,
+      "explanation": "Smaller batches shorten feedback loops and reduce the cost of discovering mistakes. That makes adaptation easier and less expensive.",
+      "id": "at-117"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.4.4",
+      "difficulty": "easy",
+      "question": "What does shifting testing left usually mean in an agile context?",
+      "options": [
+        "Moving all test execution to the operations team",
+        "Bringing quality activities earlier into refinement, design, and coding",
+        "Reducing the number of testers on the team",
+        "Running only performance tests before release"
+      ],
+      "correctIndex": 1,
+      "explanation": "Shift-left means addressing quality sooner, not later. Earlier conversations and checks reduce late discovery of defects.",
+      "id": "at-118"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.3.8",
+      "difficulty": "easy",
+      "question": "How can a tester help when a story seems too large for one sprint?",
+      "options": [
+        "Suggest slices and examples that break the work into smaller testable increments",
+        "Increase the estimate until it fits the sprint",
+        "Move all testing to the next sprint",
+        "Ask the Scrum Master to code part of it"
+      ],
+      "correctIndex": 0,
+      "explanation": "Testers can help find seams in behavior and data that support meaningful story splitting. Smaller slices are easier to build and verify.",
+      "id": "at-119"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.4.2",
+      "difficulty": "hard",
+      "question": "Why might a team include a lightweight performance benchmark in CI for a critical API?",
+      "options": [
+        "To get early warning if a code change significantly degrades response behavior",
+        "To prove the system can handle any future production load",
+        "To eliminate the need for deeper non-functional testing",
+        "To measure business value directly from the pipeline"
+      ],
+      "correctIndex": 0,
+      "explanation": "A small benchmark in CI can reveal sudden regressions early. It complements, rather than replaces, deeper performance evaluation.",
+      "id": "at-120"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.6.1",
+      "difficulty": "medium",
+      "question": "A stakeholder requests a valuable change near the end of the release window. Which approach is MOST consistent with agile planning?",
+      "options": [
+        "Reject the request because plans must remain fixed once the release starts",
+        "Evaluate the value and impact, then re-prioritize scope if the change is worthwhile",
+        "Add the request without discussing trade-offs with the team",
+        "Delay all current testing until the new feature is implemented"
+      ],
+      "correctIndex": 1,
+      "explanation": "Agile planning is adaptive. Teams consider the new value and trade-offs, then adjust scope deliberately rather than treating plans as immovable.",
+      "id": "at-121"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.4.5",
+      "difficulty": "medium",
+      "question": "A field accepts ages from 18 to 65 inclusive. Which set of test values BEST applies boundary value thinking?",
+      "options": [
+        "18, 30, 65",
+        "17, 18, 19, 64, 65, 66",
+        "20, 40, 60",
+        "0, 18, 65, 100"
+      ],
+      "correctIndex": 1,
+      "explanation": "Boundary value testing focuses on values at and around the edges of the valid range. That set probes both valid and invalid boundaries.",
+      "id": "at-122"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.4.1",
+      "difficulty": "medium",
+      "question": "Why might a tester collaborate with a UX designer on a new workflow?",
+      "options": [
+        "To consider usability risks and confusing interactions before customers encounter them",
+        "To replace functional testing entirely with design review",
+        "To keep developers out of user experience discussions",
+        "To avoid using acceptance criteria"
+      ],
+      "correctIndex": 0,
+      "explanation": "UX collaboration helps the team uncover usability problems early. Many quality issues are about confusing behavior, not just functional failure.",
+      "id": "at-123"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.4.3",
+      "difficulty": "medium",
+      "question": "When an automated UI test fails in CI, which practice most helps diagnosis?",
+      "options": [
+        "Capturing useful evidence such as screenshots, logs, or network traces with the failure",
+        "Rerunning the entire pipeline without saving any artifacts",
+        "Deleting the failing test immediately",
+        "Asking the product owner to debug the test framework"
+      ],
+      "correctIndex": 0,
+      "explanation": "Good failure evidence shortens investigation time and reduces guesswork. That makes automated feedback more actionable.",
+      "id": "at-124"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.6.2",
+      "difficulty": "hard",
+      "question": "A product has a fixed regulatory release date, but not every desired feature will fit. Which strategy BEST aligns with agile delivery?",
+      "options": [
+        "Fix scope and let quality vary if time becomes tight",
+        "Prioritize the most valuable and highest-risk items first so lower-value scope can be deferred if needed",
+        "Delay testing until all planned scope is coded",
+        "Require all teams to work overtime until every wish list item is included"
+      ],
+      "correctIndex": 1,
+      "explanation": "When time is fixed, agile teams manage scope actively. Delivering the most important items first preserves value and reduces risk.",
+      "id": "at-125"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.4.6",
+      "difficulty": "hard",
+      "question": "A story adds order states of New, Paid, Shipped, and Cancelled. Which test idea best uses state-transition thinking?",
+      "options": [
+        "Check only that each state label is visible on screen",
+        "Verify allowed moves such as Paid to Shipped and reject invalid ones such as Cancelled to Paid",
+        "Run a performance test with 1,000 orders",
+        "Ask the product owner to re-estimate the story"
+      ],
+      "correctIndex": 1,
+      "explanation": "State-transition testing looks at valid and invalid moves between states. It is useful when workflow rules matter.",
+      "id": "at-126"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.4.2",
+      "difficulty": "medium",
+      "question": "What is the tester's best role in an example-mapping or specification workshop?",
+      "options": [
+        "Act mainly as a silent observer",
+        "Contribute questions, edge cases, and test ideas that make expectations more precise",
+        "Approve architecture decisions for the whole team",
+        "Convert every example directly into a defect"
+      ],
+      "correctIndex": 1,
+      "explanation": "Testers bring a questioning mindset that sharpens shared examples. That improves clarity before development begins.",
+      "id": "at-127"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.4.4",
+      "difficulty": "medium",
+      "question": "Two tools can automate browser tests. One integrates with the team's stack and is easy to maintain; the other has more marketing buzz but weaker fit. Which should the team prefer?",
+      "options": [
+        "The better-fitting, maintainable tool that supports the team's workflow",
+        "The noisier tool because popularity predicts long-term success",
+        "The more expensive tool because cost implies quality",
+        "Whichever tool has the most features, regardless of learning curve"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tool choice should be driven by suitability and maintainability in the team's context. Popularity alone does not ensure effectiveness.",
+      "id": "at-128"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.6.3",
+      "difficulty": "easy",
+      "question": "What is meant by a product increment at the end of a sprint?",
+      "options": [
+        "A draft document describing what developers hope to build next",
+        "A potentially releasable piece of working product that meets the team's completion criteria",
+        "Any code committed to a private branch",
+        "A list of remaining defects for the release"
+      ],
+      "correctIndex": 1,
+      "explanation": "A sprint increment is working product, not just partial activity. It should satisfy the team's agreed completion standards.",
+      "id": "at-129"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.4.7",
+      "difficulty": "easy",
+      "question": "Which completion rule best supports quality within a sprint?",
+      "options": [
+        "A story is done when coding ends, even if regression failures remain",
+        "A story is done only when agreed tests pass and outstanding critical defects are resolved or consciously accepted",
+        "A story is done when the stand-up mentions it twice",
+        "A story is done as soon as the product owner writes acceptance criteria"
+      ],
+      "correctIndex": 1,
+      "explanation": "Completion should reflect tested, usable work rather than coding alone. Passing agreed checks is part of meaningful done.",
+      "id": "at-130"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.4.3",
+      "difficulty": "hard",
+      "question": "Which behavior is LEAST aligned with the agile tester role?",
+      "options": [
+        "Helping the team understand risks early",
+        "Acting as the lone gatekeeper who privately decides whether others may release",
+        "Collaborating on quality criteria during refinement",
+        "Sharing learning from exploratory sessions with developers"
+      ],
+      "correctIndex": 1,
+      "explanation": "Agile quality is a shared responsibility. A lone gatekeeper model creates bottlenecks and weakens whole-team ownership.",
+      "id": "at-131"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.4.5",
+      "difficulty": "hard",
+      "question": "A major UI redesign broke many end-to-end tests even though core behavior stayed the same. What improvement would MOST likely reduce future maintenance pain?",
+      "options": [
+        "Add more pixel-based assertions to every screen",
+        "Move suitable checks to lower levels and keep UI tests focused on critical user journeys",
+        "Stop automating regressions entirely",
+        "Freeze the user interface so tests never change"
+      ],
+      "correctIndex": 1,
+      "explanation": "When too many checks depend on UI detail, maintenance cost rises. Pushing appropriate coverage lower and keeping UI tests selective creates a healthier suite.",
+      "id": "at-132"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.6.4",
+      "difficulty": "medium",
+      "question": "Which behavior best reflects a self-managing agile team?",
+      "options": [
+        "Waiting for the project manager to assign every task in detail",
+        "Collaboratively deciding how to accomplish the sprint goal and who takes which work",
+        "Avoiding cross-skilling so specialization stays pure",
+        "Escalating every small technical decision to senior management"
+      ],
+      "correctIndex": 1,
+      "explanation": "Self-managing teams organize their own work to meet shared goals. They do not depend on detailed task assignment from outside the team.",
+      "id": "at-133"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.4.8",
+      "difficulty": "medium",
+      "question": "When should important non-functional testing be considered for a new feature?",
+      "options": [
+        "Only in a separate hardening sprint after all features are complete",
+        "During story discussion and implementation so relevant quality risks are addressed within the iteration",
+        "Only after users report problems in production",
+        "After the release date is fixed and cannot change"
+      ],
+      "correctIndex": 1,
+      "explanation": "Important non-functional concerns should be surfaced early. Treating them late increases cost and risk.",
+      "id": "at-134"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.4.4",
+      "difficulty": "medium",
+      "question": "How does using concrete examples improve collaboration between testers, developers, and business representatives?",
+      "options": [
+        "It removes the need for any conversation about requirements",
+        "It creates a shared reference for expected behavior that different roles can discuss clearly",
+        "It guarantees automation will be easy",
+        "It is only helpful after coding is complete"
+      ],
+      "correctIndex": 1,
+      "explanation": "Concrete examples make abstract requirements easier to discuss and verify. They help different roles align on the same intent.",
+      "id": "at-135"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.4.6",
+      "difficulty": "medium",
+      "question": "What best describes pair testing?",
+      "options": [
+        "A tester and another teammate explore, discuss, and evaluate the product together in real time",
+        "Two testers independently execute the same script without speaking",
+        "A mandatory replacement for all automated testing",
+        "A way to split one defect report into two tickets"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pair testing combines different perspectives during hands-on investigation. It often improves learning and shortens feedback cycles.",
+      "id": "at-136"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.6.5",
+      "difficulty": "easy",
+      "question": "What is the main benefit of an information radiator such as a visible task board?",
+      "options": [
+        "It stores confidential management notes away from the team",
+        "It gives the team and stakeholders quick shared visibility into current work and progress",
+        "It replaces all direct communication",
+        "It measures source code complexity automatically"
+      ],
+      "correctIndex": 1,
+      "explanation": "Information radiators make important status information easy to see. That visibility supports alignment and timely conversations.",
+      "id": "at-137"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.4.9",
+      "difficulty": "easy",
+      "question": "Which defect report is MOST useful on an agile team?",
+      "options": [
+        "A concise report with clear reproduction steps, observed result, and expected result",
+        "A one-line message saying 'broken' with no context",
+        "A 20-page template that omits screenshots and logs",
+        "A note stored privately until the sprint review"
+      ],
+      "correctIndex": 0,
+      "explanation": "Agile defect communication should be quick and actionable. Clear reproduction information helps the team respond efficiently.",
+      "id": "at-138"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.4.5",
+      "difficulty": "medium",
+      "question": "Customer support reports that 'checkout sometimes freezes' but provides little detail. What should the tester do first?",
+      "options": [
+        "Close the issue until a full root-cause analysis is attached",
+        "Work with support and technical teammates to gather context that makes the problem reproducible or classifiable",
+        "Assume it is a user training problem",
+        "Rewrite the report as a passing acceptance criterion"
+      ],
+      "correctIndex": 1,
+      "explanation": "Vague field reports need clarification before the team can act effectively. Testers can help turn anecdotal symptoms into actionable information.",
+      "id": "at-139"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.5.1",
+      "difficulty": "medium",
+      "question": "Why can a specification workshop be more effective than emailing requirements back and forth?",
+      "options": [
+        "It creates fast shared understanding and lets questions be resolved while examples are still being shaped",
+        "It guarantees zero future requirement changes",
+        "It removes the need for any written examples",
+        "It is useful only when no testers are on the team"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interactive workshops surface misunderstandings quickly. They are especially effective when the team uses concrete examples to discuss behavior.",
+      "id": "at-140"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.6.6",
+      "difficulty": "medium",
+      "question": "A sprint burndown chart rises for two consecutive days. What is the BEST interpretation?",
+      "options": [
+        "The team discovered or added more remaining work than it completed",
+        "The sprint is automatically considered failed",
+        "The team should stop testing to reduce the line",
+        "Burndown charts are only updated at sprint end"
+      ],
+      "correctIndex": 0,
+      "explanation": "An upward movement means the estimate of remaining work increased. That can happen when hidden work is uncovered or scope changes.",
+      "id": "at-141"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.5.1",
+      "difficulty": "hard",
+      "question": "Why do agile teams often prefer many lower-level automated tests and fewer end-to-end tests?",
+      "options": [
+        "Because end-to-end tests are forbidden by agile methods",
+        "Because lower-level tests usually run faster and fail more precisely, supporting quick feedback",
+        "Because lower-level tests cover usability better",
+        "Because business stakeholders cannot understand end-to-end behavior"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fast, focused lower-level checks provide efficient feedback and easier diagnosis. End-to-end tests remain useful, but usually in smaller numbers.",
+      "id": "at-142"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.4.6",
+      "difficulty": "easy",
+      "question": "Why do agile testers often prefer a quick conversation plus lightweight evidence over a long formal defect document?",
+      "options": [
+        "Because speed and shared understanding are improved when information is timely and focused",
+        "Because agile teams never record defects",
+        "Because developers are not allowed to read written reports",
+        "Because quality data is unimportant in agile"
+      ],
+      "correctIndex": 0,
+      "explanation": "Agile communication aims to be efficient and useful. Lightweight evidence paired with conversation often resolves issues faster than heavy paperwork.",
+      "id": "at-143"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.5.2",
+      "difficulty": "medium",
+      "question": "How can feature flags support agile testing and release practices?",
+      "options": [
+        "By allowing new behavior to be enabled selectively, reducing the risk of exposing all users at once",
+        "By eliminating the need for regression testing of flagged code",
+        "By replacing backlog prioritization",
+        "By ensuring unfinished features are automatically production-ready"
+      ],
+      "correctIndex": 0,
+      "explanation": "Feature flags can separate deployment from exposure. That gives teams more control over rollout and learning.",
+      "id": "at-144"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.6.7",
+      "difficulty": "easy",
+      "question": "Why do frequent releases reduce product risk?",
+      "options": [
+        "Because releasing often guarantees zero production incidents",
+        "Because smaller changes reach users sooner and are easier to evaluate and roll back if needed",
+        "Because frequent releases remove the need for prioritization",
+        "Because they allow teams to skip regression testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Smaller, more frequent releases limit the size of each change set. That makes problems easier to detect, understand, and recover from.",
+      "id": "at-145"
+    },
+    {
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.5.2",
+      "difficulty": "hard",
+      "question": "An intermittent defect appears only when a background job overlaps with checkout processing. What is the BEST agile testing response?",
+      "options": [
+        "Close the issue until it can be reproduced by end users",
+        "Pair across roles to reproduce the timing conditions and learn enough to design targeted checks",
+        "Add more UI smoke tests and hope one eventually fails",
+        "Avoid investigating because intermittent defects are outside sprint scope"
+      ],
+      "correctIndex": 1,
+      "explanation": "Intermittent problems often require collaborative investigation. Reproducing the conditions helps the team create focused tests and fixes.",
+      "id": "at-146"
+    },
+    {
+      "chapter": "3. Agile Tester Role and Skills",
+      "loRef": "FL-AT-3.4.7",
+      "difficulty": "hard",
+      "question": "A story was estimated without considering test environment setup and specialized data needs. How should a tester respond?",
+      "options": [
+        "Say nothing so the team's estimate is not challenged",
+        "Raise the hidden work and risks so the team can make a more realistic commitment",
+        "Remove testing tasks from the sprint plan",
+        "Assume the product owner will discover the problem later"
+      ],
+      "correctIndex": 1,
+      "explanation": "A tester adds value by surfacing hidden quality work before commitments are locked in. Realistic planning depends on that visibility.",
+      "id": "at-147"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.5.3",
+      "difficulty": "hard",
+      "question": "Why are executable specifications valuable beyond the sprint in which they were created?",
+      "options": [
+        "They serve as a maintainable behavioral reference when kept aligned with the product",
+        "They should be discarded once the initial feature is accepted",
+        "They are useful only to automation engineers",
+        "They make exploratory testing unnecessary forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "Executable specifications can remain useful as long as they continue to reflect current behavior. They provide both documentation and repeatable verification.",
+      "id": "at-148"
+    },
+    {
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.6.8",
+      "difficulty": "hard",
+      "question": "Why is technical excellence closely linked to business agility?",
+      "options": [
+        "Because only architects benefit from clean code and reliable tests",
+        "Because strong engineering practices make change safer, faster, and less costly for the product",
+        "Because business agility depends mainly on writing more documentation",
+        "Because technical excellence matters only after the first release"
+      ],
+      "correctIndex": 1,
+      "explanation": "Reliable design, automation, and maintainable code reduce the friction of change. That helps the business respond quickly without sacrificing quality.",
+      "id": "at-149"
+    },
+    {
+      "chapter": "4. Agile Testing Methods, Techniques, and Tools",
+      "loRef": "FL-AT-4.5.4",
+      "difficulty": "medium",
+      "question": "What is the main benefit of adding automated security checks early in the pipeline where appropriate?",
+      "options": [
+        "They can reveal certain classes of security issues earlier, when fixes are usually cheaper",
+        "They guarantee the product is fully secure for every threat",
+        "They remove the need for secure design discussions",
+        "They should replace all other non-functional testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Early automated security checks support faster feedback on some vulnerabilities or misconfigurations. They complement broader security practices.",
+      "id": "at-150"
     }
   ]
 }

@@ -601,6 +601,1656 @@
       ],
       "correctIndex": 1,
       "explanation": "Interoperability testing verifies that a system can successfully exchange information with, and interact correctly with, other specified systems or components, which is a functional suitability-adjacent quality characteristic relevant to test analysts."
+    },
+    {
+      "id": "al-ta-041",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.1.2",
+      "difficulty": "easy",
+      "question": "A mobile banking team identifies 'incorrect daily transfer limit' as a major product risk. Which action by the test analyst BEST supports risk identification?",
+      "options": [
+        "Estimating the hardware budget for the release",
+        "Listing realistic customer scenarios where transfer limits vary by account type, region, and user status",
+        "Approving the production deployment checklist",
+        "Choosing the database indexing strategy"
+      ],
+      "correctIndex": 1,
+      "explanation": "The test analyst adds business and domain detail that makes the risk concrete and testable. Scenarios that vary account and regional rules help expose where the transfer-limit logic could fail."
+    },
+    {
+      "id": "al-ta-042",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.2.2",
+      "difficulty": "medium",
+      "question": "Two features have similar business impact, but one was changed across five backend services while the other only changed static help text. Which feature should receive the HIGHER likelihood rating?",
+      "options": [
+        "The help-text feature, because user-visible text is always risky",
+        "Both features should automatically get the same likelihood",
+        "The feature changed across five backend services, because more moving parts increase failure opportunities",
+        "Neither feature should be rated until after release"
+      ],
+      "correctIndex": 2,
+      "explanation": "Likelihood is influenced by technical complexity and change scope. A multi-service change creates more opportunities for integration and logic problems than a text-only update."
+    },
+    {
+      "id": "al-ta-043",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.3.1",
+      "difficulty": "hard",
+      "question": "A severe production defect is found in coupon calculations during a pilot rollout. What is the BEST immediate risk-based testing response?",
+      "options": [
+        "Freeze the risk register because testing has already started",
+        "Reassess related pricing risks and reprioritize tests around discounts, totals, and invoice outputs",
+        "Stop all testing until the project manager rewrites the plan",
+        "Remove low-risk tests from the repository"
+      ],
+      "correctIndex": 1,
+      "explanation": "New production evidence should feed back into the risk assessment. The strongest response is to raise the priority of related pricing areas and adjust testing accordingly."
+    },
+    {
+      "id": "al-ta-044",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.2.3",
+      "difficulty": "easy",
+      "question": "A rarely used admin report takes one extra click, while checkout sometimes applies tax twice. Which area should receive deeper coverage first in a risk-based approach?",
+      "options": [
+        "The report, because all defects deserve identical effort",
+        "Checkout, because the potential customer and financial impact is much higher",
+        "Neither area until code coverage is measured",
+        "The report, because administrative users are internal"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk-based testing directs more effort toward areas with greater business impact. Incorrect checkout totals can cause financial loss and customer distrust, so they deserve higher priority."
+    },
+    {
+      "id": "al-ta-045",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.4.2",
+      "difficulty": "medium",
+      "question": "Why is it usually valuable to execute high-risk tests as soon as a stable build is available?",
+      "options": [
+        "It leaves time to react if serious failures are found",
+        "It guarantees that low-risk tests will not be needed",
+        "It removes the need to prepare expected results",
+        "It ensures every defect can be fixed in the same sprint"
+      ],
+      "correctIndex": 0,
+      "explanation": "Early execution of high-risk tests gives the team time to investigate, fix, and retest important failures. It reduces the chance of discovering critical problems only when the schedule is nearly exhausted."
+    },
+    {
+      "id": "al-ta-046",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.2.4",
+      "difficulty": "hard",
+      "question": "A requirement states that interest is rounded differently by region. Which factor would MOST increase the impact rating of a defect in that rule?",
+      "options": [
+        "The calculation runs only on a hidden admin page",
+        "The defect could lead to regulatory penalties or customer overcharging",
+        "The screen uses a simple layout",
+        "The rule is implemented in a single method"
+      ],
+      "correctIndex": 1,
+      "explanation": "Impact reflects business consequences if the defect occurs. Regulatory exposure and incorrect customer charges make the defect much more serious."
+    },
+    {
+      "id": "al-ta-047",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.3.2",
+      "difficulty": "easy",
+      "question": "Risk levels are reassessed every sprint. Which evidence is the STRONGEST reason to lower a previously high product-risk rating?",
+      "options": [
+        "A developer says the area now feels safer",
+        "Repeated targeted tests and recent related changes have shown stable results with no new incidents",
+        "The feature is popular with users",
+        "The test team has become smaller"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk ratings should change based on evidence. Consistently stable test outcomes and a lack of recent issues provide a sound basis for reducing a prior rating."
+    },
+    {
+      "id": "al-ta-048",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.4.3",
+      "difficulty": "medium",
+      "question": "A payment gateway is classified as high risk. Which coverage objective BEST reflects risk-based testing?",
+      "options": [
+        "Run one happy-path payment and move on",
+        "Focus only on UI cosmetics around the pay button",
+        "Cover successful payments plus negative, timeout, retry, and malformed-response scenarios",
+        "Skip the gateway in system testing because the provider already tested it"
+      ],
+      "correctIndex": 2,
+      "explanation": "High-risk integrations need broader and deeper coverage than a single successful flow. Negative and recovery scenarios are important because that is where costly failures often appear."
+    },
+    {
+      "id": "al-ta-049",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.1.3",
+      "difficulty": "hard",
+      "question": "Which workshop input is MOST useful for uncovering hidden product risks tied to real operations?",
+      "options": [
+        "A list of office holidays",
+        "Recent support tickets and call-center complaints about similar workflows",
+        "The developer seating plan",
+        "Unused feature flags from a different application"
+      ],
+      "correctIndex": 1,
+      "explanation": "Operational feedback shows how the product fails in practice and what users struggle with. That information often reveals risks not obvious from requirements alone."
+    },
+    {
+      "id": "al-ta-050",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.2.5",
+      "difficulty": "easy",
+      "question": "Why might a test analyst assign a LOWER overall risk to a technically complex feature than to a simpler one?",
+      "options": [
+        "Because complexity never influences risk",
+        "Because the simpler feature may be used far more often and have greater business exposure",
+        "Because only developers rate likelihood",
+        "Because low code volume always means high impact"
+      ],
+      "correctIndex": 1,
+      "explanation": "Overall product risk combines more than technical complexity. A simpler feature can still deserve higher priority if many users depend on it or failures would be costly."
+    },
+    {
+      "id": "al-ta-051",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.4.4",
+      "difficulty": "medium",
+      "question": "A hotfix changes discount precedence rules. Which regression selection BEST matches risk-based thinking?",
+      "options": [
+        "Retest pricing, promotions, invoice totals, and related tax flows instead of unrelated profile settings",
+        "Run only UI theme tests because they are quick",
+        "Repeat every test in the repository regardless of relevance",
+        "Skip regression because the change was labeled a hotfix"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk-based regression targets the areas most likely to be affected by the change and most costly if broken. Pricing-adjacent flows are a much better choice than unrelated settings pages."
+    },
+    {
+      "id": "al-ta-052",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.3.3",
+      "difficulty": "hard",
+      "question": "What does a statement about residual product risk communicate after testing?",
+      "options": [
+        "That no significant risks remain anywhere in the product",
+        "That all known defects were fixed before release",
+        "That some risk still remains and stakeholders are informed of that remaining exposure",
+        "That testers are no longer responsible for reporting results"
+      ],
+      "correctIndex": 2,
+      "explanation": "Testing reduces risk but rarely removes it completely. Residual risk statements help stakeholders make informed release decisions based on the exposure that remains."
+    },
+    {
+      "id": "al-ta-053",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.1.4",
+      "difficulty": "easy",
+      "question": "During risk identification, which question from a test analyst is MOST likely to expose important business-facing failure modes?",
+      "options": [
+        "Which user-visible failures could cause lost sales, financial loss, or regulatory problems?",
+        "Which IDE theme do developers prefer?",
+        "Which code formatter runs in CI?",
+        "Which sprint had the best velocity?"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk identification is strengthened by questions about customer and business consequences. Those prompts help the team surface failures worth prioritizing in testing."
+    },
+    {
+      "id": "al-ta-054",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.4.5",
+      "difficulty": "medium",
+      "question": "Test time is unexpectedly cut by 30%. Which action BEST preserves the integrity of a risk-based approach?",
+      "options": [
+        "Reduce high-risk coverage equally with low-risk coverage",
+        "Drop low-risk scenarios before reducing tests that target the highest product risks",
+        "Remove all negative tests first",
+        "Continue unchanged and simply skip defect logging"
+      ],
+      "correctIndex": 1,
+      "explanation": "When time is constrained, the key principle is to protect coverage of the highest risks as much as possible. Lower-risk tests are the better place to reduce scope first."
+    },
+    {
+      "id": "al-ta-055",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.2.6",
+      "difficulty": "hard",
+      "question": "Which indicator MOST strongly increases the likelihood rating for a new feature?",
+      "options": [
+        "It uses the company's standard page header",
+        "It is implemented in a component with a dense defect history and by a team new to the area",
+        "It has a short user guide",
+        "It was requested by an internal stakeholder"
+      ],
+      "correctIndex": 1,
+      "explanation": "Likelihood grows when defect-prone components and limited team experience combine. Historical defect density is especially useful as objective evidence."
+    },
+    {
+      "id": "al-ta-056",
+      "chapter": "1. The Test Analyst's Tasks in Risk-Based Testing",
+      "loRef": "AL-TA-1.4.6",
+      "difficulty": "easy",
+      "question": "A high-risk workflow depends on a fraud service that enforces rate limits. Which plan BEST reflects risk-based testing?",
+      "options": [
+        "Assume the service never throttles in production",
+        "Test only with one approved transaction",
+        "Reserve early environment time and design tests for service unavailability, throttling, and delayed responses",
+        "Delay all fraud-service tests until after release"
+      ],
+      "correctIndex": 2,
+      "explanation": "The third-party dependency raises both business risk and integration risk. A strong plan covers failure modes such as throttling and outages, not just successful responses."
+    },
+    {
+      "id": "al-ta-057",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.1.4",
+      "difficulty": "medium",
+      "question": "A user story says, 'Preferred customers get fast shipping.' What should the test analyst do FIRST during test analysis?",
+      "options": [
+        "Write automation scripts immediately",
+        "Ask for measurable criteria defining 'preferred' and 'fast'",
+        "Assume the developers already know the values",
+        "Delete the story because it is too short"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ambiguous terms prevent precise test conditions and expected results. The test analyst should first seek concrete acceptance details."
+    },
+    {
+      "id": "al-ta-058",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.2.2",
+      "difficulty": "hard",
+      "question": "Example scenarios show tax-inclusive totals, but the glossary defines totals as tax-exclusive. What is the BEST test-analysis response?",
+      "options": [
+        "Choose one interpretation privately and design tests",
+        "Raise an inconsistency review comment before test design continues",
+        "Ignore the glossary because examples are always correct",
+        "Split the difference and expect both results"
+      ],
+      "correctIndex": 1,
+      "explanation": "Conflicting sources in the test basis are a classic review finding. Resolving them early prevents wasted design effort and contradictory tests."
+    },
+    {
+      "id": "al-ta-059",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.3.1",
+      "difficulty": "easy",
+      "question": "Why should preconditions be captured explicitly when analyzing a use case?",
+      "options": [
+        "They define valid starting states and help prevent invalid tests from being mistaken for product defects",
+        "They replace the need for expected results",
+        "They are only relevant to developers",
+        "They make traceability unnecessary"
+      ],
+      "correctIndex": 0,
+      "explanation": "Preconditions matter because the same steps can have different meanings in different starting states. Making them explicit improves validity and repeatability."
+    },
+    {
+      "id": "al-ta-060",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.1.5",
+      "difficulty": "medium",
+      "question": "A business-process model shows an order moving from sales review to finance approval. Which test condition is easiest to miss if only isolated user stories are read?",
+      "options": [
+        "The page title on the sales screen",
+        "The handoff rules and authorization checks between the two roles",
+        "The coding style of the approval service",
+        "The database backup frequency"
+      ],
+      "correctIndex": 1,
+      "explanation": "Process models expose cross-role and cross-step behavior that can be hidden when stories are read in isolation. Handoffs are common defect sources."
+    },
+    {
+      "id": "al-ta-061",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.2.3",
+      "difficulty": "hard",
+      "question": "What is the STRONGEST reason to link each test condition to its source requirement, story, or model element?",
+      "options": [
+        "So the test case names look more formal",
+        "To make change impact analysis and coverage tracking easier",
+        "To avoid ever updating tests",
+        "To ensure all tests are automated"
+      ],
+      "correctIndex": 1,
+      "explanation": "Traceability helps the team see what is covered and what must change when the test basis changes. It is especially valuable in fast-moving projects."
+    },
+    {
+      "id": "al-ta-062",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.1.6",
+      "difficulty": "easy",
+      "question": "Which requirement phrase MOST clearly signals missing oracle detail during analysis?",
+      "options": [
+        "The system should respond quickly",
+        "The invoice number is twelve characters long",
+        "Only active users may reset passwords",
+        "Rejected orders remain visible to supervisors"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Quickly' is subjective unless tied to measurable expectations or acceptance criteria. Without clarification, the tester cannot make a consistent pass/fail decision."
+    },
+    {
+      "id": "al-ta-063",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.3.2",
+      "difficulty": "medium",
+      "question": "A requirement lists valid order statuses but says nothing about how status changes happen. What should the test analyst request?",
+      "options": [
+        "The source-code package structure",
+        "Transition rules, triggering events, and forbidden moves between statuses",
+        "The team's meeting schedule",
+        "A longer list of color choices for the status labels"
+      ],
+      "correctIndex": 1,
+      "explanation": "Knowing the status names alone is not enough for robust analysis. Transition rules are needed to derive meaningful conditions and expected outcomes."
+    },
+    {
+      "id": "al-ta-064",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.2.4",
+      "difficulty": "hard",
+      "question": "Why are example-based discussions with the product owner valuable during test analysis?",
+      "options": [
+        "They expose hidden assumptions and provide concrete expected outcomes",
+        "They eliminate the need for later execution",
+        "They guarantee no defects will escape",
+        "They replace the need for version control"
+      ],
+      "correctIndex": 0,
+      "explanation": "Examples force abstract rules into specific cases, which often reveals missing behavior and expected results. They also improve shared understanding across roles."
+    },
+    {
+      "id": "al-ta-065",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.1.7",
+      "difficulty": "easy",
+      "question": "A report specification defines which columns appear but does not define the default sort order. What is the BEST analysis outcome?",
+      "options": [
+        "Treat any sort order as acceptable",
+        "Create a review comment about the missing default behavior",
+        "Guess the most common sort order and proceed",
+        "Skip report testing until system test"
+      ],
+      "correctIndex": 1,
+      "explanation": "Missing behavior is a defect in the test basis, not something the test analyst should silently invent. Raising it early protects both design quality and stakeholder expectations."
+    },
+    {
+      "id": "al-ta-066",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.3.3",
+      "difficulty": "medium",
+      "question": "When deriving test conditions from decision logic, what should a test condition MOST often represent?",
+      "options": [
+        "Every possible data value individually",
+        "A meaningful rule, branch, or outcome that requires separate verification",
+        "Only user interface text",
+        "Every future automation step"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test conditions should be detailed enough to guide design without degenerating into raw data enumeration. Distinct rules and outcomes are a practical unit of analysis."
+    },
+    {
+      "id": "al-ta-067",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.2.5",
+      "difficulty": "hard",
+      "question": "Two requirements describe the same loyalty level using different terms. What risk should the test analyst recognize?",
+      "options": [
+        "The test cases may become duplicated or inconsistent unless the terminology is aligned",
+        "The code will compile more slowly",
+        "The product owner will need fewer examples",
+        "The test environment will lose data"
+      ],
+      "correctIndex": 0,
+      "explanation": "Terminology mismatches can create conflicting interpretations, duplicated conditions, and incomplete coverage. The ambiguity should be resolved before design progresses."
+    },
+    {
+      "id": "al-ta-068",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.1.8",
+      "difficulty": "easy",
+      "question": "A prototype shows the Submit button disabled until all mandatory fields are valid. Besides the visible button state, what should the test analyst analyze?",
+      "options": [
+        "Only the CSS theme applied to the form",
+        "The exact definition of mandatory fields and how errors can be corrected",
+        "How many developers touched the form",
+        "Which workstation the designer used"
+      ],
+      "correctIndex": 1,
+      "explanation": "The visible behavior hints at underlying rules that must be made explicit. Mandatory-field definitions and error-recovery behavior are both important test-analysis targets."
+    },
+    {
+      "id": "al-ta-069",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.3.4",
+      "difficulty": "medium",
+      "question": "For an API specification, which information MOST directly supports effective test analysis?",
+      "options": [
+        "The font used in the OpenAPI document",
+        "Constraints on required fields, optional fields, formats, and enumerated values",
+        "The internal team wiki URL",
+        "The average code review time"
+      ],
+      "correctIndex": 1,
+      "explanation": "Input and output constraints are central to deriving conditions for valid, invalid, and edge-case API behavior. Document appearance is irrelevant to analysis quality."
+    },
+    {
+      "id": "al-ta-070",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.2.6",
+      "difficulty": "hard",
+      "question": "Why can early test analysis reduce total project cost?",
+      "options": [
+        "It eliminates the need for defect management",
+        "It helps find gaps and ambiguities in the test basis before implementation rework becomes expensive",
+        "It always shortens test execution time to zero",
+        "It avoids any need for stakeholder review"
+      ],
+      "correctIndex": 1,
+      "explanation": "Finding defects in requirements and models is usually cheaper than finding them after code and testware have been built. Early analysis reduces downstream rework."
+    },
+    {
+      "id": "al-ta-071",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.1.9",
+      "difficulty": "easy",
+      "question": "Which item is the BEST candidate for a separate test condition rather than only a test-data variation?",
+      "options": [
+        "Using a different customer surname",
+        "A distinct business rule that VIP orders bypass credit-limit approval",
+        "Changing the browser window size by a few pixels",
+        "Running the same test at a different time of day"
+      ],
+      "correctIndex": 1,
+      "explanation": "A distinct rule can produce different outcomes and therefore deserves its own condition. Pure data substitutions often belong later during detailed design."
+    },
+    {
+      "id": "al-ta-072",
+      "chapter": "2. Test Analysis",
+      "loRef": "AL-TA-2.3.5",
+      "difficulty": "medium",
+      "question": "A recommendation engine does not have one obvious 'best' result for every input. Which oracle challenge should the test analyst note during analysis?",
+      "options": [
+        "Expected results may be heuristic or probabilistic rather than exact",
+        "The feature cannot be tested at all",
+        "Only developers are allowed to inspect results",
+        "The test basis no longer needs traceability"
+      ],
+      "correctIndex": 0,
+      "explanation": "Some systems require softer or comparative oracles because outcomes are not strictly deterministic. Recognizing that challenge early helps shape realistic tests and verdict criteria."
+    },
+    {
+      "id": "al-ta-073",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.4.2",
+      "difficulty": "hard",
+      "question": "During test implementation, why group individual test cases into executable procedures?",
+      "options": [
+        "To hide traceability links from stakeholders",
+        "To make setup, sequence, and cleanup repeatable and efficient during execution",
+        "To guarantee all tests become automated",
+        "To avoid maintaining test data"
+      ],
+      "correctIndex": 1,
+      "explanation": "Executable procedures organize the practical flow of execution. They help testers run cases consistently and avoid repeated setup mistakes."
+    },
+    {
+      "id": "al-ta-074",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.5.1",
+      "difficulty": "easy",
+      "question": "A test fails because the reference data was not loaded. What should the test analyst record FIRST?",
+      "options": [
+        "A product defect with maximum severity",
+        "An environment or setup issue with enough evidence to explain the blocked result",
+        "A request to rewrite the requirement",
+        "Nothing, because setup issues are not worth logging"
+      ],
+      "correctIndex": 1,
+      "explanation": "When the failure is caused by the test environment or data setup, the first record should reflect that fact. Otherwise the defect log becomes misleading."
+    },
+    {
+      "id": "al-ta-075",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.4.3",
+      "difficulty": "medium",
+      "question": "What is the MAIN purpose of preparing expected results before execution begins?",
+      "options": [
+        "To reduce objective verdicts and encourage tester intuition",
+        "To avoid comparing actual and expected behavior",
+        "To make pass/fail decisions more consistent and less dependent on guesswork during execution",
+        "To replace the need for review comments"
+      ],
+      "correctIndex": 2,
+      "explanation": "Prepared expected results support reliable verdicts and reduce ambiguity during execution. They are especially important for complex calculations and business rules."
+    },
+    {
+      "id": "al-ta-076",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.5.2",
+      "difficulty": "hard",
+      "question": "Why is it useful to capture actual results at major checkpoints during a long end-to-end test?",
+      "options": [
+        "It helps isolate where a deviation first appeared",
+        "It guarantees the defect root cause is known",
+        "It removes the need for screenshots or logs",
+        "It makes cleanup unnecessary"
+      ],
+      "correctIndex": 0,
+      "explanation": "Checkpoint evidence narrows down where behavior diverged from expectations. That speeds investigation and improves reproducibility."
+    },
+    {
+      "id": "al-ta-077",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.4.4",
+      "difficulty": "easy",
+      "question": "A suite contains tests that create customer records and other tests that modify them. Which ordering is MOST sensible?",
+      "options": [
+        "Run modifications before creation to save time",
+        "Run them in random order to expose hidden defects",
+        "Create records first, then modify them, with clear cleanup or dependency handling",
+        "Skip cleanup because later tests may reuse the data"
+      ],
+      "correctIndex": 2,
+      "explanation": "Execution order should respect data dependencies. Clear setup and cleanup keep the suite repeatable and reduce false failures."
+    },
+    {
+      "id": "al-ta-078",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.6.1",
+      "difficulty": "medium",
+      "question": "After a defect fix is delivered, what distinguishes confirmation testing from regression testing?",
+      "options": [
+        "Confirmation reruns the affected test, while regression checks whether related unchanged areas still work",
+        "Regression reruns only the originally failed step, while confirmation ignores it",
+        "They are identical and differ only by project terminology",
+        "Confirmation happens before implementation and regression happens after release"
+      ],
+      "correctIndex": 0,
+      "explanation": "Confirmation testing verifies the specific defect was fixed. Regression testing looks for unintended side effects in related functionality."
+    },
+    {
+      "id": "al-ta-079",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.4.5",
+      "difficulty": "hard",
+      "question": "Why maintain version-controlled test data sets?",
+      "options": [
+        "To make repeat execution and change history easier to manage",
+        "To prevent traceability back to requirements",
+        "To ensure testers cannot compare results",
+        "To avoid documenting business rules"
+      ],
+      "correctIndex": 0,
+      "explanation": "Version-controlled data improves repeatability and auditability. It also helps the team understand why results changed when business rules or product behavior evolved."
+    },
+    {
+      "id": "al-ta-080",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.5.3",
+      "difficulty": "easy",
+      "question": "A failure occurs only when the browser language is French. Which incident detail is MOST important to capture?",
+      "options": [
+        "The tester's lunch break time",
+        "The locale and configuration settings, along with exact steps and test data",
+        "Only the requirement identifier",
+        "The source control branch name"
+      ],
+      "correctIndex": 1,
+      "explanation": "Environment specifics are crucial when a failure depends on localization settings. Without them, reproducing and diagnosing the issue becomes much harder."
+    },
+    {
+      "id": "al-ta-081",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.4.6",
+      "difficulty": "medium",
+      "question": "When should a test analyst update an existing test procedure?",
+      "options": [
+        "Only at project closure",
+        "Whenever changed requirements or workflows make the steps or expected results outdated",
+        "Never, because procedures should remain historically stable",
+        "Only after the automation team asks"
+      ],
+      "correctIndex": 1,
+      "explanation": "Testware must evolve with the product and test basis. Outdated procedures create false results and waste execution time."
+    },
+    {
+      "id": "al-ta-082",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.5.4",
+      "difficulty": "hard",
+      "question": "What is the BEST reason to suspend execution of a test set?",
+      "options": [
+        "A blocking environment issue makes test verdicts unreliable",
+        "A stakeholder asks how many tests remain",
+        "The team wants more colorful reports",
+        "One low-priority defect was found"
+      ],
+      "correctIndex": 0,
+      "explanation": "Suspension is justified when continuing would produce misleading results or waste effort. Unreliable environments are a classic trigger."
+    },
+    {
+      "id": "al-ta-083",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.6.2",
+      "difficulty": "easy",
+      "question": "Which output from test completion is especially useful from a test analyst's perspective?",
+      "options": [
+        "A list of office equipment used during the release",
+        "Coverage gaps, unresolved defects, and lessons that improve future testware",
+        "A summary of developers' vacation plans",
+        "A promise that no customer issues will appear"
+      ],
+      "correctIndex": 1,
+      "explanation": "Completion information should help stakeholders judge remaining exposure and help the team improve. Coverage gaps and reusable lessons serve both goals."
+    },
+    {
+      "id": "al-ta-084",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.4.7",
+      "difficulty": "medium",
+      "question": "Why run a small smoke suite before detailed scripted tests on a new build?",
+      "options": [
+        "To replace all later testing",
+        "To quickly detect gross instability and avoid wasting deeper execution effort",
+        "To eliminate the need for logging incidents",
+        "To verify only cosmetic defects"
+      ],
+      "correctIndex": 1,
+      "explanation": "A smoke suite provides fast feedback on whether the build is stable enough for deeper testing. It protects time and environment capacity."
+    },
+    {
+      "id": "al-ta-085",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.5.5",
+      "difficulty": "hard",
+      "question": "A manual test script says, 'Verify the invoice looks correct.' What should the test analyst improve during implementation?",
+      "options": [
+        "Remove the step entirely",
+        "Replace the vague step with observable checks and expected values",
+        "Convert the script into a project plan",
+        "Add more screenshots but no clearer criteria"
+      ],
+      "correctIndex": 1,
+      "explanation": "Vague instructions lead to inconsistent verdicts. Observable checks and explicit expectations make the test case repeatable and auditable."
+    },
+    {
+      "id": "al-ta-086",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.6.3",
+      "difficulty": "easy",
+      "question": "A fix for one tax rule changed a shared calculation library. What follow-up testing is MOST appropriate?",
+      "options": [
+        "Run only the single failing test again",
+        "Skip testing because library changes are internal",
+        "Run confirmation testing plus targeted regression on other features that use the same library",
+        "Wait for production monitoring instead"
+      ],
+      "correctIndex": 2,
+      "explanation": "Shared components create side-effect risk beyond the original defect. Targeted regression complements confirmation testing in this situation."
+    },
+    {
+      "id": "al-ta-087",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.4.8",
+      "difficulty": "medium",
+      "question": "What makes recorded execution results genuinely auditable?",
+      "options": [
+        "They show only whether the tester felt confident",
+        "They link the procedure, data used, environment version, and observed outcome",
+        "They omit environment details to save time",
+        "They rely on memory rather than evidence"
+      ],
+      "correctIndex": 1,
+      "explanation": "Auditable results let another person understand what was run and what happened. The essential context includes procedure, data, environment, and outcome."
+    },
+    {
+      "id": "al-ta-088",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.1.3",
+      "difficulty": "hard",
+      "question": "A password reset code must contain exactly six digits. Which set of partitions is MOST appropriate for equivalence partitioning?",
+      "options": [
+        "Valid six-digit numeric values, invalid shorter values, invalid longer values, and invalid non-numeric values",
+        "Only one partition covering any entered value",
+        "Six partitions, one for each digit position",
+        "A partition for every possible code"
+      ],
+      "correctIndex": 0,
+      "explanation": "Equivalence partitioning groups inputs expected to behave the same way. For this rule, length and numeric format create the main valid and invalid classes."
+    },
+    {
+      "id": "al-ta-089",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.1.4",
+      "difficulty": "easy",
+      "question": "A membership age rule accepts values from 18 through 65 inclusive. Which boundary set is BEST for boundary value analysis?",
+      "options": [
+        "18, 65",
+        "0, 18, 65, 100",
+        "17, 18, 19, 64, 65, 66",
+        "20, 30, 40, 50, 60"
+      ],
+      "correctIndex": 2,
+      "explanation": "Boundary value analysis focuses on edges and nearby values because defects often cluster there. The chosen set exercises both sides of both inclusive limits."
+    },
+    {
+      "id": "al-ta-090",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.2.2",
+      "difficulty": "medium",
+      "question": "Which requirement is BEST suited to decision table testing?",
+      "options": [
+        "A static company-about page",
+        "A rule where shipping cost depends on destination, order value, and membership level",
+        "A splash screen image rotation",
+        "A one-field search box with no business rules"
+      ],
+      "correctIndex": 1,
+      "explanation": "Decision tables are strong when outcomes depend on combinations of conditions. Business-rule combinations such as shipping pricing are a classic fit."
+    },
+    {
+      "id": "al-ta-091",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.3.2",
+      "difficulty": "hard",
+      "question": "An account locks after three consecutive failed login attempts. Which test sequence BEST checks the lock behavior?",
+      "options": [
+        "Fail once, then log in successfully",
+        "Fail three times in a row and then attempt a correct password",
+        "Log in successfully three times",
+        "Alternate fail and success forever"
+      ],
+      "correctIndex": 1,
+      "explanation": "State transition behavior depends on sequence and current state. Three consecutive failures followed by a correct password directly checks whether the state changed to locked."
+    },
+    {
+      "id": "al-ta-092",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.4.2",
+      "difficulty": "easy",
+      "question": "When building a classification tree for a travel booking form, which item is the BEST example of a classification?",
+      "options": [
+        "The tester's employee number",
+        "Payment method",
+        "The sprint name",
+        "Repository branch protection settings"
+      ],
+      "correctIndex": 1,
+      "explanation": "A classification is a relevant aspect of the test object whose values affect behavior. Payment method often changes flows, rules, or validations in booking systems."
+    },
+    {
+      "id": "al-ta-093",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.5.1",
+      "difficulty": "medium",
+      "question": "A pairwise suite is created for browser, user role, and currency. What kind of defect could STILL escape?",
+      "options": [
+        "A defect triggered only by a specific three-way combination of those factors",
+        "Any defect involving a pair of factor values",
+        "Any defect in a single browser alone",
+        "All usability issues by definition"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pairwise testing guarantees pair coverage, not full combination coverage. A bug that requires a specific triple interaction may still remain."
+    },
+    {
+      "id": "al-ta-094",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.6.1",
+      "difficulty": "hard",
+      "question": "A use case includes an alternative flow where the user cancels an order before payment. Which expected result is MOST important to design for that flow?",
+      "options": [
+        "The reservation is released and no charge is created",
+        "The system prints a hidden debug log",
+        "The profile picture is refreshed",
+        "The browser cache is cleared"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alternative flows need their own meaningful outcomes, not just the happy path. In a cancellation flow, preventing a charge and releasing reserved resources are key checks."
+    },
+    {
+      "id": "al-ta-095",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.1.5",
+      "difficulty": "easy",
+      "question": "A booking rule requires the start date to be on or before the end date. Which input pair is MOST valuable as a boundary-focused test?",
+      "options": [
+        "Start 10 May, end 20 May",
+        "Start 15 May, end 15 May",
+        "Start 1 June, end 30 June",
+        "Start 1 January, end 31 December"
+      ],
+      "correctIndex": 1,
+      "explanation": "Equality is the critical boundary because the rule permits start and end dates to match. Many date-validation defects appear around this edge."
+    },
+    {
+      "id": "al-ta-096",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.2.3",
+      "difficulty": "medium",
+      "question": "A decision table contains a condition combination that can never occur in the business domain. What should the test analyst do?",
+      "options": [
+        "Keep it and test it anyway as a normal business rule",
+        "Remove or mark the impossible rule so effort is not wasted on invalid combinations",
+        "Duplicate it to improve coverage",
+        "Convert the table into a state model automatically"
+      ],
+      "correctIndex": 1,
+      "explanation": "Impossible combinations should be identified and excluded from normal rule coverage. Otherwise the table becomes misleading and inefficient."
+    },
+    {
+      "id": "al-ta-097",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.3.3",
+      "difficulty": "hard",
+      "question": "What is an important goal when using state transition testing on a workflow?",
+      "options": [
+        "Testing only the most common valid transitions",
+        "Showing that invalid events in a given state are rejected or handled correctly",
+        "Replacing all data-oriented tests",
+        "Ignoring timeout behavior"
+      ],
+      "correctIndex": 1,
+      "explanation": "Strong state-based testing includes invalid transitions because the system must respond safely to them. Focusing only on valid paths leaves gaps."
+    },
+    {
+      "id": "al-ta-098",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.4.3",
+      "difficulty": "easy",
+      "question": "A classification tree includes customer age and ticket type, but child tickets are valid only for younger customers. What should the test analyst do?",
+      "options": [
+        "Generate all age and ticket combinations anyway",
+        "Model the constraint so invalid combinations are not treated as normal expected behavior",
+        "Delete one of the classifications",
+        "Replace the tree with random testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Combinatorial models become more useful when business constraints are represented explicitly. That prevents wasted effort and incorrect expectations."
+    },
+    {
+      "id": "al-ta-099",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.5.2",
+      "difficulty": "medium",
+      "question": "After creating a pairwise test set for a complex configuration screen, what additional tests are MOST likely still needed?",
+      "options": [
+        "None, because pairwise replaces all other test design work",
+        "Only performance tests",
+        "High-risk boundaries and business-rule constraints not guaranteed by pairwise coverage",
+        "Only tests chosen randomly"
+      ],
+      "correctIndex": 2,
+      "explanation": "Pairwise coverage is efficient, but it does not replace focused tests for boundaries, constraints, or other high-risk conditions. Those still need attention."
+    },
+    {
+      "id": "al-ta-100",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.6.2",
+      "difficulty": "hard",
+      "question": "When deriving use case tests that span multiple systems, what provides the BEST oracle?",
+      "options": [
+        "Only whether the final confirmation screen appears",
+        "The expected business outcome and the expected data changes across each involved system",
+        "Only the number of API calls made",
+        "The team's estimate in story points"
+      ],
+      "correctIndex": 1,
+      "explanation": "End-to-end use case tests need oracles broader than a final UI message. Consistent business outcomes and cross-system data effects are stronger evidence."
+    },
+    {
+      "id": "al-ta-101",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.1.6",
+      "difficulty": "easy",
+      "question": "An optional comment field allows empty input and up to 200 characters. Which partitions are MOST relevant?",
+      "options": [
+        "Exactly 200 partitions, one for each length",
+        "Empty valid input, non-empty valid input up to 200 characters, and invalid input over 200 characters",
+        "Only one valid partition because the field is optional",
+        "Only invalid partitions because optional fields are low risk"
+      ],
+      "correctIndex": 1,
+      "explanation": "Optional fields still benefit from partitioning. The key distinction is between empty valid input, bounded valid content, and content beyond the maximum length."
+    },
+    {
+      "id": "al-ta-102",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.2.4",
+      "difficulty": "medium",
+      "question": "A decision table for discount approval has five binary conditions, creating many columns. What is the BEST first simplification step?",
+      "options": [
+        "Test every column without review",
+        "Merge equivalent outcomes and remove impossible combinations where justified",
+        "Convert the table into a user manual",
+        "Drop the least convenient conditions"
+      ],
+      "correctIndex": 1,
+      "explanation": "Decision tables often become more efficient when impossible rules are removed and equivalent rules are collapsed. That keeps coverage systematic without needless duplication."
+    },
+    {
+      "id": "al-ta-103",
+      "chapter": "3. Test Design",
+      "loRef": "AL-TA-3.3.4",
+      "difficulty": "hard",
+      "question": "A timeout event can occur while an order is awaiting payment or after it is already cancelled. What key state-based test idea follows from this?",
+      "options": [
+        "The same event may need different expected outcomes depending on the current state",
+        "Timeouts should be ignored in test design",
+        "Only the first state should ever be tested",
+        "A state model is unnecessary when events repeat"
+      ],
+      "correctIndex": 0,
+      "explanation": "In state transition testing, events are interpreted in the context of the current state. Repeating the same event across states can reveal important differences in behavior."
+    },
+    {
+      "id": "al-ta-104",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.1.3",
+      "difficulty": "easy",
+      "question": "Historical escaped defects in a multi-currency checkout cluster around rounding, currency conversion, and locale parsing. Which defect class should the next test design cycle emphasize?",
+      "options": [
+        "Precision and format-conversion defects",
+        "Logo placement defects",
+        "Password-strength defects",
+        "Developer onboarding defects"
+      ],
+      "correctIndex": 0,
+      "explanation": "Defect-based testing uses known defect patterns to steer effort. The history here clearly points toward calculation precision and data-format handling."
+    },
+    {
+      "id": "al-ta-105",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.1.4",
+      "difficulty": "medium",
+      "question": "A defect taxonomy includes the class 'interface mismatch.' Which test idea BEST targets that class?",
+      "options": [
+        "Checking whether a page title matches branding guidelines",
+        "Sending and receiving data that omits optional fields or uses unexpected schema versions between services",
+        "Changing a font size in the UI",
+        "Comparing sprint burndown charts"
+      ],
+      "correctIndex": 1,
+      "explanation": "Interface mismatches often appear when connected systems disagree on message shape, optionality, or versions. Cross-service schema variations are therefore a strong targeted test idea."
+    },
+    {
+      "id": "al-ta-106",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.2.2",
+      "difficulty": "hard",
+      "question": "Why should a defect taxonomy be updated after root-cause analysis of new defects?",
+      "options": [
+        "To make historical reports longer",
+        "To capture emerging defect patterns that can guide future test design",
+        "To avoid ever closing incidents",
+        "To replace risk analysis permanently"
+      ],
+      "correctIndex": 1,
+      "explanation": "A taxonomy should learn from new evidence. Updating it with real defect patterns makes future defect-based testing more focused and useful."
+    },
+    {
+      "id": "al-ta-107",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.1.5",
+      "difficulty": "easy",
+      "question": "Escaped defects cluster around imported files that contain null values in optional columns. What should the test analyst do?",
+      "options": [
+        "Avoid testing file imports because they are unstable",
+        "Design targeted import tests with null, blank, and missing-field variations",
+        "Test only file names and file sizes",
+        "Ask operations to clean the files manually"
+      ],
+      "correctIndex": 1,
+      "explanation": "When history points to null-handling problems, targeted variations around missing and blank data are a direct and effective response."
+    },
+    {
+      "id": "al-ta-108",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.2.3",
+      "difficulty": "medium",
+      "question": "How does a domain-specific defect taxonomy help more than a purely generic one?",
+      "options": [
+        "It highlights defect types that are especially common and costly in that domain",
+        "It guarantees smaller test suites",
+        "It removes the need for requirements",
+        "It applies only to unit testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Generic categories are useful, but domain-specific ones better reflect the failures that really matter in a given product area. That improves prioritization."
+    },
+    {
+      "id": "al-ta-109",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.1.6",
+      "difficulty": "hard",
+      "question": "When using defect-based testing on a search feature with a long bug history, which source BEST seeds new test ideas?",
+      "options": [
+        "Only the current sprint backlog titles",
+        "Past defect reports and support tickets for that feature",
+        "The building evacuation map",
+        "A random set of unrelated API logs"
+      ],
+      "correctIndex": 1,
+      "explanation": "Past defects are direct evidence of where the feature has failed before. They are a strong starting point for targeted defect-based test design."
+    },
+    {
+      "id": "al-ta-110",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.2.4",
+      "difficulty": "easy",
+      "question": "A team classifies almost every defect as 'Other.' What is the MAIN consequence?",
+      "options": [
+        "The taxonomy becomes less useful for guiding future targeted testing",
+        "The release immediately becomes safer",
+        "Defect fixing gets faster automatically",
+        "Traceability to requirements improves"
+      ],
+      "correctIndex": 0,
+      "explanation": "Overuse of vague categories destroys the value of the taxonomy. If categories do not distinguish patterns, they cannot guide better future tests."
+    },
+    {
+      "id": "al-ta-111",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.1.7",
+      "difficulty": "medium",
+      "question": "Which test most directly targets omission-type defects in a rule-driven form?",
+      "options": [
+        "A scenario that should trigger a mandatory business validation and checks whether that validation is missing",
+        "A check that the background color matches the design file",
+        "A review of the tester roster",
+        "A comparison of build timestamps"
+      ],
+      "correctIndex": 0,
+      "explanation": "Omission defects occur when required behavior is absent. Designing a scenario that should invoke that behavior is the most direct way to expose the gap."
+    },
+    {
+      "id": "al-ta-112",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.1.8",
+      "difficulty": "hard",
+      "question": "A known defect allowed a discount to be applied twice when an order was edited. Which follow-up idea BEST uses defect-based thinking?",
+      "options": [
+        "Retest create, edit, and cancel flows that trigger price recalculation",
+        "Run only the login smoke test",
+        "Ignore editing because the defect is already known",
+        "Focus only on visual spacing in the order form"
+      ],
+      "correctIndex": 0,
+      "explanation": "The defect pattern points to recalculation logic triggered by workflow changes. Related flows that recompute totals are therefore strong targets for further testing."
+    },
+    {
+      "id": "al-ta-113",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.3.2",
+      "difficulty": "easy",
+      "question": "What is a benefit of considering both product defect patterns and process-related defect causes?",
+      "options": [
+        "It supports better targeted testing and can also inform preventive improvements",
+        "It guarantees every defect will be found before release",
+        "It removes the need for retrospectives",
+        "It allows test analysts to stop reviewing requirements"
+      ],
+      "correctIndex": 0,
+      "explanation": "Product patterns guide where to test, while process causes can highlight where reviews, standards, or communication should improve. Together they support detection and prevention."
+    },
+    {
+      "id": "al-ta-114",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.1.9",
+      "difficulty": "medium",
+      "question": "A parser often fails around maximum field lengths and unusual separators. Which targeted tests BEST fit the observed defect classes?",
+      "options": [
+        "Typical records only",
+        "Boundary lengths and uncommon delimiter combinations",
+        "Only security scans",
+        "Random page refreshes"
+      ],
+      "correctIndex": 1,
+      "explanation": "The history identifies two likely fault patterns: boundary handling and separator parsing. Tests should directly exercise those weak spots."
+    },
+    {
+      "id": "al-ta-115",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.2.5",
+      "difficulty": "hard",
+      "question": "If an organization has little historical defect data for a new product, where can an initial taxonomy reasonably come from?",
+      "options": [
+        "Comparable systems, standards, and team experience in the domain",
+        "Only the product logo guide",
+        "A list of developer keyboard shortcuts",
+        "A random sample of production metrics from another business"
+      ],
+      "correctIndex": 0,
+      "explanation": "An initial taxonomy can be bootstrapped from relevant external and experiential sources. It becomes stronger later as local defect data accumulates."
+    },
+    {
+      "id": "al-ta-116",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.3.3",
+      "difficulty": "easy",
+      "question": "When a defect-based test reveals a new failure, what makes the result especially valuable for improving the taxonomy?",
+      "options": [
+        "The defect is closed quickly regardless of documentation",
+        "It is clearly classified with enough trigger context to recognize the recurring pattern later",
+        "The defect has many watchers",
+        "The failure occurs in a development environment"
+      ],
+      "correctIndex": 1,
+      "explanation": "A taxonomy improves when defects are recorded in a way that preserves the meaningful pattern. Trigger context helps future testers design better targeted tests."
+    },
+    {
+      "id": "al-ta-117",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.1.10",
+      "difficulty": "medium",
+      "question": "A payment-service taxonomy includes duplicate requests as a common defect class. Which scenario BEST targets that class?",
+      "options": [
+        "Submitting one normal payment on a stable network",
+        "Retrying after an unclear response and verifying that only one charge is created",
+        "Changing the page language before paying",
+        "Printing the confirmation page twice"
+      ],
+      "correctIndex": 1,
+      "explanation": "Duplicate-request defects often appear in retry and uncertainty conditions. The test should prove idempotent handling rather than just happy-path success."
+    },
+    {
+      "id": "al-ta-118",
+      "chapter": "4. Defect-Based Testing",
+      "loRef": "AL-TA-4.2.6",
+      "difficulty": "hard",
+      "question": "Which sign suggests a defect taxonomy is TOO broad to be useful?",
+      "options": [
+        "Its categories are specific enough to inspire concrete tests",
+        "Its categories are so vague that they do not suggest distinct test ideas",
+        "It is reviewed after major releases",
+        "It includes both historical and domain-based entries"
+      ],
+      "correctIndex": 1,
+      "explanation": "A useful taxonomy helps testers think of targeted tests. If the categories are too vague, that practical value disappears."
+    },
+    {
+      "id": "al-ta-119",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.3",
+      "difficulty": "easy",
+      "question": "Which charter is the BEST example of a focused exploratory testing mission?",
+      "options": [
+        "Test everything you can find in the application",
+        "Explore order-total calculation for mixed taxable and tax-exempt items with coupons; note rounding anomalies",
+        "Verify the entire release is ready",
+        "Check whether development is following the plan"
+      ],
+      "correctIndex": 1,
+      "explanation": "A good charter names a focused area, purpose, and likely risks. That keeps exploration purposeful without over-constraining it."
+    },
+    {
+      "id": "al-ta-120",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.4",
+      "difficulty": "medium",
+      "question": "Why are exploratory testing sessions often time-boxed?",
+      "options": [
+        "To make learning impossible",
+        "To keep focus and make debrief results easier to compare and manage",
+        "To ensure only one defect is found per session",
+        "To avoid writing notes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Time-boxing encourages discipline and helps teams plan, compare, and discuss session outcomes. It also prevents open-ended wandering."
+    },
+    {
+      "id": "al-ta-121",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.2.2",
+      "difficulty": "hard",
+      "question": "When is checklist-based testing especially valuable?",
+      "options": [
+        "When recurring regression or compliance-sensitive areas need consistent coverage",
+        "When the team wants to ignore previous incidents",
+        "When no one knows anything about the domain",
+        "When testers are forbidden to reuse experience"
+      ],
+      "correctIndex": 0,
+      "explanation": "Checklists shine when important recurring checks must be applied consistently. They turn prior learning into repeatable coverage."
+    },
+    {
+      "id": "al-ta-122",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.5",
+      "difficulty": "easy",
+      "question": "What is the PRIMARY purpose of a debrief after an exploratory session?",
+      "options": [
+        "To decide who caused each defect",
+        "To share findings, coverage achieved, obstacles encountered, and next ideas",
+        "To convert all notes into source code comments",
+        "To replace defect reports"
+      ],
+      "correctIndex": 1,
+      "explanation": "A debrief turns individual learning into team knowledge. It also clarifies what was covered and what should happen next."
+    },
+    {
+      "id": "al-ta-123",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.6",
+      "difficulty": "medium",
+      "question": "Which scenario is a strong example of error guessing for a file-upload feature?",
+      "options": [
+        "Uploading a file with a very long name and unsupported special characters",
+        "Uploading one normal PDF once",
+        "Changing the office printer settings",
+        "Reviewing the release burndown chart"
+      ],
+      "correctIndex": 0,
+      "explanation": "Error guessing draws on experience with common failure patterns. Long names and unusual characters are typical trouble spots for upload handling."
+    },
+    {
+      "id": "al-ta-124",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.7",
+      "difficulty": "hard",
+      "question": "Which artifact from session-based exploratory testing MOST supports accountability and repeatability?",
+      "options": [
+        "A memory of what the tester tried",
+        "Session notes that capture the charter, time spent, data used, and issues found",
+        "A screenshot of the team calendar",
+        "A count of lines of code changed"
+      ],
+      "correctIndex": 1,
+      "explanation": "Structured session notes help others understand what was explored and what was observed. That makes follow-up and review far easier."
+    },
+    {
+      "id": "al-ta-125",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.2.3",
+      "difficulty": "easy",
+      "question": "Where should checklist items MOST often come from?",
+      "options": [
+        "Past defects, standards, and known product risks",
+        "Only the personal preference of the newest tester",
+        "The team lunch schedule",
+        "Whatever was easiest to automate last sprint"
+      ],
+      "correctIndex": 0,
+      "explanation": "Useful checklists are grounded in evidence and experience. Past failures, domain rules, and risks are much stronger sources than convenience alone."
+    },
+    {
+      "id": "al-ta-126",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.8",
+      "difficulty": "medium",
+      "question": "What is a key benefit of paired exploratory testing?",
+      "options": [
+        "One tester can drive while the other observes, questions, and suggests additional paths",
+        "It guarantees twice as many defects",
+        "It removes the need for a charter",
+        "It works only for API testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pairing can improve idea generation and observation quality because the two testers play complementary roles. It also supports knowledge sharing."
+    },
+    {
+      "id": "al-ta-127",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.9",
+      "difficulty": "hard",
+      "question": "A charter says, 'Test the whole app.' What is the BEST improvement?",
+      "options": [
+        "Make it broader so nothing is missed",
+        "Narrow it to a feature, workflow, or risk area with a clear mission",
+        "Convert it directly into a defect report",
+        "Remove all goals and let the tester improvise"
+      ],
+      "correctIndex": 1,
+      "explanation": "A charter should focus effort rather than dilute it. Narrowing the scope makes the session more purposeful and the results more useful."
+    },
+    {
+      "id": "al-ta-128",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.10",
+      "difficulty": "easy",
+      "question": "Why should exploratory testers vary data in both realistic and unrealistic ways?",
+      "options": [
+        "To reveal defects in normal flows and robustness handling",
+        "Because requirements never matter during exploration",
+        "Only unrealistic data can expose defects",
+        "It shortens every test session automatically"
+      ],
+      "correctIndex": 0,
+      "explanation": "Realistic data checks likely usage, while unrealistic data probes resilience and edge handling. Both perspectives add value."
+    },
+    {
+      "id": "al-ta-129",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.2.4",
+      "difficulty": "medium",
+      "question": "When should a testing checklist be revised or retired?",
+      "options": [
+        "Whenever items become obsolete or escaped defects show important checks are missing",
+        "Never, because stable lists are always correct",
+        "Only when a new project manager joins",
+        "Only after the repository is renamed"
+      ],
+      "correctIndex": 0,
+      "explanation": "A checklist should evolve with the product and with new learning. Obsolete items waste effort, while missing checks leave risk uncovered."
+    },
+    {
+      "id": "al-ta-130",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.11",
+      "difficulty": "hard",
+      "question": "What distinguishes exploratory testing from completely ad hoc testing?",
+      "options": [
+        "Exploratory testing has a deliberate mission, learning focus, and note-taking discipline",
+        "Exploratory testing forbids deviations from a full script",
+        "Ad hoc testing always has more traceability",
+        "There is no meaningful distinction"
+      ],
+      "correctIndex": 0,
+      "explanation": "Exploratory testing is flexible, but it is not aimless. Charters, learning, and lightweight structure separate it from purely unstructured ad hoc work."
+    },
+    {
+      "id": "al-ta-131",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.12",
+      "difficulty": "easy",
+      "question": "How can personas improve experience-based testing?",
+      "options": [
+        "They guide scenarios based on different user goals, skills, and frustrations",
+        "They replace the need for requirements",
+        "They matter only for performance testing",
+        "They ensure that only positive tests are executed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Personas help testers imagine varied real-world behaviors and needs. That often uncovers issues that a single generic user viewpoint would miss."
+    },
+    {
+      "id": "al-ta-132",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.13",
+      "difficulty": "medium",
+      "question": "A tester keeps re-running their favorite scenarios during exploration. What risk does this create?",
+      "options": [
+        "Improved requirement clarity",
+        "Coverage bias that leaves other important areas underexplored",
+        "Automatic boundary coverage",
+        "A stronger defect taxonomy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Experience-based techniques can drift toward comfortable paths unless guided. Charters, heuristics, and debriefs help counter coverage bias."
+    },
+    {
+      "id": "al-ta-133",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.2.5",
+      "difficulty": "hard",
+      "question": "What is the BEST way to combine scripted and exploratory testing on the same feature?",
+      "options": [
+        "Use scripted tests for core regression and exploratory sessions for discovering new risks around changes",
+        "Run only exploratory sessions because scripts are obsolete",
+        "Run only scripts because exploration is never repeatable",
+        "Keep the two approaches on separate releases"
+      ],
+      "correctIndex": 0,
+      "explanation": "The two approaches complement each other well. Scripts provide reliable regression coverage, while exploration helps uncover new or unanticipated problems."
+    },
+    {
+      "id": "al-ta-134",
+      "chapter": "5. Experience-Based Testing",
+      "loRef": "AL-TA-5.1.15",
+      "difficulty": "easy",
+      "question": "Which exploratory approach BEST supports testing an API with many optional filters?",
+      "options": [
+        "A charter that focuses on filter combinations, omitted parameters, and suspicious defaults",
+        "A charter that only checks whether the server starts",
+        "No charter, because APIs cannot be explored",
+        "A checklist about office network speed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Even without a GUI, exploratory testing can be focused and effective. Optional filters and defaults are rich areas for discovery in APIs."
+    },
+    {
+      "id": "al-ta-135",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.1.4",
+      "difficulty": "medium",
+      "question": "A requested export format is completely missing from the delivered product. Which quality characteristic is PRIMARILY affected?",
+      "options": [
+        "Functional completeness",
+        "Usability accessibility",
+        "Portability installability",
+        "Compatibility coexistence"
+      ],
+      "correctIndex": 0,
+      "explanation": "Functional completeness concerns whether the necessary functions are present. A missing requested export format is a straightforward example."
+    },
+    {
+      "id": "al-ta-136",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.1.5",
+      "difficulty": "hard",
+      "question": "An invoicing feature calculates tax totals incorrectly for valid inputs. Which functional-suitability sub-characteristic is MOST directly affected?",
+      "options": [
+        "Functional appropriateness",
+        "Functional correctness",
+        "Installability",
+        "Co-existence"
+      ],
+      "correctIndex": 1,
+      "explanation": "The function exists, but it produces the wrong result. That is primarily a problem of functional correctness."
+    },
+    {
+      "id": "al-ta-137",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.1.6",
+      "difficulty": "easy",
+      "question": "A workflow can technically be completed, but users must navigate five unnecessary screens to perform a routine bulk action. Which sub-characteristic is MOST affected?",
+      "options": [
+        "Functional completeness",
+        "Functional appropriateness",
+        "Replaceability",
+        "Interoperability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Functional appropriateness considers whether the provided functions help users achieve tasks effectively. A needlessly cumbersome workflow is a good indicator that the function is poorly suited to the task."
+    },
+    {
+      "id": "al-ta-138",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.2.2",
+      "difficulty": "medium",
+      "question": "On the landing page, new users cannot tell where to begin their main task. Which usability sub-characteristic does this MOST threaten?",
+      "options": [
+        "Appropriateness recognizability",
+        "Installability",
+        "Maturity",
+        "Confidentiality"
+      ],
+      "correctIndex": 0,
+      "explanation": "If users cannot recognize how to start using the system for their goals, appropriateness recognizability is weak. This is a usability concern, not a portability one."
+    },
+    {
+      "id": "al-ta-139",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.2.3",
+      "difficulty": "hard",
+      "question": "Which test idea BEST addresses user error protection for a destructive action?",
+      "options": [
+        "Check whether the button label uses a bold font",
+        "Verify that deletion requires confirmation and offers recovery where appropriate",
+        "Measure the CPU time for the delete request",
+        "Review the developer checklist"
+      ],
+      "correctIndex": 1,
+      "explanation": "User error protection reduces the chance or consequence of mistakes. Confirmation and recovery are classic checks for destructive operations."
+    },
+    {
+      "id": "al-ta-140",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.2.4",
+      "difficulty": "easy",
+      "question": "Why is an automated accessibility scan alone usually insufficient?",
+      "options": [
+        "It cannot check anything about HTML",
+        "It misses important real-usage issues such as screen-reader flow and keyboard interaction quality",
+        "It always produces false positives only",
+        "It is relevant only for performance testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Automated tools are valuable, but they cannot fully assess lived accessibility. Manual checks remain important for interaction quality and actual assistive-technology use."
+    },
+    {
+      "id": "al-ta-141",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.3.1",
+      "difficulty": "medium",
+      "question": "A document-management app prevents a separate accounting app from using the same printer driver correctly. Which compatibility sub-characteristic is MOST affected?",
+      "options": [
+        "Interoperability",
+        "Co-existence",
+        "Learnability",
+        "Replaceability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Co-existence concerns whether a product can perform well in a shared environment without harming other products. The printer-driver conflict fits that concern."
+    },
+    {
+      "id": "al-ta-142",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.3.2",
+      "difficulty": "hard",
+      "question": "Two connected systems exchange dates, but one expects DD/MM/YYYY and the other expects MM/DD/YYYY. What should interoperability testing focus on MOST?",
+      "options": [
+        "Team meeting cadence",
+        "Data mapping and semantic consistency between systems",
+        "Only page layout on the sender side",
+        "Compiler warnings in unrelated modules"
+      ],
+      "correctIndex": 1,
+      "explanation": "Interoperability is not just about sending data; it is about agreeing on meaning. Date-format mismatches are a classic semantic-integration risk."
+    },
+    {
+      "id": "al-ta-143",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.4.1",
+      "difficulty": "easy",
+      "question": "Which scenario BEST targets installability?",
+      "options": [
+        "Checking whether a supported first-time installation and an upgrade both complete successfully with clear recovery on failure",
+        "Verifying tax formulas for invoices",
+        "Testing whether a button is centered",
+        "Reviewing defect trends from another project"
+      ],
+      "correctIndex": 0,
+      "explanation": "Installability testing focuses on how successfully the product can be installed, updated, or recovered. First-time and upgrade paths are both important."
+    },
+    {
+      "id": "al-ta-144",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.4.2",
+      "difficulty": "medium",
+      "question": "A web application must remain usable on both a desktop monitor and a tablet browser without product changes. Which portability sub-characteristic is MOST relevant?",
+      "options": [
+        "Adaptability",
+        "Accessibility",
+        "Interoperability",
+        "Recoverability"
+      ],
+      "correctIndex": 0,
+      "explanation": "Adaptability addresses how well software can operate in different environments without additional modification. Device and display variation is a common example."
+    },
+    {
+      "id": "al-ta-145",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.4.3",
+      "difficulty": "hard",
+      "question": "A team wants to swap one reporting engine for another without changing dependent business workflows. Which portability sub-characteristic is MOST relevant?",
+      "options": [
+        "Replaceability",
+        "User error protection",
+        "Appropriateness recognizability",
+        "Co-existence"
+      ],
+      "correctIndex": 0,
+      "explanation": "Replaceability concerns how well one product or component can be substituted for another in the same environment. That is the central issue in this scenario."
+    },
+    {
+      "id": "al-ta-146",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.2.5",
+      "difficulty": "easy",
+      "question": "Which evidence MOST directly supports a claim that a workflow is usable?",
+      "options": [
+        "Representative users complete key tasks with little help and few avoidable errors",
+        "The code coverage percentage increased",
+        "The project finished ahead of schedule",
+        "All logs were archived"
+      ],
+      "correctIndex": 0,
+      "explanation": "Usability is best supported by evidence from realistic task performance. Successful task completion with low assistance and low error rates is strong evidence."
+    },
+    {
+      "id": "al-ta-147",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.2.6",
+      "difficulty": "medium",
+      "question": "A button label expands in German so far that the primary action is partly hidden. Which quality characteristic is MOST directly affected?",
+      "options": [
+        "Usability",
+        "Portability",
+        "Maturity",
+        "Modularity"
+      ],
+      "correctIndex": 0,
+      "explanation": "If localization changes make an action hard to perceive or operate, the most direct problem is usability. The issue affects how users interact with the interface."
+    },
+    {
+      "id": "al-ta-148",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.2.7",
+      "difficulty": "hard",
+      "question": "Why do usability tests often need observation and defined heuristics rather than one exact expected output?",
+      "options": [
+        "Because usability outcomes can involve human behavior and judgment, not only deterministic results",
+        "Because usability cannot be tested",
+        "Because heuristics replace all requirements",
+        "Because observation is useful only for security testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Usability testing often deals with human behavior, confusion, and efficiency, which are not always captured by one exact output value. Structured observation helps form defensible verdicts."
+    },
+    {
+      "id": "al-ta-149",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.3.3",
+      "difficulty": "easy",
+      "question": "A partner system returns an unknown enumeration value in a response. What should a strong interoperability test expect?",
+      "options": [
+        "Graceful handling with a clear error or fallback and no data corruption",
+        "Automatic acceptance of all unknown values without logging",
+        "An application crash so the issue is obvious",
+        "A silent retry loop forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "Robust interoperability includes safe handling of unexpected but plausible external data. Graceful behavior is better than corruption, crashing, or endless retrying."
+    },
+    {
+      "id": "al-ta-150",
+      "chapter": "6. Testing Software Quality Characteristics",
+      "loRef": "AL-TA-6.4.4",
+      "difficulty": "medium",
+      "question": "After uninstalling and reinstalling the product, obsolete configuration is reused incorrectly and setup fails. What does this MOST likely indicate?",
+      "options": [
+        "A portability defect related to installability or configuration migration",
+        "A pure security defect unrelated to portability",
+        "Only a documentation typo",
+        "A defect in decision table logic"
+      ],
+      "correctIndex": 0,
+      "explanation": "Installation and reinstallation flows are part of portability-related quality concerns. Incorrect reuse of obsolete configuration points to a setup or migration defect."
     }
   ]
 }

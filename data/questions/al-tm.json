@@ -976,6 +976,1281 @@
       ],
       "correctIndex": 1,
       "explanation": "A sound go/no-go recommendation is based on objective information: coverage achieved, the business impact of outstanding defects, whether exit criteria have been met, and the residual risk of releasing, rather than gut feeling or unrelated preferences."
+    },
+    {
+      "id": "al-tm-066",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.6.1",
+      "difficulty": "easy",
+      "question": "A mobile app team works in two-week sprints and deploys to a staging environment every day. How should the test manager tailor the test process most effectively?",
+      "options": [
+        "Use short planning cycles, lightweight documentation, and frequent automated smoke and regression checks",
+        "Delay all testing until the final sprint so documentation is easier to maintain",
+        "Require formal sign-off for every test case before any execution begins",
+        "Treat each sprint as a separate waterfall project with a full handover phase"
+      ],
+      "correctIndex": 0,
+      "explanation": "Fast delivery cycles need a lightweight but disciplined test process. Frequent automation and short feedback loops support rapid change without losing control."
+    },
+    {
+      "id": "al-tm-067",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.6.2",
+      "difficulty": "medium",
+      "question": "During project startup, which activity best helps a test manager align the test process with business objectives?",
+      "options": [
+        "Facilitating a workshop to identify critical quality characteristics, key business risks, and release expectations",
+        "Choosing defect IDs in advance so reports look organized",
+        "Waiting until execution starts before asking stakeholders what matters most",
+        "Copying the previous project's test approach without reviewing project context"
+      ],
+      "correctIndex": 0,
+      "explanation": "Early stakeholder alignment helps the test manager shape the process around real business priorities. It also provides a sound basis for scope, depth, and reporting decisions."
+    },
+    {
+      "id": "al-tm-068",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.7.1",
+      "difficulty": "hard",
+      "question": "A program includes both a safety-related control module and a low-risk promotional website. Which test management approach is most appropriate?",
+      "options": [
+        "Apply identical levels of rigor to both workstreams so reporting stays simple",
+        "Focus mainly on whichever workstream finishes development first",
+        "Tailor the depth of testing, independence, and approval gates according to each workstream's risk and obligations",
+        "Delegate all planning decisions to developers because the workstreams are very different"
+      ],
+      "correctIndex": 2,
+      "explanation": "Different risk profiles call for different levels of control and evidence. Test management should scale rigor to business impact, technical risk, and regulatory needs."
+    },
+    {
+      "id": "al-tm-069",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.7.2",
+      "difficulty": "easy",
+      "question": "What is the main management benefit of defining test exit criteria before execution begins?",
+      "options": [
+        "It guarantees that no defects will be found late",
+        "It creates an objective basis for judging completion and discussing release readiness",
+        "It removes the need for status reporting during execution",
+        "It allows the team to skip retesting after fixes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Predefined exit criteria make completion decisions less subjective. They help the manager explain status and residual risk using agreed rules."
+    },
+    {
+      "id": "al-tm-070",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.8.1",
+      "difficulty": "medium",
+      "question": "A team wants to start system testing even though several external interfaces are unstable and environment monitoring is incomplete. What should the test manager do first?",
+      "options": [
+        "Start execution immediately and record failures as defects against the product",
+        "Reconfirm the entry criteria, expose the risks, and negotiate what must be stabilized before meaningful testing begins",
+        "Skip system testing and move directly to release preparation",
+        "Ask each tester to decide individually whether the environment is good enough"
+      ],
+      "correctIndex": 1,
+      "explanation": "Entry criteria exist to protect test effectiveness. When they are not met, the manager should make the risk visible and agree on corrective action rather than creating misleading results."
+    },
+    {
+      "id": "al-tm-071",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.8.2",
+      "difficulty": "hard",
+      "question": "Late in the project, a major architecture change affects shared services used by many features. Under a risk-based approach, what should determine the depth of regression testing?",
+      "options": [
+        "The number of testers who are available this week",
+        "The changed components plus the business-critical integrations and failure paths they can affect",
+        "Only the features that failed in the previous release",
+        "A random sample of tests from every subsystem"
+      ],
+      "correctIndex": 1,
+      "explanation": "Regression scope should be driven by impact and risk, not convenience. Shared architectural changes can affect many critical paths beyond the directly modified code."
+    },
+    {
+      "id": "al-tm-072",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.9.1",
+      "difficulty": "easy",
+      "question": "Which practice best supports testability when requirements are first discussed?",
+      "options": [
+        "Requesting measurable acceptance criteria and ways to observe outcomes in logs, reports, or interfaces",
+        "Avoiding all discussion of expected behavior until code is complete",
+        "Documenting only positive flows so requirements are easier to approve",
+        "Leaving nonfunctional expectations out because they are tested later"
+      ],
+      "correctIndex": 0,
+      "explanation": "Testable requirements are specific and observable. Early attention to acceptance criteria and visibility reduces ambiguity and later rework."
+    },
+    {
+      "id": "al-tm-073",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.9.2",
+      "difficulty": "medium",
+      "question": "An organization is moving from quarterly releases to continuous delivery. Which change should the test manager prioritize first in the test process?",
+      "options": [
+        "Replacing all testers with developers",
+        "Redefining quality checkpoints into smaller, more frequent gates supported by faster feedback mechanisms",
+        "Stopping exploratory testing because releases happen too often",
+        "Using the same reporting cycle and approval cadence as before"
+      ],
+      "correctIndex": 1,
+      "explanation": "Continuous delivery needs shorter control loops. Smaller gates and faster feedback allow the process to keep pace with frequent releases."
+    },
+    {
+      "id": "al-tm-074",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.10.1",
+      "difficulty": "hard",
+      "question": "A solution uses several unchanged third-party components and one newly built pricing engine that drives revenue-critical calculations. Where should the strongest test emphasis go?",
+      "options": [
+        "Equally across all components because fairness is important",
+        "Primarily on the new pricing engine and the integrations that could expose business-critical failures",
+        "Only on the third-party components because internal code is easier to fix",
+        "Only on user interface checks because customers see those first"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test effort should follow business and technical risk. A new revenue-critical engine and its integrations deserve deeper attention than stable reused components."
+    },
+    {
+      "id": "al-tm-075",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.10.2",
+      "difficulty": "easy",
+      "question": "Which statement about independent testing is most accurate from a management perspective?",
+      "options": [
+        "More independence can improve objectivity, but it may add communication overhead and reduce immediate domain context",
+        "Independent testing is always cheaper than embedded team testing",
+        "Independent testers should never collaborate with developers",
+        "Independence matters only for performance testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Independence provides a fresh perspective, but it also has trade-offs. A test manager balances those benefits and costs for the project's context."
+    },
+    {
+      "id": "al-tm-076",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.11.1",
+      "difficulty": "medium",
+      "question": "Production incident analysis shows many escaped problems were caused by misunderstood interfaces between teams. Which process change is most appropriate?",
+      "options": [
+        "Reduce all interface testing and spend more time on unit testing",
+        "Add earlier cross-team interface reviews and strengthen integration-focused test design and execution",
+        "Ask each team to create its own severity scale for interface issues",
+        "Delay defect logging until the release retrospective"
+      ],
+      "correctIndex": 1,
+      "explanation": "Escapes at interfaces usually indicate weak cross-team alignment and insufficient integration focus. The process should address those failure points earlier."
+    },
+    {
+      "id": "al-tm-077",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.11.2",
+      "difficulty": "hard",
+      "question": "The program board wants every team to follow one identical test process so roll-up reporting is easier. What should the test manager recommend?",
+      "options": [
+        "Allow each team to ignore program governance completely",
+        "Keep a common governance framework and reporting baseline, while allowing team-level tailoring where context differs",
+        "Mandate identical documents, checkpoints, and techniques for every team regardless of risk or lifecycle",
+        "Base the process only on the most mature team's preferences"
+      ],
+      "correctIndex": 1,
+      "explanation": "Consistency is useful for governance, but rigid uniformity can be wasteful. A shared framework with controlled tailoring preserves both comparability and relevance."
+    },
+    {
+      "id": "al-tm-078",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.12.1",
+      "difficulty": "easy",
+      "question": "Before selecting a new test reporting or management tool, what should a test manager define first?",
+      "options": [
+        "The business problem to solve, required information flows, and key integration needs",
+        "The vendor's booth design from the last conference",
+        "How many optional dashboards the tool can display by default",
+        "Which team member likes the interface colors most"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tool selection should start with needs, not features. Clear objectives and integration requirements help prevent an expensive but poor fit."
+    },
+    {
+      "id": "al-tm-079",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.12.2",
+      "difficulty": "medium",
+      "question": "Late in testing, the product scope expands to support a new country with unique tax rules. What should happen to the test process?",
+      "options": [
+        "Nothing, because process changes late in the project are always disruptive",
+        "Update the risk assessment, revisit priorities and entry or exit assumptions, and adjust the plan transparently",
+        "Stop testing existing functionality and switch entirely to the new country feature",
+        "Treat the extra scope as documentation only because requirements are already approved"
+      ],
+      "correctIndex": 1,
+      "explanation": "A meaningful scope increase changes risk and workload. The manager should update assumptions and communicate the effects on priorities and readiness."
+    },
+    {
+      "id": "al-tm-080",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.13.1",
+      "difficulty": "hard",
+      "question": "A supplier delivers a key component with minimal internal test evidence and limited observability. Which management response best preserves delivery confidence?",
+      "options": [
+        "Accept the component as low risk because it came from a supplier",
+        "Reduce independent testing to save time on integration",
+        "Treat the component as higher product risk, strengthen independent checks, and tighten progression decisions around it",
+        "Assume production monitoring will reveal any important problems quickly enough"
+      ],
+      "correctIndex": 2,
+      "explanation": "Limited evidence and poor observability increase uncertainty. A test manager should respond by increasing scrutiny and controlling risk more tightly."
+    },
+    {
+      "id": "al-tm-081",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.7.1",
+      "difficulty": "easy",
+      "question": "What is the primary purpose of an organizational test strategy?",
+      "options": [
+        "To describe the default testing approaches, standards, and principles that projects are expected to adapt",
+        "To list every test case for the current sprint",
+        "To replace all project-level planning documents permanently",
+        "To store only defect screenshots from previous releases"
+      ],
+      "correctIndex": 0,
+      "explanation": "An organizational strategy gives projects a reusable starting point. Individual projects still tailor that guidance to their own context."
+    },
+    {
+      "id": "al-tm-082",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.7.2",
+      "difficulty": "medium",
+      "question": "A master test plan references separate plans for system testing and user acceptance testing. Which content belongs most clearly in the master plan?",
+      "options": [
+        "The detailed test data for one acceptance scenario",
+        "The overall test governance, major milestones, and dependencies across test levels",
+        "The exact browser settings for one tester's machine",
+        "Only the defects discovered after release"
+      ],
+      "correctIndex": 1,
+      "explanation": "The master plan coordinates the bigger picture across levels. Detailed execution specifics usually belong in the individual level plans."
+    },
+    {
+      "id": "al-tm-083",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.8.1",
+      "difficulty": "hard",
+      "question": "A regulated project wants lighter documentation to improve speed. Which documentation decision is most appropriate?",
+      "options": [
+        "Tailor format and detail where possible, but keep the traceability, approvals, and evidence required by obligations",
+        "Remove approval records first because they add no value in regulated work",
+        "Use undocumented verbal agreements so the team moves faster",
+        "Stop producing summary reports until after release"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tailoring should reduce waste, not remove required control evidence. In regulated contexts, the manager must preserve what is needed for compliance and assurance."
+    },
+    {
+      "id": "al-tm-084",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.8.2",
+      "difficulty": "easy",
+      "question": "Which artifact is best suited to record the assumptions behind test estimates and major schedule risks?",
+      "options": [
+        "The project test plan or its planning notes",
+        "A defect screenshot library",
+        "A developer's personal to-do list",
+        "The production operations manual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Estimate assumptions and planning risks need to be visible and reviewable. The test plan is the normal place to capture and maintain that context."
+    },
+    {
+      "id": "al-tm-085",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.9.1",
+      "difficulty": "medium",
+      "question": "Why would a test manager maintain a product-quality dashboard separately from the detailed defect list?",
+      "options": [
+        "To hide raw data from the team",
+        "To give stakeholders a concise view of trends and risk without forcing them through ticket-level detail",
+        "To replace all formal reporting permanently",
+        "To avoid tracking blocked tests"
+      ],
+      "correctIndex": 1,
+      "explanation": "Different audiences need different levels of detail. Dashboards summarize the signals that matter most for management decisions."
+    },
+    {
+      "id": "al-tm-086",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.9.2",
+      "difficulty": "hard",
+      "question": "A reused test plan from last year still references retired interfaces and obsolete environments. What is the biggest management risk?",
+      "options": [
+        "The plan may create false confidence and direct execution toward work that no longer matches reality",
+        "The team will automatically find more defects because the plan is longer",
+        "Stakeholders will prefer it because it contains more historical detail",
+        "It will reduce the need for traceability updates"
+      ],
+      "correctIndex": 0,
+      "explanation": "Outdated documents can mislead planning, execution, and reporting. Reuse is helpful only when the content is actively refreshed for current scope and risk."
+    },
+    {
+      "id": "al-tm-087",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.10.1",
+      "difficulty": "easy",
+      "question": "Which statement about ISO/IEC/IEEE 29119 and IEEE 829 is most accurate for a test manager?",
+      "options": [
+        "They are examples of guidance for structuring test documentation, and projects may tailor their use to context",
+        "They prohibit any agile documentation approach",
+        "They define defect severity values for every industry",
+        "They apply only when all tests are manual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Documentation standards provide structure and terminology. Test managers use them as guidance and tailor them to the needs of the organization and project."
+    },
+    {
+      "id": "al-tm-088",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.10.2",
+      "difficulty": "medium",
+      "question": "What should a test summary report emphasize for a steering committee meeting?",
+      "options": [
+        "Every execution log line generated during the test cycle",
+        "Status against objectives and exit criteria, unresolved high risks, and a clear recommendation",
+        "Only the number of test cases designed so far",
+        "The names of all people who attended triage meetings"
+      ],
+      "correctIndex": 1,
+      "explanation": "Senior stakeholders need a decision-oriented summary. The report should connect results and residual risks to a recommended next step."
+    },
+    {
+      "id": "al-tm-089",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.11.1",
+      "difficulty": "hard",
+      "question": "A supplier asks for the level test plan only after execution has already started. What problem is most likely?",
+      "options": [
+        "The supplier may still have an unclear understanding of scope, responsibilities, and completion expectations",
+        "The project will automatically finish earlier than planned",
+        "The supplier can safely ignore the agreed defect workflow",
+        "The team no longer needs status reports"
+      ],
+      "correctIndex": 0,
+      "explanation": "Late access to core planning documents often means late alignment. That can lead to mismatched expectations on scope, evidence, and deliverables."
+    },
+    {
+      "id": "al-tm-090",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.11.2",
+      "difficulty": "easy",
+      "question": "Which documented information most directly defines who approves major test deliverables and decisions?",
+      "options": [
+        "The governance or responsibilities section of the test plan",
+        "The source code branching strategy",
+        "The UI style guide",
+        "The test data archive"
+      ],
+      "correctIndex": 0,
+      "explanation": "Approval authority should be explicit. A documented governance section helps avoid confusion about sign-off and escalation."
+    },
+    {
+      "id": "al-tm-091",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.12.1",
+      "difficulty": "medium",
+      "question": "A traceability matrix shows several critical requirements with no linked tests. What is the best next action?",
+      "options": [
+        "Ignore the gap if the defect trend looks healthy",
+        "Investigate whether coverage is genuinely missing, then update tests or scope decisions before relying on completion claims",
+        "Delete the matrix because it now shows a problem",
+        "Assume the requirements are low risk because no tests were written"
+      ],
+      "correctIndex": 1,
+      "explanation": "Missing links may indicate true coverage gaps or traceability defects. Either way, the manager should resolve the gap before using the documentation for assurance."
+    },
+    {
+      "id": "al-tm-092",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.12.2",
+      "difficulty": "hard",
+      "question": "Several teams submit status reports using different defect severity scales. Which documentation improvement would help most?",
+      "options": [
+        "Allow each team to keep its own definitions to preserve flexibility",
+        "Establish a common reporting glossary, severity definitions, and shared templates for comparable reporting",
+        "Remove defect severity from all reports",
+        "Report only total defect counts regardless of impact"
+      ],
+      "correctIndex": 1,
+      "explanation": "Shared definitions are essential for trustworthy roll-up reporting. Without them, aggregated metrics can be misleading."
+    },
+    {
+      "id": "al-tm-093",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.13.1",
+      "difficulty": "easy",
+      "question": "Why should testware and key test documents be kept under version control?",
+      "options": [
+        "To support collaboration, rollback, and auditability of what changed and when",
+        "To prevent any reviewer from seeing historical content",
+        "To guarantee all defects are reproducible",
+        "To replace the need for backup procedures"
+      ],
+      "correctIndex": 0,
+      "explanation": "Version control preserves history and supports teamwork. It is especially valuable when plans, scripts, and data evolve during the project."
+    },
+    {
+      "id": "al-tm-094",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.13.2",
+      "difficulty": "medium",
+      "question": "When introducing a new test management tool, what should be documented first to avoid chaotic adoption?",
+      "options": [
+        "Only the list of optional plugins supported by the tool",
+        "The workflow, roles, mandatory fields, and reporting rules the team is expected to follow",
+        "A ban on any manual testing outside the tool",
+        "The office seating plan for the rollout workshop"
+      ],
+      "correctIndex": 1,
+      "explanation": "A tool does not create a process by itself. Clear working rules and responsibilities are needed before the tool can support them effectively."
+    },
+    {
+      "id": "al-tm-095",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.6.1",
+      "difficulty": "easy",
+      "question": "Which estimate is an example of bottom-up test estimation?",
+      "options": [
+        "Starting from a total project budget and assigning an arbitrary test percentage",
+        "Comparing the project loosely with an older release and picking the same number",
+        "Summing detailed estimates for planning, environment setup, test design, execution, and reporting tasks",
+        "Using only management intuition without task breakdown"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bottom-up estimating builds from detailed work items. It often takes more effort but makes assumptions and missing tasks easier to spot."
+    },
+    {
+      "id": "al-tm-096",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.6.2",
+      "difficulty": "medium",
+      "question": "Historical data shows that stabilizing 12 automated regression checks usually takes about 1 tester-day. For a similar release needing 240 checks, what is the baseline effort estimate?",
+      "options": [
+        "12 tester-days",
+        "20 tester-days",
+        "24 tester-days",
+        "240 tester-days"
+      ],
+      "correctIndex": 1,
+      "explanation": "At 12 checks per tester-day, 240 checks require 20 tester-days. Historical ratios are useful when the new work is genuinely comparable."
+    },
+    {
+      "id": "al-tm-097",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.7.1",
+      "difficulty": "hard",
+      "question": "In a Wideband Delphi session, why is it valuable for experts to prepare initial estimates independently before group discussion?",
+      "options": [
+        "It reduces anchoring and groupthink before assumptions are debated",
+        "It guarantees the first estimate is the final estimate",
+        "It eliminates the need to document assumptions",
+        "It makes historical data unnecessary for all future estimates"
+      ],
+      "correctIndex": 0,
+      "explanation": "Independent first estimates help surface genuine differences in view. The later discussion is then based on assumptions instead of early social pressure."
+    },
+    {
+      "id": "al-tm-098",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.7.2",
+      "difficulty": "easy",
+      "question": "Which factor most justifies adding schedule buffer after test environment handover?",
+      "options": [
+        "The likelihood of setup defects, unstable interfaces, or delayed access affecting productive execution time",
+        "The team's preference for shorter status meetings",
+        "The desire to hide inaccurate estimates from management",
+        "The color coding used in the project plan"
+      ],
+      "correctIndex": 0,
+      "explanation": "Buffer is meant to absorb realistic uncertainty. Environment instability is a common source of lost testing time and replanning."
+    },
+    {
+      "id": "al-tm-099",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.8.1",
+      "difficulty": "medium",
+      "question": "A project has a fixed end date and fixed headcount, but the test scope has increased. What is the most realistic management response?",
+      "options": [
+        "Promise the same depth everywhere and hope productivity improves",
+        "Renegotiate scope priorities or acceptance of residual risk instead of pretending nothing changed",
+        "Forbid all defect retesting to save time",
+        "Extend tester work indefinitely without revisiting the plan"
+      ],
+      "correctIndex": 1,
+      "explanation": "When constraints and scope conflict, a trade-off is unavoidable. The manager should make that trade-off explicit rather than hiding the impact."
+    },
+    {
+      "id": "al-tm-100",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.8.2",
+      "difficulty": "hard",
+      "question": "Two components are similar in size, but one is highly business-critical and integrates with five external systems. How should this affect test estimation?",
+      "options": [
+        "Both components should receive the same estimate because they are the same size",
+        "The integrated, business-critical component should receive more test effort because complexity and impact raise risk",
+        "The simpler component should receive more effort because it will finish faster",
+        "No estimate should be made until coding is complete"
+      ],
+      "correctIndex": 1,
+      "explanation": "Size alone is not enough for test estimates. Interfaces, business impact, and risk frequently drive additional planning and execution effort."
+    },
+    {
+      "id": "al-tm-101",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.9.1",
+      "difficulty": "easy",
+      "question": "What is a key weakness of using only calendar duration from prior projects as the basis for a new test estimate?",
+      "options": [
+        "It ignores differences in scope, risk, automation, staffing, and technical context",
+        "It always produces higher estimates than expert judgment",
+        "It can be used only for outsourced projects",
+        "It removes the need for scheduling dependencies"
+      ],
+      "correctIndex": 0,
+      "explanation": "Historical duration can be helpful, but it must be interpreted in context. Superficially similar timelines may hide very different drivers of effort."
+    },
+    {
+      "id": "al-tm-102",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.9.2",
+      "difficulty": "medium",
+      "question": "A distributed test team spans three time zones and shares one scarce performance environment. Which scheduling tactic would help most?",
+      "options": [
+        "Let everyone compete informally for the environment each day",
+        "Create reserved time windows, defined handoff points, and explicit environment booking rules",
+        "Ban any overnight handoff notes because they are hard to read",
+        "Schedule all performance work for the final week only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Shared scarce resources need deliberate scheduling. Clear windows and handoffs reduce idle time, conflict, and accidental blockage."
+    },
+    {
+      "id": "al-tm-103",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.10.1",
+      "difficulty": "hard",
+      "question": "After the first week of execution, actual effort is already twice the estimate. What should the test manager do first?",
+      "options": [
+        "Freeze all defect reporting until the estimate looks better",
+        "Analyze the cause, use actual performance data to re-estimate remaining work, and then decide on control actions",
+        "Replace the original estimate in the plan without explanation",
+        "Assume the team will naturally catch up by the end"
+      ],
+      "correctIndex": 1,
+      "explanation": "Early variance is a signal, not just a number. The manager should understand the drivers and replan based on evidence from actual progress."
+    },
+    {
+      "id": "al-tm-104",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.10.2",
+      "difficulty": "easy",
+      "question": "Which activity is often forgotten in test estimates even though it can consume significant effort?",
+      "options": [
+        "Defect retesting, reporting, and coordination with developers and stakeholders",
+        "Printing the corporate holiday calendar",
+        "Choosing avatar images for the defect tool",
+        "Locking meeting room doors after workshops"
+      ],
+      "correctIndex": 0,
+      "explanation": "Testing effort is more than writing and executing tests. Defect follow-up and communication can take substantial time, especially in complex projects."
+    },
+    {
+      "id": "al-tm-105",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.11.1",
+      "difficulty": "medium",
+      "question": "Why might top-down and bottom-up estimates for the same test effort differ significantly?",
+      "options": [
+        "Because one of them must always be wrong",
+        "Because hidden tasks, different assumptions, or inconsistent scope definitions can affect one approach more than the other",
+        "Because bottom-up estimates are used only in safety projects",
+        "Because top-down estimates never include risks"
+      ],
+      "correctIndex": 1,
+      "explanation": "Different estimating approaches expose different information. Large gaps often reveal missing work, unclear scope, or flawed assumptions that need review."
+    },
+    {
+      "id": "al-tm-106",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.11.2",
+      "difficulty": "hard",
+      "question": "A program needs an early test estimate before requirements are mature. Which approach is most appropriate?",
+      "options": [
+        "Wait until all requirements are final and provide no estimate at all",
+        "Provide a rough top-down range with explicit assumptions and plan to refine it as information improves",
+        "Commit to a single exact number so funding is easier to approve",
+        "Use only defect counts from unrelated projects"
+      ],
+      "correctIndex": 1,
+      "explanation": "Early estimates should reflect uncertainty. A range with assumptions is more honest and more useful than false precision."
+    },
+    {
+      "id": "al-tm-107",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.12.1",
+      "difficulty": "easy",
+      "question": "Which staffing decision best reduces single-point-of-failure risk in a test schedule?",
+      "options": [
+        "Cross-training multiple team members on critical features and environments",
+        "Assigning all specialist knowledge to one expert for efficiency",
+        "Keeping test data knowledge with the vendor only",
+        "Avoiding any overlap in responsibilities between testers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cross-training improves resilience. If one person becomes unavailable, testing is less likely to stall on a critical path."
+    },
+    {
+      "id": "al-tm-108",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.6.1",
+      "difficulty": "easy",
+      "question": "What does a burn-down chart typically show when used for test management?",
+      "options": [
+        "The remaining amount of planned test work over time",
+        "Only the cumulative number of production incidents",
+        "The final release date chosen by marketing",
+        "The average salary of the test team"
+      ],
+      "correctIndex": 0,
+      "explanation": "A burn-down chart focuses on remaining work. It helps a manager see whether completion is trending toward or away from the plan."
+    },
+    {
+      "id": "al-tm-109",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.6.2",
+      "difficulty": "medium",
+      "question": "Defects found per week are decreasing, but the number of unresolved critical defects is rising. What is the best interpretation?",
+      "options": [
+        "The product is clearly becoming stable",
+        "The team is finding fewer new issues, but risk may still be worsening because severe problems are not being resolved fast enough",
+        "The defect tool is definitely broken",
+        "Exit criteria must already be satisfied"
+      ],
+      "correctIndex": 1,
+      "explanation": "Different metrics can move in opposite directions. A falling arrival rate does not offset growing unresolved critical risk."
+    },
+    {
+      "id": "al-tm-110",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.7.1",
+      "difficulty": "hard",
+      "question": "A dashboard is green because many tests were executed, but high-risk areas received only shallow coverage. What should the test manager do?",
+      "options": [
+        "Accept the green status because volume metrics are objective",
+        "Report the limitation, add risk-coverage indicators, and avoid presenting execution volume alone as evidence of readiness",
+        "Hide the dashboard until after release",
+        "Convert all high-risk scenarios into low-priority tests"
+      ],
+      "correctIndex": 1,
+      "explanation": "A good manager explains what a metric does and does not mean. High execution counts are not enough if risk concentration remains untested."
+    },
+    {
+      "id": "al-tm-111",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.7.2",
+      "difficulty": "easy",
+      "question": "Which audience usually needs the most detailed day-to-day information about blocked tests and defect handoffs?",
+      "options": [
+        "The operational test leads and the team coordinating execution",
+        "The company's external auditors for unrelated products",
+        "The public relations department",
+        "Only the procurement office"
+      ],
+      "correctIndex": 0,
+      "explanation": "Detailed operational data is most useful to the people removing blockers and steering execution daily. Senior stakeholders usually need a summarized view instead."
+    },
+    {
+      "id": "al-tm-112",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.8.1",
+      "difficulty": "medium",
+      "question": "What is the main purpose of defining tolerance thresholds for test metrics?",
+      "options": [
+        "To make all reports appear more mathematical",
+        "To trigger review or action before deviations become too large to manage easily",
+        "To replace the need for judgment by the test manager",
+        "To ensure every metric reaches zero before release"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thresholds are decision aids. They help the manager notice exceptions early enough to respond effectively."
+    },
+    {
+      "id": "al-tm-113",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.8.2",
+      "difficulty": "hard",
+      "question": "A test pass rate jumps from 60% to 95% after many failing tests were deferred to a later release. What is the best interpretation?",
+      "options": [
+        "Quality has definitely improved sharply",
+        "The improvement may be misleading because scope changed, so the result must be reported with that context",
+        "Deferred tests should always be counted as passed",
+        "Pass rate is no longer a useful metric in any project"
+      ],
+      "correctIndex": 1,
+      "explanation": "Metrics can be distorted by scope changes. The manager should explain denominator changes instead of presenting the number without context."
+    },
+    {
+      "id": "al-tm-114",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.9.1",
+      "difficulty": "easy",
+      "question": "Which measure best helps a test manager judge whether retesting is keeping up with delivered fixes?",
+      "options": [
+        "The cycle time from 'fix ready' to retest completion",
+        "The total number of user stories in the backlog",
+        "The number of folders in the test repository",
+        "The average size of the build package"
+      ],
+      "correctIndex": 0,
+      "explanation": "Retest cycle time directly reflects how quickly fixes are validated. Long delays here can hide a growing bottleneck."
+    },
+    {
+      "id": "al-tm-115",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.9.2",
+      "difficulty": "medium",
+      "question": "A summary dashboard says status is amber, while a detailed report claims execution is on track. What should the test manager do?",
+      "options": [
+        "Publish both views without explanation because different documents can disagree",
+        "Reconcile the definitions, timeframes, and assumptions behind each view, then explain the difference to stakeholders",
+        "Delete the detailed report because dashboards are always right",
+        "Average the two statuses and call the project green"
+      ],
+      "correctIndex": 1,
+      "explanation": "Conflicting messages erode trust. The manager should trace the source of the difference and align the reporting basis."
+    },
+    {
+      "id": "al-tm-116",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.10.1",
+      "difficulty": "hard",
+      "question": "A burn-up chart for tested scope is flattening while code churn remains high. What risk does this pattern indicate?",
+      "options": [
+        "Changes may be outpacing validation, so apparent progress toward readiness could be unreliable",
+        "The chart proves testing is complete",
+        "The project has too few requirement documents",
+        "Developers are finding more unit-level defects than expected"
+      ],
+      "correctIndex": 0,
+      "explanation": "High churn with stalled coverage growth suggests instability. The product may be changing faster than testing can provide confidence."
+    },
+    {
+      "id": "al-tm-117",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.10.2",
+      "difficulty": "easy",
+      "question": "What should a go or no-go recommendation always include?",
+      "options": [
+        "Only the final decision word so stakeholders are not distracted",
+        "The basis for the recommendation, residual risks, and any assumptions or conditions attached to it",
+        "A promise that no issues will occur after release",
+        "The full history of every defect comment ever added"
+      ],
+      "correctIndex": 1,
+      "explanation": "A recommendation without its basis is hard to trust. Stakeholders need the reasoning, not just the label."
+    },
+    {
+      "id": "al-tm-118",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.11.1",
+      "difficulty": "medium",
+      "question": "Defect arrival is low this week because the test environment was unavailable for three days. How should the manager report that metric?",
+      "options": [
+        "As evidence of improved product quality",
+        "With explicit note that reduced execution time constrained defect discovery and limits any quality conclusion",
+        "Without any comment because the metric is numerically correct",
+        "By converting blocked days into passed tests"
+      ],
+      "correctIndex": 1,
+      "explanation": "Metrics need context. Low defect arrival can reflect low execution opportunity rather than high product stability."
+    },
+    {
+      "id": "al-tm-119",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.11.2",
+      "difficulty": "hard",
+      "question": "Exploratory testing uncovers severe usability problems that are not visible in the scripted execution dashboard. What is the best control action?",
+      "options": [
+        "Ignore them until a quantitative metric also turns red",
+        "Add the qualitative findings to status reporting, reassess risk, and adjust priorities with the relevant stakeholders",
+        "Remove exploratory testing from future cycles",
+        "Count each usability issue as a passed test so the dashboard stays balanced"
+      ],
+      "correctIndex": 1,
+      "explanation": "Important risks are not always captured in scripted metrics. The manager should integrate qualitative evidence into decision-making and control."
+    },
+    {
+      "id": "al-tm-120",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.12.1",
+      "difficulty": "easy",
+      "question": "Why compare planned versus actual effort by workstream instead of only at the overall project total?",
+      "options": [
+        "It can reveal local overruns or idle capacity that a rolled-up total may hide",
+        "It makes every report longer, which always improves decision quality",
+        "It prevents the use of dashboards",
+        "It guarantees no replanning will be needed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aggregate totals can mask serious imbalances. Workstream-level analysis helps the manager target corrective action more precisely."
+    },
+    {
+      "id": "al-tm-121",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.12.2",
+      "difficulty": "hard",
+      "question": "An external supplier reports weekly pass percentages but omits blocked tests and skipped scope. What should the test manager request?",
+      "options": [
+        "A fuller status set including denominator, blocked and skipped counts, severity trends, and reporting assumptions",
+        "Only the pass percentage in a larger font",
+        "A promise to keep the numbers green in future weeks",
+        "Fewer details so the report is shorter"
+      ],
+      "correctIndex": 0,
+      "explanation": "A single pass percentage is easy to misread. Comparable and actionable reporting requires visibility into scope, blockage, and risk, not just outcomes."
+    },
+    {
+      "id": "al-tm-122",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.7.1",
+      "difficulty": "easy",
+      "question": "What is the main benefit of pairing a junior tester with a senior tester on a high-risk feature?",
+      "options": [
+        "It creates knowledge transfer while still controlling delivery risk",
+        "It guarantees the junior tester will not need feedback",
+        "It eliminates the need for any review of the results",
+        "It ensures both testers will work at exactly the same speed"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pairing can develop capability without sacrificing quality. It is especially useful when the work is important but also a learning opportunity."
+    },
+    {
+      "id": "al-tm-123",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.7.2",
+      "difficulty": "medium",
+      "question": "Remote testers say they feel disconnected from product decisions and late to requirement changes. What action would help most?",
+      "options": [
+        "Invite them to backlog refinement, risk reviews, and stakeholder demos rather than only execution meetings",
+        "Give them fewer meetings so they have no chance to ask questions",
+        "Move all communication into private chats between managers only",
+        "Ask them to rely on defect tickets as their main source of product context"
+      ],
+      "correctIndex": 0,
+      "explanation": "Distributed team members need access to context, not just tasks. Inclusion in key product conversations improves alignment and motivation."
+    },
+    {
+      "id": "al-tm-124",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.8.1",
+      "difficulty": "hard",
+      "question": "A highly skilled tester regularly dismisses peers' ideas in public, hurting team trust. What should the test manager do?",
+      "options": [
+        "Ignore the behavior because the tester finds many defects",
+        "Privately coach the tester on expected behavior, explain the impact, and follow up on improvement",
+        "Publicly criticize the tester in the next status meeting",
+        "Immediately remove all review responsibilities from the whole team"
+      ],
+      "correctIndex": 1,
+      "explanation": "Strong technical output does not excuse damaging behavior. Effective managers address it directly, fairly, and with clear expectations."
+    },
+    {
+      "id": "al-tm-125",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.8.2",
+      "difficulty": "easy",
+      "question": "Which sign best suggests a tester is ready for broader responsibilities?",
+      "options": [
+        "The tester consistently delivers, handles ambiguity well, and helps others without close supervision",
+        "The tester volunteers for only the easiest tasks",
+        "The tester avoids feedback discussions",
+        "The tester prefers to work only on one familiar screen forever"
+      ],
+      "correctIndex": 0,
+      "explanation": "Broader responsibility usually follows consistent delivery, sound judgment, and growing influence on team outcomes."
+    },
+    {
+      "id": "al-tm-126",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.9.1",
+      "difficulty": "medium",
+      "question": "When using contractors to handle peak testing demand, what should the test manager clarify first?",
+      "options": [
+        "Only where they will sit during office visits",
+        "Scope, access constraints, confidentiality expectations, deliverables, and acceptance criteria",
+        "Which defects they are allowed to ignore",
+        "How soon permanent employees will replace them"
+      ],
+      "correctIndex": 1,
+      "explanation": "Temporary staffing succeeds when expectations are explicit. Clear scope, controls, and acceptance rules reduce wasteful ramp-up and rework."
+    },
+    {
+      "id": "al-tm-127",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.9.2",
+      "difficulty": "hard",
+      "question": "Two sub-teams optimize their own metrics and refuse to support a shared regression pack. Which response is best?",
+      "options": [
+        "Allow each team to protect only its own targets",
+        "Align goals and incentives to program-level quality outcomes, then clarify shared ownership of the regression asset",
+        "Assign the regression pack permanently to whichever team complains least",
+        "Stop measuring team outcomes altogether"
+      ],
+      "correctIndex": 1,
+      "explanation": "Local optimization can damage overall delivery. The manager should reinforce shared goals and make cross-team responsibilities explicit."
+    },
+    {
+      "id": "al-tm-128",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.10.1",
+      "difficulty": "easy",
+      "question": "Why is it important to recognize defect-prevention activities as well as defects found?",
+      "options": [
+        "Because prevention work can reduce later failure cost even though it may not appear in simple bug counts",
+        "Because defect finding should be discouraged wherever possible",
+        "Because prevention activities automatically replace execution testing",
+        "Because prevention can be measured only by attendance at meetings"
+      ],
+      "correctIndex": 0,
+      "explanation": "Good test teams add value by preventing problems too. Recognition should not reward only the most visible downstream activity."
+    },
+    {
+      "id": "al-tm-129",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.10.2",
+      "difficulty": "medium",
+      "question": "A new automation lead wants to rewrite all manual regression cases at once, but the team is already overloaded. What is the best response?",
+      "options": [
+        "Approve the rewrite immediately because automation always saves time",
+        "Phase the automation work by priority and risk, balancing short-term delivery needs with long-term improvement",
+        "Stop all manual testing until the automation rewrite is complete",
+        "Move the automation lead off the project permanently"
+      ],
+      "correctIndex": 1,
+      "explanation": "Large improvement efforts still need to fit delivery reality. A phased approach protects current commitments while building capability deliberately."
+    },
+    {
+      "id": "al-tm-130",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.11.1",
+      "difficulty": "hard",
+      "question": "An outsourced test vendor meets execution volume targets, but many defect reports are not reproducible. What should the test manager do?",
+      "options": [
+        "Ignore report quality because the volume target was met",
+        "Tighten report quality expectations, provide examples and reviews, and measure the defect reporting standard explicitly",
+        "Ask the internal team to rewrite every vendor defect silently",
+        "Lower the quality bar so the vendor can keep passing its metrics"
+      ],
+      "correctIndex": 1,
+      "explanation": "Volume without usable output is a weak outcome. The manager should manage supplier quality criteria, not just supplier throughput."
+    },
+    {
+      "id": "al-tm-131",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.11.2",
+      "difficulty": "easy",
+      "question": "What is a useful agenda item for recurring one-to-one meetings with testers?",
+      "options": [
+        "Blockers, feedback, and development goals",
+        "Detailed production deployment commands for every release",
+        "Private rankings of all other team members",
+        "Only project budget numbers with no discussion"
+      ],
+      "correctIndex": 0,
+      "explanation": "One-to-ones work best when they support performance, growth, and problem-solving. They provide a safe place to surface issues early."
+    },
+    {
+      "id": "al-tm-132",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.12.1",
+      "difficulty": "medium",
+      "question": "How can a test manager reduce knowledge silos in a distributed team?",
+      "options": [
+        "Keep domain knowledge within regional sub-teams to maximize specialization",
+        "Rotate feature ownership, share playbooks, and run cross-site reviews or pairing sessions",
+        "Assign every critical area to a single recognized expert",
+        "Limit documentation so conversations remain informal"
+      ],
+      "correctIndex": 1,
+      "explanation": "Deliberate knowledge sharing reduces schedule and quality risk. Rotation and shared practices make the team more resilient."
+    },
+    {
+      "id": "al-tm-133",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.12.2",
+      "difficulty": "hard",
+      "question": "A previously reliable tester's productivity drops suddenly after a reorganization. What is the best first action for the test manager?",
+      "options": [
+        "Lower the tester's rating immediately without discussion",
+        "Have a private conversation to understand causes, then agree on support or adjustments based on what is learned",
+        "Move all of the tester's work to other people permanently on the same day",
+        "Announce the drop in the next team meeting to create pressure"
+      ],
+      "correctIndex": 1,
+      "explanation": "A sudden change in performance may have structural causes, not just motivation issues. Good management starts by understanding the problem before choosing action."
+    },
+    {
+      "id": "al-tm-134",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.13.1",
+      "difficulty": "easy",
+      "question": "Which staffing approach best supports independence for acceptance testing?",
+      "options": [
+        "Having business representatives or a separate acceptance group participate in planning and evaluation",
+        "Restricting acceptance testing to the original developers",
+        "Assigning only the automation engineer to represent all users",
+        "Skipping acceptance testing when system testing is extensive"
+      ],
+      "correctIndex": 0,
+      "explanation": "Acceptance testing benefits from people who can judge fitness for business use with some independence from implementation."
+    },
+    {
+      "id": "al-tm-135",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.13.2",
+      "difficulty": "hard",
+      "question": "What is the biggest management risk of rewarding testers only for 'defects found per person'?",
+      "options": [
+        "It can encourage gaming, discourage collaboration, and undervalue prevention and hard-to-measure quality work",
+        "It always increases morale because the rule is simple",
+        "It guarantees better defect reports",
+        "It removes the need for any coaching or feedback"
+      ],
+      "correctIndex": 0,
+      "explanation": "Narrow incentives can distort behavior. Test management should reward outcomes and teamwork, not only easily counted individual numbers."
+    },
+    {
+      "id": "al-tm-136",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.5.1",
+      "difficulty": "easy",
+      "question": "Why is a defect taxonomy useful to a test manager?",
+      "options": [
+        "It supports trend analysis, reporting, and identification of recurring problem patterns",
+        "It guarantees every defect will be fixed in one cycle",
+        "It replaces the need for severity and priority",
+        "It is needed only for legal reasons"
+      ],
+      "correctIndex": 0,
+      "explanation": "Consistent categorization makes defect data more useful. It helps managers see clusters and improvement opportunities across releases."
+    },
+    {
+      "id": "al-tm-137",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.5.2",
+      "difficulty": "medium",
+      "question": "A defect marked fixed keeps reappearing in later builds. Which process improvement would help most?",
+      "options": [
+        "Reducing the amount of retesting so fewer repeats are noticed",
+        "Strengthening the definition of done to include root-cause correction and evidence of regression protection",
+        "Closing the defect after the first fix attempt to avoid reopening metrics",
+        "Allowing developers to choose whether retest is necessary"
+      ],
+      "correctIndex": 1,
+      "explanation": "Repeated recurrence suggests the fix process is too shallow. Stronger closure expectations can reduce cycling and false confidence."
+    },
+    {
+      "id": "al-tm-138",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.6.1",
+      "difficulty": "hard",
+      "question": "During triage, development managers want to lower the severity of a customer-impacting defect to protect SLA metrics. What should the test manager do?",
+      "options": [
+        "Use the agreed severity criteria and business impact evidence rather than allowing political pressure to redefine the defect",
+        "Accept the lower severity because development owns the code",
+        "Increase every other defect to the highest severity for balance",
+        "Postpone classification until after the release decision"
+      ],
+      "correctIndex": 0,
+      "explanation": "Severity should reflect impact, not convenience. Consistent criteria protect the integrity of risk communication and release decisions."
+    },
+    {
+      "id": "al-tm-139",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.6.2",
+      "difficulty": "easy",
+      "question": "Which closure output is most useful as input to future test estimation?",
+      "options": [
+        "A record of actual effort, defect patterns, and major environment or process disruptions",
+        "A list of team lunch preferences",
+        "The office Wi-Fi password history",
+        "The file sizes of archived screenshots only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Future estimation improves when historical data includes effort, risk, and disruption patterns. Closure data should support learning, not just archiving."
+    },
+    {
+      "id": "al-tm-140",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.7.1",
+      "difficulty": "medium",
+      "question": "When is it reasonable to defer a defect to a later release?",
+      "options": [
+        "Whenever the fix is inconvenient for the development team",
+        "When stakeholders understand the residual risk and agree it is acceptable within release objectives",
+        "Only when the defect is hard to reproduce",
+        "Whenever the defect was found after code freeze"
+      ],
+      "correctIndex": 1,
+      "explanation": "Deferral is a risk decision, not a convenience decision. The remaining impact must be understood and consciously accepted."
+    },
+    {
+      "id": "al-tm-141",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.7.2",
+      "difficulty": "hard",
+      "question": "Customers report several apparently separate incidents that later appear related. What should the test manager look for in defect management?",
+      "options": [
+        "A common root cause and linked or duplicate records so prioritization reflects the true impact pattern",
+        "Ways to split the incidents further so counts look smaller",
+        "Separate severity scales for each customer",
+        "Whether the incidents were reported on the same weekday"
+      ],
+      "correctIndex": 0,
+      "explanation": "Related incidents can hide a larger systemic problem. Linking them supports better prioritization, analysis, and communication."
+    },
+    {
+      "id": "al-tm-142",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.8.1",
+      "difficulty": "easy",
+      "question": "What is the primary purpose of a defect triage board or meeting?",
+      "options": [
+        "To decide priority, ownership, and next action using a consistent process",
+        "To rewrite every defect as a requirement",
+        "To approve code merges automatically",
+        "To replace the need for any defect tracking tool"
+      ],
+      "correctIndex": 0,
+      "explanation": "Triage turns raw defect reports into managed work. It provides consistency in treatment and clear next steps."
+    },
+    {
+      "id": "al-tm-143",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.8.2",
+      "difficulty": "medium",
+      "question": "Which metric best indicates that the defect fix process is becoming a bottleneck?",
+      "options": [
+        "The number of archived test cases from last year",
+        "Increasing cycle time or aging for defects waiting in a 'ready for test' or similar state",
+        "The count of user stories planned for next quarter",
+        "The average length of defect titles"
+      ],
+      "correctIndex": 1,
+      "explanation": "Aging and cycle-time metrics show whether fixes are flowing back to validation promptly. Rising delay there is a clear bottleneck signal."
+    },
+    {
+      "id": "al-tm-144",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.9.1",
+      "difficulty": "hard",
+      "question": "A release candidate meets numeric exit criteria, but operations reports unstable deployment scripts and nonrepeatable environment setup. What should the test manager recommend?",
+      "options": [
+        "Proceed immediately because exit criteria numbers matter more than operational evidence",
+        "Treat operational instability as a release risk and revisit the readiness recommendation despite the numeric targets being met",
+        "Remove the operational concerns from the report because they are outside testing",
+        "Convert the concerns into low-priority defects after the release"
+      ],
+      "correctIndex": 1,
+      "explanation": "Readiness is broader than hitting a metric target. Evidence of unstable deployment can undermine the value of otherwise acceptable test results."
+    },
+    {
+      "id": "al-tm-145",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.9.2",
+      "difficulty": "easy",
+      "question": "Why should test data and environment details be archived at closure?",
+      "options": [
+        "To support reproduction, audits, knowledge transfer, and future reuse where appropriate",
+        "To make future projects dependent on one person's memory",
+        "To avoid keeping any test case history",
+        "To replace the need for configuration management"
+      ],
+      "correctIndex": 0,
+      "explanation": "Environment and data details are often needed later to understand results or reproduce issues. Archiving them preserves valuable context."
+    },
+    {
+      "id": "al-tm-146",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.10.1",
+      "difficulty": "medium",
+      "question": "What is a key benefit of conducting defect causal analysis after release?",
+      "options": [
+        "It identifies process improvements that can prevent similar defects in future work",
+        "It proves the current project should not be reviewed",
+        "It allows all escaped defects to be removed from history",
+        "It replaces the need for requirements reviews"
+      ],
+      "correctIndex": 0,
+      "explanation": "Causal analysis converts defect data into improvement action. The goal is organizational learning, not just historical record-keeping."
+    },
+    {
+      "id": "al-tm-147",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.10.2",
+      "difficulty": "hard",
+      "question": "A defect workflow has many states and handoffs, causing delay and confusion. What management action would help most?",
+      "options": [
+        "Add even more states so each team can customize the workflow",
+        "Simplify the lifecycle with clear entry and exit rules, ownership, and service expectations for each step",
+        "Stop tracking defect status transitions entirely",
+        "Allow every project to invent state names during execution"
+      ],
+      "correctIndex": 1,
+      "explanation": "Overly complex workflows create friction and reporting noise. Clear, simpler states with defined ownership improve flow and transparency."
+    },
+    {
+      "id": "al-tm-148",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.11.1",
+      "difficulty": "easy",
+      "question": "Which statement about reopening defects is most accurate?",
+      "options": [
+        "Reopening is appropriate when a fix fails, the issue recurs, or the closure decision was premature",
+        "Reopening should never happen because it damages metrics",
+        "Only testers may reopen defects, never product owners or support teams",
+        "A reopened defect must always receive a new ID"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reopening reflects reality when a problem was not truly resolved. Preventing it just to protect metrics undermines process integrity."
+    },
+    {
+      "id": "al-tm-149",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.11.2",
+      "difficulty": "medium",
+      "question": "What should the final test report say about defects that the business decided to accept?",
+      "options": [
+        "Nothing, because accepted defects are no longer relevant",
+        "The rationale, residual risk, and who accepted the decision",
+        "Only the original title of each defect without impact details",
+        "That accepted defects automatically become enhancement requests"
+      ],
+      "correctIndex": 1,
+      "explanation": "Accepted defects remain part of release risk. The final report should make the decision transparent and traceable."
+    },
+    {
+      "id": "al-tm-150",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.12.1",
+      "difficulty": "hard",
+      "question": "At test closure, which finding most strongly suggests systemic process debt rather than a few isolated defects?",
+      "options": [
+        "One cosmetic issue reopened after release",
+        "Repeated late requirement clarifications causing widespread rework, unstable tests, and multiple escaped issues across teams",
+        "A temporary slowdown during one holiday week",
+        "A single environment outage that was quickly resolved"
+      ],
+      "correctIndex": 1,
+      "explanation": "Systemic debt appears as repeating patterns across teams and phases. Those patterns point to process weaknesses that need broader corrective action."
     }
   ]
 }

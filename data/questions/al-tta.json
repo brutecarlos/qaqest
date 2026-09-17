@@ -601,6 +601,1656 @@
       ],
       "correctIndex": 0,
       "explanation": "Compatibility testing evaluates whether a system can coexist with other systems sharing a common environment and resources, and interoperate correctly where required, without adversely affecting each other."
+    },
+    {
+      "id": "al-tta-041",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.3.1",
+      "difficulty": "easy",
+      "question": "Which contribution most helps a CI pipeline detect structural regressions in critical code quickly?",
+      "options": [
+        "Publishing coverage and static-analysis trends for the changed module",
+        "Adding more color themes to the dashboard",
+        "Reducing defect reports to a single monthly summary",
+        "Moving all tests to the end of the release"
+      ],
+      "correctIndex": 0,
+      "explanation": "Coverage trends and static-analysis results give fast, technical feedback about whether code changes increased structural risk."
+    },
+    {
+      "id": "al-tta-042",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.2.2",
+      "difficulty": "medium",
+      "question": "When developers say a defect cannot be reproduced, which improvement should a Technical Test Analyst usually advocate first?",
+      "options": [
+        "Removing failing assertions from the test",
+        "Adding deterministic logging and correlation identifiers around the failing path",
+        "Reducing the amount of diagnostic data collected",
+        "Waiting for production users to report the defect again"
+      ],
+      "correctIndex": 1,
+      "explanation": "Deterministic diagnostics make intermittent failures easier to reproduce and isolate without weakening the test."
+    },
+    {
+      "id": "al-tta-043",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.4.1",
+      "difficulty": "hard",
+      "question": "A component hides all state internally and reads the system clock directly. Which redesign most improves its automated technical testability?",
+      "options": [
+        "Increasing the number of inline comments",
+        "Injecting time and exposing behavior through observable interfaces",
+        "Combining it with more modules to reduce call depth",
+        "Replacing unit tests with manual scripts"
+      ],
+      "correctIndex": 1,
+      "explanation": "Injecting time removes nondeterminism, and observable interfaces let tests verify behavior without reaching into implementation details."
+    },
+    {
+      "id": "al-tta-044",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.3.2",
+      "difficulty": "easy",
+      "question": "For an embedded module that depends on a physical sensor not yet available, what is the most useful support for early automated testing?",
+      "options": [
+        "A test driver with a controllable sensor stub or simulator",
+        "Only final acceptance tests on production hardware",
+        "A marketing demo of the finished device",
+        "Skipping testing until all hardware arrives"
+      ],
+      "correctIndex": 0,
+      "explanation": "Drivers and simulators let technical tests exercise low-level logic before the real hardware is ready."
+    },
+    {
+      "id": "al-tta-045",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.5.1",
+      "difficulty": "medium",
+      "question": "When choosing a coverage tool for a safety-relevant module, which capability matters most?",
+      "options": [
+        "Rendering test reports with company branding",
+        "Measuring the required structural criterion accurately for the target language and build",
+        "Including a built-in chat client for the team",
+        "Supporting only manual test execution"
+      ],
+      "correctIndex": 1,
+      "explanation": "The tool must measure the required criterion correctly in the actual environment, otherwise coverage evidence is not trustworthy."
+    },
+    {
+      "id": "al-tta-046",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.2.3",
+      "difficulty": "hard",
+      "question": "During an architecture review, which question from a Technical Test Analyst most directly targets testability?",
+      "options": [
+        "Can external failures, timeouts, and retries be triggered in a controlled way?",
+        "Can the release notes be shortened?",
+        "Can all code be moved into one file?",
+        "Can all defects be deferred until production?"
+      ],
+      "correctIndex": 0,
+      "explanation": "Controllable failure injection is a strong indicator that fault handling can be tested systematically."
+    },
+    {
+      "id": "al-tta-047",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.6.1",
+      "difficulty": "easy",
+      "question": "A growing backlog of suppressed static-analysis warnings is usually a sign of what?",
+      "options": [
+        "Healthy technical debt reduction",
+        "A technical debt signal that may hide real defects",
+        "A guarantee that runtime failures cannot occur",
+        "Improved business requirement coverage"
+      ],
+      "correctIndex": 1,
+      "explanation": "Suppressed warnings can normalize risk and make teams less likely to notice important findings."
+    },
+    {
+      "id": "al-tta-048",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.3.3",
+      "difficulty": "medium",
+      "question": "Which handoff artifact is most useful when non-functional automated tests are added to CI?",
+      "options": [
+        "A list of everyone who attended the planning meeting",
+        "Repeatable execution steps, environment needs, and pass-fail thresholds",
+        "Only a screenshot of the final report",
+        "A promise to investigate failures later"
+      ],
+      "correctIndex": 1,
+      "explanation": "CI needs executable, repeatable instructions and clear thresholds so results can be interpreted consistently."
+    },
+    {
+      "id": "al-tta-049",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.4.2",
+      "difficulty": "hard",
+      "question": "A service returns randomized identifiers and timestamps in every response. What should be added to make automated assertions stable?",
+      "options": [
+        "More manual checkpoints in each test",
+        "The ability to seed randomness or mask volatile fields in the oracle",
+        "Less logging from the service",
+        "An instruction to rerun failed tests until they pass"
+      ],
+      "correctIndex": 1,
+      "explanation": "Stable or normalized outputs are essential so tests fail only for meaningful behavior differences."
+    },
+    {
+      "id": "al-tta-050",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.5.2",
+      "difficulty": "easy",
+      "question": "Which activity best fits a Technical Test Analyst during tool evaluation?",
+      "options": [
+        "Running a proof of concept on real project code and data",
+        "Choosing the tool with the nicest icon set",
+        "Selecting the tool that produces the longest reports",
+        "Avoiding integration checks until after purchase"
+      ],
+      "correctIndex": 0,
+      "explanation": "A proof of concept on realistic artifacts reveals whether the tool provides value in the actual project context."
+    },
+    {
+      "id": "al-tta-051",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.2.4",
+      "difficulty": "medium",
+      "question": "Why might a Technical Test Analyst request extra diagnostic hooks in a highly asynchronous system?",
+      "options": [
+        "To replace all business logging with test-only messages",
+        "To observe ordering and state transitions during failures",
+        "To make the production code more complex",
+        "To prevent developers from debugging locally"
+      ],
+      "correctIndex": 1,
+      "explanation": "Observability is often the key to understanding race conditions and timing-related failures."
+    },
+    {
+      "id": "al-tta-052",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.5.3",
+      "difficulty": "hard",
+      "question": "In a regulated project, why might a simple homegrown harness be rejected for official structural coverage reporting?",
+      "options": [
+        "It may lack the evidence of correctness or qualification needed for trusted measurement",
+        "It cannot be used with automated tests",
+        "It always reports too much coverage",
+        "It is only allowed for business analysts"
+      ],
+      "correctIndex": 0,
+      "explanation": "For regulated evidence, the measurement approach itself may need justification, validation, or qualification."
+    },
+    {
+      "id": "al-tta-053",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.6.2",
+      "difficulty": "easy",
+      "question": "Which code change usually improves automated testing with minimal product risk?",
+      "options": [
+        "Separating pure calculation from input-output side effects",
+        "Inlining several unrelated modules into one function",
+        "Removing error codes to simplify assertions",
+        "Replacing logs with random identifiers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Decoupling calculation from side effects makes the logic easier to control and verify in tests."
+    },
+    {
+      "id": "al-tta-054",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.3.4",
+      "difficulty": "medium",
+      "question": "A unit-level performance test is noisy because it runs on a shared machine. What should the Technical Test Analyst do first?",
+      "options": [
+        "Delete the test because performance cannot be measured automatically",
+        "Stabilize the environment and define a repeatable measurement protocol",
+        "Increase the threshold until the test always passes",
+        "Move the test to manual execution only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Controlling measurement conditions is necessary before the numbers can support technical decisions."
+    },
+    {
+      "id": "al-tta-055",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.6.3",
+      "difficulty": "hard",
+      "question": "Which automation smell most undermines trust in technical tests?",
+      "options": [
+        "Tests executing faster after an optimization",
+        "Intermittent failures unrelated to product changes",
+        "Tests running in parallel",
+        "Tests producing detailed logs"
+      ],
+      "correctIndex": 1,
+      "explanation": "Flaky tests erode confidence because teams cannot tell whether a failure indicates a product defect or test instability."
+    },
+    {
+      "id": "al-tta-056",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.5.4",
+      "difficulty": "easy",
+      "question": "When a new static-analysis tool is introduced, which responsibility most naturally fits the Technical Test Analyst?",
+      "options": [
+        "Tuning rules and thresholds with developers based on risk",
+        "Approving all product branding changes",
+        "Owning payroll calculations for the project",
+        "Removing all existing review practices"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Technical Test Analyst helps align tool findings with technical risk so teams focus on high-value checks."
+    },
+    {
+      "id": "al-tta-057",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.3.5",
+      "difficulty": "medium",
+      "question": "A team insists that every defect must be reproduced manually before it may be automated. What is the strongest technical objection?",
+      "options": [
+        "Manual reproduction is usually faster than automation",
+        "Manual reproduction can be slow and non-repeatable, while automation preserves exact conditions",
+        "Automated tests cannot check technical behavior",
+        "Manual execution guarantees better structural coverage"
+      ],
+      "correctIndex": 1,
+      "explanation": "Encoding the reproduction as automation preserves the conditions that exposed the defect and reduces future diagnosis effort."
+    },
+    {
+      "id": "al-tta-058",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.4.3",
+      "difficulty": "hard",
+      "question": "For a multi-service test environment, which design choice best helps isolate a suspected interface defect?",
+      "options": [
+        "Randomizing the order of all service start-ups",
+        "Virtualizing service boundaries with controllable responses",
+        "Increasing the number of end-user manuals",
+        "Routing all traffic through production"
+      ],
+      "correctIndex": 1,
+      "explanation": "Controllable boundary behavior helps the team prove whether the failure originates in the caller, callee, or the contract between them."
+    },
+    {
+      "id": "al-tta-059",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.6.4",
+      "difficulty": "easy",
+      "question": "Which trend would most interest a Technical Test Analyst reviewing code quality over time?",
+      "options": [
+        "Rising complexity and duplicated logic in frequently changed code",
+        "More emojis in commit messages",
+        "Fewer calendar invites for the team",
+        "A longer company holiday list"
+      ],
+      "correctIndex": 0,
+      "explanation": "Growing complexity and duplication raise technical risk because they increase the chance that changes introduce defects."
+    },
+    {
+      "id": "al-tta-060",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.2.5",
+      "difficulty": "medium",
+      "question": "When reviewing an API meant for fault-injection tests, which feature is most useful?",
+      "options": [
+        "A colorful OpenAPI logo",
+        "Explicit timeouts and configurable failure responses",
+        "A requirement that every response be random",
+        "A ban on negative test cases"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fault-injection testing depends on being able to provoke and observe controlled failure scenarios."
+    },
+    {
+      "id": "al-tta-061",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.6.5",
+      "difficulty": "hard",
+      "question": "A team tracks only end-to-end pass rate and ignores low-level coverage and tool findings. What risk remains?",
+      "options": [
+        "Critical structural blind spots can remain hidden behind green system tests",
+        "The project automatically gains complete path coverage",
+        "No additional diagnostic effort will ever be needed",
+        "All technical debt is reduced by definition"
+      ],
+      "correctIndex": 0,
+      "explanation": "System tests can miss risky branches, error handlers, and data-flow problems that technical evidence would reveal."
+    },
+    {
+      "id": "al-tta-062",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.3.6",
+      "difficulty": "easy",
+      "question": "Which task is a good example of technical test support for maintainability?",
+      "options": [
+        "Building reusable test data builders and helpers",
+        "Renaming the product for marketing reasons",
+        "Replacing all automated tests with spreadsheets",
+        "Removing shared utilities so each test rewrites them"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reusable technical test assets lower maintenance cost and make future regression suites easier to extend."
+    },
+    {
+      "id": "al-tta-063",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.1.3",
+      "difficulty": "easy",
+      "question": "Which component should usually receive the earliest technical risk attention?",
+      "options": [
+        "A shared authentication library used by every customer-facing service",
+        "An archived prototype no longer included in the release",
+        "A static help page with no executable logic",
+        "A slide deck describing the roadmap"
+      ],
+      "correctIndex": 0,
+      "explanation": "A defect in a shared critical library can affect many services, so both impact and exposure are high."
+    },
+    {
+      "id": "al-tta-064",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.2.2",
+      "difficulty": "medium",
+      "question": "Why does missing observability raise technical risk in a distributed workflow?",
+      "options": [
+        "It makes the user interface look simpler",
+        "It makes failures harder to detect, localize, and diagnose",
+        "It guarantees better performance under load",
+        "It removes the need for regression testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Poor observability increases the chance that important failures escape or take too long to investigate."
+    },
+    {
+      "id": "al-tta-065",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.3.1",
+      "difficulty": "hard",
+      "question": "A new payment scheduler introduces concurrency control around account updates. Why is this often ranked as high technical risk?",
+      "options": [
+        "Concurrency removes all state-related defects",
+        "Rare timing faults can be hard to trigger, diagnose, and contain when the impact is financial",
+        "The feature will definitely have no users",
+        "Scheduling code cannot be tested structurally"
+      ],
+      "correctIndex": 1,
+      "explanation": "Concurrency defects are often intermittent and high-impact, especially when they affect financial consistency."
+    },
+    {
+      "id": "al-tta-066",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.1.4",
+      "difficulty": "easy",
+      "question": "In technical risk analysis, what does impact describe?",
+      "options": [
+        "The amount of damage or loss if the failure occurs",
+        "The number of meetings scheduled for the sprint",
+        "How many developers prefer the component",
+        "Whether the code formatter changes indentation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Impact reflects the consequence of failure, not how much effort the team expects to spend testing."
+    },
+    {
+      "id": "al-tta-067",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.2.3",
+      "difficulty": "medium",
+      "question": "A third-party package has a recently disclosed critical vulnerability. What should the Technical Test Analyst note immediately?",
+      "options": [
+        "No risk exists unless the team modified the package source",
+        "Exposure may be high even without local code changes",
+        "Only usability testing needs to change",
+        "The package can no longer affect release decisions"
+      ],
+      "correctIndex": 1,
+      "explanation": "Inherited vulnerabilities can create major technical risk even when the application code itself did not change."
+    },
+    {
+      "id": "al-tta-068",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.2.4",
+      "difficulty": "hard",
+      "question": "Which situation most increases the likelihood component of technical risk?",
+      "options": [
+        "A stable module with simple logic and broad regression coverage",
+        "A recently rewritten complex module owned by an inexperienced team",
+        "A read-only configuration file with no runtime behavior",
+        "A library that has not changed for years and shows few defects"
+      ],
+      "correctIndex": 1,
+      "explanation": "Complexity, recent change, and low team familiarity combine to increase the chance of latent defects."
+    },
+    {
+      "id": "al-tta-069",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.3.2",
+      "difficulty": "easy",
+      "question": "A legacy parser has frequent production fixes but almost no automated tests. What is the best first mitigation?",
+      "options": [
+        "Add focused characterization and structural tests around defect-prone paths",
+        "Remove the parser from all regression plans",
+        "Delay testing until a full rewrite is funded",
+        "Rely only on marketing demos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Targeted tests can quickly reduce risk by locking down current behavior and exercising risky branches."
+    },
+    {
+      "id": "al-tta-070",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.1.5",
+      "difficulty": "medium",
+      "question": "Which artifact most helps identify how a failing component could affect neighboring components?",
+      "options": [
+        "The team lunch schedule",
+        "An architecture or interface dependency diagram",
+        "A list of office desk locations",
+        "The product color palette"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dependency information helps the Technical Test Analyst estimate blast radius and prioritize integration checks."
+    },
+    {
+      "id": "al-tta-071",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.3.3",
+      "difficulty": "hard",
+      "question": "An internet-facing file upload service uses a custom parser for untrusted content. Which test emphasis is most appropriate?",
+      "options": [
+        "Only happy-path UI checks",
+        "Targeted robustness, security, and structural tests around parsing and error handling",
+        "Skipping negative tests because files are user supplied",
+        "Only checking that the landing page loads"
+      ],
+      "correctIndex": 1,
+      "explanation": "Custom parsing of untrusted input is a classic high-risk area that merits deep negative and structural testing."
+    },
+    {
+      "id": "al-tta-072",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.2.5",
+      "difficulty": "easy",
+      "question": "Which change would usually lower the likelihood of technical failure in a module?",
+      "options": [
+        "Keeping the module small, stable, and well covered by automated tests",
+        "Adding more hidden global state",
+        "Increasing change frequency without review",
+        "Removing diagnostics from failure paths"
+      ],
+      "correctIndex": 0,
+      "explanation": "Small stable modules with good automation give fewer opportunities for defects to be introduced and missed."
+    },
+    {
+      "id": "al-tta-073",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.2.6",
+      "difficulty": "medium",
+      "question": "Why does high change frequency matter in technical risk assessment?",
+      "options": [
+        "It mainly affects office planning, not software risk",
+        "Frequent edits increase the chance of introducing new defects",
+        "It guarantees defects are found earlier",
+        "It eliminates the need for regression testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Even simple code becomes riskier when it changes often because prior evidence may no longer reflect the current state."
+    },
+    {
+      "id": "al-tta-074",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.3.4",
+      "difficulty": "hard",
+      "question": "Two modules would cause similar damage if they failed, but one has complex threading and past deadlocks. How should it be ranked?",
+      "options": [
+        "Lower, because concurrency issues are mostly theoretical",
+        "Higher, because its likelihood is greater even if impact is similar",
+        "Equal, because only impact matters",
+        "Unranked, because technical history should be ignored"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk ranking depends on both impact and likelihood; a history of concurrency defects raises the likelihood."
+    },
+    {
+      "id": "al-tta-075",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.1.6",
+      "difficulty": "easy",
+      "question": "What does repeated defect clustering in one subsystem suggest?",
+      "options": [
+        "That similar latent faults may still remain there",
+        "That the subsystem no longer needs testing",
+        "That architectural dependencies can be ignored",
+        "That the defects were caused by the test team"
+      ],
+      "correctIndex": 0,
+      "explanation": "Defect clustering is a practical signal that more faults may be concentrated in the same area."
+    },
+    {
+      "id": "al-tta-076",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.1.7",
+      "difficulty": "medium",
+      "question": "Which statement best reflects how exposure is commonly prioritized in risk-based testing?",
+      "options": [
+        "By test execution time alone",
+        "By combining likelihood and impact rather than using effort alone",
+        "By the age of the code comments",
+        "By the size of the deployment team"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk-based prioritization focuses on where failure is both likely and damaging."
+    },
+    {
+      "id": "al-tta-077",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.3.5",
+      "difficulty": "hard",
+      "question": "For a performance-sensitive transaction path, what is the best risk-based action before full regression begins?",
+      "options": [
+        "Ignore performance until the final release week",
+        "Run early targeted load profiling on the critical path",
+        "Replace all automated tests with manual timing",
+        "Measure only average sprint velocity"
+      ],
+      "correctIndex": 1,
+      "explanation": "Early technical evidence on the critical path can reveal serious performance risks while there is still time to respond."
+    },
+    {
+      "id": "al-tta-078",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.3.6",
+      "difficulty": "easy",
+      "question": "Why might exit criteria be stricter for a high technical risk area than for a low-risk utility?",
+      "options": [
+        "Higher-risk areas need stronger evidence that residual risk is acceptable",
+        "Low-risk areas are never tested",
+        "Exit criteria should always be identical for every component",
+        "Strict criteria are used only for documentation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Stricter evidence is justified where failure consequences or likelihood are higher."
+    },
+    {
+      "id": "al-tta-079",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.1.8",
+      "difficulty": "medium",
+      "question": "Which item deserves higher priority in a risk discussion?",
+      "options": [
+        "A cosmetic typo that occurs often in debug logs",
+        "A rare crash that can corrupt customer data",
+        "A comment that exceeds the preferred line length",
+        "A test report with outdated branding"
+      ],
+      "correctIndex": 1,
+      "explanation": "A low-frequency but catastrophic failure can outrank common minor issues because the impact is much greater."
+    },
+    {
+      "id": "al-tta-080",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.2.7",
+      "difficulty": "hard",
+      "question": "How should static-analysis findings influence technical risk assessment?",
+      "options": [
+        "They should be ignored until system test fails",
+        "They can refine hotspot identification and drive targeted deeper testing",
+        "They replace all need for runtime testing",
+        "They matter only after release"
+      ],
+      "correctIndex": 1,
+      "explanation": "Findings such as dangerous APIs, null-dereference risks, or complexity spikes help focus testing where technical risk is higher."
+    },
+    {
+      "id": "al-tta-081",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.2.8",
+      "difficulty": "easy",
+      "question": "Why is an undocumented algorithm delivered by an external contractor often considered riskier?",
+      "options": [
+        "Knowledge gaps make review, maintenance, and defect diagnosis harder",
+        "Contractor code cannot be tested",
+        "External code never changes",
+        "Documentation has no effect on technical risk"
+      ],
+      "correctIndex": 0,
+      "explanation": "When design intent is unclear, the team has less basis for review, impact analysis, and precise testing."
+    },
+    {
+      "id": "al-tta-082",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.1.9",
+      "difficulty": "medium",
+      "question": "An autoscaling defect can launch many unnecessary instances under load. Why is its impact often rated high?",
+      "options": [
+        "It affects only cosmetic metrics",
+        "It can cause severe cost growth and destabilize the platform during peak traffic",
+        "It reduces the need for monitoring",
+        "It prevents any other defects from occurring"
+      ],
+      "correctIndex": 1,
+      "explanation": "Autoscaling faults can amplify operational impact quickly by wasting resources or destabilizing service behavior."
+    },
+    {
+      "id": "al-tta-083",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.3.7",
+      "difficulty": "hard",
+      "question": "Hard-coded secrets are found in deployment automation. Why is this usually a high technical risk?",
+      "options": [
+        "They improve deployment speed too much",
+        "Compromise can spread broadly and may be easy to exploit",
+        "They affect only source code formatting",
+        "They matter only after the next hardware refresh"
+      ],
+      "correctIndex": 1,
+      "explanation": "Exposed secrets can enable widespread unauthorized access, making both likelihood and impact serious."
+    },
+    {
+      "id": "al-tta-084",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.3.8",
+      "difficulty": "medium",
+      "question": "After adding mitigations for a risky component, what should the Technical Test Analyst still communicate?",
+      "options": [
+        "Only that testing is complete",
+        "The residual risk and any remaining untested assumptions",
+        "That risk discussions are no longer needed",
+        "That the mitigations guarantee zero defects"
+      ],
+      "correctIndex": 1,
+      "explanation": "Risk rarely drops to zero, so stakeholders still need to understand what uncertainty remains."
+    },
+    {
+      "id": "al-tta-085",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.3",
+      "difficulty": "easy",
+      "question": "To achieve decision coverage for a simple if-else statement, what must the tests do?",
+      "options": [
+        "Exercise both the true and false outcomes",
+        "Execute only the longest branch",
+        "Execute each statement in alphabetical order",
+        "Use every possible input value"
+      ],
+      "correctIndex": 0,
+      "explanation": "Decision coverage requires each decision outcome to be taken at least once."
+    },
+    {
+      "id": "al-tta-086",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.2.3",
+      "difficulty": "medium",
+      "question": "Which statement correctly describes condition coverage?",
+      "options": [
+        "It guarantees that every feasible path is tested",
+        "It requires each atomic condition in a decision to evaluate both true and false at least once",
+        "It measures only how many statements executed",
+        "It ignores short-circuit behavior"
+      ],
+      "correctIndex": 1,
+      "explanation": "Condition coverage is concerned with the truth values of the individual conditions that form a decision."
+    },
+    {
+      "id": "al-tta-087",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.2.4",
+      "difficulty": "hard",
+      "question": "A decision contains three independent boolean conditions. How many combinations are required for full multiple condition coverage?",
+      "options": [
+        "3",
+        "6",
+        "8",
+        "9"
+      ],
+      "correctIndex": 2,
+      "explanation": "Multiple condition coverage requires all true-false combinations, which for three conditions is 2^3 = 8."
+    },
+    {
+      "id": "al-tta-088",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.2.5",
+      "difficulty": "easy",
+      "question": "Why is MC-DC often chosen instead of full multiple condition coverage for critical logic?",
+      "options": [
+        "It gives strong evidence that each condition matters, with fewer tests",
+        "It ignores the overall decision result entirely",
+        "It is weaker than statement coverage",
+        "It can be achieved without executing the code"
+      ],
+      "correctIndex": 0,
+      "explanation": "MC-DC keeps strong fault-detection power while avoiding the full combinatorial explosion of multiple condition coverage."
+    },
+    {
+      "id": "al-tta-089",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.4",
+      "difficulty": "medium",
+      "question": "If one control-flow path is infeasible because its conditions can never be satisfied together, what does that mean for path coverage?",
+      "options": [
+        "All path coverage goals must be abandoned",
+        "Only feasible paths are candidates for complete path coverage",
+        "The infeasible path should still be forced through test data",
+        "Decision coverage becomes impossible"
+      ],
+      "correctIndex": 1,
+      "explanation": "Structural criteria are interpreted against feasible behavior; infeasible paths should be justified, not artificially executed."
+    },
+    {
+      "id": "al-tta-090",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.5",
+      "difficulty": "hard",
+      "question": "Cyclomatic complexity of 6 implies what for basis path testing?",
+      "options": [
+        "At least 6 statements must execute",
+        "There are 6 linearly independent paths to consider as a baseline",
+        "Only 6 test cases are ever allowed",
+        "The code already has full decision coverage"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cyclomatic complexity approximates the number of linearly independent paths that should be considered for basis path coverage."
+    },
+    {
+      "id": "al-tta-091",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.4.2",
+      "difficulty": "easy",
+      "question": "What is an LCSAJ in structural testing?",
+      "options": [
+        "A linear sequence of code followed by a jump",
+        "A list of load and stress measurements",
+        "A type of user acceptance checklist",
+        "A dynamic memory snapshot"
+      ],
+      "correctIndex": 0,
+      "explanation": "An LCSAJ is a low-level structural unit consisting of straight-line code and the jump that ends it."
+    },
+    {
+      "id": "al-tta-092",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.4.3",
+      "difficulty": "medium",
+      "question": "In data flow testing, what is a def-use pair?",
+      "options": [
+        "Any pair of adjacent statements",
+        "A variable definition and a later use reachable without redefinition in between",
+        "Two different variables assigned in one block",
+        "A decision and its corresponding return statement"
+      ],
+      "correctIndex": 1,
+      "explanation": "Data flow testing tracks how defined values travel to later uses along specific paths."
+    },
+    {
+      "id": "al-tta-093",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.3.2",
+      "difficulty": "hard",
+      "question": "Why does loop testing pay special attention to zero, one, and boundary iteration counts?",
+      "options": [
+        "Because loops cannot be tested with more than one input",
+        "Because initialization and off-by-one defects often appear near iteration boundaries",
+        "Because decision coverage ignores loops",
+        "Because loop variables are never risk relevant"
+      ],
+      "correctIndex": 1,
+      "explanation": "Boundary iteration counts are where setup, termination, and limit logic often fail."
+    },
+    {
+      "id": "al-tta-094",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.3.3",
+      "difficulty": "easy",
+      "question": "For nested loops, what is a common starting strategy?",
+      "options": [
+        "Exercise inner-loop boundaries while holding outer loops to simple values",
+        "Set all loops to their maximum counts immediately",
+        "Skip the inner loop because the outer loop covers it",
+        "Use only random iteration counts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Controlling one loop at a time makes it easier to isolate defects in nested iteration logic."
+    },
+    {
+      "id": "al-tta-095",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.6",
+      "difficulty": "medium",
+      "question": "Why should exception handlers be included in branch coverage analysis?",
+      "options": [
+        "They are documentation only",
+        "They represent alternate control-flow outcomes with their own logic",
+        "They cannot execute during tests",
+        "They count only toward statement coverage"
+      ],
+      "correctIndex": 1,
+      "explanation": "Catch, fallback, and cleanup paths often contain unique behavior that must be exercised explicitly."
+    },
+    {
+      "id": "al-tta-096",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.5.1",
+      "difficulty": "hard",
+      "question": "When API tests are designed from server-side code structure, what is the main structural focus?",
+      "options": [
+        "Branding of the API portal",
+        "Branches for validation, authorization, and error mapping",
+        "The number of developers on the backend team",
+        "Only the alphabetical order of endpoints"
+      ],
+      "correctIndex": 1,
+      "explanation": "Code-aware API testing targets distinct internal paths such as validation branches and exception mapping logic."
+    },
+    {
+      "id": "al-tta-097",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.7",
+      "difficulty": "easy",
+      "question": "A test suite reaches 100% statement coverage. What can still be missing?",
+      "options": [
+        "Any execution of false branches in some decisions",
+        "Execution of all statements at least once",
+        "Compilation of the program",
+        "A test environment"
+      ],
+      "correctIndex": 0,
+      "explanation": "Statement coverage can miss untested decision outcomes when the executed statements overlap."
+    },
+    {
+      "id": "al-tta-098",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.8",
+      "difficulty": "medium",
+      "question": "In a control-flow graph, what do edges usually represent?",
+      "options": [
+        "Lines of comments",
+        "Transfers of control between nodes",
+        "Defect priorities",
+        "Test data values"
+      ],
+      "correctIndex": 1,
+      "explanation": "Edges connect the program points that execution can move between."
+    },
+    {
+      "id": "al-tta-099",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.3.4",
+      "difficulty": "hard",
+      "question": "What extra structural concern applies when white-box testing a recursive function?",
+      "options": [
+        "Recursion eliminates the need for branch coverage",
+        "Both the base case and recursive progression toward termination must be exercised",
+        "Only the deepest possible call stack matters",
+        "Recursive code cannot be represented in a control-flow graph"
+      ],
+      "correctIndex": 1,
+      "explanation": "Recursive logic is safe only when tests show both entry into recursion and proper termination behavior."
+    },
+    {
+      "id": "al-tta-100",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.2.6",
+      "difficulty": "easy",
+      "question": "Condition coverage is mainly concerned with what?",
+      "options": [
+        "Each atomic condition taking true and false values",
+        "Only the final decision outcome",
+        "The number of requirements linked to the code",
+        "Whether the code has comments"
+      ],
+      "correctIndex": 0,
+      "explanation": "Condition coverage focuses on the individual boolean parts that build a decision."
+    },
+    {
+      "id": "al-tta-101",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.4.4",
+      "difficulty": "medium",
+      "question": "A variable is assigned in one branch and later used after branches merge. What should data flow testing pay attention to?",
+      "options": [
+        "The color of the branch in the diagram",
+        "Definition-use paths through the different branches",
+        "Only whether the variable name is descriptive",
+        "Whether the merge happens in a loop"
+      ],
+      "correctIndex": 1,
+      "explanation": "Different branches may define or skip values differently, so the downstream use deserves targeted def-use checks."
+    },
+    {
+      "id": "al-tta-102",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.9",
+      "difficulty": "hard",
+      "question": "Why can unreachable code complicate interpretation of structural coverage goals?",
+      "options": [
+        "Coverage tools cannot read source files",
+        "The measured denominator may include code that cannot execute until it is removed or justified",
+        "Unreachable code automatically counts as covered",
+        "It affects only usability testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Teams should distinguish missed coverage from code that truly has no executable path."
+    },
+    {
+      "id": "al-tta-103",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.3.5",
+      "difficulty": "easy",
+      "question": "Which loop-focused test is especially good at exposing initialization mistakes?",
+      "options": [
+        "A test where the loop executes zero times",
+        "A test with only average input size",
+        "A test that skips all setup code",
+        "A test that disables assertions"
+      ],
+      "correctIndex": 0,
+      "explanation": "Zero-iteration execution checks whether the code behaves correctly before the first pass ever occurs."
+    },
+    {
+      "id": "al-tta-104",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.2.7",
+      "difficulty": "medium",
+      "question": "Why does short-circuit evaluation matter in structural testing of compound decisions?",
+      "options": [
+        "It changes source formatting only",
+        "Some conditions may not be evaluated on every execution of the decision",
+        "It prevents any branch coverage measurement",
+        "It means decisions no longer return boolean values"
+      ],
+      "correctIndex": 1,
+      "explanation": "With short-circuit logic, tests must be chosen carefully if each condition is expected to be exercised."
+    },
+    {
+      "id": "al-tta-105",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.4.5",
+      "difficulty": "hard",
+      "question": "In LCSAJ testing, what distinguishes two LCSAJs that share the same straight-line sequence?",
+      "options": [
+        "Their indentation style",
+        "Their different jump targets or end points",
+        "The number of comments inside the block",
+        "Whether the code was written recently"
+      ],
+      "correctIndex": 1,
+      "explanation": "The terminating jump is part of the structural unit, so different exits define different LCSAJs."
+    },
+    {
+      "id": "al-tta-106",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.10",
+      "difficulty": "hard",
+      "question": "Why is complete path coverage rarely practical in real systems?",
+      "options": [
+        "Coverage tools refuse to count paths",
+        "Loops, recursion, and combined decisions create an explosion of possible paths",
+        "Path coverage is weaker than statement coverage",
+        "Real systems contain no branches"
+      ],
+      "correctIndex": 1,
+      "explanation": "Even modest control flow can create too many paths to enumerate and execute exhaustively."
+    },
+    {
+      "id": "al-tta-107",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.1.3",
+      "difficulty": "easy",
+      "question": "What does a static-analysis dead-store warning usually mean?",
+      "options": [
+        "A value is assigned but never read before being overwritten or discarded",
+        "A database row was deleted unexpectedly",
+        "A variable name is too short",
+        "The program ran out of disk space"
+      ],
+      "correctIndex": 0,
+      "explanation": "Dead stores often indicate redundant logic or a missing intended use of the assigned value."
+    },
+    {
+      "id": "al-tta-108",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.2.2",
+      "difficulty": "medium",
+      "question": "Cyclomatic complexity is most useful for estimating what?",
+      "options": [
+        "The total number of user stories in a release",
+        "The minimum number of independent paths to consider and relative review effort",
+        "The amount of RAM used at runtime",
+        "The probability that a security attack will occur"
+      ],
+      "correctIndex": 1,
+      "explanation": "Higher complexity suggests more decision logic and usually more structural paths that deserve attention."
+    },
+    {
+      "id": "al-tta-109",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.1.4",
+      "difficulty": "hard",
+      "question": "How can a call graph help when a risky shared utility is modified?",
+      "options": [
+        "It proves that no regression testing is needed",
+        "It reveals direct and indirect callers that may need focused retesting",
+        "It replaces the source code review",
+        "It measures memory leaks automatically"
+      ],
+      "correctIndex": 1,
+      "explanation": "Impact analysis is stronger when the team can see which code paths depend on the changed utility."
+    },
+    {
+      "id": "al-tta-110",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.1.5",
+      "difficulty": "easy",
+      "question": "Code located after an unconditional return statement is typically classified as what?",
+      "options": [
+        "Unreachable code",
+        "Thread contention",
+        "A performance hotspot",
+        "A test stub"
+      ],
+      "correctIndex": 0,
+      "explanation": "If control cannot reach the statements, static analysis will often report them as unreachable or dead code."
+    },
+    {
+      "id": "al-tta-111",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.2.3",
+      "difficulty": "medium",
+      "question": "Which data-flow anomaly is indicated when a variable is defined and then redefined without any use in between?",
+      "options": [
+        "A normal def-use pair",
+        "A suspicious redundant assignment pattern",
+        "Guaranteed memory corruption",
+        "A required loop coverage case"
+      ],
+      "correctIndex": 1,
+      "explanation": "Redefinition before use may mean the first assignment is pointless or the intended use was skipped."
+    },
+    {
+      "id": "al-tta-112",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.2",
+      "difficulty": "hard",
+      "question": "During an endurance run, memory consumption rises steadily while workload stays constant. What does this most strongly suggest?",
+      "options": [
+        "Improved portability",
+        "A memory leak or retained-object problem",
+        "Higher branch coverage",
+        "A dead comment block"
+      ],
+      "correctIndex": 1,
+      "explanation": "If work stays stable but memory does not, the software is likely failing to release or reuse objects correctly."
+    },
+    {
+      "id": "al-tta-113",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.3",
+      "difficulty": "easy",
+      "question": "What is a wild pointer or invalid reference?",
+      "options": [
+        "A reference that points to unpredictable or illegal memory",
+        "A pointer used in a white-box coverage tool",
+        "A performance counter for CPU usage",
+        "A branch that always evaluates true"
+      ],
+      "correctIndex": 0,
+      "explanation": "Wild pointers can cause crashes or silent corruption because the program no longer controls what the reference targets."
+    },
+    {
+      "id": "al-tta-114",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.4",
+      "difficulty": "medium",
+      "question": "A profiler shows that 70% of execution time is spent serializing JSON. What is the best interpretation?",
+      "options": [
+        "The profiler is invalid because one function cannot dominate runtime",
+        "JSON serialization is a performance hotspot worth investigation",
+        "The application has complete path coverage",
+        "Only the network layer needs testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Profilers help the team focus optimization and measurement effort on the code that actually consumes time."
+    },
+    {
+      "id": "al-tta-115",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.5",
+      "difficulty": "hard",
+      "question": "Which type of runtime tool is most suitable for diagnosing lock contention and deadlocks?",
+      "options": [
+        "A spell checker",
+        "A concurrency or thread analyzer",
+        "A screenshot comparison tool",
+        "A static naming-rule checker"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thread analyzers observe blocking behavior and synchronization problems while the program runs."
+    },
+    {
+      "id": "al-tta-116",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.6",
+      "difficulty": "easy",
+      "question": "A recursive algorithm fails only with very large input sizes. Which runtime symptom should be investigated first?",
+      "options": [
+        "Stack exhaustion caused by deep recursion",
+        "A missing project logo",
+        "Low statement coverage",
+        "An outdated issue label"
+      ],
+      "correctIndex": 0,
+      "explanation": "Large recursion depth commonly manifests as stack overflow or exhaustion at runtime."
+    },
+    {
+      "id": "al-tta-117",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.2.4",
+      "difficulty": "medium",
+      "question": "In a technical review of numeric code, which checklist item is especially valuable?",
+      "options": [
+        "Whether variable names are in alphabetical order",
+        "Possible overflow, underflow, and precision loss",
+        "Whether the code has enough blank lines",
+        "Whether the team prefers tabs or spaces"
+      ],
+      "correctIndex": 1,
+      "explanation": "Numeric defects often appear at range limits or due to precision assumptions that are easy to overlook."
+    },
+    {
+      "id": "al-tta-118",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.1.6",
+      "difficulty": "hard",
+      "question": "If a static analyzer produces too many false positives, what is the best response?",
+      "options": [
+        "Disable all analysis permanently",
+        "Tune rules and baselines so high-value findings remain visible",
+        "Treat every warning as a confirmed defect",
+        "Move the analyzer to production only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Well-tuned analysis keeps important warnings actionable without drowning the team in noise."
+    },
+    {
+      "id": "al-tta-119",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.2.5",
+      "difficulty": "easy",
+      "question": "Why is clone detection useful to a Technical Test Analyst?",
+      "options": [
+        "Duplicated logic can multiply regression scope and repeated defects",
+        "It guarantees higher runtime speed",
+        "It replaces code reviews",
+        "It measures browser compatibility"
+      ],
+      "correctIndex": 0,
+      "explanation": "When the same logic exists in many places, a defect and its fix may need attention in each copy."
+    },
+    {
+      "id": "al-tta-120",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.7",
+      "difficulty": "medium",
+      "question": "Why are runtime sanitizers valuable in C or C++ testing?",
+      "options": [
+        "They improve screen layout",
+        "They can catch invalid memory accesses during execution with context",
+        "They automatically prove portability",
+        "They replace all design reviews"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sanitizers instrument execution to reveal faults such as buffer overruns and use-after-free errors."
+    },
+    {
+      "id": "al-tta-121",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.8",
+      "difficulty": "hard",
+      "question": "How can heap snapshots taken before and after a long test run help diagnosis?",
+      "options": [
+        "They show which objects were unexpectedly retained over time",
+        "They measure statement coverage",
+        "They prove the code has no race conditions",
+        "They replace load generation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Comparing snapshots is a common way to find classes or object graphs that keep accumulating."
+    },
+    {
+      "id": "al-tta-122",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.2.6",
+      "difficulty": "easy",
+      "question": "In an interface-focused technical review, which question best supports robustness testing?",
+      "options": [
+        "How are invalid inputs, timeouts, and partial failures reported to callers?",
+        "Which background image does the API team prefer?",
+        "How many meetings were held last month?",
+        "Should all negative tests be forbidden?"
+      ],
+      "correctIndex": 0,
+      "explanation": "Robustness depends on how clearly and consistently the interface behaves under abnormal conditions."
+    },
+    {
+      "id": "al-tta-123",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.1.7",
+      "difficulty": "medium",
+      "question": "Why is taint analysis useful in technical testing?",
+      "options": [
+        "It measures how much CPU a loop consumes",
+        "It traces untrusted data flowing toward sensitive operations",
+        "It counts LCSAJs automatically",
+        "It replaces penetration testing entirely"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tracing risky data flows can reveal injection paths and unsafe trust boundaries before runtime."
+    },
+    {
+      "id": "al-tta-124",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.1.8",
+      "difficulty": "hard",
+      "question": "Why does a high fan-in utility deserve careful review after a change?",
+      "options": [
+        "Utilities with many callers are always slower",
+        "A defect can affect many dependent paths, increasing blast radius",
+        "High fan-in means the code has no branches",
+        "It can only be tested manually"
+      ],
+      "correctIndex": 1,
+      "explanation": "Call concentration is important because one small change can have many indirect consequences."
+    },
+    {
+      "id": "al-tta-125",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.2.7",
+      "difficulty": "easy",
+      "question": "Which trend often signals rising maintainability risk in code metrics?",
+      "options": [
+        "Complexity and function length increasing release after release",
+        "Fewer archived chat messages",
+        "More hardware in the office",
+        "A stable number of test accounts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Growing complexity is a practical early warning that understanding and changing the code will get harder."
+    },
+    {
+      "id": "al-tta-126",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.9",
+      "difficulty": "medium",
+      "question": "A benchmark's first iteration is much slower because caches and JIT compilation are cold. What is the best practice?",
+      "options": [
+        "Always report only the slowest run",
+        "Separate warm-up from steady-state measurements",
+        "Delete all later measurements",
+        "Disable automation for performance tests"
+      ],
+      "correctIndex": 1,
+      "explanation": "Warm-up effects should be controlled so performance conclusions reflect stable runtime behavior."
+    },
+    {
+      "id": "al-tta-127",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.10",
+      "difficulty": "hard",
+      "question": "Why are use-after-free defects often difficult to reproduce consistently?",
+      "options": [
+        "They can depend on timing and memory reuse patterns at runtime",
+        "They only occur in commented code",
+        "They are detected by statement coverage alone",
+        "They disappear when tests are repeated"
+      ],
+      "correctIndex": 0,
+      "explanation": "Once memory has been released, whether the fault appears can vary with allocator behavior and execution timing."
+    },
+    {
+      "id": "al-tta-128",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.2.8",
+      "difficulty": "medium",
+      "question": "If review capacity is limited, which modules should be prioritized for deep technical review?",
+      "options": [
+        "Modules with the most colorful dashboards",
+        "Modules with high complexity, recent change, and defect history",
+        "Modules that compile the fastest",
+        "Modules owned by the largest team"
+      ],
+      "correctIndex": 1,
+      "explanation": "Combining multiple risk indicators helps technical review effort go where it is most likely to pay off."
+    },
+    {
+      "id": "al-tta-129",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.3.2",
+      "difficulty": "easy",
+      "question": "Running the same product on Windows, Linux, and macOS without code changes primarily examines which quality characteristic?",
+      "options": [
+        "Portability",
+        "Functional completeness",
+        "Marketability",
+        "Reviewability"
+      ],
+      "correctIndex": 0,
+      "explanation": "Portability is concerned with how well software can be transferred or adapted across environments."
+    },
+    {
+      "id": "al-tta-130",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.3.3",
+      "difficulty": "medium",
+      "question": "What should installability testing verify most directly?",
+      "options": [
+        "That user stories are estimated correctly",
+        "That install, upgrade, and uninstall behave correctly and recover from failures",
+        "That source code has low complexity",
+        "That every API returns JSON"
+      ],
+      "correctIndex": 1,
+      "explanation": "Installability includes successful setup and safe handling of failures during installation or upgrade."
+    },
+    {
+      "id": "al-tta-131",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.4.2",
+      "difficulty": "hard",
+      "question": "Two systems exchange the same numeric field but one interprets it as seconds and the other as milliseconds. What kind of issue is this?",
+      "options": [
+        "A pure maintainability issue",
+        "An interoperability defect",
+        "A portability success",
+        "A statement coverage gap"
+      ],
+      "correctIndex": 1,
+      "explanation": "Both systems can communicate syntactically yet still fail to interoperate semantically."
+    },
+    {
+      "id": "al-tta-132",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.4.3",
+      "difficulty": "easy",
+      "question": "What does coexistence testing mainly check?",
+      "options": [
+        "Whether the product can share resources with other software without unacceptable interference",
+        "Whether every branch in the code has been tested",
+        "Whether all comments are translated",
+        "Whether developers agree on naming conventions"
+      ],
+      "correctIndex": 0,
+      "explanation": "Coexistence is about peacefully sharing an environment such as CPU, memory, network, or file handles."
+    },
+    {
+      "id": "al-tta-133",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.2.2",
+      "difficulty": "medium",
+      "question": "After a database restart, a service resumes queued work without losing committed data. Which reliability aspect is being demonstrated?",
+      "options": [
+        "Confidentiality",
+        "Recoverability",
+        "Replaceability",
+        "Installability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Recoverability concerns how well the system restores service and data after an interruption."
+    },
+    {
+      "id": "al-tta-134",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.3",
+      "difficulty": "hard",
+      "question": "Which change would most improve analyzability from a maintainability perspective?",
+      "options": [
+        "Hiding all errors behind a generic success message",
+        "Adding structured diagnostics and clear module boundaries",
+        "Replacing logs with random numeric codes",
+        "Packing more behavior into one long method"
+      ],
+      "correctIndex": 1,
+      "explanation": "Good diagnostics and modular structure make faults easier to understand, trace, and fix."
+    },
+    {
+      "id": "al-tta-135",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.4",
+      "difficulty": "easy",
+      "question": "Using a least-privilege service account mainly supports which security objective?",
+      "options": [
+        "Limiting damage if the account is compromised",
+        "Reducing code coverage requirements",
+        "Improving screen readability",
+        "Eliminating the need for backups"
+      ],
+      "correctIndex": 0,
+      "explanation": "Least privilege reduces the blast radius of misuse or compromise."
+    },
+    {
+      "id": "al-tta-136",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.2.3",
+      "difficulty": "medium",
+      "question": "Time-behavior testing is primarily concerned with what?",
+      "options": [
+        "How often code comments are updated",
+        "Response times and throughput under stated conditions",
+        "Whether an installer shows the company logo",
+        "How many risk meetings were scheduled"
+      ],
+      "correctIndex": 1,
+      "explanation": "Time behavior focuses on how quickly the system responds and how much work it can process."
+    },
+    {
+      "id": "al-tta-137",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.5",
+      "difficulty": "hard",
+      "question": "Encrypting stored files most directly protects which security property?",
+      "options": [
+        "Availability",
+        "Confidentiality",
+        "Replaceability",
+        "Modularity"
+      ],
+      "correctIndex": 1,
+      "explanation": "Encryption mainly helps prevent unauthorized disclosure of the data contents."
+    },
+    {
+      "id": "al-tta-138",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.6",
+      "difficulty": "easy",
+      "question": "Why does modularity usually improve maintainability?",
+      "options": [
+        "Changes can be localized instead of spreading across many unrelated areas",
+        "It guarantees zero defects",
+        "It removes the need for tests",
+        "It makes all performance issues disappear"
+      ],
+      "correctIndex": 0,
+      "explanation": "Well-defined modules reduce ripple effects and make understanding and changing the code easier."
+    },
+    {
+      "id": "al-tta-139",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.3.4",
+      "difficulty": "medium",
+      "question": "Swapping one database driver for another through the same standard interface primarily demonstrates which sub-characteristic?",
+      "options": [
+        "Fault tolerance",
+        "Replaceability",
+        "Authenticity",
+        "Suitability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Replaceability is about using one product element in place of another for the same purpose."
+    },
+    {
+      "id": "al-tta-140",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.2.4",
+      "difficulty": "hard",
+      "question": "A service continues in degraded mode during a network partition and synchronizes later. Which reliability aspect is most evident?",
+      "options": [
+        "Installability",
+        "Fault tolerance",
+        "Compatibility branding",
+        "Statement coverage"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fault tolerance is the ability to continue providing acceptable service despite certain faults."
+    },
+    {
+      "id": "al-tta-141",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.7",
+      "difficulty": "easy",
+      "question": "Why are predictable session identifiers a serious security weakness?",
+      "options": [
+        "Attackers may guess valid identifiers and hijack sessions",
+        "They reduce compiler optimization",
+        "They lower branch coverage",
+        "They make backups larger"
+      ],
+      "correctIndex": 0,
+      "explanation": "Predictable identifiers can let an attacker impersonate users by anticipating future session values."
+    },
+    {
+      "id": "al-tta-142",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.2.5",
+      "difficulty": "medium",
+      "question": "Resource-utilization testing is intended to answer which question?",
+      "options": [
+        "Whether the help pages use clear language",
+        "Whether CPU, memory, and I/O stay within acceptable limits under load",
+        "Whether every requirement has a unique ID",
+        "Whether code reviews have enough participants"
+      ],
+      "correctIndex": 1,
+      "explanation": "Resource utilization looks at how efficiently the system consumes shared resources while doing its work."
+    },
+    {
+      "id": "al-tta-143",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.4.4",
+      "difficulty": "hard",
+      "question": "Two applications work correctly alone, but together one starves the other's disk bandwidth. What quality issue does this reveal?",
+      "options": [
+        "Replaceability",
+        "A coexistence problem",
+        "A dead-store warning",
+        "A portability success"
+      ],
+      "correctIndex": 1,
+      "explanation": "The problem appears only when the software shares its environment with other software, which is exactly what coexistence addresses."
+    },
+    {
+      "id": "al-tta-144",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.4.5",
+      "difficulty": "easy",
+      "question": "Opening files created by an older tool version with the current tool most directly tests what?",
+      "options": [
+        "Interoperability or backward compatibility of exchanged artifacts",
+        "Cyclomatic complexity",
+        "Loop coverage",
+        "Heap usage"
+      ],
+      "correctIndex": 0,
+      "explanation": "If exchanged artifacts remain usable across versions or tools, compatibility has improved."
+    },
+    {
+      "id": "al-tta-145",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.3.5",
+      "difficulty": "medium",
+      "question": "An application fails only on a case-sensitive file system because it mixes file-name casing. Which characteristic is most directly affected?",
+      "options": [
+        "Security",
+        "Portability",
+        "Usability",
+        "Functional completeness"
+      ],
+      "correctIndex": 1,
+      "explanation": "Hidden assumptions about the platform often surface as portability problems across environments."
+    },
+    {
+      "id": "al-tta-146",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.8",
+      "difficulty": "hard",
+      "question": "What maintainability problem is most directly indicated by duplicated validation rules scattered across several services?",
+      "options": [
+        "Improved analyzability",
+        "Poor modifiability because changes must be made consistently in many places",
+        "Better confidentiality",
+        "Guaranteed replaceability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Scattered duplication increases the chance that future changes will be incomplete or inconsistent."
+    },
+    {
+      "id": "al-tta-147",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.2.6",
+      "difficulty": "easy",
+      "question": "Restarting a process from a checkpoint after a crash primarily checks which reliability aspect?",
+      "options": [
+        "Recoverability",
+        "Compatibility",
+        "Interoperability",
+        "Code style"
+      ],
+      "correctIndex": 0,
+      "explanation": "Checkpoint restart is a direct way to evaluate how well service can be restored after failure."
+    },
+    {
+      "id": "al-tta-148",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.4.6",
+      "difficulty": "medium",
+      "question": "When old clients and new servers continue working through API version negotiation, which characteristic is most directly shown?",
+      "options": [
+        "Replaceability",
+        "Interoperability",
+        "Cyclomatic simplicity",
+        "Installability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Version negotiation is a common technique for keeping independently evolving systems interoperable."
+    },
+    {
+      "id": "al-tta-149",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.9",
+      "difficulty": "hard",
+      "question": "Why is the ability to bypass rate limits with parallel requests a serious security defect?",
+      "options": [
+        "It mainly affects text formatting",
+        "It weakens protection against abuse and can enable denial-of-service or brute-force attacks",
+        "It improves throughput fairness",
+        "It affects only portability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Rate limiting is a defensive control; bypassing it can make abuse easier and magnify attack impact."
+    },
+    {
+      "id": "al-tta-150",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.3.6",
+      "difficulty": "hard",
+      "question": "Why should a portable native library be tested on 32-bit and 64-bit platforms with different data-model assumptions?",
+      "options": [
+        "Because branch coverage is defined per CPU architecture",
+        "Hidden assumptions about type size, alignment, or representation may break adaptation",
+        "Because portability excludes automated testing",
+        "Because dynamic analysis is not available on one platform"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cross-platform issues often appear when code assumes a specific integer width, pointer size, or memory layout."
     }
   ]
 }
