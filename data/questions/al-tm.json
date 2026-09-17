@@ -301,6 +301,681 @@
       ],
       "correctIndex": 0,
       "explanation": "Expert-based estimation can be subject to optimism bias, groupthink, or simply a lack of directly relevant experience, which can reduce estimate accuracy compared to using solid historical metrics."
+    },
+    {
+      "id": "al-tm-021",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.1.1",
+      "difficulty": "medium",
+      "question": "Which task is a test manager MOST responsible for during the test planning activity?",
+      "options": [
+        "Writing the detailed steps of each individual test case",
+        "Defining the overall test approach, objectives, scope, and resources needed for the test effort",
+        "Executing regression tests personally for every release",
+        "Fixing defects found during test execution"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test planning is primarily a test management responsibility, involving defining objectives, scope, overall approach, and resource needs, while detailed test case writing and defect fixing are typically handled by testers and developers."
+    },
+    {
+      "id": "al-tm-022",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.1.2",
+      "difficulty": "medium",
+      "question": "What is the primary purpose of test monitoring and control as an ongoing test management activity?",
+      "options": [
+        "To compare actual test progress against the plan and take corrective actions when deviations occur",
+        "To write the initial requirements specification",
+        "To design new test cases only after the project has ended",
+        "To eliminate the need for a test plan"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test monitoring and control compares actual progress (e.g., coverage, defects, schedule) against the test plan, enabling the test manager to take corrective action when there are deviations."
+    },
+    {
+      "id": "al-tm-023",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a valid reason to tailor the test process for a specific project, as a test manager would do?",
+      "options": [
+        "To match the level of formality and rigor to the project's context, such as regulatory requirements, risk level, and team size",
+        "To always use the exact same process regardless of project differences",
+        "To avoid any risk analysis on smaller projects",
+        "To skip test planning entirely for short projects"
+      ],
+      "correctIndex": 0,
+      "explanation": "A test manager tailors the test process to fit the specific project context \u2014 including regulatory constraints, risk levels, team size, and organizational maturity \u2014 rather than applying a rigid one-size-fits-all approach."
+    },
+    {
+      "id": "al-tm-024",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.1.2",
+      "difficulty": "medium",
+      "question": "According to common test documentation standards, what does a level test plan typically describe?",
+      "options": [
+        "The complete corporate test policy for all projects",
+        "The specific approach, scope, resources, and schedule of testing activities for one particular test level (e.g., system testing)",
+        "Only the defects found during a single test cycle",
+        "The personal performance review of each tester"
+      ],
+      "correctIndex": 1,
+      "explanation": "A level test plan focuses on a specific test level (such as system or acceptance testing), detailing the scope, approach, resources, and schedule relevant to that level, in contrast to a master test plan which spans multiple levels."
+    },
+    {
+      "id": "al-tm-025",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.2.1",
+      "difficulty": "medium",
+      "question": "Why is it important for a test manager to maintain traceability between requirements and test cases?",
+      "options": [
+        "Traceability has no practical value and is only done for compliance paperwork",
+        "It enables impact analysis of requirement changes and demonstrates coverage of the test basis",
+        "It replaces the need for any test execution reports",
+        "It is required only for automated tests, not manual ones"
+      ],
+      "correctIndex": 1,
+      "explanation": "Traceability between requirements and test cases allows the test manager to perform impact analysis when requirements change and to demonstrate the extent of test coverage against the test basis."
+    },
+    {
+      "id": "al-tm-026",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.3.1",
+      "difficulty": "medium",
+      "question": "A test summary report is typically produced by the test manager at which point?",
+      "options": [
+        "Before any testing has started",
+        "At designated milestones or the end of a test level/project, summarizing testing activities, results, and an assessment against exit criteria",
+        "Only when a critical production incident occurs",
+        "Only if the project fails to meet its deadline"
+      ],
+      "correctIndex": 1,
+      "explanation": "A test summary report is produced at defined milestones or at the end of a test level/project, summarizing the testing performed, results achieved, and an evaluation against the defined exit criteria."
+    },
+    {
+      "id": "al-tm-027",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.1.1",
+      "difficulty": "medium",
+      "question": "Which estimation technique relies on historical data and metrics from similar past projects to predict test effort?",
+      "options": [
+        "Wideband Delphi based purely on individual guesses with no data",
+        "Metrics-based (historical/analogy-based) estimation",
+        "Coin-flipping estimation",
+        "Estimation based solely on the project sponsor's preferred number"
+      ],
+      "correctIndex": 1,
+      "explanation": "Metrics-based estimation uses historical data and measurements from similar past projects (e.g., effort per test case, defects per size unit) to derive estimates for the current project."
+    },
+    {
+      "id": "al-tm-028",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.1.2",
+      "difficulty": "medium",
+      "question": "What is the main advantage of using the Wideband Delphi (or Planning Poker-style) technique for test estimation?",
+      "options": [
+        "It aggregates independent expert judgments through iterative rounds to converge on a more reliable estimate",
+        "It removes the need for any expert input",
+        "It guarantees the estimate will always be under budget",
+        "It is faster than any other estimation technique regardless of project size"
+      ],
+      "correctIndex": 0,
+      "explanation": "Wideband Delphi gathers independent estimates from multiple experts and iterates through discussion rounds to converge on a more considered and reliable group estimate than a single individual's guess."
+    },
+    {
+      "id": "al-tm-029",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.2.1",
+      "difficulty": "hard",
+      "question": "Which factor should a test manager consider when scheduling test execution across multiple test levels?",
+      "options": [
+        "Dependencies between test levels, availability of test environments, and resource constraints",
+        "Only the personal vacation schedule of the project sponsor",
+        "The color scheme used in the test management tool",
+        "The number of social media followers of the product"
+      ],
+      "correctIndex": 0,
+      "explanation": "Effective test scheduling accounts for dependencies between test levels, environment availability, and resource constraints, since these directly affect when testing activities can realistically be performed."
+    },
+    {
+      "id": "al-tm-030",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.2.2",
+      "difficulty": "medium",
+      "question": "When a test manager's initial estimate is challenged by senior management as too high, what is the MOST appropriate response?",
+      "options": [
+        "Immediately agree to any reduced figure without justification",
+        "Present the assumptions, historical data, and risk basis behind the estimate, and negotiate scope, time, or resources transparently",
+        "Refuse to discuss the estimate at all",
+        "Resign from the project immediately"
+      ],
+      "correctIndex": 1,
+      "explanation": "A test manager should be able to justify estimates with data and assumptions, and negotiate trade-offs (scope, schedule, resources) transparently rather than simply capitulating or refusing discussion."
+    },
+    {
+      "id": "al-tm-031",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.1.1",
+      "difficulty": "medium",
+      "question": "Which metric is commonly used by a test manager to monitor test progress during execution?",
+      "options": [
+        "Percentage of planned test cases executed and passed versus failed",
+        "The number of coffee breaks taken by the team",
+        "The number of emails sent by the project sponsor",
+        "The size of the office where testers work"
+      ],
+      "correctIndex": 0,
+      "explanation": "Common test progress metrics include percentage of planned tests executed, pass/fail rates, and defect discovery rates, all of which help the test manager assess whether testing is on track."
+    },
+    {
+      "id": "al-tm-032",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.1.2",
+      "difficulty": "medium",
+      "question": "A defect discovery rate that remains high and shows no signs of leveling off near the planned end of test execution suggests what to a test manager?",
+      "options": [
+        "Testing is complete and the release should proceed immediately",
+        "There may still be significant undiscovered defects, suggesting the need for continued testing or reassessment of exit criteria",
+        "The defects found are all false positives",
+        "The test team should stop logging defects to speed up the schedule"
+      ],
+      "correctIndex": 1,
+      "explanation": "A defect discovery rate that has not leveled off (a rising or flat trend rather than declining) can indicate more undiscovered defects remain, prompting the test manager to reconsider whether exit criteria are truly satisfied."
+    },
+    {
+      "id": "al-tm-033",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.2.1",
+      "difficulty": "hard",
+      "question": "When actual test progress deviates significantly from the plan, which control action might a test manager take?",
+      "options": [
+        "Re-prioritize remaining tests based on risk, adjust the schedule, or request additional resources",
+        "Ignore the deviation and continue as planned regardless of the impact",
+        "Cancel the entire test project without analysis",
+        "Automatically extend the release date by exactly one year"
+      ],
+      "correctIndex": 0,
+      "explanation": "Control actions available to a test manager include re-prioritizing tests by risk, adjusting schedules, negotiating scope, or requesting additional resources \u2014 chosen based on the specific nature and cause of the deviation."
+    },
+    {
+      "id": "al-tm-034",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.3.1",
+      "difficulty": "medium",
+      "question": "What information does a test manager typically include in a status report intended for senior stakeholders?",
+      "options": [
+        "Exhaustive line-by-line source code diffs",
+        "A concise summary of progress, risks, blocking issues, and a recommendation or outlook, tailored to the audience",
+        "The personal opinions of individual testers about each other",
+        "Unrelated financial reports from other departments"
+      ],
+      "correctIndex": 1,
+      "explanation": "Status reports for senior stakeholders should be concise, highlighting progress, risks, blocking issues, and outlook/recommendations at a level of detail appropriate for that audience."
+    },
+    {
+      "id": "al-tm-035",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.1.1",
+      "difficulty": "medium",
+      "question": "Which factor is MOST important for a test manager to consider when building a well-rounded test team?",
+      "options": [
+        "Ensuring every member has an identical skill set",
+        "Balancing technical skills, domain knowledge, and interpersonal/soft skills appropriate to the project's needs",
+        "Hiring only the most senior, most expensive testers regardless of project needs",
+        "Selecting testers based solely on their availability, ignoring skill fit"
+      ],
+      "correctIndex": 1,
+      "explanation": "A well-rounded test team balances a mix of technical skills, domain knowledge, and interpersonal/soft skills tailored to the specific needs and risks of the project."
+    },
+    {
+      "id": "al-tm-036",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.1.2",
+      "difficulty": "medium",
+      "question": "What is a key responsibility of a test manager when onboarding a new tester to the team?",
+      "options": [
+        "Assign the new tester the most complex, highest-risk tasks immediately without any orientation",
+        "Provide orientation to the project context, tools, processes, and support to help the tester become productive",
+        "Skip introducing the new tester to any team processes",
+        "Delay giving the new tester any test assignments for the duration of the project"
+      ],
+      "correctIndex": 1,
+      "explanation": "Effective onboarding includes orienting new team members to the project context, tools, and processes, and providing support so they can become productive contributors relatively quickly."
+    },
+    {
+      "id": "al-tm-037",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.2.1",
+      "difficulty": "medium",
+      "question": "Which motivational factor is generally recognized as important for retaining skilled testers on a team?",
+      "options": [
+        "Providing opportunities for professional growth, recognition of contributions, and meaningful, varied work",
+        "Assigning the same repetitive task indefinitely with no variation",
+        "Withholding feedback on performance",
+        "Preventing any collaboration with other team members"
+      ],
+      "correctIndex": 0,
+      "explanation": "Professional growth opportunities, recognition, and meaningful/varied work are widely recognized motivational factors that help retain skilled team members, in contrast to monotonous tasks or lack of feedback."
+    },
+    {
+      "id": "al-tm-038",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.3.1",
+      "difficulty": "hard",
+      "question": "How should a test manager typically handle a conflict between two testers regarding differing opinions on test priorities?",
+      "options": [
+        "Ignore the conflict and hope it resolves itself",
+        "Facilitate a discussion to understand each perspective, refer to agreed risk/priority criteria, and reach a resolution collaboratively",
+        "Immediately reassign both testers off the project",
+        "Make a decision without hearing either party's reasoning"
+      ],
+      "correctIndex": 1,
+      "explanation": "Good conflict resolution involves facilitating open discussion, understanding each perspective, and grounding the resolution in agreed objective criteria (such as risk-based prioritization), rather than avoidance or unilateral action."
+    },
+    {
+      "id": "al-tm-039",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.4.1",
+      "difficulty": "medium",
+      "question": "When outsourcing part of the testing effort to a third-party vendor, which of the following is a key test management concern?",
+      "options": [
+        "Establishing clear communication channels, quality expectations, and reporting mechanisms with the vendor",
+        "Assuming no oversight is needed once the contract is signed",
+        "Ignoring cultural or timezone differences entirely",
+        "Avoiding any documentation of agreed responsibilities"
+      ],
+      "correctIndex": 0,
+      "explanation": "Managing outsourced or distributed testing requires establishing clear communication channels, quality expectations, and reporting/oversight mechanisms to ensure consistent results despite the vendor relationship."
+    },
+    {
+      "id": "al-tm-040",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.1.1",
+      "difficulty": "medium",
+      "question": "What is the primary purpose of a defect management process overseen by the test manager?",
+      "options": [
+        "To ensure defects are consistently reported, triaged, tracked, and resolved through an agreed lifecycle",
+        "To hide defects from stakeholders to protect the project's reputation",
+        "To eliminate the need for a defect tracking tool",
+        "To assign blame to individual developers for each defect"
+      ],
+      "correctIndex": 0,
+      "explanation": "Defect management processes ensure defects are consistently reported, triaged (e.g., severity/priority assigned), tracked, and resolved through an agreed lifecycle, supporting transparency and effective decision-making."
+    },
+    {
+      "id": "al-tm-041",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.1.2",
+      "difficulty": "medium",
+      "question": "In defect triage meetings, what role does the test manager typically play?",
+      "options": [
+        "Facilitating discussion and helping the team agree on defect severity, priority, and next steps",
+        "Personally fixing every reported defect",
+        "Preventing developers from providing input on defects",
+        "Approving the marketing plan for the next release"
+      ],
+      "correctIndex": 0,
+      "explanation": "The test manager typically facilitates defect triage, helping stakeholders reach agreement on severity, priority, and appropriate next steps for each reported defect."
+    },
+    {
+      "id": "al-tm-042",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a typical test closure activity performed near the end of a test level or project?",
+      "options": [
+        "Writing the initial project charter",
+        "Checking that all planned deliverables have been completed, archiving testware, and capturing lessons learned",
+        "Beginning requirements elicitation for a brand-new project",
+        "Hiring new testers for a future, unrelated project"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test closure activities include verifying that planned deliverables are complete, archiving testware for future reuse, and capturing lessons learned to improve future projects."
+    },
+    {
+      "id": "al-tm-043",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.2.2",
+      "difficulty": "medium",
+      "question": "Why is capturing lessons learned an important part of test closure, from a test manager's perspective?",
+      "options": [
+        "It has no practical benefit and is done only to satisfy bureaucratic requirements",
+        "It helps the organization improve test processes and avoid repeating past mistakes on future projects",
+        "It is required only if the project failed completely",
+        "It replaces the need for a test summary report"
+      ],
+      "correctIndex": 1,
+      "explanation": "Lessons learned help the organization identify what worked well and what didn't, feeding into continuous process improvement so future projects can avoid repeating past mistakes."
+    },
+    {
+      "id": "al-tm-044",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.3.1",
+      "difficulty": "medium",
+      "question": "Which of the following BEST reflects the test manager's role regarding entry and exit criteria for a test level?",
+      "options": [
+        "Defining and agreeing entry/exit criteria with stakeholders, then monitoring whether they are met before allowing progression",
+        "Ignoring entry and exit criteria since they slow down delivery",
+        "Only defining exit criteria, never entry criteria",
+        "Delegating all criteria decisions entirely to individual testers with no oversight"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test managers work with stakeholders to define entry and exit criteria for test levels, and monitor progress against these criteria to make informed decisions about whether to proceed to the next phase."
+    },
+    {
+      "id": "al-tm-045",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.4.1",
+      "difficulty": "hard",
+      "question": "A test manager needs to document the testware to be reused across future projects with similar characteristics. Which practice supports this best?",
+      "options": [
+        "Deleting all testware immediately after project completion",
+        "Maintaining a well-organized, version-controlled repository of test cases, data, and scripts with clear documentation",
+        "Storing testware only on individual testers' personal laptops",
+        "Avoiding any documentation of test design rationale"
+      ],
+      "correctIndex": 1,
+      "explanation": "Maintaining testware in a well-organized, version-controlled, documented repository supports reuse on future similar projects, in line with good test closure and knowledge management practices."
+    },
+    {
+      "id": "al-tm-046",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.3.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a common cause of inaccurate test estimates that a test manager should be aware of?",
+      "options": [
+        "Using well-documented historical data from comparable past projects",
+        "Underestimating the impact of requirement changes, scope creep, or insufficiently understood technical risk",
+        "Involving multiple experts in the estimation process",
+        "Reviewing estimates periodically as the project progresses"
+      ],
+      "correctIndex": 1,
+      "explanation": "Inaccurate estimates commonly stem from underestimating requirement changes, scope creep, or poorly understood technical risk, whereas using historical data, expert involvement, and periodic review tend to improve estimate accuracy."
+    },
+    {
+      "id": "al-tm-047",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.4.1",
+      "difficulty": "medium",
+      "question": "Which visualization is commonly used by test managers to track the cumulative number of defects found versus fixed over time?",
+      "options": [
+        "A defect trend (or S-curve) chart",
+        "A network topology diagram",
+        "A Gantt chart showing developer vacation days",
+        "A pie chart of office seating arrangements"
+      ],
+      "correctIndex": 0,
+      "explanation": "Defect trend charts (often shaped like an S-curve) plot cumulative defects found versus fixed over time, helping test managers assess whether the defect backlog is stabilizing or growing."
+    },
+    {
+      "id": "al-tm-048",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.5.1",
+      "difficulty": "medium",
+      "question": "Why might a test manager conduct periodic one-on-one meetings with individual team members?",
+      "options": [
+        "To assign additional unrelated household chores",
+        "To discuss individual progress, challenges, career development, and gather feedback in a private setting",
+        "To publicly criticize the tester in front of the whole team",
+        "To avoid ever discussing performance concerns"
+      ],
+      "correctIndex": 1,
+      "explanation": "One-on-one meetings give test managers a private setting to discuss individual progress, address challenges, support career development, and gather honest feedback from team members."
+    },
+    {
+      "id": "al-tm-049",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.3.1",
+      "difficulty": "hard",
+      "question": "When deciding whether a project can exit system testing despite some open defects, what should a test manager primarily weigh?",
+      "options": [
+        "The number of testers who want to go on vacation",
+        "The severity/priority of the open defects, their business impact, and whether they violate agreed exit criteria or acceptable risk levels",
+        "The alphabetical order of defect IDs",
+        "Whether the defects were found on a Monday or a Friday"
+      ],
+      "correctIndex": 1,
+      "explanation": "Exit decisions should weigh the severity and business impact of remaining open defects against the agreed exit criteria and the organization's acceptable risk level, not arbitrary or irrelevant factors."
+    },
+    {
+      "id": "al-tm-050",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.4.1",
+      "difficulty": "medium",
+      "question": "Which of these best describes the relationship between a test policy and a test strategy within an organization?",
+      "options": [
+        "A test policy defines the organization's overall objectives and principles for testing; a test strategy describes the generic approach for achieving those objectives",
+        "A test policy and test strategy are always the exact same document with different titles",
+        "A test strategy is created only after all testing has been completed",
+        "A test policy is written by individual testers with no management involvement"
+      ],
+      "correctIndex": 0,
+      "explanation": "The test policy defines the organization's high-level objectives and principles for testing, while the test strategy describes the generic approach used to achieve those objectives, typically applied across multiple projects."
+    },
+    {
+      "id": "al-tm-051",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.5.1",
+      "difficulty": "medium",
+      "question": "Which standard or reference is commonly used as a guideline for structuring test documentation such as test plans?",
+      "options": [
+        "IEEE 829 (or its successor ISO/IEC/IEEE 29119-3) test documentation standard",
+        "A random internet blog post with no formal recognition",
+        "A cooking recipe format",
+        "A musical composition standard"
+      ],
+      "correctIndex": 0,
+      "explanation": "IEEE 829, and its successor ISO/IEC/IEEE 29119-3, are commonly referenced standards providing templates and guidance for structuring test documentation, including test plans, and are known to test managers."
+    },
+    {
+      "id": "al-tm-052",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.4.1",
+      "difficulty": "hard",
+      "question": "A test manager notices the project has less time available than originally planned due to a delayed development handover. Which action reflects sound test management practice?",
+      "options": [
+        "Silently drop test activities without informing any stakeholders",
+        "Re-negotiate scope, schedule, or resources with stakeholders based on updated risk-based prioritization",
+        "Continue with the original plan exactly as-is, ignoring the schedule change",
+        "Cancel the project entirely without discussion"
+      ],
+      "correctIndex": 1,
+      "explanation": "When circumstances change (e.g., a delayed handover), the test manager should transparently re-negotiate scope, schedule, or resources with stakeholders, using risk-based prioritization to focus remaining effort effectively."
+    },
+    {
+      "id": "al-tm-053",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.5.1",
+      "difficulty": "medium",
+      "question": "Which of the following is an example of a qualitative (as opposed to quantitative) test progress indicator?",
+      "options": [
+        "Percentage of test cases executed",
+        "Number of open critical defects",
+        "Team members' subjective confidence in the product's readiness for release, gathered via discussion",
+        "Number of automated test scripts written"
+      ],
+      "correctIndex": 2,
+      "explanation": "Subjective confidence gathered through discussion is a qualitative indicator, whereas percentage executed, defect counts, and script counts are quantitative (numeric) indicators of progress."
+    },
+    {
+      "id": "al-tm-054",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.6.1",
+      "difficulty": "medium",
+      "question": "What is a potential risk of relying solely on quantitative metrics (like number of test cases executed) to evaluate an individual tester's performance?",
+      "options": [
+        "There is no risk; quantitative metrics alone are always sufficient and fair",
+        "It may encourage testers to prioritize test case quantity over quality, missing important, harder-to-test scenarios",
+        "It guarantees fewer defects will reach production",
+        "It eliminates the need for any test manager oversight"
+      ],
+      "correctIndex": 1,
+      "explanation": "Over-reliance on simple quantitative metrics can create perverse incentives, such as testers favoring easy-to-execute test cases over more valuable but harder-to-test scenarios, potentially reducing overall test effectiveness."
+    },
+    {
+      "id": "al-tm-055",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.4.1",
+      "difficulty": "medium",
+      "question": "Which piece of information is typically essential in a well-written defect report?",
+      "options": [
+        "The tester's personal opinion about the developer's coding skills",
+        "Steps to reproduce, expected versus actual results, severity, and environment details",
+        "Only a one-word description like 'broken'",
+        "The defect reporter's favorite color"
+      ],
+      "correctIndex": 1,
+      "explanation": "A well-written defect report includes clear reproduction steps, expected versus actual results, severity/priority, and environment details, enabling developers to efficiently understand and address the issue."
+    },
+    {
+      "id": "al-tm-056",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.5.1",
+      "difficulty": "hard",
+      "question": "Which of the following would MOST likely prompt a test manager to revisit and update the overall test strategy mid-project?",
+      "options": [
+        "A significant change in project risk profile, such as a major new regulatory requirement or architecture change",
+        "A tester taking their scheduled annual leave",
+        "A minor typo fix in the user documentation",
+        "The office relocating to a new building"
+      ],
+      "correctIndex": 0,
+      "explanation": "Significant changes in the project's risk profile \u2014 such as new regulatory requirements or major architecture changes \u2014 are valid triggers for a test manager to revisit and adapt the test strategy, unlike routine, low-impact events."
+    },
+    {
+      "id": "al-tm-057",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.6.1",
+      "difficulty": "medium",
+      "question": "What is the benefit of keeping the test plan a 'living document' updated throughout the project, rather than a static one written only once?",
+      "options": [
+        "It reflects current risks, scope, and schedule realities, keeping stakeholders aligned as the project evolves",
+        "It has no benefit and only adds unnecessary administrative overhead",
+        "It removes the need for a test summary report at project end",
+        "It guarantees that no requirements will ever change"
+      ],
+      "correctIndex": 0,
+      "explanation": "Treating the test plan as a living document, updated as the project evolves, helps keep it aligned with current risks, scope, and schedule realities, maintaining stakeholder alignment throughout the project."
+    },
+    {
+      "id": "al-tm-058",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.5.1",
+      "difficulty": "medium",
+      "question": "Which of the following BEST describes 'top-down' test estimation as opposed to 'bottom-up'?",
+      "options": [
+        "Top-down estimation derives overall effort from high-level project characteristics or analogy to similar past projects, while bottom-up sums estimates of individual, detailed tasks",
+        "Top-down and bottom-up estimation are the exact same technique with a different name",
+        "Top-down estimation can only be used for hardware projects",
+        "Bottom-up estimation ignores all detailed task breakdowns"
+      ],
+      "correctIndex": 0,
+      "explanation": "Top-down estimation derives an overall figure from high-level characteristics or analogous projects, while bottom-up estimation builds the total by summing detailed estimates for individual tasks or test items."
+    },
+    {
+      "id": "al-tm-059",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.6.1",
+      "difficulty": "medium",
+      "question": "A test manager notices that automated regression test pass rates have been steadily declining over several builds. What is a reasonable first step?",
+      "options": [
+        "Immediately disable all automated tests to hide the declining trend",
+        "Investigate whether the decline reflects genuine new defects, environment instability, or flaky/outdated automated tests, before deciding on action",
+        "Ignore the trend since automated tests are always accurate",
+        "Fire the automation engineers without investigation"
+      ],
+      "correctIndex": 1,
+      "explanation": "Before taking drastic action, a test manager should investigate the root cause of a declining pass rate \u2014 which could stem from genuine regressions, environment issues, or flaky/outdated tests \u2014 to respond appropriately."
+    },
+    {
+      "id": "al-tm-060",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.7.1",
+      "difficulty": "hard",
+      "question": "When staffing a project with a mix of experienced and junior testers, which strategy BEST supports team development while managing risk?",
+      "options": [
+        "Assign only junior testers to the highest-risk areas with no oversight",
+        "Pair junior testers with experienced mentors on higher-risk areas, gradually increasing their independent responsibility",
+        "Never allow junior testers to work on any test activities",
+        "Assign tasks randomly without regard to skill or risk level"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mentoring junior testers alongside experienced colleagues on higher-risk areas balances skill development with risk management, gradually building junior testers' independence and capability."
+    },
+    {
+      "id": "al-tm-061",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.5.1",
+      "difficulty": "medium",
+      "question": "What is the purpose of assigning both 'severity' and 'priority' to a defect report, rather than a single combined rating?",
+      "options": [
+        "Severity and priority always have identical meanings, so having both is redundant",
+        "Severity reflects the technical/functional impact of the defect, while priority reflects the urgency of fixing it relative to business needs, and the two do not always align",
+        "Priority is set by developers and severity is irrelevant to management",
+        "Only severity matters; priority is never used in defect management"
+      ],
+      "correctIndex": 1,
+      "explanation": "Severity reflects the technical or functional impact of a defect, while priority reflects the urgency of fixing it based on business needs; a low-severity defect might still have high priority (e.g., a visible typo on a homepage), so tracking both separately is valuable."
+    },
+    {
+      "id": "al-tm-062",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.6.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a benefit of involving the test manager early during requirements definition, rather than only after development begins?",
+      "options": [
+        "Early involvement allows testability concerns and ambiguities to be identified and addressed before costly rework is needed",
+        "There is no benefit; test managers should only be involved after coding is complete",
+        "It guarantees the requirements will never change again",
+        "It eliminates the need for a test plan"
+      ],
+      "correctIndex": 0,
+      "explanation": "Involving the test manager (and testers generally) early during requirements definition helps identify ambiguities and testability issues before they become costly to fix later in the lifecycle."
+    },
+    {
+      "id": "al-tm-063",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.7.1",
+      "difficulty": "medium",
+      "question": "Which of the following would typically be included in a risk register maintained by a test manager?",
+      "options": [
+        "A list of risks, along with their likelihood, impact, mitigation actions, and current status",
+        "The personal email addresses of every stakeholder",
+        "The office lunch menu for the week",
+        "A list of unrelated competitor products"
+      ],
+      "correctIndex": 0,
+      "explanation": "A risk register typically lists identified risks along with their likelihood, impact, owner, mitigation/contingency actions, and current status, serving as a living tool for ongoing risk management."
+    },
+    {
+      "id": "al-tm-064",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.6.1",
+      "difficulty": "medium",
+      "question": "Why might a test manager add contingency (buffer) time when scheduling test execution?",
+      "options": [
+        "To account for uncertainty, such as unexpected defect rates, environment downtime, or late-arriving builds",
+        "Because contingency time is legally required on every project",
+        "To intentionally make the schedule look worse than necessary",
+        "Contingency time is never appropriate in professional test scheduling"
+      ],
+      "correctIndex": 0,
+      "explanation": "Contingency (buffer) time helps absorb uncertainty in the schedule, such as unexpected defect rates, environment downtime, or delays in receiving builds, reducing the risk of an unrealistic schedule."
+    },
+    {
+      "id": "al-tm-065",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.7.1",
+      "difficulty": "hard",
+      "question": "A stakeholder asks the test manager for a go/no-go release recommendation. Which combination of information should the test manager base this recommendation on?",
+      "options": [
+        "Personal gut feeling only, without reference to any data",
+        "Test coverage achieved, outstanding defects and their business impact, exit criteria status, and residual risk",
+        "The number of test cases originally planned at the very start of the project, regardless of what changed since",
+        "The release date preferred by the marketing department alone"
+      ],
+      "correctIndex": 1,
+      "explanation": "A sound go/no-go recommendation is based on objective information: coverage achieved, the business impact of outstanding defects, whether exit criteria have been met, and the residual risk of releasing, rather than gut feeling or unrelated preferences."
     }
   ]
 }

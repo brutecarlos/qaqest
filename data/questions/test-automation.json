@@ -301,6 +301,306 @@
       ],
       "correctIndex": 1,
       "explanation": "If script maintenance effort consistently exceeds the manual testing time saved, the automation initiative is failing to deliver its intended ROI and needs review."
+    },
+    {
+      "id": "ta-021",
+      "chapter": "1. Introduction to Test Automation",
+      "loRef": "CTAE-1.1.1",
+      "difficulty": "easy",
+      "question": "Which of the following is a typical objective of introducing test automation into a project?",
+      "options": [
+        "To completely eliminate the need for any human testers",
+        "To improve efficiency and consistency of repetitive tests, freeing testers to focus on more exploratory or complex activities",
+        "To guarantee that the software will have zero defects",
+        "To remove the need for any test planning"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test automation aims to improve efficiency and consistency for repetitive tests (like regression suites), allowing human testers to focus their time on higher-value activities such as exploratory testing and complex scenario analysis."
+    },
+    {
+      "id": "ta-022",
+      "chapter": "1. Introduction to Test Automation",
+      "loRef": "CTAE-1.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following is a common misconception about test automation that a test automation engineer should address?",
+      "options": [
+        "Automation requires an ongoing investment in maintenance and does not eliminate all manual testing",
+        "Automated tests can run repeatedly without manual intervention once configured",
+        "Automated tests are useful for regression testing",
+        "Automation can improve test execution speed for repetitive tests"
+      ],
+      "correctIndex": 0,
+      "explanation": "A common misconception is that automation is a one-time investment requiring no ongoing maintenance, and that it can fully replace manual testing; in reality, automated test suites require continuous maintenance and cannot replace all forms of testing (e.g., exploratory or usability testing)."
+    },
+    {
+      "id": "ta-023",
+      "chapter": "1. Introduction to Test Automation",
+      "loRef": "CTAE-1.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following test activities is generally LEAST suitable for full automation?",
+      "options": [
+        "Repetitive regression testing of stable core functionality",
+        "Exploratory testing that relies on tester creativity, intuition, and adaptive investigation",
+        "Data-driven testing across many input combinations",
+        "Smoke testing after every build"
+      ],
+      "correctIndex": 1,
+      "explanation": "Exploratory testing relies heavily on human creativity, intuition, and adaptive investigation, making it fundamentally difficult to fully automate compared to repetitive, well-defined regression or smoke tests."
+    },
+    {
+      "id": "ta-024",
+      "chapter": "2. Preparing for Test Automation",
+      "loRef": "CTAE-2.1.2",
+      "difficulty": "medium",
+      "question": "When conducting a return-on-investment (ROI) analysis for test automation, which factor should be included?",
+      "options": [
+        "Only the initial licensing cost of the automation tool",
+        "Ongoing maintenance costs, initial setup effort, and expected savings in execution time over the test suite's lifetime",
+        "The number of team members who prefer manual testing",
+        "The color scheme of the automation tool's user interface"
+      ],
+      "correctIndex": 1,
+      "explanation": "A meaningful ROI analysis considers the full lifecycle costs (setup, ongoing maintenance) against the expected benefits (time savings, increased coverage, faster feedback) rather than looking only at initial licensing cost."
+    },
+    {
+      "id": "ta-025",
+      "chapter": "2. Preparing for Test Automation",
+      "loRef": "CTAE-2.2.1",
+      "difficulty": "medium",
+      "question": "Which system under test (SUT) characteristic makes it a GOOD candidate for test automation?",
+      "options": [
+        "A frequently changing user interface with no stable identifiers for elements",
+        "A stable, mature feature with well-defined, repeatable expected results",
+        "A one-time-use prototype that will be discarded after a single demo",
+        "A feature whose requirements are still being actively negotiated and change daily"
+      ],
+      "correctIndex": 1,
+      "explanation": "Automation works best on stable, mature functionality with well-defined and repeatable expected results, since automated tests are costly to maintain against features that change frequently or lack clear expected outcomes."
+    },
+    {
+      "id": "ta-026",
+      "chapter": "2. Preparing for Test Automation",
+      "loRef": "CTAE-2.2.2",
+      "difficulty": "medium",
+      "question": "Why is testability of the application under test important when preparing for automation?",
+      "options": [
+        "Testability has no impact on how easily tests can be automated",
+        "Higher testability (e.g., stable element identifiers, accessible APIs, controllable test data) makes automated tests easier and cheaper to create and maintain",
+        "Testability only matters for manual testing, not automation",
+        "Testability is only relevant to hardware testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Applications designed with testability in mind \u2014 such as stable element locators, accessible APIs, and controllable test data/state \u2014 are significantly easier and cheaper to automate and maintain tests for."
+    },
+    {
+      "id": "ta-027",
+      "chapter": "2. Preparing for Test Automation",
+      "loRef": "CTAE-2.3.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a typical objective when selecting test cases for automation, rather than automating everything?",
+      "options": [
+        "Automate every single test case regardless of value or stability",
+        "Prioritize test cases that are stable, executed frequently (e.g., regression), and provide high value relative to automation cost",
+        "Automate only test cases that are run exactly once",
+        "Automate tests randomly without any prioritization criteria"
+      ],
+      "correctIndex": 1,
+      "explanation": "Good practice is to prioritize automating stable, frequently-executed test cases (like regression tests) that provide strong return on investment, rather than attempting to automate every test case indiscriminately."
+    },
+    {
+      "id": "ta-028",
+      "chapter": "3. The Generic Test Automation Architecture (gTAA)",
+      "loRef": "CTAE-3.1.1",
+      "difficulty": "hard",
+      "question": "In the Generic Test Automation Architecture (gTAA), what is the primary role of the Test Adaptation Layer?",
+      "options": [
+        "To store test results in a database",
+        "To provide an interface between the test generation/definition layer and the specific interfaces of the system under test",
+        "To design the visual layout of test reports",
+        "To manage the project's budget and staffing"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Test Adaptation Layer in gTAA provides the interface adapters that connect generic test definitions/scripts to the specific technical interfaces of the system under test, enabling reuse across different SUTs or interface changes."
+    },
+    {
+      "id": "ta-029",
+      "chapter": "3. The Generic Test Automation Architecture (gTAA)",
+      "loRef": "CTAE-3.1.2",
+      "difficulty": "hard",
+      "question": "Which gTAA layer is primarily responsible for defining test data, expected results, and test procedures at a logical, implementation-independent level?",
+      "options": [
+        "Test Generation Layer",
+        "Test Definition Layer",
+        "Test Execution Layer",
+        "Test Adaptation Layer"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Test Definition Layer defines test cases, test data, and expected results at a logical level, independent of the specific technical implementation used to execute them."
+    },
+    {
+      "id": "ta-030",
+      "chapter": "3. The Generic Test Automation Architecture (gTAA)",
+      "loRef": "CTAE-3.2.1",
+      "difficulty": "medium",
+      "question": "What is a key benefit of separating test scripts from test data in an automation framework (data-driven design)?",
+      "options": [
+        "It allows the same script logic to be reused with many different data sets, reducing script duplication and improving maintainability",
+        "It prevents any test data from ever being reused",
+        "It requires rewriting the script for every new data value",
+        "It eliminates the need for a test execution engine"
+      ],
+      "correctIndex": 0,
+      "explanation": "Data-driven design separates test logic (scripts) from test data, allowing the same script to be executed against many different data sets, which reduces duplication and improves maintainability of the automation suite."
+    },
+    {
+      "id": "ta-031",
+      "chapter": "3. The Generic Test Automation Architecture (gTAA)",
+      "loRef": "CTAE-3.2.2",
+      "difficulty": "hard",
+      "question": "In a keyword-driven test automation framework, what is the main purpose of 'keywords'?",
+      "options": [
+        "To represent reusable, higher-level actions (e.g., 'Login', 'AddToCart') that abstract away the underlying implementation details",
+        "To store the raw HTML source code of every page",
+        "To replace the need for any test data",
+        "To define the project's marketing keywords for SEO"
+      ],
+      "correctIndex": 0,
+      "explanation": "Keyword-driven frameworks use reusable, higher-level keywords representing business or UI actions, abstracting away implementation details so non-programmers can compose test cases from these building blocks."
+    },
+    {
+      "id": "ta-032",
+      "chapter": "4. Deployment Risks and Contingencies",
+      "loRef": "CTAE-4.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a common risk when deploying a test automation solution into an organization?",
+      "options": [
+        "Insufficient organizational support, unclear ownership, or unrealistic expectations about what automation can achieve",
+        "Automated tests running exactly as designed with full stakeholder buy-in",
+        "Complete elimination of any maintenance needs",
+        "Automation tools always integrating seamlessly with zero configuration"
+      ],
+      "correctIndex": 0,
+      "explanation": "Common deployment risks include insufficient organizational support, unclear ownership of the automation solution, and unrealistic stakeholder expectations about what automation can deliver, all of which can undermine adoption."
+    },
+    {
+      "id": "ta-033",
+      "chapter": "4. Deployment Risks and Contingencies",
+      "loRef": "CTAE-4.1.2",
+      "difficulty": "medium",
+      "question": "What contingency should a team plan for if their chosen commercial automation tool becomes unsupported or discontinued?",
+      "options": [
+        "No contingency is needed since tools are never discontinued",
+        "An exit or migration strategy, such as maintaining test definitions in a tool-independent format where feasible",
+        "Immediately halting all testing activities indefinitely",
+        "Manually re-typing all test results from memory"
+      ],
+      "correctIndex": 1,
+      "explanation": "A sound contingency plan considers the risk of tool discontinuation by keeping test assets as tool-independent as feasible, or planning a migration strategy, to reduce lock-in risk."
+    },
+    {
+      "id": "ta-034",
+      "chapter": "4. Deployment Risks and Contingencies",
+      "loRef": "CTAE-4.2.1",
+      "difficulty": "hard",
+      "question": "Which practice helps reduce the risk of 'flaky' (intermittently failing) automated tests?",
+      "options": [
+        "Ignoring failures and always re-running until they pass without investigation",
+        "Designing tests with proper synchronization/waits, stable locators, and isolated test data to reduce timing and dependency issues",
+        "Removing all assertions from the test scripts",
+        "Running all tests simultaneously against a shared, uncontrolled environment"
+      ],
+      "correctIndex": 1,
+      "explanation": "Flaky tests are often caused by timing issues, unstable element locators, or shared/uncontrolled test data; proper synchronization, stable locators, and test data isolation reduce these problems."
+    },
+    {
+      "id": "ta-035",
+      "chapter": "5. Test Automation Reporting and Metrics",
+      "loRef": "CTAE-5.1.1",
+      "difficulty": "medium",
+      "question": "Which metric would BEST help a team evaluate the return on investment of their test automation effort over time?",
+      "options": [
+        "The number of lines of code in the automation framework",
+        "A comparison of automation development/maintenance cost versus time saved in execution and defects caught over multiple releases",
+        "The number of automation engineers hired",
+        "The number of test tool vendors evaluated during tool selection"
+      ],
+      "correctIndex": 1,
+      "explanation": "Evaluating ROI requires comparing the ongoing cost of developing and maintaining automation against the time saved in execution and value delivered (e.g., defects caught) across multiple releases, not just counting code or resources."
+    },
+    {
+      "id": "ta-036",
+      "chapter": "5. Test Automation Reporting and Metrics",
+      "loRef": "CTAE-5.1.2",
+      "difficulty": "medium",
+      "question": "What is an important consideration when generating automated test execution reports for different stakeholders?",
+      "options": [
+        "Always provide the exact same highly technical, low-level log output to every audience",
+        "Tailor the level of detail and summary format to the audience, e.g., executive summaries for management versus detailed logs for engineers",
+        "Never include any pass/fail summary information in reports",
+        "Reports should only be generated once per year"
+      ],
+      "correctIndex": 1,
+      "explanation": "Effective reporting tailors detail and format to the audience \u2014 for example, concise dashboards or summaries for management, and detailed logs or stack traces for engineers investigating failures."
+    },
+    {
+      "id": "ta-037",
+      "chapter": "5. Test Automation Reporting and Metrics",
+      "loRef": "CTAE-5.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following metrics is commonly tracked to assess the health of an automated regression suite over time?",
+      "options": [
+        "Test suite pass rate and trend of flaky/unstable test failures",
+        "The number of physical monitors used by the automation team",
+        "The number of coffee cups consumed during test runs",
+        "The alphabetical order of test script file names"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tracking pass rate trends and the frequency of flaky/unstable failures over time helps teams assess and maintain the health and reliability of their automated regression suite."
+    },
+    {
+      "id": "ta-038",
+      "chapter": "1. Introduction to Test Automation",
+      "loRef": "CTAE-1.3.1",
+      "difficulty": "medium",
+      "question": "Which factor should be considered when deciding the appropriate level (unit, API/service, or UI) at which to automate a given test?",
+      "options": [
+        "UI-level automation should always be preferred over API or unit-level automation regardless of context",
+        "Lower-level tests (unit/API) are typically faster and more stable, so automation effort is often best balanced toward those levels, using UI automation more sparingly for end-to-end coverage",
+        "Automation level has no impact on test stability or execution speed",
+        "Only UI-level tests can be automated; unit and API tests cannot"
+      ],
+      "correctIndex": 1,
+      "explanation": "Following the test automation pyramid concept, unit and API-level tests are generally faster, more stable, and cheaper to maintain than UI tests, so automation effort is typically weighted toward lower levels, with UI automation reserved for critical end-to-end flows."
+    },
+    {
+      "id": "ta-039",
+      "chapter": "2. Preparing for Test Automation",
+      "loRef": "CTAE-2.4.1",
+      "difficulty": "medium",
+      "question": "Why is version control important for test automation code and test data?",
+      "options": [
+        "It has no real benefit for automation projects",
+        "It enables tracking changes, collaborating safely among multiple engineers, and reverting problematic changes to the automation suite",
+        "It is only useful for production application code, not test code",
+        "It replaces the need for any test execution reports"
+      ],
+      "correctIndex": 1,
+      "explanation": "Version control for automation code and test data enables safe collaboration among multiple engineers, tracks the history of changes, and allows reverting problematic changes, just as it does for production code."
+    },
+    {
+      "id": "ta-040",
+      "chapter": "3. The Generic Test Automation Architecture (gTAA)",
+      "loRef": "CTAE-3.3.1",
+      "difficulty": "hard",
+      "question": "Which of the following BEST describes the benefit of using a layered test automation architecture (such as gTAA) rather than a single monolithic script approach?",
+      "options": [
+        "It has no advantage over monolithic scripts and only adds unnecessary complexity",
+        "It improves maintainability and reusability by isolating concerns (test definition, adaptation, execution), so changes in one layer have limited impact on others",
+        "It guarantees the automation suite will never require any updates",
+        "It eliminates the need for any test adaptation layer"
+      ],
+      "correctIndex": 1,
+      "explanation": "A layered architecture isolates concerns such as test definition, adaptation to the SUT, and execution, so that changes in one layer (e.g., a UI change requiring adaptation layer updates) have limited ripple effects on other layers, improving maintainability and reusability."
     }
   ]
 }
