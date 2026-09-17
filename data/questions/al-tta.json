@@ -16,6 +16,291 @@
       ],
       "correctIndex": 2,
       "explanation": "Multiple condition coverage requires testing all possible combinations of individual condition outcomes within a single decision."
+    },
+    {
+      "id": "al-tta-002",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.1.1",
+      "difficulty": "medium",
+      "question": "As a Technical Test Analyst, which type of risk would you PRIMARILY help identify during risk analysis?",
+      "options": [
+        "Technical risks related to code structure, architecture, and non-functional quality characteristics",
+        "Risks related purely to marketing strategy",
+        "Risks related to the CEO's public statements",
+        "Risks related to office furniture layout"
+      ],
+      "correctIndex": 0,
+      "explanation": "Technical Test Analysts bring technical expertise to risk analysis, focusing on architectural, structural, and non-functional risks such as performance, security, and reliability."
+    },
+    {
+      "id": "al-tta-003",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.1",
+      "difficulty": "hard",
+      "question": "Which structural coverage criterion requires that every feasible path through a program's control flow graph be exercised?",
+      "options": [
+        "Statement coverage",
+        "Decision coverage",
+        "Path coverage",
+        "Condition coverage"
+      ],
+      "correctIndex": 2,
+      "explanation": "Path coverage is the strongest and generally most impractical structural coverage criterion, requiring every possible execution path through the code to be exercised."
+    },
+    {
+      "id": "al-tta-004",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.2.2",
+      "difficulty": "hard",
+      "question": "Modified Condition/Decision Coverage (MC/DC) requires that:",
+      "options": [
+        "Only the overall decision outcome be tested as true and false, ignoring individual conditions",
+        "Each individual condition within a decision be shown to independently affect the outcome of that decision",
+        "Every statement in the program execute at least once",
+        "Every possible combination of all conditions in the entire program be tested"
+      ],
+      "correctIndex": 1,
+      "explanation": "MC/DC requires demonstrating that each condition in a decision can independently affect the decision's outcome, commonly required in safety-critical software standards, without needing full combinatorial testing."
+    },
+    {
+      "id": "al-tta-005",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.3.1",
+      "difficulty": "medium",
+      "question": "Which of the following is an example of a control-flow-based white-box test technique?",
+      "options": [
+        "Equivalence partitioning",
+        "Statement and branch (decision) coverage testing",
+        "Use case testing",
+        "Checklist-based testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Statement and decision (branch) coverage are control-flow-based white-box techniques that analyze the structure of the code's execution paths."
+    },
+    {
+      "id": "al-tta-006",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.1.1",
+      "difficulty": "medium",
+      "question": "Static analysis tools can be used by Technical Test Analysts to detect which of the following, WITHOUT executing the code?",
+      "options": [
+        "Actual response times under production load",
+        "Potential null pointer dereferences, unreachable code, and violations of secure coding standards",
+        "User satisfaction survey results",
+        "Real-time memory usage in production"
+      ],
+      "correctIndex": 1,
+      "explanation": "Static analysis can detect a range of structural and potential defect patterns (e.g. null dereference risks, dead code, coding standard violations) without executing the program."
+    },
+    {
+      "id": "al-tta-007",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.2.1",
+      "difficulty": "hard",
+      "question": "Which technique analyzes how variables are defined, used, and killed throughout a program's execution to design test cases targeting data-related defects?",
+      "options": [
+        "Data flow testing",
+        "Boundary value analysis",
+        "State transition testing",
+        "Use case testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Data flow testing focuses on sequences of variable definitions and uses (e.g. define-use pairs) to identify tests that can reveal data-related defects, such as using a variable before it's properly defined."
+    },
+    {
+      "id": "al-tta-008",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.1",
+      "difficulty": "medium",
+      "question": "Which quality characteristic is PRIMARILY assessed through security testing techniques like penetration testing?",
+      "options": [
+        "Security",
+        "Usability",
+        "Portability",
+        "Functional correctness"
+      ],
+      "correctIndex": 0,
+      "explanation": "Security testing, including techniques like penetration testing and vulnerability scanning, primarily assesses the security quality characteristic \u2014 confidentiality, integrity, and related properties."
+    },
+    {
+      "id": "al-tta-009",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.2.1",
+      "difficulty": "medium",
+      "question": "Reliability testing, such as a soak/endurance test run over 72 hours, primarily aims to detect:",
+      "options": [
+        "Cosmetic UI misalignments",
+        "Memory leaks, resource exhaustion, or degradation in stability under sustained operation",
+        "Grammatical errors in error messages",
+        "Missing translations for a specific locale"
+      ],
+      "correctIndex": 1,
+      "explanation": "Reliability (endurance/soak) testing runs the system under sustained load over an extended period to detect issues like memory leaks or gradual resource exhaustion that only appear over time."
+    },
+    {
+      "id": "al-tta-010",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.3.1",
+      "difficulty": "medium",
+      "question": "Which quality characteristic evaluates how easily a system can be modified, extended, or have defects fixed?",
+      "options": [
+        "Maintainability",
+        "Portability",
+        "Compatibility",
+        "Functional completeness"
+      ],
+      "correctIndex": 0,
+      "explanation": "Maintainability assesses how easily the software can be modified, including corrective, adaptive, and perfective changes, as well as how testable and analyzable the code is."
+    },
+    {
+      "id": "al-tta-011",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.1.1",
+      "difficulty": "medium",
+      "question": "Which activity is MOST closely associated with the Technical Test Analyst's role, as opposed to the Test Analyst's?",
+      "options": [
+        "Designing test cases based purely on user-facing business requirements",
+        "Designing white-box test cases based on code structure and evaluating non-functional quality characteristics like performance and security",
+        "Writing user manuals for end users",
+        "Managing the overall project budget"
+      ],
+      "correctIndex": 1,
+      "explanation": "Technical Test Analysts typically focus on structure-based (white-box) testing and technical, non-functional quality characteristics, complementing the Test Analyst's functional/business focus."
+    },
+    {
+      "id": "al-tta-012",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.2.1",
+      "difficulty": "medium",
+      "question": "Which technical factor would typically INCREASE the likelihood component of a risk related to a specific module?",
+      "options": [
+        "The module has low cyclomatic complexity and a stable, experienced team",
+        "The module has high cyclomatic complexity, was recently rewritten, and has a history of defects",
+        "The module was fully covered by static analysis with zero warnings",
+        "The module has not changed in over two years"
+      ],
+      "correctIndex": 1,
+      "explanation": "High complexity, recent significant changes, and a history of defects are technical factors that typically increase the likelihood of a module containing further defects."
+    },
+    {
+      "id": "al-tta-013",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.1.2",
+      "difficulty": "hard",
+      "question": "For the following code: IF (a) THEN x=1 ELSE IF (b) THEN x=2 ELSE x=3, how many decision outcomes must be exercised to achieve 100% decision coverage?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctIndex": 2,
+      "explanation": "There are effectively 3 distinct outcomes/branches in this nested decision structure (a true, a false & b true, a false & b false), all of which must be exercised for 100% decision coverage."
+    },
+    {
+      "id": "al-tta-014",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.3.1",
+      "difficulty": "medium",
+      "question": "Dynamic analysis tools, unlike static analysis tools, detect defects by:",
+      "options": [
+        "Examining source code without executing it",
+        "Monitoring the software's behavior while it is actually running, e.g. detecting memory leaks or wild pointers at runtime",
+        "Reviewing requirements documents in a meeting",
+        "Reading test management tool reports only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dynamic analysis tools operate while the software executes, detecting runtime issues such as memory leaks, wild pointers, or resource usage problems that static analysis cannot observe."
+    },
+    {
+      "id": "al-tta-015",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.4.1",
+      "difficulty": "medium",
+      "question": "Compatibility testing MOST directly evaluates whether a system:",
+      "options": [
+        "Can coexist and correctly share resources or interoperate with other software in a common environment without adverse effects",
+        "Runs faster than its previous version under all conditions",
+        "Contains any unreachable code",
+        "Meets the pass mark on a certification exam"
+      ],
+      "correctIndex": 0,
+      "explanation": "Compatibility testing checks that a system can coexist with other software sharing a common environment, without negatively affecting shared resources or functionality."
+    },
+    {
+      "id": "al-tta-016",
+      "chapter": "1. The Technical Test Analyst's Tasks",
+      "loRef": "AL-TTA-1.2.1",
+      "difficulty": "medium",
+      "question": "Why might a Technical Test Analyst be involved in code reviews alongside developers?",
+      "options": [
+        "To bring a testing perspective focused on testability, structural coverage, and technical risk areas",
+        "Because Technical Test Analysts write all the production code themselves",
+        "Because code reviews are unrelated to testing and should be skipped",
+        "Because only Technical Test Analysts are legally allowed to view source code"
+      ],
+      "correctIndex": 0,
+      "explanation": "Technical Test Analysts add value in code reviews by focusing on testability, structural risk, and technical concerns that complement the developer's implementation perspective."
+    },
+    {
+      "id": "al-tta-017",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.2.1",
+      "difficulty": "medium",
+      "question": "Condition coverage requires that:",
+      "options": [
+        "Every statement executes at least once, regardless of any conditions",
+        "Each individual condition within a decision be evaluated to both true and false at least once, though this does not guarantee decision coverage",
+        "Every combination of all conditions across the whole program is tested",
+        "Only the overall decision outcome is exercised as true"
+      ],
+      "correctIndex": 1,
+      "explanation": "Condition coverage requires each individual condition to take both true and false values, but on its own does not guarantee that the overall decision outcome has been exercised both ways."
+    },
+    {
+      "id": "al-tta-018",
+      "chapter": "4. Analytical Techniques",
+      "loRef": "AL-TTA-4.1.2",
+      "difficulty": "medium",
+      "question": "Which type of static analysis finding is generally considered a HIGH-value catch because it can cause unpredictable runtime crashes?",
+      "options": [
+        "A minor variable naming convention violation",
+        "A potential null pointer dereference or use of an uninitialized variable",
+        "A missing code comment",
+        "An unusually long function name"
+      ],
+      "correctIndex": 1,
+      "explanation": "Static analysis findings like potential null pointer dereferences or uninitialized variable use are high-value because they often correspond to real defects that can cause crashes or undefined behavior."
+    },
+    {
+      "id": "al-tta-019",
+      "chapter": "5. Quality Characteristics for Technical Testing",
+      "loRef": "AL-TTA-5.1.2",
+      "difficulty": "hard",
+      "question": "A penetration test discovers that user input is not sanitized before being used in a database query. This is MOST likely evidence of which vulnerability class?",
+      "options": [
+        "Cross-site scripting (XSS) only",
+        "SQL injection",
+        "Denial of service",
+        "Broken usability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Unsanitized user input used directly in database queries is a classic indicator of SQL injection vulnerability, allowing attackers to manipulate queries."
+    },
+    {
+      "id": "al-tta-020",
+      "chapter": "2. Risk-Based Testing",
+      "loRef": "AL-TTA-2.1.2",
+      "difficulty": "medium",
+      "question": "Which mitigation approach would a Technical Test Analyst typically recommend for a HIGH technical risk related to a complex, poorly-covered legacy module?",
+      "options": [
+        "Ignore the module since it has worked so far",
+        "Increase structural test coverage (e.g., branch coverage) and add targeted static/dynamic analysis for that module",
+        "Remove all existing tests for that module to save time",
+        "Assign the least experienced developer to modify it with no additional testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "For high-risk, complex, poorly-covered code, a common technical mitigation is to increase structural coverage and apply focused static/dynamic analysis to reduce the residual risk."
     }
   ]
 }

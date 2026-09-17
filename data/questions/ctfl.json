@@ -616,6 +616,891 @@
       ],
       "correctIndex": 1,
       "explanation": "Test execution tools automatically run tests, compare actual and expected results, and log the outcomes, distinguishing them from other categories like requirements or management tools."
+    },
+    {
+      "id": "ctfl-042",
+      "chapter": "1. Fundamentals of Testing",
+      "loRef": "FL-1.1.1",
+      "difficulty": "easy",
+      "question": "Which of the following best explains why testing contributes to quality assurance?",
+      "options": [
+        "Testing is identical to quality assurance and replaces it entirely",
+        "Testing is one of several quality assurance activities that provides information used to improve processes and products",
+        "Testing only occurs after quality assurance activities are finished",
+        "Testing has no relationship to quality assurance"
+      ],
+      "correctIndex": 1,
+      "explanation": "Testing is a form of quality control that provides objective information to stakeholders; quality assurance is broader and focuses on process improvement to prevent defects, with testing feeding it useful data."
+    },
+    {
+      "id": "ctfl-043",
+      "chapter": "1. Fundamentals of Testing",
+      "loRef": "FL-1.1.3",
+      "difficulty": "medium",
+      "question": "Which statement about the relationship between testing and debugging is CORRECT?",
+      "options": [
+        "Debugging is a testing activity performed by testers to find defects",
+        "Testing identifies failures, while debugging is the development activity of finding, analyzing, and fixing the root cause defect",
+        "Testing and debugging are the same activity performed by the same role",
+        "Debugging always precedes testing in the software lifecycle"
+      ],
+      "correctIndex": 1,
+      "explanation": "Testing can show that failures occur, but locating the underlying defect and fixing it (debugging) is typically a development activity distinct from testing."
+    },
+    {
+      "id": "ctfl-044",
+      "chapter": "1. Fundamentals of Testing",
+      "loRef": "FL-1.1.2",
+      "difficulty": "medium",
+      "question": "A tester enters a valid date but the system rejects it due to a coding mistake in the date-validation logic. What is the CORRECT terminology for this coding mistake itself?",
+      "options": [
+        "A failure",
+        "A defect (fault)",
+        "An error (mistake)",
+        "A risk"
+      ],
+      "correctIndex": 1,
+      "explanation": "The flawed code is the defect (or fault); the human mistake that introduced it is the error, and the observable incorrect behavior when executed is the failure."
+    },
+    {
+      "id": "ctfl-045",
+      "chapter": "1. Fundamentals of Testing",
+      "loRef": "FL-1.2.1",
+      "difficulty": "medium",
+      "question": "Which of the seven testing principles states that defects tend to cluster in a small number of modules?",
+      "options": [
+        "Absence-of-errors fallacy",
+        "Defect clustering",
+        "Testing is context dependent",
+        "Exhaustive testing is impossible"
+      ],
+      "correctIndex": 1,
+      "explanation": "Defect clustering observes that a small number of modules usually contain most of the defects found, or are responsible for most operational failures, similar to the Pareto principle."
+    },
+    {
+      "id": "ctfl-046",
+      "chapter": "1. Fundamentals of Testing",
+      "loRef": "FL-1.2.1",
+      "difficulty": "medium",
+      "question": "The 'absence-of-errors fallacy' testing principle warns that:",
+      "options": [
+        "Finding and fixing defects is of no value if the system is still unusable or does not meet user needs",
+        "Software with zero known defects is always ready for release",
+        "It is impossible to have software with zero defects",
+        "Errors always cluster in the same modules"
+      ],
+      "correctIndex": 0,
+      "explanation": "Even a defect-free system can fail to meet user needs, be unusable, or not fulfill business requirements, so simply removing defects is not sufficient for success."
+    },
+    {
+      "id": "ctfl-047",
+      "chapter": "1. Fundamentals of Testing",
+      "loRef": "FL-1.2.1",
+      "difficulty": "easy",
+      "question": "Which testing principle states that testing activities should vary based on the application domain, e.g. a safety-critical system is tested differently from an e-commerce site?",
+      "options": [
+        "Testing shows presence of defects",
+        "Testing is context dependent",
+        "Early testing saves time and money",
+        "Pesticide paradox"
+      ],
+      "correctIndex": 1,
+      "explanation": "The 'testing is context dependent' principle recognizes that the extent, techniques, and rigor of testing should be tailored to the specific context, such as safety-criticality, regulations, or risk."
+    },
+    {
+      "id": "ctfl-048",
+      "chapter": "1. Fundamentals of Testing",
+      "loRef": "FL-1.3.1",
+      "difficulty": "medium",
+      "question": "Why might independent testers (e.g. a separate test team) find different defects than the developers who wrote the code?",
+      "options": [
+        "Independent testers have less understanding of the requirements",
+        "Independence can reduce author bias and bring a different, unbiased perspective that helps uncover defects the author may overlook",
+        "Independent testers are not allowed to communicate with developers",
+        "Independence guarantees all defects will be found"
+      ],
+      "correctIndex": 1,
+      "explanation": "A degree of independence often helps testers identify defects that authors miss due to their familiarity with and assumptions about their own work, though full independence is not always feasible or desirable."
+    },
+    {
+      "id": "ctfl-049",
+      "chapter": "1. Fundamentals of Testing",
+      "loRef": "FL-1.4.2",
+      "difficulty": "easy",
+      "question": "In the context of testing terminology, a 'test condition' is:",
+      "options": [
+        "A testable aspect of a component or system identified as a basis for testing, such as a function, feature, or quality attribute",
+        "A specific input value used in a single test case",
+        "The final status of a test case after execution (pass/fail)",
+        "The physical environment where tests are executed"
+      ],
+      "correctIndex": 0,
+      "explanation": "A test condition is a testable aspect (e.g., a function, transaction, or non-functional attribute) identified from the test basis, from which test cases are later derived."
+    },
+    {
+      "id": "ctfl-050",
+      "chapter": "1. Fundamentals of Testing",
+      "loRef": "FL-1.5.1",
+      "difficulty": "medium",
+      "question": "Which of the following BEST describes 'test basis'?",
+      "options": [
+        "The physical hardware used to run tests",
+        "The body of knowledge used as the reference for test analysis and design, such as requirements or user stories",
+        "The final report summarizing test results",
+        "The tool used to manage test cases"
+      ],
+      "correctIndex": 1,
+      "explanation": "The test basis is all the information (requirements specifications, design documents, user stories, risk analyses, etc.) used as the source for deriving test conditions and test cases."
+    },
+    {
+      "id": "ctfl-051",
+      "chapter": "2. Testing Throughout the SDLC",
+      "loRef": "FL-2.1.3",
+      "difficulty": "medium",
+      "question": "Which of the following is a benefit of using a well-defined software development lifecycle model when planning testing?",
+      "options": [
+        "It removes the need to ever update the test plan",
+        "It helps identify when testing activities should be performed relative to other development activities",
+        "It guarantees that no defects will be introduced into the code",
+        "It eliminates the need for test environments"
+      ],
+      "correctIndex": 1,
+      "explanation": "Understanding the lifecycle model (e.g., sequential, iterative) helps testers know when to plan, design, and execute tests relative to related development activities."
+    },
+    {
+      "id": "ctfl-052",
+      "chapter": "2. Testing Throughout the SDLC",
+      "loRef": "FL-2.1.4",
+      "difficulty": "medium",
+      "question": "In a DevOps context with continuous delivery, why is a high level of test automation especially important?",
+      "options": [
+        "Because manual testing is no longer allowed under DevOps",
+        "Because frequent, fast integration and delivery cycles require rapid feedback, which is difficult to achieve through manual testing alone",
+        "Because DevOps eliminates the need for testing entirely",
+        "Because automated tests never need maintenance"
+      ],
+      "correctIndex": 1,
+      "explanation": "DevOps and continuous delivery rely on fast, frequent builds and releases; a strong suite of automated tests is needed to provide the rapid feedback these short cycles demand."
+    },
+    {
+      "id": "ctfl-053",
+      "chapter": "2. Testing Throughout the SDLC",
+      "loRef": "FL-2.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a typical test basis for component (unit) testing?",
+      "options": [
+        "Business requirements documents only",
+        "Detailed design, code, and data model",
+        "User acceptance criteria only",
+        "Production incident reports"
+      ],
+      "correctIndex": 1,
+      "explanation": "Component testing is typically based on detailed design specifications, code itself, and data models, since it focuses on individual components in isolation."
+    },
+    {
+      "id": "ctfl-054",
+      "chapter": "2. Testing Throughout the SDLC",
+      "loRef": "FL-2.2.2",
+      "difficulty": "medium",
+      "question": "Which of the following BEST describes 'operational acceptance testing'?",
+      "options": [
+        "Testing performed by end users to validate business processes",
+        "Testing focused on operational aspects such as backup/restore, disaster recovery, and maintainability, typically performed by operations/administrators",
+        "Testing conducted solely to satisfy legal or regulatory requirements",
+        "Testing performed exclusively during component integration"
+      ],
+      "correctIndex": 1,
+      "explanation": "Operational acceptance testing focuses on operational aspects like backup and restore, disaster recovery, user management, and maintenance tasks, usually conducted by system administrators."
+    },
+    {
+      "id": "ctfl-055",
+      "chapter": "2. Testing Throughout the SDLC",
+      "loRef": "FL-2.2.4",
+      "difficulty": "medium",
+      "question": "Which combination of test type and example is CORRECTLY matched?",
+      "options": [
+        "Functional testing \u2014 verifying the correct calculation of a shopping cart total",
+        "Non-functional testing \u2014 verifying a business rule computes the correct discount",
+        "White-box testing \u2014 verifying the system meets usability requirements",
+        "Change-related testing \u2014 verifying a brand-new feature for the first time"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verifying that a specific function (calculating a total) produces correct output is a functional test example; the other options mismatch the test type with an incorrect example."
+    },
+    {
+      "id": "ctfl-056",
+      "chapter": "2. Testing Throughout the SDLC",
+      "loRef": "FL-2.2.4",
+      "difficulty": "easy",
+      "question": "Which quality characteristic would 'security testing' PRIMARILY assess?",
+      "options": [
+        "Whether the software protects data and resources from unauthorized access and use",
+        "Whether the software's user interface follows corporate branding",
+        "Whether the software can be installed on multiple operating systems",
+        "Whether the software's response time meets targets under load"
+      ],
+      "correctIndex": 0,
+      "explanation": "Security testing evaluates confidentiality, integrity, authenticity, and other aspects related to protecting data and resources from unauthorized access."
+    },
+    {
+      "id": "ctfl-057",
+      "chapter": "2. Testing Throughout the SDLC",
+      "loRef": "FL-2.3.1",
+      "difficulty": "hard",
+      "question": "A company decides to automatically re-run a subset of tests every time code is committed. This is BEST described as:",
+      "options": [
+        "Confirmation testing",
+        "Regression testing integrated into a continuous integration pipeline",
+        "Acceptance testing",
+        "Maintenance testing only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Running an automated subset of tests on every commit to catch unintended side effects of changes is a form of regression testing, commonly integrated into CI pipelines."
+    },
+    {
+      "id": "ctfl-058",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.1.1",
+      "difficulty": "easy",
+      "question": "Which of the following work products can typically be examined using static testing techniques?",
+      "options": [
+        "Only executable source code",
+        "Requirements specifications, user stories, code, and test plans",
+        "Only compiled binaries",
+        "Only production log files"
+      ],
+      "correctIndex": 1,
+      "explanation": "Static testing techniques such as reviews and static analysis can be applied to many types of work products, including requirements, user stories, design documents, code, and test documentation."
+    },
+    {
+      "id": "ctfl-059",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following is a benefit of static testing compared to dynamic testing?",
+      "options": [
+        "It can find defects earlier in the lifecycle, before code is executable, reducing the cost of fixing them",
+        "It can measure the actual runtime performance of the system",
+        "It always finds more defects than dynamic testing in every project",
+        "It eliminates the need for any dynamic testing afterward"
+      ],
+      "correctIndex": 0,
+      "explanation": "Static testing can be performed before code exists or is executable, allowing defects in requirements or design to be found and fixed earlier and more cheaply than if found later via dynamic testing."
+    },
+    {
+      "id": "ctfl-060",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.2.1",
+      "difficulty": "medium",
+      "question": "During the 'individual review' (preparation) activity of a formal review, participants primarily:",
+      "options": [
+        "Meet as a group to discuss and log all defects",
+        "Examine the work product on their own beforehand, noting potential defects, questions, and comments",
+        "Sign off the work product as approved",
+        "Implement fixes for defects found by others"
+      ],
+      "correctIndex": 1,
+      "explanation": "In individual review (preparation), each participant examines the work product on their own before any review meeting, identifying potential defects, questions, and comments to bring to the meeting."
+    },
+    {
+      "id": "ctfl-061",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.2.3",
+      "difficulty": "easy",
+      "question": "In a formal review, which role is typically responsible for the work product being reviewed and for fixing identified defects?",
+      "options": [
+        "The moderator",
+        "The author",
+        "The reviewer",
+        "The manager"
+      ],
+      "correctIndex": 1,
+      "explanation": "The author created the work product under review and is generally responsible for addressing (fixing) the defects found."
+    },
+    {
+      "id": "ctfl-062",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.2.2",
+      "difficulty": "medium",
+      "question": "A 'walkthrough' review type is generally characterized by:",
+      "options": [
+        "A highly formal process with strict entry and exit criteria led by a trained moderator",
+        "The author leading the session, often to build consensus or educate participants about the content, with a relatively informal structure",
+        "No author participation whatsoever",
+        "Only automated tool-driven analysis with no human participants"
+      ],
+      "correctIndex": 1,
+      "explanation": "A walkthrough is typically led by the author, aiming to gather feedback, build consensus, or educate participants; it is usually less formal than an inspection."
+    },
+    {
+      "id": "ctfl-063",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.2.4",
+      "difficulty": "medium",
+      "question": "Which factor is generally considered when deciding how formal a review should be for a given work product?",
+      "options": [
+        "The number of participants' favorite colors",
+        "The maturity of the development process, criticality of the work product, and any regulatory or contractual requirements",
+        "Whether the moderator prefers formal or informal meetings for unrelated reasons",
+        "The programming language used"
+      ],
+      "correctIndex": 1,
+      "explanation": "Review formality is usually chosen based on factors such as the lifecycle model, process maturity, criticality of the work product, legal/regulatory requirements, and time/budget constraints."
+    },
+    {
+      "id": "ctfl-064",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.3.1",
+      "difficulty": "medium",
+      "question": "Which of the following BEST supports a blame-free review culture that helps reviews succeed?",
+      "options": [
+        "Publicly ranking authors by number of defects found in their work",
+        "Focusing feedback on the work product, not the person, and treating defect-finding as a positive contribution to quality",
+        "Requiring authors to defend every comment in front of management",
+        "Avoiding giving any feedback to authors so they don't feel criticized"
+      ],
+      "correctIndex": 1,
+      "explanation": "A successful review culture treats found defects as valuable contributions to improving the work product, focusing objectively on the artifact rather than criticizing the author personally."
+    },
+    {
+      "id": "ctfl-065",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.1.2",
+      "difficulty": "hard",
+      "question": "A requirements document states 'the system shall respond quickly to user requests.' Which type of defect would a static review MOST likely flag here?",
+      "options": [
+        "A performance defect found only through load testing",
+        "An ambiguity, since 'quickly' is not measurable or testable as written",
+        "A security vulnerability",
+        "A regression defect"
+      ],
+      "correctIndex": 1,
+      "explanation": "Static testing is effective at catching ambiguous or untestable requirements, such as a vague, unmeasurable term like 'quickly', before any code is written."
+    },
+    {
+      "id": "ctfl-066",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.2.3",
+      "difficulty": "easy",
+      "question": "Which of the following BEST describes the 'manager' role's typical responsibility in a formal review?",
+      "options": [
+        "Recording all defects raised during the review meeting",
+        "Deciding on the execution of reviews, allocating time and resources, and assessing whether review objectives have been met",
+        "Personally fixing all identified defects",
+        "Leading the review meeting and moderating discussion"
+      ],
+      "correctIndex": 1,
+      "explanation": "The manager typically decides what gets reviewed, allocates time and resources for reviews within project schedules, and evaluates whether review objectives are being achieved."
+    },
+    {
+      "id": "ctfl-067",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.1.1",
+      "difficulty": "medium",
+      "question": "Static analysis tools are commonly used to detect which of the following in source code, WITHOUT executing it?",
+      "options": [
+        "Runtime memory usage under peak load",
+        "Unreachable (dead) code, undeclared variables, and violations of coding standards",
+        "User satisfaction with the interface",
+        "Response times for specific transactions"
+      ],
+      "correctIndex": 1,
+      "explanation": "Static analysis tools examine code structure without executing it, commonly detecting issues like unreachable code, unused variables, and coding standard violations."
+    },
+    {
+      "id": "ctfl-068",
+      "chapter": "3. Static Testing",
+      "loRef": "FL-3.2.1",
+      "difficulty": "medium",
+      "question": "What typically happens during the 'follow-up' activity at the end of a formal review process?",
+      "options": [
+        "Nothing further is required once the review meeting ends",
+        "Confirming that identified defects have been addressed and collecting metrics to evaluate the review process itself",
+        "Scheduling the kick-off meeting for the next review",
+        "Distributing the work product to reviewers for the first time"
+      ],
+      "correctIndex": 1,
+      "explanation": "Follow-up confirms that defects have been appropriately addressed (fixed, deferred, or rejected with reason) and gathers metrics to check whether exit criteria are met and to improve future reviews."
+    },
+    {
+      "id": "ctfl-069",
+      "chapter": "4. Test Analysis and Design (Test Techniques)",
+      "loRef": "FL-4.1.2",
+      "difficulty": "medium",
+      "question": "Which statement CORRECTLY differentiates black-box, white-box, and experience-based test techniques?",
+      "options": [
+        "Black-box techniques use internal code structure; white-box techniques use only specifications",
+        "Black-box techniques derive tests from specifications; white-box techniques derive tests from internal structure; experience-based techniques rely on tester knowledge and intuition",
+        "All three technique categories are functionally identical",
+        "Experience-based techniques can only be used for non-functional testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Black-box techniques are specification-based, white-box techniques are structure-based, and experience-based techniques leverage the tester's skill, intuition, and experience with similar systems or defects."
+    },
+    {
+      "id": "ctfl-070",
+      "chapter": "4. Test Analysis and Design (Test Techniques)",
+      "loRef": "FL-4.2.1",
+      "difficulty": "hard",
+      "question": "A password field must be between 8 and 20 characters. Using boundary value analysis with two-point boundaries, which values should be tested for the MINIMUM boundary?",
+      "options": [
+        "7 and 8",
+        "8 and 9",
+        "1 and 8",
+        "0 and 100"
+      ],
+      "correctIndex": 0,
+      "explanation": "Two-point boundary value analysis for a minimum boundary of 8 tests the invalid value just below it (7) and the valid minimum itself (8)."
+    },
+    {
+      "id": "ctfl-071",
+      "chapter": "4. Test Analysis and Design (Test Techniques)",
+      "loRef": "FL-4.2.2",
+      "difficulty": "hard",
+      "question": "A discount system applies: 0% for orders under $50, 10% for orders from $50 to $199.99, and 20% for orders of $200 or more. Using equivalence partitioning, how many valid partitions exist for the order amount?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctIndex": 2,
+      "explanation": "There are three valid discount partitions based on the order amount: under $50, $50-$199.99, and $200 or more, each producing a distinct discount behavior."
+    },
+    {
+      "id": "ctfl-072",
+      "chapter": "4. Test Analysis and Design (Test Techniques)",
+      "loRef": "FL-4.2.3",
+      "difficulty": "hard",
+      "question": "A decision table combines conditions 'Has valid coupon' (Y/N) and 'Order total >= $50' (Y/N), yielding 4 rules with distinct actions. If two test cases only cover 2 of the 4 rules, what decision table coverage has been achieved?",
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "correctIndex": 1,
+      "explanation": "Decision table coverage = (rules exercised / total rules) x 100%. Covering 2 out of 4 rules yields 50% decision table coverage."
+    },
+    {
+      "id": "ctfl-073",
+      "chapter": "4. Test Analysis and Design (Test Techniques)",
+      "loRef": "FL-4.2.4",
+      "difficulty": "medium",
+      "question": "In state transition testing, a 'zero-switch' test covers:",
+      "options": [
+        "Every possible sequence of transitions in the model",
+        "A single valid transition from one state to another",
+        "Only invalid transitions that should be rejected by the system",
+        "The initial state of the system only"
+      ],
+      "correctIndex": 1,
+      "explanation": "A zero-switch (0-switch) test exercises a single individual transition between two states, the most basic level of state transition coverage."
+    },
+    {
+      "id": "ctfl-074",
+      "chapter": "4. Test Analysis and Design (Test Techniques)",
+      "loRef": "FL-4.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a KEY advantage of boundary value analysis over simple equivalence partitioning?",
+      "options": [
+        "It requires fewer test cases in every scenario",
+        "It specifically targets the edges of valid/invalid ranges, where defects (off-by-one errors) are statistically more likely to occur",
+        "It eliminates the need to analyze the specification at all",
+        "It only applies to non-functional testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Boundary value analysis complements equivalence partitioning by focusing specifically on boundary values, where off-by-one and similar errors are empirically more common."
+    },
+    {
+      "id": "ctfl-075",
+      "chapter": "4. Test Analysis and Design (Test Techniques)",
+      "loRef": "FL-4.3.1",
+      "difficulty": "medium",
+      "question": "Why is 100% statement coverage generally considered a stronger criterion than merely running a few 'happy path' test cases, but still not sufficient on its own?",
+      "options": [
+        "Because it guarantees all possible input combinations have been tested",
+        "Because it ensures every statement has executed at least once, but does not guarantee every decision outcome or logical path has been exercised",
+        "Because statement coverage always requires more test cases than decision coverage",
+        "Because it is only applicable to non-functional testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "100% statement coverage confirms every statement executed at least once, but a decision with two branches might still only be tested with one outcome, leaving decision logic under-tested."
+    },
+    {
+      "id": "ctfl-076",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following would typically be included in a test strategy rather than a project-specific test plan?",
+      "options": [
+        "The organization-wide, generic approach to testing across multiple projects",
+        "The schedule for a single sprint's test execution",
+        "The specific defects logged during a particular test cycle",
+        "The names of testers assigned to one specific release"
+      ],
+      "correctIndex": 0,
+      "explanation": "A test strategy is typically a high-level, organization- or program-wide description of the general test approach, while a test plan addresses the specifics of a given project or level."
+    },
+    {
+      "id": "ctfl-077",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.1.3",
+      "difficulty": "medium",
+      "question": "Which of the following is an example of an 'analytical' test strategy?",
+      "options": [
+        "Testing based purely on the tester's intuition with no upfront analysis",
+        "A risk-based approach where test effort is prioritized according to the likelihood and impact of potential product risks",
+        "Copying test cases used on a previous, unrelated project without adaptation",
+        "Randomly selecting test cases without regard to requirements or risk"
+      ],
+      "correctIndex": 1,
+      "explanation": "Analytical strategies, such as risk-based testing, systematically analyze some basis (e.g., requirements or risks) to determine and prioritize test conditions and test cases."
+    },
+    {
+      "id": "ctfl-078",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.2.2",
+      "difficulty": "hard",
+      "question": "During risk-based testing, a high-likelihood, high-impact product risk should generally result in:",
+      "options": [
+        "Less rigorous testing to save time",
+        "More rigorous and earlier testing effort focused on that risk area",
+        "No testing at all, since risk cannot be reduced through testing",
+        "Testing being postponed until after release"
+      ],
+      "correctIndex": 1,
+      "explanation": "In risk-based testing, areas with higher risk levels (combining likelihood and impact) are typically tested more thoroughly and earlier to reduce the residual risk before release."
+    },
+    {
+      "id": "ctfl-079",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.2.3",
+      "difficulty": "medium",
+      "question": "Which activity is part of the ongoing risk management process throughout a project, not just a one-time activity?",
+      "options": [
+        "Risk identification, analysis, and mitigation should be revisited periodically as the project evolves",
+        "Risks are only assessed once at the very beginning of the project and never revisited",
+        "Only the test manager may ever identify new risks",
+        "Product risks and project risks must always be assessed using identical criteria"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk management is iterative: new risks can emerge and existing risk assessments may need updating throughout the project as more information becomes available."
+    },
+    {
+      "id": "ctfl-080",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.3.2",
+      "difficulty": "medium",
+      "question": "Which of the following metrics would be MOST useful for monitoring test progress during test execution?",
+      "options": [
+        "The number of test cases executed, passed, failed, and blocked so far, compared to the planned total",
+        "The total number of employees in the company",
+        "The color scheme chosen for the test management tool dashboard",
+        "The number of coffee breaks taken by the test team"
+      ],
+      "correctIndex": 0,
+      "explanation": "Common test progress metrics include the percentage of planned test cases executed and their pass/fail/blocked status, which help monitor whether testing is on track against exit criteria."
+    },
+    {
+      "id": "ctfl-081",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.3.3",
+      "difficulty": "medium",
+      "question": "If test monitoring reveals that test execution is significantly behind schedule, which test CONTROL action might a test manager take?",
+      "options": [
+        "Ignore the finding and continue exactly as planned",
+        "Re-prioritize test cases based on risk, so the highest risk areas are executed first within the remaining time",
+        "Immediately cancel the entire test phase without discussion",
+        "Increase the number of low-priority test cases to compensate"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test control involves taking corrective actions based on monitoring information, such as re-prioritizing tests by risk when time is constrained, to ensure the most important tests are still executed."
+    },
+    {
+      "id": "ctfl-082",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.4.2",
+      "difficulty": "medium",
+      "question": "Which piece of information in a defect report helps a developer decide HOW URGENTLY to fix it, as opposed to how severe the technical impact is?",
+      "options": [
+        "Severity",
+        "Priority",
+        "The tester's name",
+        "The test environment's operating system version"
+      ],
+      "correctIndex": 1,
+      "explanation": "Priority indicates the urgency or order in which a defect should be fixed relative to others, while severity reflects the technical/business impact of the defect itself; the two can differ."
+    },
+    {
+      "id": "ctfl-083",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.1.4",
+      "difficulty": "medium",
+      "question": "Which of the following would typically be an EXIT criterion for a system test level?",
+      "options": [
+        "All planned test cases have been executed, and the agreed percentage of critical defects has been fixed and verified",
+        "At least one developer has looked at the code once",
+        "The project manager has approved the initial budget",
+        "The test environment has been requested but not yet set up"
+      ],
+      "correctIndex": 0,
+      "explanation": "Typical exit criteria include completion of planned test execution and resolution/verification of an agreed proportion of defects (often weighted by severity), among other measurable conditions."
+    },
+    {
+      "id": "ctfl-084",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.2.1",
+      "difficulty": "medium",
+      "question": "Which factor would MOST directly increase the 'impact' component of a product risk (assuming likelihood stays constant)?",
+      "options": [
+        "The affected feature being used by only a handful of internal test users",
+        "The affected feature being critical for a large number of paying customers and central to revenue",
+        "The feature being scheduled for removal in the next release",
+        "The feature having extensive existing documentation"
+      ],
+      "correctIndex": 1,
+      "explanation": "Impact reflects the consequences of a risk materializing; a widely used, revenue-critical feature failing has a much higher business impact than an obscure or soon-to-be-removed one."
+    },
+    {
+      "id": "ctfl-085",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.3.1",
+      "difficulty": "easy",
+      "question": "Which of the following is generally the PRIMARY purpose of a test summary report?",
+      "options": [
+        "To assign blame for defects found late in the project",
+        "To provide stakeholders with a summary of testing performed, results achieved, and an assessment of quality and residual risk",
+        "To replace the need for a test plan on future projects",
+        "To detail the personal salary of each tester"
+      ],
+      "correctIndex": 1,
+      "explanation": "A test summary report communicates to stakeholders a summary of testing activities and results, along with an evaluation of quality and any outstanding risks, typically at the end of a test level or phase."
+    },
+    {
+      "id": "ctfl-086",
+      "chapter": "5. Managing Test Activities",
+      "loRef": "FL-5.2.2",
+      "difficulty": "hard",
+      "question": "Which of the following BEST illustrates using a risk-based approach to determine test TECHNIQUES (not just priority)?",
+      "options": [
+        "Choosing more rigorous techniques, such as decision table testing, for a high-risk complex business rule area, and lighter techniques for low-risk simple areas",
+        "Using the exact same technique for every single feature regardless of risk",
+        "Skipping test design entirely for high-risk features to save time",
+        "Assigning the least experienced tester to the highest-risk feature"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk-based testing can influence not just the order and depth of testing but also the choice of test techniques, applying more rigorous techniques where risk is higher."
+    },
+    {
+      "id": "ctfl-087",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following is a potential BENEFIT of using test management tools?",
+      "options": [
+        "They eliminate the need for testers entirely",
+        "They can improve traceability between requirements, test cases, and defects, and support reporting and monitoring of test progress",
+        "They guarantee 100% test coverage automatically",
+        "They remove all risk from the project"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test management tools support traceability (linking requirements to tests and defects) and provide reporting/monitoring capabilities that help manage test progress, though they don't guarantee coverage or eliminate risk."
+    },
+    {
+      "id": "ctfl-088",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.2.2",
+      "difficulty": "medium",
+      "question": "Which category of tool would be used to support static testing by automatically checking source code against coding standards?",
+      "options": [
+        "Static analysis tools",
+        "Performance testing tools",
+        "Test data preparation tools",
+        "Test execution tools"
+      ],
+      "correctIndex": 0,
+      "explanation": "Static analysis tools examine code (or other artifacts) without executing it, commonly used to check adherence to coding standards, calculate metrics, and detect certain classes of defects."
+    },
+    {
+      "id": "ctfl-089",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.2.3",
+      "difficulty": "medium",
+      "question": "What is the PRIMARY purpose of a test data preparation tool?",
+      "options": [
+        "To generate or extract data suitable for use in tests, e.g. from production data with sensitive fields masked",
+        "To automatically write test cases from scratch with no human input",
+        "To measure the performance of the system under test",
+        "To replace the need for a requirements management tool"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test data preparation tools help create, extract, subset, or anonymize data (e.g. masking sensitive fields from production data) for use as realistic test inputs."
+    },
+    {
+      "id": "ctfl-090",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.2.4",
+      "difficulty": "medium",
+      "question": "A 'test comparator' tool is used to:",
+      "options": [
+        "Compare actual results produced by the test object against expected results, e.g. screen contents or file output",
+        "Compare two different testers' productivity",
+        "Compare the cost of two different test management tools",
+        "Compare hardware specifications between environments"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test comparators automatically compare actual outcomes (e.g. output files, screen content, or database state) with expected results, often used within test execution tools."
+    },
+    {
+      "id": "ctfl-091",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.1.1",
+      "difficulty": "easy",
+      "question": "Which of the following BEST describes a benefit of test tool support in general?",
+      "options": [
+        "Reducing repetitive manual work, such as re-running the same regression tests, thereby saving time and increasing consistency",
+        "Completely removing the need for skilled testers on a project",
+        "Making all software bug-free automatically",
+        "Guaranteeing that test tool licensing costs will always be zero"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tool support can automate repetitive tasks like regression test execution, improving consistency and repeatability and freeing testers for more exploratory or analytical work."
+    },
+    {
+      "id": "ctfl-092",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following is a common LIMITATION or risk of test automation, even with a good tool?",
+      "options": [
+        "Automated tests can produce false confidence if they simply repeat checks that no longer add value, similarly to the pesticide paradox",
+        "Automated tests always run faster than any manual test in every case",
+        "Automated tests require zero long-term maintenance once created",
+        "Automated tests can fully replace exploratory testing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Automated regression suites can suffer from the pesticide paradox too \u2014 repeatedly running the same automated checks may stop finding new defects unless the suite is reviewed and evolved."
+    },
+    {
+      "id": "ctfl-093",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.2.5",
+      "difficulty": "medium",
+      "question": "Which type of tool is specifically designed to simulate a large number of concurrent virtual users to assess system behavior under load?",
+      "options": [
+        "Requirements management tool",
+        "Performance/load testing tool",
+        "Static analysis tool",
+        "Coverage measurement tool"
+      ],
+      "correctIndex": 1,
+      "explanation": "Performance (load) testing tools simulate many concurrent virtual users or transactions to evaluate response times, throughput, and resource usage under expected or peak load."
+    },
+    {
+      "id": "ctfl-094",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.2.5",
+      "difficulty": "medium",
+      "question": "A 'code coverage tool' is primarily used to:",
+      "options": [
+        "Measure which parts of the source code (e.g. statements, branches) have been exercised by a set of tests",
+        "Automatically write new source code for a feature",
+        "Predict the number of defects that will be found in production",
+        "Manage the project's overall budget and schedule"
+      ],
+      "correctIndex": 0,
+      "explanation": "Code coverage tools instrument or analyze code execution to report which statements, branches, or other structural elements were exercised during test execution."
+    },
+    {
+      "id": "ctfl-095",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.1.2",
+      "difficulty": "hard",
+      "question": "Before selecting a test automation tool for an organization, which of the following is a RECOMMENDED first step?",
+      "options": [
+        "Purchase the most expensive tool available, assuming higher price means better fit",
+        "Assess the organization's needs, constraints, and current test process maturity, and consider a proof-of-concept with candidate tools",
+        "Skip any evaluation and let each team choose a different tool independently with no coordination",
+        "Immediately automate 100% of existing manual test cases regardless of suitability"
+      ],
+      "correctIndex": 1,
+      "explanation": "Best practice is to assess organizational needs, evaluate the current test process, and run a proof-of-concept with one or more candidate tools before committing to a tool across the organization."
+    },
+    {
+      "id": "ctfl-096",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.2.1",
+      "difficulty": "easy",
+      "question": "Which tool category would most directly help manage and track defect reports throughout their lifecycle (new, open, fixed, closed)?",
+      "options": [
+        "Defect management tool",
+        "Static analysis tool",
+        "Performance testing tool",
+        "Test data preparation tool"
+      ],
+      "correctIndex": 0,
+      "explanation": "Defect (incident) management tools support logging, tracking, and managing the workflow status of defect reports from creation through resolution and closure."
+    },
+    {
+      "id": "ctfl-097",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following is a common SUCCESS FACTOR for tool introduction in an organization?",
+      "options": [
+        "Rolling the tool out to the entire organization immediately without a pilot project",
+        "Piloting the tool on a smaller project first, providing training, and defining clear usage guidelines before wider rollout",
+        "Avoiding any training since the tool should be intuitive to everyone",
+        "Choosing a tool without involving the people who will actually use it"
+      ],
+      "correctIndex": 1,
+      "explanation": "Success factors for tool adoption include piloting on a pilot project, providing appropriate training and coaching, and defining clear usage guidelines before rolling the tool out more broadly."
+    },
+    {
+      "id": "ctfl-098",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.2.2",
+      "difficulty": "medium",
+      "question": "Which of these is an example of a tool that supports MANAGEMENT of testing and test activities, rather than test execution itself?",
+      "options": [
+        "A requirements management tool used to trace requirements to test cases",
+        "A GUI test execution tool that replays recorded user actions",
+        "A performance monitoring tool that measures response times",
+        "A code coverage tool that instruments source code"
+      ],
+      "correctIndex": 0,
+      "explanation": "Requirements management tools (and similar tools like test management tools) support the management of testing, such as traceability, planning, and reporting, distinct from tools that execute or analyze tests directly."
+    },
+    {
+      "id": "ctfl-099",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.2.4",
+      "difficulty": "medium",
+      "question": "Which statement about record-and-playback test execution tools is MOST accurate?",
+      "options": [
+        "Scripts recorded once will never need maintenance regardless of UI changes",
+        "They can be a quick way to create initial automated tests, but scripts often require significant maintenance as the UI or application changes",
+        "They automatically generate meaningful assertions with no tester input required",
+        "They are only usable for performance testing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Record-and-playback tools can quickly generate scripts by capturing user actions, but the resulting scripts are often brittle and need considerable maintenance whenever the UI changes."
+    },
+    {
+      "id": "ctfl-100",
+      "chapter": "6. Test Tools",
+      "loRef": "FL-6.1.1",
+      "difficulty": "easy",
+      "question": "Which of the following statements about test tools is CORRECT?",
+      "options": [
+        "A single tool category can only ever perform one single function with no overlap",
+        "Some tools combine multiple functions, e.g. a test management tool that also supports defect tracking and reporting",
+        "Test tools are only useful for very large organizations",
+        "Once purchased, a tool never needs to be re-evaluated"
+      ],
+      "correctIndex": 1,
+      "explanation": "Many commercial and open-source tools combine multiple capabilities (e.g. test management plus defect tracking and reporting) rather than strictly fitting into a single narrow category."
     }
   ]
 }

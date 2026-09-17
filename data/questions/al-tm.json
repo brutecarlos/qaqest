@@ -16,6 +16,291 @@
       ],
       "correctIndex": 1,
       "explanation": "A master test plan is used at a project- or program-level to coordinate multiple test levels, often supplemented by level-specific test plans."
+    },
+    {
+      "id": "al-tm-002",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a PRIMARY responsibility of a test manager during the test planning stage?",
+      "options": [
+        "Writing every individual test case personally",
+        "Defining the overall test approach, objectives, scope, and resource/schedule estimates for the test effort",
+        "Fixing defects found by testers",
+        "Approving the marketing plan for the product"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test planning is a core test management responsibility, covering the test approach, objectives, scope, and estimating the resources and schedule needed."
+    },
+    {
+      "id": "al-tm-003",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following BEST distinguishes a 'master test plan' from a 'level test plan'?",
+      "options": [
+        "A master test plan governs and coordinates testing across multiple levels/phases of a project, while a level test plan addresses one specific test level (e.g., system testing)",
+        "A level test plan always supersedes the master test plan",
+        "They cover exactly the same scope with different titles",
+        "Only level test plans include exit criteria"
+      ],
+      "correctIndex": 0,
+      "explanation": "A master test plan provides overarching test strategy and coordination across multiple test levels, while a level test plan focuses on the specifics of a single test level."
+    },
+    {
+      "id": "al-tm-004",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.1.1",
+      "difficulty": "medium",
+      "question": "Which estimation technique relies on the collective judgment of experienced team members, often using a group consensus method?",
+      "options": [
+        "Wideband Delphi (expert-based estimation)",
+        "Function point analysis",
+        "Regression testing",
+        "Static analysis"
+      ],
+      "correctIndex": 0,
+      "explanation": "Wideband Delphi is an expert-based estimation technique where a group of experienced individuals iteratively estimate effort and converge on a consensus estimate."
+    },
+    {
+      "id": "al-tm-005",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following factors would a test manager MOST likely use as an input to a metrics-based (historical data) test estimation approach?",
+      "options": [
+        "The average effort and defect rates recorded on similar past projects",
+        "The office's preferred paint color",
+        "The CEO's personal opinion with no data behind it",
+        "The number of chairs in the test lab"
+      ],
+      "correctIndex": 0,
+      "explanation": "Metrics-based estimation techniques use historical data (e.g. effort and defect metrics from comparable past projects) as a basis for estimating current test effort."
+    },
+    {
+      "id": "al-tm-006",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following metrics would help a test manager assess whether the team is finding a decreasing or increasing rate of defects over time (a defect trend)?",
+      "options": [
+        "A defect discovery rate chart over time",
+        "The number of chairs in the office",
+        "The color of the test management tool's UI",
+        "The names of testers who took vacation"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tracking the defect discovery rate over time helps identify trends, such as whether testing is converging (defect rate decreasing) or if more defects are still emerging, informing release readiness decisions."
+    },
+    {
+      "id": "al-tm-007",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.2.1",
+      "difficulty": "hard",
+      "question": "A test manager notices that the defect discovery rate is still rising sharply just before the planned release date. What is the MOST appropriate test control action?",
+      "options": [
+        "Recommend delaying release or extending test time, since a rising defect rate suggests the software is not yet stable",
+        "Ignore the trend and release exactly as scheduled with no changes",
+        "Immediately stop all testing activities",
+        "Reduce the test team by half to save costs"
+      ],
+      "correctIndex": 0,
+      "explanation": "A rising defect discovery rate close to release suggests the product may not be stable enough; a test manager would typically flag this risk and recommend adjusting the schedule or scope rather than proceeding blindly."
+    },
+    {
+      "id": "al-tm-008",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.1.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a key consideration for a test manager when assigning testers to tasks?",
+      "options": [
+        "Matching required skills and domain knowledge with task complexity, while also considering independence and development opportunities",
+        "Always assigning the most senior tester to every task regardless of fit",
+        "Assigning tasks purely alphabetically by tester's last name",
+        "Ignoring skill level entirely when making assignments"
+      ],
+      "correctIndex": 0,
+      "explanation": "Effective task assignment considers the skills and experience needed, an appropriate level of independence, and opportunities for team members to develop new skills."
+    },
+    {
+      "id": "al-tm-009",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.2.1",
+      "difficulty": "medium",
+      "question": "Which leadership approach is generally MOST effective for motivating a test team during a stressful release cycle?",
+      "options": [
+        "Publicly blaming individuals for any defects that slip through to production",
+        "Providing clear goals, recognizing good work, and maintaining open, supportive communication",
+        "Removing all deadlines and structure entirely",
+        "Refusing to communicate about project status to reduce noise"
+      ],
+      "correctIndex": 1,
+      "explanation": "Effective test leadership involves clear goal-setting, recognition of contributions, and supportive communication, which help sustain motivation especially during high-pressure periods."
+    },
+    {
+      "id": "al-tm-010",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.3.1",
+      "difficulty": "medium",
+      "question": "Which of the following would typically be included in a test policy at the organizational level?",
+      "options": [
+        "The organization's overall objectives and general principles for testing, largely independent of any single project",
+        "The exact test cases to be executed in the next sprint",
+        "The vacation schedule of individual testers",
+        "The specific bug IDs found in the current release"
+      ],
+      "correctIndex": 0,
+      "explanation": "A test policy defines an organization's general objectives, principles, and approach to testing, at a higher level than project-specific test plans or strategies."
+    },
+    {
+      "id": "al-tm-011",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.1.1",
+      "difficulty": "medium",
+      "question": "As part of test closure activities, which of the following should the test manager ensure happens?",
+      "options": [
+        "All testware (test cases, environments, tools) is properly archived or handed over, and lessons learned are captured",
+        "All test documentation is immediately deleted after release",
+        "No communication with stakeholders is needed after release",
+        "The team is disbanded before the final test summary report is written"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test closure activities include checking deliverables are finished, archiving testware, handing over useful artifacts, and capturing lessons learned for future projects."
+    },
+    {
+      "id": "al-tm-012",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.2.1",
+      "difficulty": "medium",
+      "question": "Which of the following is a KEY responsibility of a test manager regarding the defect management process?",
+      "options": [
+        "Personally fixing every reported defect",
+        "Establishing an effective defect workflow, ensuring defects are triaged, prioritized, and tracked to resolution",
+        "Ignoring low-severity defects permanently",
+        "Preventing developers from ever seeing defect reports"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test managers are typically responsible for setting up and overseeing an effective defect management process, ensuring defects are properly triaged, prioritized, and tracked through to resolution."
+    },
+    {
+      "id": "al-tm-013",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.2.1",
+      "difficulty": "medium",
+      "question": "Which factor would MOST directly justify tailoring the standard test process for a specific project (e.g., skipping some formal documentation)?",
+      "options": [
+        "The project's context, such as regulatory requirements, criticality, team size, or lifecycle model",
+        "The personal preference of a single tester with no other justification",
+        "A random decision made without analysis",
+        "The color scheme chosen for project documents"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test processes should be tailored based on project context factors like regulatory constraints, criticality, team size, and the chosen development lifecycle model."
+    },
+    {
+      "id": "al-tm-014",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.2.1",
+      "difficulty": "hard",
+      "question": "A test manager estimates test execution will take 200 person-hours, and the team has 5 testers each available for 8 hours per day. Approximately how many working days will test execution take, assuming full-time dedicated effort?",
+      "options": [
+        "2 days",
+        "5 days",
+        "10 days",
+        "40 days"
+      ],
+      "correctIndex": 1,
+      "explanation": "200 person-hours / (5 testers x 8 hours/day = 40 person-hours per day) = 5 working days, assuming full dedication and no other constraints."
+    },
+    {
+      "id": "al-tm-015",
+      "chapter": "4. Test Progress Monitoring and Control",
+      "loRef": "AL-TM-4.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following is an example of a 'test control' decision, as opposed to simply 'test monitoring'?",
+      "options": [
+        "Observing that 30% of planned test cases have been executed so far",
+        "Deciding to reallocate testers from a low-risk module to a high-risk module that is behind schedule",
+        "Recording the number of defects found each day with no further action",
+        "Reading a dashboard chart without making any decisions"
+      ],
+      "correctIndex": 1,
+      "explanation": "Monitoring is about collecting and reporting status information; control is taking action based on that information, such as reallocating resources to address schedule or risk concerns."
+    },
+    {
+      "id": "al-tm-016",
+      "chapter": "5. Managing the Test Team",
+      "loRef": "AL-TM-5.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following BEST describes an appropriate use of independent testing within a project, from a test management perspective?",
+      "options": [
+        "Assigning some testing to an independent test team or tester to provide an unbiased perspective, balanced against practical constraints like cost and communication overhead",
+        "Requiring 100% of all testing to always be done by a fully separate, external organization regardless of cost",
+        "Never using any independent testers under any circumstances",
+        "Allowing only the original developer to test their own code, with no independent review"
+      ],
+      "correctIndex": 0,
+      "explanation": "Test managers weigh the benefits of independence (reduced author bias) against costs such as communication overhead and reduced domain familiarity, choosing an appropriate level of independence for the context."
+    },
+    {
+      "id": "al-tm-017",
+      "chapter": "6. Managing Defects and Test Closure",
+      "loRef": "AL-TM-6.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following would be a valuable 'lesson learned' to capture at test closure?",
+      "options": [
+        "Which test techniques or tools worked well or poorly, and any process improvements to recommend for future projects",
+        "The name of the coffee shop nearest the office",
+        "A list of testers' favorite movies",
+        "The exact time each meeting started"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lessons learned typically focus on what worked well or poorly regarding process, techniques, and tools, providing actionable input to improve future projects."
+    },
+    {
+      "id": "al-tm-018",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following elements would you expect to find in a well-written test plan's risk section?",
+      "options": [
+        "Identified project and product risks, their assessed likelihood/impact, and planned mitigation actions",
+        "A list of every button on the application's UI",
+        "The exact salary of each team member",
+        "A history of the company's stock price"
+      ],
+      "correctIndex": 0,
+      "explanation": "The risk section of a test plan typically documents identified risks (project and product), their assessed likelihood and impact, and how they will be mitigated or monitored."
+    },
+    {
+      "id": "al-tm-019",
+      "chapter": "1. Testing Process",
+      "loRef": "AL-TM-1.1.2",
+      "difficulty": "medium",
+      "question": "Which of the following is a valid reason a test manager might advocate for adopting a risk-based testing approach across a project?",
+      "options": [
+        "It helps focus limited test resources and time on the areas most likely to cause significant problems if left undetected",
+        "It guarantees zero defects will ever reach production",
+        "It removes the need for any test planning",
+        "It applies identical test depth to every feature regardless of importance"
+      ],
+      "correctIndex": 0,
+      "explanation": "Risk-based testing helps allocate limited test time and resources efficiently, focusing more effort on higher-risk areas rather than treating every feature identically."
+    },
+    {
+      "id": "al-tm-020",
+      "chapter": "3. Test Estimation and Scheduling",
+      "loRef": "AL-TM-3.1.3",
+      "difficulty": "medium",
+      "question": "Which of the following is a common CHALLENGE with expert-based (e.g., Wideband Delphi) test estimation techniques?",
+      "options": [
+        "They can be influenced by optimism bias or lack of relevant historical data if experts have limited experience with similar work",
+        "They always produce perfectly accurate estimates with zero error",
+        "They cannot be used for agile projects under any circumstances",
+        "They require no expert input at all"
+      ],
+      "correctIndex": 0,
+      "explanation": "Expert-based estimation can be subject to optimism bias, groupthink, or simply a lack of directly relevant experience, which can reduce estimate accuracy compared to using solid historical metrics."
     }
   ]
 }
