@@ -1,0 +1,36 @@
+{
+  "moduleId": "agile-tester",
+  "moduleName": "Agile Tester Extension",
+  "questions": [
+    {
+      "id": "at-001",
+      "chapter": "1. Agile Software Development",
+      "loRef": "FL-AT-1.2.1",
+      "difficulty": "easy",
+      "question": "Which of the following is a core value expressed in the Agile Manifesto?",
+      "options": [
+        "Comprehensive documentation over working software",
+        "Individuals and interactions over processes and tools",
+        "Contract negotiation over customer collaboration",
+        "Following a plan over responding to change"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Agile Manifesto values individuals and interactions over processes and tools, among its four core value statements."
+    },
+    {
+      "id": "at-002",
+      "chapter": "2. Agile Testing Fundamentals",
+      "loRef": "FL-AT-2.1.1",
+      "difficulty": "medium",
+      "question": "The 'whole team approach' in agile testing means that:",
+      "options": [
+        "Only dedicated testers are responsible for quality",
+        "Quality is a shared responsibility across developers, testers, and other roles on the team",
+        "Testing occurs only after the whole project is complete",
+        "Product owners are solely responsible for writing test cases"
+      ],
+      "correctIndex": 1,
+      "explanation": "The whole-team approach means quality and testing responsibility is shared among all team members, not isolated to a single tester role."
+    }
+  ]
+}

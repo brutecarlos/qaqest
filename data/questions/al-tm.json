@@ -1,0 +1,21 @@
+{
+  "moduleId": "al-tm",
+  "moduleName": "Advanced Level Test Manager",
+  "questions": [
+    {
+      "id": "al-tm-001",
+      "chapter": "2. Test Management Documentation",
+      "loRef": "AL-TM-2.1.1",
+      "difficulty": "medium",
+      "question": "A test manager creating a master test plan for a multi-level project would primarily use it to:",
+      "options": [
+        "Document a single test case's expected results",
+        "Coordinate and align test activities across multiple test levels and teams within the project",
+        "Replace the need for level-specific test plans entirely",
+        "Record daily standup notes for the development team"
+      ],
+      "correctIndex": 1,
+      "explanation": "A master test plan is used at a project- or program-level to coordinate multiple test levels, often supplemented by level-specific test plans."
+    }
+  ]
+}

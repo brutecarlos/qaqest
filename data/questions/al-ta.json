@@ -1,0 +1,21 @@
+{
+  "moduleId": "al-ta",
+  "moduleName": "Advanced Level Test Analyst",
+  "questions": [
+    {
+      "id": "al-ta-001",
+      "chapter": "2. Testing Process",
+      "loRef": "AL-TA-2.1.1",
+      "difficulty": "medium",
+      "question": "As a test analyst, which activity is MOST associated with the test analysis stage for functional testing?",
+      "options": [
+        "Installing the test execution environment",
+        "Identifying test conditions by analyzing the test basis and considering quality risks for a feature",
+        "Compiling the source code for deployment",
+        "Assigning severity to a defect after execution"
+      ],
+      "correctIndex": 1,
+      "explanation": "Test analysts identify test conditions from the test basis (e.g., requirements, use cases), factoring in quality risks for functional characteristics."
+    }
+  ]
+}
