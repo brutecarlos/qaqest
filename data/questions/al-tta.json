@@ -1,0 +1,21 @@
+{
+  "moduleId": "al-tta",
+  "moduleName": "Advanced Level Technical Test Analyst",
+  "questions": [
+    {
+      "id": "al-tta-001",
+      "chapter": "3. White-box Test Techniques",
+      "loRef": "AL-TTA-3.2.1",
+      "difficulty": "hard",
+      "question": "Which white-box coverage criterion additionally requires that all combinations of condition outcomes within a decision be tested?",
+      "options": [
+        "Statement coverage",
+        "Decision coverage",
+        "Multiple condition coverage",
+        "Data flow coverage"
+      ],
+      "correctIndex": 2,
+      "explanation": "Multiple condition coverage requires testing all possible combinations of individual condition outcomes within a single decision."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "modules": [
+    {
+      "id": "ctfl",
+      "level": "Foundation Level",
+      "name": "Certified Tester Foundation Level (CTFL)",
+      "shortName": "CTFL",
+      "description": "Core testing fundamentals: testing throughout the SDLC, static testing, test techniques, test management, and tool support.",
+      "syllabusRef": "ISTQB Certified Tester Foundation Level Syllabus v4.0",
+      "questionFile": "data/questions/ctfl.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 60,
+      "passPercentage": 65,
+      "status": "available"
+    },
+    {
+      "id": "agile-tester",
+      "level": "Foundation Level Extension",
+      "name": "Agile Tester Extension",
+      "shortName": "Agile Tester",
+      "description": "Agile fundamentals, the tester's role on agile teams, agile testing methods, tools, and techniques.",
+      "syllabusRef": "ISTQB Foundation Level Agile Tester Syllabus",
+      "questionFile": "data/questions/agile-tester.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 60,
+      "passPercentage": 65,
+      "status": "coming-soon"
+    },
+    {
+      "id": "al-ta",
+      "level": "Advanced Level",
+      "name": "Advanced Level Test Analyst",
+      "shortName": "AL Test Analyst",
+      "description": "Advanced black-box test techniques, defect-based and experience-based testing, and the test analyst's role in reviews.",
+      "syllabusRef": "ISTQB Advanced Level Test Analyst Syllabus",
+      "questionFile": "data/questions/al-ta.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 90,
+      "passPercentage": 65,
+      "status": "coming-soon"
+    },
+    {
+      "id": "al-tta",
+      "level": "Advanced Level",
+      "name": "Advanced Level Technical Test Analyst",
+      "shortName": "AL Technical Test Analyst",
+      "description": "White-box techniques, quality characteristics testing (performance, security, reliability), and technical review skills.",
+      "syllabusRef": "ISTQB Advanced Level Technical Test Analyst Syllabus",
+      "questionFile": "data/questions/al-tta.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 90,
+      "passPercentage": 65,
+      "status": "coming-soon"
+    },
+    {
+      "id": "al-tm",
+      "level": "Advanced Level",
+      "name": "Advanced Level Test Manager",
+      "shortName": "AL Test Manager",
+      "description": "Test planning, estimation, risk management, test monitoring and control, and team management for test managers.",
+      "syllabusRef": "ISTQB Advanced Level Test Manager Syllabus",
+      "questionFile": "data/questions/al-tm.json",
+      "examQuestionCount": 65,
+      "examDurationMinutes": 180,
+      "passPercentage": 65,
+      "status": "coming-soon"
+    },
+    {
+      "id": "test-automation",
+      "level": "Specialist",
+      "name": "Certified Tester Test Automation Engineer",
+      "shortName": "Test Automation",
+      "description": "Test automation architecture, frameworks, tool selection, and generic and specific test automation activities.",
+      "syllabusRef": "ISTQB Certified Tester Test Automation Engineer Syllabus",
+      "questionFile": "data/questions/test-automation.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 60,
+      "passPercentage": 65,
+      "status": "coming-soon"
+    },
+    {
+      "id": "performance-testing",
+      "level": "Specialist",
+      "name": "Performance Testing",
+      "shortName": "Performance Testing",
+      "description": "Performance testing types, risks, planning, metrics, monitoring tools, and results analysis and reporting.",
+      "syllabusRef": "ISTQB Performance Testing Syllabus",
+      "questionFile": "data/questions/performance-testing.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 60,
+      "passPercentage": 65,
+      "status": "coming-soon"
+    }
+  ]
+}

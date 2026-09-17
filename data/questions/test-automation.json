@@ -1,0 +1,21 @@
+{
+  "moduleId": "test-automation",
+  "moduleName": "Certified Tester Test Automation Engineer",
+  "questions": [
+    {
+      "id": "ta-001",
+      "chapter": "2. Preparing for Test Automation",
+      "loRef": "CTAE-2.1.1",
+      "difficulty": "medium",
+      "question": "Which factor is MOST important to assess before introducing test automation for a given test suite?",
+      "options": [
+        "The favorite programming language of the automation engineer",
+        "The suitability of test cases for automation, considering stability, repeatability, and return on investment",
+        "The number of manual testers currently employed",
+        "The color scheme of the test management tool"
+      ],
+      "correctIndex": 1,
+      "explanation": "Deciding what to automate requires assessing whether test cases are stable, repeatable, and provide sufficient return on investment to justify automation effort."
+    }
+  ]
+}

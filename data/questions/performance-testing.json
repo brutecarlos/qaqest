@@ -1,0 +1,21 @@
+{
+  "moduleId": "performance-testing",
+  "moduleName": "Performance Testing",
+  "questions": [
+    {
+      "id": "pt-001",
+      "chapter": "1. Performance Testing Basics",
+      "loRef": "PT-1.1.1",
+      "difficulty": "easy",
+      "question": "Which of the following is a typical objective of performance testing?",
+      "options": [
+        "To verify that the user interface layout matches design mockups",
+        "To evaluate how a system behaves in terms of responsiveness and stability under a particular workload",
+        "To confirm that source code follows naming conventions",
+        "To validate that requirements documents are free of ambiguity"
+      ],
+      "correctIndex": 1,
+      "explanation": "Performance testing evaluates how a system performs (e.g., response time, throughput, resource utilization) under a given workload."
+    }
+  ]
+}
