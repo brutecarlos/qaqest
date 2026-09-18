@@ -132,13 +132,52 @@ toggle button ("&#10084;&#65039; Support QAQEST with ads" /
 "&#128683; No ads, just studying") that flips a `localStorage` preference
 (`qaquest_ads_enabled_v1`, exposed via `QAQuest.areAdsEnabled()` /
 `QAQuest.setAdsEnabled()` in `js/storage.js`). Ad-slot elements
-(`#header-ad-mount`, `#footer-ad-mount`) are only ever populated with an
-actual `.ad-slot` `<div>` when the preference is on — when it's off, nothing
-ad-related is created in the DOM (not just hidden via CSS), keeping the
-default page lightweight. Swap the placeholder text in `js/layout.js`
-(`buildAdSlot`) for your real AdSense unit code once you have an approved
-account; placements stay outside the quiz question card so they never
-interfere with answering.
+(`#header-ad-mount`, `#footer-ad-mount`) are only ever populated when the
+preference is on — when it's off, nothing ad-related is created in the DOM
+(not just hidden via CSS), keeping the default page lightweight. Placements
+stay outside the quiz question card so they never interfere with answering.
+
+### Connecting Google AdSense
+
+The site ships with real AdSense wiring already in place
+(`js/adsense-config.js` + `js/layout.js`) — it just needs your account's
+IDs. Until then it keeps showing harmless "Ad space" placeholders instead
+of real ad units, so the site works fine before and after you connect
+AdSense.
+
+1. **Sign up / sign in** at [adsense.google.com](https://www.google.com/adsense).
+   A personal GitHub account isn't involved at all — AdSense only needs a
+   Google account and your **live site URL**
+   (e.g. `https://<you>.github.io/qaqest/`), so "won't parse my GitHub
+   account" isn't a blocker: add the Pages URL as the site, not a GitHub
+   link.
+2. **Verify site ownership.** Since the site is already deployed, the
+   easiest option is AdSense's *"Ad code" / auto ads* verification method:
+   Google asks you to add a snippet to every page. This repo already loads
+   `js/adsense-config.js` on every page, so once you fill in the `client`
+   ID below and redeploy, that requirement is satisfied automatically. (If
+   Google offers an HTML meta-tag or file-upload verification option
+   instead, that also works and needs no extra code changes here.)
+3. **Get your publisher/client ID** (Account &rarr; Account information),
+   looks like `ca-pub-1234567890123456`.
+4. **Create ad units** (Ads &rarr; By ad unit &rarr; Display ads) — one for
+   the header slot and one for the footer/inline slot works well. Copy each
+   unit's numeric `data-ad-slot` ID.
+5. **Edit `js/adsense-config.js`** and fill in:
+   ```js
+   window.QAQEST_ADSENSE = {
+     client: "ca-pub-1234567890123456",
+     slots: { header: "1111111111", inline: "2222222222" },
+   };
+   ```
+6. **Add `ads.txt`** at the repo root (already scaffolded) — replace
+   `YOUR_PUBLISHER_ID` with your `pub-...` value (no `ca-` prefix) and
+   uncomment the line. GitHub Pages serves root files automatically, so it
+   will be reachable at `https://<you>.github.io/qaqest/ads.txt`.
+7. Commit and push to `main`. Once GitHub Pages redeploys, visitors who
+   opt into ads (via the header toggle) will start seeing real AdSense
+   units instead of placeholders. Approval/serving can take Google a few
+   hours to a few days after your first real traffic.
 
 ## License
 

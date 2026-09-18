@@ -1,0 +1,11 @@
+# This file authorizes ad networks to sell ad inventory on this domain.
+# Required by Google AdSense once your site is approved.
+#
+# 1. Find your publisher ID in AdSense under Account > Account information
+#    (looks like "pub-1234567890123456", no "ca-" prefix here).
+# 2. Replace YOUR_PUBLISHER_ID below with that value.
+# 3. Commit this file at the site root (it must be served at
+#    https://<your-domain>/ads.txt exactly, which GitHub Pages already
+#    does for a root-level file like this one).
+#
+# google.com, pub-YOUR_PUBLISHER_ID, DIRECT, f08c47fec0942fa0
