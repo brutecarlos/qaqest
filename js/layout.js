@@ -107,7 +107,7 @@
           </p>
           <p>
             &copy; <span id="footer-year"></span> QAQEST &middot;
-            <a href="https://github.com/brutecarlos/qaquest" target="_blank" rel="noopener">
+            <a href="https://github.com/brutecarlos/qaqest" target="_blank" rel="noopener">
               Source on GitHub
             </a>
           </p>
