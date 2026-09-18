@@ -1,11 +1,11 @@
-# QAQuest
+# QAQEST
 
-QAQuest is a free, static website offering practice and timed mock exams for
+QAQEST is a free, static website offering practice and timed mock exams for
 software testing certification study. It's built with plain HTML, CSS, and
 vanilla JavaScript — no backend, no database, no build step — and deploys
 straight to GitHub Pages.
 
-> **QAQuest is an independent, unofficial resource.** It is not affiliated
+> **QAQEST is an independent, unofficial resource.** It is not affiliated
 > with, endorsed by, or sponsored by ISTQB® (International Software Testing
 > Qualifications Board). Syllabus names (e.g. "ISTQB Foundation Level") are
 > used only as descriptive references to the topics a module covers. See
@@ -128,7 +128,7 @@ site will build and deploy automatically.
 ## Advertising
 
 Ads are **opt-in and off by default**. `js/layout.js` renders a header
-toggle button ("&#10084;&#65039; Support QAQuest with ads" /
+toggle button ("&#10084;&#65039; Support QAQEST with ads" /
 "&#128683; No ads, just studying") that flips a `localStorage` preference
 (`qaquest_ads_enabled_v1`, exposed via `QAQuest.areAdsEnabled()` /
 `QAQuest.setAdsEnabled()` in `js/storage.js`). Ad-slot elements
@@ -144,5 +144,5 @@ interfere with answering.
 
 Code is MIT licensed — see [`LICENSE`](LICENSE). Practice questions are
 original content authored for this project (see the sourcing policy above)
-and are released under the same MIT terms. QAQuest is not affiliated with,
+and are released under the same MIT terms. QAQEST is not affiliated with,
 endorsed by, or sponsored by ISTQB®.

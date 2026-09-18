@@ -1,4 +1,4 @@
-name: Deploy QAQuest to GitHub Pages
+name: Deploy QAQEST to GitHub Pages
 
 on:
   push:
