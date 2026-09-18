@@ -12,7 +12,49 @@
   const HEADER_AD_LABEL = "Ad space (e.g. Google AdSense leaderboard, 728x90)";
   const FOOTER_AD_LABEL = "Ad space (e.g. Google AdSense responsive unit)";
 
-  function buildAdSlot(className, label) {
+  // Populated by js/adsense-config.js, if present and configured.
+  const adsenseConfig = window.QAQEST_ADSENSE || { client: "", slots: {} };
+  const isAdSenseConfigured = Boolean(adsenseConfig.client);
+  let adsenseScriptLoaded = false;
+
+  /**
+   * Injects Google's adsbygoogle.js loader once, only when a visitor has
+   * opted into ads AND a real client ID has been configured. Never runs
+   * for the default ad-free state, and never runs at all when AdSense
+   * hasn't been configured yet (see js/adsense-config.js).
+   */
+  function ensureAdSenseScriptLoaded() {
+    if (adsenseScriptLoaded || !isAdSenseConfigured) return;
+    const script = document.createElement("script");
+    script.async = true;
+    script.src =
+      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" +
+      encodeURIComponent(adsenseConfig.client);
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+    adsenseScriptLoaded = true;
+  }
+
+  function buildAdSlot(className, label, slotId) {
+    if (isAdSenseConfigured && slotId) {
+      const ins = document.createElement("ins");
+      ins.className = `adsbygoogle ad-slot ${className}`;
+      ins.setAttribute("data-ad-client", adsenseConfig.client);
+      ins.setAttribute("data-ad-slot", slotId);
+      ins.setAttribute("data-ad-format", "auto");
+      ins.setAttribute("data-full-width-responsive", "true");
+      ensureAdSenseScriptLoaded();
+      // Defer the ad request until the <ins> element is actually attached.
+      window.setTimeout(() => {
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (err) {
+          console.warn("QAQEST: AdSense request failed.", err);
+        }
+      }, 0);
+      return ins;
+    }
+
     const div = document.createElement("div");
     div.className = `ad-slot ${className}`;
     div.setAttribute("aria-label", "Advertisement placeholder");
@@ -32,7 +74,9 @@
     if (headerMount) {
       headerMount.innerHTML = "";
       if (enabled) {
-        headerMount.appendChild(buildAdSlot("ad-slot--header", HEADER_AD_LABEL));
+        headerMount.appendChild(
+          buildAdSlot("ad-slot--header", HEADER_AD_LABEL, adsenseConfig.slots.header)
+        );
       }
     }
 
@@ -40,7 +84,9 @@
     if (footerMount) {
       footerMount.innerHTML = "";
       if (enabled) {
-        footerMount.appendChild(buildAdSlot("ad-slot--inline", FOOTER_AD_LABEL));
+        footerMount.appendChild(
+          buildAdSlot("ad-slot--inline", FOOTER_AD_LABEL, adsenseConfig.slots.inline)
+        );
       }
     }
   }
