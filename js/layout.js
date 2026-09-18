@@ -3,7 +3,7 @@
  * manages the visitor-facing ads on/off toggle.
  *
  * Ads are opt-in and default OFF: until a visitor explicitly chooses
- * "Support QAQuest with ads", no ad-slot element is created in the DOM at
+ * "Support QAQEST with ads", no ad-slot element is created in the DOM at
  * all (not merely hidden via CSS), so the default page stays genuinely
  * lightweight and non-invasive. The choice is remembered in localStorage
  * and can be changed at any time from the header toggle.
@@ -49,11 +49,11 @@
     const enabled = QAQuest.areAdsEnabled();
     btn.textContent = enabled
       ? "\uD83D\uDEAB No ads, just studying"
-      : "\u2764\uFE0F Support QAQuest with ads";
+      : "\u2764\uFE0F Support QAQEST with ads";
     btn.setAttribute("aria-pressed", String(enabled));
     btn.title = enabled
       ? "Ads are on. Click to switch to ad-free."
-      : "Ads are off. Click to show ads and support QAQuest.";
+      : "Ads are off. Click to show ads and support QAQEST.";
   }
 
   function renderHeader() {
@@ -64,7 +64,7 @@
         <div class="container">
           <a class="brand" href="index.html">
             <span class="brand-mark">Q</span>
-            QAQuest
+            QAQEST
           </a>
           <div class="header-actions">
             <nav class="main-nav">
@@ -95,18 +95,18 @@
       <footer class="site-footer">
         <div class="container">
           <p>
-            <strong>QAQuest</strong> is an independent, unofficial practice-exam
+            <strong>QAQEST</strong> is an independent, unofficial practice-exam
             resource. It is not affiliated with, endorsed by, or sponsored by
             ISTQB&reg; (International Software Testing Qualifications Board).
             Syllabus names are used solely as descriptive references.
           </p>
           <p>
-            Ads are opt-in: QAQuest shows no ads by default. You can turn them
+            Ads are opt-in: QAQEST shows no ads by default. You can turn them
             on any time from the button in the header if you'd like to
             support the project.
           </p>
           <p>
-            &copy; <span id="footer-year"></span> QAQuest &middot;
+            &copy; <span id="footer-year"></span> QAQEST &middot;
             <a href="https://github.com/brutecarlos/qaquest" target="_blank" rel="noopener">
               Source on GitHub
             </a>

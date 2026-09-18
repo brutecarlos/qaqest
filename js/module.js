@@ -48,7 +48,7 @@
       main.innerHTML = `<p class="empty-state">Module not found. <a href="index.html">Back to modules</a>.</p>`;
       return;
     }
-    document.title = `${mod.shortName} — QAQuest`;
+    document.title = `${mod.shortName} — QAQEST`;
 
     let questionCount = 0;
     try {
