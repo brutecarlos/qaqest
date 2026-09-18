@@ -1,11 +1,12 @@
 # This file authorizes ad networks to sell ad inventory on this domain.
 # Required by Google AdSense once your site is approved.
 #
-# 1. Find your publisher ID in AdSense under Account > Account information
-#    (looks like "pub-1234567890123456", no "ca-" prefix here).
-# 2. Replace YOUR_PUBLISHER_ID below with that value.
-# 3. Commit this file at the site root (it must be served at
-#    https://<your-domain>/ads.txt exactly, which GitHub Pages already
-#    does for a root-level file like this one).
+# NOTE: because AdSense verified the domain root (https://brutecarlos.github.io),
+# not this project's /qaqest/ subpath, ads.txt must be served at
+# https://brutecarlos.github.io/ads.txt for AdSense's crawler to find it —
+# a file at https://brutecarlos.github.io/qaqest/ads.txt (this repo's URL)
+# is NOT sufficient on its own. See README.md > "Connecting Google AdSense"
+# for how to publish it at the domain root.
 #
-# google.com, pub-YOUR_PUBLISHER_ID, DIRECT, f08c47fec0942fa0
+google.com, pub-3540202863792769, DIRECT, f08c47fec0942fa0
+

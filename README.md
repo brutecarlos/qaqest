@@ -170,10 +170,18 @@ AdSense.
      slots: { header: "1111111111", inline: "2222222222" },
    };
    ```
-6. **Add `ads.txt`** at the repo root (already scaffolded) — replace
-   `YOUR_PUBLISHER_ID` with your `pub-...` value (no `ca-` prefix) and
-   uncomment the line. GitHub Pages serves root files automatically, so it
-   will be reachable at `https://<you>.github.io/qaqest/ads.txt`.
+6. **Add `ads.txt`** at the repo root (already scaffolded with the real
+   publisher ID). &#9888;&#65039; Because AdSense verifies at the **domain
+   root** (`https://brutecarlos.github.io`), not this project's `/qaqest/`
+   subpath, `ads.txt` must be reachable at
+   `https://brutecarlos.github.io/ads.txt` for AdSense's crawler to see it —
+   a copy at `https://brutecarlos.github.io/qaqest/ads.txt` (this repo's own
+   URL) is not enough on its own. To publish it at the domain root, either:
+   - create a **`brutecarlos.github.io`** repo (GitHub's special user/org
+     Pages repo, served at the bare domain) containing just that one
+     `ads.txt` file, or
+   - if a `brutecarlos.github.io` user site already exists elsewhere, add
+     `ads.txt` there instead.
 7. Commit and push to `main`. Once GitHub Pages redeploys, visitors who
    opt into ads (via the header toggle) will start seeing real AdSense
    units instead of placeholders. Approval/serving can take Google a few

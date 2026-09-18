@@ -70,6 +70,15 @@
   function syncAdSlots() {
     const enabled = QAQuest.areAdsEnabled();
 
+    // Load the AdSense loader script whenever a visitor has opted in and a
+    // client ID is configured, even if no manual ad-unit slot IDs are set
+    // below. This is required for Google's Auto ads (Google decides ad
+    // placement automatically once enabled in the AdSense dashboard), and
+    // is a no-op if Auto ads is off there.
+    if (enabled && isAdSenseConfigured) {
+      ensureAdSenseScriptLoaded();
+    }
+
     const headerMount = document.getElementById("header-ad-mount");
     if (headerMount) {
       headerMount.innerHTML = "";
