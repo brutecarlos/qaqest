@@ -22,9 +22,12 @@
  */
 window.QAQEST_ADSENSE = {
   // Your AdSense publisher/client ID, e.g. "ca-pub-1234567890123456".
-  client: "",
+  client: "ca-pub-3540202863792769",
 
-  // Ad unit ("data-ad-slot") IDs. Leave blank to keep placeholders.
+  // Ad unit ("data-ad-slot") IDs. Leave blank to keep placeholders; the
+  // AdSense loader script still loads (enabling Auto ads, if turned on
+  // in your AdSense dashboard) as soon as "client" above is set and a
+  // visitor has opted into ads, even with no slot IDs configured here.
   slots: {
     header: "",
     inline: "",
