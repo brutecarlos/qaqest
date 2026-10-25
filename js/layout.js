@@ -162,6 +162,8 @@
           </p>
           <p>
             &copy; <span id="footer-year"></span> QAQEST &middot;
+            <a href="https://brutecarlos.github.io/privacy.html">Privacy Policy</a> &middot;
+            <a href="https://brutecarlos.github.io/">About the author</a> &middot;
             <a href="https://github.com/brutecarlos/qaqest" target="_blank" rel="noopener">
               Source on GitHub
             </a>
