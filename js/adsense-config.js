@@ -29,6 +29,6 @@ window.QAQEST_ADSENSE = {
   // visitors who opted in via the header toggle, and never on quiz.html.
   slots: {
     header: "3670579782",
-    inline: "",
+    inline: "2357498113",
   },
 };
