@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <title>Test Techniques Cheat Sheet — QAQEST</title>
+  <meta name="description" content="A concise guide to selecting a test technique for inputs, rules, states, structure, and exploratory work." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/guide-techniques-cheat-sheet.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Test Techniques Cheat Sheet — QAQEST" />
+  <meta property="og:description" content="A concise guide to selecting a test technique for inputs, rules, states, structure, and exploratory work." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/guide-techniques-cheat-sheet.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Test Techniques Cheat Sheet — QAQEST" />
+  <meta name="twitter:description" content="A concise guide to selecting a test technique for inputs, rules, states, structure, and exploratory work." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Test Techniques Cheat Sheet</h1></section>
+    <h2>Start with the question you need to answer</h2>
+<p>Techniques are ways to choose and organize tests, not recipes that guarantee defect discovery. Begin by naming the behavior, available test basis, and risk. Are you checking a numeric range, combinations of business rules, event sequences, internal decisions, or a poorly understood feature? Then choose a method that makes the important coverage visible. You can combine methods when one view is not enough.</p>
+<h2>Black-box quick reference</h2>
+<ul><li><strong>Equivalence partitioning:</strong> divide values into groups expected to behave similarly and choose representative values. Good for broad input spaces and validation rules.</li><li><strong>Boundary value analysis:</strong> test near the edges of ordered partitions, where off-by-one errors are common. Include values immediately below, at, and above a threshold when appropriate.</li><li><strong>Decision table testing:</strong> list condition combinations and their expected actions. Useful when multiple rules interact, such as eligibility, payment, and shipping.</li><li><strong>State transition testing:</strong> model states, events, and resulting states. Check valid transitions, important sequences, and rejected events.</li><li><strong>Use-case testing:</strong> follow user goals and alternative paths through a workflow, including failures and recovery.</li></ul>
+<h2>White-box and experience-based methods</h2>
+<ul><li><strong>Statement coverage:</strong> check which executable statements have run. It does not guarantee every decision outcome was exercised.</li><li><strong>Branch coverage:</strong> exercise each decision outcome, such as true and false. It often requires more tests than statement coverage.</li><li><strong>Error guessing:</strong> use knowledge of likely failure modes to try risky inputs and sequences.</li><li><strong>Exploratory testing:</strong> learn, design, and execute in parallel under a focused charter. Capture findings and useful test ideas.</li><li><strong>Checklist-based testing:</strong> use a concise, maintained list of risks or conditions to make recurring checks consistent.</li></ul>
+<h2>Worked example: password policy</h2>
+<p>Suppose a password must contain 10 to 64 characters and must not be a commonly blocked password. Equivalence partitions include too short, valid length, too long, and blocked values. Boundary analysis suggests lengths 9, 10, 64, and 65. The blocked-password rule adds a separate dimension: try a blocked value of valid length and an allowed value of valid length. If the account has states such as active, locked, and reset-pending, state transition tests can examine password changes and sign-in attempts in those states. This combination is clearer than selecting many arbitrary strings.</p>
+<h2>Choosing the technique</h2>
+<p>For a range or limit, start with partitions and boundaries. For several boolean or categorical rules, build a decision table and reduce combinations only when justified. For workflows, map states and user goals. For code-level confidence, inspect statement and branch coverage alongside requirements-based tests. For unfamiliar interfaces, define an exploratory charter such as “investigate recovery after interrupted checkout,” then record the environment and observations.</p>
+<p>Every method has blind spots. A complete table can still encode a wrong business rule. Full branch coverage can miss omitted requirements. A checklist can become stale. Use independent review and real user context to challenge the model behind your tests.</p>
+<h2>Key terms</h2>
+<ul><li><strong>Partition:</strong> a group of inputs expected to be treated alike.</li><li><strong>Boundary:</strong> an edge between input groups or rule outcomes.</li><li><strong>Condition:</strong> a rule or factor that influences an outcome.</li><li><strong>State:</strong> a defined situation that affects how events are handled.</li><li><strong>Coverage item:</strong> an element used to assess how much testing was done.</li><li><strong>Charter:</strong> a goal or boundary that guides an exploratory session.</li></ul>
+<p>Before calling a technique complete, state what it covered and what remains. Coverage numbers are meaningful only when the underlying items and exclusions are understood.</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practice CTFL questions</a></p>
+    <p><a href="guides.html">All study guides</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

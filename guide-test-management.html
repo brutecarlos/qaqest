@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <title>Managing the Test Activities — QAQEST</title>
+  <meta name="description" content="Plan testing around risk, communicate progress clearly, and keep teams focused on useful outcomes." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/guide-test-management.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Managing the Test Activities — QAQEST" />
+  <meta property="og:description" content="Plan testing around risk, communicate progress clearly, and keep teams focused on useful outcomes." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/guide-test-management.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Managing the Test Activities — QAQEST" />
+  <meta name="twitter:description" content="Plan testing around risk, communicate progress clearly, and keep teams focused on useful outcomes." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Managing the Test Activities</h1></section>
+    <h2>Plan for the product and the people</h2>
+<p>Test management coordinates objectives, scope, responsibilities, resources, schedule, approach, and reporting. A plan should explain how testing will support product and project goals rather than exist only as a template. It identifies relevant risks, test levels and types, environments, tools, dependencies, entry and exit criteria, and how results will be communicated. Plans evolve as new evidence changes estimates or priorities.</p>
+<p>Responsibilities depend on the organization. A test lead may coordinate strategy, monitor progress, and remove impediments. Testers analyze, design, execute, and report checks. Developers contribute component tests and investigate defects. Product and operations stakeholders help prioritize risk and define acceptable outcomes. Clear ownership prevents work from falling between teams.</p>
+<h2>Risk-based prioritization</h2>
+<p>Product risk is the possibility that a product characteristic will cause harm or loss. Risk assessment considers likelihood and impact. Testing can prioritize high-risk features, users, and failure modes first, while still maintaining reasonable breadth. A risk register can record a description, likelihood, impact, priority, mitigation, owner, and current status. Estimates are uncertain; revisit them rather than treating initial rankings as facts.</p>
+<p>Project risks are different: they threaten the ability to test, such as delayed environments, unavailable subject-matter experts, or unstable data. Manage these as delivery concerns. If the test environment slips, a team might prepare data-generation scripts, test a service boundary, or negotiate a staged schedule. Escalate early with options and consequences.</p>
+<h2>Monitoring, control, and completion</h2>
+<p>Monitoring compares observed progress with the plan. Useful measures include test conditions covered, tests passed or failed, unresolved defects by severity, effort spent, and risk areas not yet examined. Metrics need context. A rising pass rate could mean fixes are working, or that difficult cases have not been run. Communicate the meaning and limits of a measure, not just its number.</p>
+<p>Control takes action when evidence shows a deviation: change priorities, add resources, revise a schedule, or reduce scope with stakeholder agreement. At completion, summarize what was tested, notable results, known limitations, residual risks, and recommendations. “Testing complete” should not conceal untested areas or known defects.</p>
+<h2>Worked example: a late environment</h2>
+<p>A staging environment arrives three days late. The team first identifies the tests blocked by missing integrations and asks whether any high-risk behavior can be checked locally or with a service stub. It moves independent requirement reviews and component tests forward, then schedules the critical end-to-end flows as soon as staging is usable. Stakeholders receive a revised forecast, the uncovered integration risk, and options such as extending the test window or accepting a limited release. This is management through evidence, not simply marking tasks red.</p>
+<h2>Defect reports that enable action</h2>
+<p>A useful defect report includes a concise title, product build and environment, preconditions, steps, expected and actual results, supporting evidence, and impact. Keep facts separate from guesses about root cause. Severity describes the consequence of a defect; priority describes the order in which the team should address it. They may differ: a severe issue in a rare, contained path can have lower immediate priority than a widespread blocker.</p>
+<h2>Key terms</h2>
+<ul><li><strong>Test strategy:</strong> high-level choices about how testing will achieve its objectives.</li><li><strong>Entry/exit criteria:</strong> conditions for starting or concluding a defined activity.</li><li><strong>Residual risk:</strong> risk remaining after mitigation or testing.</li><li><strong>Severity:</strong> the degree of impact of a defect.</li><li><strong>Priority:</strong> the urgency or order for addressing work.</li></ul>
+<p>Management is successful when people can make timely decisions with realistic expectations and traceable evidence.</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practice CTFL questions</a></p>
+    <p><a href="guides.html">All study guides</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

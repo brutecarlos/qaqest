@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <title>Test Analysis & Design — QAQEST</title>
+  <meta name="description" content="Use black-box, white-box, and experience-based methods to turn test objectives into focused checks." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/guide-test-techniques.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Test Analysis & Design — QAQEST" />
+  <meta property="og:description" content="Use black-box, white-box, and experience-based methods to turn test objectives into focused checks." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/guide-test-techniques.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Test Analysis & Design — QAQEST" />
+  <meta name="twitter:description" content="Use black-box, white-box, and experience-based methods to turn test objectives into focused checks." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Test Analysis & Design</h1></section>
+    <h2>From test basis to test cases</h2>
+<p>Test analysis identifies what can be tested and the conditions worth checking. Test design turns those conditions into cases, data, and expected results. A test technique provides a systematic way to select or derive checks. The best technique depends on the available information, risk, time, and the behavior under study; techniques can be combined rather than treated as competing choices.</p>
+<h2>Black-box techniques</h2>
+<p>Black-box techniques derive tests from externally visible behavior or specified rules, without relying on internal code structure. <strong>Equivalence partitioning</strong> groups inputs expected to behave alike and samples from each group. <strong>Boundary value analysis</strong> focuses on edges, where mistakes are common. <strong>Decision tables</strong> expose combinations of conditions and resulting actions. <strong>State transition testing</strong> checks how events move a system between states, including invalid transitions.</p>
+<p><strong>Worked example: delivery fee.</strong> A service charges no fee for baskets of $50 or more; otherwise it charges $5. Partitions are below $50 and at least $50. Boundary checks at $49.99, $50.00, and $50.01 are more informative than three arbitrary amounts in the middle of the same group. For a rule with membership status and basket total, a decision table can ensure every meaningful combination and fee outcome is represented.</p>
+<h2>White-box techniques</h2>
+<p>White-box methods use internal structure, such as statements, branches, or control flow, to guide tests. Statement coverage asks whether each executable statement ran; branch coverage asks whether each decision outcome was exercised. A test suite may achieve full statement coverage while never taking the false outcome of a conditional, which is why branch coverage often reveals additional gaps. Coverage is a measure of exercised structure, not proof that the software is correct or that requirements are complete.</p>
+<p><strong>Worked example: eligibility logic.</strong> Code grants a discount when a customer is active and the order is above a threshold. Test an eligible customer with a large order and an inactive customer with a large order to exercise the true and false outcomes of the active check. Then consider a small order for an active customer to exercise the other decision. Review the exact control flow to avoid assuming that executing a line means all its logical outcomes were tested.</p>
+<h2>Experience-based techniques</h2>
+<p>Experience-based approaches use a tester's knowledge, intuition, and past observations. Error guessing turns likely mistakes into focused checks: empty values, stale sessions, repeated clicks, unusual Unicode, or a network interruption. Exploratory testing combines learning, test design, and execution as the tester investigates an area. A charter gives the exploration direction while leaving room to follow evidence. Checklist-based testing uses remembered risks or standards to make repeated work more consistent.</p>
+<p>Experience is not a substitute for a clear test basis. Record the charter, environment, observations, and issues so that results are explainable and useful to others. Combine exploratory work with planned coverage: systematic cases help protect known rules, while exploration can reveal behavior nobody thought to specify.</p>
+<h2>Choose and combine methods</h2>
+<p>Use partitions and boundaries for numeric ranges, tables for interacting rules, and state models for event-driven behavior. Use structural coverage when internal logic is important and code is available. Use exploration when the product is unfamiliar or the documented model is incomplete. Risk should affect depth: a financial calculation deserves more combinations and independent review than a cosmetic label.</p>
+<h2>Key terms</h2>
+<ul><li><strong>Test condition:</strong> an aspect of a test basis selected for testing.</li><li><strong>Coverage item:</strong> an element a technique aims to exercise.</li><li><strong>Coverage:</strong> the proportion of selected items exercised by tests.</li><li><strong>Test oracle:</strong> a source used to decide whether an observed result is correct.</li><li><strong>Exploratory testing:</strong> concurrent learning, design, and execution guided by a charter.</li></ul>
+<p>Before execution, check that each case has an observable expected outcome. A technique can help choose inputs, but it does not automatically supply a trustworthy oracle.</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practice CTFL questions</a></p>
+    <p><a href="guides.html">All study guides</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>
