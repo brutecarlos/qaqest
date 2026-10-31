@@ -68,7 +68,9 @@
    * a CSS class), so when ads are off nothing ad-related is ever injected.
    */
   function syncAdSlots() {
-    const enabled = QAQuest.areAdsEnabled();
+    // Never show or load ads on the active exam screen.
+    const isQuizPage = /quiz\.html$/.test(window.location.pathname);
+    const enabled = QAQuest.areAdsEnabled() && !isQuizPage;
 
     // Load the AdSense loader script whenever a visitor has opted in and a
     // client ID is configured, even if no manual ad-unit slot IDs are set
