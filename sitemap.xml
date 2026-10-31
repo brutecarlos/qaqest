@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://brutecarlos.github.io/qaqest/</loc></url>
   <url><loc>https://brutecarlos.github.io/qaqest/about.html</loc></url>
+  <url><loc>https://brutecarlos.github.io/qaqest/guides.html</loc></url>
+  <url><loc>https://brutecarlos.github.io/qaqest/guide-fundamentals.html</loc></url>
+  <url><loc>https://brutecarlos.github.io/qaqest/guide-sdlc.html</loc></url>
+  <url><loc>https://brutecarlos.github.io/qaqest/guide-static-testing.html</loc></url>
+  <url><loc>https://brutecarlos.github.io/qaqest/guide-test-techniques.html</loc></url>
+  <url><loc>https://brutecarlos.github.io/qaqest/guide-test-management.html</loc></url>
+  <url><loc>https://brutecarlos.github.io/qaqest/guide-test-tools.html</loc></url>
+  <url><loc>https://brutecarlos.github.io/qaqest/guide-exam-tips.html</loc></url>
+  <url><loc>https://brutecarlos.github.io/qaqest/guide-techniques-cheat-sheet.html</loc></url>
+  <url><loc>https://brutecarlos.github.io/qaqest/faq.html</loc></url>
   <url><loc>https://brutecarlos.github.io/qaqest/module.html?module=ctfl</loc></url>
   <url><loc>https://brutecarlos.github.io/qaqest/module.html?module=agile-tester</loc></url>
   <url><loc>https://brutecarlos.github.io/qaqest/module.html?module=al-ta</loc></url>

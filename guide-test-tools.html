@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <title>Test Tools — QAQEST</title>
+  <meta name="description" content="Choose and use test tools to support repeatable work without mistaking automation for quality." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/guide-test-tools.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Test Tools — QAQEST" />
+  <meta property="og:description" content="Choose and use test tools to support repeatable work without mistaking automation for quality." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/guide-test-tools.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Test Tools — QAQEST" />
+  <meta name="twitter:description" content="Choose and use test tools to support repeatable work without mistaking automation for quality." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Test Tools</h1></section>
+    <h2>Tools support activities</h2>
+<p>Test tools can assist planning, test analysis and design, execution, defect tracking, reporting, and configuration management. Examples include test management systems, issue trackers, static analyzers, unit test frameworks, API clients, browser automation, performance generators, and build pipelines. Some products cover several tasks; others are deliberately small and focused. A tool is useful when it improves a real workflow, not merely because it has many features.</p>
+<h2>Benefits and trade-offs</h2>
+<p>Automation can repeat checks quickly, reduce manual effort for stable tasks, broaden data combinations, and make results more consistent. It also has costs: selection, setup, integration, training, maintenance, flaky behavior, and the risk of automating the wrong checks. A brittle script that constantly needs repair may be slower overall than a short manual check. Consider total lifecycle cost, not only the first demonstration.</p>
+<p>Tools can create false confidence. A green build means configured checks passed under their specific conditions; it does not establish that the product is safe, usable, or fit for purpose. Human observation remains valuable for questions involving judgment, accessibility, unexpected behavior, and changing user expectations.</p>
+<h2>Evaluate before adopting</h2>
+<p>Start with a need and measurable criteria: which activity is slow or error-prone, what systems must integrate, who will maintain the tool, and how success will be judged? Compare options using a small proof of concept with representative users and data. Check licensing, platform support, accessibility, security, reporting, and vendor or community support. Include the people who will use and operate the tool in the decision.</p>
+<p>Deploy progressively. A pilot can reveal training needs and hidden workflow changes before a broad rollout. Provide guidance, define ownership, and collect feedback. Monitor whether the tool reduces cycle time or improves useful coverage. If it does not, change configuration or reconsider the choice rather than keeping it simply because it has already been purchased.</p>
+<h2>Worked example: selecting browser automation</h2>
+<p>A team repeats a critical sign-in and checkout flow on every release. It considers browser automation. The proof of concept covers one representative browser, a stable test account, and a few failure paths. The team measures execution time, false failures, script repair effort after a UI change, and whether results are easy to diagnose. It automates stable, high-value paths but keeps visual review and exploratory checks in the plan. This gives a balanced portfolio rather than a goal of automating everything.</p>
+<h2>Automation design and maintenance</h2>
+<p>Reliable automated checks are independent where practical, have controlled data and environments, and produce readable failure evidence. Prefer stable interfaces for setup and assertions instead of fragile timing assumptions. Keep checks close to the right level: a calculation is often cheaper to test as a unit than through a full browser. Avoid one enormous suite that is slow and hard to diagnose. Review failures promptly; rerunning a flaky check until it turns green hides a real signal.</p>
+<h2>Key terms</h2>
+<ul><li><strong>Test automation:</strong> using software to perform or support testing tasks.</li><li><strong>Testware:</strong> artifacts produced during testing, including cases, scripts, and data.</li><li><strong>Flaky test:</strong> a check whose result varies without a relevant product change.</li><li><strong>Proof of concept:</strong> a small trial used to evaluate feasibility and fit.</li><li><strong>Regression suite:</strong> selected checks rerun after changes to detect unintended effects.</li></ul>
+<p>Tool success depends on fit, process, and people. Plan for training and long-term ownership before relying on a new tool in a critical release.</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practice CTFL questions</a></p>
+    <p><a href="guides.html">All study guides</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

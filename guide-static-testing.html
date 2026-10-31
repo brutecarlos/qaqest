@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <title>Static Testing — QAQEST</title>
+  <meta name="description" content="Find quality problems by examining requirements, code, and other work products without executing the software." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/guide-static-testing.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Static Testing — QAQEST" />
+  <meta property="og:description" content="Find quality problems by examining requirements, code, and other work products without executing the software." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/guide-static-testing.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Static Testing — QAQEST" />
+  <meta name="twitter:description" content="Find quality problems by examining requirements, code, and other work products without executing the software." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Static Testing</h1></section>
+    <h2>Inspect before execution</h2>
+<p>Static testing evaluates a work product without running the software. It can be applied to requirements, architecture diagrams, test cases, source code, user help, contracts, or operational procedures. A person may inspect a document manually, or a static analysis tool may detect patterns in code. The key distinction is that the product under examination is not being executed.</p>
+<p>Static work is valuable when behavior is expensive to run, when defects would be costly to find late, or when the work product itself needs to be clear and consistent. It can reveal ambiguity, omissions, contradictions, duplicated logic, coding-standard violations, or suspicious constructs. It cannot prove how the running system behaves under real conditions, so it complements rather than replaces dynamic testing.</p>
+<h2>Reviews as structured collaboration</h2>
+<p>A review is an examination involving people who provide feedback on a work product. Informal reviews can be a quick peer read. More structured forms define roles and steps: planning, individual preparation, a discussion or defect analysis, correction, and follow-up. Roles may include an author, moderator, reviewer, and recorder, though small reviews can combine responsibilities. A moderator helps the review stay constructive and focused; a recorder captures issues for follow-up.</p>
+<p>Review objectives can include finding defects, improving shared understanding, transferring knowledge, and checking compliance. The objective determines who should attend and what preparation is useful. Reviewers should examine the material before the meeting and record questions or suspected issues. A meeting is not a substitute for preparation, nor should it become a session for rewriting the author's work line by line.</p>
+<h2>Review findings with care</h2>
+<p>Useful feedback points to a specific location, describes the concern, and explains its consequence. Separate a potential defect from a style preference. Phrase issues neutrally: “The retry rule does not specify what happens after the third attempt” is more actionable than “This is confusing.” The author is responsible for evaluating and addressing findings; the review group helps surface them.</p>
+<h2>Worked example: review an acceptance rule</h2>
+<p>A requirement says, “The account locks after repeated failed sign-in attempts.” Reviewers can ask: How many attempts? Over what period? Does a successful sign-in reset the count? What does the user see? Is the lock temporary, and how is recovery handled? These questions expose missing decision rules before code is written. Later, the answers can become test conditions and concrete cases. A review has thus improved both the requirement and the future test basis.</p>
+<h2>Static analysis tools</h2>
+<p>Static analysis tools examine artifacts using automated rules. A code linter may flag style inconsistencies; a type checker may find incompatible values; a security analyzer may identify risky patterns. Configure rules thoughtfully: a large flood of low-value warnings can train people to ignore findings. Review false positives, make priorities explicit, and track whether the tool catches issues that matter. Tool output is evidence for investigation, not an infallible verdict.</p>
+<h2>Key terms</h2>
+<ul><li><strong>Static testing:</strong> evaluation without executing the work product.</li><li><strong>Review:</strong> human examination of a work product.</li><li><strong>Inspection:</strong> a formal review with defined roles and process.</li><li><strong>Static analysis:</strong> automated examination of artifacts, often source code.</li><li><strong>Defect:</strong> a flaw that can make the work product incorrect or unsuitable.</li></ul>
+<p>Static and dynamic findings differ in form. A requirement review may identify an undefined boundary; a running test may reveal a failure at that boundary. Combining both approaches improves early feedback and execution-based confidence.</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practice CTFL questions</a></p>
+    <p><a href="guides.html">All study guides</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

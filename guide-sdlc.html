@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <title>Testing Throughout the SDLC — QAQEST</title>
+  <meta name="description" content="Learn how testing activities fit different development lifecycles and how teams build quality in from the beginning." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/guide-sdlc.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Testing Throughout the SDLC — QAQEST" />
+  <meta property="og:description" content="Learn how testing activities fit different development lifecycles and how teams build quality in from the beginning." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/guide-sdlc.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Testing Throughout the SDLC — QAQEST" />
+  <meta name="twitter:description" content="Learn how testing activities fit different development lifecycles and how teams build quality in from the beginning." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Testing Throughout the SDLC</h1></section>
+    <h2>Quality work is not a final phase</h2>
+<p>A software development life cycle (SDLC) describes how a product and its work products evolve from idea to operation and maintenance. Testing can contribute at every point: clarify a business need, review an interface sketch, check a component, evaluate a complete service, or examine production feedback. Starting early does not mean running full end-to-end tests against unfinished software. It means asking useful quality questions as soon as the relevant information exists.</p>
+<p>Development and test activities can be organized sequentially, iteratively, incrementally, or in a hybrid way. The model affects when teams can execute software, how often they receive feedback, and how they coordinate. It does not remove the need for planning, analysis, design, implementation, execution, and completion activities. Those activities may overlap and repeat.</p>
+<h2>Sequential and iterative approaches</h2>
+<p>In a sequential lifecycle, work tends to move through defined stages. A later test phase may use requirements and designs produced earlier, but static reviews can still find ambiguity before code exists. In iterative development, teams revisit requirements, design, implementation, and testing in short cycles. Incremental delivery adds usable capabilities over time. Each new slice should be checked, and regression testing should consider whether changes disturb existing behavior.</p>
+<p>Iterative teams often use continuous integration, where small code changes are merged and checked frequently. Fast unit and component checks can provide rapid feedback, while broader integration, system, and user-facing checks may run less often. A sensible test portfolio balances speed and coverage: the quickest reliable checks run often, and costly checks are reserved for appropriate points.</p>
+<h2>Test levels and test types</h2>
+<p>Test levels group work by scope and responsibility. Component testing examines an individual unit; integration testing focuses on interactions between components or systems; system testing considers the complete product; acceptance testing asks whether it meets user, business, or contractual needs. These are complementary views, not a rigid ladder: in a microservice product, a team may test a service in isolation and also test its contracts with neighbors.</p>
+<p>Test types describe a quality focus. Functional testing considers what the product does. Non-functional testing evaluates qualities such as performance, usability, compatibility, security, and reliability. Change-related testing includes confirmation testing, which checks that a specific fix works, and regression testing, which looks for unintended effects elsewhere. A test can belong to a level and address one or several types.</p>
+<h2>Worked example: adding a delivery option</h2>
+<p>A team adds a same-day delivery choice. Before implementation, a product owner and tester clarify cutoff time, eligible addresses, and what the customer sees when delivery is unavailable. A developer checks the delivery calculation as a component. Integration checks verify that the order service and carrier quote agree. System tests exercise a full order, including payment. Acceptance checks confirm the option is understandable and available only for eligible users. After a defect fix, the team repeats the affected scenario and runs targeted regression around pricing and checkout.</p>
+<h2>Collaboration and feedback</h2>
+<p>Developers, testers, analysts, operations staff, and business representatives bring different perspectives. Pairing on examples before coding can expose conflicting assumptions. In a collaborative lifecycle, a tester helps turn a broad request into examples with observable outcomes. This prevents a handoff from becoming the only point at which quality concerns are raised.</p>
+<p>Test completion does not always mean every possible check passed. It means the team compares results and residual risk against agreed exit criteria, communicates known issues, and supports a decision. A release may proceed with a documented, accepted risk; a critical uncovered risk may justify more work. Keep the decision visible and based on evidence.</p>
+<h2>Key terms</h2>
+<ul><li><strong>SDLC:</strong> the processes and stages through which software is developed and supported.</li><li><strong>Test level:</strong> a scope or stage of testing, such as component or system testing.</li><li><strong>Test type:</strong> a quality focus, such as functional or performance testing.</li><li><strong>Confirmation testing:</strong> checking a particular correction.</li><li><strong>Regression testing:</strong> checking for adverse effects of a change.</li></ul>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practice CTFL questions</a></p>
+    <p><a href="guides.html">All study guides</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

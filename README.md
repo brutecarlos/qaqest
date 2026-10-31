@@ -36,6 +36,8 @@ module.html          Module detail — mode selection (practice/exam) & history
 quiz.html            Quiz runner — renders one question at a time
 results.html         Score summary + full answer review
 about.html           About page & full ISTQB disclaimer
+guides.html           Original CTFL study guides and exam reference pages
+faq.html              Exam-format, progress, advertising, and support FAQ
 
 css/styles.css        All site styling
 js/storage.js         localStorage helpers, fetch/format/shuffle utilities
@@ -172,6 +174,7 @@ endorsed by, or sponsored by ISTQB®.
 ## Recent additions
 
 - **SEO/sharing:** per-page title, description, canonical, Open Graph/Twitter tags; `assets/og-image.png`; `sitemap.xml` and `robots.txt`. Submit `https://brutecarlos.github.io/qaqest/sitemap.xml` in Google Search Console for the `/qaqest/` property.
+- **Study resources:** original CTFL guides, a techniques quick reference, exam preparation tips, and an FAQ are linked in the shared navigation and precached for offline access.
 - **Quiz:** questions and options are shuffled per attempt (correct answer is remapped); flag questions with a navigator; keyboard shortcuts (1–4/A–D, Enter/→ next, ← previous, F flag); "Report an issue" link opens a prefilled GitHub issue.
 - **Results:** per-chapter breakdown highlighting the weakest chapter; filter for flagged questions.
 - **Progress:** export/import JSON (home and module pages) using the existing `qaquest_progress_v1` key, with validation and de-duplicated merge.
