@@ -28,7 +28,7 @@ window.QAQEST_ADSENSE = {
   // blank to keep placeholders. Ads (and the AdSense script) only load for
   // visitors who opted in via the header toggle, and never on quiz.html.
   slots: {
-    header: "",
+    header: "3670579782",
     inline: "",
   },
 };
