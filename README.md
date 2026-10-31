@@ -177,6 +177,7 @@ endorsed by, or sponsored by ISTQB®.
 - **Study resources:** original CTFL guides, a techniques quick reference, exam preparation tips, and an FAQ are linked in the shared navigation and precached for offline access.
 - **Quiz:** questions and options are shuffled per attempt (correct answer is remapped); flag questions with a navigator; keyboard shortcuts (1–4/A–D, Enter/→ next, ← previous, F flag); "Report an issue" link opens a prefilled GitHub issue.
 - **Results:** per-chapter breakdown highlighting the weakest chapter; filter for flagged questions.
+- **Streaks, badges & score card:** `js/badges.js` derives study streaks (consecutive local days with a completed attempt) and badges from attempt history (earned dates in `qaquest_gamification_v1`, included in export/import). `js/scorecard.js` draws a shareable 1200x630 PNG on the results page via canvas (no network; unofficial practice score).
 - **Progress:** export/import JSON (home and module pages) using the existing `qaquest_progress_v1` key, with validation and de-duplicated merge.
 - **Theme/a11y:** dark mode (system preference + header toggle, key `qaquest_theme_v1`), `:focus-visible` outlines, aria labels.
 - **PWA:** `manifest.webmanifest`, `sw.js` (versioned cache of same-origin shell + data only; bump `CACHE` on releases), icons in `assets/icons/`, and a `404.html`.

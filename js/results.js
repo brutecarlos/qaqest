@@ -112,6 +112,9 @@
         <p>${attempt.score} / ${attempt.total} correct &middot; pass mark is ${attempt.passPercentage}%</p>
       </div>
 
+      <div id="badge-toast" class="badge-toast" role="status" aria-live="polite"></div>
+      <div id="scorecard-slot"></div>
+
       ${renderChapterBreakdown(attempt.answers)}
 
       <h2 class="section-title">Review your answers</h2>
@@ -127,6 +130,29 @@
         <a class="btn" href="quiz.html?module=${moduleId}&mode=${attempt.mode}">Try again</a>
       </div>
     `;
+
+    let streakLine = "";
+    try {
+      if (QAQuest.Badges) {
+        const sum = QAQuest.Badges.summary();
+        if (sum.stats.current > 1) streakLine = "\uD83D\uDD25 " + sum.stats.current + "-day study streak";
+        const newly = JSON.parse(sessionStorage.getItem("qaquest_new_badges") || "[]");
+        sessionStorage.removeItem("qaquest_new_badges");
+        const defs = newly.map((id) => QAQuest.Badges.def(id)).filter(Boolean);
+        if (defs.length) {
+          document.getElementById("badge-toast").innerHTML = defs
+            .map((d) => `<div class="badge-unlocked"><span aria-hidden="true">${d.icon}</span> Badge unlocked: <strong>${QAQuest.escapeHTML(d.name)}</strong></div>`)
+            .join("");
+        }
+      }
+    } catch (e) { /* optional */ }
+    QAQuest.ScoreCard.render(document.getElementById("scorecard-slot"), {
+      moduleName, shortName: moduleName.match(/\(([^)]+)\)$/) ? moduleName.match(/\(([^)]+)\)$/)[1] : moduleName,
+      mode: attempt.mode, percentage: attempt.percentage, score: attempt.score, total: attempt.total,
+      passed: attempt.passed, passPercentage: attempt.passPercentage,
+      dateText: new Date(attempt.date).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }),
+      streakLine,
+    });
 
     document.querySelectorAll(".filter-bar .btn").forEach((btn) => {
       btn.addEventListener("click", () => applyFilter(btn.dataset.filter));

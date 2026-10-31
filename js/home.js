@@ -44,6 +44,12 @@
   try {
     const data = await QAQuest.fetchJSON("data/modules.json");
     grid.innerHTML = data.modules.map(renderCard).join("");
+    if (QAQuest.Badges) {
+      try { QAQuest.Badges.update(); } catch (e) { /* optional */ }
+      const panel = document.createElement("div");
+      panel.innerHTML = QAQuest.Badges.panelHtml();
+      grid.insertAdjacentElement("beforebegin", panel);
+    }
     const tools = document.createElement("div");
     tools.innerHTML = QAQuest.progressToolsHtml();
     grid.insertAdjacentElement("afterend", tools);
