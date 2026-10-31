@@ -1,8 +1,18 @@
-const CACHE = "qaqest-v1";
+const CACHE = "qaqest-v2";
 const SHELL = [
   "./",
   "index.html",
   "about.html",
+  "guides.html",
+  "guide-fundamentals.html",
+  "guide-sdlc.html",
+  "guide-static-testing.html",
+  "guide-test-techniques.html",
+  "guide-test-management.html",
+  "guide-test-tools.html",
+  "guide-exam-tips.html",
+  "guide-techniques-cheat-sheet.html",
+  "faq.html",
   "module.html",
   "quiz.html",
   "results.html",

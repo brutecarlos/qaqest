@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <title>Fundamentals of Testing — QAQEST</title>
+  <meta name="description" content="Understand why testing matters, what it can prove, and the ideas that shape effective software quality work." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/guide-fundamentals.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Fundamentals of Testing — QAQEST" />
+  <meta property="og:description" content="Understand why testing matters, what it can prove, and the ideas that shape effective software quality work." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/guide-fundamentals.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fundamentals of Testing — QAQEST" />
+  <meta name="twitter:description" content="Understand why testing matters, what it can prove, and the ideas that shape effective software quality work." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Fundamentals of Testing</h1></section>
+    <h2>Why teams test</h2>
+<p>Testing is a set of activities that evaluates a product and helps people make informed decisions about its quality. It is not simply a final gate or a hunt for defects. A team tests to reduce uncertainty: does a feature behave as intended, will a change damage something that worked, and is the remaining risk acceptable for release? Testing provides evidence, not a promise that software is perfect.</p>
+<p>Quality is contextual. A payment service may need strong security and reliability; a prototype may prioritize rapid learning. The people who use, operate, support, and buy a product can value different qualities. Test objectives should therefore connect to real stakeholders and use conditions rather than to an abstract idea of “zero bugs.”</p>
+<h2>Testing and debugging are different</h2>
+<p>Testing can be static, such as examining requirements without running the application, or dynamic, by executing software and observing results. A test may reveal a failure: an externally visible difference between actual and expected behavior. Investigation then looks for the underlying defect, also called a fault or bug, in a work product. Debugging is the activity of diagnosing and correcting that cause. A tester can expose a problem and provide precise evidence; a developer or other assigned owner may perform the debugging.</p>
+<h2>Seven useful principles</h2>
+<ul><li><strong>Testing shows defects are present, not that none exist.</strong> Passing checks only samples behavior.</li><li><strong>Exhaustive testing is usually impossible.</strong> Use risk and technique to choose a manageable, valuable sample.</li><li><strong>Start testing early.</strong> Earlier feedback can avoid expensive downstream rework.</li><li><strong>Defects cluster.</strong> A small number of components often account for many observed problems; adapt focus as evidence emerges.</li><li><strong>Tests wear out.</strong> Repeating the same checks may stop finding new issues, so refresh them thoughtfully.</li><li><strong>Testing depends on context.</strong> A safety-critical service and a short-lived internal tool need different approaches.</li><li><strong>Absence-of-errors is not enough.</strong> A defect-free product can still fail users if it solves the wrong problem.</li></ul>
+<h2>Worked example: a “working” booking flow</h2>
+<p>Suppose every automated check for a hotel booking passes. A review of user feedback reveals that the dates are displayed in an unfamiliar format and customers often book the wrong night. The system may conform to its written rules, yet still be unsuitable for its users. This illustrates why verification against stated requirements and validation against user needs both matter. It also suggests a risk-based next step: test date selection and confirmation with representative users, across locales and time zones.</p>
+<h2>Key terms to remember</h2>
+<ul><li><strong>Error:</strong> a human action or decision that produces an incorrect result.</li><li><strong>Defect:</strong> a flaw in a work product that can cause a failure.</li><li><strong>Failure:</strong> observed behavior that does not meet expectations.</li><li><strong>Verification:</strong> checking whether a work product meets specified requirements.</li><li><strong>Validation:</strong> checking whether it serves its intended use.</li><li><strong>Test basis:</strong> information used to derive tests, such as requirements or design.</li></ul>
+<p>When reviewing a scenario, trace the chain carefully: a person may make an error, introduce a defect, and that defect may cause a failure under particular conditions. A test can reveal the failure, but only investigation confirms the cause. Avoid using these terms as synonyms.</p>
+<h2>Make evidence useful</h2>
+<p>A strong test has a purpose, a clear basis, observable expected results, and enough context to repeat it. Record both positive findings and limitations: what was tested, what was not, and which risks remain. This turns test results into actionable information rather than a bare “pass.”</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practice CTFL questions</a></p>
+    <p><a href="guides.html">All study guides</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>
