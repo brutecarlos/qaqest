@@ -117,7 +117,7 @@
 
   /** Recompute from history, persist, and report newly earned badge ids. */
   function update() {
-    const progress = root.QAQuest.loadProgress();
+    const progress = QAQuest.loadProgress();
     const store = loadStore();
     const res = compute(progress);
     const newly = IDS.filter((id) => res.earned[id] && !store.earned[id]);
@@ -127,13 +127,13 @@
   }
   function summary() {
     const store = loadStore();
-    const res = compute(root.QAQuest.loadProgress());
+    const res = compute(QAQuest.loadProgress());
     return { stats: res.stats, earned: mergeEarned(store.earned, res.earned) };
   }
   function def(id) { return DEFS.find((d) => d.id === id); }
 
   function gridHtml(earned) {
-    const esc = root.QAQuest.escapeHTML;
+    const esc = QAQuest.escapeHTML;
     return '<ul class="badge-grid">' + DEFS.map((d) => {
       const when = earned[d.id];
       const label = when
@@ -163,5 +163,5 @@
 
   const api = { KEY, DEFS, compute, update, summary, def, panelHtml, gridHtml, loadStore, saveStore, validateStore, mergeEarned, dayKey };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
-  if (root.QAQuest) root.QAQuest.Badges = api;
+  if (typeof QAQuest !== "undefined") QAQuest.Badges = api;
 })(typeof window !== "undefined" ? window : globalThis);
