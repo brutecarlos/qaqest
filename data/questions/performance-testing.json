@@ -9,10 +9,10 @@
       "difficulty": "easy",
       "question": "Which of the following is a typical objective of performance testing?",
       "options": [
-        "To verify that the user interface layout matches design mockups",
+        "To confirm that the application meets its functional requirements for every supported user role and interface",
         "To evaluate how a system behaves in terms of responsiveness and stability under a particular workload",
-        "To confirm that source code follows naming conventions",
-        "To validate that requirements documents are free of ambiguity"
+        "To check that the user interface layout matches the approved design mockups under normal use",
+        "To confirm that the source code follows the agreed naming and formatting conventions"
       ],
       "correctIndex": 1,
       "explanation": "Performance testing evaluates how a system performs (e.g., response time, throughput, resource utilization) under a given workload."
@@ -24,12 +24,12 @@
       "difficulty": "easy",
       "question": "Which of the following is an example of a NON-functional performance risk that performance testing aims to reduce?",
       "options": [
-        "The login form accepts an incorrect password",
+        "The confirmation message after checkout contains a typo in one of its sentences",
+        "The checkout page rejects a valid credit card number that was typed in with spaces between the digit groups",
         "The checkout page takes 15 seconds to respond under moderate concurrent load, frustrating users",
-        "The application displays a typo in a confirmation message",
-        "The application uses the wrong currency symbol for a region"
+        "The application displays the wrong currency symbol for customers in one region"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Slow response times under load are a classic performance risk, distinct from functional correctness issues like incorrect validation, typos, or wrong formatting."
     },
     {
@@ -39,12 +39,12 @@
       "difficulty": "medium",
       "question": "Which of the following BEST distinguishes 'load testing' from 'stress testing'?",
       "options": [
-        "Load testing evaluates behavior under expected/peak realistic load, while stress testing pushes the system beyond normal capacity to find its breaking point",
-        "Stress testing only checks the visual design of the UI",
-        "Load testing and stress testing are identical concepts with different names",
-        "Stress testing is only performed on the database layer"
+        "Stress testing examines the visual design of the interface under heavy use, while load testing examines the correctness of business rules",
+        "Load testing checks behaviour at the lowest expected usage, while stress testing checks how the system behaves when idle for a long time",
+        "Load testing checks behaviour under expected or peak realistic load, while stress testing exceeds normal capacity to find the breaking point",
+        "Load testing checks behaviour at the lowest usage the business expects, while stress testing checks long idle periods with no users at all"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Load testing evaluates performance under expected or peak realistic load levels, while stress testing intentionally exceeds normal capacity to observe how and when the system fails."
     },
     {
@@ -54,12 +54,12 @@
       "difficulty": "medium",
       "question": "'Endurance testing' (soak testing) is PRIMARILY designed to detect:",
       "options": [
-        "Immediate crashes under a single short burst of extremely high load",
-        "Gradual degradation issues, such as memory leaks or resource exhaustion, that only appear after sustained operation over a long period",
-        "Cosmetic UI defects",
-        "Missing translations in the user interface"
+        "Gradual degradation, such as memory leaks or resource exhaustion, that appears only after long sustained operation",
+        "Incorrect results that appear only when two users update the same record at almost the same instant under a short burst of load",
+        "Failures that arise when the system is restarted repeatedly within a short time under a light and constant load",
+        "Immediate crashes that occur when one short burst of extremely high load is applied to the application at once"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Endurance/soak testing runs the system under a sustained, realistic load for an extended period to reveal gradual issues like memory leaks that short tests would miss."
     },
     {
@@ -69,12 +69,12 @@
       "difficulty": "medium",
       "question": "'Spike testing' evaluates how a system behaves when:",
       "options": [
-        "Load increases gradually and predictably over several days",
         "Load suddenly and sharply increases for a short period, then returns to normal, e.g. a flash sale event",
-        "The system is completely idle with zero users",
-        "Only a single user interacts with the system"
+        "Load rises gradually and predictably over several days until the system reaches its planned capacity",
+        "Load stays at a constant, moderate level for many hours while the team watches memory and disk trends slowly develop over time",
+        "Data volume in the database grows steadily while the number of active users stays the same"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Spike testing evaluates system behavior when load suddenly spikes for a short duration (e.g., a flash sale or viral event) and then subsides, checking for stability and recovery."
     },
     {
@@ -84,12 +84,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a common product risk that justifies performance testing early in a project?",
       "options": [
-        "The architecture may not scale to the expected number of concurrent users, leading to unacceptable response times at launch",
-        "The requirements document uses British English spelling",
-        "The team prefers a specific IDE for development",
-        "The color scheme does not match the corporate brand guide"
+        "The corporate colour scheme may be applied slightly differently on the login page than in the style guide",
+        "The requirements document may be written in a regional spelling that differs from the one used by the client",
+        "The architecture may not scale to the expected number of concurrent users, giving unacceptable response times at launch",
+        "The development team may choose a build tool that the operations staff are unfamiliar with, which slows down the deployment later on"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "A key performance risk is that the chosen architecture might not scale adequately, which is why performance-related risks are often identified and tested for as early as feasible."
     },
     {
@@ -99,10 +99,10 @@
       "difficulty": "medium",
       "question": "Which of the following metrics measures the number of transactions successfully completed per unit of time?",
       "options": [
-        "Response time",
+        "CPU utilization",
         "Throughput",
-        "Error rate",
-        "CPU utilization"
+        "Response time",
+        "Error rate"
       ],
       "correctIndex": 1,
       "explanation": "Throughput measures the rate at which the system processes transactions (e.g., requests per second), a key performance metric alongside response time and resource utilization."
@@ -114,12 +114,12 @@
       "difficulty": "medium",
       "question": "Which of the following is generally a MORE informative metric than the average response time alone, when analyzing user experience under load?",
       "options": [
-        "The 90th or 95th percentile response time, which shows how slow the experience is for a defined proportion of the worst-case requests",
-        "The total number of servers in the data center",
-        "The number of testers who executed the test",
-        "The color of the load testing tool's dashboard"
+        "The total number of servers in the environment, since more servers imply a better user experience",
+        "The number of testers who took part in the test, which shows how thoroughly the load was applied",
+        "The 90th or 95th percentile response time, which shows the experience of the slower share of requests",
+        "The minimum response time observed, which shows the best experience that users received during the run"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Percentile response times (e.g., 95th percentile) reveal the experience of the slower tail of requests, which averages can mask, giving a more realistic picture of worst-case user experience."
     },
     {
@@ -129,12 +129,12 @@
       "difficulty": "medium",
       "question": "During performance test planning, why is it important to define realistic workload models (e.g., typical user behavior patterns)?",
       "options": [
-        "So results reflect how the system will actually be used in production, rather than an unrealistic or arbitrary usage pattern",
-        "Because workload models have no impact on test validity",
-        "Because realistic workload models eliminate the need for any monitoring during the test",
-        "Because workload models are only relevant for functional testing"
+        "So the load generator can be configured with fewer virtual users, since realistic users are less demanding",
+        "So the same scripts can be reused for acceptance testing, since a realistic model removes the need for separate functional test design",
+        "So results reflect how the system is expected to be used in production rather than an arbitrary usage pattern",
+        "So the test can run without monitoring, because a realistic model already shows where the bottlenecks are"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Realistic workload models (reflecting actual or expected user behavior, transaction mixes, and think times) are essential so that performance test results are meaningful and representative of production conditions."
     },
     {
@@ -144,12 +144,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a necessary precondition before running a valid performance test?",
       "options": [
-        "A test environment that is representative of production in terms of scale, configuration, and data volume, as far as practical",
-        "A test environment that has no similarities to production whatsoever",
-        "Skipping any monitoring during test execution",
-        "Ensuring test data is completely empty with zero records"
+        "A test environment with a nearly empty database so queries return fast and results are easier to read",
+        "A test environment with the smallest hardware available, so that bottlenecks appear as early as possible",
+        "A test environment built on the smallest hardware available, so that bottlenecks appear as early as possible during the test cycle",
+        "A test environment that resembles production in scale, configuration, and data volume as far as practical"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "For results to be meaningful, the performance test environment should be as representative of production as practical, including scale, configuration, and realistic data volumes."
     },
     {
@@ -159,12 +159,12 @@
       "difficulty": "medium",
       "question": "During performance test execution, which activity is essential alongside simply generating load?",
       "options": [
+        "Switching off all monitoring tools so that they cannot interfere with the measurements taken",
+        "Starting the run without agreed success criteria so the results are not biased by expectations",
         "Monitoring system resources (CPU, memory, network, database) to correlate load with observed performance behavior",
-        "Disabling all monitoring tools to avoid interfering with the test",
-        "Ensuring no logs are captured during the test run",
-        "Running the test without any defined success criteria"
+        "Disabling every logging and monitoring component on the servers, so that the measurements are not disturbed by any additional overhead"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Monitoring system resources during test execution is essential to correlate applied load with performance behavior and to help diagnose bottlenecks."
     },
     {
@@ -175,9 +175,9 @@
       "question": "Which capability is a CORE feature expected of most performance/load testing tools?",
       "options": [
         "Simulating many concurrent virtual users executing defined transactions against the system under test",
-        "Automatically writing user documentation",
-        "Performing static code analysis on the source code",
-        "Managing the project's budget and invoicing"
+        "Automatically generating user documentation from the recorded transactions after each run",
+        "Performing static analysis on the application's source code to find coding-standard violations",
+        "Generating the user documentation and training material automatically from the transactions that were recorded in the scripts"
       ],
       "correctIndex": 0,
       "explanation": "A core capability of performance testing tools is generating and simulating load, typically by orchestrating many virtual users executing scripted transactions concurrently."
@@ -189,12 +189,12 @@
       "difficulty": "medium",
       "question": "Which of the following would typically be part of a performance monitoring tool's dashboard during a load test?",
       "options": [
+        "The source-code diff of the most recent commit, compared with the previous release",
         "Real-time CPU, memory, and response time metrics correlated with the applied virtual user load",
-        "A list of unrelated marketing campaign statistics",
-        "The personal calendar of the test manager",
-        "The source code diff of the latest commit"
+        "Marketing campaign statistics showing how many visitors opened the latest promotional email",
+        "The test manager's calendar showing planned meetings during the test window"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Performance monitoring dashboards typically show real-time system metrics (CPU, memory, response time, etc.) correlated with the load being generated, to help identify bottlenecks."
     },
     {
@@ -204,10 +204,10 @@
       "difficulty": "medium",
       "question": "After a load test, response times increase sharply once concurrent users exceed 500, while CPU usage remains low but database connections are maxed out. What does this MOST likely indicate?",
       "options": [
-        "A CPU-bound bottleneck in the application server",
+        "A memory leak in the web tier that gradually reduces the heap available to each request",
         "A bottleneck related to database connection pool sizing or database contention, rather than raw CPU capacity",
-        "A purely cosmetic UI issue",
-        "A problem entirely unrelated to performance"
+        "A CPU-bound bottleneck in the application server that is limiting how many requests it can process",
+        "A memory leak in the web tier that gradually shrinks the heap available to each request as the number of users grows past that level"
       ],
       "correctIndex": 1,
       "explanation": "Low CPU usage combined with maxed-out database connections points to a bottleneck in the database connection pool or database layer, not raw CPU capacity."
@@ -219,12 +219,12 @@
       "difficulty": "medium",
       "question": "Which of the following should a well-structured performance test report typically include?",
       "options": [
-        "The workload model used, key metrics observed (response time, throughput, errors), identified bottlenecks, and recommendations",
-        "Only a single pass/fail statement with no supporting data",
-        "The personal opinions of unrelated stakeholders with no data",
-        "A list of unrelated functional defects with no performance context"
+        "The testers' impressions of how fast the system felt during the run, without detailed measurements",
+        "The workload model, key metrics observed, identified bottlenecks, and recommendations for the next steps",
+        "A list of the functional defects found during the cycle, without any link to the measured performance",
+        "A short pass/fail statement and the list of testers who took part, so that the stakeholders can read the report quickly"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "A useful performance test report documents the workload model, observed metrics, any bottlenecks found, and actionable recommendations, giving stakeholders enough context to make decisions."
     },
     {
@@ -234,12 +234,12 @@
       "difficulty": "hard",
       "question": "Which of the following is a project (not product) risk specific to performance testing efforts?",
       "options": [
-        "The application's response time will exceed 5 seconds under peak load",
+        "The caching layer may be configured in a way that does not reduce backend calls",
+        "The application's response time may exceed 5 seconds when the expected peak load is applied",
         "The performance test environment may not be available in time, delaying the performance test schedule",
-        "The database indexing strategy may be suboptimal",
-        "The caching layer may not be configured correctly"
+        "The application may fail to meet its 5-second response time target when the expected peak load is applied during the release"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "A project risk relates to the management of the testing effort itself, such as environment availability delaying the schedule, as opposed to a product risk about the system's actual performance behavior."
     },
     {
@@ -249,12 +249,12 @@
       "difficulty": "hard",
       "question": "Why is it important to run a 'baseline' performance test on a stable, known-good version of the system before making architectural changes?",
       "options": [
-        "So there is a reference point to compare against after future changes, to detect any performance regressions introduced",
-        "Because baseline tests are legally required for all software releases",
-        "Because a baseline test replaces the need for any further performance testing",
-        "Because baseline tests only measure functional correctness"
+        "It is a legal prerequisite in most regulated markets, so a baseline run has to exist before software can be released to customers",
+        "It gives a reference point to compare against after future changes, to detect any regressions introduced",
+        "It is a legal prerequisite for releasing software to customers in most regulated markets",
+        "Once it exists, later performance testing of the changed system is no longer needed"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "A baseline test establishes a reference point for key performance metrics on a known-good version, allowing later comparisons to detect regressions introduced by subsequent changes."
     },
     {
@@ -264,12 +264,12 @@
       "difficulty": "easy",
       "question": "Which of the following stakeholders would typically be MOST interested in performance test results before a major product launch?",
       "options": [
+        "Primarily the legal team, who need the results to support trademark registration of the product",
+        "The graphic designers who created the logo, because they judge the visual quality of each screen under different load levels",
         "Operations/infrastructure teams and business stakeholders concerned about capacity, cost, and user experience at scale",
-        "Only the graphic designer responsible for the logo",
-        "Only the legal team handling trademark registration",
-        "Only the office facilities manager"
+        "Primarily the graphic designers who created the logo, because they judge the visual quality of each screen"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Performance test results are of particular interest to operations/infrastructure teams (capacity planning) and business stakeholders concerned with user experience and cost at scale."
     },
     {
@@ -279,12 +279,12 @@
       "difficulty": "medium",
       "question": "Which factor should be carefully considered when selecting a performance testing tool for a specific project?",
       "options": [
-        "Whether the tool supports the protocols and technologies used by the system under test (e.g., HTTP, WebSocket, specific APIs)",
-        "Whether the tool's logo matches the company's branding",
-        "Whether the tool is the most expensive one on the market",
-        "Whether the tool was mentioned in an unrelated magazine article"
+        "Whether the tool was positively reviewed in a trade magazine published during the past year",
+        "Whether the tool is among the most expensive on the market, because price is a sign of quality",
+        "Whether the tool's interface follows the same colour scheme as the company's branding guidelines",
+        "Whether the tool supports the protocols and technologies used by the system under test"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "A key selection criterion for performance testing tools is protocol/technology compatibility with the system under test, ensuring the tool can actually generate and measure the relevant traffic."
     },
     {
@@ -294,10 +294,10 @@
       "difficulty": "hard",
       "question": "A performance test shows response times are acceptable at 100 concurrent users but degrade sharply and non-linearly beyond 300 users. This pattern MOST likely indicates:",
       "options": [
-        "The system has a scalability limit or bottleneck being reached around that concurrency level, requiring further investigation",
-        "The test data was entered in the wrong language",
-        "The test was run on the wrong day of the week",
-        "The results are meaningless and should be discarded"
+        "A scalability limit or bottleneck is being reached around that concurrency level and needs further investigation",
+        "The test data was prepared in the wrong language, which slows processing once the volume increases",
+        "The test data was prepared in the wrong language, which slows down processing once the volume of records grows beyond a certain size",
+        "The test ran on a day when the network is known to be slower, so the slowdown can be disregarded"
       ],
       "correctIndex": 0,
       "explanation": "A sharp, non-linear degradation beyond a certain concurrency threshold typically indicates a scalability limit or bottleneck (e.g., thread pool, connection pool, or resource contention) being reached, warranting deeper investigation."
@@ -309,12 +309,12 @@
       "difficulty": "easy",
       "question": "Which of the following is an example of a non-functional requirement relevant to performance testing?",
       "options": [
-        "The system shall allow users to reset their password",
+        "The system shall allow registered users to reset their password using a link that is sent to the email address they registered with",
+        "The system shall support importing customer records from CSV files up to a defined size",
         "The system shall respond to a search query within 2 seconds under a load of 500 concurrent users",
-        "The system shall display a confirmation message after checkout",
-        "The system shall support importing CSV files"
+        "The system shall allow registered users to reset their password using an emailed link"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Performance requirements are non-functional, typically specifying measurable targets such as response time under a defined load, rather than describing what functionality the system provides."
     },
     {
@@ -324,13 +324,13 @@
       "difficulty": "medium",
       "question": "What distinguishes 'response time' from 'throughput' as performance metrics?",
       "options": [
-        "Response time measures the time taken to complete a single request; throughput measures the number of transactions processed per unit of time",
-        "Response time and throughput are two names for the exact same metric",
-        "Throughput measures the time taken to complete a single request; response time measures the number of transactions processed",
-        "Neither metric is relevant to performance testing"
+        "Throughput is how long one request takes to finish, while response time is the number of transactions per period",
+        "Response time is how long one request takes to complete; throughput is how many transactions are processed per period",
+        "Only response time matters for performance testing, while throughput is purely a business metric",
+        "Throughput is how long one request takes to finish, while response time is how many transactions the system processes in a given period"
       ],
-      "correctIndex": 0,
-      "explanation": "Response time measures how long an individual request takes to complete, while throughput measures the rate at which the system processes transactions (e.g., transactions per second) \u2014 two related but distinct performance metrics."
+      "correctIndex": 1,
+      "explanation": "Response time measures how long an individual request takes to complete, while throughput measures the rate at which the system processes transactions (e.g., transactions per second) — two related but distinct performance metrics."
     },
     {
       "id": "pt-023",
@@ -339,10 +339,10 @@
       "difficulty": "medium",
       "question": "Why is it important to define realistic workload models before executing a performance test?",
       "options": [
-        "Unrealistic workloads always produce more accurate results",
-        "Realistic workload models ensure the test reflects actual expected usage patterns, producing meaningful and actionable results",
-        "Workload modeling has no impact on the validity of performance test results",
-        "Workload models are only needed for functional testing, not performance testing"
+        "They make the test finish more quickly, because realistic users generate fewer requests than scripts",
+        "They ensure the test reflects the expected usage patterns, so the results are meaningful and actionable",
+        "They remove the need to define acceptance criteria, since the model already implies the targets",
+        "They make the test finish sooner, because realistic users generate fewer requests than scripts and so need fewer virtual users in total"
       ],
       "correctIndex": 1,
       "explanation": "Performance test results are only meaningful if the workload model realistically reflects expected production usage patterns (e.g., user counts, transaction mix, think times); unrealistic models can produce misleading conclusions."
@@ -354,12 +354,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a typical product risk that performance testing aims to mitigate?",
       "options": [
-        "The user interface uses an inconsistent font across screens",
-        "The system may become slow or unresponsive under peak load, leading to poor user experience or lost transactions",
-        "The requirements document contains spelling errors",
-        "The test plan was not reviewed by the correct stakeholder"
+        "The requirements document may contain spelling errors that confuse the readers of the specification",
+        "The interface may use an inconsistent font style across several screens of the application",
+        "The system may become slow or unresponsive under peak load, causing poor user experience or lost transactions",
+        "The user interface may use inconsistent fonts and spacing across several screens, which makes the application look unprofessional to users"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "A key product risk addressed by performance testing is that the system may become slow, unresponsive, or unstable under peak or sustained load, directly impacting user experience and business outcomes."
     },
     {
@@ -370,9 +370,9 @@
       "question": "What is the primary purpose of load testing?",
       "options": [
         "To determine the system's behavior under an anticipated, realistic range of user load conditions",
-        "To test the system's user interface for accessibility compliance",
-        "To review the source code for security vulnerabilities",
-        "To validate the correctness of business logic through functional test cases"
+        "To check that the system's user interface complies with the accessibility guidelines for users who rely on assistive technology",
+        "To review the source code for security vulnerabilities that could be exploited under load",
+        "To check the system's user interface for compliance with accessibility guidelines"
       ],
       "correctIndex": 0,
       "explanation": "Load testing evaluates system behavior under an anticipated, realistic range of load conditions, verifying it meets performance objectives at expected usage levels."
@@ -384,12 +384,12 @@
       "difficulty": "medium",
       "question": "What is the primary purpose of stress testing?",
       "options": [
-        "To evaluate system behavior beyond normal or peak load conditions, often up to and beyond the point of failure, to understand its breaking point and recovery",
-        "To test that all user stories have acceptance criteria",
-        "To verify the accuracy of unit-level calculations",
-        "To measure the visual appeal of the application"
+        "To verify that unit-level calculations return correct values for a set of boundary inputs",
+        "To evaluate behaviour beyond normal or peak load, often to the point of failure, and to see how the system recovers",
+        "To confirm that the system meets its response time targets at the expected peak load for the release, without exceeding that level",
+        "To confirm that the system meets its response time targets at the expected peak load for the release"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Stress testing pushes the system beyond normal or peak load, often to the point of failure, to understand how and when it breaks down and how gracefully (or not) it recovers."
     },
     {
@@ -399,10 +399,10 @@
       "difficulty": "medium",
       "question": "What does 'soak testing' (or endurance testing) primarily evaluate?",
       "options": [
-        "System behavior and stability under sustained load over an extended period of time, looking for issues like memory leaks or resource exhaustion",
-        "The response time for a single isolated transaction",
-        "The correctness of input validation on a form",
-        "The visual layout of the application on mobile devices"
+        "System stability and behaviour under sustained load over a long time, revealing issues such as memory leaks",
+        "The ability of the system to cope with one sudden burst of load that quickly returns to normal, as seen during a flash sale",
+        "The response time of a single isolated transaction when the system is otherwise completely idle",
+        "The ability of the system to cope with a sudden short burst of load that then returns to normal"
       ],
       "correctIndex": 0,
       "explanation": "Soak (endurance) testing evaluates system stability and behavior under sustained load over an extended duration, aiming to detect issues that only manifest over time, such as memory leaks or gradual resource exhaustion."
@@ -414,12 +414,12 @@
       "difficulty": "medium",
       "question": "What is the primary purpose of spike testing?",
       "options": [
-        "To evaluate how the system behaves when subjected to a sudden, significant increase (or decrease) in load over a short period",
-        "To test the system's behavior during a gradual, planned increase in load over many months",
-        "To validate database schema design",
-        "To review the accessibility of error messages"
+        "To validate that the database schema can support the expected growth in stored records over the next several months of operation",
+        "To test behaviour during a gradual and planned increase in load that is spread over many months",
+        "To evaluate how the system behaves when load increases or decreases abruptly over a short period",
+        "To check that the error messages displayed during an overload are accessible to all users"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Spike testing evaluates system behavior under sudden, sharp increases (or decreases) in load over a short time period, such as a flash sale or breaking news event driving a rapid traffic surge."
     },
     {
@@ -429,12 +429,12 @@
       "difficulty": "hard",
       "question": "Which metric would MOST directly indicate a memory leak during a soak/endurance test?",
       "options": [
-        "A gradually increasing memory consumption trend over time that does not return to baseline between operations",
-        "A constant, stable response time throughout the test",
-        "A one-time spike in CPU usage during test startup",
-        "A decreasing number of active user sessions at test start"
+        "A falling number of active user sessions at the beginning of the test run",
+        "A single short CPU spike that appears while the test is still starting up",
+        "A memory consumption trend that keeps rising over time and does not return to its baseline",
+        "A response time that stays constant throughout the whole duration of the test run"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "A gradually increasing memory consumption trend that fails to return to baseline over the course of a sustained soak test is a classic indicator of a memory leak."
     },
     {
@@ -444,12 +444,12 @@
       "difficulty": "medium",
       "question": "Which task is typically performed FIRST when planning a performance test?",
       "options": [
-        "Executing the full-scale load test against production",
         "Defining performance test objectives and acceptance criteria based on stakeholder requirements",
-        "Analyzing the final test report",
-        "Decommissioning the test environment"
+        "Executing the full-scale load test against the live production system to get real data",
+        "Decommissioning the test environment once the first set of scripts has been written",
+        "Analysing the final test report and preparing recommendations for stakeholders"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Performance test planning typically begins with defining clear objectives and acceptance criteria based on stakeholder and business requirements, which then guide workload modeling, environment setup, and execution."
     },
     {
@@ -459,12 +459,12 @@
       "difficulty": "medium",
       "question": "Why is it important to establish a performance baseline early in the testing process?",
       "options": [
-        "A baseline provides a reference point against which future test results and system changes can be compared to detect performance regressions",
-        "Baselines are not useful once the system has been optimized",
-        "A baseline replaces the need for any further performance testing",
-        "A baseline is only relevant for functional test cases"
+        "A baseline replaces further performance testing, because later versions are assumed to behave the same",
+        "A baseline is mainly relevant to the functional test cases that were written first in the project",
+        "A baseline loses its value once the system has been optimised for the first time",
+        "A baseline gives a reference point against which later results can be compared to detect regressions"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "A performance baseline provides a reference point for comparison, enabling teams to detect performance regressions or improvements as the system changes over time."
     },
     {
@@ -474,10 +474,10 @@
       "difficulty": "medium",
       "question": "What is a key task during performance test execution regarding monitoring?",
       "options": [
-        "Avoid monitoring system resources so as not to affect performance",
-        "Monitor system resources (CPU, memory, network, database) alongside application-level metrics to correlate performance issues with root causes",
-        "Only monitor the tester's own workstation performance",
-        "Disable all logging during test execution to save disk space"
+        "Avoid monitoring system resources altogether so that measurement overhead cannot affect the results",
+        "Monitor system resources alongside application-level metrics so that issues can be linked to root causes",
+        "Monitor only the tester's own workstation, because that is where the results are viewed and stored",
+        "Monitor only the tester's workstation and the load generators, because the system under test should not be touched during the run"
       ],
       "correctIndex": 1,
       "explanation": "Monitoring system resources (CPU, memory, network, disk I/O, database) alongside application-level metrics during test execution helps correlate observed performance issues with their underlying root causes."
@@ -489,10 +489,10 @@
       "difficulty": "hard",
       "question": "During test execution, response times degrade significantly after 30 minutes under sustained load, then stabilize at a higher plateau. What should the performance tester investigate first?",
       "options": [
-        "Whether a resource (e.g., a connection pool or cache) reached a threshold or saturation point, causing a shift in system behavior",
-        "Whether the test data used spelling matched the production database's schema exactly",
-        "Whether the marketing team approved the release notes",
-        "Whether the UI color scheme changed during the test"
+        "Whether a resource such as a connection pool or cache reached a threshold, changing the system's behaviour",
+        "Whether the spelling used in the test data matched the production database schema, since a mismatch would also slow down the queries",
+        "Whether the spelling in the test data matched the production database schema exactly",
+        "Whether the marketing team had approved the release notes before the test was started"
       ],
       "correctIndex": 0,
       "explanation": "A response time shift that stabilizes at a new, degraded plateau often indicates a resource (such as a connection pool, cache, or thread pool) reaching a saturation point or threshold, which is a natural first investigation area."
@@ -504,13 +504,13 @@
       "difficulty": "medium",
       "question": "What is an important consideration when preparing test data for a performance test?",
       "options": [
-        "Test data should be minimal in volume, regardless of production data characteristics",
-        "Test data should represent realistic data volumes and variety similar to production, to produce valid and meaningful results",
-        "Test data preparation is unnecessary since performance tests do not use data",
-        "Test data should always be manually typed in during test execution"
+        "Test data should be kept minimal in volume so the test finishes quickly, regardless of production characteristics",
+        "Test data should be kept small so the test finishes quickly, as the volume of data does not influence the measured response times",
+        "Test data should be typed in manually by testers while the test is running to stay realistic",
+        "Test data should represent realistic data volumes and variety similar to production, to produce valid and meaningful results"
       ],
-      "correctIndex": 1,
-      "explanation": "Realistic performance test data \u2014 reflecting production-like volumes, distributions, and variety \u2014 is essential to producing valid, meaningful, and representative test results."
+      "correctIndex": 3,
+      "explanation": "Realistic performance test data — reflecting production-like volumes, distributions, and variety — is essential to producing valid, meaningful, and representative test results."
     },
     {
       "id": "pt-035",
@@ -519,12 +519,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a common feature of performance testing tools used to simulate multiple concurrent users?",
       "options": [
-        "Virtual user (load generation) capability that simulates many simultaneous users interacting with the system",
-        "Automatic generation of the entire product's source code",
-        "Automatic translation of the user interface into multiple languages",
-        "Automatic creation of the project's marketing plan"
+        "Automatic creation of the project's marketing plan from observed user behaviour",
+        "Automatic generation of the application's source code from the recorded transactions",
+        "Virtual user capability that simulates many simultaneous users interacting with the system",
+        "Automatic translation of the user interface into several languages for global testing"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "A core feature of performance testing tools is virtual user (load generation) capability, which simulates many simultaneous users or transactions against the system under test without requiring that many physical users."
     },
     {
@@ -534,12 +534,12 @@
       "difficulty": "medium",
       "question": "Why might a performance tester choose a protocol-level (e.g., HTTP) load testing tool over a GUI-driven one for large-scale load tests?",
       "options": [
-        "Protocol-level tools typically require far fewer system resources per virtual user, enabling larger-scale simulations than GUI-driven approaches",
-        "Protocol-level tools cannot generate any meaningful load",
-        "GUI-driven tools always scale better for large numbers of virtual users",
-        "Protocol-level tools are incapable of simulating concurrent users"
+        "They scale worse than GUI tools, since each virtual user needs its own full browser instance",
+        "They cannot simulate concurrent users, only users who work one after another in sequence",
+        "They produce less meaningful load, because they skip the graphical front end of the application",
+        "They typically need far fewer resources per virtual user, so much larger loads can be generated"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Protocol-level tools interact directly with the underlying communication protocol (e.g., HTTP) rather than driving a full browser/GUI per virtual user, which typically requires far fewer resources and allows much larger-scale load simulations."
     },
     {
@@ -549,12 +549,12 @@
       "difficulty": "medium",
       "question": "Which type of tool would a performance tester use to correlate application response times with underlying server resource usage during a test?",
       "options": [
-        "A requirements management tool",
-        "A system/infrastructure monitoring tool (e.g., tracking CPU, memory, disk I/O, and network in real time)",
-        "A defect tracking tool",
-        "A word processor"
+        "A requirements management tool that links each requirement to the test cases that cover it",
+        "A requirements management tool that links each requirement to the test cases that cover it and reports the coverage achieved",
+        "A defect tracking tool that records and prioritises the issues found during testing",
+        "A system or infrastructure monitoring tool that tracks CPU, memory, disk I/O, and network in real time"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "System/infrastructure monitoring tools capture real-time resource usage (CPU, memory, disk I/O, network), which testers correlate with application-level response times to diagnose performance bottlenecks."
     },
     {
@@ -564,12 +564,12 @@
       "difficulty": "medium",
       "question": "When analyzing performance test results, what does a sudden sharp increase in response time at a specific concurrent user count typically suggest?",
       "options": [
-        "The system has reached a bottleneck or saturation point at that load level",
-        "The test data was entered in the wrong order",
-        "The test was executed on the wrong day of the week",
-        "The tester made a typographical error in the test script"
+        "The test was executed on a day when the network is known to be slower than normal",
+        "The test data was loaded in the wrong order, which slows down processing at that user count",
+        "The tester made a typing mistake in the script when the user count was configured",
+        "The system has reached a bottleneck or saturation point at that load level"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "A sharp increase in response time at a specific load level typically indicates the system has reached a bottleneck or resource saturation point, which is a key finding to report and investigate further."
     },
     {
@@ -579,12 +579,12 @@
       "difficulty": "medium",
       "question": "Why should percentile response times (e.g., 90th or 95th percentile) be reported in addition to the average response time?",
       "options": [
-        "Percentiles have no additional analytical value beyond the average",
-        "Percentiles reveal the experience of slower-performing requests that an average alone can mask, providing a more complete picture of user experience",
-        "Percentiles are only relevant for functional testing",
-        "Reporting percentiles is required only for stress tests, never for load tests"
+        "They show the experience of slower requests that an average can mask, giving a fuller picture of user experience",
+        "They add little analytical value, because the average already summarises every response time in a single figure that is easy to report",
+        "They add little analytical value, because the average already summarises every response time",
+        "They matter mainly for functional testing, where each response must be checked individually"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Averages can mask the experience of a significant portion of users who experience slower response times; percentile metrics (e.g., 95th percentile) reveal this tail-end behavior, giving a more complete picture of real user experience."
     },
     {
@@ -594,12 +594,12 @@
       "difficulty": "hard",
       "question": "A performance test report shows that response times meet targets, but CPU utilization on the application server is consistently above 90% throughout the test. What should the tester recommend?",
       "options": [
-        "No action is needed since response time targets were met",
-        "Flag the high CPU utilization as a risk, since there may be little headroom for handling higher loads or unexpected spikes, and recommend further investigation or capacity planning",
-        "Immediately conclude the application has failed the performance test regardless of response times",
-        "Recommend removing all monitoring since it is not useful information"
+        "Declare the test failed, because CPU utilisation above 90% violates the acceptance criteria whether or not the response times were met",
+        "Recommend removing CPU monitoring, since the response time results already show the outcome",
+        "Declare the test failed, because CPU utilisation above 90% always violates the acceptance criteria",
+        "Flag the high CPU as a risk, because little headroom remains, and suggest further investigation or capacity planning"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Even if response time targets are currently met, consistently high resource utilization (like CPU above 90%) indicates little headroom for growth or unexpected spikes, and should be flagged as a risk warranting further investigation or capacity planning, rather than ignored."
     },
     {
@@ -608,12 +608,12 @@
       "difficulty": "easy",
       "question": "Which statement best describes why performance testing matters to business stakeholders?",
       "options": [
-        "It helps confirm that coding style rules were followed consistently",
-        "It provides evidence that the system can support expected user activity without unacceptable delays that hurt revenue or reputation",
-        "It guarantees that every future release will contain no defects of any kind",
-        "It replaces the need for operational monitoring after go-live"
+        "It provides evidence that the system can support expected activity without delays that hurt revenue or reputation",
+        "It confirms that the team followed the agreed coding style rules throughout the project, which reduces maintenance costs for the business",
+        "It guarantees that future releases will be free of defects of any kind, including functional ones",
+        "It confirms that the team followed the agreed coding style rules throughout the whole project"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Business stakeholders care because slow or unstable systems can reduce conversions, damage trust, and increase operating cost. Performance testing provides evidence before release.",
       "id": "pt-041"
     },
@@ -623,10 +623,10 @@
       "difficulty": "easy",
       "question": "Which of the following is the BEST example of a measurable performance requirement?",
       "options": [
-        "The application should feel modern to users",
-        "The system should be fast most of the time",
+        "The website shall use a responsive design that adapts well to different screen sizes",
+        "The system should be fast for most users during the typical working hours of the day",
         "Ninety-five percent of payment submissions shall complete within 3 seconds at 200 orders per minute",
-        "The website shall use responsive design"
+        "The application should feel modern and responsive to users on all of the common devices"
       ],
       "correctIndex": 2,
       "explanation": "A useful performance requirement is measurable and tied to both a metric and a workload. Vague terms like fast or modern are not testable enough.",
@@ -638,10 +638,10 @@
       "difficulty": "easy",
       "question": "In a workload model, what does think time represent?",
       "options": [
-        "The time a server thread spends waiting for a database lock",
+        "The time needed to compile and package the test scripts before the test run is started",
         "The pause between one user action and the next, representing how real people interact with the system",
-        "The delay inserted by the monitoring tool before saving results",
-        "The time needed to compile the test scripts"
+        "The time a server thread spends waiting for a database lock to be released by another transaction that is still running",
+        "The time a server thread spends waiting for a database lock to be released by another transaction"
       ],
       "correctIndex": 1,
       "explanation": "Think time models the natural pause between user actions, such as reading a page or deciding what to click next. Without it, the test may overstate user intensity.",
@@ -653,12 +653,12 @@
       "difficulty": "medium",
       "question": "What is the main difference between an open workload model and a closed workload model?",
       "options": [
-        "An open model is based on arriving work over time, while a closed model keeps a fixed set of virtual users cycling through transactions",
-        "An open model uses only public APIs, while a closed model requires authentication",
-        "An open model is for GUI tests only, while a closed model is for protocol tests only",
-        "There is no practical difference between the two models"
+        "An open model is intended for GUI-based tests, while a closed model is intended for protocol-level tests",
+        "An open model uses only public APIs, while a closed model requires authenticated user sessions",
+        "An open model is meant for GUI-based tests, while a closed model is meant for protocol-level tests that run without any browser",
+        "An open model is driven by arriving work over time, while a closed model keeps a fixed set of users cycling"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Open models focus on arrival rate, such as requests per second. Closed models focus on a set number of concurrent users repeatedly executing actions.",
       "id": "pt-044"
     },
@@ -668,12 +668,12 @@
       "difficulty": "easy",
       "question": "Why is transaction mix important when defining a workload profile?",
       "options": [
-        "It determines the color theme of the performance report",
-        "It ensures the test includes the right proportion of different user actions, such as searching, browsing, and purchasing",
-        "It guarantees that no monitoring data will be needed",
-        "It is relevant only after the test has already finished"
+        "It sets the number of load generator machines needed, so that the test needs no separate decision about the number of virtual users",
+        "It sets the number of load generators required, independent of the number of virtual users",
+        "It ensures the test contains the right proportion of different actions, such as searching, browsing, and buying",
+        "It matters only after the run, when results from different transaction types are compared"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Different transactions exercise different system components. A realistic mix is needed so the workload reflects actual production behavior.",
       "id": "pt-045"
     },
@@ -683,12 +683,12 @@
       "difficulty": "easy",
       "question": "What does scalability describe in the context of performance testing?",
       "options": [
-        "How well the system continues to meet performance goals as workload or resources increase",
-        "How attractive the graphical user interface looks on large screens",
-        "How often the development team deploys application changes",
-        "How many functional requirements were approved by stakeholders"
+        "How many functional requirements were approved by stakeholders before the release",
+        "How attractive and consistent the graphical interface looks on large screens",
+        "How frequently the development team is able to deploy changes to production",
+        "How well the system continues to meet performance goals as workload or resources increase"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Scalability is about how performance changes as demand grows and, where applicable, as capacity is added. It helps teams understand future growth limits.",
       "id": "pt-046"
     },
@@ -698,10 +698,10 @@
       "difficulty": "medium",
       "question": "Which statement best distinguishes latency from end-to-end response time?",
       "options": [
-        "Latency is the full time a user waits for a business process to complete, while response time is only network delay",
-        "Latency typically refers to delay in transmitting or receiving data, while response time covers the total elapsed time for the request and its processing",
-        "Latency and response time are always identical in any system",
-        "Latency is measured only for batch jobs, not online systems"
+        "Latency is the full time a user waits for a business process to finish, while response time is only the delay on the network link",
+        "Latency usually refers to the delay in transmitting data, while response time covers the whole elapsed time including processing",
+        "Latency is the whole time a user waits for a business process to finish, while response time is only network delay",
+        "The two terms mean exactly the same thing in any system and can be used interchangeably in reports"
       ],
       "correctIndex": 1,
       "explanation": "Latency is often one component of the overall wait. Response time usually includes network delay plus application and backend processing.",
@@ -713,10 +713,10 @@
       "difficulty": "easy",
       "question": "A test plan specifies 1,000 logged-in accounts, but only 150 users will actively perform transactions at the same moment. Which metric is most directly described by 150?",
       "options": [
-        "Code coverage",
-        "Concurrency",
         "Data retention period",
-        "Defect density"
+        "Concurrency",
+        "Defect density",
+        "Code coverage"
       ],
       "correctIndex": 1,
       "explanation": "Concurrency refers to how many users or sessions are active at the same time. Total registered or logged-in accounts do not necessarily equal concurrent activity.",
@@ -728,12 +728,12 @@
       "difficulty": "medium",
       "question": "What is a key advantage of discussing performance risks during requirements and architecture work rather than waiting until system test?",
       "options": [
-        "It avoids the need to define measurable acceptance criteria later",
+        "It guarantees that production monitoring will not be required after release",
+        "It removes the need to define measurable acceptance criteria later in the project",
         "It can reveal costly design issues early, when they are still cheaper to change",
-        "It guarantees that no production monitoring will be necessary",
-        "It removes the need for functional testing"
+        "It makes functional testing unnecessary because the architecture is already validated"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Early attention to performance can influence architecture, capacity assumptions, and interfaces before they become expensive to rework. This is a core shift-left benefit.",
       "id": "pt-049"
     },
@@ -743,12 +743,12 @@
       "difficulty": "hard",
       "question": "A page appears quick in a developer laptop demo but becomes slow in a realistic performance environment. Which explanation is MOST plausible?",
       "options": [
-        "The developer laptop is always less powerful than test servers, so the result must be a measurement mistake",
-        "Realistic data volume, network conditions, shared infrastructure, or backend contention may expose delays absent in a simplified local setup",
-        "Performance is determined only by browser rendering, so backend conditions cannot matter",
-        "The difference proves the application contains a functional defect rather than a performance issue"
+        "The laptop is always weaker than the test servers, so the earlier demo result must have been a measurement error",
+        "The laptop is more powerful than the test servers, so the first result must have been correct and the later one a measurement error",
+        "Realistic data volume, network conditions, shared infrastructure, or backend contention may reveal delays that a local setup hides",
+        "Performance is determined by browser rendering alone, so backend conditions cannot explain the difference"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Local demos often omit production-like data size, contention, integration calls, and network effects. Those factors can materially change observed performance.",
       "id": "pt-050"
     },
@@ -758,10 +758,10 @@
       "difficulty": "medium",
       "question": "Which statement BEST reflects how the severity of a performance problem is usually judged?",
       "options": [
-        "By the programming language used to build the component",
+        "By the programming language and framework that were used to implement the component in which the slowdown was first observed",
         "By the business, user, and operational impact of the slowdown or instability under expected conditions",
-        "By whether the problem occurs on a Friday rather than another day",
-        "By the number of screenshots included in the defect report"
+        "By whether the problem happened to occur on a Friday rather than on any other day of the week",
+        "By the number of screenshots that were attached to the defect report describing the problem"
       ],
       "correctIndex": 1,
       "explanation": "A small delay in a low-value function may matter less than a moderate slowdown in checkout or login. Severity depends on impact, not just raw milliseconds.",
@@ -774,9 +774,9 @@
       "question": "Which of the following is the strongest reason to define performance targets in terms of both workload and quality level?",
       "options": [
         "Because a time target without context does not say under what demand it must still be achieved",
-        "Because metrics should always be hidden from stakeholders until the project ends",
-        "Because performance targets are useful only for infrastructure teams",
-        "Because workload definitions are unrelated to user experience"
+        "Because metrics should be kept hidden from stakeholders until the project has ended",
+        "Because workload definitions have no connection to the experience of end users",
+        "Because performance targets are relevant only to the infrastructure and operations teams"
       ],
       "correctIndex": 0,
       "explanation": "A target such as under 2 seconds is incomplete unless it states the relevant workload, for example at 500 concurrent users or 100 requests per second.",
@@ -789,9 +789,9 @@
       "question": "In performance testing, what is a business transaction?",
       "options": [
         "A meaningful end-user action or workflow, such as placing an order, that the test measures as a unit",
-        "A finance department approval step for buying new servers",
-        "Any line of code changed during a sprint",
-        "A legal agreement between the tool vendor and the project"
+        "A finance approval step that has to be completed before the project is allowed to purchase additional servers for the test",
+        "A contractual agreement between the tool vendor and the project about licence terms",
+        "Any line of code that was changed during a sprint and affects response handling"
       ],
       "correctIndex": 0,
       "explanation": "Performance testing often measures business transactions because they represent the activities that matter to users and stakeholders. Examples include login, search, and checkout.",
@@ -803,10 +803,10 @@
       "difficulty": "easy",
       "question": "Which description BEST matches a bottleneck?",
       "options": [
-        "A resource or component that limits overall system throughput or causes growing delay under load",
-        "A security certificate used by the load generators",
-        "A script naming convention in the test repository",
-        "A method for compressing log files after the test"
+        "A resource or component that limits overall throughput or causes growing delay under load",
+        "A naming convention that the team applies to scripts in the test repository",
+        "A security certificate that the load generators use to authenticate to the system",
+        "A method for compressing log files after a test has finished, to save disk space"
       ],
       "correctIndex": 0,
       "explanation": "A bottleneck is the constraining part of the system. It prevents the rest of the system from delivering better overall performance.",
@@ -818,12 +818,12 @@
       "difficulty": "easy",
       "question": "Why is a warm-up period often used before collecting formal measurements in a performance test?",
       "options": [
-        "To allow caches, connections, and just-in-time compilation effects to stabilize so the measurements better reflect steady-state behavior",
-        "To hide defects that occur at the beginning of a test",
-        "To ensure the tool produces exactly zero errors in the logs",
-        "To make throughput numbers appear artificially lower"
+        "To lower the throughput figures slightly, so that results appear more conservative to stakeholders",
+        "To hide defects that tend to occur at the start of a test, so the reports look cleaner",
+        "To hide the defects that tend to occur at the start of a test, so that the measurements look cleaner in the report to stakeholders",
+        "To let caches, connections, and JIT compilation stabilise so the measurements reflect steady-state behaviour"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Many systems behave differently when first started. Warm-up helps separate startup effects from representative steady-state measurements.",
       "id": "pt-055"
     },
@@ -833,12 +833,12 @@
       "difficulty": "hard",
       "question": "Which statement best distinguishes elasticity from scalability?",
       "options": [
-        "Elasticity is about automatically adjusting capacity as demand changes, while scalability is the broader ability to handle growth effectively",
-        "Elasticity refers only to user interface responsiveness, while scalability refers only to batch processing speed",
-        "Scalability requires cloud infrastructure, while elasticity works only on-premises",
-        "They are unrelated to performance testing concerns"
+        "Elasticity refers to the responsiveness of the user interface under load, while scalability refers to the speed of overnight batch processing",
+        "Elasticity is the responsiveness of the user interface, while scalability is the speed of batch processing",
+        "Elasticity is the automatic adjustment of capacity as demand changes, while scalability is the wider ability to handle growth",
+        "Scalability requires cloud infrastructure, while elasticity can be achieved only on on-premises hardware"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Scalability concerns growth behavior in general. Elasticity is specifically about adapting capacity up or down, often automatically, as load changes.",
       "id": "pt-056"
     },
@@ -848,12 +848,12 @@
       "difficulty": "medium",
       "question": "A team models every virtual user as sending requests continuously without pause, even though production users spend time reading screens. What is the main risk?",
       "options": [
+        "The monitoring data will no longer need timestamps since the load is constant",
+        "The test automatically becomes a valid spike test of the production behaviour",
         "The test may apply an unrealistically intense workload and lead to misleading conclusions about capacity needs",
-        "The test will automatically become a valid spike test",
-        "The system will always appear faster than in production",
-        "The monitoring data will no longer need timestamps"
+        "The system will appear to have more spare capacity than it really has, because requests are spread evenly"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Ignoring realistic think time usually increases request frequency beyond real user behavior. That can distort transaction mix and capacity conclusions.",
       "id": "pt-057"
     },
@@ -863,12 +863,12 @@
       "difficulty": "medium",
       "question": "Why should an online workload model sometimes include background jobs such as report generation or scheduled synchronization?",
       "options": [
-        "Because background activity can consume the same shared resources as interactive users and change observed performance",
-        "Because online and background processing never affect each other",
-        "Because scheduled jobs are relevant only for security testing",
-        "Because including them automatically removes the need for monitoring"
+        "Scheduled jobs matter for security testing, but they have no influence on performance results",
+        "Background activity can use the same shared resources as interactive users and change the observed performance",
+        "Including them removes the need to monitor resource usage during the test, as their load is known",
+        "Background activity runs independently of online processing and has no effect on interactive response times"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Background processing can compete for CPU, memory, I/O, or database capacity. Excluding it may make a test less representative of production behavior.",
       "id": "pt-058"
     },
@@ -878,12 +878,12 @@
       "difficulty": "hard",
       "question": "Which requirement is MOST suitable for verifying user experience risk on a busy self-service portal?",
       "options": [
-        "The portal should use a clean layout and clear navigation labels",
         "At least 95% of account-balance requests shall finish within 2 seconds during the lunchtime peak profile",
-        "The portal code shall be reviewed before each release",
-        "The operations team shall receive daily status emails"
+        "The portal should use a clean layout and clear navigation labels on every page",
+        "The operations team shall receive a daily status email summarising overnight activity",
+        "The portal shall use a clean layout with clear navigation labels, so that users can find the account functions on every page"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "User-experience performance risk is best addressed by a measurable service-level statement tied to a concrete usage period and transaction.",
       "id": "pt-059"
     },
@@ -893,12 +893,12 @@
       "difficulty": "easy",
       "question": "A service continues operating under high load by slowing noncritical features first instead of failing everything at once. This is an example of: ",
       "options": [
+        "Functional equivalence partitioning",
         "Graceful degradation",
         "Static code analysis",
-        "Data masking",
-        "Functional equivalence partitioning"
+        "Data masking"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Graceful degradation means the system preserves critical capability, often by reducing less important work, when demand exceeds ideal operating conditions.",
       "id": "pt-060"
     },
@@ -908,10 +908,10 @@
       "difficulty": "hard",
       "question": "Which statement best explains why arrival rate and concurrency should not be treated as interchangeable?",
       "options": [
-        "Arrival rate is about how much data is stored, while concurrency is about test duration",
-        "Concurrency describes simultaneous active work, while arrival rate describes how frequently new work enters the system; the two can vary independently",
-        "Both metrics are identical whenever think time is greater than zero",
-        "Only concurrency matters in performance testing"
+        "Arrival rate is the amount of data kept in the system, while concurrency is how long the test runs before the results are collected",
+        "Concurrency is the amount of simultaneous active work, while arrival rate is how often new work enters; they vary independently",
+        "Only concurrency matters for performance, because arrival rate can always be derived from it automatically",
+        "Both metrics are identical whenever think time is greater than zero, so either one can be specified"
       ],
       "correctIndex": 1,
       "explanation": "A system may have high concurrency with modest arrival rate or vice versa, depending on transaction duration and pacing. Good workload models recognize both dimensions.",
@@ -924,9 +924,9 @@
       "question": "Which statement best captures the role of service-level objectives in performance testing?",
       "options": [
         "They define measurable expectations that tests can verify against agreed workload conditions",
-        "They are informal notes used only after defects have already been fixed",
-        "They replace the need for test environments and data preparation",
-        "They are useful only for manual exploratory testing"
+        "They replace the need for a test environment and for preparing test data",
+        "They are useful for manual exploratory testing but cannot be checked by automated tests",
+        "They are informal notes written after defects have been fixed and are not used for verification"
       ],
       "correctIndex": 0,
       "explanation": "Service-level objectives turn stakeholder expectations into measurable targets. Performance tests can then assess whether the system meets them.",
@@ -938,12 +938,12 @@
       "difficulty": "medium",
       "question": "During a ramp-up, throughput keeps increasing but response time grows rapidly after 400 users. What does this usually suggest?",
       "options": [
+        "The test environment now matches production exactly, so the results are final",
         "The system is approaching saturation and serving extra work less efficiently",
-        "The workload has become functionally invalid and the results should be ignored automatically",
-        "The test environment now matches production perfectly",
-        "The monitoring agents must have stopped collecting metrics"
+        "The workload has become functionally invalid and the measurements should be discarded",
+        "The monitoring agents have stopped collecting data, so the figures are not reliable"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Near saturation, a system may still process more work but at the cost of disproportionate delay. Queueing effects often become visible at that point.",
       "id": "pt-063"
     },
@@ -953,12 +953,12 @@
       "difficulty": "easy",
       "question": "What is the primary goal of volume testing?",
       "options": [
-        "To assess behavior when the system handles large amounts of data, such as very large tables, files, or message backlogs",
-        "To identify the precise spelling of database column names",
-        "To verify that the user manual contains all screenshots",
-        "To run the system with a fixed number of users for exactly one minute"
+        "To check the system with a large number of users who are all active at the very same moment",
+        "To check the system with a very large number of users who are all active at exactly the same moment, as in a flash sale",
+        "To identify the exact spelling of the database column names across all schemas of the system",
+        "To assess behaviour when the system handles large amounts of data, such as big tables, files, or message backlogs"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Volume testing focuses on data size rather than only user concurrency. Large datasets can affect indexing, search, storage, and processing performance.",
       "id": "pt-064"
     },
@@ -968,12 +968,12 @@
       "difficulty": "easy",
       "question": "What does scalability testing mainly try to discover?",
       "options": [
-        "Whether the system remains effective as load and, where possible, capacity are increased according to a growth pattern",
-        "Whether a single transaction can be automated with a GUI tool",
-        "Whether defect reports include enough attachments",
-        "Whether the team has selected the cheapest monitoring product"
+        "Whether the team has chosen the lowest-priced monitoring product among those that were evaluated for use in the test environment",
+        "Whether the system remains effective as load and, where possible, capacity grow according to a growth pattern",
+        "Whether a single transaction can be automated using a GUI-based test tool for regression purposes",
+        "Whether the defect reports contain enough attachments to reproduce each failure that was observed"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Scalability testing explores how performance changes across growth steps. It helps estimate future limits and the benefit of adding resources.",
       "id": "pt-065"
     },
@@ -983,10 +983,10 @@
       "difficulty": "medium",
       "question": "Which statement BEST distinguishes spike testing from stress testing?",
       "options": [
-        "Spike testing examines abrupt workload changes, while stress testing is concerned with behavior beyond normal capacity whether or not the increase is sudden",
-        "Stress testing uses metrics, while spike testing does not",
-        "Spike testing is only for mobile apps, while stress testing is only for web apps",
-        "There is no overlap at all between the two test types"
+        "Spike testing examines abrupt workload changes, while stress testing examines behaviour beyond capacity, sudden or not",
+        "Stress testing relies on metrics, while spike testing is purely observational and records no measurements",
+        "Stress testing depends on metrics, while spike testing is purely observational and records no measurements during the sudden change",
+        "Spike testing applies only to mobile apps, while stress testing applies only to web applications"
       ],
       "correctIndex": 0,
       "explanation": "Spike testing emphasizes sudden changes in demand and recovery behavior. Stress testing emphasizes operation beyond expected limits and failure characteristics.",
@@ -998,12 +998,12 @@
       "difficulty": "medium",
       "question": "Why can queue length be a useful supporting metric during performance analysis?",
       "options": [
-        "It can show work waiting to be processed, which often explains rising response times even before throughput collapses",
-        "It replaces the need to measure response time directly",
-        "It proves that all requests are successful when the queue is non-empty",
-        "It is relevant only for the load generator machines"
+        "It can replace direct measurement of response time when the response time cannot be captured",
+        "It can replace direct measurement of response time in cases where the response time cannot be captured by the load tool",
+        "It is relevant only on the load generator machines, and not on the system under test",
+        "It shows work waiting to be processed, which often explains rising response times before throughput collapses"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "When demand exceeds service capacity, requests may begin waiting in queues. Growing queue length often correlates with increasing latency and saturation.",
       "id": "pt-067"
     },
@@ -1013,12 +1013,12 @@
       "difficulty": "easy",
       "question": "Which metric most directly shows how many requests failed during a test?",
       "options": [
+        "Data retention",
         "Error rate",
-        "Thread count",
         "Network bandwidth",
-        "Data retention"
+        "Thread count"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Error rate reports the proportion or count of failed transactions. It is essential because fast failures are still failures.",
       "id": "pt-068"
     },
@@ -1028,12 +1028,12 @@
       "difficulty": "hard",
       "question": "Response times worsen during a test while CPU stays moderate, disk wait is high, and database reads increase sharply. Which bottleneck is MOST likely?",
       "options": [
+        "An invalid requirement identifier in the test plan affecting traceability",
+        "Insufficient network bandwidth between the application and the web tier",
         "Disk or storage I/O contention affecting the database layer",
-        "A lack of virtual users in the load generator",
-        "An invalid requirement identifier in the test plan",
-        "Excessive screen resolution in the tester's monitor"
+        "A shortage of virtual users in the load generator limiting the applied load"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "High storage wait together with rising read activity points toward I/O contention. Moderate CPU suggests raw compute is not the dominant limit.",
       "id": "pt-069"
     },
@@ -1043,12 +1043,12 @@
       "difficulty": "easy",
       "question": "If a service is sensitive to network round trips, which change is MOST likely to increase user-perceived delay even when server CPU is unchanged?",
       "options": [
-        "Higher network latency between clients and the service",
-        "A larger monitor attached to the operator workstation",
-        "Shorter release notes in the deployment ticket",
-        "A lower number of comments in the test script"
+        "Fewer comments in the load test scripts used to drive the transactions",
+        "A larger monitor attached to the tester's workstation used to view the dashboards",
+        "Shorter release notes in the deployment ticket for the latest build",
+        "Higher network latency between clients and the service"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "When interactions involve multiple requests and responses, higher network latency directly increases end-to-end wait time even if server-side processing time stays constant.",
       "id": "pt-070"
     },
@@ -1058,12 +1058,12 @@
       "difficulty": "medium",
       "question": "Why can tail latency be a business risk even when average response time looks acceptable?",
       "options": [
-        "Because averages may hide a meaningful minority of very slow requests that still damage user experience or time-sensitive operations",
-        "Because averages are never allowed in performance reports",
-        "Because tail latency is relevant only for developer workstations",
-        "Because percentiles and averages always move in opposite directions"
+        "Averages are not permitted in performance reports under any standard, so only tail values may be shown",
+        "Tail latency matters only on developer workstations and does not affect shared production environments",
+        "Averages are not permitted in performance reports under any standard, so only tail values such as percentiles may be reported",
+        "Averages can hide a meaningful minority of very slow requests that still harm users or time-sensitive operations"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Averages smooth out extremes. A system may have an acceptable mean while still delivering too many slow experiences to real users.",
       "id": "pt-071"
     },
@@ -1073,12 +1073,12 @@
       "difficulty": "medium",
       "question": "A system meets current response-time targets but runs with 92% CPU at expected peak. Why is this still a performance risk?",
       "options": [
-        "Because there is little capacity headroom for growth, noisy neighbors, or traffic spikes",
-        "Because CPU metrics are irrelevant when targets are met",
-        "Because high CPU always proves a memory leak",
-        "Because the workload must have been measured incorrectly"
+        "Because a CPU level this high proves that the application contains a memory leak",
+        "Because the workload must have been measured incorrectly if the targets were still met",
+        "Because CPU metrics carry no meaning once the response time targets have been met",
+        "Because there is little capacity headroom for growth, noisy neighbors, or traffic spikes"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Meeting current targets does not guarantee resilience. High utilization leaves little room for variability, failover scenarios, or future demand increases.",
       "id": "pt-072"
     },
@@ -1088,12 +1088,12 @@
       "difficulty": "hard",
       "question": "An application experiences short demand bursts every time a marketing email is sent. Which risk is MOST relevant?",
       "options": [
-        "The system may be unable to absorb sudden arrival spikes quickly enough, causing queue growth and temporary failures",
-        "The database schema names may be too short",
-        "The performance report may contain too many charts",
-        "The source repository may exceed file size limits"
+        "The source repository may grow beyond the file size limits that are set by the hosting platform",
+        "The database schema may use column names that are too short to remain descriptive as the data model grows over the coming years",
+        "The system may be unable to absorb sudden arrival spikes quickly, causing queue growth and temporary failures",
+        "The database schema may use column names that are too short to remain descriptive over time"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Bursty demand can overwhelm admission control, queues, connection pools, or autoscaling lag. That makes transient but business-critical degradation a key risk.",
       "id": "pt-073"
     },
@@ -1104,9 +1104,9 @@
       "question": "After a deployment, the first minutes of traffic show slower responses because caches are empty. Which product risk does this illustrate?",
       "options": [
         "Cold-start or cache-warm-up performance risk",
-        "Accessibility compliance risk",
-        "Version-control branching risk",
-        "Requirements traceability risk"
+        "Requirements traceability risk caused by missing links between tests and needs",
+        "Accessibility compliance risk for users relying on assistive technology",
+        "Version-control branching risk caused by parallel changes to the release"
       ],
       "correctIndex": 0,
       "explanation": "Cold systems often behave differently from warmed-up systems. Empty caches or freshly started services can temporarily reduce performance after release or restart.",
@@ -1118,12 +1118,12 @@
       "difficulty": "easy",
       "question": "Which statement BEST describes capacity testing?",
       "options": [
-        "It estimates the load level or data volume the system can support while still meeting defined targets",
-        "It proves that the application contains no logic defects",
-        "It validates that monitoring agents were installed correctly",
-        "It is the same thing as code review"
+        "It validates that the monitoring agents have been installed on every server in the environment",
+        "It demonstrates that the application contains no logic defects at the supported load",
+        "It demonstrates that the application contains no logic defects at the supported load level, as the system is checked end to end",
+        "It estimates the load level or data volume the system can support while still meeting defined targets"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Capacity testing is concerned with supported demand relative to agreed objectives. It is often used to inform scaling and provisioning decisions.",
       "id": "pt-075"
     },
@@ -1133,12 +1133,12 @@
       "difficulty": "hard",
       "question": "Which observation would MOST strongly suggest resource exhaustion rather than a simple one-time slowdown?",
       "options": [
-        "Available file descriptors or connections steadily approach zero while failures increase under sustained load",
-        "One response takes slightly longer during script startup",
-        "The tester renames a report file after the run",
-        "CPU utilization is low during an idle period"
+        "One response takes slightly longer than the others during the start-up of the load script, before the first measured transaction",
+        "One response takes slightly longer than the others during the start-up of the load script",
+        "The tester renames the report file after the run has been completed and archived",
+        "Available file descriptors or connections steadily approach zero while failures increase under sustained load"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Exhaustion means a finite resource is being consumed until little or none remains. That often leads to escalating failures and unstable recovery.",
       "id": "pt-076"
     },
@@ -1148,12 +1148,12 @@
       "difficulty": "hard",
       "question": "During a test, application pauses occur periodically while memory usage forms a saw-tooth pattern and CPU briefly spikes. What is a likely explanation?",
       "options": [
+        "The workload model switching from a closed to an open model on its own",
         "Garbage collection or memory reclamation activity affecting latency",
-        "A network cable becoming longer every few minutes",
-        "A hidden defect in the report title",
-        "The workload model switching from closed to open automatically"
+        "A defect in the title of the report that is generated after the run",
+        "A network cable whose effective length changes every few minutes during the run"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Saw-tooth memory with periodic pauses is a common sign of garbage collection or similar memory management cycles. These can introduce latency spikes.",
       "id": "pt-077"
     },
@@ -1163,12 +1163,12 @@
       "difficulty": "medium",
       "question": "A team optimizes a slow database query, and later the next test run shows a new hotspot in the application server thread pool. What does this demonstrate?",
       "options": [
+        "The original optimisation was invalid and should be reverted before the next run",
+        "Thread pools and databases are independent, so the new hotspot is a coincidence",
         "Bottlenecks can shift after an earlier constraint is removed",
-        "The original optimization must have been invalid",
-        "Performance testing should stop after the first defect is fixed",
-        "Thread pools and databases cannot affect each other"
+        "Performance testing should stop once the first defect has been fixed and verified"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Once one limiting factor is relieved, another may become dominant. Performance optimization is often iterative for this reason.",
       "id": "pt-078"
     },
@@ -1179,9 +1179,9 @@
       "question": "If throughput stops increasing even as more load is added, while latency continues to rise, what is the most likely interpretation?",
       "options": [
         "The system has reached or is very near maximum effective capacity",
-        "The tool has automatically converted the test into a functional regression suite",
-        "The workload is too small to produce useful data",
-        "Response time targets have definitely been met"
+        "The response time targets have been met at every load level reached",
+        "The workload is too small to produce useful data, so more users are needed",
+        "The test tool has converted the run into a functional regression suite"
       ],
       "correctIndex": 0,
       "explanation": "A throughput plateau with rising latency is a common symptom of saturation. More demand is being queued or slowed rather than translated into more useful work.",
@@ -1193,10 +1193,10 @@
       "difficulty": "medium",
       "question": "Which statement about pass/fail decisions in performance testing is MOST appropriate?",
       "options": [
-        "They should be based on agreed criteria such as response times, throughput, error limits, and business expectations under defined workloads",
-        "They should rely only on whether the graphs look visually smooth",
-        "They should ignore error counts if average latency is low",
-        "They should be made only after the product is released"
+        "They should be based on agreed criteria such as response times, throughput, and error limits under defined workloads",
+        "They should rely on how smooth the graphs look to the people reviewing the results, as visual trends show overall system health",
+        "They should be made only after the product has been released and real users have reported problems",
+        "They should disregard error counts whenever the average latency is low during the measured period"
       ],
       "correctIndex": 0,
       "explanation": "Performance pass or fail should come from explicit acceptance criteria tied to workload and risk. Visual impressions alone are not enough.",
@@ -1208,12 +1208,12 @@
       "difficulty": "hard",
       "question": "Which metric is MOST useful for understanding how efficiently infrastructure is used relative to delivered work?",
       "options": [
+        "The number of requirement documents that stakeholders have approved so far",
+        "The count of comments contained in the load test scripts",
         "A combination of throughput and resource utilization",
-        "The number of requirement documents approved",
-        "The count of comments in the test script",
-        "The color of the monitoring dashboard"
+        "The colour scheme chosen for the monitoring dashboard"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Throughput shows useful work completed, while utilization shows cost in consumed resources. Together they help assess efficiency and headroom.",
       "id": "pt-081"
     },
@@ -1223,12 +1223,12 @@
       "difficulty": "easy",
       "question": "Which of the following is a typical performance-related product risk?",
       "options": [
+        "The sprint retrospective may start later than planned because of scheduling conflicts",
+        "A tester may miss a planning meeting because of an earlier commitment",
         "An overnight batch may overrun its processing window and delay downstream business activities",
-        "The sprint retrospective may start late",
-        "A tester may forget to attend a planning meeting",
-        "The project wiki may use inconsistent heading styles"
+        "The project wiki may use inconsistent heading styles across its pages"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Missing a batch window is a classic product risk because it affects the operational usefulness of the system, even if functionality is correct.",
       "id": "pt-082"
     },
@@ -1238,12 +1238,12 @@
       "difficulty": "medium",
       "question": "Why can stable average response time together with increasing timeout errors still indicate a serious performance problem?",
       "options": [
-        "Because failed requests may be excluded from the average, hiding deteriorating service quality",
-        "Because timeout errors always improve user satisfaction",
-        "Because averages automatically adjust for missing data perfectly",
-        "Because timeouts are unrelated to system performance"
+        "Because timeouts are unrelated to the performance of the system under test",
+        "Because timeout errors tend to improve user satisfaction by shortening the wait",
+        "Because averages adjust automatically for missing data and so remain reliable",
+        "Because failed requests may be excluded from the average, hiding deteriorating service quality"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Averages can be misleading if slow or failed requests are not fully represented. Error behavior must be analyzed alongside latency metrics.",
       "id": "pt-083"
     },
@@ -1253,12 +1253,12 @@
       "difficulty": "hard",
       "question": "Which risk is MOST relevant when autoscaling takes several minutes to add capacity but traffic can surge in seconds?",
       "options": [
+        "Monitoring graphs may no longer be able to display timestamps for the new instances",
         "Short-term overload may occur before additional instances are available",
-        "Functional requirements will become ambiguous",
-        "Source control merge conflicts will increase automatically",
-        "Monitoring graphs will no longer use timestamps"
+        "Source control merge conflicts may increase when more instances are deployed",
+        "Functional requirements may become ambiguous as new instances are added to the pool"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Autoscaling can improve sustained capacity but may not react quickly enough for steep spikes. The lag itself becomes a performance risk.",
       "id": "pt-084"
     },
@@ -1268,12 +1268,12 @@
       "difficulty": "easy",
       "question": "Which activity should guide the selection of scenarios for a first performance test cycle?",
       "options": [
+        "Choosing scenarios alphabetically by feature name so that coverage is easy to track",
+        "Selecting the newest user stories first regardless of their importance to the business",
         "Prioritizing transactions based on business criticality and performance risk",
-        "Selecting only the newest user stories regardless of importance",
-        "Choosing scenarios alphabetically by feature name",
-        "Avoiding any scenario that touches the database"
+        "Skipping any scenario that touches the database, since it is hard to isolate"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Early cycles should focus on the areas with the highest user, business, or architectural risk. Risk-based prioritization improves value.",
       "id": "pt-085"
     },
@@ -1283,10 +1283,10 @@
       "difficulty": "medium",
       "question": "When performance requirements are incomplete, what is the MOST appropriate tester action during planning?",
       "options": [
-        "Work with stakeholders to clarify measurable targets, workloads, and priorities before treating the test as fully defined",
-        "Invent pass criteria privately and avoid discussing them to save time",
-        "Skip performance testing until production incidents occur",
-        "Replace all numeric targets with the phrase acceptable performance"
+        "Work with stakeholders to clarify measurable targets, workloads, and priorities before treating the test as defined",
+        "Define the pass criteria privately and avoid discussing them, to save time during the planning phase",
+        "Write the pass criteria privately and avoid discussing them with stakeholders, to save time and avoid disagreements during planning",
+        "Replace the numeric targets with the phrase acceptable performance so that the plan stays flexible"
       ],
       "correctIndex": 0,
       "explanation": "Performance testing depends on clear expectations. The tester should help elicit and refine measurable criteria rather than guess.",
@@ -1298,12 +1298,12 @@
       "difficulty": "easy",
       "question": "Why is environment isolation desirable for repeatable performance tests?",
       "options": [
+        "It guarantees that performance in production will be identical to the test results",
         "It reduces interference from unrelated workloads that could distort results",
-        "It guarantees production performance will be identical",
-        "It eliminates the need to record test configuration details",
-        "It prevents the use of monitoring tools"
+        "It removes the need to record configuration details of the test environment",
+        "It prevents monitoring tools from being installed on the servers under test"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Shared activity in the same environment can introduce noise and false conclusions. Isolation improves repeatability and confidence in comparisons.",
       "id": "pt-087"
     },
@@ -1313,12 +1313,12 @@
       "difficulty": "easy",
       "question": "What is the main purpose of seeding realistic test data before a performance run?",
       "options": [
-        "To ensure the system processes representative data distributions, sizes, and relationships during the test",
-        "To make the scripts shorter to read",
-        "To avoid logging any results to disk",
-        "To increase network latency deliberately"
+        "To increase network latency deliberately so that the test becomes more demanding on the system",
+        "To make the load test scripts shorter and easier for the reviewers on the team to read",
+        "To make the load test scripts shorter and easier for the reviewers on the team to read and to maintain over the project",
+        "To make sure the system processes representative data distributions, sizes, and relationships during the test"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Data shape matters. Empty or tiny datasets may bypass behaviors such as indexing costs, pagination, or cache pressure that exist in production.",
       "id": "pt-088"
     },
@@ -1328,10 +1328,10 @@
       "difficulty": "easy",
       "question": "Why is parameterization important in performance test scripts?",
       "options": [
-        "It allows varied input values so virtual users do not unrealistically repeat the exact same data in every iteration",
-        "It removes the need for correlation of dynamic values",
-        "It converts a load test into a security test",
-        "It prevents the collection of percentile metrics"
+        "It lets virtual users use varied inputs instead of repeating the same data in every iteration",
+        "It turns a load test into a security test by varying the input values that are submitted",
+        "It removes the need to correlate dynamic values that the server returns in its responses",
+        "It prevents percentile metrics from being collected, since each user then has unique data"
       ],
       "correctIndex": 0,
       "explanation": "Parameterized data helps avoid unrealistic caching, collisions, and duplicate-key failures. It also better reflects how many users behave differently.",
@@ -1343,12 +1343,12 @@
       "difficulty": "hard",
       "question": "A script records a login token once and then reuses that fixed token for every user. Which maintenance task is MOST likely needed?",
       "options": [
-        "Correlation of dynamic values from server responses",
-        "Replacing the script with a unit test",
-        "Removing all think times",
-        "Disabling server-side logging"
+        "Replacing the script with a unit test that calls the login code directly",
+        "Disabling server-side logging so that token errors no longer appear",
+        "Removing all think times from the script so requests are sent faster",
+        "Correlation of dynamic values from server responses"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Many applications return dynamic values such as tokens, IDs, or hidden fields that must be extracted and reused correctly at runtime.",
       "id": "pt-090"
     },
@@ -1358,12 +1358,12 @@
       "difficulty": "medium",
       "question": "Why is a gradual ramp-up often preferred to starting all virtual users at once for a standard load test?",
       "options": [
-        "It allows observation of how metrics change as demand grows and avoids introducing an artificial shock when that is not the objective",
-        "It guarantees no failures can occur",
-        "It makes monitoring unnecessary during the run",
-        "It causes the workload model to become identical to a soak test"
+        "It makes monitoring unnecessary, since each increment of load is easy to observe by eye",
+        "It lets testers see how metrics change as demand grows and avoids an artificial shock when shock is not the aim",
+        "It turns the workload into the same profile as a soak test, which uses steady and long load",
+        "It guarantees that no failures can occur while the load is being increased, since the system always has time to adapt itself"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Ramp-up helps identify thresholds and separate normal scaling behavior from sudden-start effects. A full instant start is more appropriate when shock behavior is the goal.",
       "id": "pt-091"
     },
@@ -1374,9 +1374,9 @@
       "question": "Which practice improves the usefulness of metrics collected from multiple tools during one performance run?",
       "options": [
         "Synchronizing clocks and capturing a common timeline for load, application, and infrastructure data",
-        "Saving each metric stream in a different time zone on purpose",
-        "Turning off server monitoring until the end of the test",
-        "Comparing only screenshots instead of timestamps"
+        "Comparing screenshots of dashboards instead of using the recorded timestamps",
+        "Saving each metric stream in a different time zone to keep the sources distinct",
+        "Turning off server monitoring until the end of the test to reduce overhead"
       ],
       "correctIndex": 0,
       "explanation": "Accurate time alignment is essential when correlating symptoms with possible causes. Unsynchronized data can make root cause analysis unreliable.",
@@ -1388,10 +1388,10 @@
       "difficulty": "hard",
       "question": "Before a full-scale test, why is a small shakedown run valuable?",
       "options": [
-        "It can expose script, data, environment, or monitoring problems early before expensive long runs are wasted",
-        "It proves the final capacity limit without any need for further testing",
-        "It replaces formal result analysis",
-        "It is useful only when testing static websites"
+        "It can expose script, data, environment, or monitoring problems before long runs are wasted",
+        "It replaces the formal analysis of the results once the full test has been run",
+        "It is useful only when the system under test is a static website with few pages",
+        "It proves the final capacity limit of the system, so no further testing is required"
       ],
       "correctIndex": 0,
       "explanation": "A shakedown run confirms the end-to-end test setup works. It can uncover script errors, broken monitors, or bad data before a long or large execution.",
@@ -1403,12 +1403,12 @@
       "difficulty": "easy",
       "question": "During execution, which type of information should be recorded in addition to response times?",
       "options": [
+        "Only the names of the people who watched the dashboard while the run was in progress",
+        "Only the favourite dashboard colour scheme of the tester on duty during the run and the music that was played in the lab",
         "Resource usage, errors, throughput, and notable environment events such as restarts or configuration changes",
-        "Only the favorite color of the tester on duty",
-        "Only the names of people who watched the dashboard",
-        "Only the number of open browser tabs on the load generator"
+        "Only the number of browser tabs that were open on the load generator during the run"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Good analysis requires more than latency alone. Supporting metrics and environment events provide the context needed for diagnosis and comparison.",
       "id": "pt-094"
     },
@@ -1419,9 +1419,9 @@
       "question": "When testing a nightly settlement job, which planning detail is especially important?",
       "options": [
         "The operational processing window and any dependencies on upstream or downstream systems",
-        "The font used in the test summary slides",
-        "Whether all testers prefer the same keyboard layout",
-        "The number of coffee breaks scheduled for the test day"
+        "The number of coffee breaks that are scheduled during the test day",
+        "The font used in the slides that summarise the test results",
+        "Whether all testers prefer the same keyboard layout during the test"
       ],
       "correctIndex": 0,
       "explanation": "Batch performance is often meaningful only relative to a business window, such as overnight completion before downstream processing begins.",
@@ -1433,12 +1433,12 @@
       "difficulty": "medium",
       "question": "Which approach best supports performance testing in a CI/CD pipeline?",
       "options": [
-        "Automating a small, repeatable subset of checks that can detect clear regressions quickly on each relevant build",
-        "Running the longest possible endurance test on every code commit regardless of cost",
-        "Avoiding baselines because pipelines should use only absolute numbers",
-        "Collecting no historical trend data between runs"
+        "Running the longest possible endurance test on every commit, regardless of the cost involved",
+        "Automating a small, repeatable subset of checks that quickly detect clear regressions on relevant builds",
+        "Avoiding baselines, since pipelines should rely on fixed absolute numbers only",
+        "Collecting no historical trend data, so that each run is judged entirely on its own"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "CI/CD performance checks should be fast and focused enough to run regularly while still catching obvious regressions. Longer investigations can remain scheduled separately.",
       "id": "pt-096"
     },
@@ -1448,12 +1448,12 @@
       "difficulty": "medium",
       "question": "What is a practical shift-left performance activity for a service-oriented application?",
       "options": [
-        "Running lightweight performance checks against critical APIs or components before full system integration testing",
-        "Waiting until production traffic reveals bottlenecks",
-        "Removing all non-functional requirements from backlog refinement",
-        "Testing only the documentation website"
+        "Removing non-functional requirements from backlog refinement, to keep the stories small",
+        "Running lightweight performance checks on critical APIs or components before full integration testing",
+        "Testing only the project's documentation website, as it is the simplest component to load",
+        "Waiting until production traffic reveals the bottlenecks, then fixing them in the next release"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Component- or API-level checks can expose inefficient code paths and poor designs early. They complement later end-to-end testing.",
       "id": "pt-097"
     },
@@ -1463,12 +1463,12 @@
       "difficulty": "hard",
       "question": "A test run fails because many requests return unauthorized errors. What should the tester confirm before blaming system capacity?",
       "options": [
-        "Whether the scripts, credentials, and token handling are correct so that failures are not caused by the test itself",
-        "Whether the final report title has already been drafted",
-        "Whether the load generator CPU is exactly 50%",
-        "Whether all charts use the same background color"
+        "Whether the title of the final report has been drafted and approved by the manager before the results are even analysed",
+        "Whether the scripts, credentials, and token handling are correct, so the test itself is not causing the failures",
+        "Whether the CPU on the load generator is at exactly 50 percent throughout the whole run",
+        "Whether the title of the final report has already been drafted and approved by the manager"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Not every failure under load is a capacity problem. Script logic, authentication handling, and test data validity should be ruled out first.",
       "id": "pt-098"
     },
@@ -1478,12 +1478,12 @@
       "difficulty": "hard",
       "question": "How can production telemetry help performance test planning without replacing performance testing altogether?",
       "options": [
-        "It can inform realistic workload patterns, peak periods, transaction mixes, and target scenarios for later controlled testing",
-        "It eliminates the need for any non-production environment",
-        "It guarantees future load will match the past exactly",
-        "It should be ignored because production data is never relevant"
+        "It removes the need to build any non-production environment, since real traffic can be observed and analysed directly in operation",
+        "It removes the need to build any non-production environment, since real traffic is observed directly",
+        "It can inform realistic workload patterns, peak periods, and transaction mixes for later controlled testing",
+        "It guarantees that future load will match the load seen in the past, so no forecasting is needed"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Operational data is valuable for designing realistic tests, but controlled experiments are still needed to isolate variables and explore risk scenarios.",
       "id": "pt-099"
     },
@@ -1494,9 +1494,9 @@
       "question": "Why should a performance test plan record key environment details such as instance sizes, configuration, and data snapshot?",
       "options": [
         "So results can be reproduced, compared, and interpreted with proper context",
-        "So testers can avoid writing any explanations in the report",
-        "Because environment details affect only functional correctness",
-        "Because configuration never changes between test cycles"
+        "Because environment details influence only functional correctness",
+        "So testers can avoid writing explanations in the report about the results",
+        "Because the configuration remains unchanged between test cycles in practice"
       ],
       "correctIndex": 0,
       "explanation": "Without run context, later comparisons become weak or misleading. Small configuration differences can materially change results.",
@@ -1508,12 +1508,12 @@
       "difficulty": "hard",
       "question": "During execution, response times suddenly improve midway through the run because a cache becomes fully warmed. What should the tester do?",
       "options": [
-        "Document the behavior and analyze warm-up separately so steady-state conclusions are not mixed with transient startup effects",
-        "Delete the early measurements and pretend they never happened",
-        "Assume the production system will never experience cold starts",
-        "Stop collecting infrastructure metrics because the issue is understood"
+        "Stop collecting infrastructure metrics, because the cause of the improvement is now understood",
+        "Delete the early measurements from the results set and continue the analysis as though they had never been recorded in the run",
+        "Record the behaviour and analyse warm-up separately, so steady-state conclusions are not mixed with start-up effects",
+        "Assume the production system will not experience cold starts after a deployment or restart"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Warm-up effects are important observations. Separating transient and steady-state phases leads to more accurate interpretation and reporting.",
       "id": "pt-101"
     },
@@ -1523,10 +1523,10 @@
       "difficulty": "hard",
       "question": "When investigating a newly observed slowdown, which sequence is generally most effective?",
       "options": [
-        "Confirm the symptom, correlate it with workload and monitoring data, form hypotheses about constraints, and then retest targeted changes",
-        "Pick a random server setting to modify and hope the issue disappears",
-        "Ignore the workload model and look only at a single average graph",
-        "Rewrite the entire application before gathering evidence"
+        "Confirm the symptom, correlate it with workload and monitoring data, form hypotheses, then retest targeted changes",
+        "Pick a server setting at random, change it, and hope that the slowdown goes away without any further measurements being taken",
+        "Rewrite the affected application component first, and gather the evidence once the code is done",
+        "Pick a server setting at random, change it, and hope that the slowdown goes away on its own"
       ],
       "correctIndex": 0,
       "explanation": "Structured diagnosis reduces wasted effort. Evidence-based correlation and targeted retesting are central to root cause analysis.",
@@ -1538,12 +1538,12 @@
       "difficulty": "medium",
       "question": "Why might unique test accounts be required for some performance scenarios?",
       "options": [
-        "To avoid unrealistic contention or locking caused by many virtual users updating the same record or session",
-        "To make the JSON report file larger",
-        "To disable percentile calculations automatically",
-        "To ensure throughput is always lower than concurrency"
+        "To make the generated JSON report larger and more detailed for the reviewers on the team",
+        "To make the generated JSON report larger and more detailed, so that stakeholders see the full list of accounts that were used",
+        "To avoid unrealistic contention or locking when many virtual users update the same record or session",
+        "To disable percentile calculations during the run, as each account has its own results"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Using the same account for every user can create artificial hotspots or invalid behavior. Multiple accounts often produce more realistic access patterns.",
       "id": "pt-103"
     },
@@ -1553,10 +1553,10 @@
       "difficulty": "hard",
       "question": "Why is it risky to place a heavy multi-hour endurance test directly on every pull request in CI?",
       "options": [
-        "It may create excessive cost and feedback delay, making the pipeline impractical for routine development use",
-        "It would automatically improve the functional coverage of unit tests",
-        "It guarantees better browser compatibility",
-        "It prevents the use of baselines"
+        "It may cost too much and delay feedback, making the pipeline impractical for routine development work",
+        "It would guarantee better browser compatibility across all of the supported versions",
+        "It would improve the functional coverage that is currently provided by the unit tests",
+        "It would improve the functional coverage currently provided by the unit tests, since the long run exercises more of the code paths"
       ],
       "correctIndex": 0,
       "explanation": "CI checks need a sustainable signal-to-cost ratio. Very long performance suites are often better scheduled or triggered selectively.",
@@ -1568,12 +1568,12 @@
       "difficulty": "hard",
       "question": "If a performance issue appears only in one isolated run and cannot be reproduced, what is the BEST next step?",
       "options": [
-        "Review run conditions and monitoring for anomalies, then rerun or design a targeted experiment before drawing strong conclusions",
-        "Treat it as proven and redesign the architecture immediately",
-        "Ignore all historical baselines permanently",
-        "Delete the result files to avoid confusion"
+        "Delete the result files so that the team members are not confused by the odd result",
+        "Treat the single result as proven and begin redesigning the architecture straight away, as the problem will certainly recur in production",
+        "Disregard all of the historical baselines from this point onward, as they are outdated",
+        "Review the run conditions and monitoring for anomalies, then rerun or design a targeted experiment before concluding"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "One-off anomalies can come from environmental noise or transient faults. Reproducibility and targeted follow-up improve confidence in the conclusion.",
       "id": "pt-105"
     },
@@ -1583,12 +1583,12 @@
       "difficulty": "medium",
       "question": "What is the main benefit of refreshing test data between repeated benchmark runs when records are consumed or mutated?",
       "options": [
-        "It keeps run conditions comparable so later results are not biased by leftover system state",
-        "It guarantees the load generator uses less CPU",
-        "It removes the need to track software versions",
-        "It forces averages and percentiles to match"
+        "It forces average and percentile response times to take the same value",
+        "It removes the need to track software versions between the runs",
+        "It guarantees that the load generator uses less CPU in the following runs",
+        "It keeps run conditions comparable so later results are not biased by leftover system state"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "If previous runs change the underlying data, later runs may no longer represent the same conditions. Data refresh helps preserve fairness in comparisons.",
       "id": "pt-106"
     },
@@ -1598,12 +1598,12 @@
       "difficulty": "easy",
       "question": "When choosing a load tool, which criterion is MOST fundamental?",
       "options": [
+        "Whether its default charts are drawn using three or four colours",
+        "Whether it was released in the same year as the application under test",
         "Whether it can drive the protocols or interfaces that the system under test actually uses",
-        "Whether its default charts use three or four colors",
-        "Whether it was released in the same year as the application",
-        "Whether its installer is the smallest file"
+        "Whether its installer is the smallest file among the candidate tools"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Protocol and interface support is basic fit-for-purpose. A tool cannot generate meaningful load if it cannot interact with the target system correctly.",
       "id": "pt-107"
     },
@@ -1613,12 +1613,12 @@
       "difficulty": "medium",
       "question": "In which situation is a browser- or GUI-level test tool especially valuable despite its higher resource cost per user?",
       "options": [
-        "When the goal includes measuring true client-side rendering and front-end behavior as experienced in a real browser",
-        "When simulating millions of simple protocol requests at minimum cost",
-        "When monitoring disk utilization on the database server",
-        "When editing application requirements"
+        "When the aim is to edit the application requirements before the test has been designed",
+        "When the aim is to generate millions of simple protocol requests at the lowest possible cost for each simulated virtual user",
+        "When the goal includes measuring client-side rendering and front-end behaviour as a real browser shows it",
+        "When the aim is to simulate millions of simple protocol requests at the lowest possible cost"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "GUI-level tools can capture browser rendering, client script execution, and front-end timing that protocol tools do not see directly.",
       "id": "pt-108"
     },
@@ -1628,10 +1628,10 @@
       "difficulty": "easy",
       "question": "Why are distributed load generators sometimes needed?",
       "options": [
-        "Because a single injector may not have enough network, CPU, or memory capacity to produce the required scale alone",
-        "Because they automatically eliminate the need for result analysis",
-        "Because distributed generators can test only batch workloads",
-        "Because one generator is always forbidden in performance testing"
+        "A single injector may lack the network, CPU, or memory capacity needed to produce the required load alone",
+        "A single generator is not permitted in performance testing, so several are mandatory",
+        "They remove the need to analyse results after the run, since each generator reports its own findings",
+        "They remove the need to analyse the results after the run, because each generator reports its own findings to the team"
       ],
       "correctIndex": 0,
       "explanation": "At higher scale, the load tool infrastructure itself can become a bottleneck. Distributing injectors allows larger and more realistic traffic generation.",
@@ -1644,9 +1644,9 @@
       "question": "Which tool capability most directly supports realistic variation in test input values?",
       "options": [
         "Parameterization from files, data stores, or generated values",
-        "Static dashboard branding",
-        "Source-control branch protection",
-        "Automatic typo correction in defect titles"
+        "Branch protection rules in the source control system",
+        "Static branding of the dashboard with the company logo and colours",
+        "Automatic correction of typing errors in defect titles"
       ],
       "correctIndex": 0,
       "explanation": "Parameterization lets scripts use varied credentials, search terms, IDs, or payloads. This improves realism and avoids repeating identical requests.",
@@ -1658,12 +1658,12 @@
       "difficulty": "hard",
       "question": "Which scripting capability is essential for applications that return dynamic session identifiers or anti-forgery tokens?",
       "options": [
-        "Extraction and reuse of dynamic values from prior responses",
-        "Automatic compression of log archives after execution",
-        "Color-coded chart themes for management reports",
-        "Support for printing paper summaries"
+        "Automatic compression of the log archives after each execution",
+        "Support for printing paper summaries of the results",
+        "Colour-coded chart themes for the management reports",
+        "Extraction and reuse of dynamic values from prior responses"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Dynamic values must be captured and substituted correctly or later requests become invalid. Tools often call this extraction, correlation, or binding.",
       "id": "pt-111"
     },
@@ -1673,12 +1673,12 @@
       "difficulty": "hard",
       "question": "Why should monitoring agents or tracing be evaluated for overhead before a large performance campaign?",
       "options": [
-        "Because instrumentation can alter timings or resource usage enough to affect the results being measured",
-        "Because monitoring is irrelevant once a test starts",
-        "Because overhead matters only in unit testing",
-        "Because any agent automatically invalidates percentile metrics"
+        "Monitoring has no relevance once the test has started, so overhead is not a concern",
+        "Instrumentation can change timings or resource use enough to affect the results being measured",
+        "Any monitoring agent automatically invalidates the percentile metrics for the run",
+        "Overhead matters only during unit testing, and not when the system is under load"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Instrumentation is useful, but intrusive tooling can perturb the system. Teams should understand and manage that trade-off.",
       "id": "pt-112"
     },
@@ -1688,12 +1688,12 @@
       "difficulty": "medium",
       "question": "What is the main value of an application performance monitoring tool during a test?",
       "options": [
-        "It can trace transactions through application components and surface hotspots such as slow methods or external calls",
-        "It replaces the need for workload modeling",
-        "It can author user stories automatically",
-        "It prevents all server-side errors from occurring"
+        "It can write user stories automatically from the transactions that it has traced in production",
+        "It can trace transactions through application components and show hotspots such as slow methods or external calls",
+        "It replaces the need for workload modelling by learning the typical usage pattern on its own",
+        "It replaces the need for workload modelling by learning the typical usage pattern on its own from the transactions it has traced"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "APM tools provide code- and transaction-level visibility that complements system metrics. This often speeds up diagnosis of bottlenecks.",
       "id": "pt-113"
     },
@@ -1703,12 +1703,12 @@
       "difficulty": "hard",
       "question": "Why is time synchronization important across load generators, monitors, and APM tools?",
       "options": [
+        "So percentiles are converted into averages automatically when merged",
         "So events from different sources can be correlated accurately on a shared timeline",
-        "So each tool can hide its own startup time",
-        "So percentiles are converted into averages automatically",
-        "So the test scripts require fewer parameters"
+        "So the test scripts need fewer parameters when run on several machines",
+        "So each tool can hide its own start-up time from the final report"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Unsynchronized clocks can make causal analysis confusing or wrong. Accurate timestamps are critical when aligning symptoms with infrastructure events.",
       "id": "pt-114"
     },
@@ -1718,12 +1718,12 @@
       "difficulty": "hard",
       "question": "A system communicates by HTTP for user requests and by a message queue for asynchronous processing. Which tool choice is MOST sensible?",
       "options": [
-        "Use tools or integrations that can cover both relevant interaction styles, or combine complementary tools where needed",
-        "Use only a slide deck because asynchronous processing cannot be performance tested",
-        "Use a GUI recorder and ignore backend messaging entirely",
-        "Avoid monitoring because two technologies are involved"
+        "Use a GUI recorder and ignore the backend messaging, since users never see the queue",
+        "Avoid monitoring, because two technologies are involved and the results would conflict",
+        "Use tools that cover both interaction styles, or combine complementary tools where needed",
+        "Use only a slide deck, because asynchronous processing through a queue cannot be performance tested in any practical way"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Many modern systems use multiple protocols. Meaningful testing may require coverage of both the synchronous and asynchronous parts of the workflow.",
       "id": "pt-115"
     },
@@ -1733,12 +1733,12 @@
       "difficulty": "medium",
       "question": "Which limitation should a team check before assuming a load tool can simulate a target peak of 50,000 users?",
       "options": [
+        "Whether the tool can export its reports to PDF format",
         "Whether licensing, injector capacity, and script design support that scale in practice",
-        "Whether the test manager prefers pie charts",
-        "Whether the issue tracker supports dark mode",
-        "Whether the tool can export to PDF"
+        "Whether the test manager prefers pie charts over bar charts in reports",
+        "Whether the issue tracker offers a dark mode for the project team"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Tool claims alone are not enough. Actual scale depends on licensing, protocol efficiency, infrastructure, and script complexity.",
       "id": "pt-116"
     },
@@ -1748,12 +1748,12 @@
       "difficulty": "medium",
       "question": "Why do protocol-level tools usually achieve higher virtual-user density than full-browser tools?",
       "options": [
-        "They avoid rendering full user interfaces and often send lighter-weight requests directly at the protocol layer",
-        "They compress business transactions into fewer requirements",
-        "They never need test data",
-        "They execute only on production servers"
+        "They compress business transactions into fewer requirements, which reduces the data needed",
+        "They execute only on production servers, where more resources are available per user",
+        "They do not need any test data, because the requests are generated automatically",
+        "They avoid rendering full interfaces and often send lighter requests directly at the protocol layer"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Skipping browser rendering and client-side script execution reduces per-user overhead. That makes high-scale generation more practical.",
       "id": "pt-117"
     },
@@ -1763,12 +1763,12 @@
       "difficulty": "medium",
       "question": "What is a key advantage of cloud-hosted load generators for a globally used application?",
       "options": [
-        "They can generate traffic from multiple geographic regions more easily than a single local lab",
-        "They remove the need to estimate workload profiles",
-        "They ensure zero network variability between users and servers",
-        "They prevent all application bottlenecks automatically"
+        "They prevent application bottlenecks from occurring, because capacity is added on demand",
+        "They remove the need to estimate workload profiles before the test is designed",
+        "They ensure there is no network variability between the users and the servers",
+        "They can generate traffic from several geographic regions more easily than a single local lab can"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Cloud generators can help model geographic distribution and reduce local infrastructure constraints. They do not remove the need for sound test design.",
       "id": "pt-118"
     },
@@ -1779,9 +1779,9 @@
       "question": "Which tool capability is MOST helpful when sensitive production-like data must not be exposed in shared test environments?",
       "options": [
         "Support for safe test data generation, masking, or secure parameter sources",
-        "Animated transitions between dashboard pages",
-        "Automatic merging of git branches",
-        "A built-in presentation template for sprint demos"
+        "A built-in presentation template for the sprint demonstrations",
+        "Animated transitions between pages of the results dashboard",
+        "Automatic merging of git branches used for the scripts"
       ],
       "correctIndex": 0,
       "explanation": "Performance testing still needs suitable data handling practices. Tooling that supports secure data sourcing or masking reduces operational risk.",
@@ -1793,12 +1793,12 @@
       "difficulty": "medium",
       "question": "Which statement BEST describes the relationship between server-side monitoring tools and client-side timing tools?",
       "options": [
+        "Server-side monitoring is used only after the release is complete",
         "They provide complementary perspectives and are often stronger together than either one alone",
-        "They always report identical metrics, so one of them is unnecessary",
-        "Client-side timing is useful only for security testing",
-        "Server-side monitoring is used only after the release is complete"
+        "Client-side timing is useful for security testing but not for performance work",
+        "They report identical metrics, so one of the two is unnecessary"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Client-side timings reveal what users experience, while server-side metrics help explain why it happened. Combining both improves diagnosis.",
       "id": "pt-120"
     },
@@ -1808,12 +1808,12 @@
       "difficulty": "hard",
       "question": "A team wants to test an end-to-end checkout journey that includes browser rendering, API calls, and third-party payment redirection. What tool strategy is MOST appropriate?",
       "options": [
-        "Select tooling that can model the critical journey realistically, potentially combining browser-based and protocol/API-level approaches where justified",
-        "Measure only database CPU because user journeys are too complex to test",
-        "Use a pure unit test framework with no external interactions",
-        "Avoid third-party steps because they are not part of user experience"
+        "Measure only the database CPU, because complete user journeys are too complex to test",
+        "Avoid the third-party steps entirely, because they are not part of the user experience",
+        "Measure only the database CPU, because complete user journeys through several systems are too complex to be tested in practice",
+        "Choose tooling that models the critical journey realistically, perhaps combining browser and protocol-level approaches"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Complex user journeys sometimes require blended tooling. The choice should reflect what aspects of the experience and architecture need to be measured.",
       "id": "pt-121"
     },
@@ -1823,12 +1823,12 @@
       "difficulty": "medium",
       "question": "Why should tool maintenance effort matter when selecting a performance testing solution?",
       "options": [
-        "Because fragile or hard-to-update scripts can make regular regression testing expensive and slow",
         "Because maintenance effort affects only the graphic design team",
-        "Because a hard-to-maintain tool always generates more realistic load",
-        "Because stable tools never require any adaptation"
+        "Because stable tools do not require adaptation when the application changes",
+        "Because a hard-to-maintain tool tends to generate more realistic load",
+        "Because fragile or hard-to-update scripts can make regular regression testing expensive and slow"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Performance tests often need to run repeatedly across releases. Maintenance cost strongly affects long-term usefulness and adoption.",
       "id": "pt-122"
     },
@@ -1838,12 +1838,12 @@
       "difficulty": "easy",
       "question": "What is a sensible use of a recorded user script in a performance tool?",
       "options": [
-        "Use it as a starting point, then refine it with parameterization, correlation, pacing, and validations",
-        "Trust it unchanged for all future tests regardless of application updates",
-        "Replace all monitoring because the recorder captured enough information",
-        "Assume recorded scripts automatically represent production workload"
+        "Trust it unchanged for all future tests, regardless of how the application is updated between the releases that are tested",
+        "Use it as a starting point, then refine it with parameterisation, correlation, pacing, and validations",
+        "Assume the recorded script represents the production workload without any further changes",
+        "Trust it unchanged for all future tests, regardless of how the application is updated"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Recording accelerates script creation, but raw recordings rarely produce robust, scalable, or realistic load without refinement.",
       "id": "pt-123"
     },
@@ -1853,10 +1853,10 @@
       "difficulty": "hard",
       "question": "Which factor is MOST important when deciding between open-source and commercial performance tooling?",
       "options": [
-        "Fitness for the project's technical, operational, support, and scaling needs rather than license category alone",
-        "Whether the product website uses the most modern font",
-        "Whether the tool name is shorter than ten characters",
-        "Whether another team used it once for a different application"
+        "Fitness for the project's technical, support, and scaling needs, not just the licence category",
+        "Whether another team used it once before on a different application in the company",
+        "Whether the tool's website uses a modern font and an attractive layout, since that shows how well the vendor looks after its product",
+        "Whether the product's website uses a modern font and a clean, attractive layout"
       ],
       "correctIndex": 0,
       "explanation": "License model is only one consideration. Teams should assess protocol support, scale, expertise, maintenance, reporting, and support requirements.",
@@ -1868,12 +1868,12 @@
       "difficulty": "easy",
       "question": "Which feature is MOST useful for controlling user pacing and arrival patterns in a load test?",
       "options": [
+        "An embedded screenshot gallery for evidence",
+        "Automatic renaming of the result files after the run",
         "Timers, pacing controls, and workload scheduling features",
-        "Spell-checking in the report editor",
-        "An embedded screenshot gallery",
-        "Automatic renaming of every result file"
+        "Spell-checking in the report editor"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Pacing and scheduling features help implement realistic think times, ramp-up shapes, and arrival profiles defined in the workload model.",
       "id": "pt-125"
     },
@@ -1883,10 +1883,10 @@
       "difficulty": "hard",
       "question": "Why might a team extend a performance tool with custom plugins or scripts?",
       "options": [
-        "To support project-specific protocols, metrics, validations, or reporting that are not available out of the box",
-        "To avoid ever updating the tool again",
-        "To convert the exercise into manual exploratory testing",
-        "To remove the need for acceptance criteria"
+        "To support project-specific protocols, metrics, or reporting that the tool does not provide out of the box",
+        "To avoid ever having to update the tool to a newer version, because the custom scripts take over all of its core functions",
+        "To convert the exercise into manual exploratory testing performed by the team",
+        "To remove the need for acceptance criteria in the test plan, as the scripts are flexible"
       ],
       "correctIndex": 0,
       "explanation": "Custom extensions can bridge gaps in protocol handling, result processing, or environment integration. They should still be maintained carefully.",
@@ -1898,12 +1898,12 @@
       "difficulty": "easy",
       "question": "Which type of tool would BEST help identify whether a database host is saturating CPU, memory, or I/O during a test?",
       "options": [
-        "An infrastructure or operating-system monitoring tool",
-        "A wireframing tool",
-        "A backlog grooming board",
-        "A password manager"
+        "A backlog grooming board for the development team",
+        "A wireframing tool used for sketching screens",
+        "A password manager for the test accounts",
+        "An infrastructure or operating-system monitoring tool"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Infrastructure monitoring tools observe host-level resource behavior. They are essential companions to load-generation tools during diagnosis.",
       "id": "pt-127"
     },
@@ -1913,12 +1913,12 @@
       "difficulty": "hard",
       "question": "Which risk is introduced if the load generation tool itself becomes CPU-bound during the run?",
       "options": [
+        "The results become equivalent to those of a soak test",
         "The test may under-drive the system under test and produce misleadingly optimistic conclusions",
-        "The application under test automatically becomes faster",
-        "All monitoring timestamps will be corrected automatically",
-        "The results become equivalent to a soak test"
+        "The application under test automatically becomes faster because requests are delayed",
+        "All monitoring timestamps are corrected automatically by the load tool"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "If injectors cannot generate the intended workload, the system under test is not truly being challenged as planned. Tool-side bottlenecks must be monitored too.",
       "id": "pt-128"
     },
@@ -1928,12 +1928,12 @@
       "difficulty": "easy",
       "question": "If the average checkout response time is 1.5 seconds but the 95th percentile is 6 seconds, what is the BEST interpretation?",
       "options": [
-        "Many checkouts are fast, but a noticeable slower tail exists and should not be ignored",
-        "The average is invalid because percentiles are present",
-        "All users experienced exactly 1.5 seconds",
-        "The test definitely failed regardless of any target"
+        "The average is invalid because percentiles are also being reported for the same transactions",
+        "Every user experienced a response time of about 1.5 seconds during the test",
+        "The test has failed regardless of the targets, because the percentile is above the average",
+        "Many checkouts are fast, but a noticeable slower tail exists and should not be ignored"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "The average alone hides variability. A high 95th percentile indicates a significant minority of users may still have poor experiences.",
       "id": "pt-129"
     },
@@ -1944,9 +1944,9 @@
       "question": "Several repeated runs of the same scenario produce very similar results. Why does this matter?",
       "options": [
         "It increases confidence that the measurements are stable enough to support conclusions",
-        "It proves the application has reached infinite scalability",
-        "It means monitoring should be removed from future tests",
-        "It shows the workload model was unnecessary"
+        "It shows the workload model was unnecessary, because the runs agree with each other",
+        "It proves the application has reached unlimited scalability at the tested load levels",
+        "It means monitoring can be removed from future tests, as the results are stable"
       ],
       "correctIndex": 0,
       "explanation": "Repeatability strengthens trust in observed behavior. Large unexplained variance would make conclusions less certain.",
@@ -1958,12 +1958,12 @@
       "difficulty": "medium",
       "question": "Why are warm-up and cool-down periods often excluded from steady-state analysis?",
       "options": [
-        "Because they may reflect startup or ramp-down effects rather than the representative operating period being assessed",
-        "Because excluding them always makes the system pass",
-        "Because percentiles cannot be computed when they are included",
-        "Because monitoring tools do not record those intervals"
+        "Excluding them makes the system pass its targets in every case, which is the main reason that the practice was introduced",
+        "Percentiles cannot be calculated when those periods are included in the data set",
+        "Excluding them makes the system pass its targets in every case, which is the reason for the practice",
+        "They may reflect start-up or ramp-down effects instead of the representative operating period under assessment"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Startup and shutdown behavior can be interesting, but it should usually be analyzed separately from steady-state service levels.",
       "id": "pt-131"
     },
@@ -1974,9 +1974,9 @@
       "question": "A report shows latency rising at the same time error rates increase and a connection pool becomes exhausted. What is the BEST analytical conclusion?",
       "options": [
         "The evidence supports a likely relationship between connection saturation and the observed service degradation",
-        "The rising latency proves the user interface color palette is wrong",
-        "The metrics cannot be related because they come from different charts",
-        "The only reasonable conclusion is to ignore the run"
+        "The rising latency shows that the colour palette of the user interface needs revision",
+        "The rising latency shows that the colour palette of the user interface needs revision, since users notice slow pages more than errors",
+        "The run should be ignored, as several symptoms at once make the data unreliable"
       ],
       "correctIndex": 0,
       "explanation": "Correlated timing across service symptoms and resource exhaustion forms a strong evidence chain. It supports a focused root cause hypothesis.",
@@ -1988,12 +1988,12 @@
       "difficulty": "easy",
       "question": "How should a summary for senior business stakeholders usually differ from a technical deep-dive report?",
       "options": [
-        "It should emphasize business impact, readiness, risks, and decisions, with less low-level metric detail",
-        "It should include every raw log line from every server",
-        "It should avoid conclusions and provide only screenshots",
-        "It should omit all references to workload and targets"
+        "It should include every raw log line from every server involved, so that senior stakeholders can verify all of the findings themselves",
+        "It should include every raw log line from every server, so that nothing is hidden",
+        "It should emphasise business impact, readiness, risks, and decisions, with less low-level metric detail",
+        "It should omit references to the workload and targets, to keep the message short"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Different audiences need different levels of detail. Executives usually need implications and decisions, while engineers need diagnostic evidence.",
       "id": "pt-133"
     },
@@ -2003,12 +2003,12 @@
       "difficulty": "hard",
       "question": "What is the main purpose of using trend analysis across many performance runs?",
       "options": [
-        "To identify gradual improvement or degradation over time rather than relying on a single isolated result",
-        "To replace acceptance criteria completely",
-        "To guarantee that every future result will be better than the last",
-        "To prove the monitoring tool never misses a sample"
+        "To replace the acceptance criteria with a comparison against the earlier runs",
+        "To identify gradual improvement or degradation over time instead of relying on a single result",
+        "To guarantee that every future result will be better than the one before it",
+        "To prove that the monitoring tool does not miss a single sample during the runs"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Trends reveal direction and rate of change. This is useful for spotting regressions, growth risks, and improvement impact over time.",
       "id": "pt-134"
     },
@@ -2018,12 +2018,12 @@
       "difficulty": "medium",
       "question": "Which recommendation is MOST appropriate when a system meets today's target load but shows performance degradation growing faster than linearly with each step increase?",
       "options": [
+        "Stop monitoring the system because the target load was met today",
+        "Replace percentile reporting with averages only to simplify the message",
         "Investigate scalability limits and estimate when future growth may breach objectives",
-        "Stop monitoring because the target was met today",
-        "Report that the system is future-proof with no additional analysis needed",
-        "Replace percentiles with averages only"
+        "Report the system as future-proof, so no additional analysis is needed"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Non-linear degradation suggests a threshold or architectural limit may be approaching. Meeting today's target does not remove future capacity risk.",
       "id": "pt-135"
     },
@@ -2033,12 +2033,12 @@
       "difficulty": "medium",
       "question": "A single run produced much worse results than all other comparable runs. What should be done before declaring a confirmed regression?",
       "options": [
-        "Check for environmental anomalies or setup differences and rerun if needed to confirm the behavior",
-        "Delete all previous good runs from the dashboard",
-        "Assume the worst run is always the truest run",
-        "Average it together with unrelated scenarios"
+        "Treat the worst run as the truest one, since it exposes the real behaviour",
+        "Delete the earlier good runs from the dashboard so that the trend is clear and the worst run becomes the new reference point",
+        "Average it with results from unrelated scenarios to smooth the difference",
+        "Check for environmental anomalies or setup differences and rerun if needed to confirm the behavior"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Outliers may be meaningful or may be noise. Verification improves confidence before the team acts on the result.",
       "id": "pt-136"
     },
@@ -2048,10 +2048,10 @@
       "difficulty": "hard",
       "question": "If response time targets are met but timeout errors briefly spike during peak minutes, how should the outcome be reported?",
       "options": [
-        "As a qualified result that notes target compliance for latency but highlights reliability risk due to failed transactions",
-        "As a full pass with no caveats because averages were acceptable",
-        "As a guaranteed production outage",
-        "As irrelevant because errors matter only in functional testing"
+        "A qualified result that notes the latency targets were met but highlights reliability risk from the failed transactions",
+        "An irrelevant detail, because errors are a concern only for functional testing",
+        "A full pass without caveats, because the response time targets were achieved",
+        "A full pass with no caveats, because the response time targets were achieved and the brief timeouts were only a temporary effect"
       ],
       "correctIndex": 0,
       "explanation": "Performance quality includes successful completion, not just speed. Error spikes are important even when many requests remain fast enough.",
@@ -2063,12 +2063,12 @@
       "difficulty": "easy",
       "question": "What makes a performance recommendation actionable?",
       "options": [
+        "It uses generic phrases such as improve performance soon to stay flexible",
         "It links observed evidence to a clear next step, such as tuning, redesign, or further targeted testing",
-        "It uses only generic phrases such as improve performance soon",
-        "It avoids naming any affected component or metric",
-        "It removes all uncertainty by promising a fixed gain without evidence"
+        "It uses generic phrases such as improve performance soon, which keep the recommendation flexible for the team to interpret later",
+        "It promises a fixed gain without evidence so that stakeholders feel confident"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Useful recommendations connect findings to decisions. They should help the team know what to do next and why.",
       "id": "pt-138"
     },
@@ -2078,12 +2078,12 @@
       "difficulty": "medium",
       "question": "Why should a performance report document important environmental constraints or deviations from production?",
       "options": [
+        "Because deviations automatically make all of the testing worthless",
+        "Because only legal teams read performance reports and need the details",
         "Because those differences affect how confidently results can be generalized to real operation",
-        "Because deviations automatically make all testing worthless",
-        "Because only legal teams read performance reports",
-        "Because environment details are needed only for visual appeal"
+        "Because environment details are included mainly for visual appeal"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Stakeholders need to understand result limitations. Documented constraints help them interpret risk and avoid overclaiming.",
       "id": "pt-139"
     },
@@ -2094,9 +2094,9 @@
       "question": "Which statement BEST distinguishes a symptom from a probable cause in performance analysis?",
       "options": [
         "Slow response time is a symptom; thread-pool saturation could be a cause",
-        "Thread-pool saturation is a symptom; slow response time is always the cause",
+        "Neither symptoms nor causes should be listed in a performance report",
         "Symptoms and causes are the same thing in performance testing",
-        "Neither symptoms nor causes should appear in reports"
+        "Thread-pool saturation is a symptom, and slow response time is the cause of it"
       ],
       "correctIndex": 0,
       "explanation": "Observed service degradation is a symptom. The constrained component or behavior that produces it is the probable cause that analysis tries to identify.",
@@ -2109,9 +2109,9 @@
       "question": "Throughput remains flat while queue length and wait time climb sharply. Which performance principle does this most clearly illustrate?",
       "options": [
         "Demand is exceeding service capacity, so extra work is accumulating rather than being completed faster",
-        "The system is scaling linearly with perfect efficiency",
-        "User think time is decreasing the need for analysis",
-        "The test has become invalid because queue metrics exist"
+        "User think time is decreasing, which reduces the need for further analysis",
+        "The system is scaling linearly with perfect efficiency as more load is added",
+        "The system is scaling linearly with perfect efficiency as more load is added, so no further investigation of capacity is needed"
       ],
       "correctIndex": 0,
       "explanation": "When capacity is saturated, new work may wait longer without increasing useful output. Queue growth is a classic sign of that state.",
@@ -2123,12 +2123,12 @@
       "difficulty": "hard",
       "question": "A new autoscaling rule keeps average response time stable, but the 99th percentile still spikes during sudden traffic bursts. What should be reported?",
       "options": [
-        "Average performance improved, but burst-handling risk remains for the slowest requests and may require faster scaling or buffering strategies",
-        "The change solved all performance concerns completely",
-        "Percentiles should be ignored because averages are stable",
-        "The workload definition was probably unnecessary"
+        "The change solved all of the performance concerns, since the average response time is stable even during the sudden bursts in traffic",
+        "Average performance improved, but burst-handling risk remains for the slowest requests and may need faster scaling",
+        "The change solved all of the performance concerns, since the average response time is stable",
+        "The workload definition was probably unnecessary for this evaluation of the scaling rule"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Stable averages do not guarantee good burst behavior for tail users. The report should distinguish general improvement from remaining edge-case risk.",
       "id": "pt-142"
     },
@@ -2138,12 +2138,12 @@
       "difficulty": "medium",
       "question": "Why is variance or spread in response times worth analyzing in addition to central tendency?",
       "options": [
-        "Because two systems with the same average may provide very different consistency to users",
-        "Because variance replaces the need to measure errors",
-        "Because spread matters only when the system is idle",
-        "Because averages become mathematically invalid when spread exists"
+        "Because variance replaces the need to measure the error rate",
+        "Because spread matters only when the system is idle between tests",
+        "Because averages become mathematically invalid whenever any spread exists",
+        "Because two systems with the same average may provide very different consistency to users"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Consistency matters to users and operations. A service with wide swings in latency may be harder to trust even if the mean is acceptable.",
       "id": "pt-143"
     },
@@ -2153,12 +2153,12 @@
       "difficulty": "easy",
       "question": "Which statement is most useful in an executive summary after a major performance test?",
       "options": [
-        "The portal met the agreed launch workload for search and checkout, but payment processing has limited headroom and needs tuning before peak season",
-        "See attached raw logs from twelve servers for details",
-        "Several monitors used different port numbers during execution",
-        "We collected many metrics and charts"
+        "Several of the monitors used different port numbers during the execution of the test",
+        "We collected many metrics and charts during the test window and they are available",
+        "Several monitors used different port numbers during the execution of the test and a number of charts were exported to PDF format",
+        "The portal met the launch workload for search and checkout, but payment has limited headroom and needs tuning before peak"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "An executive summary should quickly state readiness, major risk, and necessary actions in business-relevant language.",
       "id": "pt-144"
     },
@@ -2169,9 +2169,9 @@
       "question": "Why is it risky to compare two performance runs that used different workload profiles as if they were directly equivalent?",
       "options": [
         "Different mixes, pacing, or concurrency can change system behavior, making naive comparisons misleading",
-        "Because workload profiles affect only security, not performance",
-        "Because different profiles automatically invalidate JSON reports",
-        "Because all meaningful comparisons require identical screenshots"
+        "Because workload profiles affect only security behaviour and not performance, so any two results can be compared without adjustment",
+        "Because different profiles automatically invalidate the JSON result files",
+        "Because meaningful comparisons require identical screenshots of the dashboards"
       ],
       "correctIndex": 0,
       "explanation": "If the input conditions differ materially, differences in results may not reflect code or environment changes alone. Context matters in comparisons.",
@@ -2183,12 +2183,12 @@
       "difficulty": "hard",
       "question": "Which conclusion is MOST appropriate when a component's resource use grows roughly linearly with load and stays below critical thresholds across tested levels?",
       "options": [
-        "The component appears to scale predictably within the tested range, though future limits still require continued observation",
-        "The component is guaranteed never to bottleneck at any higher load",
-        "No further performance testing is ever needed",
-        "All service-level objectives are irrelevant if scaling looks linear"
+        "No further performance testing will be needed for this component in later releases",
+        "The component will not become a bottleneck at any load higher than was tested, because its resource use already grows in a straight line",
+        "The component appears to scale predictably in the tested range, though limits beyond it still need observation",
+        "The service-level objectives become irrelevant for it when the scaling looks linear"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Observed linear behavior within a tested range is encouraging, but it does not prove unlimited capacity. Reports should state scope and limits carefully.",
       "id": "pt-146"
     },
@@ -2198,12 +2198,12 @@
       "difficulty": "easy",
       "question": "What is the main value of annotating performance graphs with events such as deployments, cache flushes, or failovers?",
       "options": [
+        "It ensures that all percentile values are lower in the next run",
         "It helps explain sudden metric changes by linking them to known actions or conditions",
-        "It makes the chart colors brighter",
-        "It removes the need for timestamps",
-        "It ensures all percentiles are lower"
+        "It makes the chart colours brighter and the graphs easier to read",
+        "It removes the need for timestamps on the measurements"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Annotated events provide context. They can make correlations and root cause hypotheses much easier to see and explain.",
       "id": "pt-147"
     },
@@ -2213,12 +2213,12 @@
       "difficulty": "hard",
       "question": "When should capacity planning be updated based on performance test findings?",
       "options": [
-        "When results reveal current headroom, growth trends, or bottlenecks that materially affect future demand assumptions",
-        "Only after the application has already failed in production",
-        "Only if average response time is exactly one second",
-        "Only if no monitoring was used during testing"
+        "Only after the application has already failed in production under a real load, because only then are the true limits known to the team",
+        "Only after the application has already failed in production under a real load",
+        "Only if no monitoring was used during the testing, so the data is incomplete",
+        "When results reveal headroom, growth trends, or bottlenecks that materially affect future demand assumptions"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Performance results are a key input to capacity planning because they show how close the system is to limits and how growth may change that.",
       "id": "pt-148"
     },
@@ -2228,12 +2228,12 @@
       "difficulty": "medium",
       "question": "If two builds have similar response times but one consumes significantly more CPU for the same throughput, what should analysts note?",
       "options": [
-        "The newer build may be less resource-efficient and could reduce future headroom even if current user-facing speed is similar",
-        "CPU usage never matters when throughput is equal",
-        "The difference proves the metrics were collected incorrectly",
-        "The build with higher CPU is automatically more scalable"
+        "The build with the higher CPU use is the more scalable one, because it uses more of the hardware",
+        "The difference proves that the metrics were collected incorrectly during one of the runs",
+        "The build with the higher CPU use is the more scalable one, because it makes better use of the hardware that is available to it",
+        "The newer build may be less resource-efficient and reduce future headroom even if user-facing speed is similar"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Resource efficiency affects cost and capacity margin. Similar latency does not mean equivalent operational behavior.",
       "id": "pt-149"
     },
@@ -2243,12 +2243,12 @@
       "difficulty": "hard",
       "question": "Which statement is MOST appropriate when reporting a limitation in the test environment?",
       "options": [
-        "State the limitation clearly, explain how it may affect interpretation, and avoid claiming more certainty than the evidence supports",
-        "Hide the limitation to keep the summary shorter",
-        "Assume stakeholders will infer the limitation from the graphs",
-        "Discard all results immediately regardless of relevance"
+        "Hide the limitation to keep the summary short and focused on the positive findings",
+        "Hide the limitation to keep the summary short and focused on the positive findings, since stakeholders mainly want a clear message",
+        "Assume the stakeholders will infer the limitation from the graphs without being told",
+        "State the limitation clearly, explain how it may affect interpretation, and avoid overclaiming certainty"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Transparent reporting increases trust. Limitations do not always invalidate results, but they do shape how far the conclusions can be extended.",
       "id": "pt-150"
     }
