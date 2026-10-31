@@ -87,9 +87,9 @@
     const r = recommend(a);
     const name = (id) => MODS[id][0];
     let html = '<h3>Your suggested path</h3><p><strong>Start with: <a href="module.html?module=' + r.primary + '">' + esc(name(r.primary)) +
-      "</a></strong></p><p>Why: " + esc(name(r.primary)) + " is " + esc(MODS[r.primary][1]) + "</p>";
+      "</a></strong></p><p><strong>Why this one:</strong></p><ul><li>" + esc(name(r.primary)) + " is " + esc(MODS[r.primary][1]) + "</li></ul>";
     html += "<p><strong>Then consider:</strong></p><ul>" + r.next.map((id) =>
-      '<li><a href="module.html?module=' + id + '">' + esc(name(id)) + "</a>: " + esc(MODS[id][1]) + "</li>").join("") + "</ul>";
+      '<li><a href="module.html?module=' + id + '">' + esc(name(id)) + "</a><ul><li>" + esc(MODS[id][1]) + "</li></ul></li>").join("") + "</ul>";
     if (a.exam === "lt1" && Number(a.hours) <= 5) {
       html += '<div class="disclaimer">Your exam is close and your weekly time is limited. The planner will compress the plan; consider more hours or a later date if possible.</div>';
     }
