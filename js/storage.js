@@ -31,6 +31,12 @@ const QAQuest = (() => {
     }
     progress[moduleId].attempts.push(attempt);
     saveProgress(progress);
+    if (QAQuest.Badges) {
+      try {
+        const r = QAQuest.Badges.update();
+        sessionStorage.setItem("qaquest_new_badges", JSON.stringify(r.newly));
+      } catch (e) { /* badges are optional */ }
+    }
     return progress;
   }
 
@@ -139,7 +145,7 @@ const QAQuest = (() => {
   }
 
   function exportProgress() {
-    const payload = { app: "QAQuest", version: 1, exportedAt: new Date().toISOString(), progress: loadProgress() };
+    const payload = { app: "QAQuest", version: 1, exportedAt: new Date().toISOString(), progress: loadProgress(), gamification: QAQuest.Badges ? QAQuest.Badges.loadStore() : undefined };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
@@ -166,6 +172,14 @@ const QAQuest = (() => {
       current[id] = { attempts: existing };
     });
     saveProgress(current);
+    if (QAQuest.Badges) {
+      const store = QAQuest.Badges.loadStore();
+      const inc = QAQuest.Badges.validateStore(parsed.gamification);
+      store.earned = QAQuest.Badges.mergeEarned(store.earned, inc.earned);
+      if (!store.displayName) store.displayName = inc.displayName;
+      QAQuest.Badges.saveStore(store);
+      QAQuest.Badges.update();
+    }
     return added;
   }
 
