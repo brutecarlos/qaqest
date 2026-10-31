@@ -1,4 +1,4 @@
-const CACHE = "qaqest-v2";
+const CACHE = "qaqest-v3";
 const SHELL = [
   "./",
   "index.html",
@@ -13,6 +13,8 @@ const SHELL = [
   "guide-exam-tips.html",
   "guide-techniques-cheat-sheet.html",
   "faq.html",
+  "start.html",
+  "planner.html",
   "module.html",
   "quiz.html",
   "results.html",
@@ -23,6 +25,8 @@ const SHELL = [
   "js/module.js",
   "js/quiz.js",
   "js/results.js",
+  "js/start.js",
+  "js/planner.js",
   "js/adsense-config.js",
   "data/modules.json",
   "assets/favicon.svg",

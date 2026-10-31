@@ -620,3 +620,25 @@ a:hover {
 .progress-tools { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin: 1rem 0; }
 .progress-tools .tool-msg { color: var(--color-muted); font-size: 0.9rem; }
 @media (max-width: 600px) { .chapter-row { grid-template-columns: 1fr; } }
+
+/* Start here + study planner */
+.start-steps li, .plan-week li { margin-bottom: 0.4rem; }
+.start-q fieldset, .plan-form fieldset { border: 1px solid var(--color-border); border-radius: var(--radius); margin: 0 0 1rem; padding: 0.75rem 1rem; }
+.start-q label, .plan-form fieldset > label { display: block; padding: 0.35rem 0; cursor: pointer; }
+.plan-form select, .plan-form input[type="date"], .plan-form input[type="number"] {
+  font: inherit; padding: 0.4rem 0.5rem; border: 1px solid var(--color-border); border-radius: 6px;
+  background: var(--color-surface); color: var(--color-text); max-width: 100%;
+}
+.start-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem; }
+.start-progress { color: var(--color-muted); font-size: 0.9rem; }
+.start-result { margin-top: 1rem; }
+.start-result:empty { display: none; }
+.home-start { border-left: 4px solid var(--color-primary); }
+.plan-week h3 label { cursor: pointer; }
+
+@media print {
+  .site-header, #site-header, #site-footer, #header-ad-mount, #footer-ad-mount, .ad-slot,
+  .plan-form, .disclaimer, .no-print, .btn { display: none !important; }
+  body { background: #fff; color: #000; }
+  .module-card { box-shadow: none; break-inside: avoid; border: 1px solid #999; }
+}
