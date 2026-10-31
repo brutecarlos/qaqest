@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <title>Study planner for software testing exams — QAQEST</title>
+  <meta name="description" content="Free exam study planner: pick a module, exam date and weekly hours to get a week-by-week plan with practice links, timed simulations and tick-off progress." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/planner.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Study planner for software testing exams — QAQEST" />
+  <meta property="og:description" content="Free exam study planner: pick a module, exam date and weekly hours to get a week-by-week plan with practice links, timed simulations and tick-off progress." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/planner.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Study planner for software testing exams — QAQEST" />
+  <meta name="twitter:description" content="Free exam study planner: pick a module, exam date and weekly hours to get a week-by-week plan with practice links, timed simulations and tick-off progress." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero">
+      <h1>Study planner</h1>
+      <p>Pick a module, tell us how much time you have, and get a week-by-week plan. Everything is calculated in your browser.</p>
+    </section>
+    <div class="disclaimer">QAQEST is an independent, unofficial study resource, not affiliated with ISTQB&reg;. Plans are suggestions, not a guarantee of an exam result. New here? <a href="start.html">Start here</a>.</div>
+
+    <form id="pl-form" class="module-card plan-form" novalidate>
+      <h2>Your details</h2>
+      <p><label for="pl-module">Module</label><br><select id="pl-module"></select></p>
+      <fieldset>
+        <legend>When is your exam?</legend>
+        <label><input type="radio" name="pl-when" value="date" checked> I have an exam date</label>
+        <label><input type="radio" name="pl-when" value="weeks"> I have a number of weeks</label>
+        <p id="pl-date-row"><label for="pl-date">Exam date</label><br><input type="date" id="pl-date"></p>
+        <p id="pl-weeks-row" hidden><label for="pl-weeks">Weeks available (1&ndash;52)</label><br><input type="number" id="pl-weeks" min="1" max="52" step="1" value="8"></p>
+      </fieldset>
+      <p><label for="pl-hours">Study hours per week</label><br><input type="number" id="pl-hours" min="0.5" max="80" step="0.5" value="5"></p>
+      <p><label for="pl-level">Current level</label><br>
+        <select id="pl-level">
+          <option value="beginner">Beginner: new to the topic</option>
+          <option value="some" selected>Some knowledge</option>
+          <option value="experienced">Experienced: I use this at work</option>
+        </select></p>
+      <fieldset>
+        <legend>Days off (optional): weekdays you will not study</legend>
+        <label><input type="checkbox" name="pl-off" value="1"> Mon</label>
+        <label><input type="checkbox" name="pl-off" value="2"> Tue</label>
+        <label><input type="checkbox" name="pl-off" value="3"> Wed</label>
+        <label><input type="checkbox" name="pl-off" value="4"> Thu</label>
+        <label><input type="checkbox" name="pl-off" value="5"> Fri</label>
+        <label><input type="checkbox" name="pl-off" value="6"> Sat</label>
+        <label><input type="checkbox" name="pl-off" value="0"> Sun</label>
+      </fieldset>
+      <p><button type="submit" class="btn btn-primary">Build my plan</button>
+      <button type="button" class="btn btn-secondary" id="pl-print" hidden>Print / Save as PDF</button></p>
+    </form>
+
+    <div id="pl-message" role="status" aria-live="polite" tabindex="-1"></div>
+    <div id="pl-result"></div>
+
+    <section class="module-card no-print" aria-labelledby="tips-heading">
+      <h2 id="tips-heading">Study technique tips</h2>
+      <ul>
+        <li><strong>Spaced repetition:</strong> revisit topics after 1, 3 and 7 days instead of cramming once.</li>
+        <li><strong>Pomodoro:</strong> study 25 minutes, break 5 minutes; take a longer break after four rounds.</li>
+        <li><strong>Active recall:</strong> answer practice questions before re-reading notes, and always read the explanations.</li>
+        <li><strong>Sleep:</strong> a good night before the exam beats a last-minute late-night session.</li>
+      </ul>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>
