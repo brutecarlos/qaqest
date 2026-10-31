@@ -168,3 +168,14 @@ Code is MIT licensed — see [`LICENSE`](LICENSE). Practice questions are
 original content authored for this project (see the sourcing policy above)
 and are released under the same MIT terms. QAQEST is not affiliated with,
 endorsed by, or sponsored by ISTQB®.
+
+## Recent additions
+
+- **SEO/sharing:** per-page title, description, canonical, Open Graph/Twitter tags; `assets/og-image.png`; `sitemap.xml` and `robots.txt`. Submit `https://brutecarlos.github.io/qaqest/sitemap.xml` in Google Search Console for the `/qaqest/` property.
+- **Quiz:** questions and options are shuffled per attempt (correct answer is remapped); flag questions with a navigator; keyboard shortcuts (1–4/A–D, Enter/→ next, ← previous, F flag); "Report an issue" link opens a prefilled GitHub issue.
+- **Results:** per-chapter breakdown highlighting the weakest chapter; filter for flagged questions.
+- **Progress:** export/import JSON (home and module pages) using the existing `qaquest_progress_v1` key, with validation and de-duplicated merge.
+- **Theme/a11y:** dark mode (system preference + header toggle, key `qaquest_theme_v1`), `:focus-visible` outlines, aria labels.
+- **PWA:** `manifest.webmanifest`, `sw.js` (versioned cache of same-origin shell + data only; bump `CACHE` on releases), icons in `assets/icons/`, and a `404.html`.
+
+New files: `404.html`, `sitemap.xml`, `robots.txt`, `manifest.webmanifest`, `sw.js`, `assets/og-image.png`, `assets/icons/icon-{192,512}.png`.

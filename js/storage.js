@@ -111,7 +111,105 @@ const QAQuest = (() => {
     }
   }
 
+  /**
+   * Validates an imported progress object (module id -> {attempts: [...]}).
+   * Returns the cleaned object or throws an Error describing the problem.
+   */
+  function validateProgress(data) {
+    if (!data || typeof data !== "object" || Array.isArray(data)) {
+      throw new Error("File is not a progress object.");
+    }
+    const clean = {};
+    Object.keys(data).forEach((id) => {
+      const m = data[id];
+      if (!m || !Array.isArray(m.attempts)) throw new Error(`Invalid entry for "${id}".`);
+      m.attempts.forEach((a) => {
+        if (
+          !a || typeof a !== "object" ||
+          typeof a.date !== "string" || isNaN(new Date(a.date)) ||
+          !Number.isFinite(a.score) || !Number.isFinite(a.total) ||
+          !Number.isFinite(a.percentage) || typeof a.passed !== "boolean"
+        ) {
+          throw new Error(`Invalid attempt in "${id}".`);
+        }
+      });
+      clean[id] = { attempts: m.attempts };
+    });
+    return clean;
+  }
+
+  function exportProgress() {
+    const payload = { app: "QAQuest", version: 1, exportedAt: new Date().toISOString(), progress: loadProgress() };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "qaqest-progress.json";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  }
+
+  /** Merges imported attempts into existing progress, skipping duplicates by date+mode. */
+  async function importProgressFile(file) {
+    const parsed = JSON.parse(await file.text());
+    const incoming = validateProgress(parsed && parsed.app === "QAQuest" ? parsed.progress : null);
+    const current = loadProgress();
+    let added = 0;
+    Object.keys(incoming).forEach((id) => {
+      const existing = (current[id] && current[id].attempts) || [];
+      const seen = new Set(existing.map((a) => a.date + "|" + a.mode));
+      incoming[id].attempts.forEach((a) => {
+        if (!seen.has(a.date + "|" + a.mode)) { existing.push(a); added++; }
+      });
+      existing.sort((x, y) => new Date(x.date) - new Date(y.date));
+      current[id] = { attempts: existing };
+    });
+    saveProgress(current);
+    return added;
+  }
+
+  function reportIssueUrl(moduleId, q) {
+    const title = `Question issue: ${q.id} (${moduleId})`;
+    const body = `Module: ${moduleId}\nQuestion ID: ${q.id}\nChapter: ${q.chapter || ""}\n\nQuestion:\n${q.question}\n\nWhat is wrong?\n`;
+    return "https://github.com/brutecarlos/qaqest/issues/new?title=" + encodeURIComponent(title) + "&body=" + encodeURIComponent(body);
+  }
+
+  function progressToolsHtml() {
+    return `<div class="progress-tools">
+      <button type="button" class="btn btn-secondary" data-pt="export" aria-label="Export progress as JSON file">Export progress</button>
+      <button type="button" class="btn btn-secondary" data-pt="import" aria-label="Import progress from JSON file">Import progress</button>
+      <input type="file" accept="application/json,.json" data-pt="file" hidden aria-label="Choose progress JSON file" />
+      <span class="tool-msg" role="status" aria-live="polite"></span>
+    </div>`;
+  }
+
+  function bindProgressTools(root) {
+    const box = root.querySelector(".progress-tools");
+    if (!box) return;
+    const msg = box.querySelector(".tool-msg");
+    const file = box.querySelector('[data-pt="file"]');
+    box.querySelector('[data-pt="export"]').addEventListener("click", exportProgress);
+    box.querySelector('[data-pt="import"]').addEventListener("click", () => file.click());
+    file.addEventListener("change", async () => {
+      if (!file.files[0]) return;
+      try {
+        const added = await importProgressFile(file.files[0]);
+        msg.textContent = `Imported ${added} new attempt${added === 1 ? "" : "s"}. Reloading\u2026`;
+        setTimeout(() => location.reload(), 800);
+      } catch (e) {
+        msg.textContent = "Import failed: " + e.message;
+      }
+      file.value = "";
+    });
+  }
+
   return {
+    progressToolsHtml,
+    bindProgressTools,
+    exportProgress,
+    importProgressFile,
+    reportIssueUrl,
     loadProgress,
     saveProgress,
     recordAttempt,

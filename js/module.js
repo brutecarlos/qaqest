@@ -110,10 +110,12 @@
       </div>
 
       <h2 class="section-title">Your attempt history</h2>
+      ${QAQuest.progressToolsHtml()}
       ${renderHistory(attempts)}
 
       <p style="margin-top:1.5rem;"><a href="index.html">&larr; Back to all modules</a></p>
     `;
+    QAQuest.bindProgressTools(main);
   } catch (e) {
     main.innerHTML = `<p class="empty-state">Could not load this module. Please refresh the page.</p>`;
     console.error(e);
