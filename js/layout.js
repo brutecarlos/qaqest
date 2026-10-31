@@ -128,12 +128,30 @@
               <a href="index.html">Modules</a>
               <a href="about.html">About</a>
             </nav>
+            <button type="button" class="btn btn-secondary" id="theme-toggle" aria-label="Toggle dark mode"></button>
             <button type="button" class="btn btn-secondary btn-ads-toggle" id="ads-toggle"></button>
           </div>
         </div>
       </header>
       <div id="header-ad-mount"></div>
     `;
+
+    const themeBtn = document.getElementById("theme-toggle");
+    const isDark = () => {
+      const t = document.documentElement.getAttribute("data-theme");
+      return t ? t === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    };
+    const syncTheme = () => {
+      themeBtn.textContent = isDark() ? "\u2600\uFE0F Light" : "\uD83C\uDF19 Dark";
+      themeBtn.setAttribute("aria-pressed", String(isDark()));
+    };
+    syncTheme();
+    themeBtn.addEventListener("click", () => {
+      const next = isDark() ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      try { localStorage.setItem("qaquest_theme_v1", next); } catch (e) {}
+      syncTheme();
+    });
 
     const toggleBtn = document.getElementById("ads-toggle");
     updateToggleButton(toggleBtn);
@@ -181,5 +199,8 @@
     renderHeader();
     renderFooter();
     syncAdSlots();
+    if ("serviceWorker" in navigator && location.protocol !== "file:") {
+      navigator.serviceWorker.register("sw.js").catch(() => {});
+    }
   });
 })();

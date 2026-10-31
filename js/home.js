@@ -44,6 +44,10 @@
   try {
     const data = await QAQuest.fetchJSON("data/modules.json");
     grid.innerHTML = data.modules.map(renderCard).join("");
+    const tools = document.createElement("div");
+    tools.innerHTML = QAQuest.progressToolsHtml();
+    grid.insertAdjacentElement("afterend", tools);
+    QAQuest.bindProgressTools(tools);
   } catch (e) {
     grid.innerHTML = `<p class="empty-state">Could not load modules. Please refresh the page.</p>`;
     console.error(e);
