@@ -46,7 +46,7 @@
   }
 
   function names(list) {
-    return list.map((c) => c.name).join("; ");
+    return list.map((c) => c.name);
   }
 
   function buildPlan(opts) {
@@ -149,7 +149,7 @@
       const contentDays = Math.max(1, d - (d >= 3 ? 2 : 1));
       const groups = partition(chapters, Math.min(contentDays, chapters.length));
       groups.forEach((g, i) => {
-        days.push("Day " + (i + 1) + ": skim and drill in practice mode — " + names(g) + ". Note every wrong answer.");
+        days.push({ text: "Day " + (i + 1) + ": skim and drill in practice mode (note every wrong answer):", items: names(g) });
       });
       if (d >= 3) days.push("Day " + (days.length + 1) + ": review all wrong answers, then take one timed exam-mode simulation (" + examMinutes + " min).");
       else days.push("Day " + (days.length + 1) + ": one timed simulation (" + examMinutes + " min), then review the wrong answers.");
@@ -191,7 +191,7 @@
         title: "Learn and drill every chapter (compressed)",
         phase: "learn",
         goals: [
-          "Skim the syllabus chapters in order, then drill each in practice mode: " + names(chapters),
+          { text: "Skim the syllabus chapters in order, then drill each in practice mode:", items: names(chapters) },
           "Spend extra time on the chapters with the most questions."
         ],
         hours: split(hours, { learn: 0.4, practice: 0.5, review: 0.1 }),
@@ -205,7 +205,7 @@
           title: "Learn the syllabus (" + (i + 1) + " of " + arr.length + ")",
           phase: "learn",
           goals: [
-            "Study: " + names(g),
+            { text: "Study these chapters:", items: names(g) },
             "Make short notes of key terms and definitions.",
             "Finish with a few practice-mode questions per chapter."
           ],
@@ -219,7 +219,7 @@
             title: "Practice-mode drills (" + (i + 1) + " of " + arr.length + ")",
             phase: "practice",
             goals: [
-              "Drill every question in: " + names(g),
+              { text: "Drill every question in:", items: names(g) },
               "Read each explanation, including for questions you got right.",
               "Re-read the syllabus sections behind any chapter below ~70%."
             ],
@@ -346,7 +346,12 @@
 
   function hoursText(h) {
     const labels = { learn: "learn", practice: "practice", review: "review", exam: "timed exam" };
-    return Object.keys(h).map((k) => h[k] + " h " + labels[k]).join(" · ");
+    return "<ul>" + Object.keys(h).map((k) => "<li>" + esc(h[k] + " h " + labels[k]) + "</li>").join("") + "</ul>";
+  }
+
+  function goalHtml(g) {
+    if (typeof g === "string") return "<li>" + esc(g) + "</li>";
+    return "<li>" + esc(g.text) + "<ul>" + g.items.map((i) => "<li>" + esc(i) + "</li>").join("") + "</ul></li>";
   }
 
   function render(plan, form) {
@@ -366,16 +371,16 @@
     const when = plan.examDate ? plan.daysLeft + " days until " + plan.examDate : plan.weekCount + " weeks";
     const modeLabel = { crash: "Crash plan", short: "Short plan", standard: "Standard plan", long: "Long-runway plan" }[plan.mode];
     let html = '<h2 class="section-title">' + esc(modeLabel) + " for " + esc(plan.module.name) + "</h2>";
-    html += "<p>" + esc(when) + " · about " + plan.totalHours + " study hours in total · " + plan.studyDays +
-      " study day" + (plan.studyDays === 1 ? "" : "s") + " per week (about " + plan.sessionMinutes + " min per session).</p>";
+    html += '<ul class="plan-summary"><li>' + esc(when) + "</li><li>About " + plan.totalHours + " study hours in total</li><li>" + plan.studyDays +
+      " study day" + (plan.studyDays === 1 ? "" : "s") + " per week</li><li>About " + plan.sessionMinutes + " minutes per session</li></ul>";
     plan.notes.forEach((n) => { html += '<div class="disclaimer">' + esc(n) + "</div>"; });
     plan.weeks.forEach((w) => {
       const id = "pl-w" + w.index;
       html += '<section class="module-card plan-week"><h3><label for="' + id + '"><input type="checkbox" id="' + id +
         '" data-week="' + w.index + '"' + (done[w.index] ? " checked" : "") + "> " +
         (plan.mode === "crash" ? "" : "Week " + w.index + (w.start ? " (from " + esc(w.start) + ")" : "") + ": ") + esc(w.title) +
-        "</label></h3><ul>" + w.goals.map((g) => "<li>" + esc(g) + "</li>").join("") + "</ul>" +
-        '<p class="module-desc"><strong>Suggested hours:</strong> ' + esc(hoursText(w.hours)) + "</p><p>" +
+        "</label></h3><ul>" + w.goals.map(goalHtml).join("") + "</ul>" +
+        '<p class="plan-label">Suggested hours</p>' + hoursText(w.hours) + '<p class="plan-links">' +
         w.links.map((l) => '<a class="btn btn-secondary" href="' + esc(l.href) + '">' + esc(l.label) + "</a>").join(" ") + "</p></section>";
     });
     html += '<section class="module-card"><h3>Daily session template</h3><p>About ' + plan.sessionMinutes +
