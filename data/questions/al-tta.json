@@ -9,12 +9,12 @@
       "difficulty": "hard",
       "question": "Which white-box coverage criterion additionally requires that all combinations of condition outcomes within a decision be tested?",
       "options": [
-        "Statement coverage",
+        "Statement coverage with every executable line exercised once",
+        "Data flow coverage",
         "Decision coverage",
-        "Multiple condition coverage",
-        "Data flow coverage"
+        "Multiple condition coverage"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "explanation": "Multiple condition coverage requires testing all possible combinations of individual condition outcomes within a single decision."
     },
     {
@@ -24,12 +24,12 @@
       "difficulty": "medium",
       "question": "As a Technical Test Analyst, which type of risk would you PRIMARILY help identify during risk analysis?",
       "options": [
-        "Technical risks related to code structure, architecture, and non-functional quality characteristics",
-        "Risks related purely to marketing strategy",
-        "Risks related to the CEO's public statements",
-        "Risks related to office furniture layout"
+        "Organisational risks tied to executive communications and the staffing plans of the department",
+        "Technical risks tied to code structure, architecture and non-functional quality",
+        "Contractual risks tied to supplier payment terms and legal liabilities",
+        "Business risks tied to market positioning and pricing strategy decisions"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Technical Test Analysts bring technical expertise to risk analysis, focusing on architectural, structural, and non-functional risks such as performance, security, and reliability."
     },
     {
@@ -39,12 +39,12 @@
       "difficulty": "hard",
       "question": "Which structural coverage criterion requires that every feasible path through a program's control flow graph be exercised?",
       "options": [
-        "Statement coverage",
-        "Decision coverage",
         "Path coverage",
-        "Condition coverage"
+        "Condition coverage",
+        "Statement coverage",
+        "Decision coverage"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "explanation": "Path coverage is the strongest and generally most impractical structural coverage criterion, requiring every possible execution path through the code to be exercised."
     },
     {
@@ -54,12 +54,12 @@
       "difficulty": "hard",
       "question": "Modified Condition/Decision Coverage (MC/DC) requires that:",
       "options": [
-        "Only the overall decision outcome be tested as true and false, ignoring individual conditions",
-        "Each individual condition within a decision be shown to independently affect the outcome of that decision",
-        "Every statement in the program execute at least once",
-        "Every possible combination of all conditions in the entire program be tested"
+        "Every statement in the program is executed at least once by some test",
+        "Only the overall decision outcome is exercised as both true and false",
+        "Each condition is shown to independently affect the decision outcome",
+        "Every combination of condition values in the decision is exercised"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "MC/DC requires demonstrating that each condition in a decision can independently affect the decision's outcome, commonly required in safety-critical software standards, without needing full combinatorial testing."
     },
     {
@@ -69,12 +69,12 @@
       "difficulty": "medium",
       "question": "Which of the following is an example of a control-flow-based white-box test technique?",
       "options": [
-        "Equivalence partitioning",
-        "Statement and branch (decision) coverage testing",
-        "Use case testing",
-        "Checklist-based testing"
+        "Equivalence partitioning of input domains",
+        "Checklist-based testing of usability and accessibility heuristics",
+        "Use case testing of business scenarios",
+        "Statement and decision (branch) coverage testing"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Statement and decision (branch) coverage are control-flow-based white-box techniques that analyze the structure of the code's execution paths."
     },
     {
@@ -84,12 +84,12 @@
       "difficulty": "medium",
       "question": "Static analysis tools can be used by Technical Test Analysts to detect which of the following, WITHOUT executing the code?",
       "options": [
-        "Actual response times under production load",
-        "Potential null pointer dereferences, unreachable code, and violations of secure coding standards",
-        "User satisfaction survey results",
-        "Real-time memory usage in production"
+        "Potential null dereferences, unreachable code and coding-standard violations",
+        "Real-time memory consumption observed while the system runs",
+        "Failures that appear only when specific inputs are executed",
+        "Actual response times measured under realistic production load on a live system"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Static analysis can detect a range of structural and potential defect patterns (e.g. null dereference risks, dead code, coding standard violations) without executing the program."
     },
     {
@@ -99,12 +99,12 @@
       "difficulty": "hard",
       "question": "Which technique analyzes how variables are defined, used, and killed throughout a program's execution to design test cases targeting data-related defects?",
       "options": [
-        "Data flow testing",
         "Boundary value analysis",
+        "Control flow path testing",
         "State transition testing",
-        "Use case testing"
+        "Data flow testing"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Data flow testing focuses on sequences of variable definitions and uses (e.g. define-use pairs) to identify tests that can reveal data-related defects, such as using a variable before it's properly defined."
     },
     {
@@ -114,13 +114,13 @@
       "difficulty": "medium",
       "question": "Which quality characteristic is PRIMARILY assessed through security testing techniques like penetration testing?",
       "options": [
-        "Security",
         "Usability",
         "Portability",
+        "Security",
         "Functional correctness"
       ],
-      "correctIndex": 0,
-      "explanation": "Security testing, including techniques like penetration testing and vulnerability scanning, primarily assesses the security quality characteristic \u2014 confidentiality, integrity, and related properties."
+      "correctIndex": 2,
+      "explanation": "Security testing, including techniques like penetration testing and vulnerability scanning, primarily assesses the security quality characteristic — confidentiality, integrity, and related properties."
     },
     {
       "id": "al-tta-009",
@@ -129,12 +129,12 @@
       "difficulty": "medium",
       "question": "Reliability testing, such as a soak/endurance test run over 72 hours, primarily aims to detect:",
       "options": [
-        "Cosmetic UI misalignments",
-        "Memory leaks, resource exhaustion, or degradation in stability under sustained operation",
-        "Grammatical errors in error messages",
-        "Missing translations for a specific locale"
+        "Memory leaks, resource exhaustion or gradual loss of stability over time",
+        "Missing translations for a specific language or locale",
+        "Incorrect wording and grammar in displayed error messages",
+        "Cosmetic misalignments of user interface elements and controls on screen"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Reliability (endurance/soak) testing runs the system under sustained load over an extended period to detect issues like memory leaks or gradual resource exhaustion that only appear over time."
     },
     {
@@ -144,12 +144,12 @@
       "difficulty": "medium",
       "question": "Which quality characteristic evaluates how easily a system can be modified, extended, or have defects fixed?",
       "options": [
-        "Maintainability",
         "Portability",
-        "Compatibility",
-        "Functional completeness"
+        "Functional suitability",
+        "Maintainability",
+        "Compatibility"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Maintainability assesses how easily the software can be modified, including corrective, adaptive, and perfective changes, as well as how testable and analyzable the code is."
     },
     {
@@ -159,10 +159,10 @@
       "difficulty": "medium",
       "question": "Which activity is MOST closely associated with the Technical Test Analyst's role, as opposed to the Test Analyst's?",
       "options": [
-        "Designing test cases based purely on user-facing business requirements",
-        "Designing white-box test cases based on code structure and evaluating non-functional quality characteristics like performance and security",
-        "Writing user manuals for end users",
-        "Managing the overall project budget"
+        "Deriving test cases purely from user-facing business requirements and workflows",
+        "Designing white-box tests from code structure and evaluating non-functional characteristics such as performance and security",
+        "Preparing acceptance test scenarios in the language of the business users",
+        "Validating that business rules are implemented as the stakeholders expect"
       ],
       "correctIndex": 1,
       "explanation": "Technical Test Analysts typically focus on structure-based (white-box) testing and technical, non-functional quality characteristics, complementing the Test Analyst's functional/business focus."
@@ -174,12 +174,12 @@
       "difficulty": "medium",
       "question": "Which technical factor would typically INCREASE the likelihood component of a risk related to a specific module?",
       "options": [
-        "The module has low cyclomatic complexity and a stable, experienced team",
-        "The module has high cyclomatic complexity, was recently rewritten, and has a history of defects",
-        "The module was fully covered by static analysis with zero warnings",
-        "The module has not changed in over two years"
+        "No changes to the module for more than two years",
+        "Low cyclomatic complexity together with a stable, experienced and well-staffed team",
+        "High cyclomatic complexity, a recent rewrite and a history of defects",
+        "A clean static analysis report with no warnings in the module"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "High complexity, recent significant changes, and a history of defects are technical factors that typically increase the likelihood of a module containing further defects."
     },
     {
@@ -187,15 +187,15 @@
       "chapter": "3. White-box Test Techniques",
       "loRef": "AL-TTA-3.1.2",
       "difficulty": "hard",
-      "question": "For the following code: IF (a) THEN x=1 ELSE IF (b) THEN x=2 ELSE x=3, how many decision outcomes must be exercised to achieve 100% decision coverage?",
+      "question": "For the code IF (a) THEN x=1 ELSE IF (b) THEN x=2 ELSE x=3, what is the minimum number of test cases needed to achieve 100% decision coverage?",
       "options": [
         "1",
-        "2",
         "3",
-        "4"
+        "4",
+        "2"
       ],
-      "correctIndex": 2,
-      "explanation": "There are effectively 3 distinct outcomes/branches in this nested decision structure (a true, a false & b true, a false & b false), all of which must be exercised for 100% decision coverage."
+      "correctIndex": 1,
+      "explanation": "The code has two decisions, giving four decision outcomes (a true, a false, b true, b false). They can all be exercised with three tests: a true; a false with b true; a false with b false."
     },
     {
       "id": "al-tta-014",
@@ -204,10 +204,10 @@
       "difficulty": "medium",
       "question": "Dynamic analysis tools, unlike static analysis tools, detect defects by:",
       "options": [
-        "Examining source code without executing it",
-        "Monitoring the software's behavior while it is actually running, e.g. detecting memory leaks or wild pointers at runtime",
-        "Reviewing requirements documents in a meeting",
-        "Reading test management tool reports only"
+        "Reviewing design documents in a formal inspection meeting",
+        "Monitoring the software while it runs, for example to detect memory leaks or wild pointers",
+        "Parsing the code to calculate complexity and coupling metrics",
+        "Examining the source code for rule violations without executing it"
       ],
       "correctIndex": 1,
       "explanation": "Dynamic analysis tools operate while the software executes, detecting runtime issues such as memory leaks, wild pointers, or resource usage problems that static analysis cannot observe."
@@ -219,12 +219,12 @@
       "difficulty": "medium",
       "question": "Compatibility testing MOST directly evaluates whether a system:",
       "options": [
-        "Can coexist and correctly share resources or interoperate with other software in a common environment without adverse effects",
-        "Runs faster than its previous version under all conditions",
-        "Contains any unreachable code",
-        "Meets the pass mark on a certification exam"
+        "Whether it can be moved to a different platform with little effort",
+        "Whether it can coexist and interoperate with other software in a shared environment without adverse effects",
+        "Whether it resists attempts to access data without authorisation",
+        "Whether it runs faster than its previous release under typical load"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Compatibility testing checks that a system can coexist with other software sharing a common environment, without negatively affecting shared resources or functionality."
     },
     {
@@ -234,12 +234,12 @@
       "difficulty": "medium",
       "question": "Why might a Technical Test Analyst be involved in code reviews alongside developers?",
       "options": [
-        "To bring a testing perspective focused on testability, structural coverage, and technical risk areas",
-        "Because Technical Test Analysts write all the production code themselves",
-        "Because code reviews are unrelated to testing and should be skipped",
-        "Because only Technical Test Analysts are legally allowed to view source code"
+        "To approve every change request raised against the reviewed code",
+        "To contribute a testing view on testability, structural coverage and technical risk",
+        "To write the production code on behalf of the development team",
+        "To replace the author in deciding which defects must be fixed"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Technical Test Analysts add value in code reviews by focusing on testability, structural risk, and technical concerns that complement the developer's implementation perspective."
     },
     {
@@ -249,12 +249,12 @@
       "difficulty": "medium",
       "question": "Condition coverage requires that:",
       "options": [
-        "Every statement executes at least once, regardless of any conditions",
-        "Each individual condition within a decision be evaluated to both true and false at least once, though this does not guarantee decision coverage",
-        "Every combination of all conditions across the whole program is tested",
-        "Only the overall decision outcome is exercised as true"
+        "Each individual condition is evaluated as both true and false, yet decision coverage is not guaranteed",
+        "The overall decision is shown to evaluate to both true and false",
+        "Every combination of condition values in the decision is exercised",
+        "Every statement is executed at least once, whatever the conditions are"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Condition coverage requires each individual condition to take both true and false values, but on its own does not guarantee that the overall decision outcome has been exercised both ways."
     },
     {
@@ -264,12 +264,12 @@
       "difficulty": "medium",
       "question": "Which type of static analysis finding is generally considered a HIGH-value catch because it can cause unpredictable runtime crashes?",
       "options": [
-        "A minor variable naming convention violation",
-        "A potential null pointer dereference or use of an uninitialized variable",
-        "A missing code comment",
-        "An unusually long function name"
+        "A possible null pointer dereference or use of an uninitialised variable",
+        "A function that has no explanatory header comment above it",
+        "A variable name that departs from the team naming convention",
+        "A source file whose line length exceeds the formatting guideline agreed by the team"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Static analysis findings like potential null pointer dereferences or uninitialized variable use are high-value because they often correspond to real defects that can cause crashes or undefined behavior."
     },
     {
@@ -279,12 +279,12 @@
       "difficulty": "hard",
       "question": "A penetration test discovers that user input is not sanitized before being used in a database query. This is MOST likely evidence of which vulnerability class?",
       "options": [
-        "Cross-site scripting (XSS) only",
-        "SQL injection",
         "Denial of service",
-        "Broken usability"
+        "Session fixation",
+        "Cross-site scripting (XSS)",
+        "SQL injection"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Unsanitized user input used directly in database queries is a classic indicator of SQL injection vulnerability, allowing attackers to manipulate queries."
     },
     {
@@ -294,12 +294,12 @@
       "difficulty": "medium",
       "question": "Which mitigation approach would a Technical Test Analyst typically recommend for a HIGH technical risk related to a complex, poorly-covered legacy module?",
       "options": [
-        "Ignore the module since it has worked so far",
-        "Increase structural test coverage (e.g., branch coverage) and add targeted static/dynamic analysis for that module",
-        "Remove all existing tests for that module to save time",
-        "Assign the least experienced developer to modify it with no additional testing"
+        "Cut the existing tests for the module to free up testing time",
+        "Defer attention to the module because it has worked until now",
+        "Allow changes to proceed with only the developer's informal checks",
+        "Raise structural coverage such as branch coverage and add targeted static and dynamic analysis"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "For high-risk, complex, poorly-covered code, a common technical mitigation is to increase structural coverage and apply focused static/dynamic analysis to reduce the residual risk."
     },
     {
@@ -309,12 +309,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a primary responsibility of the technical test analyst that differs from the test analyst role?",
       "options": [
-        "Writing user-facing acceptance criteria for business stakeholders",
-        "Designing and executing tests based on internal code structure and technical risk, such as structure-based and non-functional testing",
-        "Managing the overall project budget",
-        "Facilitating sprint retrospectives"
+        "Designing and running tests from internal structure and technical risk, including non-functional testing",
+        "Running exploratory sessions against business-facing workflows",
+        "Writing acceptance criteria and user stories for business stakeholders",
+        "Specifying test conditions from business rules and use cases"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "The technical test analyst focuses on structure-based (white-box) testing, technical quality characteristics, and non-functional aspects, which are more code- and architecture-centric than the business-facing test analyst role."
     },
     {
@@ -324,12 +324,12 @@
       "difficulty": "medium",
       "question": "From a technical test analyst's perspective, which factor is MOST relevant when assessing the likelihood component of a technical risk?",
       "options": [
-        "The marketing budget allocated to the feature",
-        "Complexity of the code, technical/organizational factors, and history of defects in similar components",
-        "The color scheme chosen for the user interface",
-        "The number of people who attended the kickoff meeting"
+        "The number of stakeholders who joined the project kick-off",
+        "The size of the marketing budget assigned to the feature",
+        "The visual design and colour choices of the user interface",
+        "Code complexity, technical and organisational factors, and defect history of similar components"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Technical test analysts assess likelihood using factors such as code complexity, technical and organizational factors (e.g., time pressure, team experience), and historical defect data in similar components."
     },
     {
@@ -339,10 +339,10 @@
       "difficulty": "hard",
       "question": "How should a technical test analyst adjust the test approach for a component identified as high technical risk?",
       "options": [
-        "Skip testing it since high-risk components are too complex to test effectively",
-        "Apply more rigorous techniques (e.g., higher code coverage targets, more thorough structural testing) and test it earlier",
-        "Test it only after all low-risk components have been fully tested",
-        "Delegate testing entirely to the end users in production"
+        "Schedule its testing only after all of the low-risk items are completely finished",
+        "Use more rigorous techniques and higher coverage targets, and test it earlier",
+        "Release it and rely on production users to find any problems",
+        "Reduce its testing because complex parts are hard to test well"
       ],
       "correctIndex": 1,
       "explanation": "High technical risk components warrant more rigorous test techniques, greater coverage, and earlier test attention to reduce the residual risk before release."
@@ -354,12 +354,12 @@
       "difficulty": "medium",
       "question": "What does 'statement coverage' measure in structural testing?",
       "options": [
-        "The percentage of decision outcomes (true/false) that have been exercised",
-        "The percentage of executable statements that have been exercised by a test suite",
-        "The percentage of user requirements that have been tested",
-        "The percentage of defects fixed versus reported"
+        "The percentage of decision outcomes exercised by the tests",
+        "The percentage of requirements covered by at least one executed test case",
+        "The percentage of executable statements exercised by the tests",
+        "The percentage of reported defects that have been fixed"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Statement coverage measures the percentage of executable statements in the code that have been exercised by the test suite, at least once."
     },
     {
@@ -369,12 +369,12 @@
       "difficulty": "medium",
       "question": "Achieving 100% decision coverage guarantees which of the following?",
       "options": [
-        "100% multiple condition coverage as well",
-        "100% statement coverage, since every branch (true and false outcome) is exercised, meaning every statement reachable through those branches is executed",
-        "Zero defects remain in the code",
-        "That all possible input combinations were tested"
+        "Execution of every possible input combination at least once",
+        "The absence of remaining defects in the exercised code",
+        "100% statement coverage, since every branch taken executes all reachable statements",
+        "100% multiple condition coverage, since all outcomes are visited"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "100% decision coverage subsumes 100% statement coverage because every branch (true and false) of every decision is exercised, which necessarily executes every reachable statement, though it does not guarantee all condition combinations or zero defects."
     },
     {
@@ -382,14 +382,14 @@
       "chapter": "3. White-box Test Techniques",
       "loRef": "AL-TTA-3.3.1",
       "difficulty": "hard",
-      "question": "Which structural coverage criterion is specifically designed to test all combinations of individual condition outcomes while managing the exponential growth in test cases seen with multiple condition coverage?",
+      "question": "Which structural coverage criterion shows the influence of each individual condition on a decision while avoiding the exponential growth in test cases seen with multiple condition coverage?",
       "options": [
-        "Statement coverage",
-        "Modified Condition/Decision Coverage (MC/DC)",
-        "Branch coverage",
-        "Loop coverage"
+        "Multiple condition coverage with every outcome combination",
+        "Loop coverage",
+        "Branch (decision) coverage",
+        "Modified Condition/Decision Coverage (MC/DC)"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "MC/DC requires that each condition in a decision be shown to independently affect the decision's outcome, achieving strong fault detection with fewer test cases than full multiple condition coverage."
     },
     {
@@ -399,10 +399,10 @@
       "difficulty": "hard",
       "question": "Which of the following BEST describes the purpose of data flow testing as a white-box technique?",
       "options": [
-        "To verify user interface layout consistency across screens",
-        "To test paths of variables from their definition (where a value is assigned) to their use, revealing anomalies such as using an undefined variable",
-        "To measure the response time of database queries",
-        "To validate GUI accessibility compliance"
+        "To check that the application complies with accessibility guidelines for impaired users",
+        "To follow variables from where a value is defined to where it is used, revealing anomalies such as use of an undefined variable",
+        "To confirm that screens and controls are laid out consistently across the user interface",
+        "To measure how quickly database queries return results under increasing load"
       ],
       "correctIndex": 1,
       "explanation": "Data flow testing focuses on the sequences of variable definitions and uses, designing tests that follow paths from where a variable is defined to where it is used, helping reveal data flow anomalies."
@@ -414,12 +414,12 @@
       "difficulty": "medium",
       "question": "Why might a technical test analyst prefer branch coverage over pure statement coverage for critical modules?",
       "options": [
-        "Branch coverage is always easier to achieve than statement coverage",
-        "Branch coverage additionally requires both true and false outcomes of decisions to be exercised, offering a stronger structural coverage guarantee",
-        "Branch coverage does not require the code to compile",
-        "Branch coverage is only applicable to user interface code"
+        "Branch coverage applies to user interface code but not to business logic",
+        "Branch coverage can be measured without instrumenting or analysing the source code",
+        "Branch coverage generally needs fewer tests than statement coverage for the same piece of code",
+        "Branch coverage also demands both outcomes of each decision, giving stronger structural assurance"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Branch (decision) coverage requires that both the true and false outcomes of each decision be exercised, offering stronger fault detection potential than statement coverage alone, especially for critical logic."
     },
     {
@@ -429,12 +429,12 @@
       "difficulty": "medium",
       "question": "What is the main goal of static analysis as performed by a technical test analyst?",
       "options": [
-        "To execute the code against a live production environment",
-        "To detect defects in code or design without executing the software, e.g., using tools to find unreachable code or unused variables",
-        "To measure end-user satisfaction with the product",
-        "To calculate the project's total budget variance"
+        "To find defects in code or design without executing the software, for example unreachable code or unused variables",
+        "To run the code in a live production environment and observe how real users behave",
+        "To calculate the budget variance reported against the project plan at each milestone",
+        "To gauge end-user satisfaction with the delivered product through feedback surveys"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Static analysis examines code or design artifacts without executing the software, using tools (or manual review) to detect issues such as unreachable code, unused variables, or violations of coding standards."
     },
     {
@@ -444,13 +444,13 @@
       "difficulty": "hard",
       "question": "Cyclomatic complexity is primarily used by a technical test analyst for which purpose?",
       "options": [
-        "To estimate the minimum number of independent paths through a piece of code, informing the number of test cases needed for full decision coverage",
-        "To measure the aesthetic quality of the user interface",
-        "To calculate the exact number of defects present in a module",
-        "To determine the marketing priority of a feature"
+        "To estimate the number of independent paths through code, which guides how many tests are needed for decision coverage",
+        "To judge how appealing the user interface is to the intended audience",
+        "To rank features by their commercial priority for the next release",
+        "To determine the exact number of defects hidden inside a given module"
       ],
       "correctIndex": 0,
-      "explanation": "Cyclomatic complexity gives an estimate of the number of independent paths through a code module, which technical test analysts use to gauge testing effort and set targets such as the minimum number of test cases for decision coverage."
+      "explanation": "Cyclomatic complexity gives the number of linearly independent paths through a module, which technical test analysts use to gauge testing effort; it indicates roughly how many tests full decision coverage may need."
     },
     {
       "id": "al-tta-031",
@@ -459,12 +459,12 @@
       "difficulty": "medium",
       "question": "Which activity is an example of dynamic analysis, as opposed to static analysis?",
       "options": [
-        "Reviewing source code for adherence to a coding standard without running it",
-        "Detecting memory leaks or wild pointers by monitoring a program's behavior while it executes",
-        "Reviewing a requirements document for completeness",
-        "Reviewing a test plan document before approval"
+        "Inspecting a requirements document for completeness and ambiguity",
+        "Reading a test plan carefully before it is approved for use",
+        "Checking source code against the coding standard without running the program under test",
+        "Spotting memory leaks or wild pointers by observing the program while it executes"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Dynamic analysis involves evaluating a program's behavior while it is executing, such as detecting memory leaks, wild pointers, or resource usage issues at runtime, unlike static analysis which does not execute the code."
     },
     {
@@ -474,12 +474,12 @@
       "difficulty": "medium",
       "question": "Which quality characteristic is the technical test analyst primarily responsible for when assessing how easily a system can be modified, extended, or corrected?",
       "options": [
-        "Maintainability",
-        "Usability",
+        "Functional suitability",
         "Portability",
-        "Functional suitability"
+        "Maintainability",
+        "Usability"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Maintainability concerns the ease with which a system can be modified, corrected, or enhanced, and is a key quality focus of the technical test analyst role."
     },
     {
@@ -489,10 +489,10 @@
       "difficulty": "medium",
       "question": "Security testing performed by a technical test analyst primarily aims to verify which aspect of the system?",
       "options": [
-        "That data and systems are protected against unauthorized access, use, disclosure, or destruction",
-        "That the marketing copy is grammatically correct",
-        "That the release notes are complete",
-        "That the user interface follows brand guidelines"
+        "That data and systems are protected from unauthorised access, use, disclosure or destruction",
+        "That the text on marketing material is free of spelling and grammar errors",
+        "That the release notes list every change delivered in the build",
+        "That the screens follow the corporate brand and style guidelines"
       ],
       "correctIndex": 0,
       "explanation": "Security testing evaluates the confidentiality, integrity, authenticity, availability, and non-repudiation of data and systems, verifying protection against unauthorized access, use, disclosure, or destruction."
@@ -504,12 +504,12 @@
       "difficulty": "hard",
       "question": "Which of the following is a sub-characteristic of portability that a technical test analyst might test?",
       "options": [
-        "Adaptability - how well the software can be adapted for different environments",
-        "Functional correctness - whether outputs are accurate",
-        "Time behavior - system response times under load",
-        "Learnability - how easy it is for new users to learn the system"
+        "Learnability, meaning how easily new users can master the system",
+        "Adaptability, meaning how well software can be adapted to different environments",
+        "Accuracy, meaning whether the outputs produced are correct",
+        "Time behaviour, meaning how quickly the system responds when under heavy load"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Adaptability, a sub-characteristic of portability, evaluates how effectively and efficiently a system can be adapted for different or evolving hardware, software, or environmental contexts."
     },
     {
@@ -519,12 +519,12 @@
       "difficulty": "medium",
       "question": "Reliability testing performed by a technical test analyst most directly evaluates which of the following?",
       "options": [
-        "The system's ability to perform specified functions under stated conditions for a specified period of time without failure",
-        "The visual consistency of icons across screens",
-        "Whether the requirements document was reviewed by stakeholders",
-        "The cost of the testing tools used"
+        "The extent to which the requirements were reviewed by stakeholders",
+        "The visual consistency of icons and labels across all screens",
+        "The licence and running costs of the tools used for testing",
+        "The ability to perform required functions under stated conditions for a specified period without failure"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Reliability testing assesses whether a system can perform its required functions under stated conditions for a specified period without failure, often including sub-characteristics like maturity, availability, and fault tolerance."
     },
     {
@@ -534,12 +534,12 @@
       "difficulty": "medium",
       "question": "Which task would a technical test analyst typically perform during test implementation for a structure-based test approach?",
       "options": [
-        "Writing the marketing brochure for the release",
-        "Setting up code coverage measurement tools and instrumenting the code under test",
-        "Negotiating the contract terms with a third-party vendor",
-        "Approving the overall project scope"
+        "Approving the overall project scope with the sponsor",
+        "Negotiating the contract terms with a third-party supplier",
+        "Setting up coverage measurement tools and instrumenting the code under test",
+        "Drafting the marketing brochure that announces the release"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Technical test analysts set up and configure tools (such as code coverage tools) needed to measure structural coverage during test implementation for structure-based testing approaches."
     },
     {
@@ -549,12 +549,12 @@
       "difficulty": "hard",
       "question": "Which testing technique specifically targets loops in code, checking cases such as zero iterations, one iteration, and the maximum number of iterations?",
       "options": [
-        "Loop testing",
-        "Equivalence partitioning",
         "Decision table testing",
-        "Pairwise testing"
+        "Pairwise testing",
+        "Equivalence partitioning",
+        "Loop testing"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Loop testing is a structure-based technique that specifically targets the validity of loop constructs, typically testing boundary conditions such as zero, one, and the maximum number of iterations."
     },
     {
@@ -564,12 +564,12 @@
       "difficulty": "medium",
       "question": "In a technical risk assessment, what does 'impact' typically represent?",
       "options": [
-        "The probability that a defect will occur in a given component",
-        "The consequence or severity of harm that would result if the risk became an actual problem",
-        "The number of test cases required to cover the component",
-        "The number of developers assigned to the component"
+        "The probability that a defect is present in a given component of the system",
+        "The number of test cases needed to cover the component",
+        "The consequence or severity of harm if the risk becomes an actual problem",
+        "The number of developers assigned to work on the component"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Impact represents the consequence or severity that would result if the risk materialized into an actual problem, and is combined with likelihood to determine overall risk level."
     },
     {
@@ -579,12 +579,12 @@
       "difficulty": "medium",
       "question": "Which of these is a typical benefit of using static analysis tools early in development?",
       "options": [
-        "It guarantees the software will pass all later dynamic tests",
-        "It can detect certain defects (e.g., unreachable code, undeclared variables) earlier and more cheaply than dynamic testing",
-        "It removes the need for any code reviews",
-        "It replaces the need for a version control system"
+        "It finds certain defects, such as unreachable code or undeclared variables, earlier and more cheaply than dynamic testing",
+        "It makes formal code reviews unnecessary for the development team",
+        "It ensures that the software will pass every later dynamic test",
+        "It stands in for version control when tracking source changes"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Static analysis tools can detect certain classes of defects earlier in the lifecycle, before code execution, which is typically cheaper to fix than defects found later via dynamic testing."
     },
     {
@@ -594,12 +594,12 @@
       "difficulty": "hard",
       "question": "Compatibility testing, as performed by a technical test analyst, primarily verifies which of the following?",
       "options": [
-        "That the system can coexist and share resources with other systems without negative impact, and can interoperate as needed",
-        "That the user manual is translated into multiple languages",
-        "That developers followed the agreed sprint schedule",
-        "That the marketing team approved the release notes"
+        "That the user manual has been translated into several languages",
+        "That the team followed the agreed sprint schedule closely",
+        "That the system coexists and shares resources with other systems without harm, and interoperates where needed",
+        "That the release notes were approved by the marketing team"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Compatibility testing evaluates whether a system can coexist with other systems sharing a common environment and resources, and interoperate correctly where required, without adversely affecting each other."
     },
     {
@@ -609,12 +609,12 @@
       "difficulty": "easy",
       "question": "Which contribution most helps a CI pipeline detect structural regressions in critical code quickly?",
       "options": [
-        "Publishing coverage and static-analysis trends for the changed module",
-        "Adding more color themes to the dashboard",
-        "Reducing defect reports to a single monthly summary",
-        "Moving all tests to the end of the release"
+        "Adding extra colour themes and widgets to the team dashboard for each release",
+        "Merging defect reports into a single summary issued monthly",
+        "Running all automated tests once at the end of the release",
+        "Publishing coverage and static-analysis trends for the changed module"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Coverage trends and static-analysis results give fast, technical feedback about whether code changes increased structural risk."
     },
     {
@@ -624,10 +624,10 @@
       "difficulty": "medium",
       "question": "When developers say a defect cannot be reproduced, which improvement should a Technical Test Analyst usually advocate first?",
       "options": [
-        "Removing failing assertions from the test",
+        "Waiting until production users report the same defect once more",
         "Adding deterministic logging and correlation identifiers around the failing path",
-        "Reducing the amount of diagnostic data collected",
-        "Waiting for production users to report the defect again"
+        "Reducing the volume of diagnostic data collected to simplify analysis",
+        "Removing the failing assertions so that the test stops reporting the failure to the team"
       ],
       "correctIndex": 1,
       "explanation": "Deterministic diagnostics make intermittent failures easier to reproduce and isolate without weakening the test."
@@ -639,12 +639,12 @@
       "difficulty": "hard",
       "question": "A component hides all state internally and reads the system clock directly. Which redesign most improves its automated technical testability?",
       "options": [
-        "Increasing the number of inline comments",
-        "Injecting time and exposing behavior through observable interfaces",
-        "Combining it with more modules to reduce call depth",
-        "Replacing unit tests with manual scripts"
+        "Retiring the unit tests in favour of manual test scripts",
+        "Merging it into neighbouring modules to reduce the call depth and the number of interfaces",
+        "Injecting the clock and exposing behaviour through observable interfaces",
+        "Adding many more inline comments explaining the time handling"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Injecting time removes nondeterminism, and observable interfaces let tests verify behavior without reaching into implementation details."
     },
     {
@@ -654,12 +654,12 @@
       "difficulty": "easy",
       "question": "For an embedded module that depends on a physical sensor not yet available, what is the most useful support for early automated testing?",
       "options": [
+        "Showing a demonstration of the finished device to the sponsors",
+        "Running only final acceptance tests on production hardware",
         "A test driver with a controllable sensor stub or simulator",
-        "Only final acceptance tests on production hardware",
-        "A marketing demo of the finished device",
-        "Skipping testing until all hardware arrives"
+        "Postponing all testing until the physical hardware is delivered"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Drivers and simulators let technical tests exercise low-level logic before the real hardware is ready."
     },
     {
@@ -669,10 +669,10 @@
       "difficulty": "medium",
       "question": "When choosing a coverage tool for a safety-relevant module, which capability matters most?",
       "options": [
-        "Rendering test reports with company branding",
-        "Measuring the required structural criterion accurately for the target language and build",
-        "Including a built-in chat client for the team",
-        "Supporting only manual test execution"
+        "Offering a built-in chat client so the team can talk",
+        "Accurate measurement of the required structural criterion for the target language and build",
+        "Producing test reports styled with the company branding",
+        "Supporting only the manual execution of test cases"
       ],
       "correctIndex": 1,
       "explanation": "The tool must measure the required criterion correctly in the actual environment, otherwise coverage evidence is not trustworthy."
@@ -684,12 +684,12 @@
       "difficulty": "hard",
       "question": "During an architecture review, which question from a Technical Test Analyst most directly targets testability?",
       "options": [
-        "Can external failures, timeouts, and retries be triggered in a controlled way?",
-        "Can the release notes be shortened?",
-        "Can all code be moved into one file?",
-        "Can all defects be deferred until production?"
+        "Can defect fixes be deferred until after the product goes live?",
+        "Can the source be consolidated into fewer files to simplify the build and release process?",
+        "Can external failures, timeouts and retries be triggered in a controlled way?",
+        "Can the release notes be made shorter and easier to read?"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Controllable failure injection is a strong indicator that fault handling can be tested systematically."
     },
     {
@@ -699,10 +699,10 @@
       "difficulty": "easy",
       "question": "A growing backlog of suppressed static-analysis warnings is usually a sign of what?",
       "options": [
-        "Healthy technical debt reduction",
-        "A technical debt signal that may hide real defects",
         "A guarantee that runtime failures cannot occur",
-        "Improved business requirement coverage"
+        "A technical debt signal that may be hiding real defects",
+        "A healthy sign that technical debt is being reduced",
+        "A sign of improved coverage of the business requirements by tests"
       ],
       "correctIndex": 1,
       "explanation": "Suppressed warnings can normalize risk and make teams less likely to notice important findings."
@@ -714,10 +714,10 @@
       "difficulty": "medium",
       "question": "Which handoff artifact is most useful when non-functional automated tests are added to CI?",
       "options": [
-        "A list of everyone who attended the planning meeting",
-        "Repeatable execution steps, environment needs, and pass-fail thresholds",
-        "Only a screenshot of the final report",
-        "A promise to investigate failures later"
+        "A commitment to look into any failures at a later date",
+        "Repeatable execution steps, environment needs and pass/fail thresholds",
+        "A screenshot of the final report with no further detail about how it was produced",
+        "A list of the people who attended the planning meeting"
       ],
       "correctIndex": 1,
       "explanation": "CI needs executable, repeatable instructions and clear thresholds so results can be interpreted consistently."
@@ -729,12 +729,12 @@
       "difficulty": "hard",
       "question": "A service returns randomized identifiers and timestamps in every response. What should be added to make automated assertions stable?",
       "options": [
-        "More manual checkpoints in each test",
         "The ability to seed randomness or mask volatile fields in the oracle",
-        "Less logging from the service",
-        "An instruction to rerun failed tests until they pass"
+        "A rule to rerun failed tests repeatedly until they eventually pass without changes",
+        "Extra manual checkpoints added to each automated test",
+        "A reduction in the logging produced by the service"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Stable or normalized outputs are essential so tests fail only for meaningful behavior differences."
     },
     {
@@ -744,12 +744,12 @@
       "difficulty": "easy",
       "question": "Which activity best fits a Technical Test Analyst during tool evaluation?",
       "options": [
+        "Postponing integration checks until after the purchase has been completed",
         "Running a proof of concept on real project code and data",
-        "Choosing the tool with the nicest icon set",
-        "Selecting the tool that produces the longest reports",
-        "Avoiding integration checks until after purchase"
+        "Choosing the tool that generates the longest reports",
+        "Picking the tool that has the most attractive icon set"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "A proof of concept on realistic artifacts reveals whether the tool provides value in the actual project context."
     },
     {
@@ -759,12 +759,12 @@
       "difficulty": "medium",
       "question": "Why might a Technical Test Analyst request extra diagnostic hooks in a highly asynchronous system?",
       "options": [
-        "To replace all business logging with test-only messages",
-        "To observe ordering and state transitions during failures",
-        "To make the production code more complex",
-        "To prevent developers from debugging locally"
+        "To observe event ordering and state transitions when failures occur",
+        "To swap all business logging for messages meant only for test runs",
+        "To stop developers from reproducing and debugging issues on their machines",
+        "To add extra complexity so that the code is harder to reverse-engineer"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Observability is often the key to understanding race conditions and timing-related failures."
     },
     {
@@ -775,9 +775,9 @@
       "question": "In a regulated project, why might a simple homegrown harness be rejected for official structural coverage reporting?",
       "options": [
         "It may lack the evidence of correctness or qualification needed for trusted measurement",
-        "It cannot be used with automated tests",
-        "It always reports too much coverage",
-        "It is only allowed for business analysts"
+        "Regulators permit such tools for business analysts but not testers",
+        "It tends to overstate the coverage that the tests have achieved",
+        "It cannot be combined with automated test execution of any kind"
       ],
       "correctIndex": 0,
       "explanation": "For regulated evidence, the measurement approach itself may need justification, validation, or qualification."
@@ -790,9 +790,9 @@
       "question": "Which code change usually improves automated testing with minimal product risk?",
       "options": [
         "Separating pure calculation from input-output side effects",
-        "Inlining several unrelated modules into one function",
-        "Removing error codes to simplify assertions",
-        "Replacing logs with random identifiers"
+        "Inlining several unrelated modules into one large function",
+        "Replacing meaningful log messages with random identifiers",
+        "Removing error codes so that assertions become simpler to write"
       ],
       "correctIndex": 0,
       "explanation": "Decoupling calculation from side effects makes the logic easier to control and verify in tests."
@@ -804,12 +804,12 @@
       "difficulty": "medium",
       "question": "A unit-level performance test is noisy because it runs on a shared machine. What should the Technical Test Analyst do first?",
       "options": [
-        "Delete the test because performance cannot be measured automatically",
-        "Stabilize the environment and define a repeatable measurement protocol",
-        "Increase the threshold until the test always passes",
-        "Move the test to manual execution only"
+        "Stabilise the environment and define a repeatable measurement protocol",
+        "Convert the test to manual execution and record results by hand",
+        "Delete the test, since automated tools cannot measure performance reliably",
+        "Raise the threshold until the test passes on every noisy run"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Controlling measurement conditions is necessary before the numbers can support technical decisions."
     },
     {
@@ -819,12 +819,12 @@
       "difficulty": "hard",
       "question": "Which automation smell most undermines trust in technical tests?",
       "options": [
-        "Tests executing faster after an optimization",
-        "Intermittent failures unrelated to product changes",
-        "Tests running in parallel",
-        "Tests producing detailed logs"
+        "Intermittent failures that are unrelated to product changes",
+        "Tests that execute in parallel across several machines",
+        "Tests that write detailed logs for every step they perform",
+        "Tests that run faster after an optimisation of the test code"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Flaky tests erode confidence because teams cannot tell whether a failure indicates a product defect or test instability."
     },
     {
@@ -834,10 +834,10 @@
       "difficulty": "easy",
       "question": "When a new static-analysis tool is introduced, which responsibility most naturally fits the Technical Test Analyst?",
       "options": [
-        "Tuning rules and thresholds with developers based on risk",
-        "Approving all product branding changes",
-        "Owning payroll calculations for the project",
-        "Removing all existing review practices"
+        "Tuning rules and thresholds together with developers, based on risk",
+        "Retiring all existing review practices once the new tool is running in the team",
+        "Owning the payroll calculations produced for the project team",
+        "Approving changes to the product's branding and visual identity"
       ],
       "correctIndex": 0,
       "explanation": "The Technical Test Analyst helps align tool findings with technical risk so teams focus on high-value checks."
@@ -849,12 +849,12 @@
       "difficulty": "medium",
       "question": "A team insists that every defect must be reproduced manually before it may be automated. What is the strongest technical objection?",
       "options": [
-        "Manual reproduction is usually faster than automation",
-        "Manual reproduction can be slow and non-repeatable, while automation preserves exact conditions",
-        "Automated tests cannot check technical behavior",
-        "Manual execution guarantees better structural coverage"
+        "Manual reproduction is slow and hard to repeat, while automation preserves the exact conditions",
+        "Manual execution gives better structural coverage than automated runs do",
+        "Automated tests are unable to examine technical behaviour of a system",
+        "Manual reproduction is nearly always faster than writing an automated test"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Encoding the reproduction as automation preserves the conditions that exposed the defect and reduces future diagnosis effort."
     },
     {
@@ -864,12 +864,12 @@
       "difficulty": "hard",
       "question": "For a multi-service test environment, which design choice best helps isolate a suspected interface defect?",
       "options": [
-        "Randomizing the order of all service start-ups",
-        "Virtualizing service boundaries with controllable responses",
-        "Increasing the number of end-user manuals",
-        "Routing all traffic through production"
+        "Sending all test traffic through the live production services instead",
+        "Writing more end-user manuals for each of the services",
+        "Randomising the order in which all the services start up",
+        "Virtualising service boundaries with controllable responses"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Controllable boundary behavior helps the team prove whether the failure originates in the caller, callee, or the contract between them."
     },
     {
@@ -879,10 +879,10 @@
       "difficulty": "easy",
       "question": "Which trend would most interest a Technical Test Analyst reviewing code quality over time?",
       "options": [
-        "Rising complexity and duplicated logic in frequently changed code",
-        "More emojis in commit messages",
-        "Fewer calendar invites for the team",
-        "A longer company holiday list"
+        "Growing complexity and duplicated logic in frequently changed code",
+        "A decline in the number of calendar invites and status meetings sent to the team",
+        "A rising count of emojis used in commit messages",
+        "An expanding list of public holidays on the company calendar"
       ],
       "correctIndex": 0,
       "explanation": "Growing complexity and duplication raise technical risk because they increase the chance that changes introduce defects."
@@ -894,12 +894,12 @@
       "difficulty": "medium",
       "question": "When reviewing an API meant for fault-injection tests, which feature is most useful?",
       "options": [
-        "A colorful OpenAPI logo",
         "Explicit timeouts and configurable failure responses",
-        "A requirement that every response be random",
-        "A ban on negative test cases"
+        "A colourful logo displayed on the generated OpenAPI page",
+        "A policy that bans negative test cases against the interface",
+        "A rule that each response must contain randomised content"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Fault-injection testing depends on being able to provoke and observe controlled failure scenarios."
     },
     {
@@ -909,12 +909,12 @@
       "difficulty": "hard",
       "question": "A team tracks only end-to-end pass rate and ignores low-level coverage and tool findings. What risk remains?",
       "options": [
-        "Critical structural blind spots can remain hidden behind green system tests",
-        "The project automatically gains complete path coverage",
-        "No additional diagnostic effort will ever be needed",
-        "All technical debt is reduced by definition"
+        "No extra diagnostic effort will be needed at any later stage",
+        "Complete path coverage is gained automatically by the passing system tests of the product",
+        "Critical structural blind spots can stay hidden behind passing system tests",
+        "Technical debt is reduced by definition as pass rates climb"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "System tests can miss risky branches, error handlers, and data-flow problems that technical evidence would reveal."
     },
     {
@@ -924,12 +924,12 @@
       "difficulty": "easy",
       "question": "Which task is a good example of technical test support for maintainability?",
       "options": [
+        "Replacing automated tests with manually maintained spreadsheets",
         "Building reusable test data builders and helpers",
-        "Renaming the product for marketing reasons",
-        "Replacing all automated tests with spreadsheets",
-        "Removing shared utilities so each test rewrites them"
+        "Renaming the product for marketing reasons before release",
+        "Deleting shared utilities so each test re-implements its own"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Reusable technical test assets lower maintenance cost and make future regression suites easier to extend."
     },
     {
@@ -939,12 +939,12 @@
       "difficulty": "easy",
       "question": "Which component should usually receive the earliest technical risk attention?",
       "options": [
+        "A slide deck that explains the product roadmap to staff",
+        "An archived prototype that is no longer part of the release and receives no changes",
         "A shared authentication library used by every customer-facing service",
-        "An archived prototype no longer included in the release",
-        "A static help page with no executable logic",
-        "A slide deck describing the roadmap"
+        "A static help page that contains no executable logic"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "A defect in a shared critical library can affect many services, so both impact and exposure are high."
     },
     {
@@ -954,12 +954,12 @@
       "difficulty": "medium",
       "question": "Why does missing observability raise technical risk in a distributed workflow?",
       "options": [
-        "It makes the user interface look simpler",
-        "It makes failures harder to detect, localize, and diagnose",
-        "It guarantees better performance under load",
-        "It removes the need for regression testing"
+        "Regression testing becomes unnecessary for later changes",
+        "The user interface appears simpler to the people using it",
+        "Failures are harder to detect, localise and diagnose",
+        "System performance improves under heavy load as a side effect"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Poor observability increases the chance that important failures escape or take too long to investigate."
     },
     {
@@ -969,12 +969,12 @@
       "difficulty": "hard",
       "question": "A new payment scheduler introduces concurrency control around account updates. Why is this often ranked as high technical risk?",
       "options": [
-        "Concurrency removes all state-related defects",
-        "Rare timing faults can be hard to trigger, diagnose, and contain when the impact is financial",
-        "The feature will definitely have no users",
-        "Scheduling code cannot be tested structurally"
+        "Concurrency control eliminates every state-related defect in updates",
+        "Scheduling code is exempt from structure-based test techniques",
+        "Rare timing faults are hard to trigger, diagnose and contain, and the impact is financial",
+        "The feature is expected to attract very few users after launch"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Concurrency defects are often intermittent and high-impact, especially when they affect financial consistency."
     },
     {
@@ -984,12 +984,12 @@
       "difficulty": "easy",
       "question": "In technical risk analysis, what does impact describe?",
       "options": [
-        "The amount of damage or loss if the failure occurs",
-        "The number of meetings scheduled for the sprint",
-        "How many developers prefer the component",
-        "Whether the code formatter changes indentation"
+        "Whether the code formatter changes the indentation style",
+        "How many developers favour working on the component",
+        "The number of meetings that are scheduled during the sprint",
+        "The damage or loss that results if the failure occurs"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Impact reflects the consequence of failure, not how much effort the team expects to spend testing."
     },
     {
@@ -999,12 +999,12 @@
       "difficulty": "medium",
       "question": "A third-party package has a recently disclosed critical vulnerability. What should the Technical Test Analyst note immediately?",
       "options": [
-        "No risk exists unless the team modified the package source",
-        "Exposure may be high even without local code changes",
-        "Only usability testing needs to change",
-        "The package can no longer affect release decisions"
+        "Risk exists only if the team modified the package source",
+        "The package can no longer influence release decisions",
+        "Exposure may be high even though no local code changed",
+        "Only usability testing needs to be adjusted in response"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Inherited vulnerabilities can create major technical risk even when the application code itself did not change."
     },
     {
@@ -1014,10 +1014,10 @@
       "difficulty": "hard",
       "question": "Which situation most increases the likelihood component of technical risk?",
       "options": [
-        "A stable module with simple logic and broad regression coverage",
-        "A recently rewritten complex module owned by an inexperienced team",
-        "A read-only configuration file with no runtime behavior",
-        "A library that has not changed for years and shows few defects"
+        "A read-only configuration file that has no runtime behaviour",
+        "A recently rewritten, complex module owned by an inexperienced team",
+        "A stable module with simple logic, broad regression coverage and few recent changes",
+        "A library that is unchanged for years and shows few defects"
       ],
       "correctIndex": 1,
       "explanation": "Complexity, recent change, and low team familiarity combine to increase the chance of latent defects."
@@ -1029,10 +1029,10 @@
       "difficulty": "easy",
       "question": "A legacy parser has frequent production fixes but almost no automated tests. What is the best first mitigation?",
       "options": [
-        "Add focused characterization and structural tests around defect-prone paths",
-        "Remove the parser from all regression plans",
-        "Delay testing until a full rewrite is funded",
-        "Rely only on marketing demos"
+        "Add focused characterisation and structural tests around defect-prone paths",
+        "Hold off on testing until funding for a full rewrite exists",
+        "Drop the parser from all regression plans to save time",
+        "Depend on product demonstrations given by the marketing team to show the parser works"
       ],
       "correctIndex": 0,
       "explanation": "Targeted tests can quickly reduce risk by locking down current behavior and exercising risky branches."
@@ -1044,10 +1044,10 @@
       "difficulty": "medium",
       "question": "Which artifact most helps identify how a failing component could affect neighboring components?",
       "options": [
-        "The team lunch schedule",
+        "A list of the desk locations across the office floor",
         "An architecture or interface dependency diagram",
-        "A list of office desk locations",
-        "The product color palette"
+        "The colour palette defined for the product's interface",
+        "The schedule for team lunches during the project"
       ],
       "correctIndex": 1,
       "explanation": "Dependency information helps the Technical Test Analyst estimate blast radius and prioritize integration checks."
@@ -1059,10 +1059,10 @@
       "difficulty": "hard",
       "question": "An internet-facing file upload service uses a custom parser for untrusted content. Which test emphasis is most appropriate?",
       "options": [
-        "Only happy-path UI checks",
-        "Targeted robustness, security, and structural tests around parsing and error handling",
-        "Skipping negative tests because files are user supplied",
-        "Only checking that the landing page loads"
+        "Skipping negative tests because the files come from users",
+        "Targeted robustness, security and structural tests on parsing and error handling",
+        "Confirming that the landing page loads after each deployment",
+        "Happy-path checks driven through the user interface alone"
       ],
       "correctIndex": 1,
       "explanation": "Custom parsing of untrusted input is a classic high-risk area that merits deep negative and structural testing."
@@ -1074,12 +1074,12 @@
       "difficulty": "easy",
       "question": "Which change would usually lower the likelihood of technical failure in a module?",
       "options": [
-        "Keeping the module small, stable, and well covered by automated tests",
-        "Adding more hidden global state",
-        "Increasing change frequency without review",
-        "Removing diagnostics from failure paths"
+        "Introducing additional hidden global state into the module to share data between callers",
+        "Raising the change frequency while skipping code review",
+        "Keeping the module small and stable, with good automated test coverage",
+        "Stripping diagnostics out of the failure-handling paths"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Small stable modules with good automation give fewer opportunities for defects to be introduced and missed."
     },
     {
@@ -1089,12 +1089,12 @@
       "difficulty": "medium",
       "question": "Why does high change frequency matter in technical risk assessment?",
       "options": [
-        "It mainly affects office planning, not software risk",
-        "Frequent edits increase the chance of introducing new defects",
-        "It guarantees defects are found earlier",
-        "It eliminates the need for regression testing"
+        "Frequent edits raise the chance of introducing new defects",
+        "It ensures that defects are always found at an earlier point",
+        "It mainly affects office planning rather than software risk",
+        "It removes the need for regression testing of the module"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Even simple code becomes riskier when it changes often because prior evidence may no longer reflect the current state."
     },
     {
@@ -1104,12 +1104,12 @@
       "difficulty": "hard",
       "question": "Two modules would cause similar damage if they failed, but one has complex threading and past deadlocks. How should it be ranked?",
       "options": [
-        "Lower, because concurrency issues are mostly theoretical",
-        "Higher, because its likelihood is greater even if impact is similar",
-        "Equal, because only impact matters",
-        "Unranked, because technical history should be ignored"
+        "Higher, because its likelihood is greater even though the impact is similar",
+        "Lower, because concurrency problems are mostly theoretical",
+        "Equal, because only the size of the impact matters when the two modules are ranked",
+        "Unranked, because past technical history should be ignored"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Risk ranking depends on both impact and likelihood; a history of concurrency defects raises the likelihood."
     },
     {
@@ -1119,12 +1119,12 @@
       "difficulty": "easy",
       "question": "What does repeated defect clustering in one subsystem suggest?",
       "options": [
-        "That similar latent faults may still remain there",
-        "That the subsystem no longer needs testing",
-        "That architectural dependencies can be ignored",
-        "That the defects were caused by the test team"
+        "The subsystem no longer needs any further testing effort",
+        "Architectural dependencies of the subsystem can be disregarded",
+        "The test team is the origin of the defects that were found",
+        "Similar latent faults may well remain in that same area"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Defect clustering is a practical signal that more faults may be concentrated in the same area."
     },
     {
@@ -1134,12 +1134,12 @@
       "difficulty": "medium",
       "question": "Which statement best reflects how exposure is commonly prioritized in risk-based testing?",
       "options": [
-        "By test execution time alone",
-        "By combining likelihood and impact rather than using effort alone",
-        "By the age of the code comments",
-        "By the size of the deployment team"
+        "By combining likelihood and impact instead of relying on effort alone",
+        "By the age of the comments found in the source code",
+        "By the headcount of the team that is deploying the release",
+        "By the amount of execution time that each test is expected to take on average"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Risk-based prioritization focuses on where failure is both likely and damaging."
     },
     {
@@ -1149,12 +1149,12 @@
       "difficulty": "hard",
       "question": "For a performance-sensitive transaction path, what is the best risk-based action before full regression begins?",
       "options": [
-        "Ignore performance until the final release week",
-        "Run early targeted load profiling on the critical path",
-        "Replace all automated tests with manual timing",
-        "Measure only average sprint velocity"
+        "Swap the automated tests for manual stopwatch timing of steps",
+        "Track only the average sprint velocity of the development team",
+        "Leave performance checks until the final week before release",
+        "Run early, targeted load profiling on the critical path"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Early technical evidence on the critical path can reveal serious performance risks while there is still time to respond."
     },
     {
@@ -1164,12 +1164,12 @@
       "difficulty": "easy",
       "question": "Why might exit criteria be stricter for a high technical risk area than for a low-risk utility?",
       "options": [
-        "Higher-risk areas need stronger evidence that residual risk is acceptable",
-        "Low-risk areas are never tested",
-        "Exit criteria should always be identical for every component",
-        "Strict criteria are used only for documentation"
+        "Exit criteria must be set identically for every single component",
+        "Low-risk utilities are exempt from any testing whatsoever",
+        "Strict criteria are applied mainly to satisfy documentation needs of the project office",
+        "Higher-risk areas need stronger evidence that the residual risk is acceptable"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Stricter evidence is justified where failure consequences or likelihood are higher."
     },
     {
@@ -1179,12 +1179,12 @@
       "difficulty": "medium",
       "question": "Which item deserves higher priority in a risk discussion?",
       "options": [
-        "A cosmetic typo that occurs often in debug logs",
-        "A rare crash that can corrupt customer data",
-        "A comment that exceeds the preferred line length",
-        "A test report with outdated branding"
+        "A source comment that runs past the preferred line length",
+        "A cosmetic typo that appears often in the debug logs",
+        "A test report that still carries outdated company branding",
+        "A rare crash that can corrupt customer data"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "A low-frequency but catastrophic failure can outrank common minor issues because the impact is much greater."
     },
     {
@@ -1194,12 +1194,12 @@
       "difficulty": "hard",
       "question": "How should static-analysis findings influence technical risk assessment?",
       "options": [
-        "They should be ignored until system test fails",
-        "They can refine hotspot identification and drive targeted deeper testing",
-        "They replace all need for runtime testing",
-        "They matter only after release"
+        "They become relevant only after the product has been released and users report problems",
+        "They should be set aside until system testing has failed",
+        "They can sharpen hotspot identification and drive deeper targeted testing",
+        "They remove any need for testing the software at runtime"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Findings such as dangerous APIs, null-dereference risks, or complexity spikes help focus testing where technical risk is higher."
     },
     {
@@ -1209,12 +1209,12 @@
       "difficulty": "easy",
       "question": "Why is an undocumented algorithm delivered by an external contractor often considered riskier?",
       "options": [
-        "Knowledge gaps make review, maintenance, and defect diagnosis harder",
-        "Contractor code cannot be tested",
-        "External code never changes",
-        "Documentation has no effect on technical risk"
+        "Externally written code is fixed and is never modified later",
+        "Knowledge gaps make review, maintenance and defect diagnosis harder",
+        "Documentation has little bearing on the technical risk of a component",
+        "Code written by contractors cannot be tested with standard techniques"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "When design intent is unclear, the team has less basis for review, impact analysis, and precise testing."
     },
     {
@@ -1224,12 +1224,12 @@
       "difficulty": "medium",
       "question": "An autoscaling defect can launch many unnecessary instances under load. Why is its impact often rated high?",
       "options": [
-        "It affects only cosmetic metrics",
-        "It can cause severe cost growth and destabilize the platform during peak traffic",
-        "It reduces the need for monitoring",
-        "It prevents any other defects from occurring"
+        "It stops other defects from occurring in the same service",
+        "It touches only cosmetic monitoring metrics on dashboards",
+        "It lessens the need for monitoring of the running platform",
+        "It can cause severe cost growth and destabilise the platform at peak traffic"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Autoscaling faults can amplify operational impact quickly by wasting resources or destabilizing service behavior."
     },
     {
@@ -1239,12 +1239,12 @@
       "difficulty": "hard",
       "question": "Hard-coded secrets are found in deployment automation. Why is this usually a high technical risk?",
       "options": [
-        "They improve deployment speed too much",
-        "Compromise can spread broadly and may be easy to exploit",
-        "They affect only source code formatting",
-        "They matter only after the next hardware refresh"
+        "Compromise can spread widely and may be easy to exploit",
+        "They matter only once the next hardware refresh takes place",
+        "They speed up deployment by an unacceptably large amount",
+        "They influence only the formatting of the automation scripts"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Exposed secrets can enable widespread unauthorized access, making both likelihood and impact serious."
     },
     {
@@ -1254,12 +1254,12 @@
       "difficulty": "medium",
       "question": "After adding mitigations for a risky component, what should the Technical Test Analyst still communicate?",
       "options": [
-        "Only that testing is complete",
-        "The residual risk and any remaining untested assumptions",
-        "That risk discussions are no longer needed",
-        "That the mitigations guarantee zero defects"
+        "The residual risk and any untested assumptions that remain",
+        "That testing is now finished and nothing further needs to be explained to stakeholders",
+        "That further risk discussions are no longer required",
+        "That the mitigations ensure the component has zero defects"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Risk rarely drops to zero, so stakeholders still need to understand what uncertainty remains."
     },
     {
@@ -1269,12 +1269,12 @@
       "difficulty": "easy",
       "question": "To achieve decision coverage for a simple if-else statement, what must the tests do?",
       "options": [
-        "Exercise both the true and false outcomes",
-        "Execute only the longest branch",
-        "Execute each statement in alphabetical order",
-        "Use every possible input value"
+        "Run only the longest branch of the statement in each test",
+        "Use each possible input value for the controlling variable",
+        "Exercise both the true and false outcomes of the decision",
+        "Execute every statement in alphabetical order of its label"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Decision coverage requires each decision outcome to be taken at least once."
     },
     {
@@ -1284,12 +1284,12 @@
       "difficulty": "medium",
       "question": "Which statement correctly describes condition coverage?",
       "options": [
-        "It guarantees that every feasible path is tested",
-        "It requires each atomic condition in a decision to evaluate both true and false at least once",
-        "It measures only how many statements executed",
-        "It ignores short-circuit behavior"
+        "Only the proportion of statements that executed is measured",
+        "Short-circuit evaluation of conditions is taken into account",
+        "Each atomic condition in a decision evaluates to both true and false at least once",
+        "Every feasible path through the code has been executed"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Condition coverage is concerned with the truth values of the individual conditions that form a decision."
     },
     {
@@ -1300,11 +1300,11 @@
       "question": "A decision contains three independent boolean conditions. How many combinations are required for full multiple condition coverage?",
       "options": [
         "3",
-        "6",
         "8",
+        "6",
         "9"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "explanation": "Multiple condition coverage requires all true-false combinations, which for three conditions is 2^3 = 8."
     },
     {
@@ -1314,12 +1314,12 @@
       "difficulty": "easy",
       "question": "Why is MC-DC often chosen instead of full multiple condition coverage for critical logic?",
       "options": [
-        "It gives strong evidence that each condition matters, with fewer tests",
-        "It ignores the overall decision result entirely",
-        "It is weaker than statement coverage",
-        "It can be achieved without executing the code"
+        "It disregards the overall decision result completely",
+        "It can be satisfied without running the code at all",
+        "It is a weaker criterion than statement coverage",
+        "It gives strong evidence that each condition matters, using fewer tests"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "MC-DC keeps strong fault-detection power while avoiding the full combinatorial explosion of multiple condition coverage."
     },
     {
@@ -1329,12 +1329,12 @@
       "difficulty": "medium",
       "question": "If one control-flow path is infeasible because its conditions can never be satisfied together, what does that mean for path coverage?",
       "options": [
-        "All path coverage goals must be abandoned",
         "Only feasible paths are candidates for complete path coverage",
-        "The infeasible path should still be forced through test data",
-        "Decision coverage becomes impossible"
+        "The infeasible path must still be forced with special test data",
+        "Every path coverage goal has to be dropped for the code",
+        "Decision coverage can no longer be achieved for the code"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Structural criteria are interpreted against feasible behavior; infeasible paths should be justified, not artificially executed."
     },
     {
@@ -1344,12 +1344,12 @@
       "difficulty": "hard",
       "question": "Cyclomatic complexity of 6 implies what for basis path testing?",
       "options": [
-        "At least 6 statements must execute",
-        "There are 6 linearly independent paths to consider as a baseline",
-        "Only 6 test cases are ever allowed",
-        "The code already has full decision coverage"
+        "No more than 6 test cases may be written for the code",
+        "At least 6 statements have to be executed by the tests",
+        "The code already has full decision coverage by definition of the metric",
+        "There are 6 linearly independent paths to consider as a baseline"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Cyclomatic complexity approximates the number of linearly independent paths that should be considered for basis path coverage."
     },
     {
@@ -1360,9 +1360,9 @@
       "question": "What is an LCSAJ in structural testing?",
       "options": [
         "A linear sequence of code followed by a jump",
-        "A list of load and stress measurements",
-        "A type of user acceptance checklist",
-        "A dynamic memory snapshot"
+        "A checklist used during user acceptance",
+        "A listing of load and stress measurements taken during a test",
+        "A snapshot of dynamic memory contents"
       ],
       "correctIndex": 0,
       "explanation": "An LCSAJ is a low-level structural unit consisting of straight-line code and the jump that ends it."
@@ -1374,12 +1374,12 @@
       "difficulty": "medium",
       "question": "In data flow testing, what is a def-use pair?",
       "options": [
-        "Any pair of adjacent statements",
-        "A variable definition and a later use reachable without redefinition in between",
-        "Two different variables assigned in one block",
-        "A decision and its corresponding return statement"
+        "A decision together with the return statement that follows it",
+        "Any two statements that appear next to each other in the code",
+        "Two different variables that are assigned in a single block",
+        "A variable definition and a later use reachable with no redefinition in between"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Data flow testing tracks how defined values travel to later uses along specific paths."
     },
     {
@@ -1389,12 +1389,12 @@
       "difficulty": "hard",
       "question": "Why does loop testing pay special attention to zero, one, and boundary iteration counts?",
       "options": [
-        "Because loops cannot be tested with more than one input",
-        "Because initialization and off-by-one defects often appear near iteration boundaries",
-        "Because decision coverage ignores loops",
-        "Because loop variables are never risk relevant"
+        "Decision coverage takes no account of loop constructs",
+        "A loop can be exercised with only a single input value",
+        "Loop variables carry no risk and need no attention",
+        "Initialisation and off-by-one defects often appear near iteration boundaries"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Boundary iteration counts are where setup, termination, and limit logic often fail."
     },
     {
@@ -1404,12 +1404,12 @@
       "difficulty": "easy",
       "question": "For nested loops, what is a common starting strategy?",
       "options": [
-        "Exercise inner-loop boundaries while holding outer loops to simple values",
-        "Set all loops to their maximum counts immediately",
-        "Skip the inner loop because the outer loop covers it",
-        "Use only random iteration counts"
+        "Omit the inner loop, because the outer loop already covers it in every test that is run",
+        "Choose iteration counts at random for all of the loops",
+        "Exercise inner-loop boundaries while keeping outer loops at simple values",
+        "Set every loop to its maximum count from the very first test"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Controlling one loop at a time makes it easier to isolate defects in nested iteration logic."
     },
     {
@@ -1419,12 +1419,12 @@
       "difficulty": "medium",
       "question": "Why should exception handlers be included in branch coverage analysis?",
       "options": [
-        "They are documentation only",
-        "They represent alternate control-flow outcomes with their own logic",
-        "They cannot execute during tests",
-        "They count only toward statement coverage"
+        "They are counted only towards statement coverage",
+        "They cannot be triggered while the tests are running",
+        "They are documentation only and carry no executable behaviour that needs exercising",
+        "They are alternate control-flow outcomes with logic of their own"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Catch, fallback, and cleanup paths often contain unique behavior that must be exercised explicitly."
     },
     {
@@ -1434,12 +1434,12 @@
       "difficulty": "hard",
       "question": "When API tests are designed from server-side code structure, what is the main structural focus?",
       "options": [
-        "Branding of the API portal",
-        "Branches for validation, authorization, and error mapping",
-        "The number of developers on the backend team",
-        "Only the alphabetical order of endpoints"
+        "The size of the backend development team",
+        "The look and branding of the API developer portal",
+        "The alphabetical ordering and naming of the exposed endpoints in the portal",
+        "Branches for validation, authorisation and error mapping"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Code-aware API testing targets distinct internal paths such as validation branches and exception mapping logic."
     },
     {
@@ -1449,10 +1449,10 @@
       "difficulty": "easy",
       "question": "A test suite reaches 100% statement coverage. What can still be missing?",
       "options": [
-        "Any execution of false branches in some decisions",
-        "Execution of all statements at least once",
-        "Compilation of the program",
-        "A test environment"
+        "Execution of the false outcome of some decisions",
+        "Compilation of the program under test into a build",
+        "Execution of every statement at least once by some test",
+        "The availability of an environment to run the tests in"
       ],
       "correctIndex": 0,
       "explanation": "Statement coverage can miss untested decision outcomes when the executed statements overlap."
@@ -1464,12 +1464,12 @@
       "difficulty": "medium",
       "question": "In a control-flow graph, what do edges usually represent?",
       "options": [
-        "Lines of comments",
         "Transfers of control between nodes",
-        "Defect priorities",
-        "Test data values"
+        "Lines of comments in the source file",
+        "Data values supplied to the tests",
+        "Priorities assigned to defects found"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Edges connect the program points that execution can move between."
     },
     {
@@ -1479,12 +1479,12 @@
       "difficulty": "hard",
       "question": "What extra structural concern applies when white-box testing a recursive function?",
       "options": [
-        "Recursion eliminates the need for branch coverage",
-        "Both the base case and recursive progression toward termination must be exercised",
-        "Only the deepest possible call stack matters",
-        "Recursive code cannot be represented in a control-flow graph"
+        "Only the deepest possible call stack needs to be examined",
+        "Recursive code cannot be drawn as a control-flow graph",
+        "Recursion makes branch coverage unnecessary for the function",
+        "Both the base case and recursive progress toward termination must be exercised"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Recursive logic is safe only when tests show both entry into recursion and proper termination behavior."
     },
     {
@@ -1494,12 +1494,12 @@
       "difficulty": "easy",
       "question": "Condition coverage is mainly concerned with what?",
       "options": [
-        "Each atomic condition taking true and false values",
-        "Only the final decision outcome",
         "The number of requirements linked to the code",
-        "Whether the code has comments"
+        "Whether the code contains enough explanatory comments for the maintainers to follow it",
+        "Each atomic condition taking both true and false values",
+        "Only the final outcome of the decision"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Condition coverage focuses on the individual boolean parts that build a decision."
     },
     {
@@ -1509,12 +1509,12 @@
       "difficulty": "medium",
       "question": "A variable is assigned in one branch and later used after branches merge. What should data flow testing pay attention to?",
       "options": [
-        "The color of the branch in the diagram",
+        "Whether the point where the branches merge sits inside a loop",
+        "The colour used to draw each branch in the flow diagram",
         "Definition-use paths through the different branches",
-        "Only whether the variable name is descriptive",
-        "Whether the merge happens in a loop"
+        "Whether each variable name is descriptive enough to follow"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Different branches may define or skip values differently, so the downstream use deserves targeted def-use checks."
     },
     {
@@ -1524,12 +1524,12 @@
       "difficulty": "hard",
       "question": "Why can unreachable code complicate interpretation of structural coverage goals?",
       "options": [
-        "Coverage tools cannot read source files",
-        "The measured denominator may include code that cannot execute until it is removed or justified",
-        "Unreachable code automatically counts as covered",
-        "It affects only usability testing"
+        "It has an effect on usability testing but not on structural testing",
+        "Unreachable code is counted automatically as covered code",
+        "Coverage tools are unable to read the source files at all",
+        "The measured denominator may include code that cannot execute until it is removed or justified"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Teams should distinguish missed coverage from code that truly has no executable path."
     },
     {
@@ -1539,12 +1539,12 @@
       "difficulty": "easy",
       "question": "Which loop-focused test is especially good at exposing initialization mistakes?",
       "options": [
-        "A test where the loop executes zero times",
-        "A test with only average input size",
-        "A test that skips all setup code",
-        "A test that disables assertions"
+        "A test that skips all of the set-up code",
+        "A test that uses only an average input size",
+        "A test that runs with its assertions disabled to speed up the execution",
+        "A test in which the loop body executes zero times"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Zero-iteration execution checks whether the code behaves correctly before the first pass ever occurs."
     },
     {
@@ -1554,10 +1554,10 @@
       "difficulty": "medium",
       "question": "Why does short-circuit evaluation matter in structural testing of compound decisions?",
       "options": [
-        "It changes source formatting only",
-        "Some conditions may not be evaluated on every execution of the decision",
-        "It prevents any branch coverage measurement",
-        "It means decisions no longer return boolean values"
+        "It means decisions no longer produce boolean values",
+        "Some conditions might not be evaluated on every execution of the decision",
+        "It makes branch coverage impossible to measure for the code that contains such decisions",
+        "It alters only how the source code is formatted"
       ],
       "correctIndex": 1,
       "explanation": "With short-circuit logic, tests must be chosen carefully if each condition is expected to be exercised."
@@ -1569,12 +1569,12 @@
       "difficulty": "hard",
       "question": "In LCSAJ testing, what distinguishes two LCSAJs that share the same straight-line sequence?",
       "options": [
-        "Their indentation style",
         "Their different jump targets or end points",
-        "The number of comments inside the block",
-        "Whether the code was written recently"
+        "How recently the code was written",
+        "The indentation style and line-wrapping conventions used in the code",
+        "The count of comments inside the block"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "The terminating jump is part of the structural unit, so different exits define different LCSAJs."
     },
     {
@@ -1584,10 +1584,10 @@
       "difficulty": "hard",
       "question": "Why is complete path coverage rarely practical in real systems?",
       "options": [
-        "Coverage tools refuse to count paths",
-        "Loops, recursion, and combined decisions create an explosion of possible paths",
-        "Path coverage is weaker than statement coverage",
-        "Real systems contain no branches"
+        "Coverage tools refuse to count paths in any program",
+        "Loops, recursion and combined decisions cause an explosion in the number of paths",
+        "Path coverage is a weaker criterion than statement coverage",
+        "Real systems contain no branching logic to cover"
       ],
       "correctIndex": 1,
       "explanation": "Even modest control flow can create too many paths to enumerate and execute exhaustively."
@@ -1599,12 +1599,12 @@
       "difficulty": "easy",
       "question": "What does a static-analysis dead-store warning usually mean?",
       "options": [
-        "A value is assigned but never read before being overwritten or discarded",
-        "A database row was deleted unexpectedly",
-        "A variable name is too short",
-        "The program ran out of disk space"
+        "A database row was removed unexpectedly while the program was running in production",
+        "A value is assigned but never read before it is overwritten or discarded",
+        "The program ran out of disk space while it was running",
+        "A variable name is shorter than the style guide allows"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Dead stores often indicate redundant logic or a missing intended use of the assigned value."
     },
     {
@@ -1614,12 +1614,12 @@
       "difficulty": "medium",
       "question": "Cyclomatic complexity is most useful for estimating what?",
       "options": [
-        "The total number of user stories in a release",
-        "The minimum number of independent paths to consider and relative review effort",
-        "The amount of RAM used at runtime",
-        "The probability that a security attack will occur"
+        "The number of independent paths to consider and the relative effort for review",
+        "The amount of RAM the software consumes while running",
+        "The total number of user stories planned for a release",
+        "The likelihood that a security attack will be attempted"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Higher complexity suggests more decision logic and usually more structural paths that deserve attention."
     },
     {
@@ -1629,12 +1629,12 @@
       "difficulty": "hard",
       "question": "How can a call graph help when a risky shared utility is modified?",
       "options": [
-        "It proves that no regression testing is needed",
-        "It reveals direct and indirect callers that may need focused retesting",
-        "It replaces the source code review",
-        "It measures memory leaks automatically"
+        "It shows that no regression testing is required after the shared utility changes",
+        "It takes the place of reviewing the changed source code",
+        "It detects memory leaks in the utility automatically",
+        "It reveals direct and indirect callers that may need focused retesting"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Impact analysis is stronger when the team can see which code paths depend on the changed utility."
     },
     {
@@ -1645,8 +1645,8 @@
       "question": "Code located after an unconditional return statement is typically classified as what?",
       "options": [
         "Unreachable code",
-        "Thread contention",
         "A performance hotspot",
+        "Thread contention",
         "A test stub"
       ],
       "correctIndex": 0,
@@ -1659,12 +1659,12 @@
       "difficulty": "medium",
       "question": "Which data-flow anomaly is indicated when a variable is defined and then redefined without any use in between?",
       "options": [
-        "A normal def-use pair",
-        "A suspicious redundant assignment pattern",
-        "Guaranteed memory corruption",
-        "A required loop coverage case"
+        "A suspicious redundant-assignment pattern",
+        "A case that loop coverage requires to be exercised",
+        "A normal def-use pair that needs no attention",
+        "Certain memory corruption in the running program"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Redefinition before use may mean the first assignment is pointless or the intended use was skipped."
     },
     {
@@ -1674,12 +1674,12 @@
       "difficulty": "hard",
       "question": "During an endurance run, memory consumption rises steadily while workload stays constant. What does this most strongly suggest?",
       "options": [
-        "Improved portability",
-        "A memory leak or retained-object problem",
-        "Higher branch coverage",
-        "A dead comment block"
+        "A block of dead commented-out code",
+        "Improved portability of the software across different platforms",
+        "Higher branch coverage in the code",
+        "A memory leak or retained-object problem"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "If work stays stable but memory does not, the software is likely failing to release or reuse objects correctly."
     },
     {
@@ -1689,12 +1689,12 @@
       "difficulty": "easy",
       "question": "What is a wild pointer or invalid reference?",
       "options": [
-        "A reference that points to unpredictable or illegal memory",
-        "A pointer used in a white-box coverage tool",
-        "A performance counter for CPU usage",
-        "A branch that always evaluates true"
+        "A pointer used inside a white-box coverage tool",
+        "A branch whose condition always evaluates to true during every test execution",
+        "A reference pointing to unpredictable or illegal memory",
+        "A counter that reports CPU usage over time"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Wild pointers can cause crashes or silent corruption because the program no longer controls what the reference targets."
     },
     {
@@ -1704,12 +1704,12 @@
       "difficulty": "medium",
       "question": "A profiler shows that 70% of execution time is spent serializing JSON. What is the best interpretation?",
       "options": [
-        "The profiler is invalid because one function cannot dominate runtime",
-        "JSON serialization is a performance hotspot worth investigation",
-        "The application has complete path coverage",
-        "Only the network layer needs testing"
+        "Only the network layer deserves any further testing",
+        "The profiler is faulty, as one function cannot dominate runtime",
+        "The application has already achieved complete path coverage",
+        "JSON serialisation is a performance hotspot worth investigating"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Profilers help the team focus optimization and measurement effort on the code that actually consumes time."
     },
     {
@@ -1719,9 +1719,9 @@
       "difficulty": "hard",
       "question": "Which type of runtime tool is most suitable for diagnosing lock contention and deadlocks?",
       "options": [
-        "A spell checker",
-        "A concurrency or thread analyzer",
         "A screenshot comparison tool",
+        "A concurrency or thread analyser",
+        "A spell checker run over the source",
         "A static naming-rule checker"
       ],
       "correctIndex": 1,
@@ -1734,12 +1734,12 @@
       "difficulty": "easy",
       "question": "A recursive algorithm fails only with very large input sizes. Which runtime symptom should be investigated first?",
       "options": [
+        "An outdated label on the issue tracker",
         "Stack exhaustion caused by deep recursion",
-        "A missing project logo",
-        "Low statement coverage",
-        "An outdated issue label"
+        "A missing project logo and branding assets on the start page",
+        "A low level of statement coverage"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Large recursion depth commonly manifests as stack overflow or exhaustion at runtime."
     },
     {
@@ -1749,10 +1749,10 @@
       "difficulty": "medium",
       "question": "In a technical review of numeric code, which checklist item is especially valuable?",
       "options": [
-        "Whether variable names are in alphabetical order",
-        "Possible overflow, underflow, and precision loss",
-        "Whether the code has enough blank lines",
-        "Whether the team prefers tabs or spaces"
+        "Whether the team prefers tabs or spaces for indentation",
+        "Possible overflow, underflow and loss of precision",
+        "Whether the code has enough blank lines in it",
+        "Whether variable names are in alphabetical order"
       ],
       "correctIndex": 1,
       "explanation": "Numeric defects often appear at range limits or due to precision assumptions that are easy to overlook."
@@ -1764,10 +1764,10 @@
       "difficulty": "hard",
       "question": "If a static analyzer produces too many false positives, what is the best response?",
       "options": [
-        "Disable all analysis permanently",
-        "Tune rules and baselines so high-value findings remain visible",
-        "Treat every warning as a confirmed defect",
-        "Move the analyzer to production only"
+        "Treat each reported warning as a confirmed defect",
+        "Tune rules and baselines so that high-value findings stay visible",
+        "Run the analyser only against the production system once the release has been deployed",
+        "Switch the analysis off permanently for the project"
       ],
       "correctIndex": 1,
       "explanation": "Well-tuned analysis keeps important warnings actionable without drowning the team in noise."
@@ -1779,12 +1779,12 @@
       "difficulty": "easy",
       "question": "Why is clone detection useful to a Technical Test Analyst?",
       "options": [
-        "Duplicated logic can multiply regression scope and repeated defects",
-        "It guarantees higher runtime speed",
-        "It replaces code reviews",
-        "It measures browser compatibility"
+        "It ensures that the code runs faster at runtime",
+        "It takes the place of code reviews in the process",
+        "Duplicated logic can widen regression scope and repeat the same defects",
+        "It measures compatibility with different browsers"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "When the same logic exists in many places, a defect and its fix may need attention in each copy."
     },
     {
@@ -1794,10 +1794,10 @@
       "difficulty": "medium",
       "question": "Why are runtime sanitizers valuable in C or C++ testing?",
       "options": [
-        "They improve screen layout",
-        "They can catch invalid memory accesses during execution with context",
-        "They automatically prove portability",
-        "They replace all design reviews"
+        "They take the place of all design reviews",
+        "They can catch invalid memory accesses during execution, with context",
+        "They automatically demonstrate portability of the code to every supported platform",
+        "They improve how screens are laid out for users"
       ],
       "correctIndex": 1,
       "explanation": "Sanitizers instrument execution to reveal faults such as buffer overruns and use-after-free errors."
@@ -1809,12 +1809,12 @@
       "difficulty": "hard",
       "question": "How can heap snapshots taken before and after a long test run help diagnosis?",
       "options": [
-        "They show which objects were unexpectedly retained over time",
-        "They measure statement coverage",
-        "They prove the code has no race conditions",
-        "They replace load generation"
+        "They remove the need to generate load for the test",
+        "They demonstrate that the code is free of race conditions and deadlocks",
+        "They report the statement coverage that was achieved",
+        "They show which objects were unexpectedly retained over time"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Comparing snapshots is a common way to find classes or object graphs that keep accumulating."
     },
     {
@@ -1824,12 +1824,12 @@
       "difficulty": "easy",
       "question": "In an interface-focused technical review, which question best supports robustness testing?",
       "options": [
-        "How are invalid inputs, timeouts, and partial failures reported to callers?",
-        "Which background image does the API team prefer?",
-        "How many meetings were held last month?",
-        "Should all negative tests be forbidden?"
+        "How many team meetings were held in the last month?",
+        "How are invalid inputs, timeouts and partial failures reported to callers?",
+        "Should negative tests be forbidden for the interface?",
+        "Which background image does the API team prefer to use?"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Robustness depends on how clearly and consistently the interface behaves under abnormal conditions."
     },
     {
@@ -1839,12 +1839,12 @@
       "difficulty": "medium",
       "question": "Why is taint analysis useful in technical testing?",
       "options": [
-        "It measures how much CPU a loop consumes",
         "It traces untrusted data flowing toward sensitive operations",
-        "It counts LCSAJs automatically",
-        "It replaces penetration testing entirely"
+        "It measures how much CPU time a loop consumes",
+        "It entirely replaces penetration testing activities carried out by security specialists",
+        "It counts the LCSAJs in the code automatically"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Tracing risky data flows can reveal injection paths and unsafe trust boundaries before runtime."
     },
     {
@@ -1854,12 +1854,12 @@
       "difficulty": "hard",
       "question": "Why does a high fan-in utility deserve careful review after a change?",
       "options": [
-        "Utilities with many callers are always slower",
-        "A defect can affect many dependent paths, increasing blast radius",
-        "High fan-in means the code has no branches",
-        "It can only be tested manually"
+        "High fan-in means that the code contains no branches",
+        "It can be tested only through manual test execution",
+        "A defect can affect many dependent paths, widening the blast radius",
+        "Utilities that have many callers are always slower than other kinds of code in the system"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Call concentration is important because one small change can have many indirect consequences."
     },
     {
@@ -1869,12 +1869,12 @@
       "difficulty": "easy",
       "question": "Which trend often signals rising maintainability risk in code metrics?",
       "options": [
-        "Complexity and function length increasing release after release",
-        "Fewer archived chat messages",
-        "More hardware in the office",
-        "A stable number of test accounts"
+        "A steady number of test accounts being maintained in the shared test environments",
+        "More hardware being installed in the office",
+        "Complexity and function length growing release after release",
+        "Fewer archived chat messages in the team channel"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Growing complexity is a practical early warning that understanding and changing the code will get harder."
     },
     {
@@ -1884,12 +1884,12 @@
       "difficulty": "medium",
       "question": "A benchmark's first iteration is much slower because caches and JIT compilation are cold. What is the best practice?",
       "options": [
-        "Always report only the slowest run",
+        "Report only the slowest run to stay on the cautious side",
+        "Discard every measurement taken after the first iteration",
         "Separate warm-up from steady-state measurements",
-        "Delete all later measurements",
-        "Disable automation for performance tests"
+        "Switch off test automation for the performance tests"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Warm-up effects should be controlled so performance conclusions reflect stable runtime behavior."
     },
     {
@@ -1899,12 +1899,12 @@
       "difficulty": "hard",
       "question": "Why are use-after-free defects often difficult to reproduce consistently?",
       "options": [
-        "They can depend on timing and memory reuse patterns at runtime",
-        "They only occur in commented code",
-        "They are detected by statement coverage alone",
-        "They disappear when tests are repeated"
+        "They occur solely within sections of commented-out code",
+        "They can depend on timing and memory-reuse patterns at runtime",
+        "They vanish whenever the tests are executed a second time under identical settings",
+        "Statement coverage on its own is enough to detect them"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Once memory has been released, whether the fault appears can vary with allocator behavior and execution timing."
     },
     {
@@ -1914,12 +1914,12 @@
       "difficulty": "medium",
       "question": "If review capacity is limited, which modules should be prioritized for deep technical review?",
       "options": [
-        "Modules with the most colorful dashboards",
-        "Modules with high complexity, recent change, and defect history",
-        "Modules that compile the fastest",
-        "Modules owned by the largest team"
+        "Modules that are owned by the largest team",
+        "Modules that compile faster than the others",
+        "Modules with high complexity, recent change and a history of defects",
+        "Modules that have the most colourful dashboards"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Combining multiple risk indicators helps technical review effort go where it is most likely to pay off."
     },
     {
@@ -1929,12 +1929,12 @@
       "difficulty": "easy",
       "question": "Running the same product on Windows, Linux, and macOS without code changes primarily examines which quality characteristic?",
       "options": [
+        "Reviewability",
         "Portability",
         "Functional completeness",
-        "Marketability",
-        "Reviewability"
+        "Marketability"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Portability is concerned with how well software can be transferred or adapted across environments."
     },
     {
@@ -1944,12 +1944,12 @@
       "difficulty": "medium",
       "question": "What should installability testing verify most directly?",
       "options": [
-        "That user stories are estimated correctly",
-        "That install, upgrade, and uninstall behave correctly and recover from failures",
-        "That source code has low complexity",
-        "That every API returns JSON"
+        "That user stories have been estimated accurately by the team during planning sessions",
+        "That the source code has a low level of complexity",
+        "That each API in the product returns its data as JSON",
+        "That install, upgrade and uninstall work properly and recover from failures"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Installability includes successful setup and safe handling of failures during installation or upgrade."
     },
     {
@@ -1959,12 +1959,12 @@
       "difficulty": "hard",
       "question": "Two systems exchange the same numeric field but one interprets it as seconds and the other as milliseconds. What kind of issue is this?",
       "options": [
-        "A pure maintainability issue",
-        "An interoperability defect",
-        "A portability success",
-        "A statement coverage gap"
+        "A gap in statement coverage of the code",
+        "A successful result for portability testing",
+        "A purely maintainability issue in the code",
+        "An interoperability defect"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Both systems can communicate syntactically yet still fail to interoperate semantically."
     },
     {
@@ -1975,9 +1975,9 @@
       "question": "What does coexistence testing mainly check?",
       "options": [
         "Whether the product can share resources with other software without unacceptable interference",
-        "Whether every branch in the code has been tested",
-        "Whether all comments are translated",
-        "Whether developers agree on naming conventions"
+        "Whether each branch in the code has been covered by tests",
+        "Whether all code comments have been translated",
+        "Whether developers agree on naming conventions in the code"
       ],
       "correctIndex": 0,
       "explanation": "Coexistence is about peacefully sharing an environment such as CPU, memory, network, or file handles."
@@ -1989,12 +1989,12 @@
       "difficulty": "medium",
       "question": "After a database restart, a service resumes queued work without losing committed data. Which reliability aspect is being demonstrated?",
       "options": [
+        "Installability",
         "Confidentiality",
-        "Recoverability",
         "Replaceability",
-        "Installability"
+        "Recoverability"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Recoverability concerns how well the system restores service and data after an interruption."
     },
     {
@@ -2004,10 +2004,10 @@
       "difficulty": "hard",
       "question": "Which change would most improve analyzability from a maintainability perspective?",
       "options": [
-        "Hiding all errors behind a generic success message",
+        "Hiding errors behind one generic success message that is shown to every caller",
         "Adding structured diagnostics and clear module boundaries",
-        "Replacing logs with random numeric codes",
-        "Packing more behavior into one long method"
+        "Packing more behaviour into a single long method",
+        "Replacing log text with random numeric codes"
       ],
       "correctIndex": 1,
       "explanation": "Good diagnostics and modular structure make faults easier to understand, trace, and fix."
@@ -2019,12 +2019,12 @@
       "difficulty": "easy",
       "question": "Using a least-privilege service account mainly supports which security objective?",
       "options": [
-        "Limiting damage if the account is compromised",
-        "Reducing code coverage requirements",
-        "Improving screen readability",
-        "Eliminating the need for backups"
+        "Lowering the coverage targets that apply to the code in the account's scope",
+        "Limiting the damage if the account is compromised",
+        "Making on-screen text easier to read",
+        "Removing the need to take backups"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Least privilege reduces the blast radius of misuse or compromise."
     },
     {
@@ -2034,12 +2034,12 @@
       "difficulty": "medium",
       "question": "Time-behavior testing is primarily concerned with what?",
       "options": [
-        "How often code comments are updated",
-        "Response times and throughput under stated conditions",
-        "Whether an installer shows the company logo",
-        "How many risk meetings were scheduled"
+        "Whether the installer displays the company logo",
+        "How frequently the code comments get updated",
+        "How many risk workshops were scheduled in the project",
+        "Response times and throughput under stated conditions"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Time behavior focuses on how quickly the system responds and how much work it can process."
     },
     {
@@ -2049,12 +2049,12 @@
       "difficulty": "hard",
       "question": "Encrypting stored files most directly protects which security property?",
       "options": [
-        "Availability",
-        "Confidentiality",
         "Replaceability",
-        "Modularity"
+        "Modularity",
+        "Availability of the stored data",
+        "Confidentiality"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Encryption mainly helps prevent unauthorized disclosure of the data contents."
     },
     {
@@ -2064,12 +2064,12 @@
       "difficulty": "easy",
       "question": "Why does modularity usually improve maintainability?",
       "options": [
-        "Changes can be localized instead of spreading across many unrelated areas",
-        "It guarantees zero defects",
-        "It removes the need for tests",
-        "It makes all performance issues disappear"
+        "It removes the need for tests of the code",
+        "It makes all performance problems disappear",
+        "Changes can be localised rather than spreading across unrelated areas",
+        "It ensures the code contains no defects at all"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Well-defined modules reduce ripple effects and make understanding and changing the code easier."
     },
     {
@@ -2081,8 +2081,8 @@
       "options": [
         "Fault tolerance",
         "Replaceability",
-        "Authenticity",
-        "Suitability"
+        "Suitability",
+        "Authenticity"
       ],
       "correctIndex": 1,
       "explanation": "Replaceability is about using one product element in place of another for the same purpose."
@@ -2094,12 +2094,12 @@
       "difficulty": "hard",
       "question": "A service continues in degraded mode during a network partition and synchronizes later. Which reliability aspect is most evident?",
       "options": [
-        "Installability",
-        "Fault tolerance",
         "Compatibility branding",
-        "Statement coverage"
+        "Statement coverage",
+        "Fault tolerance",
+        "Installability"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Fault tolerance is the ability to continue providing acceptable service despite certain faults."
     },
     {
@@ -2109,12 +2109,12 @@
       "difficulty": "easy",
       "question": "Why are predictable session identifiers a serious security weakness?",
       "options": [
+        "They increase the size of the backups taken",
         "Attackers may guess valid identifiers and hijack sessions",
-        "They reduce compiler optimization",
-        "They lower branch coverage",
-        "They make backups larger"
+        "They reduce the compiler's ability to optimise the generated code",
+        "They lower the branch coverage that tests can reach"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Predictable identifiers can let an attacker impersonate users by anticipating future session values."
     },
     {
@@ -2124,12 +2124,12 @@
       "difficulty": "medium",
       "question": "Resource-utilization testing is intended to answer which question?",
       "options": [
-        "Whether the help pages use clear language",
-        "Whether CPU, memory, and I/O stay within acceptable limits under load",
-        "Whether every requirement has a unique ID",
-        "Whether code reviews have enough participants"
+        "Whether the help pages are written in clear language",
+        "Whether code reviews have enough participants",
+        "Whether CPU, memory and I/O stay within acceptable limits under load",
+        "Whether every requirement carries a unique identifier in the tracking tool used by the team"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Resource utilization looks at how efficiently the system consumes shared resources while doing its work."
     },
     {
@@ -2139,10 +2139,10 @@
       "difficulty": "hard",
       "question": "Two applications work correctly alone, but together one starves the other's disk bandwidth. What quality issue does this reveal?",
       "options": [
-        "Replaceability",
+        "A portability success",
         "A coexistence problem",
-        "A dead-store warning",
-        "A portability success"
+        "A replaceability problem",
+        "A dead-store warning"
       ],
       "correctIndex": 1,
       "explanation": "The problem appears only when the software shares its environment with other software, which is exactly what coexistence addresses."
@@ -2154,10 +2154,10 @@
       "difficulty": "easy",
       "question": "Opening files created by an older tool version with the current tool most directly tests what?",
       "options": [
-        "Interoperability or backward compatibility of exchanged artifacts",
-        "Cyclomatic complexity",
-        "Loop coverage",
-        "Heap usage"
+        "Interoperability or backward compatibility of exchanged artefacts",
+        "Cyclomatic complexity of the tool",
+        "Loop coverage achieved by the tests",
+        "Heap usage of the running tool"
       ],
       "correctIndex": 0,
       "explanation": "If exchanged artifacts remain usable across versions or tools, compatibility has improved."
@@ -2184,12 +2184,12 @@
       "difficulty": "hard",
       "question": "What maintainability problem is most directly indicated by duplicated validation rules scattered across several services?",
       "options": [
-        "Improved analyzability",
-        "Poor modifiability because changes must be made consistently in many places",
-        "Better confidentiality",
-        "Guaranteed replaceability"
+        "Guaranteed replaceability of each service",
+        "Better confidentiality of the data handled",
+        "Poor modifiability, since changes must be made consistently in several places",
+        "Improved analysability of the validation logic"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Scattered duplication increases the chance that future changes will be incomplete or inconsistent."
     },
     {
@@ -2200,9 +2200,9 @@
       "question": "Restarting a process from a checkpoint after a crash primarily checks which reliability aspect?",
       "options": [
         "Recoverability",
-        "Compatibility",
         "Interoperability",
-        "Code style"
+        "Code style",
+        "Compatibility"
       ],
       "correctIndex": 0,
       "explanation": "Checkpoint restart is a direct way to evaluate how well service can be restored after failure."
@@ -2214,10 +2214,10 @@
       "difficulty": "medium",
       "question": "When old clients and new servers continue working through API version negotiation, which characteristic is most directly shown?",
       "options": [
-        "Replaceability",
+        "Installability",
         "Interoperability",
-        "Cyclomatic simplicity",
-        "Installability"
+        "Replaceability",
+        "Cyclomatic simplicity"
       ],
       "correctIndex": 1,
       "explanation": "Version negotiation is a common technique for keeping independently evolving systems interoperable."
@@ -2229,12 +2229,12 @@
       "difficulty": "hard",
       "question": "Why is the ability to bypass rate limits with parallel requests a serious security defect?",
       "options": [
-        "It mainly affects text formatting",
+        "It affects portability of the service but nothing else",
+        "It mainly affects how text is formatted in responses",
         "It weakens protection against abuse and can enable denial-of-service or brute-force attacks",
-        "It improves throughput fairness",
-        "It affects only portability"
+        "It improves the fairness of throughput across clients"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Rate limiting is a defensive control; bypassing it can make abuse easier and magnify attack impact."
     },
     {
@@ -2244,12 +2244,12 @@
       "difficulty": "hard",
       "question": "Why should a portable native library be tested on 32-bit and 64-bit platforms with different data-model assumptions?",
       "options": [
-        "Because branch coverage is defined per CPU architecture",
-        "Hidden assumptions about type size, alignment, or representation may break adaptation",
-        "Because portability excludes automated testing",
-        "Because dynamic analysis is not available on one platform"
+        "Portability work excludes the use of automated tests",
+        "Branch coverage is defined separately for each CPU architecture and must be measured on each one",
+        "Hidden assumptions about type size, alignment or representation may break",
+        "Dynamic analysis tools do not exist on one of the platforms"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Cross-platform issues often appear when code assumes a specific integer width, pointer size, or memory layout."
     }
   ]

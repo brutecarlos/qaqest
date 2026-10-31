@@ -9,12 +9,12 @@
       "difficulty": "medium",
       "question": "Which factor is MOST important to assess before introducing test automation for a given test suite?",
       "options": [
-        "The favorite programming language of the automation engineer",
+        "The color scheme of the test management tool, regardless of whether expected results and test data are stable",
+        "The favorite programming language of the automation engineer, without weighing test stability or repeat frequency",
         "The suitability of test cases for automation, considering stability, repeatability, and return on investment",
-        "The number of manual testers currently employed",
-        "The color scheme of the test management tool"
+        "The number of manual testers currently employed, without accounting for setup effort or maintenance over time"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Deciding what to automate requires assessing whether test cases are stable, repeatable, and provide sufficient return on investment to justify automation effort."
     },
     {
@@ -24,12 +24,12 @@
       "difficulty": "easy",
       "question": "Which of the following is a common MISCONCEPTION about test automation that organizations should avoid?",
       "options": [
-        "That test automation can fully replace the need for skilled human testers and exploratory testing",
-        "That test automation requires a well-defined process and ongoing maintenance",
-        "That test automation can improve consistency of repeated regression tests",
-        "That not every manual test case is a good candidate for automation"
+        "That automation is not worthwhile even for stable, frequently repeated regression checks",
+        "That test automation can improve consistency of repeated regression tests, even though a human still needs to interpret the result",
+        "That test automation requires a well-defined process and ongoing maintenance, even though a human still needs to interpret the result",
+        "That test automation can fully replace the need for skilled human testers and exploratory testing"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "A common and costly misconception is that automation can completely replace testers; in reality, automation complements skilled human testing (including exploratory testing), which it cannot fully replace."
     },
     {
@@ -39,10 +39,10 @@
       "difficulty": "medium",
       "question": "Which of the following is a KEY factor in determining the return on investment (ROI) of automating a specific test case?",
       "options": [
-        "How many times the test will be repeated over its useful lifetime, versus the cost to create and maintain the automated version",
-        "The number of letters in the test case's title",
-        "Whether the test case was written by a senior or junior tester",
-        "The color of the icon representing the test in the test management tool"
+        "Compare expected repeat frequency over the test lifetime with creation and maintenance cost.",
+        "The color of the icon representing the test in the test management tool",
+        "The number of letters in the test case's title, without weighing test stability or repeat frequency",
+        "Whether the test case was written by a senior or junior tester"
       ],
       "correctIndex": 0,
       "explanation": "ROI for test automation depends heavily on how often a test will be re-executed (amortizing the automation cost) versus the ongoing cost of creating and maintaining the automated script."
@@ -54,10 +54,10 @@
       "difficulty": "medium",
       "question": "In the Generic Test Automation Architecture (gTAA), which layer is responsible for defining test cases and test data at a level independent of the underlying technical implementation?",
       "options": [
-        "Test Generation layer",
+        "Test Adaptation layer",
         "Test Definition layer",
-        "Test Execution layer",
-        "Test Adaptation layer"
+        "Test Execution layer, without separating test intent from implementation",
+        "Test Generation layer"
       ],
       "correctIndex": 1,
       "explanation": "The Test Definition layer in gTAA is where test cases and test data are specified at an abstract level, separate from technical details of how tests are executed."
@@ -69,12 +69,12 @@
       "difficulty": "hard",
       "question": "Which gTAA layer provides the interface between the automation framework and the specific test object, such as sending commands to a browser or application under test?",
       "options": [
-        "Test Definition layer",
-        "Test Adaptation layer",
-        "Test Management layer",
-        "Test Generation layer"
+        "Test Management layer, without separating test intent from implementation",
+        "Test Definition layer, without separating test intent from implementation",
+        "Test Generation layer, without separating test intent from implementation",
+        "Test Adaptation layer"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "The Test Adaptation layer provides the necessary interfaces to interact with the specific test object or its components, isolating the rest of the framework from low-level technical details."
     },
     {
@@ -84,12 +84,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a COMMON risk when deploying a new test automation solution into an organization?",
       "options": [
-        "Underestimating the effort needed to maintain automated scripts as the application under test evolves",
+        "Test automation completely eliminating the test team's workload immediately",
+        "Automated testing should be judged by defect counts alone, without regard to coverage or context",
         "Automated tests requiring zero setup time",
-        "Automated tests always finding more defects than manual testing in every case",
-        "Test automation completely eliminating the test team's workload immediately"
+        "Underestimating the effort needed to maintain automated scripts as the application under test evolves"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "A frequently observed risk is underestimating the ongoing maintenance effort for automated scripts as the application changes, which can erode the expected ROI if not planned for."
     },
     {
@@ -99,12 +99,12 @@
       "difficulty": "medium",
       "question": "Which metric would be MOST useful for evaluating the health and reliability of an automated regression suite over time?",
       "options": [
+        "The average length of test case names, without considering the decision this measure is meant to support",
         "The percentage of flaky (intermittently failing without a real underlying defect) tests in the suite",
-        "The number of testers who have a company parking spot",
-        "The total number of PowerPoint slides used in status meetings",
-        "The average length of test case names"
+        "The total number of PowerPoint slides used in status meetings, without context on coverage or reliability",
+        "The number of testers who have a company parking spot, even when the intended audience cannot act on the result"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Tracking the rate of flaky tests helps assess suite reliability; a high proportion of flaky tests undermines confidence in automated results and signals a need for stabilization work."
     },
     {
@@ -114,12 +114,12 @@
       "difficulty": "medium",
       "question": "Which type of test is generally the BEST candidate for automation?",
       "options": [
-        "A one-time exploratory test session with no defined expected result",
         "A stable, frequently repeated regression test with clear, deterministic expected results",
-        "A test that will only ever be run once, on a feature that is likely to be redesigned soon",
-        "A highly subjective usability evaluation relying on human judgment"
+        "A highly subjective usability evaluation relying on human judgment, without weighing test stability or repeat frequency",
+        "A one-time exploratory test session with no defined expected result, without weighing test stability or repeat frequency",
+        "A test that will primarily be run once, on a feature that is likely to be redesigned soon"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Stable, frequently repeated tests with deterministic expected outcomes provide the best ROI for automation, unlike one-off exploratory sessions or highly subjective evaluations."
     },
     {
@@ -129,8 +129,8 @@
       "difficulty": "hard",
       "question": "Using a 'keyword-driven' test automation approach primarily aims to:",
       "options": [
-        "Allow test cases to be expressed as sequences of high-level, reusable keywords (actions), separating test logic from low-level implementation details",
-        "Require every tester to write raw automation code for each test case",
+        "Use reusable, high-level keywords to separate test intent from implementation details.",
+        "Require testers to write low-level automation code for each scenario",
         "Eliminate the need for any test data",
         "Replace the need for a test automation framework entirely"
       ],
@@ -145,11 +145,11 @@
       "question": "Which practice helps mitigate the risk of automated tests becoming brittle when the application's UI changes frequently?",
       "options": [
         "Hardcoding every UI element's exact pixel coordinates in every test script",
-        "Using stable locators (e.g., unique IDs) and abstraction layers like the Page Object Model to isolate UI changes from test logic",
-        "Avoiding any structure in automation scripts",
-        "Duplicating the same UI interaction code in every single test script"
+        "Duplicating the same UI interaction code in every single test script",
+        "Use stable locators and Page Objects to isolate UI changes from test logic.",
+        "Avoiding any structure in automation scripts, without a plan for ownership or recovery"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Using stable element locators and abstraction patterns like the Page Object Model isolates UI structure from test logic, so UI changes require updates in fewer places."
     },
     {
@@ -160,9 +160,9 @@
       "question": "Which of the following is a typical BENEFIT of test automation when applied appropriately?",
       "options": [
         "Faster execution of repetitive regression tests, freeing testers for exploratory and higher-value activities",
-        "Guaranteed elimination of all production defects",
+        "Complete independence from the development team's release schedule",
         "No need for any test planning or design",
-        "Complete independence from the development team's release schedule"
+        "A promise that automation will prevent production defects without human test analysis"
       ],
       "correctIndex": 0,
       "explanation": "A key benefit of test automation is speeding up repetitive regression testing, allowing testers to spend more time on exploratory testing and other activities that add unique value."
@@ -175,9 +175,9 @@
       "question": "Which of the following would be a useful automated test reporting feature for quickly diagnosing a failure?",
       "options": [
         "Attaching screenshots, logs, and stack traces automatically at the point of failure",
-        "Reporting only a single pass/fail count with no other detail",
-        "Deleting all logs immediately after a test run completes",
-        "Randomizing the order of test results in the report each time"
+        "Deleting all logs immediately after a test run completes, without context on coverage or reliability",
+        "Reporting a single pass/fail count with no other detail, without context on coverage or reliability",
+        "Randomizing the order of test results in the report each time, without context on coverage or reliability"
       ],
       "correctIndex": 0,
       "explanation": "Rich failure diagnostics, such as automatically captured screenshots, logs, and stack traces, greatly speed up root-cause analysis of automated test failures."
@@ -189,12 +189,12 @@
       "difficulty": "medium",
       "question": "Before introducing test automation, why is it important to assess the organization's current test process maturity?",
       "options": [
-        "Because automation can amplify existing problems in an immature or poorly defined test process rather than fixing them",
-        "Because test process maturity has no relationship to automation success",
-        "Because automation is only possible in organizations with zero manual testing experience",
-        "Because mature processes always guarantee automation will be unnecessary"
+        "Because test process maturity has no relationship to automation success, without weighing test stability or repeat frequency",
+        "Because automation is primarily available in organizations with zero manual testing experience",
+        "Because mature processes often guarantee automation will be unnecessary, without weighing test stability or repeat frequency",
+        "Because automation can amplify existing problems in an immature or poorly defined test process rather than fixing them"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Automating a poorly defined or chaotic test process tends to amplify its problems (e.g., unclear expected results) rather than solve them, so assessing process maturity first is recommended."
     },
     {
@@ -204,12 +204,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a benefit of layering a test automation architecture (as in the gTAA), rather than writing monolithic test scripts?",
       "options": [
-        "It makes the framework harder to maintain over time",
-        "It improves maintainability by isolating changes (e.g., in the UI or test object) to specific layers, without requiring rewrites of test definitions",
-        "It removes the need for any test data",
-        "It guarantees the framework will never need updating"
+        "It lets the framework remain unchanged as the application evolves",
+        "It removes the need to manage test data, despite scenarios requiring different inputs",
+        "It makes the framework harder to maintain over time, without separating test intent from implementation",
+        "Layering isolates changes, improving maintainability without rewriting test definitions."
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "A layered architecture isolates concerns, so a change in the test object (e.g., UI) primarily affects the adaptation layer, without requiring the higher-level test definitions to be rewritten."
     },
     {
@@ -219,12 +219,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a valid CONTINGENCY plan if a chosen test automation tool turns out to be unsuitable partway through adoption?",
       "options": [
-        "Continue using the unsuitable tool indefinitely regardless of the impact on the project",
-        "Have a documented fallback plan, such as reverting to a previous tool/approach or a phased re-evaluation, decided in advance",
+        "Blame individual testers for the tool's shortcomings",
         "Immediately cancel all testing activities on the project",
-        "Blame individual testers for the tool's shortcomings"
+        "Continue using the unsuitable tool indefinitely regardless of the impact on the project",
+        "Document a fallback, such as a phased re-evaluation or return to the prior approach."
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Good automation deployment planning includes contingency options, such as a documented fallback approach, in case the chosen tool proves unsuitable during rollout."
     },
     {
@@ -234,10 +234,10 @@
       "difficulty": "medium",
       "question": "Which statement about the relationship between test automation and the software development lifecycle is CORRECT?",
       "options": [
-        "Test automation architecture and tooling decisions should consider the SDLC being used, e.g. supporting continuous integration in agile/DevOps contexts",
-        "Test automation architecture is completely independent of the SDLC and never needs to fit the delivery pipeline",
-        "Test automation can only ever be used in a strict Waterfall lifecycle",
-        "The SDLC has no bearing on how automated tests are triggered or reported"
+        "Align architecture and tooling with the SDLC, including its delivery pipeline.",
+        "Architecture decisions need not account for how the team builds and delivers software",
+        "The architecture need not support CI in iterative delivery contexts",
+        "The SDLC has no bearing on how automated tests are triggered or reported, even though a human still needs to interpret the result"
       ],
       "correctIndex": 0,
       "explanation": "An effective test automation strategy considers the lifecycle model in use, for example ensuring automated tests can run within a CI/CD pipeline to support agile or DevOps delivery cadences."
@@ -249,12 +249,12 @@
       "difficulty": "medium",
       "question": "Which of the following metrics helps assess whether test automation efforts are paying off over time?",
       "options": [
-        "Trends in automated test execution time, pass rate stability, and defects found versus effort spent maintaining the suite",
-        "The number of monitors on each tester's desk",
+        "The alphabetical order of test case names, even when the intended audience cannot act on the result",
+        "The number of monitors on each tester's desk, even when the intended audience cannot act on the result",
         "The number of times the word 'test' appears in the project charter",
-        "The alphabetical order of test case names"
+        "Compare execution-time and pass-rate trends with value delivered and maintenance effort."
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Useful automation metrics include trends in execution time, pass rate stability (fewer flaky failures over time), and comparing value delivered (defects found, time saved) against ongoing maintenance effort."
     },
     {
@@ -264,13 +264,13 @@
       "difficulty": "hard",
       "question": "A team has 500 manual regression test cases. Which of the following criteria would be LEAST relevant when selecting which of them to automate first?",
       "options": [
-        "How frequently the test case is expected to be re-executed",
-        "How stable the underlying feature is expected to remain",
         "The alphabetical position of the test case's title in the spreadsheet",
-        "How much manual effort the test case currently requires per execution"
+        "How frequently the test case is expected to be re-executed, without weighing test stability or repeat frequency",
+        "How stable the underlying feature is expected to remain, without weighing test stability or repeat frequency",
+        "How much manual effort the test case currently requires per execution, without weighing test stability or repeat frequency"
       ],
-      "correctIndex": 2,
-      "explanation": "Selection criteria for automation should be based on factors like execution frequency, feature stability, and manual effort saved \u2014 not an arbitrary factor like alphabetical ordering of titles."
+      "correctIndex": 0,
+      "explanation": "Selection criteria for automation should be based on factors like execution frequency, feature stability, and manual effort saved — not an arbitrary factor like alphabetical ordering of titles."
     },
     {
       "id": "ta-019",
@@ -279,12 +279,12 @@
       "difficulty": "medium",
       "question": "Compared to simple 'record and playback' scripts, a well-designed automation framework using gTAA principles is generally:",
       "options": [
-        "More costly to build and maintain over time with no benefits",
-        "More maintainable and scalable, since responsibilities are separated across layers rather than tangled together in each script",
         "Impossible to integrate with CI/CD pipelines",
-        "Only usable for performance testing, never functional testing"
+        "Mainly intended for performance testing, rarely functional testing",
+        "Separated responsibilities make layered frameworks more maintainable and scalable.",
+        "More costly to build and maintain over time with no benefits"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "A layered framework designed around gTAA principles is generally more maintainable and scalable than ad hoc record-and-playback scripts, since concerns are separated rather than duplicated across scripts."
     },
     {
@@ -294,12 +294,12 @@
       "difficulty": "medium",
       "question": "Which of the following would be a strong indicator that a test automation initiative is at risk of failing to deliver expected ROI?",
       "options": [
+        "The automated suite is integrated into the CI pipeline, without a plan for ownership or recovery",
+        "New automated tests are added incrementally alongside new features, without a plan for ownership or recovery",
         "The automated suite runs quickly and reliably with minimal maintenance",
-        "The team is spending more time fixing broken automated scripts each release than the manual effort those scripts were meant to save",
-        "The automated suite is integrated into the CI pipeline",
-        "New automated tests are added incrementally alongside new features"
+        "Maintenance effort exceeds manual execution savings across releases."
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "If script maintenance effort consistently exceeds the manual testing time saved, the automation initiative is failing to deliver its intended ROI and needs review."
     },
     {
@@ -310,11 +310,11 @@
       "question": "Which of the following is a typical objective of introducing test automation into a project?",
       "options": [
         "To completely eliminate the need for any human testers",
-        "To improve efficiency and consistency of repetitive tests, freeing testers to focus on more exploratory or complex activities",
         "To guarantee that the software will have zero defects",
-        "To remove the need for any test planning"
+        "To remove the need for any test planning",
+        "Automate repetitive checks consistently to speed feedback and free time for complex testing."
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Test automation aims to improve efficiency and consistency for repetitive tests (like regression suites), allowing human testers to focus their time on higher-value activities such as exploratory testing and complex scenario analysis."
     },
     {
@@ -324,12 +324,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a common misconception about test automation that a test automation engineer should address?",
       "options": [
+        "Automation can improve test execution speed for repetitive tests, even though a human still needs to interpret the result",
         "Automation requires an ongoing investment in maintenance and does not eliminate all manual testing",
         "Automated tests can run repeatedly without manual intervention once configured",
-        "Automated tests are useful for regression testing",
-        "Automation can improve test execution speed for repetitive tests"
+        "Automated tests are useful for regression testing, even though a human still needs to interpret the result"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "A common misconception is that automation is a one-time investment requiring no ongoing maintenance, and that it can fully replace manual testing; in reality, automated test suites require continuous maintenance and cannot replace all forms of testing (e.g., exploratory or usability testing)."
     },
     {
@@ -340,11 +340,11 @@
       "question": "Which of the following test activities is generally LEAST suitable for full automation?",
       "options": [
         "Repetitive regression testing of stable core functionality",
-        "Exploratory testing that relies on tester creativity, intuition, and adaptive investigation",
         "Data-driven testing across many input combinations",
-        "Smoke testing after every build"
+        "Exploratory testing that relies on tester creativity, intuition, and adaptive investigation",
+        "Smoke testing after every build, without checking whether the activity is suitable for automation"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Exploratory testing relies heavily on human creativity, intuition, and adaptive investigation, making it fundamentally difficult to fully automate compared to repetitive, well-defined regression or smoke tests."
     },
     {
@@ -354,12 +354,12 @@
       "difficulty": "medium",
       "question": "When conducting a return-on-investment (ROI) analysis for test automation, which factor should be included?",
       "options": [
-        "Only the initial licensing cost of the automation tool",
-        "Ongoing maintenance costs, initial setup effort, and expected savings in execution time over the test suite's lifetime",
-        "The number of team members who prefer manual testing",
-        "The color scheme of the automation tool's user interface"
+        "The color scheme of the automation tool's user interface, regardless of whether expected results and test data are stable",
+        "The initial licensing cost of the automation tool, while ignoring stability, repeat frequency, setup effort, and lifecycle cost",
+        "The number of team members who prefer manual testing, while ignoring stability, repeat frequency, setup effort, and lifecycle cost",
+        "Ongoing maintenance costs, initial setup effort, and expected savings in execution time over the test suite's lifetime"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "A meaningful ROI analysis considers the full lifecycle costs (setup, ongoing maintenance) against the expected benefits (time savings, increased coverage, faster feedback) rather than looking only at initial licensing cost."
     },
     {
@@ -371,7 +371,7 @@
       "options": [
         "A frequently changing user interface with no stable identifiers for elements",
         "A stable, mature feature with well-defined, repeatable expected results",
-        "A one-time-use prototype that will be discarded after a single demo",
+        "A one-time-use prototype that will be discarded after a single demo, without weighing test stability or repeat frequency",
         "A feature whose requirements are still being actively negotiated and change daily"
       ],
       "correctIndex": 1,
@@ -385,12 +385,12 @@
       "question": "Why is testability of the application under test important when preparing for automation?",
       "options": [
         "Testability has no impact on how easily tests can be automated",
-        "Higher testability (e.g., stable element identifiers, accessible APIs, controllable test data) makes automated tests easier and cheaper to create and maintain",
-        "Testability only matters for manual testing, not automation",
-        "Testability is only relevant to hardware testing"
+        "Testability is mainly relevant to hardware testing, without weighing test stability or repeat frequency",
+        "Testability mainly matters for manual testing, not automation, without weighing test stability or repeat frequency",
+        "Stable interfaces and controllable test data make automation easier and cheaper to maintain."
       ],
-      "correctIndex": 1,
-      "explanation": "Applications designed with testability in mind \u2014 such as stable element locators, accessible APIs, and controllable test data/state \u2014 are significantly easier and cheaper to automate and maintain tests for."
+      "correctIndex": 3,
+      "explanation": "Applications designed with testability in mind — such as stable element locators, accessible APIs, and controllable test data/state — are significantly easier and cheaper to automate and maintain tests for."
     },
     {
       "id": "ta-027",
@@ -399,12 +399,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a typical objective when selecting test cases for automation, rather than automating everything?",
       "options": [
-        "Automate every single test case regardless of value or stability",
-        "Prioritize test cases that are stable, executed frequently (e.g., regression), and provide high value relative to automation cost",
-        "Automate only test cases that are run exactly once",
-        "Automate tests randomly without any prioritization criteria"
+        "Automate mainly test cases that are run exactly once, without weighing test stability or repeat frequency",
+        "Automate the existing suite without first assessing test value or stability, without weighing test stability or repeat frequency",
+        "Automate tests randomly without any prioritization criteria, without weighing test stability or repeat frequency",
+        "Prioritize stable, frequently run tests with high value relative to automation cost."
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Good practice is to prioritize automating stable, frequently-executed test cases (like regression tests) that provide strong return on investment, rather than attempting to automate every test case indiscriminately."
     },
     {
@@ -414,12 +414,12 @@
       "difficulty": "hard",
       "question": "In the Generic Test Automation Architecture (gTAA), what is the primary role of the Test Adaptation Layer?",
       "options": [
+        "To manage the project's budget and staffing",
         "To store test results in a database",
-        "To provide an interface between the test generation/definition layer and the specific interfaces of the system under test",
-        "To design the visual layout of test reports",
-        "To manage the project's budget and staffing"
+        "It adapts generic test definitions to the SUT's specific interfaces.",
+        "To design the visual layout of test reports"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "The Test Adaptation Layer in gTAA provides the interface adapters that connect generic test definitions/scripts to the specific technical interfaces of the system under test, enabling reuse across different SUTs or interface changes."
     },
     {
@@ -429,12 +429,12 @@
       "difficulty": "hard",
       "question": "Which gTAA layer is primarily responsible for defining test data, expected results, and test procedures at a logical, implementation-independent level?",
       "options": [
-        "Test Generation Layer",
         "Test Definition Layer",
-        "Test Execution Layer",
-        "Test Adaptation Layer"
+        "Test Adaptation Layer, without separating test intent from implementation",
+        "Test Execution Layer, without separating test intent from implementation",
+        "Test Generation Layer, without separating test intent from implementation"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "The Test Definition Layer defines test cases, test data, and expected results at a logical level, independent of the specific technical implementation used to execute them."
     },
     {
@@ -444,12 +444,12 @@
       "difficulty": "medium",
       "question": "What is a key benefit of separating test scripts from test data in an automation framework (data-driven design)?",
       "options": [
-        "It allows the same script logic to be reused with many different data sets, reducing script duplication and improving maintainability",
-        "It prevents any test data from ever being reused",
-        "It requires rewriting the script for every new data value",
-        "It eliminates the need for a test execution engine"
+        "It eliminates the need for a test execution engine",
+        "One script can use multiple data sets, reducing duplication and maintenance.",
+        "It discourages reuse of test data even when scenarios share the same inputs",
+        "It requires rewriting the script for every new data value"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Data-driven design separates test logic (scripts) from test data, allowing the same script to be executed against many different data sets, which reduces duplication and improves maintainability of the automation suite."
     },
     {
@@ -459,12 +459,12 @@
       "difficulty": "hard",
       "question": "In a keyword-driven test automation framework, what is the main purpose of 'keywords'?",
       "options": [
-        "To represent reusable, higher-level actions (e.g., 'Login', 'AddToCart') that abstract away the underlying implementation details",
-        "To store the raw HTML source code of every page",
-        "To replace the need for any test data",
-        "To define the project's marketing keywords for SEO"
+        "To define the project's marketing keywords for SEO",
+        "To replace the need for any test data, without separating test intent from implementation",
+        "Keywords are reusable high-level actions that hide implementation details.",
+        "To store the raw HTML source code of every page, without separating test intent from implementation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Keyword-driven frameworks use reusable, higher-level keywords representing business or UI actions, abstracting away implementation details so non-programmers can compose test cases from these building blocks."
     },
     {
@@ -474,10 +474,10 @@
       "difficulty": "medium",
       "question": "A team introducing test automation notices that stakeholders expect it to eliminate all manual testing within the first month. What is the MOST appropriate response?",
       "options": [
-        "Agree with the expectation and immediately disband the manual test team",
-        "Clarify that automation complements, but does not fully replace, manual and exploratory testing, and set realistic expectations for adoption timelines and ROI",
-        "Ignore stakeholder expectations entirely and proceed without communication",
-        "Automate 100% of test cases within the first week regardless of suitability"
+        "Automate 100% of test cases within the first week regardless of suitability, without a plan for ownership or recovery",
+        "Explain that automation supports rather than replaces manual testing, with realistic timelines.",
+        "Agree with the expectation and immediately disband the manual test team, without a plan for ownership or recovery",
+        "Ignore stakeholder expectations entirely and proceed without communication, without a plan for ownership or recovery"
       ],
       "correctIndex": 1,
       "explanation": "Managing unrealistic stakeholder expectations is an important deployment risk; automation should be positioned as complementary to manual and exploratory testing, with realistic timelines communicated clearly."
@@ -489,12 +489,12 @@
       "difficulty": "medium",
       "question": "What contingency should a team plan for if their chosen commercial automation tool becomes unsupported or discontinued?",
       "options": [
-        "No contingency is needed since tools are never discontinued",
         "An exit or migration strategy, such as maintaining test definitions in a tool-independent format where feasible",
-        "Immediately halting all testing activities indefinitely",
-        "Manually re-typing all test results from memory"
+        "No contingency is needed since tools are rarely discontinued",
+        "Manually re-typing all test results from memory, while leaving ownership, reliability, and recovery unplanned when the approach fails",
+        "Immediately halting all testing activities indefinitely, while leaving ownership, reliability, and recovery unplanned when the approach fails"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "A sound contingency plan considers the risk of tool discontinuation by keeping test assets as tool-independent as feasible, or planning a migration strategy, to reduce lock-in risk."
     },
     {
@@ -504,12 +504,12 @@
       "difficulty": "hard",
       "question": "Which practice helps reduce the risk of 'flaky' (intermittently failing) automated tests?",
       "options": [
-        "Ignoring failures and always re-running until they pass without investigation",
-        "Designing tests with proper synchronization/waits, stable locators, and isolated test data to reduce timing and dependency issues",
-        "Removing all assertions from the test scripts",
-        "Running all tests simultaneously against a shared, uncontrolled environment"
+        "Removing all assertions from the test scripts, without a plan for ownership or recovery",
+        "Running all tests simultaneously against a shared, uncontrolled environment",
+        "Rerun failures until they pass without investigating the cause, without a plan for ownership or recovery",
+        "Use robust synchronization, stable locators, and isolated data to reduce flakiness."
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Flaky tests are often caused by timing issues, unstable element locators, or shared/uncontrolled test data; proper synchronization, stable locators, and test data isolation reduce these problems."
     },
     {
@@ -519,13 +519,13 @@
       "difficulty": "medium",
       "question": "Which metric would BEST help a team evaluate the return on investment of their test automation effort over time?",
       "options": [
-        "The number of lines of code in the automation framework",
-        "A comparison of automation development/maintenance cost versus time saved in execution and defects caught over multiple releases",
-        "The number of automation engineers hired",
-        "The number of test tool vendors evaluated during tool selection"
+        "The number of automation engineers hired, as a standalone signal without coverage, reliability, or execution context",
+        "Compare setup and maintenance costs with execution time saved and measurable quality benefits across releases",
+        "The number of test tool vendors evaluated during tool selection, even when the intended audience cannot act on the result",
+        "The number of lines of code in the automation framework, even when the intended audience cannot act on the result"
       ],
       "correctIndex": 1,
-      "explanation": "Evaluating ROI requires comparing the ongoing cost of developing and maintaining automation against the time saved in execution and value delivered (e.g., defects caught) across multiple releases, not just counting code or resources."
+      "explanation": "ROI compares lifecycle costs, including setup and maintenance, with benefits such as execution time saved and measurable quality outcomes. Defects found can inform the assessment, but should not be treated as financial value without a defensible link."
     },
     {
       "id": "ta-036",
@@ -534,13 +534,13 @@
       "difficulty": "medium",
       "question": "What is an important consideration when generating automated test execution reports for different stakeholders?",
       "options": [
-        "Always provide the exact same highly technical, low-level log output to every audience",
-        "Tailor the level of detail and summary format to the audience, e.g., executive summaries for management versus detailed logs for engineers",
-        "Never include any pass/fail summary information in reports",
-        "Reports should only be generated once per year"
+        "Rarely include any pass/fail summary information in reports",
+        "Reports should mainly be generated once per year, without context on coverage or reliability",
+        "Tailor report summaries and diagnostic detail to each audience.",
+        "Often provide the exact same highly technical, low-level log output to every audience"
       ],
-      "correctIndex": 1,
-      "explanation": "Effective reporting tailors detail and format to the audience \u2014 for example, concise dashboards or summaries for management, and detailed logs or stack traces for engineers investigating failures."
+      "correctIndex": 2,
+      "explanation": "Effective reporting tailors detail and format to the audience — for example, concise dashboards or summaries for management, and detailed logs or stack traces for engineers investigating failures."
     },
     {
       "id": "ta-037",
@@ -549,12 +549,12 @@
       "difficulty": "medium",
       "question": "Which of the following metrics is commonly tracked to assess the health of an automated regression suite over time?",
       "options": [
-        "Test suite pass rate and trend of flaky/unstable test failures",
-        "The number of physical monitors used by the automation team",
-        "The number of coffee cups consumed during test runs",
-        "The alphabetical order of test script file names"
+        "The number of coffee cups consumed during test runs, without context on coverage or reliability",
+        "The alphabetical order of test script file names, without context on coverage or reliability",
+        "The number of physical monitors used by the automation team, without context on coverage or reliability",
+        "Test suite pass rate and trend of flaky/unstable test failures"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Tracking pass rate trends and the frequency of flaky/unstable failures over time helps teams assess and maintain the health and reliability of their automated regression suite."
     },
     {
@@ -564,12 +564,12 @@
       "difficulty": "medium",
       "question": "Which factor should be considered when deciding the appropriate level (unit, API/service, or UI) at which to automate a given test?",
       "options": [
-        "UI-level automation should always be preferred over API or unit-level automation regardless of context",
-        "Lower-level tests (unit/API) are typically faster and more stable, so automation effort is often best balanced toward those levels, using UI automation more sparingly for end-to-end coverage",
-        "Automation level has no impact on test stability or execution speed",
-        "Only UI-level tests can be automated; unit and API tests cannot"
+        "Automation level has no impact on test stability or execution speed, even though a human still needs to interpret the result",
+        "UI-level tests can be automated; unit and API tests cannot, even though a human still needs to interpret the result",
+        "Favor fast, stable unit/API checks and reserve UI automation for critical end-to-end flows.",
+        "Prefer UI automation over service or unit checks even when lower-level tests provide sufficient confidence"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Following the test automation pyramid concept, unit and API-level tests are generally faster, more stable, and cheaper to maintain than UI tests, so automation effort is typically weighted toward lower levels, with UI automation reserved for critical end-to-end flows."
     },
     {
@@ -579,12 +579,12 @@
       "difficulty": "medium",
       "question": "Why is version control important for test automation code and test data?",
       "options": [
-        "It has no real benefit for automation projects",
-        "It enables tracking changes, collaborating safely among multiple engineers, and reverting problematic changes to the automation suite",
-        "It is only useful for production application code, not test code",
-        "It replaces the need for any test execution reports"
+        "It replaces the need for any test execution reports, without weighing test stability or repeat frequency",
+        "It has no real benefit for automation projects, without weighing test stability or repeat frequency",
+        "Track changes, collaborate safely, and revert problematic automation updates.",
+        "It is mainly useful for production application code, not test code, without weighing test stability or repeat frequency"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Version control for automation code and test data enables safe collaboration among multiple engineers, tracks the history of changes, and allows reverting problematic changes, just as it does for production code."
     },
     {
@@ -594,10 +594,10 @@
       "difficulty": "hard",
       "question": "Which of the following BEST describes the benefit of using a layered test automation architecture (such as gTAA) rather than a single monolithic script approach?",
       "options": [
-        "It has no advantage over monolithic scripts and only adds unnecessary complexity",
-        "It improves maintainability and reusability by isolating concerns (test definition, adaptation, execution), so changes in one layer have limited impact on others",
-        "It guarantees the automation suite will never require any updates",
-        "It eliminates the need for any test adaptation layer"
+        "It leaves the framework maintenance-free after its initial setup, without separating test intent from implementation",
+        "Layering isolates responsibilities, limiting the impact of changes across the framework.",
+        "It has no advantage over monolithic scripts and mainly adds unnecessary complexity",
+        "It eliminates the need for any test adaptation layer, without separating test intent from implementation"
       ],
       "correctIndex": 1,
       "explanation": "A layered architecture isolates concerns such as test definition, adaptation to the SUT, and execution, so that changes in one layer (e.g., a UI change requiring adaptation layer updates) have limited ripple effects on other layers, improving maintainability and reusability."
@@ -609,12 +609,12 @@
       "difficulty": "easy",
       "question": "A team wants to introduce automation mainly to shorten the time between a code change and meaningful test feedback. Which primary objective does this support?",
       "options": [
-        "Reducing feedback time by executing suitable checks automatically after changes",
         "Eliminating the need for code reviews",
+        "Replacing every manual test with a recorded script",
         "Avoiding all environment setup work",
-        "Replacing every manual test with a recorded script"
+        "Reducing feedback time by executing suitable checks automatically after changes"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "One of the clearest objectives of automation is faster feedback on changes. That helps teams detect regressions sooner and respond while context is still fresh."
     },
     {
@@ -624,12 +624,12 @@
       "difficulty": "medium",
       "question": "Which testing activity is usually the LEAST appropriate candidate for full automation?",
       "options": [
-        "Checking the same API contract on every build",
-        "Executing deterministic calculations with many data sets",
         "Assessing whether a new workflow feels intuitive to first-time users",
-        "Running a daily smoke test on core services"
+        "Checking the same API contract on every build, even though a human still needs to interpret the result",
+        "Executing deterministic calculations with many data sets, even though a human still needs to interpret the result",
+        "Running a daily smoke test on core services, even though a human still needs to interpret the result"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "explanation": "Usability and intuitive user experience rely strongly on human perception and judgment. They can be supported by automation, but not fully replaced by it."
     },
     {
@@ -639,12 +639,12 @@
       "difficulty": "hard",
       "question": "Which statement reflects a realistic expectation for a mature automation initiative?",
       "options": [
-        "Once scripts exist, the suite can run forever without maintenance",
         "Automation removes the need to analyze failures",
-        "Automation complements human testing and needs ongoing care as the product evolves",
-        "Automation is valuable only for GUI testing"
+        "Automation is valuable for GUI testing",
+        "Once scripts exist, the suite can run forever without maintenance",
+        "Automation complements human testing and needs ongoing care as the product evolves"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "explanation": "Automated suites need maintenance, result analysis, and continual adaptation. They are most effective when used alongside human-led testing activities."
     },
     {
@@ -655,9 +655,9 @@
       "question": "Why do many teams prefer to automate more checks at unit or API level than at full UI level?",
       "options": [
         "Lower-level checks are often faster, more stable, and easier to diagnose",
-        "UI automation always finds deeper defects than unit tests",
-        "API tests require no test data preparation",
-        "Unit checks are the only tests that can run in CI"
+        "API tests require no test data preparation, even though a human still needs to interpret the result",
+        "UI automation often finds deeper defects than unit tests",
+        "Unit checks are the mainly tests that can run in CI"
       ],
       "correctIndex": 0,
       "explanation": "Lower-level automated checks usually run faster and fail more precisely. That makes them a strong foundation in the automation pyramid."
@@ -669,12 +669,12 @@
       "difficulty": "medium",
       "question": "What is the main reason an automation strategy often follows the test automation pyramid?",
       "options": [
-        "To maximize the number of screenshot comparisons",
-        "To concentrate effort on the slowest checks first",
         "To balance speed, reliability, and confidence by favoring more low-level checks",
-        "To ensure every requirement is tested only through the UI"
+        "To concentrate effort on the slowest checks first, even though a human still needs to interpret the result",
+        "To maximize the number of screenshot comparisons, even though a human still needs to interpret the result",
+        "To ensure every requirement is tested through the UI, even though a human still needs to interpret the result"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "explanation": "The pyramid encourages a healthy mix of automated checks, with more fast and stable low-level tests than expensive end-to-end UI tests. That improves feedback quality and maintainability."
     },
     {
@@ -684,12 +684,12 @@
       "difficulty": "hard",
       "question": "After a large regression suite is automated, why should exploratory testing usually still continue?",
       "options": [
-        "Exploratory testing is better at adapting to new risks and unexpected behavior",
-        "Exploratory testing is required only because automation cannot store results",
-        "Exploratory testing is the only way to check exact expected outcomes",
-        "Exploratory testing mainly exists to slow down releases"
+        "Exploratory testing is the mainly way to check exact expected outcomes, even though a human still needs to interpret the result",
+        "Exploratory testing mainly exists to slow down releases, even though a human still needs to interpret the result",
+        "Exploratory testing is required because automation cannot store results, even though a human still needs to interpret the result",
+        "Exploratory testing is better at adapting to new risks and unexpected behavior"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Exploratory testing helps uncover issues that scripted checks may miss, especially around new risks or surprising interactions. Automation and exploration serve different purposes."
     },
     {
@@ -700,11 +700,11 @@
       "question": "Which goal for a first automation program is MOST likely to create problems?",
       "options": [
         "Automate stable regression checks with clear value",
-        "Use automation to support frequent feedback in the delivery pipeline",
         "Automate 100 percent of all testing within one quarter regardless of suitability",
+        "Use automation to support frequent feedback in the delivery pipeline",
         "Start with areas where execution is repetitive and deterministic"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "explanation": "A blanket goal to automate everything ignores cost, suitability, and maintenance. Effective programs prioritize based on value and feasibility."
     },
     {
@@ -714,12 +714,12 @@
       "difficulty": "medium",
       "question": "What is a likely consequence of treating test automation only as a way to reduce headcount?",
       "options": [
-        "The team may optimize for script quantity instead of product risk coverage",
         "The framework will automatically become vendor-independent",
         "Maintenance effort will disappear from the budget",
+        "The team may optimize for script quantity instead of product risk coverage",
         "Subjective quality attributes will become easier to automate"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "If automation is framed only as a staffing reduction tool, teams may pursue the wrong outcomes. Good automation focuses on risk reduction, feedback, and repeatability."
     },
     {
@@ -730,11 +730,11 @@
       "question": "Which situation BEST shows that an automated smoke suite is delivering value?",
       "options": [
         "It runs rarely because it requires manual setup by several teams",
-        "It gives fast confidence that critical workflows still work after each deployment",
         "It contains mostly unstable scenarios that fail intermittently",
-        "It covers only one browser because reports are easier to read"
+        "It gives fast confidence that critical workflows still work after each deployment",
+        "It covers one browser because reports are easier to read, even though a human still needs to interpret the result"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "A smoke suite is valuable when it gives rapid confidence in core flows after a build or deployment. Speed and reliability are central to that purpose."
     },
     {
@@ -744,12 +744,12 @@
       "difficulty": "easy",
       "question": "Why are deterministic expected results important for a good automation candidate?",
       "options": [
-        "They allow reliable automated oracles to decide pass or fail",
         "They reduce the need to version control test code",
-        "They guarantee zero false negatives in all circumstances",
-        "They remove the need for logging and diagnostics"
+        "They remove the need for logging and diagnostics",
+        "They allow reliable automated oracles to decide pass or fail",
+        "They eliminate false negatives without further validation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Automation works best when pass and fail can be decided consistently. Ambiguous expected outcomes make automated verdicts less trustworthy."
     },
     {
@@ -760,9 +760,9 @@
       "question": "When is postponing automation usually a sensible decision?",
       "options": [
         "When the feature is a short-lived prototype changing every few days",
+        "When the test can run unattended in CI",
         "When the scenario is executed in every regression cycle",
-        "When the expected outcomes are stable and measurable",
-        "When the test can run unattended in CI"
+        "When the expected outcomes are stable and measurable"
       ],
       "correctIndex": 0,
       "explanation": "Short-lived or highly unstable features often create automation churn with little long-term value. Waiting can protect effort until behavior stabilizes."
@@ -775,9 +775,9 @@
       "question": "What is a common benefit of scheduling automated suites to run overnight?",
       "options": [
         "They can provide broader feedback without consuming prime working hours",
-        "They eliminate the need for test environments",
-        "They guarantee that failures are product defects",
-        "They prevent any maintenance work from being needed"
+        "They guarantee that failures are product defects, even though a human still needs to interpret the result",
+        "They eliminate the need for test environments, even though a human still needs to interpret the result",
+        "They prevent any maintenance work from being needed, even though a human still needs to interpret the result"
       ],
       "correctIndex": 0,
       "explanation": "Overnight execution can expand feedback without blocking daytime work. The results are available for investigation when the team starts the next day."
@@ -789,12 +789,12 @@
       "difficulty": "easy",
       "question": "Which statement about automation scope is CORRECT?",
       "options": [
-        "Every manual test case should become automated eventually",
         "Automation is most effective when scoped to activities where repeatability and value justify the cost",
-        "Automation should target only the newest features",
-        "Automation is useful only after full product stabilization"
+        "Automation should target the newest features, without checking whether the activity is suitable for automation",
+        "Automate manual cases even when repetition or expected value is low",
+        "Automation is useful after full product stabilization"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Automation should be applied selectively where it brings clear value. Scope decisions should consider repeatability, risk, and maintenance cost."
     },
     {
@@ -804,12 +804,12 @@
       "difficulty": "medium",
       "question": "Why should an automation approach define clear ownership for the framework and suites?",
       "options": [
-        "To ensure maintenance, standards, and evolution are actively managed",
-        "To avoid integrating tests into CI/CD",
         "To keep test code separate from the rest of engineering practices",
-        "To ensure only one person can run the suite"
+        "To ensure one person can run the suite",
+        "To ensure maintenance, standards, and evolution are actively managed",
+        "To avoid integrating tests into CI/CD"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Without clear ownership, automated assets often decay because nobody steers upgrades, reviews, and maintenance. Ownership supports sustainability."
     },
     {
@@ -819,12 +819,12 @@
       "difficulty": "hard",
       "question": "Why do API-level automated checks often complement UI tests well?",
       "options": [
-        "They validate business logic through stable interfaces while staying faster than end-to-end UI flows",
         "They remove the need for any UI testing",
-        "They always exercise accessibility better than browsers do",
-        "They can verify visual layout more accurately than humans"
+        "They validate business logic through stable interfaces while staying faster than end-to-end UI flows",
+        "They can verify visual layout more accurately than humans",
+        "API checks provide stronger accessibility evidence than browser-based tests"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "API checks often cover important logic through more stable interfaces and provide quicker feedback. They complement UI tests instead of replacing them entirely."
     },
     {
@@ -834,12 +834,12 @@
       "difficulty": "easy",
       "question": "In the context of automation, what does repeatability mainly mean?",
       "options": [
-        "A test can be rerun under the same conditions and should produce consistent outcomes",
-        "A test must execute only once per release",
-        "A test should require different data every time to stay valid",
-        "A test must be rewritten after each build"
+        "A test must be rewritten after each build, even though a human still needs to interpret the result",
+        "A test should require different data every time to stay valid, even though a human still needs to interpret the result",
+        "A test should not be rerun after it has passed, even though a human still needs to interpret the result",
+        "A test can be rerun under the same conditions and should produce consistent outcomes"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Repeatability means the same test can be executed again under controlled conditions with consistent results. That property is fundamental for trustworthy automation."
     },
     {
@@ -849,12 +849,12 @@
       "difficulty": "medium",
       "question": "Why can't automation compensate for unclear or constantly disputed requirements?",
       "options": [
+        "Because unclear requirements matter mainly to developers",
         "Because automated checks still need a defined expectation to verify against",
         "Because automation tools cannot connect to source control",
-        "Because unclear requirements matter only to developers",
-        "Because automation works only for performance testing"
+        "Because automation works for performance testing"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Automated checks verify expected behavior, so they depend on clear expectations. If the requirement itself is unclear, automation will preserve confusion rather than solve it."
     },
     {
@@ -865,8 +865,8 @@
       "question": "Which use of automation is MOST appropriate in a pull-request pipeline?",
       "options": [
         "A small set of fast, reliable checks that quickly detects important regressions",
-        "The entire slow end-to-end suite regardless of duration",
-        "Only manual approvals from test managers",
+        "Manual approvals from test managers, even though a human still needs to interpret the result",
+        "The entire slow end-to-end suite regardless of duration, even though a human still needs to interpret the result",
         "A random sample of tests so that every run is different"
       ],
       "correctIndex": 0,
@@ -879,12 +879,12 @@
       "difficulty": "easy",
       "question": "A defect was fixed in a stable payment rule and has high business impact if it returns. What is the BEST follow-up?",
       "options": [
+        "Move the scenario into exploratory testing mainly",
         "Rely on memory to retest it during major releases",
-        "Add a targeted automated regression check at the most effective test level",
         "Wait until several similar defects appear before automating",
-        "Move the scenario into exploratory testing only"
+        "Add a targeted automated regression check at the most effective test level"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "A high-impact regression risk is a strong trigger for adding an automated check. The most effective level is usually the lowest one that gives sufficient confidence."
     },
     {
@@ -894,12 +894,12 @@
       "difficulty": "medium",
       "question": "Why is it good practice to treat test code with engineering discipline similar to production code?",
       "options": [
+        "It allows test code to ignore naming and structure standards, even though a human still needs to interpret the result",
         "It improves maintainability, review quality, and long-term reliability",
-        "It guarantees that no tests will ever fail",
-        "It eliminates the need for test design",
-        "It allows test code to ignore naming and structure standards"
+        "It eliminates the need for test design, even though a human still needs to interpret the result",
+        "It guarantees that no tests will ever fail, even though a human still needs to interpret the result"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Automation code is a long-lived asset and benefits from review, refactoring, and standards. Neglecting those practices usually increases maintenance cost."
     },
     {
@@ -909,12 +909,12 @@
       "difficulty": "hard",
       "question": "Why is measuring automation success only by the number of scripts created a weak approach?",
       "options": [
-        "Script counts say little about risk coverage, reliability, or business value",
-        "Script counts are useful only for performance tests",
+        "Script counts are useful for performance tests, even though a human still needs to interpret the result",
+        "The number of scripts should often decrease over time, even though a human still needs to interpret the result",
         "A high script count automatically means better maintainability",
-        "The number of scripts should always decrease over time"
+        "Script counts say little about risk coverage, reliability, or business value"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Quantity alone does not show whether automation improves confidence or efficiency. Quality, relevance, and reliability matter more than raw counts."
     },
     {
@@ -924,10 +924,10 @@
       "difficulty": "easy",
       "question": "When choosing where to automate a scenario, what is the BEST guiding principle?",
       "options": [
-        "Use the most visible layer so stakeholders can watch it run",
         "Prefer the highest layer because it covers the most code indirectly",
+        "Use the most visible layer so stakeholders can watch it run",
         "Select the lowest practical layer that provides the needed confidence",
-        "Always automate the same scenario at every available layer"
+        "Often automate the same scenario at every available layer"
       ],
       "correctIndex": 2,
       "explanation": "A common principle is to automate at the lowest layer that still gives enough confidence. This often improves speed, stability, and diagnosability."
@@ -939,12 +939,12 @@
       "difficulty": "medium",
       "question": "Which situation provides the STRONGEST business case for automating a test first?",
       "options": [
+        "A subjective design review discussed in workshops",
         "A stable calculation used in every release and expensive to verify manually",
-        "A one-off demo script for a feature being removed next week",
-        "A subjective design review discussed only in workshops",
-        "An unstable prototype with no agreed expected behavior"
+        "An unstable prototype with no agreed expected behavior",
+        "A one-off demo script for a feature being removed next week"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "A stable, frequently repeated, labor-intensive check usually provides strong ROI. One-off or unstable activities rarely justify initial automation effort."
     },
     {
@@ -954,12 +954,12 @@
       "difficulty": "hard",
       "question": "What should happen to an ROI estimate if a feature's UI is redesigned every sprint and scripts need constant repair?",
       "options": [
+        "ROI should be ignored once automation starts",
+        "ROI is unaffected because mainly execution time matters",
         "The expected ROI should increase because the team touches the tests often",
-        "The expected ROI should decrease because maintenance cost rises sharply",
-        "ROI is unaffected because only execution time matters",
-        "ROI should be ignored once automation starts"
+        "The expected ROI should decrease because maintenance cost rises sharply"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Frequent redesign increases maintenance effort and can erode savings from automation. ROI needs to reflect lifecycle cost, not just execution speed."
     },
     {
@@ -969,10 +969,10 @@
       "difficulty": "easy",
       "question": "Which SUT characteristic MOST improves testability for automation?",
       "options": [
-        "Frequently changing control identifiers generated randomly at runtime",
+        "A design process based mainly on screenshots, without weighing test stability or repeat frequency",
         "Business rules accessible through stable APIs and predictable test data setup",
-        "A design process based only on screenshots",
-        "A requirement that all tests use a shared administrator account"
+        "A requirement that all tests use a shared administrator account, without weighing test stability or repeat frequency",
+        "Frequently changing control identifiers generated randomly at runtime"
       ],
       "correctIndex": 1,
       "explanation": "Stable interfaces and controllable test data make automation easier to build and maintain. Random or tightly coupled interfaces tend to do the opposite."
@@ -984,8 +984,8 @@
       "difficulty": "medium",
       "question": "Which criterion is LEAST useful when selecting a small pilot set of tests to automate?",
       "options": [
-        "How often the tests are repeated",
-        "How stable the covered functionality is",
+        "How stable the covered functionality is, without weighing test stability or repeat frequency",
+        "How often the tests are repeated, without weighing test stability or repeat frequency",
         "How easy it is to recognize a correct result automatically",
         "Whether the test case title starts with an early letter of the alphabet"
       ],
@@ -1000,7 +1000,7 @@
       "question": "Why is a proof of concept helpful during tool evaluation?",
       "options": [
         "It shows whether the tool can automate representative workflows in the real context",
-        "It replaces the need for any business case",
+        "It replaces the need for any business case, without weighing test stability or repeat frequency",
         "It guarantees that future maintenance cost is zero",
         "It proves the tool is the cheapest option in all scenarios"
       ],
@@ -1014,12 +1014,12 @@
       "difficulty": "easy",
       "question": "When comparing automation tools, which question is MOST important?",
       "options": [
+        "Can the tool rename tests automatically to longer names?",
         "Does the tool support the application's technology stack and target environments?",
-        "Does the vendor website use modern branding colors?",
         "How many default themes does the report viewer provide?",
-        "Can the tool rename tests automatically to longer names?"
+        "Does the vendor website use modern branding colors?, without weighing test stability or repeat frequency"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "A tool must work with the system's technologies and execution environments. Cosmetic features are secondary compared with technical fit."
     },
     {
@@ -1029,12 +1029,12 @@
       "difficulty": "medium",
       "question": "Why should automation scripts and their test data usually be stored in version control?",
       "options": [
-        "To keep changes traceable and enable collaboration, rollback, and reproducible history",
-        "To prevent anyone else from reviewing the tests",
         "To avoid using branches for parallel work",
-        "To ensure tests can run only on one machine"
+        "To prevent anyone else from reviewing the tests",
+        "To keep changes traceable and enable collaboration, rollback, and reproducible history",
+        "To ensure tests can run mainly on one machine"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Version control supports teamwork, auditability, and safe evolution of tests and data. It also helps align automated assets with application changes."
     },
     {
@@ -1045,9 +1045,9 @@
       "question": "Why is early planning for test data management important before scaling automation?",
       "options": [
         "Because unmanaged data quickly causes brittle tests, collisions, and unreliable results",
-        "Because automated tests never need realistic data",
-        "Because test data matters only for performance testing",
-        "Because random production data is always safe to use"
+        "Because random production data is often safe to use",
+        "Because test data matters for performance testing",
+        "Realistic test data has little relevance to automated checks"
       ],
       "correctIndex": 0,
       "explanation": "Reliable automation depends on controlled and appropriate data. Without a data strategy, suites often become flaky and hard to maintain."
@@ -1059,12 +1059,12 @@
       "difficulty": "easy",
       "question": "Which manual test is the BEST candidate to automate?",
       "options": [
-        "A subjective brand perception review",
-        "A deterministic order tax calculation repeated for many regions every release",
         "A brainstorming workshop on future risks",
-        "An ad hoc test of a feature not yet implemented"
+        "An ad hoc test of a feature not yet implemented",
+        "A deterministic order tax calculation repeated for many regions every release",
+        "A subjective brand perception review"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "A deterministic, repetitive, high-volume calculation is a strong automation target. Subjective or undefined activities are not."
     },
     {
@@ -1074,12 +1074,12 @@
       "difficulty": "medium",
       "question": "What is a major automation obstacle when the test environment cannot be reset to a known state?",
       "options": [
+        "Reports can no longer include screenshots, without weighing test stability or repeat frequency",
+        "UI tests are affected; API tests are often safe, without weighing test stability or repeat frequency",
         "Test results may become dependent on leftover data and previous runs",
-        "The tool license cost automatically doubles",
-        "Reports can no longer include screenshots",
-        "Only UI tests are affected; API tests are always safe"
+        "The tool license cost automatically doubles, without weighing test stability or repeat frequency"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Without reliable environment reset or isolation, automated results become harder to trust. Hidden state from previous runs often causes inconsistent outcomes."
     },
     {
@@ -1089,12 +1089,12 @@
       "difficulty": "hard",
       "question": "Why do many organizations start automation with a limited pilot instead of an enterprise-wide rollout?",
       "options": [
+        "A pilot is required when manual testing is forbidden, without weighing test stability or repeat frequency",
+        "A pilot avoids the need to train anyone, without weighing test stability or repeat frequency",
         "A pilot reduces risk and helps validate assumptions about tooling, skills, and value",
-        "A pilot guarantees all future tests will be maintenance-free",
-        "A pilot avoids the need to train anyone",
-        "A pilot is required only when manual testing is forbidden"
+        "A pilot guarantees all future tests will be maintenance-free, without weighing test stability or repeat frequency"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "A pilot makes it possible to learn cheaply before scaling. It can reveal process, skill, and tooling gaps while the cost of change is still low."
     },
     {
@@ -1104,12 +1104,12 @@
       "difficulty": "easy",
       "question": "In which situation might an open-source automation tool be the BETTER choice?",
       "options": [
+        "When the main evaluation criterion is the vendor's booth size at conferences, without weighing test stability or repeat frequency",
         "When the team needs flexibility, code-level extensibility, and has skills to support it",
-        "When the tool must come with a guaranteed zero-maintenance promise",
-        "When the product has no technical stack to integrate with",
-        "When the main evaluation criterion is the vendor's booth size at conferences"
+        "When the product has no technical stack to integrate with, without weighing test stability or repeat frequency",
+        "When the tool must come with a guaranteed zero-maintenance promise, without weighing test stability or repeat frequency"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Open-source tools can be a strong fit when flexibility and extensibility matter and the team can support the solution. The right choice depends on context, not licensing model alone."
     },
     {
@@ -1119,12 +1119,12 @@
       "difficulty": "medium",
       "question": "Why should developers and operations staff often be involved in automation tool selection?",
       "options": [
+        "They should select tools based purely on personal preference",
+        "Their input matters after the tool is purchased, without weighing test stability or repeat frequency",
         "They can help assess integration points, pipelines, environments, and maintainability concerns",
-        "They are needed only to approve report colors",
-        "Their input matters only after the tool is purchased",
-        "They should select tools based purely on personal preference"
+        "They are needed mainly to approve report colors"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Automation tooling usually touches build pipelines, environments, and application interfaces. Cross-functional input helps avoid hidden adoption problems."
     },
     {
@@ -1134,10 +1134,10 @@
       "difficulty": "hard",
       "question": "Which test is usually a poor candidate for automation?",
       "options": [
-        "A regression check with measurable outputs",
-        "A data validation task repeated in every release",
+        "A regression check with measurable outputs, without weighing test stability or repeat frequency",
+        "An API compatibility check for partner integrations",
         "A scenario whose pass criteria depend mainly on human aesthetic judgment",
-        "An API compatibility check for partner integrations"
+        "A data validation task repeated in every release"
       ],
       "correctIndex": 2,
       "explanation": "When pass criteria are mainly subjective, automated verdicts are hard to trust. Human evaluation remains important in those cases."
@@ -1149,12 +1149,12 @@
       "difficulty": "easy",
       "question": "Why should a business case for automation include training and onboarding costs?",
       "options": [
+        "Because training cost matters after the first 1,000 scripts, without weighing test stability or repeat frequency",
         "Because those costs affect when or whether the investment becomes worthwhile",
-        "Because training cost matters only after the first 1,000 scripts",
-        "Because training can be ignored if the tool has a graphical interface",
-        "Because business cases should include benefits only, not costs"
+        "Because business cases should include benefits mainly, not costs, without weighing test stability or repeat frequency",
+        "Because training can be ignored if the tool has a graphical interface"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "A realistic business case includes people-related costs as well as tool and maintenance costs. Otherwise the expected return may be overstated."
     },
     {
@@ -1164,12 +1164,12 @@
       "difficulty": "medium",
       "question": "If a requirement can be checked through either a stable API or a fragile UI flow, which choice is usually better for primary automation coverage?",
       "options": [
-        "The fragile UI flow because it is visually richer",
         "The stable API because it is typically faster and less brittle",
-        "Both must always be automated first",
-        "Neither should be automated until the release is in production"
+        "The fragile UI flow because it is visually richer, without weighing test stability or repeat frequency",
+        "Neither should be automated until the release is in production, without weighing test stability or repeat frequency",
+        "Automate both approaches before evaluating their cost and stability"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "When both options give adequate confidence, the more stable and faster interface is often the better primary automation target. UI checks can still be added selectively where needed."
     },
     {
@@ -1180,9 +1180,9 @@
       "question": "Why is it useful to tag automated tests by purpose, such as smoke, regression, or contract?",
       "options": [
         "It helps select the right subsets for different pipeline stages and reporting needs",
-        "It prevents the tests from being version controlled",
         "It removes the need for traceability to requirements",
-        "It guarantees perfect execution order"
+        "It guarantees perfect execution order",
+        "It prevents the tests from being version controlled"
       ],
       "correctIndex": 0,
       "explanation": "Meaningful tagging makes suites easier to organize and run in context-appropriate groups. Different pipeline stages often need different test subsets."
@@ -1194,12 +1194,12 @@
       "difficulty": "easy",
       "question": "Why should a team examine a tool's licensing model before planning large-scale parallel execution?",
       "options": [
+        "The licensing model affects report generation but not the cost of parallel execution",
+        "Licensing costs become negligible after a successful pilot",
         "Parallel runs may change the true operating cost of the solution",
-        "Licensing never affects the business case once a pilot passes",
-        "Only report generation is licensed in automation tools",
-        "Parallel execution is impossible with any commercial tool"
+        "Parallel execution is impossible with any commercial tool, without weighing test stability or repeat frequency"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Some tools charge in ways that scale with users, machines, or concurrent runs. That can significantly affect long-term cost estimates."
     },
     {
@@ -1209,12 +1209,12 @@
       "difficulty": "medium",
       "question": "How can service virtualization support automation preparation?",
       "options": [
-        "By simulating unavailable or costly dependencies so tests can run earlier and more reliably",
         "By removing the need to validate any real integrations",
-        "By replacing version control for test environments",
-        "By guaranteeing production and test behavior are identical"
+        "By simulating unavailable or costly dependencies so tests can run earlier and more reliably",
+        "By guaranteeing production and test behavior are identical",
+        "By replacing version control for test environments"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Virtualization can make automation practical when dependent systems are unstable, unavailable, or expensive to use. It improves controllability but does not eliminate the need for real integration checks."
     },
     {
@@ -1224,12 +1224,12 @@
       "difficulty": "hard",
       "question": "What information is MOST helpful when prioritizing an automation backlog?",
       "options": [
-        "A combination of business risk, execution frequency, and maintenance expectation",
         "The alphabetical order of feature names",
-        "Which tests were written on a Monday",
-        "How many screenshots each manual test currently includes"
+        "How many screenshots each manual test currently includes",
+        "Which tests were written on a Monday, without weighing test stability or repeat frequency",
+        "A combination of business risk, execution frequency, and maintenance expectation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Prioritization should reflect value and cost. Risk, repetition, and expected maintenance are all relevant inputs."
     },
     {
@@ -1240,8 +1240,8 @@
       "question": "Why should test environments be stabilized before scaling an automated suite?",
       "options": [
         "Because unstable environments can make good tests look unreliable",
-        "Because environment quality affects only performance testing",
-        "Because stable environments eliminate the need for assertions",
+        "Because environment quality affects mainly performance testing, without weighing test stability or repeat frequency",
+        "Because stable environments eliminate the need for assertions, without weighing test stability or repeat frequency",
         "Because automation tools can correct environment failures automatically"
       ],
       "correctIndex": 0,
@@ -1255,11 +1255,11 @@
       "question": "Which sign suggests a system is NOT yet ready for broad UI automation?",
       "options": [
         "It exposes stable test hooks and predictable locators",
-        "It supports deterministic state setup through APIs",
         "It generates random element identifiers and lacks controllable test data setup",
-        "It has well-defined regression scenarios"
+        "It has well-defined regression scenarios",
+        "It supports deterministic state setup through APIs"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "explanation": "Random locators and poor state control make UI automation expensive and brittle. Those issues usually need attention before scaling."
     },
     {
@@ -1270,9 +1270,9 @@
       "question": "Within a layered automation architecture, what is the main purpose of the Test Generation layer?",
       "options": [
         "To create or derive executable tests from models, specifications, or selected assets",
-        "To store browser binaries for local execution",
-        "To replace all logging with screenshots",
-        "To manage project staffing"
+        "To replace all logging with screenshots, without separating test intent from implementation",
+        "To manage project staffing, even if interface changes then ripple across many scenarios",
+        "To store browser binaries for local execution"
       ],
       "correctIndex": 0,
       "explanation": "The generation layer is concerned with producing tests or test structures from higher-level sources. It sits above the purely technical execution details."
@@ -1284,12 +1284,12 @@
       "difficulty": "easy",
       "question": "Which responsibility belongs MOST directly to the Test Execution layer?",
       "options": [
-        "Managing the running of automated tests and collecting runtime results",
         "Defining business-readable keywords for future releases",
-        "Designing the product's user interface",
-        "Choosing the project budget for environments"
+        "Managing the running of automated tests and collecting runtime results",
+        "Designing the product's user interface, without separating test intent from implementation",
+        "Choosing the project budget for environments, without separating test intent from implementation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "The execution layer coordinates how tests run and gathers their outcomes. It focuses on runtime control rather than business-level test design."
     },
     {
@@ -1299,12 +1299,12 @@
       "difficulty": "medium",
       "question": "How does the Test Adaptation layer help when a browser driver API changes?",
       "options": [
+        "It prevents the SUT from changing in future, without separating test intent from implementation",
         "It isolates the change so higher-level test definitions need minimal or no modification",
         "It automatically rewrites all requirements documents",
-        "It removes the need for test execution logs",
-        "It prevents the SUT from changing in future"
+        "It removes the need for test execution logs, without separating test intent from implementation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "An adaptation layer shields the rest of the framework from low-level interface changes. That separation is a core maintainability benefit of layered design."
     },
     {
@@ -1314,12 +1314,12 @@
       "difficulty": "hard",
       "question": "What is the main advantage of using a Page Object Model in UI automation?",
       "options": [
-        "It centralizes page interactions and reduces duplication of locator and action logic",
         "It guarantees that UI tests execute faster than API tests",
-        "It replaces the need for assertions",
-        "It makes every test independent of application navigation"
+        "It replaces the need for assertions, without separating test intent from implementation",
+        "It makes every test independent of application navigation",
+        "It centralizes page interactions and reduces duplication of locator and action logic"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Page objects encapsulate UI structure and interactions in one place. That reduces duplication and localizes changes when screens evolve."
     },
     {
@@ -1330,9 +1330,9 @@
       "question": "What is a key benefit of a keyword-driven framework?",
       "options": [
         "Business-readable actions can be reused while implementation details stay centralized",
-        "Each tester must write low-level driver calls in every scenario",
-        "Test data can no longer vary between executions",
-        "The framework no longer needs any abstraction layers"
+        "The framework no longer needs any abstraction layers, without separating test intent from implementation",
+        "Test data can no longer vary between executions, without separating test intent from implementation",
+        "Each tester must write low-level driver calls in every scenario, without separating test intent from implementation"
       ],
       "correctIndex": 0,
       "explanation": "Keyword-driven design separates intent from implementation. Reusable actions make tests easier to read and maintain."
@@ -1344,12 +1344,12 @@
       "difficulty": "medium",
       "question": "When the same validation must be repeated against hundreds of input combinations, which framework capability is MOST helpful?",
       "options": [
-        "Data-driven execution that reuses logic with many datasets",
-        "Hardcoding all values directly into each test method",
         "Re-recording the scenario for every input set",
-        "Using only manual execution notes"
+        "Using manual execution notes, without separating test intent from implementation",
+        "Hardcoding all values directly into each test method",
+        "Data-driven execution that reuses logic with many datasets"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Data-driven approaches reduce duplication by keeping logic constant while varying inputs and expected results. This is efficient for large data sets."
     },
     {
@@ -1359,12 +1359,12 @@
       "difficulty": "hard",
       "question": "Why is placing business-level assertions directly inside low-level adapter code often a poor design choice?",
       "options": [
+        "It makes execution faster by default, without separating test intent from implementation",
+        "It is required by most commercial tools, without separating test intent from implementation",
         "It mixes abstraction levels and makes reuse and maintenance harder",
-        "It makes execution faster by default",
-        "It is required by most commercial tools",
-        "It removes the need for test definitions"
+        "It removes the need for test definitions, without separating test intent from implementation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Low-level adapters should focus on interacting with the SUT or its interfaces. Mixing them with business assertions increases coupling and maintenance burden."
     },
     {
@@ -1374,12 +1374,12 @@
       "difficulty": "easy",
       "question": "A framework provides reusable operations such as \"create customer\" and \"submit invoice\" that are used by many tests. What architectural benefit does this give?",
       "options": [
-        "It promotes reuse and keeps workflow logic consistent across the suite",
-        "It ensures every test covers a unique path only once",
         "It removes the need for test data variation",
-        "It guarantees zero flakiness in UI tests"
+        "It ensures every test covers a unique path mainly once",
+        "It promotes reuse and keeps workflow logic consistent across the suite",
+        "It guarantees zero flakiness in UI tests, without separating test intent from implementation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Shared business-level operations reduce duplication and encourage consistent workflows. Changes can then be made centrally instead of across many tests."
     },
     {
@@ -1390,9 +1390,9 @@
       "question": "If a third-party API endpoint changes format, which gTAA area should ideally absorb most of the change?",
       "options": [
         "The adaptation components that translate between tests and the external interface",
+        "The source control branch strategy",
         "All business-level tests equally",
-        "The reporting dashboard configuration only",
-        "The source control branch strategy"
+        "The reporting dashboard configuration mainly"
       ],
       "correctIndex": 0,
       "explanation": "Interface translation belongs close to the adaptation boundary. Good architecture prevents a low-level change from rippling through all tests."
@@ -1405,9 +1405,9 @@
       "question": "Why is a centralized wait or retry utility often better than ad hoc sleeps scattered through tests?",
       "options": [
         "It standardizes synchronization behavior and is easier to refine",
-        "It guarantees that timing defects are hidden from reports",
-        "It makes locators unnecessary",
-        "It prevents tests from ever failing \u0628\u0633\u0628\u0628 environment delays"
+        "It makes locators unnecessary, without separating test intent from implementation",
+        "Rely on fixed waits to prevent timing failures without checking observable application state",
+        "It conceals timing problems instead of reporting them for diagnosis"
       ],
       "correctIndex": 0,
       "explanation": "Centralized synchronization reduces duplication and makes timing behavior easier to improve consistently. Arbitrary sleeps often create slowness and instability."
@@ -1419,12 +1419,12 @@
       "difficulty": "easy",
       "question": "Compared with record-and-playback scripts, why are composed abstractions usually preferable in a long-lived suite?",
       "options": [
-        "They are easier to refactor, review, and adapt as the application changes",
+        "They require no framework design decisions, without separating test intent from implementation",
         "They guarantee higher defect detection for every scenario",
-        "They require no framework design decisions",
-        "They can be understood only by tool vendors"
+        "They are easier to refactor, review, and adapt as the application changes",
+        "They can be understood mainly by tool vendors, without separating test intent from implementation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Composed abstractions support maintainable test code that evolves with the product. Record-and-playback scripts often become brittle and repetitive."
     },
     {
@@ -1434,12 +1434,12 @@
       "difficulty": "medium",
       "question": "What does a keyword catalog or action library typically provide in a keyword-driven solution?",
       "options": [
-        "Mappings from high-level steps to executable implementation details",
-        "A list of production database passwords",
+        "A guarantee that non-technical users rarely need review support",
+        "A list of production database passwords, without separating test intent from implementation",
         "A replacement for all assertions and test data",
-        "A guarantee that non-technical users never need review support"
+        "Mappings from high-level steps to executable implementation details"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "The catalog links readable keywords with the technical logic that performs them. This is central to the separation of intent from implementation."
     },
     {
@@ -1449,12 +1449,12 @@
       "difficulty": "hard",
       "question": "Why should the execution layer capture logs, screenshots, and timing information consistently?",
       "options": [
-        "These artifacts improve diagnosis and support reliable reporting",
-        "They make assertions optional",
         "They eliminate the need to classify failures",
-        "They prevent environment issues from occurring"
+        "These artifacts improve diagnosis and support reliable reporting",
+        "They prevent environment issues from occurring",
+        "They make assertions optional"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Consistent runtime artifacts speed investigation and strengthen confidence in results. They are especially valuable when failures occur in unattended runs."
     },
     {
@@ -1464,12 +1464,12 @@
       "difficulty": "easy",
       "question": "How do parameterized fixtures or setup builders help automated tests?",
       "options": [
+        "They make state preparation impossible to audit, without separating test intent from implementation",
         "They allow controlled reuse of setup patterns with scenario-specific values",
-        "They make state preparation impossible to audit",
         "They replace the need for environment configuration",
-        "They ensure all tests use identical data"
+        "They ensure all tests use identical data, without separating test intent from implementation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Parameterized fixtures reduce duplication in setup while preserving flexibility. They also make intent clearer than hand-built setup scattered across tests."
     },
     {
@@ -1479,12 +1479,12 @@
       "difficulty": "medium",
       "question": "Why can a dedicated test data builder layer improve maintainability?",
       "options": [
-        "It keeps data creation logic reusable and separate from scenario intent",
-        "It forces every test to manage raw database inserts",
-        "It removes the need to validate outputs",
-        "It ensures data never needs cleanup"
+        "It forces every test to manage raw database inserts, without separating test intent from implementation",
+        "It ensures data rarely needs cleanup, without separating test intent from implementation",
+        "It removes the need to validate outputs, without separating test intent from implementation",
+        "It keeps data creation logic reusable and separate from scenario intent"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Separating data creation from scenario flow keeps tests easier to read and change. It also centralizes updates when data rules evolve."
     },
     {
@@ -1494,12 +1494,12 @@
       "difficulty": "hard",
       "question": "Which practice is an anti-pattern in maintainable UI automation?",
       "options": [
-        "Centralizing selectors in page objects",
-        "Using business-level helper methods",
         "Letting each test manipulate raw CSS selectors directly",
-        "Capturing diagnostics on failure"
+        "Centralizing selectors in page objects",
+        "Capturing diagnostics on failure, without separating test intent from implementation",
+        "Using business-level helper methods, without separating test intent from implementation"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "explanation": "When every test owns its own selectors, UI changes require widespread edits. Centralizing selectors reduces that coupling."
     },
     {
@@ -1509,12 +1509,12 @@
       "difficulty": "easy",
       "question": "What is a key prerequisite for reliable parallel execution of automated tests?",
       "options": [
+        "Have tests reuse a shared account and dataset during parallel execution",
         "Tests are isolated in terms of data, environment state, and shared resources",
-        "All tests write to the same account and dataset",
-        "The suite uses the maximum possible sleep duration",
-        "Every test runs through the UI regardless of purpose"
+        "The suite uses the maximum possible sleep duration, without separating test intent from implementation",
+        "Every test runs through the UI regardless of purpose, without separating test intent from implementation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Parallelization works best when tests do not interfere with one another. Shared mutable state is a common cause of unreliable parallel runs."
     },
     {
@@ -1524,12 +1524,12 @@
       "difficulty": "medium",
       "question": "How can stubs or drivers fit into a generic automation architecture?",
       "options": [
-        "They can act as adapters or controlled interfaces for components the tests need to exercise",
-        "They replace every production service permanently",
         "They eliminate the need for test execution scheduling",
-        "They belong only in performance monitoring dashboards"
+        "They belong in performance monitoring dashboards, without separating test intent from implementation",
+        "They can act as adapters or controlled interfaces for components the tests need to exercise",
+        "They replace every production service permanently"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Stubs and drivers can support controllable interaction with parts of the system or its dependencies. They often live near interface boundaries in the architecture."
     },
     {
@@ -1540,9 +1540,9 @@
       "question": "Why is configuration-driven execution valuable for running the same suite locally, in CI, and on remote infrastructure?",
       "options": [
         "It separates environment-specific settings from test logic",
-        "It prevents the suite from using different browsers",
-        "It removes the need for reports in CI",
-        "It guarantees all failures are reproducible without investigation"
+        "Configuration makes failures reproducible without checking environment differences",
+        "It prevents the suite from using different browsers, without separating test intent from implementation",
+        "It removes the need for reports in CI, without separating test intent from implementation"
       ],
       "correctIndex": 0,
       "explanation": "Configuration-driven execution keeps test logic portable across environments. That reduces duplication and simplifies operational changes."
@@ -1554,12 +1554,12 @@
       "difficulty": "easy",
       "question": "Where should a framework ideally transform rows from a CSV file into abstract test scenarios before execution?",
       "options": [
-        "In a generation or preparation layer above low-level execution details",
+        "In the final HTML report, without separating test intent from implementation",
+        "Within the browser driver configuration file, without separating test intent from implementation",
         "Inside each page object's locator definitions",
-        "Within the browser driver configuration file",
-        "Only in the final HTML report"
+        "In a generation or preparation layer above low-level execution details"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Transforming external data into scenario structures is a higher-level concern than direct execution. Keeping that logic above technical adapters preserves separation."
     },
     {
@@ -1569,12 +1569,12 @@
       "difficulty": "medium",
       "question": "Why are assertions often easier to maintain when expressed near business intent rather than inside locator helper methods?",
       "options": [
-        "They remain understandable in domain terms and avoid hiding verification logic in low-level code",
         "They make failures impossible to reproduce",
-        "They allow pages to skip synchronization",
-        "They ensure test data cannot change"
+        "They ensure test data cannot change, regardless of reuse or the responsibilities of the architecture layers",
+        "They remain understandable in domain terms and avoid hiding verification logic in low-level code",
+        "They allow pages to skip synchronization, even if interface changes then ripple across many scenarios"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Business-level assertions are easier to read and review because they state expected outcomes in domain language. Hiding them in low-level helpers obscures meaning."
     },
     {
@@ -1584,12 +1584,12 @@
       "difficulty": "hard",
       "question": "Why is a shared command library usually better than copying the same step sequence into many tests?",
       "options": [
-        "It concentrates maintenance in one place and promotes consistent behavior",
+        "It prevents tests from being parameterized, without separating test intent from implementation",
         "It ensures every test remains unique even when behavior is the same",
-        "It makes code reviews unnecessary",
-        "It prevents tests from being parameterized"
+        "It makes code reviews unnecessary, without separating test intent from implementation",
+        "It concentrates maintenance in one place and promotes consistent behavior"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Shared commands reduce duplication and make changes cheaper. Copy-pasted step sequences tend to drift apart and increase maintenance effort."
     },
     {
@@ -1599,12 +1599,12 @@
       "difficulty": "easy",
       "question": "What is the BEST way to reduce the risk of tool lock-in in an automation program?",
       "options": [
+        "Hardcode vendor-specific behavior into every test script, without a plan for ownership or recovery",
         "Keep test intent and framework abstractions as independent from one vendor as practical",
-        "Hardcode vendor-specific behavior into every test script",
-        "Avoid documenting how tests are organized",
-        "Store all knowledge only in the vendor portal"
+        "Store all knowledge in the vendor portal, even if it weakens reliability or release confidence",
+        "Avoid documenting how tests are organized, even if it weakens reliability or release confidence"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Tool independence is improved when business intent and reusable abstractions are not tightly bound to one product. That makes future migration less painful."
     },
     {
@@ -1615,9 +1615,9 @@
       "question": "What contingency is MOST useful if the team's main automation specialist leaves unexpectedly?",
       "options": [
         "Shared ownership, documentation, and code reviews that spread knowledge",
-        "Keeping the framework understandable only to that specialist",
+        "Keeping the framework understandable mainly to that specialist",
         "Pausing all testing until a replacement arrives",
-        "Deleting unstable tests to reduce questions"
+        "Deleting unstable tests to reduce questions, without a plan for ownership or recovery"
       ],
       "correctIndex": 0,
       "explanation": "Knowledge concentration is a major delivery risk. Shared ownership and documentation reduce disruption when roles change."
@@ -1629,12 +1629,12 @@
       "difficulty": "hard",
       "question": "Which situation shows a flaky suite is creating false confidence?",
       "options": [
-        "Failures are routinely ignored or retried until green without root-cause analysis",
-        "Failed tests are investigated with logs and environment checks",
-        "Stable smoke tests block deployments on critical regressions",
-        "Test data is isolated per run"
+        "Test data is isolated per run, even if it weakens reliability or release confidence",
+        "Failed tests are investigated with logs and environment checks, without a plan for ownership or recovery",
+        "Stable smoke tests block deployments on critical regressions, without a plan for ownership or recovery",
+        "Failures are routinely ignored or retried until green without root-cause analysis"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "If teams normalize noisy failures and simply rerun until green, important signals can be missed. That undermines trust in the suite."
     },
     {
@@ -1644,12 +1644,12 @@
       "difficulty": "easy",
       "question": "How can a team reduce organizational resistance to a new automation approach?",
       "options": [
-        "Show incremental wins, involve stakeholders early, and explain how roles evolve",
-        "Keep the effort invisible until full rollout",
-        "Measure success only by the number of tools purchased",
-        "Replace process training with vendor marketing slides"
+        "Keep the effort invisible until full rollout, without a plan for ownership or recovery",
+        "Measure success mainly by the number of tools purchased",
+        "Replace process training with vendor marketing slides, without a plan for ownership or recovery",
+        "Show incremental wins, involve stakeholders early, and explain how roles evolve"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Change adoption improves when people understand the purpose and see practical value. Early involvement and visible wins help build support."
     },
     {
@@ -1660,9 +1660,9 @@
       "question": "What is a major risk of automating scenarios while requirements are still changing daily?",
       "options": [
         "The automation may require frequent rework before it delivers value",
-        "The scripts will automatically capture requirement changes correctly",
-        "Manual testing becomes impossible",
-        "Reporting will no longer be needed"
+        "Manual testing becomes impossible, without a plan for ownership or recovery",
+        "Reporting will no longer be needed, without a plan for ownership or recovery",
+        "The scripts will automatically capture requirement changes correctly"
       ],
       "correctIndex": 0,
       "explanation": "Highly unstable requirements often cause churn in automated assets. In such cases, the maintenance cost can outweigh near-term benefit."
@@ -1675,9 +1675,9 @@
       "question": "When should a team consider pausing new test development to reduce automation debt?",
       "options": [
         "When repair work and instability are consuming capacity needed to keep the suite trustworthy",
-        "Only after the suite reaches 100 percent product coverage",
-        "Never, because adding more tests always fixes instability",
-        "Only when the vendor releases a new logo"
+        "When the vendor releases a new logo, while leaving ownership, reliability, and recovery unplanned when the approach fails",
+        "Continue adding tests, assuming wider coverage will stabilize the suite without addressing causes",
+        "After the suite reaches 100 percent product coverage, without a plan for ownership or recovery"
       ],
       "correctIndex": 0,
       "explanation": "If instability and repair dominate effort, continued expansion can worsen the problem. Stabilization work may be necessary before scaling further."
@@ -1689,12 +1689,12 @@
       "difficulty": "easy",
       "question": "A third-party sandbox used by many automated tests is unavailable for a week. Which contingency is MOST reasonable?",
       "options": [
+        "Stop all releases regardless of actual risk, while leaving ownership, reliability, and recovery unplanned when the approach fails",
+        "Pretend the tests passed and publish a green report, even if it weakens reliability or release confidence",
         "Use stubs, reduced-scope checks, or alternate environments where suitable to preserve critical feedback",
-        "Delete all tests that depend on the sandbox permanently",
-        "Pretend the tests passed and publish a green report",
-        "Stop all releases regardless of actual risk"
+        "Delete all tests that depend on the sandbox permanently, even if it weakens reliability or release confidence"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "A practical contingency preserves as much meaningful feedback as possible while being transparent about limitations. Pretending all tests passed would be misleading."
     },
     {
@@ -1704,12 +1704,12 @@
       "difficulty": "medium",
       "question": "Why are shared test accounts a deployment risk for automated suites?",
       "options": [
+        "Shared accounts improve isolation between concurrent tests, without a plan for ownership or recovery",
         "Concurrent runs can interfere with one another and produce non-deterministic results",
-        "Shared accounts always improve isolation",
-        "They remove the need for cleanup between tests",
-        "They guarantee faster report generation"
+        "They remove the need for cleanup between tests, without a plan for ownership or recovery",
+        "They guarantee faster report generation, even if it weakens reliability or release confidence"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Shared mutable accounts often cause collisions and hidden dependencies between runs. Isolated accounts or reset mechanisms are safer."
     },
     {
@@ -1720,8 +1720,8 @@
       "question": "Why should flaky tests usually be quarantined and tracked rather than silently ignored?",
       "options": [
         "The team needs visibility to fix them without contaminating release signals",
-        "Ignoring them improves their stability over time",
         "Quarantine means the tests no longer require maintenance",
+        "Ignoring them improves their stability over time, without a plan for ownership or recovery",
         "A quarantined test automatically verifies production"
       ],
       "correctIndex": 0,
@@ -1734,12 +1734,12 @@
       "difficulty": "easy",
       "question": "What is the risk of making a release gate depend mainly on a very large, fragile UI suite?",
       "options": [
-        "Slow and noisy feedback may delay delivery without providing proportionate confidence",
-        "UI tests become equivalent to unit tests",
+        "A large UI gate provides complete protection against production defects",
         "Maintenance effort disappears because the suite is large",
-        "It guarantees every defect is found before production"
+        "UI tests become equivalent to unit tests",
+        "Slow and noisy feedback may delay delivery without providing proportionate confidence"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "A fragile gate can create bottlenecks and weak trust. Effective release protection usually combines reliable checks at several levels."
     },
     {
@@ -1749,12 +1749,12 @@
       "difficulty": "medium",
       "question": "If CI capacity is too limited to run the full suite on every commit, what is a sensible fallback?",
       "options": [
+        "Run the longest tests because they are most expensive",
         "Prioritize fast critical subsets per commit and schedule broader suites later",
-        "Disable automation entirely until more hardware is purchased",
-        "Run only the longest tests because they are most expensive",
-        "Mark queued tests as passed without execution"
+        "Mark queued tests as passed without execution, without a plan for ownership or recovery",
+        "Disable automation entirely until more hardware is purchased"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Tiered execution is a common contingency when infrastructure is limited. It preserves fast feedback while still running broader coverage at suitable times."
     },
     {
@@ -1764,12 +1764,12 @@
       "difficulty": "hard",
       "question": "What commonly happens when ownership of framework maintenance is unclear after the initial rollout?",
       "options": [
-        "Dependencies, standards, and repairs are neglected until reliability drops",
         "Automation cost becomes fixed and predictable forever",
-        "Test environments no longer matter",
-        "Tool lock-in disappears automatically"
+        "Tool lock-in disappears automatically",
+        "Dependencies, standards, and repairs are neglected until reliability drops",
+        "Test environments no longer matter, without a plan for ownership or recovery"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Ambiguous ownership often leads to neglected upkeep. As the framework ages, reliability and maintainability suffer."
     },
     {
@@ -1779,12 +1779,12 @@
       "difficulty": "easy",
       "question": "Why do coding standards and peer reviews for test code reduce deployment risk?",
       "options": [
-        "They improve consistency and make defects in automation assets easier to catch early",
-        "They remove the need for any framework architecture",
-        "They ensure tests can be written by one person only",
-        "They guarantee that reports contain no false positives"
+        "They ensure tests can be written by one person mainly, without a plan for ownership or recovery",
+        "They remove the need for any framework architecture, without a plan for ownership or recovery",
+        "They guarantee that reports contain no false positives",
+        "They improve consistency and make defects in automation assets easier to catch early"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Engineering discipline helps automation code remain understandable and robust. Reviews can catch brittle patterns before they spread widely."
     },
     {
@@ -1794,12 +1794,12 @@
       "difficulty": "medium",
       "question": "What is a key risk of using production-like personal data in automated test environments without controls?",
       "options": [
+        "The suite will often execute faster, without a plan for ownership or recovery",
+        "Business stakeholders will trust the suite more",
         "Privacy and compliance violations may occur",
-        "The suite will always execute faster",
-        "Parallel execution becomes unnecessary",
-        "Business stakeholders will trust the suite more"
+        "Parallel execution becomes unnecessary"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Automation environments still need data governance. Sensitive data must be protected, masked, or avoided according to policy."
     },
     {
@@ -1809,12 +1809,12 @@
       "difficulty": "hard",
       "question": "Why is a polished vendor demo not enough evidence to approve an automation tool for broad rollout?",
       "options": [
-        "It may not reflect real integration constraints, workflow complexity, or maintenance needs",
-        "Vendor demos always use a different programming language than the product",
-        "A demo replaces the need for pilot tests",
-        "Demos prove that organizational resistance is impossible"
+        "A demo replaces the need for pilot tests, even if it weakens reliability or release confidence",
+        "The tool language differs from the product language, limiting integration",
+        "Demos prove that organizational resistance is impossible",
+        "It may not reflect real integration constraints, workflow complexity, or maintenance needs"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Real fit depends on the team's systems, pipelines, and scenarios. A demo can be helpful, but it is not proof of operational suitability."
     },
     {
@@ -1824,12 +1824,12 @@
       "difficulty": "easy",
       "question": "Which practice helps mitigate timing-related instability across different browsers or machines?",
       "options": [
+        "Increase fixed delays uniformly across the suite",
         "Use robust synchronization based on observable conditions instead of arbitrary waits",
-        "Increase fixed sleep times in every test by the same amount",
         "Retry the whole suite until all failures disappear",
-        "Run tests only on the fastest developer laptop"
+        "Run tests mainly on the fastest developer laptop"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Condition-based synchronization is usually more reliable and efficient than scattered fixed delays. It adapts better to normal execution variation."
     },
     {
@@ -1839,12 +1839,12 @@
       "difficulty": "medium",
       "question": "What is a risk of parallelizing tests before setup and cleanup are idempotent?",
       "options": [
+        "Parallel execution improves defect detection even when tests share mutable state",
         "Runs may interfere with one another and produce misleading failures",
         "Execution will become serial automatically",
-        "Reports can no longer include timestamps",
-        "Defect detection will always improve"
+        "Reports can no longer include timestamps, without a plan for ownership or recovery"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Parallel execution magnifies hidden state problems. Idempotent setup and cleanup help keep runs independent and repeatable."
     },
     {
@@ -1855,9 +1855,9 @@
       "question": "If the primary CI provider has an outage on release day, which contingency is MOST useful?",
       "options": [
         "A documented alternate execution path for critical checks, such as a backup runner or controlled manual fallback",
-        "Waiting indefinitely with no communication",
-        "Skipping all quality checks and releasing blindly",
-        "Deleting the pipeline configuration to simplify recovery"
+        "Waiting indefinitely with no communication, while leaving ownership, reliability, and recovery unplanned when the approach fails",
+        "Deleting the pipeline configuration to simplify recovery",
+        "Skipping all quality checks and releasing blindly, while leaving ownership, reliability, and recovery unplanned when the approach fails"
       ],
       "correctIndex": 0,
       "explanation": "Resilient delivery plans define what critical checks can still be run and how decisions are made during outages. That reduces confusion under pressure."
@@ -1869,12 +1869,12 @@
       "difficulty": "easy",
       "question": "Why does change management matter when manual testers fear automation will replace them?",
       "options": [
+        "Resistance itself improves framework quality, even if it weakens reliability or release confidence",
+        "The issue disappears once dashboards are enabled",
         "Misunderstood goals can reduce adoption and cooperation even if the technical solution is sound",
-        "Fear always improves framework quality",
-        "Change management applies only to developers",
-        "The issue disappears once dashboards are enabled"
+        "Change management applies mainly to developers"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Adoption is partly organizational, not just technical. If people misunderstand the goals, the initiative can face resistance and lower effectiveness."
     },
     {
@@ -1884,12 +1884,12 @@
       "difficulty": "medium",
       "question": "What is the danger of counting quarantined flaky tests as if they had passed in headline results?",
       "options": [
+        "Quarantined tests automatically become stable, without a plan for ownership or recovery",
         "Stakeholders may overestimate the actual confidence provided by the suite",
-        "Quarantined tests automatically become stable",
-        "The suite becomes faster because results are summarized",
-        "It improves root-cause analysis of environment issues"
+        "It improves root-cause analysis of environment issues",
+        "The suite becomes faster because results are summarized"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Headline reporting should reflect real confidence. Treating quarantined tests as passed hides risk and distorts decision-making."
     },
     {
@@ -1899,12 +1899,12 @@
       "difficulty": "hard",
       "question": "When the UI is changing rapidly but core service contracts are stable, what is a sensible risk-reduction tactic?",
       "options": [
-        "Shift more automation emphasis to the stable service level while keeping selective UI coverage",
-        "Stop all automation until the UI freezes permanently",
         "Duplicate every UI test at three different browsers first",
-        "Rely only on manual regression from then on"
+        "Stop all automation until the UI freezes permanently",
+        "Shift more automation emphasis to the stable service level while keeping selective UI coverage",
+        "Rely mainly on manual regression from then on, even if it weakens reliability or release confidence"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Adapting coverage to more stable layers can preserve confidence while reducing maintenance pain. Selective UI checks can still cover critical end-to-end behavior."
     },
     {
@@ -1914,12 +1914,12 @@
       "difficulty": "easy",
       "question": "Why should an automation program track framework dependencies and plan upgrades deliberately?",
       "options": [
+        "Adopt dependency upgrades without compatibility checks, without a plan for ownership or recovery",
         "Outdated dependencies can create security, compatibility, and maintenance risks",
-        "Dependency versions matter only for production code",
-        "Newer versions always require no testing",
-        "Dependency tracking makes tool migration impossible"
+        "Dependency versions matter for production code, without a plan for ownership or recovery",
+        "Dependency tracking makes tool migration impossible, without a plan for ownership or recovery"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Automation frameworks depend on libraries, browsers, and drivers that evolve. Planned upgrades help avoid sudden breakage and supportability issues."
     },
     {
@@ -1944,12 +1944,12 @@
       "difficulty": "hard",
       "question": "For senior executives, which automation report is usually MOST useful?",
       "options": [
+        "A raw stack trace for every failed assertion, without context on coverage or reliability",
         "A trend view of cycle time, critical pass rate, and value gained from automation",
-        "A raw stack trace for every failed assertion",
-        "A dump of every network request from the run",
-        "A list of element locators changed this sprint"
+        "A dump of every network request from the run, without context on coverage or reliability",
+        "A list of element locators changed this sprint, without context on coverage or reliability"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Executives usually need concise outcome and trend information tied to delivery value. Detailed technical artifacts are more useful to engineers."
     },
     {
@@ -1959,12 +1959,12 @@
       "difficulty": "easy",
       "question": "For engineers investigating a failed test, which report content is MOST helpful?",
       "options": [
-        "Build status color only",
+        "A weekly average of all historical pass rates",
+        "Build status color mainly, without context on coverage or reliability",
         "Screenshots, logs, timings, and the exact assertion or exception",
-        "Only the total number of executed tests",
-        "A weekly average of all historical pass rates"
+        "The total number of executed tests"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Investigation requires contextual evidence from the failing run. Rich diagnostics reduce time to understand what actually happened."
     },
     {
@@ -1974,12 +1974,12 @@
       "difficulty": "medium",
       "question": "Why might a team track median execution time in addition to total suite duration?",
       "options": [
-        "Median time helps show whether typical tests are slowing down even if a few outliers distort totals",
         "Median time guarantees the suite is free of flakiness",
-        "Only total duration can be used in CI",
-        "Median time is meaningful only for manual testing"
+        "Median time helps show whether typical tests are slowing down even if a few outliers distort totals",
+        "Mainly total duration can be used in CI",
+        "Median time is meaningful for manual testing"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Median duration can reveal broad slowdown trends without being dominated by a few extreme cases. It complements total duration rather than replacing it."
     },
     {
@@ -1990,9 +1990,9 @@
       "question": "Why can pass rate by itself be misleading as a headline automation metric?",
       "options": [
         "It may hide skipped, retried, or quarantined tests that reduce true confidence",
-        "A high pass rate means maintenance cost is always low",
-        "Pass rate is relevant only for UI tests",
-        "Pass rate automatically measures ROI"
+        "Pass rate automatically measures ROI, without context on coverage or reliability",
+        "Pass rate is relevant for UI tests, even when the intended audience cannot act on the result",
+        "A high pass rate is sufficient evidence that the suite is inexpensive to maintain"
       ],
       "correctIndex": 0,
       "explanation": "Pass rate needs context. A green percentage can mask instability or gaps if the reporting model excludes important details."
@@ -2004,12 +2004,12 @@
       "difficulty": "easy",
       "question": "Which measure better represents healthy automation growth than raw script count alone?",
       "options": [
-        "Growth in meaningful risk coverage delivered by reliable automated checks",
         "Growth in screenshot storage size",
-        "Growth in the number of report themes",
-        "Growth in the average length of test names"
+        "Growth in meaningful risk coverage delivered by reliable automated checks",
+        "Growth in the average length of test names",
+        "Growth in the number of report themes"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Useful growth comes from better coverage and trustworthy feedback, not just more files. Raw counts can increase without improving confidence."
     },
     {
@@ -2020,8 +2020,8 @@
       "question": "Which report view would BEST help identify a performance bottleneck in the test suite itself?",
       "options": [
         "A trend of the slowest tests, grouped by component or tag",
-        "A list of project team birthdays",
         "The number of browsers installed on each laptop",
+        "A list of project team birthdays",
         "A heat map of office seating locations"
       ],
       "correctIndex": 0,
@@ -2049,12 +2049,12 @@
       "difficulty": "easy",
       "question": "Why is failure classification useful in automation reporting?",
       "options": [
-        "It separates product defects from script issues and environment problems for better action",
-        "It guarantees that no false positives will occur",
-        "It replaces the need for logs and screenshots",
-        "It prevents stakeholders from seeing any failed tests"
+        "It replaces the need for logs and screenshots, even when the intended audience cannot act on the result",
+        "It guarantees that no false positives will occur, without context on coverage or reliability",
+        "It prevents stakeholders from seeing any failed tests",
+        "It separates product defects from script issues and environment problems for better action"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Classification helps route failures to the right owners and spot systemic problems. Not every red test has the same cause or priority."
     },
     {
@@ -2064,12 +2064,12 @@
       "difficulty": "medium",
       "question": "What is a key benefit of historical trend lines in an automation dashboard?",
       "options": [
-        "They help distinguish isolated incidents from ongoing deterioration or improvement",
         "They ensure each build has identical results",
-        "They remove the need to inspect the latest failures",
-        "They are useful only when no tests fail"
+        "They are useful when no tests fail, even when the intended audience cannot act on the result",
+        "They help distinguish isolated incidents from ongoing deterioration or improvement",
+        "They remove the need to inspect the latest failures"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Trends provide context that a single run cannot. They are valuable for recognizing whether reliability, speed, or coverage is getting better or worse."
     },
     {
@@ -2079,12 +2079,12 @@
       "difficulty": "hard",
       "question": "For a release decision dashboard, which information is MOST important?",
       "options": [
-        "Status of critical test subsets, unresolved failures, and known reliability limitations",
-        "Every locator used by the UI framework",
         "A complete export of historical test data values",
-        "The total number of commits in the repository since project start"
+        "Status of critical test subsets, unresolved failures, and known reliability limitations",
+        "The total number of commits in the repository since project start",
+        "Every locator used by the UI framework"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Release decisions depend on current risk, not just raw volume of information. Critical-path outcomes and limitations should be visible immediately."
     },
     {
@@ -2094,12 +2094,12 @@
       "difficulty": "easy",
       "question": "Why should reports often separate pull-request checks from nightly or full regression results?",
       "options": [
+        "Because pull-request pipelines cannot store metrics",
+        "Because the same test must rarely run in two contexts",
         "Different audiences and decisions depend on different test scopes and expectations",
-        "Because the same test must never run in two contexts",
-        "Because nightly suites do not produce artifacts",
-        "Because pull-request pipelines cannot store metrics"
+        "Because nightly suites do not produce artifacts, without context on coverage or reliability"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Short-gate checks and broad regression suites serve different purposes. Separate reporting makes results easier to interpret correctly."
     },
     {
@@ -2109,12 +2109,12 @@
       "difficulty": "medium",
       "question": "Why is a screenshot alone often insufficient to diagnose an automation failure?",
       "options": [
+        "Screenshots are useful for API tests, even when the intended audience cannot act on the result",
+        "A screenshot alone is sufficient to distinguish product defects from automation issues",
         "It may not show the assertion, timing context, logs, or hidden system state involved",
-        "Screenshots are useful only for API tests",
-        "A screenshot always proves whether a defect is in the test or product",
-        "Screenshots cannot be attached to reports"
+        "Screenshots cannot be attached to reports, without context on coverage or reliability"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Images can help, but they rarely tell the whole story. Logs, assertions, and timing details are often needed to understand root cause."
     },
     {
@@ -2124,13 +2124,13 @@
       "difficulty": "hard",
       "question": "Which metric can help a team judge whether automation is reducing escaped regression defects?",
       "options": [
-        "Trends comparing relevant production regressions with coverage of automated critical checks",
-        "The number of folders in the test repository",
         "The ratio of comments to code in the framework",
-        "The count of test users created each day"
+        "Trends comparing relevant production regressions with coverage of automated critical checks",
+        "The count of test users created each day",
+        "The number of folders in the test repository"
       ],
-      "correctIndex": 0,
-      "explanation": "A meaningful correlation looks at production regressions and the presence or absence of protective automated coverage. It is more informative than structural repository counts."
+      "correctIndex": 1,
+      "explanation": "Comparing production regression trends with coverage of critical automated checks can reveal gaps worth investigating. The relationship is a signal, not proof that automation caused a change in escaped defects."
     },
     {
       "id": "ta-143",
@@ -2140,9 +2140,9 @@
       "question": "Why should a sudden drop in the number of executed automated tests trigger investigation?",
       "options": [
         "It may indicate selection errors, environment issues, or silently skipped coverage",
-        "It always means the suite became more efficient",
+        "A sudden drop in execution count proves the suite is more efficient",
         "It proves that the remaining tests are more valuable",
-        "It is normal and never affects confidence"
+        "It is normal and rarely affects confidence, without context on coverage or reliability"
       ],
       "correctIndex": 0,
       "explanation": "A falling execution count can signal accidental loss of coverage or operational problems. That can reduce confidence even if pass rate remains high."
@@ -2154,12 +2154,12 @@
       "difficulty": "medium",
       "question": "Which metric most strongly indicates a maintainability problem in the automation suite?",
       "options": [
-        "Rising average time needed to repair broken tests after product changes",
-        "The number of dashboards shared with managers",
         "The average font size in the report viewer",
-        "How often testers discuss quality in meetings"
+        "Rising average time needed to repair broken tests after product changes",
+        "How often testers discuss quality in meetings",
+        "The number of dashboards shared with managers"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "If repair effort keeps increasing, maintainability is likely degrading. That trend directly affects ROI and team velocity."
     },
     {
@@ -2169,12 +2169,12 @@
       "difficulty": "hard",
       "question": "Why should skipped tests be displayed distinctly in reports instead of being blended into passed results?",
       "options": [
-        "Skipped tests represent missing evidence and should not be mistaken for successful verification",
-        "Skipped tests always mean the feature was removed",
+        "A skipped test provides more confidence than a passed one, without context on coverage or reliability",
         "Showing skipped tests separately makes dashboards impossible to read",
-        "A skipped test provides more confidence than a passed one"
+        "Skipped tests generally indicate that the feature was removed",
+        "Skipped tests represent missing evidence and should not be mistaken for successful verification"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "A skipped check provides no evidence about the requirement it was meant to verify. Clear reporting prevents false confidence."
     },
     {
@@ -2184,12 +2184,12 @@
       "difficulty": "easy",
       "question": "What is a practical benefit of branch-level reporting for automation runs?",
       "options": [
-        "It helps teams see whether failures are isolated to a change stream or widespread",
-        "It replaces the need to know which commit triggered the run",
+        "It prevents test retries in CI",
         "It guarantees merge conflicts will not occur",
-        "It prevents test retries in CI"
+        "It replaces the need to know which commit triggered the run",
+        "It helps teams see whether failures are isolated to a change stream or widespread"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Branch-level context helps relate failures to the code being changed. That speeds triage and reduces confusion when multiple streams are active."
     },
     {
@@ -2199,12 +2199,12 @@
       "difficulty": "medium",
       "question": "Which metric can reveal waste caused by unstable tests that frequently need reruns?",
       "options": [
-        "Retry rate per test or suite",
-        "The number of package managers used",
         "The size of the logo in the HTML report",
-        "The count of disabled IDE plugins"
+        "The count of disabled IDE plugins",
+        "Retry rate per test or suite",
+        "The number of package managers used"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "A high retry rate often indicates flaky or fragile automation. It also hides the true operational cost of getting a green result."
     },
     {
@@ -2217,7 +2217,7 @@
         "It narrows the investigation window and helps identify likely change sources",
         "It guarantees the failure is a product defect",
         "It removes the need for test data details",
-        "It matters only for manual test execution"
+        "It matters for manual test execution"
       ],
       "correctIndex": 0,
       "explanation": "Knowing when a test last passed helps investigators focus on recent changes. It is especially helpful in fast-moving pipelines."
@@ -2229,12 +2229,12 @@
       "difficulty": "easy",
       "question": "How can a team assess whether parallelization is actually improving automation throughput?",
       "options": [
+        "Count mainly how many machines are powered on",
         "Compare suite duration trends together with worker usage and stability",
-        "Count only how many machines are powered on",
-        "Measure report file size before and after parallelization",
-        "Track how many people mention speed in chat"
+        "Track how many people mention speed in chat",
+        "Measure report file size before and after parallelization"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Parallelization is useful only if it shortens feedback without harming reliability disproportionately. Duration, capacity use, and stability should be viewed together."
     },
     {
@@ -2244,12 +2244,12 @@
       "difficulty": "medium",
       "question": "Why should quantitative automation metrics be reviewed alongside periodic analysis of obsolete or duplicate tests?",
       "options": [
+        "Because metrics are relevant mainly during the first release, without context on coverage or reliability",
+        "Because obsolete tests improve coverage automatically, without context on coverage or reliability",
         "Because numbers alone may look healthy while the suite contains low-value or redundant checks",
-        "Because obsolete tests improve coverage automatically",
-        "Because duplicate tests reduce maintenance effort",
-        "Because metrics are relevant only during the first release"
+        "Because duplicate tests reduce maintenance effort, even when the intended audience cannot act on the result"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Metrics provide signals, but qualitative review is needed to keep the suite aligned with current risks. Otherwise low-value tests can accumulate unnoticed."
     }
   ]

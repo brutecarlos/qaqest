@@ -9,10 +9,10 @@
       "difficulty": "medium",
       "question": "As a test analyst, which activity is MOST associated with the test analysis stage for functional testing?",
       "options": [
-        "Installing the test execution environment",
-        "Identifying test conditions by analyzing the test basis and considering quality risks for a feature",
-        "Compiling the source code for deployment",
-        "Assigning severity to a defect after execution"
+        "Setting up and configuring the test execution environment for the team",
+        "Deriving test conditions from the test basis while weighing quality risks",
+        "Building and packaging the source code for deployment to staging",
+        "Assigning a severity rating to a defect after test execution finishes"
       ],
       "correctIndex": 1,
       "explanation": "Test analysts identify test conditions from the test basis (e.g., requirements, use cases), factoring in quality risks for functional characteristics."
@@ -24,10 +24,10 @@
       "difficulty": "medium",
       "question": "In risk-based testing, what is the Test Analyst's PRIMARY contribution during risk identification?",
       "options": [
-        "Approving the overall project budget",
-        "Contributing domain and functional knowledge to help identify product risks related to functional quality characteristics",
-        "Selecting which programming language will be used",
-        "Deciding the final release date for the product"
+        "Approving the overall project budget and agreeing the staffing plan for the testing effort",
+        "Contributing domain and functional knowledge to identify functional product risks",
+        "Choosing the programming language and framework for the implementation",
+        "Deciding the final release date together with senior management"
       ],
       "correctIndex": 1,
       "explanation": "Test Analysts bring functional and domain expertise to risk workshops, helping identify risks related to functional suitability, correctness, and similar quality characteristics."
@@ -39,10 +39,10 @@
       "difficulty": "medium",
       "question": "When performing test analysis on a use case, the Test Analyst should focus on identifying test conditions for:",
       "options": [
-        "Only the main (basic) success scenario, ignoring alternative flows",
-        "The main success scenario as well as alternative and exception flows",
-        "Only non-functional aspects of the use case",
-        "Only the actors involved, not the flows themselves"
+        "The main success scenario alone, since alternative flows rarely matter in practice",
+        "The main success scenario plus alternative and exception flows",
+        "Solely the non-functional aspects that the use case describes in its notes",
+        "Mainly the actors named in the use case rather than the flows themselves"
       ],
       "correctIndex": 1,
       "explanation": "Thorough test analysis of use cases considers the main success scenario plus alternative and exception flows, since defects often hide in less common paths."
@@ -69,12 +69,12 @@
       "difficulty": "hard",
       "question": "Pairwise (all-pairs) testing is used PRIMARILY to:",
       "options": [
-        "Guarantee that every possible combination of all parameters is tested",
-        "Reduce the number of test cases needed while still covering all pairs of parameter values, based on the observation that many defects involve interactions between just two parameters",
-        "Replace the need for equivalence partitioning entirely",
-        "Only test boundary values of a single parameter"
+        "Guaranteeing that every possible combination of all parameter values gets executed",
+        "Replacing equivalence partitioning completely once the parameters are identified",
+        "Cutting the number of test cases while still covering every pair of parameter values",
+        "Testing the boundary values of one single parameter at a time in isolation"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Pairwise testing systematically covers all pairwise combinations of parameter values with far fewer test cases than exhaustive combinatorial testing, based on the empirical observation that most interaction defects involve only two parameters."
     },
     {
@@ -84,12 +84,12 @@
       "difficulty": "medium",
       "question": "Use case testing is particularly useful for verifying:",
       "options": [
-        "Low-level code structure such as individual statements",
-        "End-to-end business processes and interactions between actors and the system as they would occur in real usage",
-        "Only the visual styling of a user interface",
-        "The internal database schema design"
+        "End-to-end business processes and actor-system interactions as they occur in real usage",
+        "Low-level code structure such as individual statements and branches in modules",
+        "The visual styling and layout consistency of the interface across different screen sizes",
+        "The internal database schema design and its normalization level"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Use case testing derives test cases from use case descriptions, which capture how actors interact with a system to achieve a goal, making it well-suited for testing realistic end-to-end business processes."
     },
     {
@@ -99,12 +99,12 @@
       "difficulty": "medium",
       "question": "In defect-based testing, a 'defect taxonomy' is used to:",
       "options": [
-        "Randomly generate test cases with no structure",
-        "Provide a structured, categorized list of typical defect types to guide test design toward likely problem areas",
-        "Replace all other black-box test design techniques",
-        "Track the salaries of the test team"
+        "A categorized list of typical defect types that steers test design toward likely problems",
+        "Generating test cases at random so that no structure influences the results",
+        "Taking the place of every other black-box technique on the project in every situation",
+        "Recording how many defects each member of the test team has reported"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "A defect taxonomy organizes common defect types (e.g. by category, such as data-handling or interface defects) to help testers systematically design tests targeting likely problem areas based on historical data."
     },
     {
@@ -114,12 +114,12 @@
       "difficulty": "medium",
       "question": "Which of the following techniques relies MOST heavily on the Test Analyst's own domain knowledge and intuition rather than a formal model of the software?",
       "options": [
-        "Decision table testing",
         "Error guessing",
-        "Boundary value analysis",
-        "State transition testing"
+        "Decision table testing, because the rule combinations come from the tester's hunches",
+        "Boundary value analysis, because edges are chosen by the tester's intuition",
+        "State transition testing, because transitions are inferred from experience alone"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Error guessing is an experience-based technique where the tester uses their knowledge of common mistakes and past defects to anticipate where problems are likely to occur, without a formal model."
     },
     {
@@ -129,12 +129,12 @@
       "difficulty": "medium",
       "question": "As a Test Analyst, which quality characteristic would you PRIMARILY focus on when testing whether an application is easy to learn and operate for new users?",
       "options": [
+        "Portability, since it covers how easily the software moves between platforms",
+        "Maintainability, since it covers how easily developers can modify the code",
         "Usability",
-        "Portability",
-        "Maintainability",
-        "Reliability"
+        "Reliability, since it covers how consistently the system keeps working"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Usability testing (a Test Analyst's primary functional-adjacent focus area) evaluates how easy a system is to learn, operate, and use effectively by its intended users."
     },
     {
@@ -144,10 +144,10 @@
       "difficulty": "medium",
       "question": "Which of the following would be a suitable test objective for functional suitability testing?",
       "options": [
-        "Confirming the system correctly computes results for a defined set of business rules and inputs",
-        "Confirming the system can be installed on multiple operating systems",
-        "Confirming average response time under 500 concurrent users",
-        "Confirming source code compiles without warnings"
+        "Confirming that business-rule calculations return the correct results for defined inputs",
+        "Confirming that the system can be installed on several operating systems",
+        "Confirming that average response time stays within limits under 500 concurrent users",
+        "Confirming that the source code compiles cleanly without any warnings"
       ],
       "correctIndex": 0,
       "explanation": "Functional suitability testing verifies that functions perform as specified, e.g., that business rule calculations produce correct results for given inputs."
@@ -159,10 +159,10 @@
       "difficulty": "medium",
       "question": "Which of the following is a key benefit of analyzing acceptance criteria carefully during test analysis?",
       "options": [
-        "It has no practical benefit and is optional busywork",
-        "It helps ensure test conditions align precisely with what stakeholders consider 'done' and correctly implemented",
-        "It guarantees zero defects in the resulting code",
-        "It removes the need for any further test design activities"
+        "It is optional busywork that adds little because testers already know the goals",
+        "It aligns test conditions with what stakeholders regard as done and correct",
+        "It guarantees that the resulting code will contain no defects whatsoever",
+        "It removes the need for any further test design work later in the project"
       ],
       "correctIndex": 1,
       "explanation": "Carefully analyzing acceptance criteria ensures the test conditions derived truly reflect stakeholder expectations of correct, complete functionality."
@@ -174,12 +174,12 @@
       "difficulty": "hard",
       "question": "When using the classification tree method, 'classes' represent:",
       "options": [
-        "Object-oriented programming classes in the source code",
-        "Partitions of possible values for each relevant test-relevant aspect (classification) of the test object",
-        "Severity levels assigned to defects",
-        "The seniority level of testers assigned to the project"
+        "Object-oriented classes that are defined in the source code of the system under test",
+        "Severity levels that are assigned to defects found during test execution",
+        "The experience grades that are given to testers working on the project",
+        "The value partitions inside each classification (an aspect of the test object)"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "In the classification tree method, classifications represent relevant aspects of the test object, and classes are the partitions of values within each classification, which are then combined into test cases."
     },
     {
@@ -189,10 +189,10 @@
       "difficulty": "medium",
       "question": "Which source of information would be MOST useful for building an organization-specific defect taxonomy?",
       "options": [
-        "Historical defect data and known common defect types from past projects in the same domain",
-        "The office seating chart",
-        "The project's marketing budget",
-        "The color palette used in the company logo"
+        "Historical defect data and common defect types from past projects in the same domain",
+        "Generic defect lists from an unrelated field with no review against the product",
+        "The personal opinions of the most senior developer, collected without checking any data",
+        "Performance figures from the last load test of an unrelated application"
       ],
       "correctIndex": 0,
       "explanation": "Defect taxonomies are most useful when informed by real historical defect data and common defect categories observed in similar projects or domains."
@@ -204,12 +204,12 @@
       "difficulty": "medium",
       "question": "'Checklist-based testing' as an experience-based technique differs from ad hoc testing MAINLY because:",
       "options": [
-        "Checklist-based testing follows a structured list of items to verify, built from experience, standards, or requirements, providing more consistency than unstructured ad hoc testing",
-        "Checklist-based testing cannot be reused across projects",
-        "Ad hoc testing is always more thorough than checklist-based testing",
-        "Checklist-based testing requires no tester experience at all"
+        "It cannot be reused across projects because every list is tied to one single release of a product",
+        "It is generally less thorough than ad hoc testing because lists limit creativity",
+        "It follows a structured, reusable list built from experience or standards, so it is more consistent",
+        "It depends on no tester experience because the list contains all the answers"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Checklist-based testing uses a structured, often reusable list of items derived from experience or standards, giving it more consistency and repeatability than fully unstructured ad hoc testing."
     },
     {
@@ -219,12 +219,12 @@
       "difficulty": "medium",
       "question": "Which technique would a Test Analyst commonly use to evaluate the accessibility of a web application for users with disabilities?",
       "options": [
-        "Checking conformance against accessibility guidelines (e.g. WCAG) using both automated scans and manual assistive-technology testing",
-        "Measuring server CPU utilization under load",
-        "Reviewing the database schema for normalization",
-        "Running a static code analysis for unused variables"
+        "Measuring server CPU utilization and memory consumption while the application is under heavy load",
+        "Reviewing the database schema for normalization and index choices",
+        "Checking against guidelines like WCAG with automated scans plus assistive-technology testing",
+        "Running static code analysis to find unused variables and dead code"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Accessibility testing typically combines automated checks against established guidelines (like WCAG) with manual testing using assistive technologies such as screen readers."
     },
     {
@@ -234,12 +234,12 @@
       "difficulty": "medium",
       "question": "When deriving test cases from a use case with multiple alternative flows, which approach provides the BEST balance of coverage and effort?",
       "options": [
-        "Only test the main success scenario and ignore all alternatives",
-        "Design at least one test case per alternative/exception flow in addition to the main scenario, prioritized by risk",
-        "Test every possible combination of all flows and sub-flows exhaustively regardless of risk",
-        "Avoid designing any test cases and rely purely on production monitoring"
+        "Test only the main success scenario and skip every alternative flow to save time and effort",
+        "Execute every possible combination of all flows and sub-flows regardless of risk",
+        "Skip designing tests altogether and rely on feedback from production monitoring",
+        "One test per alternative or exception flow plus the main scenario, prioritized by risk"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "A practical, risk-based approach covers the main scenario plus each alternative/exception flow with at least one test case, prioritizing the highest-risk flows for deeper coverage."
     },
     {
@@ -249,10 +249,10 @@
       "difficulty": "medium",
       "question": "During risk analysis, the Test Analyst helps assess the 'likelihood' of a functional risk by considering factors such as:",
       "options": [
-        "The complexity of the affected code and the experience level of the team who built it",
-        "The color scheme used in the user interface only",
-        "The number of testers physically present in the office",
-        "The name of the project sponsor"
+        "The complexity of the affected design and how experienced the building team is",
+        "The color scheme of the user interface and the typography used on the screens",
+        "The number of testers who are working in the office on a given day",
+        "The seniority and reputation of the project sponsor in the organization"
       ],
       "correctIndex": 0,
       "explanation": "Likelihood factors commonly considered include complexity of the code/design, team experience, past defect history, and similar technical factors relevant to functional risks."
@@ -264,10 +264,10 @@
       "difficulty": "medium",
       "question": "Which of the following is a valid reason a Test Analyst might raise a review comment during test basis analysis, even before test design begins?",
       "options": [
-        "An acceptance criterion is ambiguous and could be interpreted in two conflicting ways",
-        "The requirement is written in a font the tester dislikes",
-        "The requirement was written by a specific team member",
-        "The requirement document is more than one page long"
+        "An acceptance criterion is ambiguous and can be read in two conflicting ways",
+        "The requirement uses a font that the tester finds hard to read when viewing it on screen",
+        "The requirement was written by a team member the tester rarely works with",
+        "The requirement document runs to several pages instead of a single page"
       ],
       "correctIndex": 0,
       "explanation": "Analyzing the test basis often surfaces ambiguities or inconsistencies in requirements/acceptance criteria; raising these early (as a form of static testing) prevents costly misunderstandings later."
@@ -279,10 +279,10 @@
       "difficulty": "hard",
       "question": "How does defect-based testing differ from specification-based (black-box) techniques like equivalence partitioning?",
       "options": [
-        "Defect-based testing derives test conditions from types of defects likely to occur, whereas specification-based techniques derive tests from the test basis's described behavior",
-        "Defect-based testing never uses any test basis at all",
-        "They are identical techniques with different names",
-        "Defect-based testing can only be applied to non-functional testing"
+        "It derives conditions from likely defect types, not from the described behavior of the basis",
+        "It never refers to any test basis, whereas specification-based techniques always depend on one",
+        "The two are identical approaches that simply carry different names in practice",
+        "It can be used for non-functional testing only, unlike specification-based techniques"
       ],
       "correctIndex": 0,
       "explanation": "Defect-based techniques are systematically derived from knowledge of likely defect types (a defect taxonomy), complementing specification-based techniques that derive tests directly from documented behavior."
@@ -294,12 +294,12 @@
       "difficulty": "medium",
       "question": "Which of the following is the Test Analyst's typical area of focus regarding 'interoperability' testing?",
       "options": [
-        "Verifying the system can effectively exchange information and interact correctly with other specified systems",
-        "Verifying the system's source code follows internal style guidelines",
-        "Verifying the system's CPU usage remains under a defined threshold",
-        "Verifying the system's log files rotate correctly"
+        "Verifying that the source code follows the internal style guidelines agreed by the development team",
+        "Verifying that CPU usage stays below a defined threshold during peak load",
+        "Verifying that log files are rotated and archived correctly each night",
+        "Verifying that the system exchanges data and works correctly with other specified systems"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Interoperability testing verifies that a system can correctly exchange data and interact with other specified systems or components, a functional-adjacent quality characteristic Test Analysts often address."
     },
     {
@@ -309,12 +309,12 @@
       "difficulty": "medium",
       "question": "During risk identification workshops, which technique BEST helps a test analyst uncover product risks from diverse stakeholder perspectives?",
       "options": [
-        "Reviewing only the test analyst's personal experience with similar projects",
-        "Brainstorming sessions involving representatives from development, business, and operations",
-        "Waiting until test execution to discover risks as defects arise",
-        "Copying the risk list from an unrelated previous project without review"
+        "Brainstorming sessions with people from development, business, and operations",
+        "Relying on the test analyst's personal experience from several similar projects completed earlier",
+        "Waiting for defects during execution to reveal which risks exist",
+        "Reusing the risk list of an earlier unrelated project without any review"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Involving diverse stakeholders in brainstorming surfaces a broader, more complete set of product risks than relying on a single perspective or reacting only after defects appear."
     },
     {
@@ -324,12 +324,12 @@
       "difficulty": "medium",
       "question": "In risk-based testing, how should test effort typically be allocated relative to identified risk levels?",
       "options": [
-        "Equal effort should be given to every test condition regardless of risk",
-        "Higher risk items should receive more rigorous and earlier testing effort than lower risk items",
-        "Only low-risk items should be tested since they are easier to complete",
-        "Risk level has no bearing on test effort allocation"
+        "Every test condition gets the same effort no matter what its risk level is",
+        "Low-risk items get the testing, since they are quick and easy to complete",
+        "Higher-risk items get more rigorous and earlier testing than lower-risk items",
+        "Risk level plays no role when effort is distributed among test conditions"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Risk-based testing allocates test effort proportional to risk, so higher-risk areas are tested earlier and more rigorously to reduce overall product risk."
     },
     {
@@ -339,12 +339,12 @@
       "difficulty": "hard",
       "question": "As new information emerges during a project (e.g., a critical defect found in production), what should a test analyst do regarding the risk register?",
       "options": [
-        "Ignore the new information since risks are only assessed at project start",
-        "Reassess and update risk likelihood or impact ratings, and adjust the test approach accordingly",
-        "Discard the risk register entirely and start testing from scratch",
-        "Escalate only to the marketing department"
+        "Leave the register alone, since risks are assessed only at project start",
+        "Throw away the register and restart all of the test planning from scratch right away",
+        "Reassess likelihood and impact ratings and adjust the test approach accordingly",
+        "Report the finding only to the marketing department and wait for guidance"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Risk-based testing is an ongoing activity; new information should trigger reassessment of risk likelihood and/or impact, with corresponding adjustments to test priorities."
     },
     {
@@ -354,12 +354,12 @@
       "difficulty": "medium",
       "question": "When analyzing a set of use case-based requirements, what is a key task for the test analyst?",
       "options": [
-        "Automatically approving all use cases without review",
-        "Identifying test conditions covering main success scenarios as well as alternative and exception flows",
-        "Removing exception flows since they add unnecessary complexity",
-        "Deferring all use case analysis to the development team"
+        "Derive conditions for the main success scenario and for alternative and exception flows",
+        "Approve every use case automatically without any review of its content or its flows",
+        "Strip out exception flows to keep the analysis simple and short",
+        "Hand the entire use case analysis over to the development team"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Test analysts derive test conditions not only from the main success scenario but also from alternative and exception flows described in use cases, ensuring more thorough coverage."
     },
     {
@@ -369,12 +369,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a benefit of collaborative user story analysis involving testers, developers, and product owners?",
       "options": [
-        "It slows down the team with no measurable benefit",
-        "It helps identify ambiguities and missing acceptance criteria before development begins, reducing rework",
-        "It eliminates the need for any test design later in the sprint",
-        "It replaces the need for a definition of done"
+        "It slows the team down and produces no measurable benefit within the sprint timebox",
+        "It removes any need for test design later in the sprint",
+        "It makes the definition of done unnecessary for the team",
+        "It surfaces ambiguities and missing acceptance criteria early, cutting rework"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Collaborative analysis of user stories surfaces ambiguity and gaps in acceptance criteria early, which reduces costly rework and improves shared understanding of what needs to be built and tested."
     },
     {
@@ -384,10 +384,10 @@
       "difficulty": "medium",
       "question": "Which activity is primarily the test analyst's responsibility during test implementation?",
       "options": [
-        "Defining the overall test policy for the organization",
-        "Organizing test cases into test procedures/scripts and preparing test data",
-        "Approving the project budget for testing tools",
-        "Deciding the release date of the software"
+        "Defining the test policy that applies across the whole organization",
+        "Organizing test cases into test procedures and preparing test data",
+        "Approving the budget for the testing tools used on the project",
+        "Setting the release date for the software with the business sponsors"
       ],
       "correctIndex": 1,
       "explanation": "During test implementation, test analysts organize test cases into executable test procedures, prepare necessary test data, and finalize the test environment needs for their area of focus."
@@ -399,12 +399,12 @@
       "difficulty": "hard",
       "question": "Using equivalence partitioning, which additional consideration should a test analyst apply for a numeric input field with valid range 1-100?",
       "options": [
-        "Only test the value 50 since it is representative of the middle of the range",
-        "Also identify invalid partitions below 1 and above 100, and test boundary values around 1 and 100",
-        "Avoid testing any invalid values since they are out of scope",
-        "Test every single integer from 1 to 100 individually"
+        "Add invalid partitions below 1 and above 100, and test the boundaries of 1 and 100",
+        "Test only the value 50, as it represents the middle of the valid range of the field",
+        "Skip invalid values entirely because they are outside the scope of the field",
+        "Test each integer from 1 to 100 separately to be completely sure"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "A thorough equivalence partitioning approach also considers invalid partitions (below the minimum and above the maximum) and is typically combined with boundary value analysis at the edges of each partition."
     },
     {
@@ -414,12 +414,12 @@
       "difficulty": "hard",
       "question": "When using decision tables to design test cases for a set of business rules, what is the primary advantage over ad hoc scenario testing?",
       "options": [
-        "Decision tables eliminate the need for any test data",
-        "Decision tables systematically capture combinations of conditions and their corresponding actions, helping ensure complete rule coverage",
-        "Decision tables are only useful for user interface testing",
-        "Decision tables replace the need for requirements analysis"
+        "It captures condition combinations and their actions, supporting complete rule coverage",
+        "It removes the need for test data because every outcome is already listed in the table",
+        "It is useful only for user interface testing and not for the testing of business logic rules",
+        "It replaces requirements analysis since the rules are derived from the table"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Decision tables systematically enumerate combinations of conditions and their associated actions/outcomes, helping testers achieve more complete and traceable coverage of complex business rules."
     },
     {
@@ -429,12 +429,12 @@
       "difficulty": "medium",
       "question": "State transition testing is MOST appropriate for testing which type of system behavior?",
       "options": [
-        "A system whose behavior does not depend on prior events or current state",
-        "A system where outputs are determined by both current inputs and the sequence of previous events (its current state)",
-        "A static webpage with no interactive elements",
-        "A read-only reporting dashboard with no state changes"
+        "Behavior where the output depends on the current input and on the history of events",
+        "Behavior that is independent of earlier events and of any current state of the system",
+        "A static web page that has no interactive elements at all",
+        "A read-only reporting dashboard where nothing ever changes state"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "State transition testing is well suited to systems where behavior depends on the current state as well as an event/input, since it models valid states, transitions, and events causing them."
     },
     {
@@ -444,12 +444,12 @@
       "difficulty": "medium",
       "question": "What is the main purpose of using a defect taxonomy in defect-based testing?",
       "options": [
-        "To classify defects for statistical reporting only, with no impact on test design",
-        "To provide a structured list of common defect types that helps guide test design toward areas prone to specific kinds of defects",
-        "To replace requirements-based test design entirely",
-        "To assign blame to specific developers for defects introduced"
+        "Classifying defects purely for statistical reports without any effect on test design decisions",
+        "Taking over from requirements-based test design completely",
+        "A structured list of common defect types that guides tests toward defect-prone areas",
+        "Assigning responsibility to developers for the defects they introduced"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "A defect taxonomy provides a structured categorization of defect types (e.g., based on historical data) that testers can use to guide the design of tests targeting areas prone to those defect categories."
     },
     {
@@ -459,12 +459,12 @@
       "difficulty": "medium",
       "question": "Which of the following is an example of a defect-based test design technique?",
       "options": [
-        "Boundary value analysis based purely on requirements specifications",
-        "Designing tests derived from a taxonomy of common defect types observed in similar systems",
-        "Load testing based on expected concurrent user counts",
-        "Code review checklists used by developers only"
+        "Applying boundary value analysis driven only by the requirements specification",
+        "Running load tests sized from the expected number of concurrent users",
+        "Designing tests from a taxonomy of common defect types seen in similar systems",
+        "Using code review checklists that only developers apply to their own code"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Defect-based test design techniques derive test cases from knowledge of common defect types (defect taxonomies), rather than purely from the test basis documents."
     },
     {
@@ -474,12 +474,12 @@
       "difficulty": "medium",
       "question": "What distinguishes error guessing from a formal, specification-based test design technique?",
       "options": [
-        "Error guessing relies on tester experience and intuition to anticipate likely defects, rather than a systematic derivation from a test basis",
-        "Error guessing always produces more test cases than any specification-based technique",
-        "Error guessing can only be applied to non-functional testing",
-        "Error guessing requires a fully automated test execution environment"
+        "It always yields more test cases than any specification-based technique does for the same feature",
+        "It can be applied to non-functional testing but not to functional testing",
+        "It uses tester experience and intuition to anticipate defects instead of deriving tests from a basis",
+        "It needs a fully automated test execution environment before it can be used"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Error guessing is an experience-based technique where testers use their skill, intuition, and experience to anticipate likely defects and design tests to find them, without a systematic derivation from formal test basis documents."
     },
     {
@@ -489,10 +489,10 @@
       "difficulty": "medium",
       "question": "Checklist-based testing is MOST useful for which purpose?",
       "options": [
-        "Ensuring recurring and important test conditions are consistently covered based on accumulated experience",
-        "Replacing all other test design techniques on the project",
-        "Generating fully automated performance test scripts",
-        "Deriving equivalence partitions for numeric fields"
+        "Ensuring that recurring, important conditions are covered consistently using accumulated experience",
+        "Replacing every other test design technique that has been chosen for use on the project",
+        "Generating fully automated performance test scripts directly from a list of checklist items",
+        "Deriving the equivalence partitions for numeric input fields"
       ],
       "correctIndex": 0,
       "explanation": "Checklist-based testing uses lists derived from experience, standards, or common issues to help ensure that important and recurring test conditions are consistently addressed."
@@ -504,12 +504,12 @@
       "difficulty": "medium",
       "question": "As a test analyst, which quality characteristic would you primarily focus on when testing that a system remains understandable and easy to use for end users?",
       "options": [
+        "Portability, because it covers moving the system between platforms",
+        "Maintainability, because it covers how simple the code is to change",
         "Usability",
-        "Portability",
-        "Maintainability",
-        "Compatibility"
+        "Compatibility, because it covers sharing an environment with other products"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Usability testing focuses on how easily users can understand, learn, and operate the system to achieve their goals effectively and with satisfaction, and is a core test analyst quality focus."
     },
     {
@@ -519,12 +519,12 @@
       "difficulty": "medium",
       "question": "Which of the following is a functional suitability sub-characteristic that a test analyst evaluates?",
       "options": [
-        "Functional correctness - whether the system produces the correct results with the needed degree of precision",
-        "Time behavior - how fast the system responds under load",
-        "Installability - how easily the system can be installed",
-        "Testability - how easily test cases can be designed for the system"
+        "Time behavior: how quickly the system responds under load",
+        "Installability: how easily the product can be installed",
+        "Testability: how easily test cases can be designed for the system",
+        "Functional correctness: results are right with the needed precision"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Functional correctness, a sub-characteristic of functional suitability, concerns whether the system provides correct results with the needed degree of precision, and is a key focus area for test analysts."
     },
     {
@@ -534,12 +534,12 @@
       "difficulty": "medium",
       "question": "During test analysis, what is the purpose of defining test conditions before writing detailed test cases?",
       "options": [
-        "To skip the need for any test basis review",
-        "To identify what should be tested at a suitable level of detail, providing traceability back to the test basis and forming a foundation for test case design",
-        "To finalize the test schedule for the project",
-        "To assign testers to specific test environments"
+        "To skip reviewing the test basis because conditions can be defined without ever consulting it",
+        "To finalize the schedule and effort estimate for the whole test project",
+        "To decide what to test at a suitable level of detail, with traceability and a base for test cases",
+        "To allocate testers to the individual test environments before execution"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Test conditions identify what should be tested, provide traceability to the test basis, and serve as the foundation from which detailed test cases are later designed."
     },
     {
@@ -549,12 +549,12 @@
       "difficulty": "hard",
       "question": "Which combinatorial testing technique is used to reduce the number of test cases needed while still covering interactions between pairs of input parameters?",
       "options": [
-        "Exhaustive testing of all possible input combinations",
-        "Pairwise (all-pairs) testing",
-        "Statement coverage testing",
-        "Random smoke testing"
+        "Exhaustive testing of every possible input combination",
+        "Statement coverage testing of the code under test",
+        "Random smoke testing of the main features",
+        "Pairwise (all-pairs) testing"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Pairwise (all-pairs) testing is a combinatorial technique that reduces the total number of test cases while still ensuring that every pair of parameter values is exercised at least once."
     },
     {
@@ -564,12 +564,12 @@
       "difficulty": "medium",
       "question": "Which of these is a typical output of the risk analysis activity that the test analyst contributes to?",
       "options": [
-        "A finalized list of risk items with likelihood and impact ratings used to prioritize test effort",
-        "The final production deployment schedule",
-        "A signed customer support contract",
-        "The developer's individual performance review"
+        "The production deployment schedule that was agreed with operations for the final release",
+        "Risk items rated for likelihood and impact, used to prioritize test effort",
+        "A signed customer support contract covering the first year",
+        "The individual performance review prepared for each developer"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Risk analysis produces a list of identified risk items along with their assessed likelihood and impact, which is then used to prioritize test design and execution effort."
     },
     {
@@ -579,12 +579,12 @@
       "difficulty": "medium",
       "question": "Why might a test analyst combine defect-based techniques with specification-based techniques on the same project?",
       "options": [
-        "To duplicate the same test cases twice for redundancy only",
-        "Because each technique targets different kinds of defects, so combining them can improve overall defect detection effectiveness",
-        "Because specification-based techniques are being deprecated industry-wide",
-        "Because defect-based techniques replace the need for any requirements"
+        "Each technique targets different kinds of defects, so using both improves detection",
+        "Running both simply duplicates the same test cases for the sake of extra redundancy",
+        "Specification-based techniques are being retired across the industry",
+        "Defect-based techniques make written requirements unnecessary"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Specification-based and defect-based techniques target different sources of test ideas; combining them often improves overall defect detection by covering gaps that either technique alone might miss."
     },
     {
@@ -594,10 +594,10 @@
       "difficulty": "hard",
       "question": "When planning tests for interoperability, what should a test analyst primarily verify?",
       "options": [
-        "That the system's user interface uses a consistent color palette",
-        "That the system can successfully exchange information and interact correctly with other specified systems or components",
-        "That the source code complies with a specific coding standard",
-        "That the system can be easily uninstalled without leftover files"
+        "That the user interface applies one consistent color palette and typography on every screen",
+        "That the system exchanges information and interacts correctly with other specified systems",
+        "That the source code complies with the coding standard of the company",
+        "That the system can be uninstalled without leaving residual files"
       ],
       "correctIndex": 1,
       "explanation": "Interoperability testing verifies that a system can successfully exchange information with, and interact correctly with, other specified systems or components, which is a functional suitability-adjacent quality characteristic relevant to test analysts."
@@ -609,12 +609,12 @@
       "difficulty": "easy",
       "question": "A mobile banking team identifies 'incorrect daily transfer limit' as a major product risk. Which action by the test analyst BEST supports risk identification?",
       "options": [
-        "Estimating the hardware budget for the release",
-        "Listing realistic customer scenarios where transfer limits vary by account type, region, and user status",
-        "Approving the production deployment checklist",
-        "Choosing the database indexing strategy"
+        "Estimating the hardware budget that will be needed for the coming release of the app",
+        "Approving the production deployment checklist for the release on behalf of operations",
+        "Listing realistic customer scenarios where limits vary by account type, region, and status",
+        "Choosing the database indexing strategy for the transfer tables"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "The test analyst adds business and domain detail that makes the risk concrete and testable. Scenarios that vary account and regional rules help expose where the transfer-limit logic could fail."
     },
     {
@@ -624,12 +624,12 @@
       "difficulty": "medium",
       "question": "Two features have similar business impact, but one was changed across five backend services while the other only changed static help text. Which feature should receive the HIGHER likelihood rating?",
       "options": [
-        "The help-text feature, because user-visible text is always risky",
-        "Both features should automatically get the same likelihood",
-        "The feature changed across five backend services, because more moving parts increase failure opportunities",
-        "Neither feature should be rated until after release"
+        "The help-text feature, since text changes are visible to every user and so most likely to fail",
+        "The feature changed across five backend services, since more moving parts give more ways to fail",
+        "Both features, which should automatically receive an identical likelihood rating",
+        "Neither feature, because likelihood can only be rated after release"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "explanation": "Likelihood is influenced by technical complexity and change scope. A multi-service change creates more opportunities for integration and logic problems than a text-only update."
     },
     {
@@ -639,12 +639,12 @@
       "difficulty": "hard",
       "question": "A severe production defect is found in coupon calculations during a pilot rollout. What is the BEST immediate risk-based testing response?",
       "options": [
-        "Freeze the risk register because testing has already started",
-        "Reassess related pricing risks and reprioritize tests around discounts, totals, and invoice outputs",
-        "Stop all testing until the project manager rewrites the plan",
-        "Remove low-risk tests from the repository"
+        "Freeze the risk register because testing has already begun on this particular release",
+        "Stop all testing until the project manager has rewritten the whole test plan",
+        "Remove the low-risk tests from the repository to save maintenance time",
+        "Reassess the related pricing risks and reprioritize tests for discounts, totals, and invoices"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "New production evidence should feed back into the risk assessment. The strongest response is to raise the priority of related pricing areas and adjust testing accordingly."
     },
     {
@@ -654,10 +654,10 @@
       "difficulty": "easy",
       "question": "A rarely used admin report takes one extra click, while checkout sometimes applies tax twice. Which area should receive deeper coverage first in a risk-based approach?",
       "options": [
-        "The report, because all defects deserve identical effort",
-        "Checkout, because the potential customer and financial impact is much higher",
-        "Neither area until code coverage is measured",
-        "The report, because administrative users are internal"
+        "The admin report, because every defect deserves exactly the same effort",
+        "Checkout, because the customer and financial impact is much higher",
+        "Neither area, until code coverage has been measured for both",
+        "The admin report, because its users are internal staff and easy to reach"
       ],
       "correctIndex": 1,
       "explanation": "Risk-based testing directs more effort toward areas with greater business impact. Incorrect checkout totals can cause financial loss and customer distrust, so they deserve higher priority."
@@ -670,9 +670,9 @@
       "question": "Why is it usually valuable to execute high-risk tests as soon as a stable build is available?",
       "options": [
         "It leaves time to react if serious failures are found",
-        "It guarantees that low-risk tests will not be needed",
-        "It removes the need to prepare expected results",
-        "It ensures every defect can be fixed in the same sprint"
+        "It means the low-risk tests will not be needed at all",
+        "It makes it unnecessary to prepare expected results beforehand",
+        "It ensures every defect found can be fixed within the same sprint"
       ],
       "correctIndex": 0,
       "explanation": "Early execution of high-risk tests gives the team time to investigate, fix, and retest important failures. It reduces the chance of discovering critical problems only when the schedule is nearly exhausted."
@@ -684,10 +684,10 @@
       "difficulty": "hard",
       "question": "A requirement states that interest is rounded differently by region. Which factor would MOST increase the impact rating of a defect in that rule?",
       "options": [
-        "The calculation runs only on a hidden admin page",
-        "The defect could lead to regulatory penalties or customer overcharging",
-        "The screen uses a simple layout",
-        "The rule is implemented in a single method"
+        "The calculation runs only on an admin page that few people see",
+        "The defect could lead to regulatory penalties or customers being overcharged",
+        "The screen that displays the result uses a simple layout with few controls on it",
+        "The rule is implemented inside one short method of the code"
       ],
       "correctIndex": 1,
       "explanation": "Impact reflects business consequences if the defect occurs. Regulatory exposure and incorrect customer charges make the defect much more serious."
@@ -699,12 +699,12 @@
       "difficulty": "easy",
       "question": "Risk levels are reassessed every sprint. Which evidence is the STRONGEST reason to lower a previously high product-risk rating?",
       "options": [
-        "A developer says the area now feels safer",
-        "Repeated targeted tests and recent related changes have shown stable results with no new incidents",
-        "The feature is popular with users",
-        "The test team has become smaller"
+        "A developer says that the area now feels safer than it did a few sprints ago",
+        "The feature has become popular with a large share of the users of the application",
+        "The test team has become smaller since the last sprint",
+        "Repeated targeted tests and recent related changes show stable results and no new incidents"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Risk ratings should change based on evidence. Consistently stable test outcomes and a lack of recent issues provide a sound basis for reducing a prior rating."
     },
     {
@@ -714,12 +714,12 @@
       "difficulty": "medium",
       "question": "A payment gateway is classified as high risk. Which coverage objective BEST reflects risk-based testing?",
       "options": [
-        "Run one happy-path payment and move on",
-        "Focus only on UI cosmetics around the pay button",
         "Cover successful payments plus negative, timeout, retry, and malformed-response scenarios",
-        "Skip the gateway in system testing because the provider already tested it"
+        "Run one happy-path payment and treat the gateway as verified for the whole release cycle",
+        "Concentrate on the look and spacing around the pay button",
+        "Leave the gateway out of system testing because the provider already tested it"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "explanation": "High-risk integrations need broader and deeper coverage than a single successful flow. Negative and recovery scenarios are important because that is where costly failures often appear."
     },
     {
@@ -729,12 +729,12 @@
       "difficulty": "hard",
       "question": "Which workshop input is MOST useful for uncovering hidden product risks tied to real operations?",
       "options": [
-        "A list of office holidays",
+        "The list of office holidays and planned leave for the coming quarter of the year",
+        "The seating plan used by the development team",
         "Recent support tickets and call-center complaints about similar workflows",
-        "The developer seating plan",
-        "Unused feature flags from a different application"
+        "Unused feature flags taken from a different application"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Operational feedback shows how the product fails in practice and what users struggle with. That information often reveals risks not obvious from requirements alone."
     },
     {
@@ -744,12 +744,12 @@
       "difficulty": "easy",
       "question": "Why might a test analyst assign a LOWER overall risk to a technically complex feature than to a simpler one?",
       "options": [
-        "Because complexity never influences risk",
-        "Because the simpler feature may be used far more often and have greater business exposure",
-        "Because only developers rate likelihood",
-        "Because low code volume always means high impact"
+        "Technical complexity never influences risk, so both features rate equally",
+        "Only developers are allowed to rate likelihood, so testers cannot compare the two",
+        "Low code volume always means high impact, so simple features rank higher",
+        "The simpler feature may be used far more often and so carry greater business exposure"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Overall product risk combines more than technical complexity. A simpler feature can still deserve higher priority if many users depend on it or failures would be costly."
     },
     {
@@ -759,12 +759,12 @@
       "difficulty": "medium",
       "question": "A hotfix changes discount precedence rules. Which regression selection BEST matches risk-based thinking?",
       "options": [
-        "Retest pricing, promotions, invoice totals, and related tax flows instead of unrelated profile settings",
-        "Run only UI theme tests because they are quick",
-        "Repeat every test in the repository regardless of relevance",
+        "Run only the quick UI theme tests, since they finish in minutes and give fast feedback",
+        "Repeat every test in the repository regardless of its relevance",
+        "Retest pricing, promotions, invoice totals, and tax flows rather than profile settings",
         "Skip regression because the change was labeled a hotfix"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Risk-based regression targets the areas most likely to be affected by the change and most costly if broken. Pricing-adjacent flows are a much better choice than unrelated settings pages."
     },
     {
@@ -774,12 +774,12 @@
       "difficulty": "hard",
       "question": "What does a statement about residual product risk communicate after testing?",
       "options": [
-        "That no significant risks remain anywhere in the product",
-        "That all known defects were fixed before release",
-        "That some risk still remains and stakeholders are informed of that remaining exposure",
-        "That testers are no longer responsible for reporting results"
+        "No significant risks remain anywhere in the product, because all the planned tests passed",
+        "Some risk remains, and stakeholders are told how much exposure is left",
+        "Every known defect has been fixed before the release",
+        "Testers no longer have to report results to anyone"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "explanation": "Testing reduces risk but rarely removes it completely. Residual risk statements help stakeholders make informed release decisions based on the exposure that remains."
     },
     {
@@ -789,12 +789,12 @@
       "difficulty": "easy",
       "question": "During risk identification, which question from a test analyst is MOST likely to expose important business-facing failure modes?",
       "options": [
-        "Which user-visible failures could cause lost sales, financial loss, or regulatory problems?",
-        "Which IDE theme do developers prefer?",
-        "Which code formatter runs in CI?",
-        "Which sprint had the best velocity?"
+        "Which IDE theme do most of the developers prefer to use in their daily work?",
+        "Which code formatter is currently configured in the continuous integration pipeline of the team?",
+        "Which of the recent sprints achieved the highest team velocity?",
+        "Which user-visible failures could cost sales, cause financial loss, or breach regulations?"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Risk identification is strengthened by questions about customer and business consequences. Those prompts help the team surface failures worth prioritizing in testing."
     },
     {
@@ -804,12 +804,12 @@
       "difficulty": "medium",
       "question": "Test time is unexpectedly cut by 30%. Which action BEST preserves the integrity of a risk-based approach?",
       "options": [
-        "Reduce high-risk coverage equally with low-risk coverage",
-        "Drop low-risk scenarios before reducing tests that target the highest product risks",
-        "Remove all negative tests first",
-        "Continue unchanged and simply skip defect logging"
+        "Cut high-risk and low-risk coverage by the same percentage so that the cut is fair",
+        "Remove every negative test first, since they seldom find anything",
+        "Drop low-risk scenarios first and protect tests aimed at the highest product risks",
+        "Continue unchanged and save time by skipping defect logging"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "When time is constrained, the key principle is to protect coverage of the highest risks as much as possible. Lower-risk tests are the better place to reduce scope first."
     },
     {
@@ -819,12 +819,12 @@
       "difficulty": "hard",
       "question": "Which indicator MOST strongly increases the likelihood rating for a new feature?",
       "options": [
-        "It uses the company's standard page header",
-        "It is implemented in a component with a dense defect history and by a team new to the area",
-        "It has a short user guide",
-        "It was requested by an internal stakeholder"
+        "It is built in a defect-dense component by a team that is new to the area",
+        "It reuses the standard page header that the company uses everywhere",
+        "It comes with a short user guide of only a few pages that covers its main functions",
+        "It was requested by an internal stakeholder rather than a customer"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Likelihood grows when defect-prone components and limited team experience combine. Historical defect density is especially useful as objective evidence."
     },
     {
@@ -834,12 +834,12 @@
       "difficulty": "easy",
       "question": "A high-risk workflow depends on a fraud service that enforces rate limits. Which plan BEST reflects risk-based testing?",
       "options": [
-        "Assume the service never throttles in production",
-        "Test only with one approved transaction",
-        "Reserve early environment time and design tests for service unavailability, throttling, and delayed responses",
-        "Delay all fraud-service tests until after release"
+        "Assume the service never throttles requests once it runs in the production environment",
+        "Reserve early environment time and test for unavailability, throttling, and delayed responses",
+        "Test only a single approved transaction against the service and then close the topic",
+        "Postpone all fraud-service tests until after the release"
       ],
-      "correctIndex": 2,
+      "correctIndex": 1,
       "explanation": "The third-party dependency raises both business risk and integration risk. A strong plan covers failure modes such as throttling and outages, not just successful responses."
     },
     {
@@ -849,12 +849,12 @@
       "difficulty": "medium",
       "question": "A user story says, 'Preferred customers get fast shipping.' What should the test analyst do FIRST during test analysis?",
       "options": [
-        "Write automation scripts immediately",
-        "Ask for measurable criteria defining 'preferred' and 'fast'",
-        "Assume the developers already know the values",
-        "Delete the story because it is too short"
+        "Write automation scripts immediately and refine the values later",
+        "Assume that the developers already know the intended values",
+        "Delete the story because a single short sentence is too vague",
+        "Ask for measurable criteria defining 'preferred' and 'fast'"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Ambiguous terms prevent precise test conditions and expected results. The test analyst should first seek concrete acceptance details."
     },
     {
@@ -864,12 +864,12 @@
       "difficulty": "hard",
       "question": "Example scenarios show tax-inclusive totals, but the glossary defines totals as tax-exclusive. What is the BEST test-analysis response?",
       "options": [
-        "Choose one interpretation privately and design tests",
         "Raise an inconsistency review comment before test design continues",
-        "Ignore the glossary because examples are always correct",
-        "Split the difference and expect both results"
+        "Choose one interpretation privately and design the tests from it",
+        "Ignore the glossary, since worked examples are always correct",
+        "Split the difference and accept either total as a passing result"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Conflicting sources in the test basis are a classic review finding. Resolving them early prevents wasted design effort and contradictory tests."
     },
     {
@@ -879,12 +879,12 @@
       "difficulty": "easy",
       "question": "Why should preconditions be captured explicitly when analyzing a use case?",
       "options": [
-        "They define valid starting states and help prevent invalid tests from being mistaken for product defects",
-        "They replace the need for expected results",
-        "They are only relevant to developers",
-        "They make traceability unnecessary"
+        "They replace the need to specify the expected results for each step of the test",
+        "They matter only to developers and have no value for test design",
+        "They make traceability to the test basis unnecessary for the tests",
+        "They define valid starting states so invalid tests are not mistaken for defects"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Preconditions matter because the same steps can have different meanings in different starting states. Making them explicit improves validity and repeatability."
     },
     {
@@ -894,12 +894,12 @@
       "difficulty": "medium",
       "question": "A business-process model shows an order moving from sales review to finance approval. Which test condition is easiest to miss if only isolated user stories are read?",
       "options": [
-        "The page title on the sales screen",
         "The handoff rules and authorization checks between the two roles",
-        "The coding style of the approval service",
-        "The database backup frequency"
+        "The page title and the heading text shown on the sales review screen at the start",
+        "The coding style used inside the approval service",
+        "How often the database is backed up each week"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Process models expose cross-role and cross-step behavior that can be hidden when stories are read in isolation. Handoffs are common defect sources."
     },
     {
@@ -909,12 +909,12 @@
       "difficulty": "hard",
       "question": "What is the STRONGEST reason to link each test condition to its source requirement, story, or model element?",
       "options": [
-        "So the test case names look more formal",
-        "To make change impact analysis and coverage tracking easier",
-        "To avoid ever updating tests",
-        "To ensure all tests are automated"
+        "It makes the test case names look more formal to reviewers",
+        "It means the tests never need to be updated again",
+        "It ensures that every test in the suite will be automated",
+        "It makes change impact analysis and coverage tracking easier"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Traceability helps the team see what is covered and what must change when the test basis changes. It is especially valuable in fast-moving projects."
     },
     {
@@ -925,9 +925,9 @@
       "question": "Which requirement phrase MOST clearly signals missing oracle detail during analysis?",
       "options": [
         "The system should respond quickly",
-        "The invoice number is twelve characters long",
-        "Only active users may reset passwords",
-        "Rejected orders remain visible to supervisors"
+        "The invoice number is exactly twelve characters long",
+        "Only active users may reset their own passwords",
+        "Rejected orders remain visible to supervisors for audit"
       ],
       "correctIndex": 0,
       "explanation": "'Quickly' is subjective unless tied to measurable expectations or acceptance criteria. Without clarification, the tester cannot make a consistent pass/fail decision."
@@ -939,12 +939,12 @@
       "difficulty": "medium",
       "question": "A requirement lists valid order statuses but says nothing about how status changes happen. What should the test analyst request?",
       "options": [
-        "The source-code package structure",
+        "The package structure of the source code behind the status field",
+        "The meeting schedule of the team that owns the order module and its backlog",
         "Transition rules, triggering events, and forbidden moves between statuses",
-        "The team's meeting schedule",
-        "A longer list of color choices for the status labels"
+        "A longer list of color choices for the status labels on screen"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Knowing the status names alone is not enough for robust analysis. Transition rules are needed to derive meaningful conditions and expected outcomes."
     },
     {
@@ -954,10 +954,10 @@
       "difficulty": "hard",
       "question": "Why are example-based discussions with the product owner valuable during test analysis?",
       "options": [
-        "They expose hidden assumptions and provide concrete expected outcomes",
-        "They eliminate the need for later execution",
-        "They guarantee no defects will escape",
-        "They replace the need for version control"
+        "They expose hidden assumptions and give concrete expected outcomes",
+        "They remove any need for later test execution on the feature",
+        "They guarantee that no defects at all will escape to production after the release",
+        "They take the place of version control for the test assets"
       ],
       "correctIndex": 0,
       "explanation": "Examples force abstract rules into specific cases, which often reveals missing behavior and expected results. They also improve shared understanding across roles."
@@ -969,10 +969,10 @@
       "difficulty": "easy",
       "question": "A report specification defines which columns appear but does not define the default sort order. What is the BEST analysis outcome?",
       "options": [
-        "Treat any sort order as acceptable",
-        "Create a review comment about the missing default behavior",
-        "Guess the most common sort order and proceed",
-        "Skip report testing until system test"
+        "Treat any sort order as acceptable to the stakeholders",
+        "Raise a review comment about the missing default behavior",
+        "Guess the most common sort order and carry on designing",
+        "Postpone report testing until the system test phase"
       ],
       "correctIndex": 1,
       "explanation": "Missing behavior is a defect in the test basis, not something the test analyst should silently invent. Raising it early protects both design quality and stakeholder expectations."
@@ -984,12 +984,12 @@
       "difficulty": "medium",
       "question": "When deriving test conditions from decision logic, what should a test condition MOST often represent?",
       "options": [
-        "Every possible data value individually",
-        "A meaningful rule, branch, or outcome that requires separate verification",
-        "Only user interface text",
-        "Every future automation step"
+        "Every individual data value that the logic could ever receive",
+        "Only the text shown on the user interface at each decision point in the flow",
+        "A meaningful rule, branch, or outcome that needs separate verification",
+        "Every step of a future automation script for the logic"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Test conditions should be detailed enough to guide design without degenerating into raw data enumeration. Distinct rules and outcomes are a practical unit of analysis."
     },
     {
@@ -999,12 +999,12 @@
       "difficulty": "hard",
       "question": "Two requirements describe the same loyalty level using different terms. What risk should the test analyst recognize?",
       "options": [
-        "The test cases may become duplicated or inconsistent unless the terminology is aligned",
-        "The code will compile more slowly",
-        "The product owner will need fewer examples",
-        "The test environment will lose data"
+        "The code will take noticeably longer to compile because of the additional terms used",
+        "Tests may be duplicated or inconsistent unless the terminology is aligned",
+        "The product owner will need to supply fewer examples overall",
+        "The test environment may lose its data at random moments"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Terminology mismatches can create conflicting interpretations, duplicated conditions, and incomplete coverage. The ambiguity should be resolved before design progresses."
     },
     {
@@ -1014,12 +1014,12 @@
       "difficulty": "easy",
       "question": "A prototype shows the Submit button disabled until all mandatory fields are valid. Besides the visible button state, what should the test analyst analyze?",
       "options": [
-        "Only the CSS theme applied to the form",
+        "Only the CSS theme and stylesheet that decide how the form and its button are rendered",
+        "How many developers have worked on the form so far",
         "The exact definition of mandatory fields and how errors can be corrected",
-        "How many developers touched the form",
-        "Which workstation the designer used"
+        "Which workstation the designer used to build the prototype"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "The visible behavior hints at underlying rules that must be made explicit. Mandatory-field definitions and error-recovery behavior are both important test-analysis targets."
     },
     {
@@ -1029,12 +1029,12 @@
       "difficulty": "medium",
       "question": "For an API specification, which information MOST directly supports effective test analysis?",
       "options": [
-        "The font used in the OpenAPI document",
-        "Constraints on required fields, optional fields, formats, and enumerated values",
-        "The internal team wiki URL",
-        "The average code review time"
+        "The font that is used to render the OpenAPI document in the internal developer portal",
+        "The URL of the internal wiki page describing the service",
+        "The average time that code reviews take in the team",
+        "Constraints on required and optional fields, formats, and enumerated values"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Input and output constraints are central to deriving conditions for valid, invalid, and edge-case API behavior. Document appearance is irrelevant to analysis quality."
     },
     {
@@ -1044,10 +1044,10 @@
       "difficulty": "hard",
       "question": "Why can early test analysis reduce total project cost?",
       "options": [
-        "It eliminates the need for defect management",
-        "It helps find gaps and ambiguities in the test basis before implementation rework becomes expensive",
-        "It always shortens test execution time to zero",
-        "It avoids any need for stakeholder review"
+        "It makes defect management unnecessary for the later phases of the project",
+        "It finds gaps and ambiguities in the basis before rework becomes expensive",
+        "It cuts test execution time down to nothing on every release",
+        "It removes the need for any stakeholder review of the basis"
       ],
       "correctIndex": 1,
       "explanation": "Finding defects in requirements and models is usually cheaper than finding them after code and testware have been built. Early analysis reduces downstream rework."
@@ -1059,9 +1059,9 @@
       "difficulty": "easy",
       "question": "Which item is the BEST candidate for a separate test condition rather than only a test-data variation?",
       "options": [
-        "Using a different customer surname",
-        "A distinct business rule that VIP orders bypass credit-limit approval",
-        "Changing the browser window size by a few pixels",
+        "Using a different customer surname and address on the order that is submitted",
+        "A distinct business rule: VIP orders bypass credit-limit approval",
+        "Resizing the browser window by a few pixels",
         "Running the same test at a different time of day"
       ],
       "correctIndex": 1,
@@ -1074,12 +1074,12 @@
       "difficulty": "medium",
       "question": "A recommendation engine does not have one obvious 'best' result for every input. Which oracle challenge should the test analyst note during analysis?",
       "options": [
-        "Expected results may be heuristic or probabilistic rather than exact",
-        "The feature cannot be tested at all",
-        "Only developers are allowed to inspect results",
-        "The test basis no longer needs traceability"
+        "The feature cannot be tested by anyone, because no single correct answer exists",
+        "Only developers are permitted to inspect the results",
+        "The test basis no longer needs traceability for such features",
+        "Expected results may be heuristic or probabilistic rather than exact"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Some systems require softer or comparative oracles because outcomes are not strictly deterministic. Recognizing that challenge early helps shape realistic tests and verdict criteria."
     },
     {
@@ -1089,10 +1089,10 @@
       "difficulty": "hard",
       "question": "During test implementation, why group individual test cases into executable procedures?",
       "options": [
-        "To hide traceability links from stakeholders",
+        "To hide the traceability links from the stakeholders who read the test reports",
         "To make setup, sequence, and cleanup repeatable and efficient during execution",
-        "To guarantee all tests become automated",
-        "To avoid maintaining test data"
+        "To make sure every grouped test becomes an automated test",
+        "To avoid having to maintain any test data for the tests"
       ],
       "correctIndex": 1,
       "explanation": "Executable procedures organize the practical flow of execution. They help testers run cases consistently and avoid repeated setup mistakes."
@@ -1104,12 +1104,12 @@
       "difficulty": "easy",
       "question": "A test fails because the reference data was not loaded. What should the test analyst record FIRST?",
       "options": [
-        "A product defect with maximum severity",
-        "An environment or setup issue with enough evidence to explain the blocked result",
-        "A request to rewrite the requirement",
-        "Nothing, because setup issues are not worth logging"
+        "An environment or setup issue, with evidence explaining why the result was blocked",
+        "A product defect with maximum severity so that it gets the team's attention at once",
+        "A request asking the product owner to rewrite the requirement",
+        "Nothing, because setup problems are not worth recording anywhere"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "When the failure is caused by the test environment or data setup, the first record should reflect that fact. Otherwise the defect log becomes misleading."
     },
     {
@@ -1119,12 +1119,12 @@
       "difficulty": "medium",
       "question": "What is the MAIN purpose of preparing expected results before execution begins?",
       "options": [
-        "To reduce objective verdicts and encourage tester intuition",
-        "To avoid comparing actual and expected behavior",
-        "To make pass/fail decisions more consistent and less dependent on guesswork during execution",
-        "To replace the need for review comments"
+        "To make pass/fail decisions more consistent and less dependent on guesswork",
+        "To avoid having to compare actual behavior with the expected behavior at all",
+        "To avoid having to compare actual behavior with expected behavior",
+        "To replace the need for review comments on the test basis"
       ],
-      "correctIndex": 2,
+      "correctIndex": 0,
       "explanation": "Prepared expected results support reliable verdicts and reduce ambiguity during execution. They are especially important for complex calculations and business rules."
     },
     {
@@ -1135,9 +1135,9 @@
       "question": "Why is it useful to capture actual results at major checkpoints during a long end-to-end test?",
       "options": [
         "It helps isolate where a deviation first appeared",
-        "It guarantees the defect root cause is known",
-        "It removes the need for screenshots or logs",
-        "It makes cleanup unnecessary"
+        "It guarantees that the root cause of the defect is known",
+        "It removes the need for screenshots and logs of the run",
+        "It makes cleanup of the test data unnecessary afterwards"
       ],
       "correctIndex": 0,
       "explanation": "Checkpoint evidence narrows down where behavior diverged from expectations. That speeds investigation and improves reproducibility."
@@ -1149,10 +1149,10 @@
       "difficulty": "easy",
       "question": "A suite contains tests that create customer records and other tests that modify them. Which ordering is MOST sensible?",
       "options": [
-        "Run modifications before creation to save time",
-        "Run them in random order to expose hidden defects",
+        "Run the modification tests before creation to save setup time during execution",
+        "Run the tests in random order to expose hidden defects",
         "Create records first, then modify them, with clear cleanup or dependency handling",
-        "Skip cleanup because later tests may reuse the data"
+        "Skip cleanup, since later tests may reuse the leftover data"
       ],
       "correctIndex": 2,
       "explanation": "Execution order should respect data dependencies. Clear setup and cleanup keep the suite repeatable and reduce false failures."
@@ -1164,12 +1164,12 @@
       "difficulty": "medium",
       "question": "After a defect fix is delivered, what distinguishes confirmation testing from regression testing?",
       "options": [
-        "Confirmation reruns the affected test, while regression checks whether related unchanged areas still work",
-        "Regression reruns only the originally failed step, while confirmation ignores it",
-        "They are identical and differ only by project terminology",
-        "Confirmation happens before implementation and regression happens after release"
+        "Regression reruns only the originally failed step, while confirmation ignores that step completely",
+        "They are identical activities that differ only by project terminology",
+        "Confirmation happens before implementation, regression after release",
+        "Confirmation reruns the affected test; regression checks related unchanged areas still work"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Confirmation testing verifies the specific defect was fixed. Regression testing looks for unintended side effects in related functionality."
     },
     {
@@ -1179,12 +1179,12 @@
       "difficulty": "hard",
       "question": "Why maintain version-controlled test data sets?",
       "options": [
-        "To make repeat execution and change history easier to manage",
-        "To prevent traceability back to requirements",
-        "To ensure testers cannot compare results",
-        "To avoid documenting business rules"
+        "To prevent traceability back to the requirements",
+        "To ensure that testers cannot compare results between runs",
+        "To avoid having to document the business rules behind the data",
+        "To make repeat execution and change history easier to manage"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Version-controlled data improves repeatability and auditability. It also helps the team understand why results changed when business rules or product behavior evolved."
     },
     {
@@ -1194,12 +1194,12 @@
       "difficulty": "easy",
       "question": "A failure occurs only when the browser language is French. Which incident detail is MOST important to capture?",
       "options": [
-        "The tester's lunch break time",
-        "The locale and configuration settings, along with exact steps and test data",
-        "Only the requirement identifier",
-        "The source control branch name"
+        "The exact time at which the tester took a lunch break during the test session",
+        "Only the identifier of the requirement under test",
+        "The name of the source control branch used",
+        "The locale and configuration, plus the exact steps and test data"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Environment specifics are crucial when a failure depends on localization settings. Without them, reproducing and diagnosing the issue becomes much harder."
     },
     {
@@ -1209,12 +1209,12 @@
       "difficulty": "medium",
       "question": "When should a test analyst update an existing test procedure?",
       "options": [
-        "Only at project closure",
-        "Whenever changed requirements or workflows make the steps or expected results outdated",
-        "Never, because procedures should remain historically stable",
-        "Only after the automation team asks"
+        "Only at project closure, once all the changes to the product are finally known",
+        "Never, since procedures should stay historically stable",
+        "Whenever changes make steps or expected results outdated",
+        "Only after the automation team explicitly asks for an update"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Testware must evolve with the product and test basis. Outdated procedures create false results and waste execution time."
     },
     {
@@ -1224,12 +1224,12 @@
       "difficulty": "hard",
       "question": "What is the BEST reason to suspend execution of a test set?",
       "options": [
+        "A stakeholder asks how many tests remain to be run",
+        "The team would like to publish more colorful status reports to its stakeholders",
         "A blocking environment issue makes test verdicts unreliable",
-        "A stakeholder asks how many tests remain",
-        "The team wants more colorful reports",
-        "One low-priority defect was found"
+        "One low-priority defect has been found in the run"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Suspension is justified when continuing would produce misleading results or waste effort. Unreliable environments are a classic trigger."
     },
     {
@@ -1239,12 +1239,12 @@
       "difficulty": "easy",
       "question": "Which output from test completion is especially useful from a test analyst's perspective?",
       "options": [
-        "A list of office equipment used during the release",
+        "A list of the office equipment and furniture that was used during the release period",
+        "A summary of the developers' holiday plans for the next quarter",
         "Coverage gaps, unresolved defects, and lessons that improve future testware",
-        "A summary of developers' vacation plans",
-        "A promise that no customer issues will appear"
+        "A promise from the team that no customer issues will appear"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Completion information should help stakeholders judge remaining exposure and help the team improve. Coverage gaps and reusable lessons serve both goals."
     },
     {
@@ -1254,10 +1254,10 @@
       "difficulty": "medium",
       "question": "Why run a small smoke suite before detailed scripted tests on a new build?",
       "options": [
-        "To replace all later testing",
+        "To replace all of the later testing that was planned for the new build under test",
         "To quickly detect gross instability and avoid wasting deeper execution effort",
-        "To eliminate the need for logging incidents",
-        "To verify only cosmetic defects"
+        "To remove the need for logging incidents during the run",
+        "To verify only the cosmetic aspects of the new build"
       ],
       "correctIndex": 1,
       "explanation": "A smoke suite provides fast feedback on whether the build is stable enough for deeper testing. It protects time and environment capacity."
@@ -1269,12 +1269,12 @@
       "difficulty": "hard",
       "question": "A manual test script says, 'Verify the invoice looks correct.' What should the test analyst improve during implementation?",
       "options": [
-        "Remove the step entirely",
+        "Remove the step entirely from the script, because it cannot be verified by anyone",
+        "Turn the script into a project plan for the team",
         "Replace the vague step with observable checks and expected values",
-        "Convert the script into a project plan",
-        "Add more screenshots but no clearer criteria"
+        "Attach more screenshots but leave the criteria unclear"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Vague instructions lead to inconsistent verdicts. Observable checks and explicit expectations make the test case repeatable and auditable."
     },
     {
@@ -1284,12 +1284,12 @@
       "difficulty": "easy",
       "question": "A fix for one tax rule changed a shared calculation library. What follow-up testing is MOST appropriate?",
       "options": [
-        "Run only the single failing test again",
-        "Skip testing because library changes are internal",
-        "Run confirmation testing plus targeted regression on other features that use the same library",
-        "Wait for production monitoring instead"
+        "Run only the single failing test again after the fix, since it is the one that failed",
+        "Skip testing, since a library change is internal to the code",
+        "Wait for production monitoring instead of testing the change",
+        "Run confirmation testing plus targeted regression on features using the same library"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "explanation": "Shared components create side-effect risk beyond the original defect. Targeted regression complements confirmation testing in this situation."
     },
     {
@@ -1299,12 +1299,12 @@
       "difficulty": "medium",
       "question": "What makes recorded execution results genuinely auditable?",
       "options": [
-        "They show only whether the tester felt confident",
+        "They record only how confident the tester felt about the run at the end of the day",
+        "They leave out environment details to keep the records short",
         "They link the procedure, data used, environment version, and observed outcome",
-        "They omit environment details to save time",
-        "They rely on memory rather than evidence"
+        "They rely on the tester's memory rather than recorded evidence"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Auditable results let another person understand what was run and what happened. The essential context includes procedure, data, environment, and outcome."
     },
     {
@@ -1314,12 +1314,12 @@
       "difficulty": "hard",
       "question": "A password reset code must contain exactly six digits. Which set of partitions is MOST appropriate for equivalence partitioning?",
       "options": [
-        "Valid six-digit numeric values, invalid shorter values, invalid longer values, and invalid non-numeric values",
-        "Only one partition covering any entered value",
-        "Six partitions, one for each digit position",
-        "A partition for every possible code"
+        "A single partition that covers every value that a user could possibly try to enter",
+        "Six partitions, one for each digit position in the code",
+        "Valid six-digit numeric values, plus invalid shorter, longer, and non-numeric values",
+        "A separate partition for each of the possible codes"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Equivalence partitioning groups inputs expected to behave the same way. For this rule, length and numeric format create the main valid and invalid classes."
     },
     {
@@ -1329,7 +1329,7 @@
       "difficulty": "easy",
       "question": "A membership age rule accepts values from 18 through 65 inclusive. Which boundary set is BEST for boundary value analysis?",
       "options": [
-        "18, 65",
+        "18 and 65",
         "0, 18, 65, 100",
         "17, 18, 19, 64, 65, 66",
         "20, 30, 40, 50, 60"
@@ -1344,9 +1344,9 @@
       "difficulty": "medium",
       "question": "Which requirement is BEST suited to decision table testing?",
       "options": [
-        "A static company-about page",
-        "A rule where shipping cost depends on destination, order value, and membership level",
-        "A splash screen image rotation",
+        "A static about-us page that describes the history and the people of the company",
+        "Shipping cost that depends on destination, order value, and membership level",
+        "A splash screen that rotates a few images",
         "A one-field search box with no business rules"
       ],
       "correctIndex": 1,
@@ -1359,12 +1359,12 @@
       "difficulty": "hard",
       "question": "An account locks after three consecutive failed login attempts. Which test sequence BEST checks the lock behavior?",
       "options": [
-        "Fail once, then log in successfully",
-        "Fail three times in a row and then attempt a correct password",
-        "Log in successfully three times",
-        "Alternate fail and success forever"
+        "Fail once, then log in successfully with the right password",
+        "Log in successfully three times in a row without any failures",
+        "Alternate failed and successful logins over a long period of time",
+        "Fail three times in a row, then attempt a correct password"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "State transition behavior depends on sequence and current state. Three consecutive failures followed by a correct password directly checks whether the state changed to locked."
     },
     {
@@ -1374,12 +1374,12 @@
       "difficulty": "easy",
       "question": "When building a classification tree for a travel booking form, which item is the BEST example of a classification?",
       "options": [
-        "The tester's employee number",
         "Payment method",
-        "The sprint name",
-        "Repository branch protection settings"
+        "The employee number of the tester running the checks",
+        "The name of the sprint in which the form was built",
+        "Branch protection settings in the code repository"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "A classification is a relevant aspect of the test object whose values affect behavior. Payment method often changes flows, rules, or validations in booking systems."
     },
     {
@@ -1389,12 +1389,12 @@
       "difficulty": "medium",
       "question": "A pairwise suite is created for browser, user role, and currency. What kind of defect could STILL escape?",
       "options": [
-        "A defect triggered only by a specific three-way combination of those factors",
-        "Any defect involving a pair of factor values",
-        "Any defect in a single browser alone",
-        "All usability issues by definition"
+        "Any defect that depends on one pair of factor values, because pairs are all covered",
+        "A defect triggered only by one specific three-way combination of those factors",
+        "Any defect that appears in a single browser by itself",
+        "All usability issues of the booking pages by definition"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Pairwise testing guarantees pair coverage, not full combination coverage. A bug that requires a specific triple interaction may still remain."
     },
     {
@@ -1405,9 +1405,9 @@
       "question": "A use case includes an alternative flow where the user cancels an order before payment. Which expected result is MOST important to design for that flow?",
       "options": [
         "The reservation is released and no charge is created",
-        "The system prints a hidden debug log",
-        "The profile picture is refreshed",
-        "The browser cache is cleared"
+        "The system prints a hidden debug log of the session",
+        "The profile picture of the user is refreshed",
+        "The browser cache is cleared on the next visit"
       ],
       "correctIndex": 0,
       "explanation": "Alternative flows need their own meaningful outcomes, not just the happy path. In a cancellation flow, preventing a charge and releasing reserved resources are key checks."
@@ -1420,11 +1420,11 @@
       "question": "A booking rule requires the start date to be on or before the end date. Which input pair is MOST valuable as a boundary-focused test?",
       "options": [
         "Start 10 May, end 20 May",
-        "Start 15 May, end 15 May",
         "Start 1 June, end 30 June",
+        "Start 15 May, end 15 May",
         "Start 1 January, end 31 December"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Equality is the critical boundary because the rule permits start and end dates to match. Many date-validation defects appear around this edge."
     },
     {
@@ -1434,12 +1434,12 @@
       "difficulty": "medium",
       "question": "A decision table contains a condition combination that can never occur in the business domain. What should the test analyst do?",
       "options": [
-        "Keep it and test it anyway as a normal business rule",
-        "Remove or mark the impossible rule so effort is not wasted on invalid combinations",
-        "Duplicate it to improve coverage",
-        "Convert the table into a state model automatically"
+        "Keep it and test it anyway as an ordinary business rule",
+        "Duplicate it several times in the table to improve the coverage that is achieved",
+        "Convert the whole table into a state model automatically",
+        "Remove or mark the impossible rule so effort is not spent on it"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Impossible combinations should be identified and excluded from normal rule coverage. Otherwise the table becomes misleading and inefficient."
     },
     {
@@ -1449,12 +1449,12 @@
       "difficulty": "hard",
       "question": "What is an important goal when using state transition testing on a workflow?",
       "options": [
-        "Testing only the most common valid transitions",
+        "Testing only the most common valid transitions of the workflow, since they are used most",
+        "Replacing all of the data-oriented tests with transition tests",
         "Showing that invalid events in a given state are rejected or handled correctly",
-        "Replacing all data-oriented tests",
-        "Ignoring timeout behavior"
+        "Ignoring timeout behavior because it is rarely triggered"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Strong state-based testing includes invalid transitions because the system must respond safely to them. Focusing only on valid paths leaves gaps."
     },
     {
@@ -1464,12 +1464,12 @@
       "difficulty": "easy",
       "question": "A classification tree includes customer age and ticket type, but child tickets are valid only for younger customers. What should the test analyst do?",
       "options": [
-        "Generate all age and ticket combinations anyway",
-        "Model the constraint so invalid combinations are not treated as normal expected behavior",
-        "Delete one of the classifications",
-        "Replace the tree with random testing"
+        "Generate every age and ticket combination and treat all of them as valid input",
+        "Delete one of the two classifications to avoid the conflict",
+        "Replace the classification tree with purely random testing",
+        "Model the constraint so invalid combinations are not treated as expected behavior"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Combinatorial models become more useful when business constraints are represented explicitly. That prevents wasted effort and incorrect expectations."
     },
     {
@@ -1479,12 +1479,12 @@
       "difficulty": "medium",
       "question": "After creating a pairwise test set for a complex configuration screen, what additional tests are MOST likely still needed?",
       "options": [
-        "None, because pairwise replaces all other test design work",
-        "Only performance tests",
-        "High-risk boundaries and business-rule constraints not guaranteed by pairwise coverage",
-        "Only tests chosen randomly"
+        "None, since pairwise coverage already replaces all of the other test design work",
+        "Performance tests, and nothing else beyond them",
+        "Tests chosen at random, and nothing else beyond them",
+        "High-risk boundaries and rule constraints that pairwise coverage does not guarantee"
       ],
-      "correctIndex": 2,
+      "correctIndex": 3,
       "explanation": "Pairwise coverage is efficient, but it does not replace focused tests for boundaries, constraints, or other high-risk conditions. Those still need attention."
     },
     {
@@ -1494,12 +1494,12 @@
       "difficulty": "hard",
       "question": "When deriving use case tests that span multiple systems, what provides the BEST oracle?",
       "options": [
-        "Only whether the final confirmation screen appears",
-        "The expected business outcome and the expected data changes across each involved system",
-        "Only the number of API calls made",
-        "The team's estimate in story points"
+        "The expected business outcome and the data changes in each involved system",
+        "Whether the final confirmation screen appears to the user at the end of the flow",
+        "The number of API calls made during the scenario",
+        "The team's estimate of the work in story points"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "End-to-end use case tests need oracles broader than a final UI message. Consistent business outcomes and cross-system data effects are stronger evidence."
     },
     {
@@ -1509,12 +1509,12 @@
       "difficulty": "easy",
       "question": "An optional comment field allows empty input and up to 200 characters. Which partitions are MOST relevant?",
       "options": [
-        "Exactly 200 partitions, one for each length",
-        "Empty valid input, non-empty valid input up to 200 characters, and invalid input over 200 characters",
-        "Only one valid partition because the field is optional",
-        "Only invalid partitions because optional fields are low risk"
+        "Empty valid input, valid input up to 200 characters, and invalid input over 200",
+        "Exactly 200 partitions, one for each possible length of the entered comment text",
+        "A single valid partition, since the field is optional",
+        "Only invalid partitions, since optional fields are low risk"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "Optional fields still benefit from partitioning. The key distinction is between empty valid input, bounded valid content, and content beyond the maximum length."
     },
     {
@@ -1524,12 +1524,12 @@
       "difficulty": "medium",
       "question": "A decision table for discount approval has five binary conditions, creating many columns. What is the BEST first simplification step?",
       "options": [
-        "Test every column without review",
-        "Merge equivalent outcomes and remove impossible combinations where justified",
-        "Convert the table into a user manual",
-        "Drop the least convenient conditions"
+        "Test every column of the table in turn without making any review of the rules first",
+        "Turn the table into a user manual for the team",
+        "Drop whichever conditions are least convenient to set up",
+        "Merge equivalent outcomes and remove impossible combinations where justified"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Decision tables often become more efficient when impossible rules are removed and equivalent rules are collapsed. That keeps coverage systematic without needless duplication."
     },
     {
@@ -1539,12 +1539,12 @@
       "difficulty": "hard",
       "question": "A timeout event can occur while an order is awaiting payment or after it is already cancelled. What key state-based test idea follows from this?",
       "options": [
-        "The same event may need different expected outcomes depending on the current state",
-        "Timeouts should be ignored in test design",
-        "Only the first state should ever be tested",
-        "A state model is unnecessary when events repeat"
+        "Timeouts should be left out of test design because they are rare in production use",
+        "Only the first state of the model should be tested",
+        "The same event may need different expected outcomes in different states",
+        "A state model is not needed when events simply repeat"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "In state transition testing, events are interpreted in the context of the current state. Repeating the same event across states can reveal important differences in behavior."
     },
     {
@@ -1554,12 +1554,12 @@
       "difficulty": "easy",
       "question": "Historical escaped defects in a multi-currency checkout cluster around rounding, currency conversion, and locale parsing. Which defect class should the next test design cycle emphasize?",
       "options": [
-        "Precision and format-conversion defects",
-        "Logo placement defects",
-        "Password-strength defects",
-        "Developer onboarding defects"
+        "Defects in the placement of the company logo",
+        "Defects in password-strength validation",
+        "Defects in the onboarding of new developers",
+        "Precision and format-conversion defects"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Defect-based testing uses known defect patterns to steer effort. The history here clearly points toward calculation precision and data-format handling."
     },
     {
@@ -1569,12 +1569,12 @@
       "difficulty": "medium",
       "question": "A defect taxonomy includes the class 'interface mismatch.' Which test idea BEST targets that class?",
       "options": [
-        "Checking whether a page title matches branding guidelines",
-        "Sending and receiving data that omits optional fields or uses unexpected schema versions between services",
-        "Changing a font size in the UI",
-        "Comparing sprint burndown charts"
+        "Checking that the page title matches the branding guidelines of the company website",
+        "Changing the font size of the labels in the user interface",
+        "Comparing sprint burndown charts across several teams",
+        "Exchanging data that omits optional fields or uses unexpected schema versions"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Interface mismatches often appear when connected systems disagree on message shape, optionality, or versions. Cross-service schema variations are therefore a strong targeted test idea."
     },
     {
@@ -1584,10 +1584,10 @@
       "difficulty": "hard",
       "question": "Why should a defect taxonomy be updated after root-cause analysis of new defects?",
       "options": [
-        "To make historical reports longer",
+        "To make the historical reports longer and more detailed for the management audience",
         "To capture emerging defect patterns that can guide future test design",
-        "To avoid ever closing incidents",
-        "To replace risk analysis permanently"
+        "To make sure incidents never need to be closed",
+        "To replace risk analysis for good on later projects"
       ],
       "correctIndex": 1,
       "explanation": "A taxonomy should learn from new evidence. Updating it with real defect patterns makes future defect-based testing more focused and useful."
@@ -1599,10 +1599,10 @@
       "difficulty": "easy",
       "question": "Escaped defects cluster around imported files that contain null values in optional columns. What should the test analyst do?",
       "options": [
-        "Avoid testing file imports because they are unstable",
+        "Avoid testing file imports altogether, because they are known to be unstable in practice",
         "Design targeted import tests with null, blank, and missing-field variations",
-        "Test only file names and file sizes",
-        "Ask operations to clean the files manually"
+        "Test only file names and file sizes of the imports",
+        "Ask operations to clean the files by hand before import"
       ],
       "correctIndex": 1,
       "explanation": "When history points to null-handling problems, targeted variations around missing and blank data are a direct and effective response."
@@ -1614,12 +1614,12 @@
       "difficulty": "medium",
       "question": "How does a domain-specific defect taxonomy help more than a purely generic one?",
       "options": [
-        "It highlights defect types that are especially common and costly in that domain",
-        "It guarantees smaller test suites",
-        "It removes the need for requirements",
-        "It applies only to unit testing"
+        "It guarantees that the resulting test suites will always be smaller than generic ones",
+        "It makes written requirements unnecessary for test design",
+        "It can be applied to unit testing only",
+        "It highlights defect types especially common and costly in that domain"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Generic categories are useful, but domain-specific ones better reflect the failures that really matter in a given product area. That improves prioritization."
     },
     {
@@ -1629,12 +1629,12 @@
       "difficulty": "hard",
       "question": "When using defect-based testing on a search feature with a long bug history, which source BEST seeds new test ideas?",
       "options": [
-        "Only the current sprint backlog titles",
+        "Only the titles of the current sprint backlog items",
+        "The building evacuation map and fire safety plan displayed in the office",
         "Past defect reports and support tickets for that feature",
-        "The building evacuation map",
-        "A random set of unrelated API logs"
+        "A random selection of unrelated API logs"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Past defects are direct evidence of where the feature has failed before. They are a strong starting point for targeted defect-based test design."
     },
     {
@@ -1644,12 +1644,12 @@
       "difficulty": "easy",
       "question": "A team classifies almost every defect as 'Other.' What is the MAIN consequence?",
       "options": [
+        "The release immediately becomes safer for end users because fewer defects are classified",
         "The taxonomy becomes less useful for guiding future targeted testing",
-        "The release immediately becomes safer",
-        "Defect fixing gets faster automatically",
-        "Traceability to requirements improves"
+        "Defect fixing becomes faster without any extra effort",
+        "Traceability to the requirements improves automatically"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Overuse of vague categories destroys the value of the taxonomy. If categories do not distinguish patterns, they cannot guide better future tests."
     },
     {
@@ -1659,12 +1659,12 @@
       "difficulty": "medium",
       "question": "Which test most directly targets omission-type defects in a rule-driven form?",
       "options": [
-        "A scenario that should trigger a mandatory business validation and checks whether that validation is missing",
-        "A check that the background color matches the design file",
-        "A review of the tester roster",
-        "A comparison of build timestamps"
+        "A check that the background color of the page matches the design file exactly",
+        "A review of the tester roster and holiday cover for the project this quarter",
+        "A scenario that should trigger a mandatory validation, checking whether it is missing",
+        "A comparison of build timestamps across environments"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Omission defects occur when required behavior is absent. Designing a scenario that should invoke that behavior is the most direct way to expose the gap."
     },
     {
@@ -1674,12 +1674,12 @@
       "difficulty": "hard",
       "question": "A known defect allowed a discount to be applied twice when an order was edited. Which follow-up idea BEST uses defect-based thinking?",
       "options": [
-        "Retest create, edit, and cancel flows that trigger price recalculation",
-        "Run only the login smoke test",
-        "Ignore editing because the defect is already known",
-        "Focus only on visual spacing in the order form"
+        "Run only the login smoke test on the new build to confirm that the product starts",
+        "Ignore order editing because this defect is already known",
+        "Focus on visual spacing in the order form",
+        "Retest create, edit, and cancel flows that trigger price recalculation"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "The defect pattern points to recalculation logic triggered by workflow changes. Related flows that recompute totals are therefore strong targets for further testing."
     },
     {
@@ -1689,10 +1689,10 @@
       "difficulty": "easy",
       "question": "What is a benefit of considering both product defect patterns and process-related defect causes?",
       "options": [
-        "It supports better targeted testing and can also inform preventive improvements",
-        "It guarantees every defect will be found before release",
-        "It removes the need for retrospectives",
-        "It allows test analysts to stop reviewing requirements"
+        "It supports targeted testing and can also inform preventive improvements",
+        "It guarantees that every single defect is found by the team before the release",
+        "It makes retrospectives unnecessary for the team",
+        "It lets test analysts stop reviewing requirements"
       ],
       "correctIndex": 0,
       "explanation": "Product patterns guide where to test, while process causes can highlight where reviews, standards, or communication should improve. Together they support detection and prevention."
@@ -1704,12 +1704,12 @@
       "difficulty": "medium",
       "question": "A parser often fails around maximum field lengths and unusual separators. Which targeted tests BEST fit the observed defect classes?",
       "options": [
-        "Typical records only",
-        "Boundary lengths and uncommon delimiter combinations",
-        "Only security scans",
-        "Random page refreshes"
+        "Typical records that follow the standard format",
+        "Security scans of the hosting environment and its network configuration",
+        "Random page refreshes during the parsing",
+        "Boundary lengths and uncommon delimiter combinations"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "The history identifies two likely fault patterns: boundary handling and separator parsing. Tests should directly exercise those weak spots."
     },
     {
@@ -1719,12 +1719,12 @@
       "difficulty": "hard",
       "question": "If an organization has little historical defect data for a new product, where can an initial taxonomy reasonably come from?",
       "options": [
-        "Comparable systems, standards, and team experience in the domain",
-        "Only the product logo guide",
-        "A list of developer keyboard shortcuts",
-        "A random sample of production metrics from another business"
+        "Only the product logo guide of the company",
+        "A list of the keyboard shortcuts that the developers use in their editors",
+        "A random sample of production metrics from another business",
+        "Comparable systems, standards, and team experience in the domain"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "An initial taxonomy can be bootstrapped from relevant external and experiential sources. It becomes stronger later as local defect data accumulates."
     },
     {
@@ -1734,10 +1734,10 @@
       "difficulty": "easy",
       "question": "When a defect-based test reveals a new failure, what makes the result especially valuable for improving the taxonomy?",
       "options": [
-        "The defect is closed quickly regardless of documentation",
-        "It is clearly classified with enough trigger context to recognize the recurring pattern later",
-        "The defect has many watchers",
-        "The failure occurs in a development environment"
+        "It is closed very quickly, however little documentation is attached to the report",
+        "It is classified clearly, with enough trigger context to recognize the pattern later",
+        "It attracts many watchers on the defect tracker",
+        "It occurs in a development environment rather than a test one"
       ],
       "correctIndex": 1,
       "explanation": "A taxonomy improves when defects are recorded in a way that preserves the meaningful pattern. Trigger context helps future testers design better targeted tests."
@@ -1749,12 +1749,12 @@
       "difficulty": "medium",
       "question": "A payment-service taxonomy includes duplicate requests as a common defect class. Which scenario BEST targets that class?",
       "options": [
-        "Submitting one normal payment on a stable network",
-        "Retrying after an unclear response and verifying that only one charge is created",
+        "Submitting one normal payment on a stable network and checking the confirmation page",
         "Changing the page language before paying",
+        "Retrying after an unclear response and verifying that only one charge is created",
         "Printing the confirmation page twice"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Duplicate-request defects often appear in retry and uncertainty conditions. The test should prove idempotent handling rather than just happy-path success."
     },
     {
@@ -1765,8 +1765,8 @@
       "question": "Which sign suggests a defect taxonomy is TOO broad to be useful?",
       "options": [
         "Its categories are specific enough to inspire concrete tests",
-        "Its categories are so vague that they do not suggest distinct test ideas",
-        "It is reviewed after major releases",
+        "Its categories are so vague that they suggest no distinct test ideas",
+        "It is reviewed by the team after each major release of the product it covers",
         "It includes both historical and domain-based entries"
       ],
       "correctIndex": 1,
@@ -1779,12 +1779,12 @@
       "difficulty": "easy",
       "question": "Which charter is the BEST example of a focused exploratory testing mission?",
       "options": [
-        "Test everything you can find in the application",
-        "Explore order-total calculation for mixed taxable and tax-exempt items with coupons; note rounding anomalies",
-        "Verify the entire release is ready",
-        "Check whether development is following the plan"
+        "Test everything you can find in the application over the next several working days",
+        "Verify that the entire release is ready for shipping",
+        "Check whether the development team is following the plan",
+        "Explore order-total calculation for mixed taxable and exempt items with coupons"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "A good charter names a focused area, purpose, and likely risks. That keeps exploration purposeful without over-constraining it."
     },
     {
@@ -1794,10 +1794,10 @@
       "difficulty": "medium",
       "question": "Why are exploratory testing sessions often time-boxed?",
       "options": [
-        "To make learning impossible",
+        "To make it impossible for the tester to learn the product",
         "To keep focus and make debrief results easier to compare and manage",
-        "To ensure only one defect is found per session",
-        "To avoid writing notes"
+        "To ensure that no more than one defect is found by the tester in each session",
+        "To avoid having to write any notes during the session"
       ],
       "correctIndex": 1,
       "explanation": "Time-boxing encourages discipline and helps teams plan, compare, and discuss session outcomes. It also prevents open-ended wandering."
@@ -1809,12 +1809,12 @@
       "difficulty": "hard",
       "question": "When is checklist-based testing especially valuable?",
       "options": [
+        "When the team wants to disregard what earlier incidents have taught it about the product",
         "When recurring regression or compliance-sensitive areas need consistent coverage",
-        "When the team wants to ignore previous incidents",
-        "When no one knows anything about the domain",
-        "When testers are forbidden to reuse experience"
+        "When nobody on the team knows anything about the domain",
+        "When testers are forbidden to reuse their experience"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Checklists shine when important recurring checks must be applied consistently. They turn prior learning into repeatable coverage."
     },
     {
@@ -1824,12 +1824,12 @@
       "difficulty": "easy",
       "question": "What is the PRIMARY purpose of a debrief after an exploratory session?",
       "options": [
-        "To decide who caused each defect",
-        "To share findings, coverage achieved, obstacles encountered, and next ideas",
-        "To convert all notes into source code comments",
-        "To replace defect reports"
+        "To share findings, coverage, obstacles, and ideas for next sessions",
+        "To decide which developer was responsible for causing each of the defects that were found",
+        "To convert all session notes into comments in the source code",
+        "To replace the formal defect reports for the session"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "A debrief turns individual learning into team knowledge. It also clarifies what was covered and what should happen next."
     },
     {
@@ -1839,12 +1839,12 @@
       "difficulty": "medium",
       "question": "Which scenario is a strong example of error guessing for a file-upload feature?",
       "options": [
+        "Uploading a single ordinary PDF a single time and checking that it is listed afterwards",
         "Uploading a file with a very long name and unsupported special characters",
-        "Uploading one normal PDF once",
-        "Changing the office printer settings",
+        "Changing the settings of the office printer",
         "Reviewing the release burndown chart"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Error guessing draws on experience with common failure patterns. Long names and unusual characters are typical trouble spots for upload handling."
     },
     {
@@ -1854,12 +1854,12 @@
       "difficulty": "hard",
       "question": "Which artifact from session-based exploratory testing MOST supports accountability and repeatability?",
       "options": [
-        "A memory of what the tester tried",
-        "Session notes that capture the charter, time spent, data used, and issues found",
-        "A screenshot of the team calendar",
-        "A count of lines of code changed"
+        "A recollection of what the tester tried, written down some days after the session",
+        "A screenshot of the team calendar for the week",
+        "A count of the lines of code changed in the build",
+        "Session notes capturing the charter, time spent, data used, and issues found"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Structured session notes help others understand what was explored and what was observed. That makes follow-up and review far easier."
     },
     {
@@ -1869,12 +1869,12 @@
       "difficulty": "easy",
       "question": "Where should checklist items MOST often come from?",
       "options": [
+        "The personal preference of the newest tester alone",
         "Past defects, standards, and known product risks",
-        "Only the personal preference of the newest tester",
-        "The team lunch schedule",
-        "Whatever was easiest to automate last sprint"
+        "The team's lunch schedule on testing days",
+        "Whatever happened to be easiest to automate last sprint"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Useful checklists are grounded in evidence and experience. Past failures, domain rules, and risks are much stronger sources than convenience alone."
     },
     {
@@ -1884,10 +1884,10 @@
       "difficulty": "medium",
       "question": "What is a key benefit of paired exploratory testing?",
       "options": [
-        "One tester can drive while the other observes, questions, and suggests additional paths",
-        "It guarantees twice as many defects",
-        "It removes the need for a charter",
-        "It works only for API testing"
+        "One tester drives while the other observes, questions, and suggests more paths",
+        "It guarantees that twice as many defects will be found as one tester would find alone",
+        "It removes the need for a charter during the session",
+        "It is possible only when testing APIs"
       ],
       "correctIndex": 0,
       "explanation": "Pairing can improve idea generation and observation quality because the two testers play complementary roles. It also supports knowledge sharing."
@@ -1899,12 +1899,12 @@
       "difficulty": "hard",
       "question": "A charter says, 'Test the whole app.' What is the BEST improvement?",
       "options": [
-        "Make it broader so nothing is missed",
         "Narrow it to a feature, workflow, or risk area with a clear mission",
+        "Make it broader so that nothing in the application is missed during the session",
         "Convert it directly into a defect report",
-        "Remove all goals and let the tester improvise"
+        "Drop all goals and let the tester improvise"
       ],
-      "correctIndex": 1,
+      "correctIndex": 0,
       "explanation": "A charter should focus effort rather than dilute it. Narrowing the scope makes the session more purposeful and the results more useful."
     },
     {
@@ -1914,10 +1914,10 @@
       "difficulty": "easy",
       "question": "Why should exploratory testers vary data in both realistic and unrealistic ways?",
       "options": [
-        "To reveal defects in normal flows and robustness handling",
-        "Because requirements never matter during exploration",
-        "Only unrealistic data can expose defects",
-        "It shortens every test session automatically"
+        "To reveal defects in normal flows as well as in robustness handling",
+        "Because requirements never matter at all while the tester is exploring the product",
+        "Because only unrealistic data can expose defects",
+        "Because it shortens every test session automatically"
       ],
       "correctIndex": 0,
       "explanation": "Realistic data checks likely usage, while unrealistic data probes resilience and edge handling. Both perspectives add value."
@@ -1929,12 +1929,12 @@
       "difficulty": "medium",
       "question": "When should a testing checklist be revised or retired?",
       "options": [
-        "Whenever items become obsolete or escaped defects show important checks are missing",
-        "Never, because stable lists are always correct",
-        "Only when a new project manager joins",
-        "Only after the repository is renamed"
+        "Never, because a list that has been stable for a long time is always still correct",
+        "When items are obsolete or escaped defects show that key checks are missing",
+        "Only when a new project manager joins the team",
+        "Only after the repository has been renamed"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "A checklist should evolve with the product and with new learning. Obsolete items waste effort, while missing checks leave risk uncovered."
     },
     {
@@ -1944,10 +1944,10 @@
       "difficulty": "hard",
       "question": "What distinguishes exploratory testing from completely ad hoc testing?",
       "options": [
-        "Exploratory testing has a deliberate mission, learning focus, and note-taking discipline",
-        "Exploratory testing forbids deviations from a full script",
-        "Ad hoc testing always has more traceability",
-        "There is no meaningful distinction"
+        "It has a deliberate mission, a learning focus, and disciplined note-taking",
+        "Exploratory testing forbids any deviation from a fully written test script of steps",
+        "Ad hoc testing always provides stronger traceability",
+        "There is no meaningful distinction between the two"
       ],
       "correctIndex": 0,
       "explanation": "Exploratory testing is flexible, but it is not aimless. Charters, learning, and lightweight structure separate it from purely unstructured ad hoc work."
@@ -1959,12 +1959,12 @@
       "difficulty": "easy",
       "question": "How can personas improve experience-based testing?",
       "options": [
-        "They guide scenarios based on different user goals, skills, and frustrations",
-        "They replace the need for requirements",
-        "They matter only for performance testing",
+        "They replace the need for written requirements as the basis for test design work",
+        "They guide scenarios around differing user goals, skills, and frustrations",
+        "They matter only when performance testing is performed",
         "They ensure that only positive tests are executed"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Personas help testers imagine varied real-world behaviors and needs. That often uncovers issues that a single generic user viewpoint would miss."
     },
     {
@@ -1974,12 +1974,12 @@
       "difficulty": "medium",
       "question": "A tester keeps re-running their favorite scenarios during exploration. What risk does this create?",
       "options": [
-        "Improved requirement clarity",
-        "Coverage bias that leaves other important areas underexplored",
-        "Automatic boundary coverage",
-        "A stronger defect taxonomy"
+        "Coverage bias, so other important areas remain underexplored",
+        "Automatic coverage of all the boundary values",
+        "A stronger defect taxonomy for later projects",
+        "Coverage bias that leaves other important areas underexplored"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "Experience-based techniques can drift toward comfortable paths unless guided. Charters, heuristics, and debriefs help counter coverage bias."
     },
     {
@@ -1989,12 +1989,12 @@
       "difficulty": "hard",
       "question": "What is the BEST way to combine scripted and exploratory testing on the same feature?",
       "options": [
-        "Use scripted tests for core regression and exploratory sessions for discovering new risks around changes",
-        "Run only exploratory sessions because scripts are obsolete",
-        "Run only scripts because exploration is never repeatable",
-        "Keep the two approaches on separate releases"
+        "Only exploratory sessions, because scripted tests are obsolete in modern projects",
+        "Only scripts, because exploration can never be repeated",
+        "Keep the two approaches on separate releases",
+        "Scripts for core regression; exploratory sessions for new risks around changes"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "The two approaches complement each other well. Scripts provide reliable regression coverage, while exploration helps uncover new or unanticipated problems."
     },
     {
@@ -2004,10 +2004,10 @@
       "difficulty": "easy",
       "question": "Which exploratory approach BEST supports testing an API with many optional filters?",
       "options": [
-        "A charter that focuses on filter combinations, omitted parameters, and suspicious defaults",
-        "A charter that only checks whether the server starts",
-        "No charter, because APIs cannot be explored",
-        "A checklist about office network speed"
+        "A charter on filter combinations, omitted parameters, and suspicious defaults",
+        "A charter that checks only whether the server process starts up without crashing",
+        "No charter at all, since APIs cannot be explored",
+        "A checklist about the speed of the office network"
       ],
       "correctIndex": 0,
       "explanation": "Even without a GUI, exploratory testing can be focused and effective. Optional filters and defaults are rich areas for discovery in APIs."
@@ -2019,12 +2019,12 @@
       "difficulty": "medium",
       "question": "A requested export format is completely missing from the delivered product. Which quality characteristic is PRIMARILY affected?",
       "options": [
-        "Functional completeness",
         "Usability accessibility",
         "Portability installability",
-        "Compatibility coexistence"
+        "Compatibility coexistence",
+        "Functional completeness"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "Functional completeness concerns whether the necessary functions are present. A missing requested export format is a straightforward example."
     },
     {
@@ -2064,12 +2064,12 @@
       "difficulty": "medium",
       "question": "On the landing page, new users cannot tell where to begin their main task. Which usability sub-characteristic does this MOST threaten?",
       "options": [
-        "Appropriateness recognizability",
-        "Installability",
+        "Installability, because the user cannot find out how to begin installing the product",
         "Maturity",
-        "Confidentiality"
+        "Confidentiality",
+        "Appropriateness recognizability"
       ],
-      "correctIndex": 0,
+      "correctIndex": 3,
       "explanation": "If users cannot recognize how to start using the system for their goals, appropriateness recognizability is weak. This is a usability concern, not a portability one."
     },
     {
@@ -2079,12 +2079,12 @@
       "difficulty": "hard",
       "question": "Which test idea BEST addresses user error protection for a destructive action?",
       "options": [
-        "Check whether the button label uses a bold font",
-        "Verify that deletion requires confirmation and offers recovery where appropriate",
-        "Measure the CPU time for the delete request",
-        "Review the developer checklist"
+        "Check whether the button label uses a bold font that matches the style guide",
+        "Measure the CPU time taken by the delete request",
+        "Review the checklist the developers use",
+        "Verify that deletion requires confirmation and offers recovery where suitable"
       ],
-      "correctIndex": 1,
+      "correctIndex": 3,
       "explanation": "User error protection reduces the chance or consequence of mistakes. Confirmation and recovery are classic checks for destructive operations."
     },
     {
@@ -2094,12 +2094,12 @@
       "difficulty": "easy",
       "question": "Why is an automated accessibility scan alone usually insufficient?",
       "options": [
-        "It cannot check anything about HTML",
-        "It misses important real-usage issues such as screen-reader flow and keyboard interaction quality",
-        "It always produces false positives only",
+        "It cannot check anything about the HTML structure and attributes of a page at all",
+        "It always produces false positives and nothing else",
+        "It can miss real-usage issues such as screen-reader flow and keyboard interaction",
         "It is relevant only for performance testing"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Automated tools are valuable, but they cannot fully assess lived accessibility. Manual checks remain important for interaction quality and actual assistive-technology use."
     },
     {
@@ -2124,12 +2124,12 @@
       "difficulty": "hard",
       "question": "Two connected systems exchange dates, but one expects DD/MM/YYYY and the other expects MM/DD/YYYY. What should interoperability testing focus on MOST?",
       "options": [
-        "Team meeting cadence",
-        "Data mapping and semantic consistency between systems",
-        "Only page layout on the sender side",
+        "Team meeting cadence and the communication habits between the two development groups",
+        "Page layout on the sender side only",
+        "Data mapping and semantic consistency between the systems",
         "Compiler warnings in unrelated modules"
       ],
-      "correctIndex": 1,
+      "correctIndex": 2,
       "explanation": "Interoperability is not just about sending data; it is about agreeing on meaning. Date-format mismatches are a classic semantic-integration risk."
     },
     {
@@ -2139,12 +2139,12 @@
       "difficulty": "easy",
       "question": "Which scenario BEST targets installability?",
       "options": [
-        "Checking whether a supported first-time installation and an upgrade both complete successfully with clear recovery on failure",
-        "Verifying tax formulas for invoices",
-        "Testing whether a button is centered",
+        "Verifying the tax formulas that are used when invoices are produced for customers",
+        "A first-time install and an upgrade both complete, with clear recovery on failure",
+        "Testing whether a button is centered on the page",
         "Reviewing defect trends from another project"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Installability testing focuses on how successfully the product can be installed, updated, or recovered. First-time and upgrade paths are both important."
     },
     {
@@ -2154,12 +2154,12 @@
       "difficulty": "medium",
       "question": "A web application must remain usable on both a desktop monitor and a tablet browser without product changes. Which portability sub-characteristic is MOST relevant?",
       "options": [
-        "Adaptability",
         "Accessibility",
         "Interoperability",
+        "Adaptability",
         "Recoverability"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Adaptability addresses how well software can operate in different environments without additional modification. Device and display variation is a common example."
     },
     {
@@ -2169,12 +2169,12 @@
       "difficulty": "hard",
       "question": "A team wants to swap one reporting engine for another without changing dependent business workflows. Which portability sub-characteristic is MOST relevant?",
       "options": [
-        "Replaceability",
         "User error protection",
+        "Replaceability",
         "Appropriateness recognizability",
         "Co-existence"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Replaceability concerns how well one product or component can be substituted for another in the same environment. That is the central issue in this scenario."
     },
     {
@@ -2185,9 +2185,9 @@
       "question": "Which evidence MOST directly supports a claim that a workflow is usable?",
       "options": [
         "Representative users complete key tasks with little help and few avoidable errors",
-        "The code coverage percentage increased",
-        "The project finished ahead of schedule",
-        "All logs were archived"
+        "The code coverage percentage has increased steadily during the last three builds",
+        "The project finished ahead of its planned schedule",
+        "All of the log files have been archived properly"
       ],
       "correctIndex": 0,
       "explanation": "Usability is best supported by evidence from realistic task performance. Successful task completion with low assistance and low error rates is strong evidence."
@@ -2199,12 +2199,12 @@
       "difficulty": "medium",
       "question": "A button label expands in German so far that the primary action is partly hidden. Which quality characteristic is MOST directly affected?",
       "options": [
-        "Usability",
         "Portability",
+        "Usability",
         "Maturity",
         "Modularity"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "If localization changes make an action hard to perceive or operate, the most direct problem is usability. The issue affects how users interact with the interface."
     },
     {
@@ -2214,12 +2214,12 @@
       "difficulty": "hard",
       "question": "Why do usability tests often need observation and defined heuristics rather than one exact expected output?",
       "options": [
-        "Because usability outcomes can involve human behavior and judgment, not only deterministic results",
-        "Because usability cannot be tested",
-        "Because heuristics replace all requirements",
-        "Because observation is useful only for security testing"
+        "Because usability cannot be tested in any meaningful way by a team of testers",
+        "Because heuristics are meant to replace all of the written requirements of the product",
+        "Because usability outcomes involve human behavior and judgment, not just fixed results",
+        "Because observation is useful only in security testing"
       ],
-      "correctIndex": 0,
+      "correctIndex": 2,
       "explanation": "Usability testing often deals with human behavior, confusion, and efficiency, which are not always captured by one exact output value. Structured observation helps form defensible verdicts."
     },
     {
@@ -2230,9 +2230,9 @@
       "question": "A partner system returns an unknown enumeration value in a response. What should a strong interoperability test expect?",
       "options": [
         "Graceful handling with a clear error or fallback and no data corruption",
-        "Automatic acceptance of all unknown values without logging",
-        "An application crash so the issue is obvious",
-        "A silent retry loop forever"
+        "Automatic acceptance of all unknown values without any logging of the unexpected data",
+        "An application crash so that the issue is obvious",
+        "A silent retry loop that runs indefinitely"
       ],
       "correctIndex": 0,
       "explanation": "Robust interoperability includes safe handling of unexpected but plausible external data. Graceful behavior is better than corruption, crashing, or endless retrying."
@@ -2244,12 +2244,12 @@
       "difficulty": "medium",
       "question": "After uninstalling and reinstalling the product, obsolete configuration is reused incorrectly and setup fails. What does this MOST likely indicate?",
       "options": [
+        "A pure security defect that has nothing to do with portability or installation",
         "A portability defect related to installability or configuration migration",
-        "A pure security defect unrelated to portability",
-        "Only a documentation typo",
-        "A defect in decision table logic"
+        "Only a typo in the installation documentation",
+        "A defect in the logic of a decision table"
       ],
-      "correctIndex": 0,
+      "correctIndex": 1,
       "explanation": "Installation and reinstallation flows are part of portability-related quality concerns. Incorrect reuse of obsolete configuration points to a setup or migration defect."
     }
   ]
