@@ -126,6 +126,8 @@
           <div class="header-actions">
             <nav class="main-nav">
               <a href="index.html">Modules</a>
+              <a href="guides.html">Guides</a>
+              <a href="faq.html">FAQ</a>
               <a href="about.html">About</a>
             </nav>
             <button type="button" class="btn btn-secondary" id="theme-toggle" aria-label="Toggle dark mode"></button>
@@ -183,6 +185,8 @@
           <p>
             &copy; <span id="footer-year"></span> QAQEST &middot;
             <a href="https://brutecarlos.github.io/privacy.html">Privacy Policy</a> &middot;
+            <a href="guides.html">Study guides</a> &middot;
+            <a href="faq.html">FAQ</a> &middot;
             <a href="https://brutecarlos.github.io/">About the author</a> &middot;
             <a href="https://github.com/brutecarlos/qaqest" target="_blank" rel="noopener">
               Source on GitHub
