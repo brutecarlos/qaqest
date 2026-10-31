@@ -125,7 +125,9 @@
           </a>
           <div class="header-actions">
             <nav class="main-nav">
+              <a href="start.html">Start here</a>
               <a href="index.html">Modules</a>
+              <a href="planner.html">Study planner</a>
               <a href="guides.html">Guides</a>
               <a href="faq.html">FAQ</a>
               <a href="about.html">About</a>
@@ -185,6 +187,8 @@
           <p>
             &copy; <span id="footer-year"></span> QAQEST &middot;
             <a href="https://brutecarlos.github.io/privacy.html">Privacy Policy</a> &middot;
+            <a href="start.html">Start here</a> &middot;
+            <a href="planner.html">Study planner</a> &middot;
             <a href="guides.html">Study guides</a> &middot;
             <a href="faq.html">FAQ</a> &middot;
             <a href="https://brutecarlos.github.io/">About the author</a> &middot;
