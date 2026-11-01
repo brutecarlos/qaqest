@@ -145,7 +145,7 @@ const QAQuest = (() => {
   }
 
   function exportProgress() {
-    const payload = { app: "QAQuest", version: 1, exportedAt: new Date().toISOString(), progress: loadProgress(), gamification: QAQuest.Badges ? QAQuest.Badges.loadStore() : undefined };
+    const payload = { app: "QAQuest", version: 1, exportedAt: new Date().toISOString(), progress: loadProgress(), gamification: QAQuest.Badges ? QAQuest.Badges.loadStore() : undefined, daily: QAQuest.DailyQuestion ? QAQuest.DailyQuestion.load() : undefined };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     const a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
@@ -159,6 +159,9 @@ const QAQuest = (() => {
   /** Merges imported attempts into existing progress, skipping duplicates by date+mode. */
   async function importProgressFile(file) {
     const parsed = JSON.parse(await file.text());
+    const importedDaily = parsed && parsed.daily !== undefined && QAQuest.DailyQuestion
+      ? QAQuest.DailyQuestion.validate(parsed.daily)
+      : null;
     const incoming = validateProgress(parsed && parsed.app === "QAQuest" ? parsed.progress : null);
     const current = loadProgress();
     let added = 0;
@@ -179,6 +182,9 @@ const QAQuest = (() => {
       if (!store.displayName) store.displayName = inc.displayName;
       QAQuest.Badges.saveStore(store);
       QAQuest.Badges.update();
+    }
+    if (QAQuest.DailyQuestion && importedDaily) {
+      QAQuest.DailyQuestion.merge(importedDaily);
     }
     return added;
   }
