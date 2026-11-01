@@ -120,7 +120,8 @@
         "Las pruebas de transición de estado, porque las transiciones se infieren únicamente a partir de la experiencia"
       ],
       "correctIndex": 0,
-      "explanation": "La estimación de errores es una técnica basada en la experiencia. El analista utiliza sus conocimientos sobre errores habituales y defectos anteriores para anticipar dónde pueden surgir problemas, sin recurrir a un modelo formal."
+      "explanation": "La estimación de errores es una técnica basada en la experiencia. El analista utiliza sus conocimientos sobre errores habituales y defectos anteriores para anticipar dónde pueden surgir problemas, sin recurrir a un modelo formal.",
+      "note": "La técnica conocida como error guessing se denomina a veces “predicción de errores” o “adivinación de errores”; “estimación” puede confundirse con estimación de esfuerzo."
     },
     {
       "id": "al-ta-009",
@@ -135,7 +136,8 @@
         "La fiabilidad, que abarca la continuidad del funcionamiento del sistema"
       ],
       "correctIndex": 2,
-      "explanation": "Las pruebas de usabilidad evalúan la facilidad con la que los usuarios previstos pueden aprender a utilizar un sistema, manejarlo y usarlo eficazmente. Es un área de interés principal del analista de pruebas relacionada con la funcionalidad."
+      "explanation": "Las pruebas de usabilidad evalúan la facilidad con la que los usuarios previstos pueden aprender a utilizar un sistema, manejarlo y usarlo eficazmente. Es un área de interés principal del analista de pruebas relacionada con la funcionalidad.",
+      "note": "La característica de calidad maintainability se suele llamar “mantenibilidad” en español."
     },
     {
       "id": "al-ta-010",
@@ -480,7 +482,8 @@
         "Necesita un entorno de ejecución automatizada de pruebas completamente configurado antes de poder utilizarse"
       ],
       "correctIndex": 2,
-      "explanation": "La estimación de errores es una técnica basada en la experiencia en la que los analistas utilizan sus conocimientos, intuición y experiencia para anticipar defectos probables y diseñar pruebas para encontrarlos, sin derivarlas sistemáticamente de documentos formales de la base de pruebas."
+      "explanation": "La estimación de errores es una técnica basada en la experiencia en la que los analistas utilizan sus conocimientos, intuición y experiencia para anticipar defectos probables y diseñar pruebas para encontrarlos, sin derivarlas sistemáticamente de documentos formales de la base de pruebas.",
+      "note": "Error guessing se basa en experiencia e intuición para anticipar defectos; no es una estimación del esfuerzo de prueba."
     },
     {
       "id": "al-ta-033",
@@ -510,7 +513,8 @@
         "La compatibilidad, porque abarca compartir un entorno con otros productos"
       ],
       "correctIndex": 2,
-      "explanation": "Las pruebas de usabilidad se centran en la facilidad con la que los usuarios pueden comprender, aprender a utilizar y manejar el sistema para alcanzar sus objetivos de forma eficaz y satisfactoria. Es un área de calidad central para los analistas de pruebas."
+      "explanation": "Las pruebas de usabilidad se centran en la facilidad con la que los usuarios pueden comprender, aprender a utilizar y manejar el sistema para alcanzar sus objetivos de forma eficaz y satisfactoria. Es un área de calidad central para los analistas de pruebas.",
+      "note": "“Mantenibilidad” es el término habitual para la facilidad de analizar, modificar, probar y corregir un producto."
     },
     {
       "id": "al-ta-035",
@@ -1155,7 +1159,8 @@
         "Omitir la limpieza, ya que las pruebas posteriores podrían reutilizar los datos restantes"
       ],
       "correctIndex": 2,
-      "explanation": "El orden de ejecución debe respetar las dependencias de datos. Una preparación y limpieza claras hacen que el conjunto sea repetible y reducen los falsos fallos."
+      "explanation": "El orden de ejecución debe respetar las dependencias de datos. Una preparación y limpieza claras hacen que el conjunto sea repetible y reducen los falsos fallos.",
+      "note": "“Falsos fallos” se refiere a falsos positivos: resultados que indican un problema cuando no existe un defecto real."
     },
     {
       "id": "al-ta-078",
@@ -1845,7 +1850,8 @@
         "Revisar el gráfico de evolución del proyecto"
       ],
       "correctIndex": 1,
-      "explanation": "La estimación de errores se basa en la experiencia con patrones de fallo habituales. Los nombres largos y los caracteres inusuales suelen causar problemas en la gestión de cargas."
+      "explanation": "La estimación de errores se basa en la experiencia con patrones de fallo habituales. Los nombres largos y los caracteres inusuales suelen causar problemas en la gestión de cargas.",
+      "note": "“Estimación de errores” se usa aquí para error guessing; “predicción de errores” evita confundirlo con calcular esfuerzo o costo."
     },
     {
       "id": "al-ta-124",
@@ -2100,7 +2106,8 @@
         "Solo es pertinente para las pruebas de rendimiento"
       ],
       "correctIndex": 2,
-      "explanation": "Las herramientas automatizadas son valiosas, pero no pueden evaluar por completo la accesibilidad en el uso real. Siguen siendo importantes las comprobaciones manuales de la calidad de la interacción y del uso de tecnologías de asistencia."
+      "explanation": "Las herramientas automatizadas son valiosas, pero no pueden evaluar por completo la accesibilidad en el uso real. Siguen siendo importantes las comprobaciones manuales de la calidad de la interacción y del uso de tecnologías de asistencia.",
+      "note": "Un falso positivo es una alerta o resultado que parece señalar un defecto, pero que no se confirma como problema real."
     },
     {
       "id": "al-ta-141",

@@ -163,6 +163,7 @@
       content.innerHTML = `<p class="module-desc">${QAQuest.escapeHTML(module.shortName)} · ${QAQuest.escapeHTML(question.chapter)} · ${QAQuest.escapeHTML(QAQuest.difficultyLabel(question.difficulty))}</p>
         <form id="daily-question-form">
           <fieldset><legend>${QAQuest.escapeHTML(question.question)}</legend>
+            ${question.note ? `<details class="question-note"><summary aria-label="Mostrar nota terminológica">Nota terminológica</summary><p>${QAQuest.escapeHTML(question.note)}</p></details>` : ""}
             ${question.options.map((option, i) => `<label class="daily-option"><input type="radio" name="daily-answer" value="${i}"${i === 0 && !prior ? " required" : ""}${prior ? " disabled" : ""}${prior && prior.selectedIndex === i ? " checked" : ""}> ${QAQuest.escapeHTML(option)}</label>`).join("")}
           </fieldset>
           <button type="submit" class="btn btn-primary"${prior ? " disabled" : ""}>Comprobar respuesta</button>

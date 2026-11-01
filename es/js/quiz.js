@@ -36,6 +36,7 @@
         loRef: q.loRef,
         difficulty: q.difficulty,
         question: q.question,
+        note: q.note,
         explanation: q.explanation,
         options: optionOrder.map((o) => o.text),
         correctIndex,
@@ -167,6 +168,7 @@
       displayDifficulty(q.difficulty)
     )}</div>
         <div class="question-text">${QAQuest.escapeHTML(q.question)}</div>
+        ${q.note ? `<details class="question-note"><summary aria-label="Mostrar nota terminológica">Nota terminológica</summary><p>${QAQuest.escapeHTML(q.note)}</p></details>` : ""}
         <ul class="options-list" id="options-list">${optionsHtml}</ul>
         ${feedbackHtml}
         <div class="question-tools">
@@ -221,6 +223,7 @@
         question: q.question,
         chapter: q.chapter,
         loRef: q.loRef,
+        note: q.note,
         options: q.options,
         correctIndex: q.correctIndex,
         selectedIndex: selected === undefined ? null : selected,

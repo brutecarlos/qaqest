@@ -1,4 +1,4 @@
-const CACHE = "qaqest-es-v1";
+const CACHE = "qaqest-es-v2";
 const SHELL = [
   "./",
   "index.html",
@@ -29,6 +29,12 @@ const SHELL = [
   "js/results.js",
   "js/start.js",
   "js/planner.js",
+  "../css/styles.css",
+  "../js/adsense-config.js",
+  "../assets/favicon.svg",
+  "../assets/favicon-32.png",
+  "../assets/favicon.ico",
+  "../assets/apple-touch-icon.png",
   "data/modules.json",
   "manifest.webmanifest",
   "data/questions/agile-tester.json",

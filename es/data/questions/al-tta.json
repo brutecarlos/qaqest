@@ -150,7 +150,8 @@
         "Compatibilidad"
       ],
       "correctIndex": 2,
-      "explanation": "La capacidad de mantenimiento evalúa la facilidad de modificar el software, ya sea para corregirlo, adaptarlo o mejorarlo, y también abarca su analizabilidad y capacidad de prueba."
+      "explanation": "La capacidad de mantenimiento evalúa la facilidad de modificar el software, ya sea para corregirlo, adaptarlo o mejorarlo, y también abarca su analizabilidad y capacidad de prueba.",
+      "note": "El término habitual para maintainability en español es “mantenibilidad”."
     },
     {
       "id": "al-tta-011",
@@ -780,7 +781,8 @@
         "No se puede combinar con ningún tipo de ejecución automatizada"
       ],
       "correctIndex": 0,
-      "explanation": "Para presentar evidencias en un entorno regulado, puede ser necesario justificar, validar o cualificar el propio método de medición."
+      "explanation": "Para presentar evidencias en un entorno regulado, puede ser necesario justificar, validar o cualificar el propio método de medición.",
+      "note": "“Arnés de prueba” (test harness) es el entorno o conjunto de componentes que permite ejecutar y medir pruebas."
     },
     {
       "id": "al-tta-053",

@@ -525,7 +525,8 @@
         "La cantidad de líneas de código del marco de automatización, aunque el público destinatario no pueda actuar en función del resultado"
       ],
       "correctIndex": 1,
-      "explanation": "El ROI compara los costos del ciclo de vida, incluida la configuración y el mantenimiento, con beneficios como el tiempo ahorrado y los resultados de calidad medibles. Los defectos detectados pueden aportar información, pero no deben tratarse como valor financiero sin una relación demostrable."
+      "explanation": "El ROI compara los costos del ciclo de vida, incluida la configuración y el mantenimiento, con beneficios como el tiempo ahorrado y los resultados de calidad medibles. Los defectos detectados pueden aportar información, pero no deben tratarse como valor financiero sin una relación demostrable.",
+      "note": "ROI significa retorno de la inversión: compara costos de automatización y mantenimiento con beneficios medibles."
     },
     {
       "id": "ta-036",
@@ -1755,7 +1756,8 @@
         "Desactivar por completo la automatización hasta comprar más hardware"
       ],
       "correctIndex": 1,
-      "explanation": "La ejecución por etapas es una contingencia habitual cuando la infraestructura es limitada. Conserva la retroalimentación rápida y permite ejecutar más adelante una cobertura amplia."
+      "explanation": "La ejecución por etapas es una contingencia habitual cuando la infraestructura es limitada. Conserva la retroalimentación rápida y permite ejecutar más adelante una cobertura amplia.",
+      "note": "“Confirmación de código” es un commit en el repositorio; no debe confundirse con las pruebas de confirmación."
     },
     {
       "id": "ta-118",
@@ -1785,7 +1787,8 @@
         "Mejoran la coherencia y facilitan detectar pronto defectos en los activos de automatización"
       ],
       "correctIndex": 3,
-      "explanation": "La disciplina de ingeniería ayuda a que el código de automatización siga siendo comprensible y sólido. Las revisiones pueden detectar patrones frágiles antes de que se extiendan."
+      "explanation": "La disciplina de ingeniería ayuda a que el código de automatización siga siendo comprensible y sólido. Las revisiones pueden detectar patrones frágiles antes de que se extiendan.",
+      "note": "“Falso positivo” es un resultado que indica incorrectamente que hay un fallo; se diferencia de un defecto real."
     },
     {
       "id": "ta-120",
@@ -2055,7 +2058,8 @@
         "Distingue los defectos del producto de los problemas de scripts y del entorno para facilitar las acciones apropiadas"
       ],
       "correctIndex": 3,
-      "explanation": "La clasificación ayuda a asignar los fallos a los responsables adecuados y a detectar problemas sistémicos. No todas las pruebas fallidas tienen la misma causa ni prioridad."
+      "explanation": "La clasificación ayuda a asignar los fallos a los responsables adecuados y a detectar problemas sistémicos. No todas las pruebas fallidas tienen la misma causa ni prioridad.",
+      "note": "Un falso positivo es una señal incorrecta de defecto. La fiabilidad y el contexto de la cobertura ayudan a interpretarla."
     },
     {
       "id": "ta-138",
@@ -2085,7 +2089,8 @@
         "Todos los localizadores usados por el marco de interfaz"
       ],
       "correctIndex": 1,
-      "explanation": "Las decisiones de versión dependen del riesgo actual, no solo del volumen de información. Los resultados de rutas críticas y sus limitaciones deben mostrarse de inmediato."
+      "explanation": "Las decisiones de versión dependen del riesgo actual, no solo del volumen de información. Los resultados de rutas críticas y sus limitaciones deben mostrarse de inmediato.",
+      "note": "“Confirmación de código” se refiere a un commit que puede asociarse con una ejecución automatizada."
     },
     {
       "id": "ta-140",
@@ -2190,7 +2195,8 @@
         "Ayudan a determinar si los fallos se limitan a una línea de cambios o son generalizados"
       ],
       "correctIndex": 3,
-      "explanation": "El contexto de rama ayuda a relacionar los fallos con el código que se está modificando. Esto agiliza la clasificación y reduce la confusión cuando hay varios flujos activos."
+      "explanation": "El contexto de rama ayuda a relacionar los fallos con el código que se está modificando. Esto agiliza la clasificación y reduce la confusión cuando hay varios flujos activos.",
+      "note": "Aquí “confirmación de código” quiere decir commit, no prueba de confirmación."
     },
     {
       "id": "ta-147",
@@ -2220,7 +2226,8 @@
         "Es pertinente para la ejecución manual de pruebas"
       ],
       "correctIndex": 0,
-      "explanation": "Saber cuándo pasó una prueba por última vez ayuda a centrar la investigación en los cambios recientes. Es especialmente útil en canalizaciones que cambian rápidamente."
+      "explanation": "Saber cuándo pasó una prueba por última vez ayuda a centrar la investigación en los cambios recientes. Es especialmente útil en canalizaciones que cambian rápidamente.",
+      "note": "El último commit o cambio en el que una prueba pasó ayuda a acotar qué modificaciones pudieron causar la regresión."
     },
     {
       "id": "ta-149",

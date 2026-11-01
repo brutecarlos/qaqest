@@ -60,7 +60,8 @@
         "Reflexionar sobre el sprint anterior e identificar mejoras del proceso para los próximos sprints"
       ],
       "correctIndex": 3,
-      "explanation": "La retrospectiva del sprint es un evento de Scrum en el que el equipo reflexiona sobre cómo transcurrió el sprint (personas, proceso y herramientas) e identifica mejoras para los siguientes sprints."
+      "explanation": "La retrospectiva del sprint es un evento de Scrum en el que el equipo reflexiona sobre cómo transcurrió el sprint (personas, proceso y herramientas) e identifica mejoras para los siguientes sprints.",
+      "note": "En Scrum, “retrospectiva” es el término para la reunión de mejora al final del sprint; la revisión del sprint tiene otro propósito."
     },
     {
       "id": "at-005",
@@ -75,7 +76,8 @@
         "La definición de terminado"
       ],
       "correctIndex": 0,
-      "explanation": "La pila del producto es la lista única y ordenada de funcionalidades, requisitos y correcciones que podrían necesitarse en el producto, gestionada por el propietario del producto."
+      "explanation": "La pila del producto es la lista única y ordenada de funcionalidades, requisitos y correcciones que podrían necesitarse en el producto, gestionada por el propietario del producto.",
+      "note": "“Pila del producto” traduce literalmente product backlog. En español también se usa “backlog del producto” o simplemente “backlog”."
     },
     {
       "id": "at-006",
@@ -165,7 +167,8 @@
         "Porque eliminan la necesidad de una definición de terminado para que las partes interesadas puedan aportar comentarios oportunos"
       ],
       "correctIndex": 2,
-      "explanation": "Las pruebas exploratorias aportan una perspectiva nueva e investigativa que puede revelar problemas no cubiertos por las pruebas con guion derivadas de los mismos criterios de aceptación."
+      "explanation": "Las pruebas exploratorias aportan una perspectiva nueva e investigativa que puede revelar problemas no cubiertos por las pruebas con guion derivadas de los mismos criterios de aceptación.",
+      "note": "“Guion de prueba” puede traducir test script; en muchos equipos se conserva “script”. Conviene distinguirlo de los casos de prueba y de la automatización."
     },
     {
       "id": "at-012",
@@ -195,7 +198,8 @@
         "Poder asignar puntos de historia sin consultar al equipo, como prioridad del equipo"
       ],
       "correctIndex": 0,
-      "explanation": "Una aportación clave de los probadores durante el perfeccionamiento es hacer preguntas incisivas sobre casos límite, ambigüedades y criterios de aceptación ausentes, para ayudar al equipo a definir historias más claras y comprobables."
+      "explanation": "Una aportación clave de los probadores durante el perfeccionamiento es hacer preguntas incisivas sobre casos límite, ambigüedades y criterios de aceptación ausentes, para ayudar al equipo a definir historias más claras y comprobables.",
+      "note": "“Perfeccionamiento del backlog” (backlog refinement) es el trabajo continuo de aclarar y ordenar elementos futuros del producto."
     },
     {
       "id": "at-014",
@@ -270,7 +274,8 @@
         "La automatización de pruebas elimina por completo la paradoja del pesticida y ayuda al equipo a coordinar sus próximos pasos"
       ],
       "correctIndex": 1,
-      "explanation": "A medida que cambia la aplicación, las pruebas automatizadas pueden quedar obsoletas o volverse frágiles, generar fallos falsos o no detectar nuevas áreas de riesgo si no se mantienen y revisan activamente."
+      "explanation": "A medida que cambia la aplicación, las pruebas automatizadas pueden quedar obsoletas o volverse frágiles, generar fallos falsos o no detectar nuevas áreas de riesgo si no se mantienen y revisan activamente.",
+      "note": "“Falso positivo” significa que una prueba informa un fallo aunque el comportamiento observado no sea un defecto real. “Prueba frágil” es una prueba sensible a cambios no relevantes."
     },
     {
       "id": "at-019",
@@ -495,7 +500,8 @@
         "Escribir el código de producción de la historia que se está perfeccionando para que las partes interesadas aporten comentarios oportunos"
       ],
       "correctIndex": 0,
-      "explanation": "Durante el perfeccionamiento, los probadores aportan una perspectiva de calidad al hacer preguntas que revelan ambigüedades, criterios de aceptación ausentes y casos límite antes de empezar el desarrollo."
+      "explanation": "Durante el perfeccionamiento, los probadores aportan una perspectiva de calidad al hacer preguntas que revelan ambigüedades, criterios de aceptación ausentes y casos límite antes de empezar el desarrollo.",
+      "note": "“Backlog del sprint” es una expresión habitual en equipos ágiles; también puede decirse “lista de trabajo del sprint”."
     },
     {
       "id": "at-034",
@@ -585,7 +591,8 @@
         "Sustituye la necesidad de un sistema de control de versiones, teniendo en cuenta al equipo"
       ],
       "correctIndex": 2,
-      "explanation": "Ejecutar pruebas automatizadas con cada confirmación de código mediante CI proporciona al equipo comentarios rápidos sobre si los cambios recientes introdujeron regresiones y favorece los ciclos de comentarios rápidos propios del desarrollo ágil."
+      "explanation": "Ejecutar pruebas automatizadas con cada confirmación de código mediante CI proporciona al equipo comentarios rápidos sobre si los cambios recientes introdujeron regresiones y favorece los ciclos de comentarios rápidos propios del desarrollo ágil.",
+      "note": "Aquí “confirmación de código” se refiere a un commit en el control de versiones; no a una prueba de confirmación (confirmation testing)."
     },
     {
       "id": "at-040",
@@ -840,7 +847,8 @@
       ],
       "correctIndex": 3,
       "explanation": "Las ejecuciones frecuentes de CI acortan el tiempo entre la introducción de un cambio y el conocimiento de sus efectos. Los comentarios rápidos son fundamentales para la entrega ágil.",
-      "id": "at-056"
+      "id": "at-056",
+      "note": "“Confirmación de código” significa registrar un commit en el sistema de control de versiones, no ejecutar una prueba de confirmación."
     },
     {
       "chapter": "1. Desarrollo ágil de software",
@@ -885,7 +893,8 @@
       ],
       "correctIndex": 2,
       "explanation": "Conocer el dominio ayuda a los probadores a centrarse en el comportamiento importante. Mejora tanto el diseño de escenarios como la priorización.",
-      "id": "at-059"
+      "id": "at-059",
+      "note": "“Fallo” es el término usado aquí para failure, es decir, una desviación observable durante la ejecución; no es lo mismo que un defecto interno."
     },
     {
       "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
@@ -1215,7 +1224,8 @@
       ],
       "correctIndex": 0,
       "explanation": "Un líder de servicio apoya al equipo en vez de dirigir cada tarea. Eliminar impedimentos y facilitar la mejora es una contribución fundamental del Scrum Master.",
-      "id": "at-081"
+      "id": "at-081",
+      "note": "“Liderazgo de servicio” (servant leadership) describe apoyar al equipo y ayudar a eliminar impedimentos, no asignar cada tarea."
     },
     {
       "chapter": "2. Fundamentos de las pruebas ágiles",
@@ -1305,7 +1315,8 @@
       ],
       "correctIndex": 2,
       "explanation": "Los equipos ágiles valoran la colaboración estrecha, pero también necesitan un pensamiento objetivo. La independencia se conserva mediante la perspectiva, la evidencia y la disposición a cuestionar supuestos.",
-      "id": "at-087"
+      "id": "at-087",
+      "note": "“Pila del producto” traduce product backlog; “backlog del producto” es otra forma extendida en equipos hispanohablantes."
     },
     {
       "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
@@ -1680,7 +1691,8 @@
       ],
       "correctIndex": 3,
       "explanation": "Los paneles pueden actuar como radiadores de información sobre la calidad. Su principal valor consiste en hacer visibles las señales para impulsar acciones útiles.",
-      "id": "at-112"
+      "id": "at-112",
+      "note": "En este contexto, “confirmación” significa commit o cambio registrado en el repositorio. “Pruebas de confirmación” es un concepto distinto."
     },
     {
       "chapter": "1. Desarrollo ágil de software",
@@ -1995,7 +2007,8 @@
       ],
       "correctIndex": 0,
       "explanation": "Los equipos autogestionados organizan su propio trabajo para alcanzar objetivos compartidos. No dependen de que alguien externo les asigne todas las tareas en detalle.",
-      "id": "at-133"
+      "id": "at-133",
+      "note": "“Gerente del proyecto” se entiende en varios países; también se usan “director” o “responsable del proyecto”, según la región."
     },
     {
       "chapter": "2. Fundamentos de las pruebas ágiles",
