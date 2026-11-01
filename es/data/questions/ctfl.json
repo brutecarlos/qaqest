@@ -30,7 +30,8 @@
         "Las pruebas estáticas pueden encontrar un defecto, mientras que un fallo solo puede observarse mediante pruebas dinámicas"
       ],
       "correctIndex": 1,
-      "explanation": "Un error humano puede introducir un defecto (fallo o bug) en un producto de trabajo; cuando se ejecuta el código que contiene un defecto, puede causar un fallo (una desviación observable del comportamiento esperado)."
+      "explanation": "Un error humano puede introducir un defecto (bug) en un producto de trabajo; cuando se ejecuta el código que contiene ese defecto, puede causar un fallo (una desviación observable del comportamiento esperado).",
+      "note": "En la terminología de pruebas, un error humano puede introducir un defecto; al ejecutarse, el defecto puede provocar un fallo observable. “Defecto” y “fallo” no son sinónimos."
     },
     {
       "id": "ctfl-003",
@@ -375,7 +376,8 @@
         "Omitir el seguimiento una vez registrados los defectos"
       ],
       "correctIndex": 2,
-      "explanation": "Entre los factores de éxito de las revisiones se encuentran el apoyo de la dirección, la asignación de tiempo suficiente, un ambiente sin culpabilización y la formación adecuada de los participantes."
+      "explanation": "Entre los factores de éxito de las revisiones se encuentran el apoyo de la dirección, la asignación de tiempo suficiente, un ambiente sin culpabilización y la formación adecuada de los participantes.",
+      "note": "“Entorno” se usa de forma consistente en el resto del sitio. “Ambiente” también se entiende y es común en varios países de América Latina."
     },
     {
       "id": "ctfl-026",
@@ -510,7 +512,8 @@
         "La experiencia del probador y una lista de elementos que orientan el diseño y la ejecución"
       ],
       "correctIndex": 3,
-      "explanation": "Las pruebas basadas en listas de comprobación son una técnica basada en la experiencia. Los probadores diseñan y ejecutan pruebas para cubrir los elementos de una lista derivada de la experiencia, las normas o los problemas conocidos."
+      "explanation": "Las pruebas basadas en listas de comprobación son una técnica basada en la experiencia. Los probadores diseñan y ejecutan pruebas para cubrir los elementos de una lista derivada de la experiencia, las normas o los problemas conocidos.",
+      "note": "“Guion de prueba” puede traducir test script; en muchos equipos se conserva “script”. Conviene distinguirlo de los casos de prueba y de la automatización."
     },
     {
       "id": "ctfl-035",
@@ -654,13 +657,14 @@
       "difficulty": "medium",
       "question": "Un probador introduce una fecha válida, pero el sistema la rechaza debido a un error de programación en la lógica de validación de fechas. ¿Cuál es el término CORRECTO para referirse al propio error de programación?",
       "options": [
-        "Un defecto (fallo)",
+        "Un defecto en el código",
         "Un fallo",
         "Un error (equivocación)",
         "Un riesgo"
       ],
       "correctIndex": 0,
-      "explanation": "El código defectuoso es el defecto (o fallo); el error humano que lo introdujo es el error, y el comportamiento incorrecto observable al ejecutarlo es el fallo."
+      "explanation": "El error de programación es un defecto en el código. El error humano que lo introdujo es una equivocación; el fallo es la desviación observable que puede producirse al ejecutar el código defectuoso.",
+      "note": "Aquí se pregunta por la imperfección del código: es un defecto (bug), no el fallo observable que puede producirse al ejecutar ese código."
     },
     {
       "id": "ctfl-045",

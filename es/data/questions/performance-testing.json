@@ -60,7 +60,8 @@
         "Bloqueos inmediatos que ocurren al aplicar de una vez un único pico breve de carga extremadamente alta a la aplicación"
       ],
       "correctIndex": 0,
-      "explanation": "Las pruebas de resistencia (o soak) ejecutan el sistema con una carga realista sostenida durante un período prolongado para revelar problemas graduales, como fugas de memoria, que las pruebas breves no detectarían."
+      "explanation": "Las pruebas de resistencia (o soak) ejecutan el sistema con una carga realista sostenida durante un período prolongado para revelar problemas graduales, como fugas de memoria, que las pruebas breves no detectarían.",
+      "note": "“Prueba de resistencia” o soak test mantiene una carga durante mucho tiempo para detectar degradación gradual; suele distinguirse de una prueba de estrés breve."
     },
     {
       "id": "pt-005",
@@ -1020,7 +1021,8 @@
       ],
       "correctIndex": 1,
       "explanation": "La tasa de errores informa la proporción o la cantidad de transacciones fallidas. Es esencial porque las fallas rápidas también son fallas.",
-      "id": "pt-068"
+      "id": "pt-068",
+      "note": "“Fallo” describe el resultado observable. “Falla” es una variante regional; el sitio usa principalmente “fallo”."
     },
     {
       "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",

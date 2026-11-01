@@ -27,6 +27,7 @@
           <span class="${statusClass}">${statusLabel}</span>${a.flagged ? " &middot; <span>\u2691 Marcada</span>" : ""}
         </div>
         <div class="question-text">${QAQuest.escapeHTML(a.question)}</div>
+        ${a.note ? `<details class="question-note"><summary aria-label="Mostrar nota terminológica">Nota terminológica</summary><p>${QAQuest.escapeHTML(a.note)}</p></details>` : ""}
         ${optionsHtml}
         <div class="feedback-box ${a.isCorrect ? "correct" : "incorrect"}" style="margin-top:0.75rem;">
           ${QAQuest.escapeHTML(a.explanation)}
