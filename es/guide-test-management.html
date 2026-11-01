@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <title>Gestión de las actividades de prueba — QAQEST</title>
+  <meta name="description" content="Planifica las pruebas según el riesgo, comunica claramente el progreso y ayuda a los equipos a centrarse en resultados útiles." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/es/guide-test-management.html" />
+  <link rel="alternate" hreflang="es" href="https://brutecarlos.github.io/qaqest/es/guide-test-management.html" />
+  <link rel="alternate" hreflang="en" href="https://brutecarlos.github.io/qaqest/guide-test-management.html" />
+  <link rel="alternate" hreflang="x-default" href="https://brutecarlos.github.io/qaqest/guide-test-management.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Gestión de las actividades de prueba — QAQEST" />
+  <meta property="og:description" content="Planifica las pruebas según el riesgo, comunica claramente el progreso y ayuda a los equipos a centrarse en resultados útiles." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/es/guide-test-management.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gestión de las actividades de prueba — QAQEST" />
+  <meta name="twitter:description" content="Planifica las pruebas según el riesgo, comunica claramente el progreso y ayuda a los equipos a centrarse en resultados útiles." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Gestión de las actividades de prueba</h1></section>
+    <h2>Planificar para el producto y las personas</h2>
+<p>La gestión de pruebas coordina objetivos, alcance, responsabilidades, recursos, calendario, enfoque e informes. El plan debe explicar cómo contribuirán las pruebas a los objetivos del producto y del proyecto, no limitarse a ser una plantilla. Identifica los riesgos relevantes, los niveles y tipos de prueba, los entornos, las herramientas, las dependencias, los criterios de entrada y salida y la forma de comunicar los resultados. Los planes evolucionan cuando nuevas evidencias modifican las estimaciones o prioridades.</p>
+<p>Las responsabilidades dependen de la organización. Una persona responsable de pruebas puede coordinar la estrategia, supervisar el progreso y eliminar impedimentos. Quienes prueban analizan, diseñan y ejecutan comprobaciones, y comunican sus resultados. El equipo de desarrollo aporta pruebas de componentes e investiga defectos. Las partes interesadas de producto y operaciones ayudan a priorizar riesgos y definir resultados aceptables. Una asignación clara de responsabilidades evita que el trabajo quede desatendido entre equipos.</p>
+<h2>Priorización basada en riesgos</h2>
+<p>El riesgo de producto es la posibilidad de que una característica del producto cause daños o pérdidas. La evaluación del riesgo considera su probabilidad e impacto. Las pruebas pueden priorizar primero las funciones, las personas usuarias y los modos de fallo de mayor riesgo, sin dejar de mantener una cobertura razonable. Un registro de riesgos puede incluir una descripción, probabilidad, impacto, prioridad, mitigación, responsable y estado actual. Las estimaciones son inciertas: revísalas en lugar de tratar las clasificaciones iniciales como hechos.</p>
+<p>Los riesgos del proyecto son distintos: amenazan la capacidad de realizar pruebas, por ejemplo, por retrasos en los entornos, falta de especialistas o datos inestables. Gestiónalos como problemas de entrega. Si se retrasa el entorno de pruebas, el equipo podría preparar scripts para generar datos, probar el límite de un servicio o negociar un calendario por etapas. Escala el problema pronto y presenta opciones y consecuencias.</p>
+<h2>Seguimiento, control y cierre</h2>
+<p>El seguimiento compara el progreso observado con el plan. Entre las medidas útiles se encuentran las condiciones de prueba cubiertas, las pruebas superadas o fallidas, los defectos pendientes por gravedad, el esfuerzo invertido y las áreas de riesgo aún no examinadas. Las métricas requieren contexto. Un aumento de la tasa de pruebas superadas puede significar que las correcciones funcionan o que todavía no se han ejecutado los casos difíciles. Comunica el significado y las limitaciones de cada medida, no solo su valor.</p>
+<p>El control implica actuar cuando las evidencias muestran una desviación: cambiar prioridades, añadir recursos, revisar el calendario o reducir el alcance con el acuerdo de las partes interesadas. Al finalizar, resume qué se probó, los resultados relevantes, las limitaciones conocidas, los riesgos residuales y las recomendaciones. La expresión «pruebas completadas» no debe ocultar áreas sin probar ni defectos conocidos.</p>
+<h2>Ejemplo práctico: retraso del entorno</h2>
+<p>El entorno de preproducción llega con tres días de retraso. El equipo identifica primero las pruebas bloqueadas por las integraciones ausentes y evalúa si puede comprobar localmente los comportamientos de alto riesgo o utilizar un simulador del servicio. Adelanta las revisiones independientes de requisitos y las pruebas de componentes; después, programa los flujos críticos de extremo a extremo en cuanto el entorno esté disponible. Las partes interesadas reciben una nueva previsión, información sobre el riesgo de integración no cubierto y opciones como ampliar el periodo de pruebas o aceptar una versión limitada. Así se gestiona a partir de evidencias, en lugar de limitarse a marcar tareas en rojo.</p>
+<h2>Informes de defectos que facilitan actuar</h2>
+<p>Un informe de defectos útil incluye un título conciso, la compilación y el entorno del producto, las precondiciones, los pasos, los resultados esperados y reales, las evidencias de respaldo y el impacto. Distingue los hechos de las hipótesis sobre la causa raíz. La gravedad describe las consecuencias de un defecto; la prioridad indica el orden en que el equipo debe abordarlo. Pueden diferir: un problema grave en una ruta poco frecuente y acotada puede tener menor prioridad inmediata que un bloqueo generalizado.</p>
+<h2>Términos clave</h2>
+<ul><li><strong>Estrategia de pruebas:</strong> decisiones de alto nivel sobre cómo se alcanzarán los objetivos de prueba.</li><li><strong>Criterios de entrada y salida:</strong> condiciones para iniciar o concluir una actividad definida.</li><li><strong>Riesgo residual:</strong> riesgo que permanece después de la mitigación o las pruebas.</li><li><strong>Gravedad:</strong> grado de impacto de un defecto.</li><li><strong>Prioridad:</strong> urgencia u orden en que se debe abordar el trabajo.</li></ul>
+<p>La gestión tiene éxito cuando las personas pueden tomar decisiones a tiempo, con expectativas realistas y evidencias trazables.</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practicar con preguntas CTFL</a></p>
+    <p><a href="guides.html">Todas las guías de estudio</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="../js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

@@ -1,0 +1,2256 @@
+{
+  "moduleId": "agile-tester",
+  "moduleName": "Extensión de pruebas ágiles",
+  "questions": [
+    {
+      "id": "at-001",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.2.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de los siguientes es un valor fundamental expresado en el Manifiesto Ágil?",
+      "options": [
+        "Las personas y sus interacciones por encima de los procesos y las herramientas",
+        "La documentación exhaustiva por encima del software funcionando, teniendo en cuenta al equipo",
+        "La negociación contractual por encima de la colaboración con el cliente, teniendo en cuenta al equipo",
+        "Seguir un plan por encima de responder al cambio, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "El Manifiesto Ágil valora a las personas y sus interacciones por encima de los procesos y las herramientas, entre sus cuatro declaraciones de valores fundamentales."
+    },
+    {
+      "id": "at-002",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.1.1",
+      "difficulty": "medium",
+      "question": "El «enfoque de equipo completo» en las pruebas ágiles significa que:",
+      "options": [
+        "Los probadores dedicados tienen la responsabilidad principal de la calidad y mantienen informado al equipo",
+        "La calidad es una responsabilidad compartida entre desarrolladores, probadores y otros roles del equipo",
+        "Las pruebas se aplazan hasta que termina todo el proyecto para que las partes interesadas puedan aportar comentarios oportunos",
+        "Los propietarios del producto son los únicos responsables de redactar los casos de prueba, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "El enfoque de equipo completo implica que la responsabilidad por la calidad y las pruebas se comparte entre todos los miembros del equipo, en lugar de aislarse en un único rol de probador."
+    },
+    {
+      "id": "at-003",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.1.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes es una característica común a la mayoría de los métodos ágiles (p. ej., Scrum, XP y Kanban)?",
+      "options": [
+        "Un único plan de entregas plurianual sin entregables intermedios, manteniendo informado al equipo",
+        "La prohibición estricta de cualquier comunicación cara a cara como prioridad del equipo",
+        "La entrega iterativa e incremental de software funcional en ciclos breves, con comentarios frecuentes",
+        "La documentación completa de todos los requisitos antes de empezar a programar, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "En general, los métodos ágiles favorecen el desarrollo iterativo e incremental, con ciclos breves y comentarios frecuentes, frente a enfoques que exigen documentación completa desde el inicio y entregas de una sola vez."
+    },
+    {
+      "id": "at-004",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.1.2",
+      "difficulty": "medium",
+      "question": "En Scrum, ¿cuál es el propósito PRINCIPAL de la retrospectiva del sprint?",
+      "options": [
+        "Mostrar el trabajo terminado a las partes interesadas y mantener informado al equipo",
+        "Estimar el tamaño de los elementos próximos de la pila de producto teniendo en cuenta al equipo",
+        "Asignar nuevas historias de usuario a la pila del sprint y mantener informado al equipo",
+        "Reflexionar sobre el sprint anterior e identificar mejoras del proceso para los próximos sprints"
+      ],
+      "correctIndex": 3,
+      "explanation": "La retrospectiva del sprint es un evento de Scrum en el que el equipo reflexiona sobre cómo transcurrió el sprint (personas, proceso y herramientas) e identifica mejoras para los siguientes sprints."
+    },
+    {
+      "id": "at-005",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.1.2",
+      "difficulty": "easy",
+      "question": "¿Qué artefacto de Scrum representa la lista ordenada de todo lo que podría necesitarse en el producto?",
+      "options": [
+        "La pila del producto",
+        "La pila del sprint",
+        "El gráfico de trabajo pendiente",
+        "La definición de terminado"
+      ],
+      "correctIndex": 0,
+      "explanation": "La pila del producto es la lista única y ordenada de funcionalidades, requisitos y correcciones que podrían necesitarse en el producto, gestionada por el propietario del producto."
+    },
+    {
+      "id": "at-006",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.2.2",
+      "difficulty": "medium",
+      "question": "¿Para qué sirve una «definición de terminado» en un equipo ágil?",
+      "options": [
+        "Describir la visión del producto a largo plazo y ayudar al equipo a coordinar sus próximos pasos",
+        "Proporcionar una lista de criterios compartida y acordada que una historia de usuario o un incremento debe cumplir para considerarse terminado",
+        "Enumerar los defectos del sprint actual sin definir criterios de finalización y ayudar al equipo a coordinar sus próximos pasos",
+        "Sustituir la necesidad de criterios de aceptación en las historias de usuario y ayudar al equipo a coordinar sus próximos pasos"
+      ],
+      "correctIndex": 1,
+      "explanation": "La definición de terminado es el entendimiento compartido y acordado por el equipo de los criterios (p. ej., probado, documentado y revisado) que debe cumplir el trabajo para considerarse terminado."
+    },
+    {
+      "id": "at-007",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones distingue MEJOR los «criterios de aceptación» de la «definición de terminado»?",
+      "options": [
+        "Son exactamente el mismo concepto y todos los equipos ágiles los usan indistintamente, ayudando al equipo a coordinar sus próximos pasos",
+        "La definición de terminado se aplica a los requisitos no funcionales, ayudando al equipo a coordinar sus próximos pasos como prioridad",
+        "Los criterios de aceptación son condiciones específicas que debe cumplir una historia de usuario; la definición de terminado es una lista genérica aplicable a todas las historias",
+        "Los criterios de aceptación se aplican a todo el proyecto, mientras que la definición de terminado se aplica a historias individuales y ayuda al equipo a coordinar sus próximos pasos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los criterios de aceptación describen condiciones específicas de una historia individual, mientras que la definición de terminado es una lista de comprobación general del equipo, aplicable a todas las historias."
+    },
+    {
+      "id": "at-008",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué práctica favorece MEJOR las «pruebas continuas» en un equipo ágil?",
+      "options": [
+        "Aplazar todas las pruebas hasta el último día del sprint como prioridad del equipo",
+        "Programar pruebas una vez por trimestre, independientemente de la cadencia del sprint, teniendo en cuenta al equipo",
+        "Realizar pruebas exploratorias manuales después de la publicación en vez de durante el desarrollo, teniendo en cuenta al equipo",
+        "Integrar las actividades de prueba a lo largo del sprint, junto con el desarrollo, y ejecutar con frecuencia conjuntos automatizados de regresión"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas continuas implican realizar actividades de prueba durante todo el desarrollo, no solo al final, y se apoyan en la ejecución frecuente de pruebas automatizadas de regresión para ofrecer comentarios rápidos."
+    },
+    {
+      "id": "at-009",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.2.1",
+      "difficulty": "medium",
+      "question": "¿En función de qué dos dimensiones clasifica las pruebas el modelo de cuadrantes de pruebas ágiles?",
+      "options": [
+        "Orientadas al negocio o a la tecnología, y de apoyo al equipo o de crítica del producto",
+        "Manuales o automatizadas, y coste o beneficio, ayudando al equipo a coordinar sus próximos pasos",
+        "Rápidas o lentas, y baratas o caras, para que las partes interesadas puedan aportar comentarios oportunos",
+        "Pruebas funcionales o pruebas de seguridad, ayudando al equipo a coordinar sus próximos pasos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los cuadrantes de pruebas ágiles clasifican las pruebas según estén orientadas al negocio o a la tecnología y según apoyen al equipo (guían el desarrollo) o critiquen el producto (evalúan el producto terminado)."
+    },
+    {
+      "id": "at-010",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.2.1",
+      "difficulty": "hard",
+      "question": "¿En qué cuadrante de pruebas ágiles suelen ubicarse las pruebas unitarias y de componentes automatizadas?",
+      "options": [
+        "Q2: pruebas orientadas al negocio que apoyan al equipo, teniendo en cuenta al equipo",
+        "Q1: pruebas orientadas a la tecnología que apoyan al equipo",
+        "Q3: pruebas orientadas al negocio que critican el producto",
+        "Q4: pruebas orientadas a la tecnología que critican el producto"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas unitarias y de componentes se orientan a la tecnología (se centran en la corrección del código interno) y apoyan al equipo al proporcionar comentarios rápidos durante el desarrollo."
+    },
+    {
+      "id": "at-011",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.3.1",
+      "difficulty": "medium",
+      "question": "En los equipos ágiles, ¿por qué pueden ser especialmente valiosas las pruebas exploratorias cerca del final de un sprint?",
+      "options": [
+        "Porque ya no se permiten las pruebas con guion cuando se programa una historia, para favorecer el entendimiento compartido del equipo",
+        "Porque se da por hecho que las pruebas exploratorias son más rápidas que las pruebas con guion y mantienen informado al equipo",
+        "Porque pueden descubrir problemas que quizá pasen por alto las pruebas con guion, redactadas a partir de los mismos supuestos que la historia",
+        "Porque eliminan la necesidad de una definición de terminado para que las partes interesadas puedan aportar comentarios oportunos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas exploratorias aportan una perspectiva nueva e investigativa que puede revelar problemas no cubiertos por las pruebas con guion derivadas de los mismos criterios de aceptación."
+    },
+    {
+      "id": "at-012",
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones describe MEJOR el rol del probador en un equipo ágil multifuncional?",
+      "options": [
+        "Los probadores trabajan de forma aislada y se incorporan a las conversaciones del equipo cerca del final del proyecto, ayudando a coordinar los próximos pasos",
+        "Los probadores son los únicos responsables de escribir todo el código de producción y ayudan a coordinar los próximos pasos",
+        "Los probadores no participan en la planificación del sprint ni en el perfeccionamiento de la pila y ayudan a coordinar los próximos pasos",
+        "Los probadores colaboran estrechamente con los desarrolladores y el propietario del producto durante todo el sprint, y contribuyen al perfeccionamiento de historias, al diseño de pruebas y a los comentarios sobre la calidad"
+      ],
+      "correctIndex": 3,
+      "explanation": "En los equipos ágiles, los probadores están integrados y colaboran continuamente con los desarrolladores y el propietario del producto, desde el perfeccionamiento de historias hasta el diseño y la ejecución de pruebas, en vez de trabajar en una fase aislada."
+    },
+    {
+      "id": "at-013",
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué habilidad es especialmente valiosa para un probador que participa en sesiones de perfeccionamiento de la pila del producto?",
+      "options": [
+        "Poder hacer preguntas aclaratorias que revelen criterios de aceptación ausentes o ambiguos antes de iniciar el desarrollo",
+        "Centrarse en guiones automatizados de rendimiento en vez de perfeccionar historias, manteniendo informado al equipo",
+        "Poder aprobar el presupuesto del sprint para favorecer el entendimiento compartido del equipo",
+        "Poder asignar puntos de historia sin consultar al equipo, como prioridad del equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una aportación clave de los probadores durante el perfeccionamiento es hacer preguntas incisivas sobre casos límite, ambigüedades y criterios de aceptación ausentes, para ayudar al equipo a definir historias más claras y comprobables."
+    },
+    {
+      "id": "at-014",
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.2.1",
+      "difficulty": "easy",
+      "question": "¿Qué habilidad interpersonal suele considerarse ESENCIAL para los probadores que trabajan en equipos ágiles, dada la importancia de la colaboración?",
+      "options": [
+        "Evitar toda comunicación con los desarrolladores para mantener la independencia y mantener informado al equipo",
+        "Tener sólidas habilidades de comunicación oral y escrita para colaborar eficazmente con desarrolladores, propietarios del producto y otras partes interesadas",
+        "Trabajar exclusivamente de noche para evitar interactuar con el equipo y permitir que las partes interesadas aporten comentarios oportunos",
+        "Negarse a dar comentarios durante las reuniones diarias para favorecer el entendimiento compartido del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Como los probadores ágiles trabajan estrecha y continuamente con todo el equipo, las sólidas habilidades de comunicación y colaboración son esenciales para su eficacia."
+    },
+    {
+      "id": "at-015",
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué técnica de prueba se utiliza habitualmente en equipos ágiles para derivar casos de prueba e impulsar directamente el desarrollo a partir de ejemplos concretos del comportamiento deseado?",
+      "options": [
+        "Diseño exhaustivo al inicio, propio del modelo en cascada, teniendo en cuenta al equipo",
+        "Análisis estático del código heredado como actividad de prueba principal",
+        "Desarrollo guiado por el comportamiento (BDD) mediante escenarios Dado-Cuando-Entonces",
+        "Revisiones manuales del código sin ningún caso de prueba"
+      ],
+      "correctIndex": 2,
+      "explanation": "BDD utiliza escenarios concretos basados en ejemplos (a menudo en formato Dado-Cuando-Entonces) que comprenden tanto las partes interesadas del negocio como las técnicas, y que pueden impulsar el desarrollo y las pruebas automatizadas."
+    },
+    {
+      "id": "at-016",
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué caracteriza al desarrollo guiado por pruebas (TDD)?",
+      "options": [
+        "Escribir primero el código de producción y añadir las pruebas después de la publicación, para favorecer el entendimiento compartido del equipo",
+        "Omitir las pruebas unitarias automatizadas y ayudar al equipo a coordinar sus próximos pasos",
+        "Dejar las pruebas exclusivamente en manos de un equipo de QA independiente, no de los desarrolladores, ayudando al equipo a coordinar sus próximos pasos",
+        "Escribir primero una prueba automatizada que falle, luego escribir solo el código de producción necesario para hacerla pasar y, por último, refactorizar"
+      ],
+      "correctIndex": 3,
+      "explanation": "TDD sigue el ciclo rojo-verde-refactorizar: escribir una prueba que falle, escribir el mínimo código para hacerla pasar y después refactorizar; las pruebas guían el diseño del código."
+    },
+    {
+      "id": "at-017",
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es una razón fundamental por la que los equipos ágiles invierten mucho en automatizar las pruebas a nivel unitario y de API?",
+      "options": [
+        "Proporcionar comentarios rápidos y fiables sobre regresiones en iteraciones cortas, facilitando la integración y la entrega frecuentes",
+        "El Manifiesto Ágil prohíbe las pruebas manuales y mantiene informado al equipo",
+        "Las pruebas unitarias y de API son los únicos tipos de pruebas que pueden usar los equipos ágiles, teniendo en cuenta al equipo",
+        "Eliminar la necesidad de cualquier prueba exploratoria para que las partes interesadas puedan aportar comentarios oportunos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas automatizadas rápidas y fiables a nivel unitario y de API ofrecen comentarios rápidos sobre regresiones y se ajustan a los ciclos cortos de iteración habituales en el desarrollo ágil."
+    },
+    {
+      "id": "at-018",
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.2",
+      "difficulty": "hard",
+      "question": "¿Cuál es un RETO habitual al mantener con el tiempo un conjunto grande de pruebas automatizadas de regresión en un equipo ágil?",
+      "options": [
+        "Se espera que las pruebas automatizadas no cambien mientras evoluciona la aplicación, ayudando al equipo a coordinar sus próximos pasos",
+        "A medida que evoluciona la aplicación, las pruebas pueden volverse frágiles u obsoletas; requieren mantenimiento continuo para seguir siendo valiosas y evitar fallos falsos",
+        "Se espera que las pruebas automatizadas se ejecuten al instante, independientemente del tamaño del conjunto, favoreciendo el entendimiento compartido del equipo",
+        "La automatización de pruebas elimina por completo la paradoja del pesticida y ayuda al equipo a coordinar sus próximos pasos"
+      ],
+      "correctIndex": 1,
+      "explanation": "A medida que cambia la aplicación, las pruebas automatizadas pueden quedar obsoletas o volverse frágiles, generar fallos falsos o no detectar nuevas áreas de riesgo si no se mantienen y revisan activamente."
+    },
+    {
+      "id": "at-019",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.1.1",
+      "difficulty": "easy",
+      "question": "¿Qué valor expresa el Manifiesto Ágil sobre la relación con los clientes?",
+      "options": [
+        "La negociación contractual por encima de la colaboración con el cliente",
+        "La documentación exhaustiva por encima del software funcionando",
+        "La colaboración con el cliente por encima de la negociación contractual",
+        "Seguir un plan por encima de responder al cambio"
+      ],
+      "correctIndex": 2,
+      "explanation": "El Manifiesto Ágil valora la colaboración con el cliente por encima de la negociación contractual estricta y favorece la participación continua de los clientes durante el desarrollo."
+    },
+    {
+      "id": "at-020",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones describe MEJOR el «cuadrante de pruebas Q4» (pruebas orientadas a la tecnología que critican el producto)?",
+      "options": [
+        "Pruebas unitarias que los desarrolladores escriben antes de que exista código, ayudando al equipo a coordinar sus próximos pasos",
+        "Pruebas de aceptación de usuario realizadas por las partes interesadas del negocio, para favorecer el entendimiento compartido del equipo",
+        "Talleres de redacción de historias con el propietario del producto que ayudan al equipo a coordinar sus próximos pasos",
+        "Pruebas no funcionales, como las de rendimiento, carga y seguridad, que evalúan las características técnicas del producto terminado"
+      ],
+      "correctIndex": 3,
+      "explanation": "El cuadrante 4 abarca pruebas orientadas a la tecnología que critican el producto, como las de rendimiento, carga, seguridad y otras pruebas no funcionales que suelen requerir herramientas especializadas."
+    },
+    {
+      "id": "at-021",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.1.1",
+      "difficulty": "easy",
+      "question": "¿Qué afirmación describe MEJOR el «enfoque de equipo completo» en los proyectos ágiles?",
+      "options": [
+        "Los probadores trabajan junto a los desarrolladores y representantes del negocio como un solo equipo y comparten la responsabilidad de la calidad",
+        "Los probadores tienen la responsabilidad principal de la calidad durante todo el proyecto y mantienen informado al equipo",
+        "Los representantes del negocio, desarrolladores y probadores comparten la responsabilidad de la calidad sin roles definidos, como prioridad del equipo",
+        "La calidad es responsabilidad exclusiva de un departamento de QA separado del equipo, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "El enfoque de equipo completo significa que probadores, desarrolladores y representantes del negocio trabajan juntos como un único equipo y comparten la responsabilidad de la calidad, en vez de asignarla a un rol aislado."
+    },
+    {
+      "id": "at-022",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.1.2",
+      "difficulty": "easy",
+      "question": "¿Cuál de los siguientes suele ser un resultado de la reunión de planificación del sprint de Scrum?",
+      "options": [
+        "Una hoja de ruta anual definitiva del producto para los próximos 12 meses, como prioridad del equipo",
+        "Un objetivo del sprint y una previsión de los elementos seleccionados de la pila para ese sprint",
+        "Un contrato firmado con un proveedor externo, como prioridad del equipo",
+        "Una evaluación del rendimiento de cada integrante del equipo, como prioridad del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "La planificación del sprint establece el objetivo del sprint y el trabajo que el equipo prevé poder completar para alcanzarlo."
+    },
+    {
+      "id": "at-023",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.2.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es un principio fundamental del Manifiesto Ágil con respecto al software funcionando?",
+      "options": [
+        "La documentación exhaustiva es la principal medida del progreso, teniendo en cuenta al equipo",
+        "El software funcionando se programa principalmente para el final del proyecto, teniendo en cuenta al equipo",
+        "El software funcionando se entrega con frecuencia, dando preferencia a plazos más breves",
+        "El software funcionando es menos importante que seguir un plan detallado, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Uno de los doce principios del Manifiesto Ágil establece que el software funcionando debe entregarse con frecuencia, desde un par de semanas hasta un par de meses, dando preferencia a plazos más breves."
+    },
+    {
+      "id": "at-024",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.3.1",
+      "difficulty": "medium",
+      "question": "En Kanban, ¿para qué se establecen límites del trabajo en curso (WIP)?",
+      "options": [
+        "Restringir la cantidad de integrantes permitidos en un proyecto para favorecer el entendimiento compartido del equipo",
+        "Limitar la cantidad de puntos de historia que el equipo puede estimar por sprint y ayudar a coordinar sus próximos pasos",
+        "Establecer un máximo para la cantidad total de defectos que pueden registrarse y favorecer el entendimiento compartido del equipo",
+        "Limitar la cantidad de elementos que puede haber al mismo tiempo en una etapa del flujo de trabajo, para identificar cuellos de botella y mejorar el flujo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los límites de WIP restringen cuántos elementos de trabajo pueden estar simultáneamente en una etapa concreta del flujo. Esto hace visibles los cuellos de botella y fomenta un flujo de trabajo más fluido y predecible."
+    },
+    {
+      "id": "at-025",
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.3.2",
+      "difficulty": "medium",
+      "question": "¿Qué característica del ciclo de vida distingue a Extreme Programming (XP) de muchos otros enfoques ágiles?",
+      "options": [
+        "Hace mucho hincapié en prácticas técnicas como el desarrollo guiado por pruebas, la programación en pareja y la integración continua",
+        "Prohíbe cualquier tipo de prueba automatizada y mantiene informado al equipo",
+        "Exige un ciclo de entregas fijo de un año y mantiene informado al equipo",
+        "Exige una fase de pruebas dedicada y separada después de terminar la programación, como prioridad del equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "XP hace mucho hincapié en prácticas técnicas de ingeniería, como el desarrollo guiado por pruebas, la programación en pareja, la refactorización y la integración continua, para ofrecer software de calidad con frecuencia."
+    },
+    {
+      "id": "at-026",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.1.1",
+      "difficulty": "medium",
+      "question": "¿En qué suele diferir el rol de las pruebas en el desarrollo ágil respecto del desarrollo secuencial tradicional?",
+      "options": [
+        "En el desarrollo ágil, las pruebas son una fase separada que comienza al terminar la programación",
+        "En el desarrollo ágil, las actividades de prueba se integran en cada iteración junto con el desarrollo",
+        "En el desarrollo ágil, se eliminan por completo las pruebas y se sustituyen por la aceptación manual del cliente",
+        "En el desarrollo ágil, los equipos se centran en las pruebas de regresión y no crean pruebas nuevas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los enfoques ágiles integran las pruebas continuamente en cada iteración, en vez de tratarlas como una fase posterior separada, lo que permite recibir comentarios rápidos sobre la calidad durante todo el desarrollo."
+    },
+    {
+      "id": "at-027",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.1.2",
+      "difficulty": "easy",
+      "question": "¿Para qué se utiliza una «definición de terminado» en los proyectos ágiles?",
+      "options": [
+        "Especifica el plan de marketing de una funcionalidad publicada y mantiene informado al equipo",
+        "Establece la tarifa por hora de los probadores contratados para que las partes interesadas aporten comentarios oportunos",
+        "Proporciona una lista compartida de criterios que debe cumplir un elemento de trabajo para considerarse terminado",
+        "Sustituye la necesidad de criterios de aceptación en las historias de usuario para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una definición de terminado es una lista acordada de criterios (p. ej., codificado, probado, revisado y documentado) que debe cumplir un elemento de la pila antes de considerarse terminado."
+    },
+    {
+      "id": "at-028",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Por qué son especialmente importantes las pruebas de regresión en las iteraciones ágiles?",
+      "options": [
+        "Porque los proyectos ágiles evitan cambiar el código existente y ayudan al equipo a coordinar sus próximos pasos",
+        "Porque las pruebas de regresión sustituyen la necesidad de pruebas unitarias y favorecen el entendimiento compartido del equipo",
+        "Las pruebas de regresión se programan en el sprint final, no antes, y ayudan al equipo a coordinar sus próximos pasos",
+        "Porque los cambios y las integraciones frecuentes en iteraciones cortas aumentan el riesgo de efectos secundarios no deseados en la funcionalidad existente"
+      ],
+      "correctIndex": 3,
+      "explanation": "Como las iteraciones ágiles implican cambios e integraciones de código frecuentes, las pruebas de regresión son fundamentales para detectar cuanto antes efectos secundarios no deseados en la funcionalidad que ya funcionaba."
+    },
+    {
+      "id": "at-029",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.2.2",
+      "difficulty": "medium",
+      "question": "En el modelo de cuadrantes de pruebas ágiles, ¿dónde se ubican normalmente las pruebas unitarias automatizadas que apoyan al equipo (orientadas a la tecnología)?",
+      "options": [
+        "Cuadrante 1: pruebas orientadas a la tecnología que apoyan al equipo",
+        "Cuadrante 2: pruebas orientadas al negocio que apoyan al equipo, teniendo en cuenta al equipo",
+        "Cuadrante 3: pruebas orientadas al negocio que critican el producto",
+        "Cuadrante 4: pruebas orientadas a la tecnología que critican el producto"
+      ],
+      "correctIndex": 0,
+      "explanation": "El cuadrante 1 abarca pruebas orientadas a la tecnología que apoyan al equipo, como las pruebas unitarias y de componentes; suelen automatizarse y ejecutarse con frecuencia durante el desarrollo."
+    },
+    {
+      "id": "at-030",
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.3.1",
+      "difficulty": "hard",
+      "question": "¿Qué cuadrante de pruebas ágiles contiene pruebas orientadas al negocio que critican el producto, como las pruebas exploratorias y de usabilidad?",
+      "options": [
+        "Cuadrante 1",
+        "Cuadrante 3",
+        "Cuadrante 2",
+        "Cuadrante 4"
+      ],
+      "correctIndex": 1,
+      "explanation": "El cuadrante 3 contiene pruebas orientadas al negocio que critican el producto, incluidas las pruebas exploratorias, de usabilidad y de aceptación de usuario, que suelen realizarse manualmente."
+    },
+    {
+      "id": "at-031",
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.1.1",
+      "difficulty": "easy",
+      "question": "¿Qué habilidad es especialmente valiosa para un probador que trabaja en un equipo ágil?",
+      "options": [
+        "Poder trabajar de forma aislada sin comunicarse con los desarrolladores, como prioridad del equipo",
+        "Tener experiencia en una sola herramienta de pruebas, sin otras habilidades de equipo y teniendo en cuenta al equipo",
+        "Tener sólidas habilidades de colaboración y comunicación para trabajar estrechamente con desarrolladores y representantes del negocio",
+        "Evitar participar en conversaciones sobre requisitos, como prioridad del equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los probadores ágiles necesitan sólidas habilidades interpersonales y de comunicación porque colaboran estrecha y continuamente con desarrolladores, propietarios del producto y otras partes interesadas."
+    },
+    {
+      "id": "at-032",
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué significa que un probador ágil tenga un conjunto de habilidades de «especialista generalista»?",
+      "options": [
+        "El probador se centra en ejecutar pruebas y aporta poco más, mientras ayuda al equipo a coordinar sus próximos pasos",
+        "El probador evita aprender nuevas herramientas o técnicas, mientras ayuda al equipo a coordinar sus próximos pasos",
+        "El probador se especializa exclusivamente en una sola pila tecnológica durante toda su carrera, mientras ayuda al equipo a coordinar sus próximos pasos",
+        "El probador tiene conocimientos profundos de pruebas y también puede contribuir a otras actividades del proyecto, como los requisitos o la automatización"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un especialista generalista tiene un área principal de experiencia, como las pruebas, pero también puede contribuir en otras áreas, lo que aumenta la flexibilidad de todo el equipo."
+    },
+    {
+      "id": "at-033",
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué aportación suele hacer un probador ágil durante las sesiones de perfeccionamiento de la pila del producto?",
+      "options": [
+        "Hacer preguntas aclaratorias e identificar criterios de aceptación ausentes o casos límite en las historias de usuario",
+        "Estimar las horas exactas que dedicarán los desarrolladores a programar, como prioridad del equipo",
+        "Decidir la fecha final de publicación del producto, como prioridad del equipo",
+        "Escribir el código de producción de la historia que se está perfeccionando para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Durante el perfeccionamiento, los probadores aportan una perspectiva de calidad al hacer preguntas que revelan ambigüedades, criterios de aceptación ausentes y casos límite antes de empezar el desarrollo."
+    },
+    {
+      "id": "at-034",
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.2.2",
+      "difficulty": "medium",
+      "question": "¿Por qué es importante que los probadores ágiles conozcan el dominio de negocio del producto que prueban?",
+      "options": [
+        "El conocimiento del dominio no es pertinente para los probadores ágiles y favorece el entendimiento compartido del equipo",
+        "Para identificar mejor escenarios realistas y priorizar las pruebas según el riesgo y el valor para el negocio",
+        "Porque elimina la necesidad de que el propietario del producto redacte criterios de aceptación y mantiene informado al equipo",
+        "Para redactar la documentación de arquitectura técnica en lugar de los desarrolladores, como prioridad del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Conocer el dominio de negocio ayuda a los probadores a diseñar escenarios realistas y priorizar sus esfuerzos según lo más importante para los usuarios finales y las partes interesadas."
+    },
+    {
+      "id": "at-035",
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito principal del desarrollo guiado por pruebas de aceptación (ATDD)?",
+      "options": [
+        "Escribir pruebas de aceptación después de programar y desplegar por completo la funcionalidad, manteniendo informado al equipo",
+        "Automatizar escenarios de rendimiento y carga sin definir el comportamiento de aceptación, manteniendo informado al equipo",
+        "Definir en colaboración los criterios y las pruebas de aceptación, expresados en términos del negocio, antes de empezar a desarrollar una funcionalidad",
+        "Sustituir por completo las pruebas unitarias por pruebas de aceptación manuales para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 2,
+      "explanation": "En ATDD, todo el equipo colabora para definir pruebas de aceptación en términos comprensibles para el negocio antes de empezar a programar; estas guían el desarrollo hacia el cumplimiento de los criterios."
+    },
+    {
+      "id": "at-036",
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.1.2",
+      "difficulty": "medium",
+      "question": "En el desarrollo guiado por el comportamiento (BDD), ¿qué formato se utiliza habitualmente para expresar escenarios?",
+      "options": [
+        "Diagramas de secuencia UML",
+        "Consultas SQL a la base de datos de pruebas",
+        "Tablas de decisión binarias",
+        "Enunciados en lenguaje natural estructurados como Dado/Cuando/Entonces"
+      ],
+      "correctIndex": 3,
+      "explanation": "BDD suele expresar los escenarios en formato Dado/Cuando/Entonces, que describe las precondiciones, una acción o evento y el resultado esperado de forma comprensible para partes interesadas técnicas y no técnicas."
+    },
+    {
+      "id": "at-037",
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué práctica consiste en escribir una prueba automatizada que falle antes de escribir el mínimo código de producción necesario para hacerla pasar?",
+      "options": [
+        "Desarrollo guiado por pruebas (TDD)",
+        "Pruebas exploratorias, teniendo en cuenta al equipo",
+        "Análisis estático, teniendo en cuenta al equipo",
+        "Priorización de pruebas basada en riesgos, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "El desarrollo guiado por pruebas (TDD) sigue el ciclo rojo-verde-refactorizar: primero se escribe una prueba que falla, luego el mínimo código para hacerla pasar y, por último, se refactoriza manteniendo las pruebas correctas."
+    },
+    {
+      "id": "at-038",
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.2",
+      "difficulty": "hard",
+      "question": "¿Cuál de las siguientes opciones describe MEJOR las pruebas exploratorias en el contexto de una iteración ágil?",
+      "options": [
+        "Un proceso completamente guionizado que no deja margen al criterio del probador y ayuda al equipo a coordinar sus próximos pasos",
+        "El diseño, la ejecución y el aprendizaje simultáneos, guiados por la experiencia del probador y usados como complemento de las pruebas con guion",
+        "Una técnica centrada en pruebas de carga y rendimiento que favorece el entendimiento compartido del equipo",
+        "Una actividad de revisión de documentación que se realiza antes de empezar a programar y favorece el entendimiento compartido del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas exploratorias combinan simultáneamente el diseño y la ejecución de pruebas y se basan en la habilidad y creatividad del probador para investigar el producto. En las iteraciones ágiles suelen complementar las pruebas predefinidas con guion."
+    },
+    {
+      "id": "at-039",
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es el principal beneficio de mantener una canalización de integración continua (CI) que ejecute pruebas automatizadas con cada confirmación de código?",
+      "options": [
+        "Elimina la necesidad de cualquier prueba manual en el proyecto, teniendo en cuenta al equipo",
+        "Garantiza que el software no tenga ningún defecto antes de publicarse, teniendo en cuenta al equipo",
+        "Proporciona comentarios rápidos sobre si los cambios nuevos han alterado la funcionalidad existente",
+        "Sustituye la necesidad de un sistema de control de versiones, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ejecutar pruebas automatizadas con cada confirmación de código mediante CI proporciona al equipo comentarios rápidos sobre si los cambios recientes introdujeron regresiones y favorece los ciclos de comentarios rápidos propios del desarrollo ágil."
+    },
+    {
+      "id": "at-040",
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.3.2",
+      "difficulty": "medium",
+      "question": "Al seleccionar herramientas para las pruebas ágiles, ¿a qué factor debe darse la MAYOR prioridad?",
+      "options": [
+        "La popularidad de la herramienta en las redes sociales, mientras ayuda al equipo a coordinar sus próximos pasos",
+        "Elegir la herramienta más cara del mercado, manteniendo informado al equipo",
+        "Seleccionar una herramienta usada por la competencia, sin importar si encaja, para favorecer el entendimiento compartido del equipo",
+        "Que la herramienta se adapte al contexto técnico y al flujo de trabajo del equipo, y se integre bien con las herramientas existentes"
+      ],
+      "correctIndex": 3,
+      "explanation": "La selección de herramientas para pruebas ágiles debe basarse en su adecuación al contexto del equipo, a las herramientas existentes y a las necesidades del flujo de trabajo, no en el coste, la popularidad ni la imitación de la competencia."
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.1.3",
+      "difficulty": "hard",
+      "question": "A mitad de un sprint se anuncia una nueva norma legal que afecta a la funcionalidad en desarrollo. ¿Cuál es la respuesta MÁS ágil?",
+      "options": [
+        "Colaborar de inmediato con el propietario del producto y el equipo para entender el impacto y adaptar el plan del sprint si es necesario",
+        "Continuar según lo previsto y hablar de la norma después del sprint, mientras se ayuda al equipo a coordinar sus próximos pasos",
+        "Congelar todo el desarrollo hasta que se apruebe un nuevo plan anual del proyecto, manteniendo informado al equipo",
+        "Pedir a los probadores que documenten el riesgo, pero evitar cambios de alcance para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los equipos ágiles responden con rapidez a los cambios importantes mediante la colaboración. Adaptan los planes según la nueva información en vez de seguir a ciegas un plan obsoleto.",
+      "id": "at-041"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.1.3",
+      "difficulty": "easy",
+      "question": "¿Cuál es un buen ejemplo de empezar pronto las pruebas de una historia ágil?",
+      "options": [
+        "Esperar a que termine la programación antes de pensar en las pruebas, teniendo en cuenta al equipo",
+        "Redactar ejemplos de aceptación mientras todavía se conversa sobre la historia",
+        "Aplazar el conjunto completo de regresión hasta después del despliegue, teniendo en cuenta al equipo",
+        "Registrar defectos del sprint anterior sin revisar la nueva historia, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "En las pruebas ágiles se empieza tan pronto como se define una historia. Los ejemplos tempranos mejoran la comprensión antes de que exista código.",
+      "id": "at-042"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.1.3",
+      "difficulty": "easy",
+      "question": "¿Qué aportación puede hacer un probador durante la planificación del sprint?",
+      "options": [
+        "Aprobar la nómina del equipo del sprint, teniendo en cuenta al equipo",
+        "Asignar cada historia a un único especialista antes de debatirla, teniendo en cuenta al equipo",
+        "Asegurarse de que se tengan en cuenta las tareas, los entornos y las dependencias de prueba al seleccionar historias",
+        "Evitar todas las estimaciones para que la planificación sea breve, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los probadores ayudan al equipo a asumir compromisos realistas al señalar pronto el trabajo de calidad y sus dependencias. Esto mejora la precisión de la planificación.",
+      "id": "at-043"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.1.3",
+      "difficulty": "medium",
+      "question": "¿Cuál es el resultado más útil de una conversación al estilo ATDD antes de empezar a programar?",
+      "options": [
+        "Un registro completo de defectos del sprint, manteniendo informado al equipo",
+        "Una promesa de que no hará falta ninguna aclaración adicional para que las partes interesadas aporten comentarios oportunos",
+        "Un diagrama de arquitectura técnica aprobado por la dirección, manteniendo informado al equipo",
+        "Un conjunto de ejemplos compartidos que aclaran el comportamiento y que luego pueden convertirse en comprobaciones ejecutables"
+      ],
+      "correctIndex": 3,
+      "explanation": "ATDD busca crear un entendimiento compartido mediante ejemplos concretos. A menudo, esos ejemplos se convierten más adelante en pruebas de aceptación.",
+      "id": "at-044"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.1.4",
+      "difficulty": "easy",
+      "question": "¿Por qué los equipos ágiles prefieren entregar pequeños incrementos verticales de funcionalidad en lugar de componentes grandes parcialmente terminados?",
+      "options": [
+        "Los incrementos pequeños permiten recibir antes comentarios útiles sobre el software funcionando",
+        "Los incrementos pequeños reducen la necesidad de cualquier prueba y mantienen informado al equipo",
+        "Los métodos ágiles prohíben los componentes grandes, teniendo en cuenta al equipo",
+        "Los incrementos verticales eliminan la necesidad de priorizar, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un pequeño incremento vertical aporta valor de extremo a extremo y los usuarios pueden evaluarlo pronto. Esos comentarios tempranos ayudan al equipo a aprender y adaptarse.",
+      "id": "at-045"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.1.4",
+      "difficulty": "medium",
+      "question": "Durante el perfeccionamiento de la pila, un probador pregunta: «¿Qué debería ocurrir si el código de descuento está vencido?». ¿Cuál es el principal valor de esa pregunta?",
+      "options": [
+        "Retrasa la planificación con detalles innecesarios y mantiene informado al equipo",
+        "Ayuda a revelar criterios de aceptación ausentes y casos límite antes de empezar la implementación",
+        "Demuestra que la historia debe pasar a la siguiente versión, teniendo en cuenta al equipo",
+        "Sustituye la necesidad de recibir comentarios del cliente, como prioridad del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las preguntas sobre casos límite revelan pronto comportamientos ocultos. Esto reduce el retrabajo y hace que la historia sea más comprobable.",
+      "id": "at-046"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.1.4",
+      "difficulty": "easy",
+      "question": "En la reunión diaria, ¿qué actualización de un probador es MÁS valiosa?",
+      "options": [
+        "Una revisión detallada de cada caso de prueba ejecutado ayer, teniendo en cuenta al equipo",
+        "Una queja privada al Scrum Master después de la reunión, teniendo en cuenta al equipo",
+        "Una breve actualización sobre el progreso actual, los riesgos de calidad y los impedimentos que afectan al objetivo del sprint",
+        "Una lista de defectos de versiones anteriores sin relación con el trabajo actual, como prioridad del equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las reuniones diarias son más útiles cuando las actualizaciones son breves y pertinentes para la coordinación. Los riesgos y los impedimentos ayudan a todo el equipo a adaptarse.",
+      "id": "at-047"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.1.4",
+      "difficulty": "easy",
+      "question": "En un escenario BDD escrito en formato Dado/Cuando/Entonces, ¿qué describe la parte «Entonces»?",
+      "options": [
+        "Los pasos de despliegue del entorno, teniendo en cuenta al equipo",
+        "Las personas asignadas a automatizar la prueba, teniendo en cuenta al equipo",
+        "La razón histórica por la que se solicitó la funcionalidad",
+        "El resultado esperado después de que ocurra la acción"
+      ],
+      "correctIndex": 3,
+      "explanation": "En Dado/Cuando/Entonces, la sección Entonces indica el resultado esperado y lo que debería observarse después de activar el comportamiento.",
+      "id": "at-048"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.2.1",
+      "difficulty": "easy",
+      "question": "¿Cuál es el propósito principal de la reunión diaria de un equipo ágil?",
+      "options": [
+        "Sincronizar al equipo y planificar el trabajo del día siguiente en función del objetivo actual",
+        "Aprobar las hojas de horas del día anterior, manteniendo informado al equipo",
+        "Realizar un triaje detallado de todos los problemas abiertos para que las partes interesadas aporten comentarios oportunos",
+        "Sustituir las reuniones de perfeccionamiento de la pila para favorecer el entendimiento compartido del equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "La reunión diaria es un breve evento de coordinación. Su propósito es mejorar el conocimiento compartido y ayudar al equipo a organizar sus próximos pasos.",
+      "id": "at-049"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.1.5",
+      "difficulty": "easy",
+      "question": "¿Cuál de estas actividades es el MEJOR ejemplo de una prueba orientada al negocio que apoya al equipo?",
+      "options": [
+        "Pruebas de estrés del clúster de bases de datos de producción",
+        "Debatir ejemplos concretos de aceptación antes de empezar a programar",
+        "Revisar el uso de CPU después de la publicación",
+        "Ejecutar un analizador de vulnerabilidades en el sistema desplegado"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas orientadas al negocio que apoyan al equipo ayudan a aclarar el comportamiento deseado antes o durante el desarrollo. Los ejemplos de aceptación son un caso típico.",
+      "id": "at-050"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.1.5",
+      "difficulty": "easy",
+      "question": "Un propietario del producto redacta criterios de aceptación que solo dicen «funciona según lo esperado». ¿Cómo puede aportar MÁS valor un probador?",
+      "options": [
+        "Aceptar la redacción porque los detalles pueden esperar hasta la ejecución, teniendo en cuenta al equipo",
+        "Sustituir los criterios por una plantilla de informe de defectos, teniendo en cuenta al equipo",
+        "Ayudar a convertir la afirmación imprecisa en ejemplos específicos y resultados observables",
+        "Estimar la historia en horas sin más conversaciones, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los probadores suelen aportar valor al concretar las expectativas y hacerlas verificables. Los ejemplos específicos reducen los malentendidos posteriores.",
+      "id": "at-051"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.1.5",
+      "difficulty": "easy",
+      "question": "En el ciclo TDD, ¿por qué es importante la etapa de refactorización después de que pase la prueba?",
+      "options": [
+        "Es el momento en que se redactan por primera vez los criterios de aceptación, para favorecer el entendimiento compartido",
+        "Sustituye la necesidad de revisar el código y mantiene informado al equipo",
+        "Debe omitirse para preservar la velocidad y mantener informado al equipo",
+        "Permite al equipo mejorar el diseño del código, manteniendo el comportamiento protegido por las pruebas"
+      ],
+      "correctIndex": 3,
+      "explanation": "La refactorización mejora la estructura interna sin cambiar el comportamiento. Las pruebas satisfactorias dan confianza de que las mejoras de diseño no alteraron la intención.",
+      "id": "at-052"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.2.2",
+      "difficulty": "medium",
+      "question": "¿Cómo ayuda una definición de preparado (Definition of Ready) a un equipo ágil antes de empezar a trabajar en un elemento de la pila?",
+      "options": [
+        "Proporciona una comprobación compartida de que el elemento se entiende lo suficiente para empezar sin confusiones evitables",
+        "Garantiza que el elemento se entregará sin defectos y ayuda al equipo a coordinar sus próximos pasos",
+        "Sustituye por completo la planificación del sprint y ayuda al equipo a coordinar sus próximos pasos, teniendo en cuenta al equipo",
+        "Permite a los probadores rechazar historias sin hablar con el equipo y favorece el entendimiento compartido"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una definición de preparado ayuda al equipo a detectar cuándo una historia es demasiado imprecisa o incompleta para empezar con eficiencia. Reduce los cambios de rumbo debidos a ambigüedades evitables.",
+      "id": "at-053"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.1.6",
+      "difficulty": "hard",
+      "question": "Durante un sprint, ¿cuál suele ser la forma MÁS eficaz de obtener confianza rápida en una historia nueva?",
+      "options": [
+        "Confiar en una sola prueba de interfaz de extremo a extremo porque parece realista, manteniendo informado al equipo",
+        "Usar una combinación de pruebas rápidas de nivel inferior y una cantidad menor de comprobaciones de nivel superior",
+        "Aplazar todas las pruebas hasta que se puedan probar juntas varias historias, teniendo en cuenta al equipo",
+        "Omitir las pruebas de nivel inferior si se planean pruebas exploratorias, como prioridad del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una combinación equilibrada ofrece comentarios rápidos y una cobertura más amplia. Depender en exceso de unas pocas pruebas lentas de interfaz suele reducir la velocidad y la calidad del diagnóstico.",
+      "id": "at-054"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.1.6",
+      "difficulty": "medium",
+      "question": "¿Por qué puede colaborar un probador ágil con especialistas de operaciones o de plataforma antes de una publicación?",
+      "options": [
+        "Para transferir toda la responsabilidad de las pruebas fuera del equipo, manteniendo informado al equipo",
+        "Para evitar hablar de riesgos no funcionales durante el sprint, teniendo en cuenta al equipo",
+        "Para definir comprobaciones de registro, supervisión o despliegue que favorezcan la calidad en entornos similares a producción",
+        "Para eliminar la necesidad de pruebas automatizadas, como prioridad del equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los comentarios sobre la calidad no terminan en el entorno de pruebas. Colaborar con operaciones puede mejorar la observabilidad y la confianza en el despliegue.",
+      "id": "at-055"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.1.6",
+      "difficulty": "easy",
+      "question": "¿Cuál es el objetivo principal de ejecutar una canalización de CI con cada confirmación de código?",
+      "options": [
+        "Aplazar los comentarios hasta que termine el sprint, como prioridad del equipo",
+        "Sustituir la ramificación del control de versiones y mantener informado al equipo",
+        "Eliminar la necesidad de hacer pruebas locales, teniendo en cuenta al equipo",
+        "Obtener rápidamente indicios de que un cambio ha alterado las expectativas de compilación o de pruebas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las ejecuciones frecuentes de CI acortan el tiempo entre la introducción de un cambio y el conocimiento de sus efectos. Los comentarios rápidos son fundamentales para la entrega ágil.",
+      "id": "at-056"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.2.3",
+      "difficulty": "hard",
+      "question": "Durante la planificación del sprint, el equipo puede añadir una historia más de cara al cliente o dedicar ese esfuerzo a reducir la deuda de automatización de pruebas que ha ralentizado las entregas. ¿Qué decisión refleja MEJOR el pensamiento ágil?",
+      "options": [
+        "Considerar el efecto en la entrega sostenible y la calidad del producto antes de decidir con el propietario del producto",
+        "Dar prioridad a la historia adicional porque el alcance visible prima sobre el trabajo técnico, como prioridad del equipo",
+        "Ignorar la deuda de automatización hasta terminar la versión para que las partes interesadas aporten comentarios oportunos",
+        "Dejar que el Scrum Master decida en solitario porque la deuda técnica no es un asunto de la pila, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los equipos ágiles equilibran el valor inmediato de las funcionalidades con el trabajo técnico que preserva la calidad y el flujo. La deuda técnica es un asunto del producto porque afecta a la velocidad y al riesgo futuros.",
+      "id": "at-057"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.2.3",
+      "difficulty": "hard",
+      "question": "El sprint está a punto de terminar y solo se puede ejecutar la mitad del conjunto de regresión. ¿Cómo deben priorizarse las pruebas?",
+      "options": [
+        "Ejecutar pruebas al azar para que el proceso sea justo, teniendo en cuenta al equipo",
+        "Centrarse en las áreas con cambios recientes, flujos de negocio importantes y fragilidad conocida",
+        "Elegir las pruebas según quién sea responsable, en vez de según el riesgo, teniendo en cuenta al equipo",
+        "Omitir por completo la regresión porque los equipos ágiles aceptan los cambios constantes, como prioridad del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cuando el tiempo es limitado, conviene seleccionar las pruebas según el riesgo. Es más probable que los cambios recientes y los flujos críticos revelen regresiones importantes.",
+      "id": "at-058"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.1.7",
+      "difficulty": "medium",
+      "question": "¿Cómo ayuda más directamente el conocimiento del dominio de negocio a un probador ágil?",
+      "options": [
+        "Permite al probador sustituir al propietario del producto en las decisiones sobre la hoja de ruta, teniendo en cuenta al equipo",
+        "Elimina la necesidad de habilidades técnicas, como prioridad del equipo",
+        "Ayuda a identificar escenarios y riesgos realistas, y prioridades importantes para los usuarios",
+        "Garantiza que todas las fallas se puedan detectar manualmente, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Conocer el dominio ayuda a los probadores a centrarse en el comportamiento importante. Mejora tanto el diseño de escenarios como la priorización.",
+      "id": "at-059"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.3",
+      "difficulty": "hard",
+      "question": "¿Cuándo resulta especialmente útil la virtualización de servicios en las pruebas ágiles?",
+      "options": [
+        "Cuando las integraciones reales son rápidas, estables y están disponibles, ayudando al equipo a coordinar sus próximos pasos",
+        "Cuando se pretende eliminar por completo la comprobación de contratos y favorecer el entendimiento compartido",
+        "Cuando los desarrolladores quieren evitar aprender la API real y favorecer el entendimiento compartido",
+        "Cuando el equipo depende de un sistema externo que no está disponible, es costoso o resulta difícil de controlar durante las pruebas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los servicios virtuales pueden eliminar bloqueos causados por dependencias no disponibles o inestables. Permiten realizar pruebas más tempranas y repetibles.",
+      "id": "at-060"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.2.4",
+      "difficulty": "easy",
+      "question": "¿Qué busca lograr principalmente un ritmo sostenible en el desarrollo ágil?",
+      "options": [
+        "Mantener un ritmo que pueda sostenerse a lo largo del tiempo sin agotar al equipo",
+        "Mantener al equipo haciendo horas extra al final de cada iteración, teniendo en cuenta al equipo",
+        "Reducir la colaboración para que cada persona se concentre en una especialidad, teniendo en cuenta al equipo",
+        "Asegurarse de que todas las historias se estimen en horas, como prioridad del equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un ritmo sostenible ayuda al equipo a mantener su eficacia a largo plazo. Las horas extra constantes tienden a reducir la calidad y la previsibilidad.",
+      "id": "at-061"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.2.4",
+      "difficulty": "easy",
+      "question": "Después de corregir un defecto en el cálculo de impuestos, ¿qué opción de pruebas de regresión es MÁS sensata?",
+      "options": [
+        "Volver a probar la pantalla afectada sin comprobar rutas relacionadas, como prioridad del equipo",
+        "Volver a probar la corrección y las rutas de cálculo cercanas que podrían verse afectadas por el cambio",
+        "No volver a probar porque el desarrollador ya lo hizo, como prioridad del equipo",
+        "Esperar hasta la próxima versión importante para ejecutar cualquier prueba de regresión, manteniendo informado al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "La corrección de un defecto puede afectar a lógica relacionada más allá del síntoma exacto. Las pruebas de regresión ágiles deben abarcar el área modificada y los posibles efectos secundarios.",
+      "id": "at-062"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.1.8",
+      "difficulty": "hard",
+      "question": "Un desarrollador afirma que una historia está terminada, pero sigue fallando un ejemplo de aceptación clave. ¿Cuál es la respuesta MÁS eficaz del probador?",
+      "options": [
+        "Marcar la historia como terminada en silencio para evitar conflictos y permitir que las partes interesadas aporten comentarios oportunos",
+        "Reasignar el defecto al propietario del producto sin explicaciones y ayudar al equipo a coordinar sus próximos pasos",
+        "Presentar la evidencia del fallo y hablar con el equipo sobre la discrepancia respecto de los criterios de finalización acordados",
+        "Esperar hasta después de la publicación para mencionar el problema y permitir comentarios oportunos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los probadores ágiles comunican las inquietudes de calidad con evidencia vinculada a acuerdos compartidos. Así, la conversación se mantiene objetiva y colaborativa.",
+      "id": "at-063"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.4",
+      "difficulty": "hard",
+      "question": "¿Cuál es el propósito principal de las pruebas de contrato entre servicios que colaboran?",
+      "options": [
+        "Medir la velocidad de carga de una página en el navegador, como prioridad del equipo",
+        "Sustituir todas las pruebas unitarias de ambos servicios para que las partes interesadas aporten comentarios oportunos",
+        "Documentar los procedimientos de despliegue para favorecer el entendimiento compartido del equipo",
+        "Verificar que cada parte siga respetando la interfaz y las expectativas sobre los datos acordadas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de contrato se centran en las expectativas de integración entre sistemas. Permiten detectar antes las desviaciones de los supuestos sobre la interfaz.",
+      "id": "at-064"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.3.1",
+      "difficulty": "hard",
+      "question": "¿Cuál es un beneficio clave de usar un mapa de historias para planificar un producto?",
+      "options": [
+        "Ayuda al equipo a visualizar el recorrido del usuario e identificar versiones incrementales y segmentos que faltan",
+        "Asigna automáticamente tareas a los desarrolladores y favorece el entendimiento compartido del equipo",
+        "Sustituye la necesidad de criterios de aceptación para que las partes interesadas aporten comentarios oportunos",
+        "Se usa principalmente para calcular los costes de infraestructura y ayudar al equipo a coordinar sus próximos pasos"
+      ],
+      "correctIndex": 0,
+      "explanation": "El mapa de historias muestra cómo se relacionan las actividades del usuario y las historias. Esa perspectiva ayuda al equipo a detectar lagunas y planificar versiones incrementales.",
+      "id": "at-065"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.2.5",
+      "difficulty": "medium",
+      "question": "¿Qué hace útil un charter de pruebas exploratorias durante un sprint?",
+      "options": [
+        "Especifica cada paso de prueba para impedir cualquier exploración inesperada y permitir comentarios oportunos",
+        "Ofrece una misión de investigación concreta, sin impedir que el probador aprenda y aplique su criterio",
+        "Sustituye las pruebas automatizadas cuando la automatización resulta difícil y permite comentarios oportunos",
+        "Sustituye todos los informes posteriores a la sesión y favorece el entendimiento compartido del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Un charter define qué investigar sin convertir la sesión en un guion rígido. Ese equilibrio favorece una exploración con propósito.",
+      "id": "at-066"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.2.3",
+      "difficulty": "hard",
+      "question": "Un probador y un desarrollador no están de acuerdo sobre la gravedad de un defecto. ¿Cuál es la MEJOR forma de resolverlo?",
+      "options": [
+        "Escalar el asunto de inmediato a la alta dirección, como prioridad del equipo",
+        "Dejar que el probador decida en solitario porque lo encontró, teniendo en cuenta al equipo",
+        "Debatir el impacto en los usuarios, el riesgo para el negocio y la evidencia, usando criterios de gravedad compartidos",
+        "Cerrar el defecto para que el sprint avance, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las conversaciones sobre la gravedad son más productivas cuando se basan en el impacto y en criterios acordados. La evidencia compartida evita discusiones improductivas de opiniones.",
+      "id": "at-067"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.5",
+      "difficulty": "easy",
+      "question": "¿Por qué se suelen usar dobles de prueba, como mocks o stubs, en pruebas automatizadas de nivel inferior?",
+      "options": [
+        "Implican que no es necesario verificar por separado las integraciones de producción y favorecen el entendimiento compartido",
+        "Son obligatorios en todas las pruebas de aceptación y mantienen informado al equipo",
+        "Sustituyen las aserciones del código de prueba para que las partes interesadas aporten comentarios oportunos",
+        "Ayudan a aislar la unidad sometida a prueba y hacen que las comprobaciones sean más rápidas y controlables"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los dobles de prueba permiten controlar las dependencias y centrarse en el comportamiento que se está comprobando. Normalmente mejoran la velocidad de las pruebas y la precisión del diagnóstico.",
+      "id": "at-068"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.3.2",
+      "difficulty": "hard",
+      "question": "Un equipo añade una breve investigación porque desconoce las restricciones de integración de un nuevo proveedor de pagos. ¿Para qué sirve ese spike?",
+      "options": [
+        "Adquirir conocimientos que reduzcan la incertidumbre antes de implementar",
+        "Entregar funcionalidad lista para producción a los clientes, manteniendo informado al equipo",
+        "Aplazar la estimación hasta después del despliegue, teniendo en cuenta al equipo",
+        "Sustituir las pruebas exploratorias por documentación, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un spike es una investigación con límite de tiempo que busca aprender lo suficiente para tomar mejores decisiones de entrega. Su propósito es reducir la incertidumbre, no publicar toda la funcionalidad.",
+      "id": "at-069"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.2.6",
+      "difficulty": "medium",
+      "question": "En las pruebas exploratorias basadas en sesiones, ¿qué valor tiene la retrospectiva posterior a la sesión?",
+      "options": [
+        "Permite al probador descartar todas las notas cuando se acaba el tiempo, teniendo en cuenta al equipo",
+        "Ayuda a compartir con el equipo los hallazgos, riesgos y próximas ideas",
+        "Se utiliza para estimar la velocidad del sprint, teniendo en cuenta al equipo",
+        "Sustituye el perfeccionamiento de la pila del próximo sprint, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "La retrospectiva hace visible el trabajo exploratorio y útil para otras personas. Convierte el aprendizaje individual en conocimiento compartido del equipo.",
+      "id": "at-070"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.2.4",
+      "difficulty": "medium",
+      "question": "¿Qué práctica resulta especialmente útil para los probadores de un equipo ágil distribuido?",
+      "options": [
+        "Depender de conversaciones informales no registradas en vez de actualizaciones compartidas, teniendo en cuenta al equipo",
+        "Esperar a las reuniones mensuales de estado para comunicar riesgos de calidad",
+        "Compartir de forma asíncrona evidencia, ejemplos y notas de sesión concisos y por escrito",
+        "Evitar compartir la pantalla para preservar la independencia, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los equipos distribuidos se benefician de artefactos ligeros y visibles que otras personas pueden revisar más tarde. Una buena comunicación asíncrona reduce las demoras.",
+      "id": "at-071"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.6",
+      "difficulty": "medium",
+      "question": "¿Por qué los equipos ágiles suelen automatizar muchas comprobaciones a nivel de API o servicio en vez de hacerlo solo a través de la interfaz de usuario?",
+      "options": [
+        "Las pruebas de interfaz están prohibidas en la integración continua y mantienen informado al equipo",
+        "Las comprobaciones de API pueden verificar la usabilidad mejor que las personas, como prioridad del equipo",
+        "Las comprobaciones de servicio eliminan la necesidad de pruebas unitarias para que las partes interesadas aporten comentarios oportunos",
+        "Las comprobaciones de API suelen ser más rápidas y menos frágiles, y aun así validan comportamientos importantes del negocio"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas a nivel de servicio suelen equilibrar bien el realismo y la velocidad. Normalmente fallan de forma más precisa y requieren menos mantenimiento que los conjuntos extensos de pruebas de interfaz.",
+      "id": "at-072"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.3.3",
+      "difficulty": "easy",
+      "question": "En un sistema Kanban, ¿qué promueve el enfoque de arrastre (pull)?",
+      "options": [
+        "Empezar nuevo trabajo solo cuando la siguiente etapa del flujo de trabajo tiene capacidad",
+        "Empezar trabajo nuevo en cuanto alguien queda libre, sin importar la capacidad posterior, teniendo en cuenta al equipo",
+        "Asignar todo el trabajo desde una gerencia central de proyecto y mantener informado al equipo",
+        "Mover los elementos a terminado al final de cada mes, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un sistema de arrastre evita sobrecargar las etapas posteriores. El trabajo comienza cuando realmente hay capacidad para atenderlo.",
+      "id": "at-073"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.2.7",
+      "difficulty": "hard",
+      "question": "Un equipo añade a una historia «los resultados de búsqueda aparecen en menos de dos segundos en el 95 % de las solicitudes». ¿Cómo debe tratarse esa afirmación?",
+      "options": [
+        "Como un detalle innecesario, porque las historias ágiles deben evitar límites cuantificables y mantener informado al equipo",
+        "Como un criterio de aceptación no funcional que debe influir en el desarrollo y las pruebas durante la iteración",
+        "Como un elemento de las notas de publicación después de lanzar la funcionalidad, como prioridad del equipo",
+        "Como una comprobación que se aplaza hasta producción para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las necesidades no funcionales pueden expresarse como criterios de aceptación cuando son pertinentes para una historia. Hacerlas explícitas permite diseñar y probarlas pronto.",
+      "id": "at-074"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.2.5",
+      "difficulty": "medium",
+      "question": "¿Cómo puede un probador enseñar pruebas exploratorias al equipo sin convertirse en un cuello de botella?",
+      "options": [
+        "Manteniendo en privado las ideas exploratorias hasta el día de la publicación y manteniendo informado al equipo",
+        "Reservando las pruebas exploratorias para los probadores, como prioridad del equipo",
+        "Enseñando charters y heurísticas para que otras personas también puedan investigar los riesgos",
+        "Sustituyendo todas las pruebas con guion por sesiones sin guion, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "La formación distribuye las habilidades de prueba entre todo el equipo. Esto favorece el enfoque de equipo completo en vez de centralizar el conocimiento.",
+      "id": "at-075"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.7",
+      "difficulty": "medium",
+      "question": "Una prueba falla de forma intermitente, pero no se encuentra ningún defecto del producto. ¿Cuál es la mejor respuesta del equipo ante esa prueba inestable?",
+      "options": [
+        "Ignorarla para siempre porque los fallos ocasionales son normales y permitir comentarios oportunos",
+        "Contar cada fallo como un defecto confirmado de producción y permitir comentarios oportunos",
+        "Duplicarla diez veces para que alguna ejecución pase y favorecer el entendimiento compartido",
+        "Tratarla como un problema de calidad, investigar la causa y evitar que contamine los comentarios de la canalización"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas inestables reducen la confianza en la automatización. Los equipos deben resolver sus causas para que los resultados de la canalización sigan siendo útiles.",
+      "id": "at-076"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.3.4",
+      "difficulty": "medium",
+      "question": "En un diagrama de flujo acumulado, la banda de pruebas se ensancha durante varios días. ¿Qué indica esto con MAYOR probabilidad?",
+      "options": [
+        "Las pruebas se han convertido en un cuello de botella y se acumula trabajo en esa etapa",
+        "El propietario del producto ha reordenado la pila, como prioridad del equipo",
+        "El equipo ha reducido el tiempo de ciclo, teniendo en cuenta al equipo",
+        "Los desarrolladores han dejado de confirmar código, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una banda cada vez más ancha indica que aumenta el trabajo en curso en esa etapa. Por lo general, esto señala una reducción del flujo o un cuello de botella.",
+      "id": "at-077"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.3.2",
+      "difficulty": "easy",
+      "question": "¿Qué afirmación sobre los niveles de prueba en equipos ágiles es MÁS precisa?",
+      "options": [
+        "Las pruebas de sistema se realizan durante el sprint y los otros niveles se aplazan",
+        "Las pruebas unitarias, de integración y de sistema pueden coincidir en la misma iteración",
+        "Cada nivel de prueba debe esperar la aprobación formal del nivel anterior",
+        "Las pruebas de aceptación de usuario se aplazan hasta después de la publicación, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "El trabajo ágil es iterativo, por lo que varios niveles de prueba suelen realizarse durante el mismo sprint. No se separan estrictamente en fases prolongadas.",
+      "id": "at-078"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.2.6",
+      "difficulty": "hard",
+      "question": "¿Qué valor puede aportar un probador al trabajar en pareja con un desarrollador para idear pruebas unitarias?",
+      "options": [
+        "Autoridad para aprobar el estilo de programación y ayudar al equipo a coordinar sus próximos pasos",
+        "Poder omitir los criterios de aceptación y favorecer el entendimiento compartido del equipo",
+        "Centrarse en casos límite y modos de fallo a partir de defectos anteriores y reglas de negocio",
+        "Garantizar que no haga falta ninguna otra revisión y ayudar al equipo a coordinar sus próximos pasos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los probadores suelen pensar en límites, rutas negativas y riesgos. Incorporar esas ideas a las pruebas de nivel inferior mejora la detección temprana de defectos.",
+      "id": "at-079"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.8",
+      "difficulty": "easy",
+      "question": "¿Cómo contribuye el análisis estático a las pruebas ágiles?",
+      "options": [
+        "Encuentra todos los defectos de ejecución que podrían ver los usuarios y permite comentarios oportunos",
+        "Sustituye todas las revisiones entre pares y las pruebas unitarias, manteniendo informado al equipo",
+        "Se aplica después de publicar una funcionalidad, como prioridad del equipo",
+        "Puede detectar ciertos problemas pronto sin ejecutar el software y añadir otro mecanismo rápido de comentarios"
+      ],
+      "correctIndex": 3,
+      "explanation": "El análisis estático proporciona comentarios rápidos sobre algunas clases de problemas antes de la ejecución. Complementa las pruebas dinámicas, pero no las sustituye.",
+      "id": "at-080"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.4.1",
+      "difficulty": "easy",
+      "question": "¿Qué acción demuestra mejor que un Scrum Master ejerce un liderazgo de servicio?",
+      "options": [
+        "Ayudar al equipo a eliminar impedimentos y mejorar su forma de trabajar",
+        "Asignar a cada desarrollador un conjunto fijo de tareas para el sprint",
+        "Aprobar todas las pruebas automatizadas antes de su ejecución, teniendo en cuenta al equipo",
+        "Ser propietario del orden de prioridades de la pila del producto, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un líder de servicio apoya al equipo en vez de dirigir cada tarea. Eliminar impedimentos y facilitar la mejora es una contribución fundamental del Scrum Master.",
+      "id": "at-081"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.3.3",
+      "difficulty": "hard",
+      "question": "¿Por qué conviene hablar de las necesidades de datos de prueba al perfeccionar una historia en vez de hacerlo durante la ejecución final de las pruebas?",
+      "options": [
+        "Porque los datos de prueba no pueden cambiarse cuando empieza un sprint, teniendo en cuenta al equipo",
+        "Porque prepararlos pronto evita demoras y revela reglas de negocio ocultas",
+        "Porque solo los desarrolladores crean datos de prueba, como prioridad del equipo",
+        "Porque las pruebas manuales no deben usar variaciones de datos, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Pensar en los datos pronto revela restricciones y evita sorpresas de última hora. También ayuda al equipo a entender cómo se verificará realmente la funcionalidad.",
+      "id": "at-082"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.2.7",
+      "difficulty": "easy",
+      "question": "Antes de la revisión del sprint, ¿cómo puede un probador ayudar al equipo con mayor eficacia?",
+      "options": [
+        "Reescribir la hoja de ruta del producto para el siguiente trimestre y permitir comentarios de las partes interesadas",
+        "Ocultar problemas conocidos para que la demostración sea más fluida, teniendo en cuenta al equipo",
+        "Preparar escenarios o datos realistas que muestren si el comportamiento entregado cumple las expectativas",
+        "Aprobar personalmente todas las estimaciones de la pila para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una revisión mejora cuando se presentan ejemplos realistas de lo que se ha construido. Los probadores pueden ayudar al equipo a mostrar el comportamiento real con claridad.",
+      "id": "at-083"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.2.9",
+      "difficulty": "hard",
+      "question": "¿Por qué puede resultar engañosa la cobertura de código si se usa como indicador principal de la calidad de las pruebas?",
+      "options": [
+        "La cobertura demuestra automáticamente la ausencia de defectos y permite comentarios oportunos",
+        "Las herramientas de cobertura se centran en pruebas de interfaz y favorecen el entendimiento compartido",
+        "Una cobertura baja demuestra por sí sola que una publicación no es segura y permite comentarios oportunos",
+        "Una cobertura alta no indica si las pruebas comprueban el comportamiento correcto ni los riesgos importantes"
+      ],
+      "correctIndex": 3,
+      "explanation": "La cobertura muestra qué código se ejecutó, no si se verificaron los aspectos adecuados. Las pruebas útiles requieren aserciones significativas y una buena atención a los riesgos.",
+      "id": "at-084"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.4.2",
+      "difficulty": "easy",
+      "question": "¿En qué se diferencia la revisión del sprint de la retrospectiva del sprint?",
+      "options": [
+        "La revisión examina el incremento del producto con las partes interesadas, mientras que la retrospectiva examina la forma de trabajar del equipo",
+        "La revisión se centra en el proceso del equipo y la retrospectiva aprueba cambios de alcance para que las partes interesadas aporten comentarios oportunos",
+        "Ambas reuniones tienen el mismo propósito, pero distinto nombre, para que las partes interesadas aporten comentarios oportunos",
+        "La retrospectiva es para la gerencia y la revisión para los desarrolladores, como prioridad del equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "La revisión del sprint se centra en el producto y los comentarios de las partes interesadas. La retrospectiva se centra en mejorar el proceso, las herramientas y la colaboración del equipo.",
+      "id": "at-085"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.3.4",
+      "difficulty": "hard",
+      "question": "Se encuentra un defecto al final del sprint. ¿Cuál es la MEJOR primera respuesta del equipo ágil?",
+      "options": [
+        "Esperar a la retrospectiva para hablar del asunto, como prioridad del equipo",
+        "Evaluar el impacto en colaboración y decidir si se corrige ahora, se aplaza o se reduce el alcance",
+        "Cerrar el defecto porque los problemas tardíos son habituales en el desarrollo ágil, como prioridad del equipo",
+        "Culpar a quien escribió el código, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los equipos ágiles gestionan los problemas de manera transparente y colaborativa. El primer objetivo es entender el impacto y tomar una decisión práctica en conjunto.",
+      "id": "at-086"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.2.8",
+      "difficulty": "hard",
+      "question": "¿Qué afirmación describe MEJOR la independencia del probador en un equipo ágil maduro?",
+      "options": [
+        "Los probadores mantienen su independencia evitando colaborar a diario y ayudan al equipo a coordinar sus próximos pasos",
+        "La independencia significa que los probadores son propietarios de la pila del producto para que las partes interesadas aporten comentarios oportunos",
+        "La independencia se basa en aportar una perspectiva crítica y objetiva, con evidencia, aunque se trabaje en estrecha colaboración con el equipo",
+        "La independencia no es necesaria si hay pruebas automatizadas para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los equipos ágiles valoran la colaboración estrecha, pero también necesitan un pensamiento objetivo. La independencia se conserva mediante la perspectiva, la evidencia y la disposición a cuestionar supuestos.",
+      "id": "at-087"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.3.3",
+      "difficulty": "medium",
+      "question": "¿Cuál es el principal beneficio de ejecutar en paralelo pruebas automatizadas adecuadas en CI?",
+      "options": [
+        "Garantiza que cada fallo sea un defecto del producto, teniendo en cuenta al equipo",
+        "Elimina la necesidad de gestionar los datos de prueba, teniendo en cuenta al equipo",
+        "Hace que las pruebas lentas de interfaz sean más precisas que las pruebas unitarias, teniendo en cuenta al equipo",
+        "Reduce el tiempo de espera de los comentarios, siempre que las pruebas sigan aisladas y sean repetibles"
+      ],
+      "correctIndex": 3,
+      "explanation": "La ejecución en paralelo puede reducir considerablemente la espera. El beneficio depende de que las pruebas sean independientes y estables.",
+      "id": "at-088"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.4.3",
+      "difficulty": "hard",
+      "question": "¿Cómo debe usar el equipo las tendencias de velocidad al planificar una versión?",
+      "options": [
+        "Como ayuda aproximada para hacer previsiones, no como compromiso garantizado",
+        "Como sustituto de la priorización de la pila, como prioridad del equipo",
+        "Como prueba de que todos los sprints futuros entregarán la misma cantidad de historias",
+        "Como medida de la productividad individual de los probadores, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "La velocidad puede ayudar a prever la capacidad probable, pero no constituye una promesa. La planificación ágil acepta la incertidumbre y actualiza las previsiones con datos nuevos.",
+      "id": "at-089"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.3.5",
+      "difficulty": "hard",
+      "question": "Un defecto de producción escapó porque ninguna prueba cubría un caso límite inesperado. ¿Cuál es la acción MÁS útil en la próxima retrospectiva?",
+      "options": [
+        "Prohibir todas las pruebas exploratorias y ayudar al equipo a coordinar sus próximos pasos",
+        "Identificar por qué se pasó por alto el caso límite y mejorar los ejemplos, las heurísticas o la automatización según corresponda",
+        "Eliminar la historia de las notas de publicación y ayudar al equipo a coordinar sus próximos pasos",
+        "Aumentar el volumen de documentación para cada defecto futuro y mantener informado al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las retrospectivas buscan mejorar la forma de trabajar. Es más útil entender por qué existía la brecha que limitarse a añadir papeleo.",
+      "id": "at-090"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.3.1",
+      "difficulty": "medium",
+      "question": "¿Por qué es valioso que un probador ágil aprenda algunas habilidades de automatización aunque los desarrolladores escriban la mayor parte del código del marco?",
+      "options": [
+        "Elimina la necesidad de pruebas manuales o exploratorias para que las partes interesadas aporten comentarios oportunos",
+        "Significa que el probador ya no necesita conocer el negocio para que las partes interesadas aporten comentarios oportunos",
+        "Permite al probador contribuir directamente a obtener comentarios más rápidos y colaborar mejor en los riesgos de calidad",
+        "Es necesario para que los probadores puedan administrar el servidor de CI y ayudar al equipo a coordinar sus próximos pasos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las habilidades de automatización amplían las posibilidades del probador y mejoran la colaboración. Le ayudan a contribuir a comprobaciones repetibles y mejores ciclos de comentarios.",
+      "id": "at-091"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.3.4",
+      "difficulty": "easy",
+      "question": "¿Por qué puede etiquetar un equipo un pequeño subconjunto de pruebas automatizadas como pruebas de humo?",
+      "options": [
+        "Para marcar pruebas que generalmente se excluyen de CI y favorecer el entendimiento compartido del equipo",
+        "Para agrupar notas de sesiones de pruebas exploratorias y favorecer el entendimiento compartido del equipo",
+        "Para separar las pruebas según el desarrollador que las escribió y mantener informado al equipo",
+        "Para identificar un conjunto rápido que dé confianza inmediata en las rutas críticas después de un cambio"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de humo ofrecen una señal rápida de si la compilación está básicamente en buen estado. No sustituyen una cobertura de regresión más amplia.",
+      "id": "at-092"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.4.4",
+      "difficulty": "medium",
+      "question": "¿Qué elemento de la pila refleja MEJOR la idea de INVEST de que sea pequeño y comprobable?",
+      "options": [
+        "Como usuario recurrente, puedo restablecer mi contraseña por correo electrónico para recuperar el acceso a mi cuenta",
+        "Como cliente, puedo pagar con tarjeta de crédito en todos los tipos de pedido y países, con todas las reglas fiscales implementadas a la vez",
+        "Crear el motor completo de informes y ayudar al equipo a coordinar sus próximos pasos para que las partes interesadas aporten comentarios oportunos",
+        "Mejorar la calidad y ayudar al equipo a coordinar sus próximos pasos, mientras ayuda al equipo a coordinar sus próximos pasos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una buena historia INVEST es lo bastante específica para entenderse y verificarse, y a la vez aporta valor al usuario. La historia de restablecimiento de contraseña tiene límites y se puede probar.",
+      "id": "at-093"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.3.6",
+      "difficulty": "easy",
+      "question": "¿Qué historia de usuario es la MÁS comprobable?",
+      "options": [
+        "Mejorar los informes y ayudar al equipo a coordinar sus próximos pasos, como prioridad del equipo",
+        "Como titular de una cuenta, puedo descargar en PDF mi estado de cuenta mensual desde la página de facturación",
+        "Mejorar el proceso de pago y ayudar al equipo a coordinar sus próximos pasos, como prioridad del equipo",
+        "Admitir todas las necesidades de pago futuras y ayudar al equipo a coordinar sus próximos pasos, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una historia comprobable es concreta y acotada. La historia del estado de cuenta en PDF es lo bastante específica para derivar comprobaciones significativas.",
+      "id": "at-094"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.3.2",
+      "difficulty": "hard",
+      "question": "Además de una lista de defectos abiertos, ¿qué puede aportar un probador a una retrospectiva?",
+      "options": [
+        "Quejas personales sobre otros integrantes del equipo, como prioridad del equipo",
+        "La aprobación final del alcance del próximo sprint para que las partes interesadas aporten comentarios oportunos",
+        "Observaciones sobre patrones de defectos escapados, áreas inestables y situaciones en que los comentarios llegaron demasiado tarde",
+        "Detalles del registro diario de horas de cada desarrollador, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las aportaciones útiles a una retrospectiva identifican patrones y mejoras del proceso. Los probadores suelen observar dónde pueden mejorar la calidad o el momento de los comentarios.",
+      "id": "at-095"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.3.5",
+      "difficulty": "hard",
+      "question": "¿Por qué son útiles en la entrega ágil los entornos de prueba efímeros y creados automáticamente?",
+      "options": [
+        "Hacen que la configuración del entorno sea menos repetible para que los equipos sean flexibles, teniendo en cuenta al equipo",
+        "Eliminan la necesidad de datos similares a los de producción, teniendo en cuenta al equipo",
+        "Se usan para almacenar guiones de pruebas manuales, teniendo en cuenta al equipo",
+        "Ayudan a proporcionar condiciones de prueba coherentes y reducen la desviación de configuración"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los entornos efímeros pueden mejorar la coherencia y reducir los problemas de «en mi equipo funciona». La automatización facilita aprovisionarlos cuando se necesitan.",
+      "id": "at-096"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.4.5",
+      "difficulty": "hard",
+      "question": "Una historia de usuario incluye búsqueda, filtrado, ordenación, exportación y vistas guardadas en un solo elemento. ¿Cuál es la MEJOR respuesta ágil?",
+      "options": [
+        "Dividirla en segmentos más pequeños que sigan aportando valor al usuario y puedan completarse de forma independiente",
+        "Mantenerla intacta para terminar todo el trabajo relacionado junto y permitir comentarios oportunos",
+        "Estimar con más precisión y empezar a programar de inmediato, manteniendo informado al equipo",
+        "Moverla a la lista de comprobación de la definición de terminado y mantener informado al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las historias grandes reducen los comentarios y aumentan el riesgo. Dividirlas en segmentos más pequeños y valiosos mejora el flujo y facilita la planificación y las pruebas.",
+      "id": "at-097"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.3.7",
+      "difficulty": "hard",
+      "question": "¿Cómo puede seguir habiendo pruebas independientes en un equipo ágil sin crear un departamento de pruebas separado para una fase tardía?",
+      "options": [
+        "Manteniendo a los probadores al margen hasta que termine el desarrollo y manteniendo informado al equipo",
+        "Haciendo que los probadores aporten una perspectiva crítica e independiente mientras colaboran continuamente con el equipo",
+        "Rotando al propietario del producto al rol de probador cada sprint, como prioridad del equipo",
+        "Prohibiendo que los desarrolladores revisen las pruebas para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 1,
+      "explanation": "En los equipos ágiles, la independencia suele referirse a la perspectiva y la mentalidad, no a la separación organizativa. Los probadores pueden colaborar estrechamente y mantener una actitud crítica objetiva.",
+      "id": "at-098"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.3.3",
+      "difficulty": "easy",
+      "question": "¿Por qué es importante que un probador ágil tenga empatía con los usuarios finales?",
+      "options": [
+        "Permite al probador ignorar las limitaciones técnicas, como prioridad del equipo",
+        "Sustituye la necesidad de criterios de aceptación, teniendo en cuenta al equipo",
+        "Ayuda al probador a imaginar flujos de trabajo, frustraciones y expectativas de calidad realistas",
+        "Es pertinente para la atención al cliente, no para las pruebas, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "La empatía mejora el diseño de escenarios y la priorización. Ayuda al probador a detectar problemas importantes para los usuarios reales.",
+      "id": "at-099"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.3.6",
+      "difficulty": "medium",
+      "question": "¿Cómo ayuda la infraestructura como código a las pruebas y la entrega ágiles?",
+      "options": [
+        "Garantiza un rendimiento perfecto en producción, teniendo en cuenta al equipo",
+        "Sustituye la necesidad de notas de publicación, teniendo en cuenta al equipo",
+        "Es pertinente para grandes proyectos en cascada, no para equipos ágiles",
+        "Mantiene las definiciones de entorno repetibles, revisables y versionadas junto con los cambios"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las definiciones de entorno versionadas mejoran la repetibilidad y la colaboración. Facilitan el seguimiento y la revisión de los cambios en la infraestructura.",
+      "id": "at-100"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.5.1",
+      "difficulty": "easy",
+      "question": "Desde la perspectiva Lean, ¿qué actividad es claramente un desperdicio?",
+      "options": [
+        "Esperar varios días para aclarar un defecto sencillo porque el trabajo pasa de un departamento a otro",
+        "Colaborar en pareja para resolver un problema de integración complejo, manteniendo informado al equipo",
+        "Perfeccionar las próximas historias con el propietario del producto para que las partes interesadas aporten comentarios oportunos",
+        "Ejecutar rápidamente un conjunto de regresión después de un cambio de código, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lean se centra en eliminar demoras, fricciones en los traspasos y otras actividades que no aportan valor. Esperar mucho tiempo para aclaraciones sencillas es un desperdicio clásico.",
+      "id": "at-101"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.3.8",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación distingue mejor las pruebas de confirmación de las pruebas exploratorias?",
+      "options": [
+        "Las pruebas de confirmación son manuales y las exploratorias automatizadas, como prioridad del equipo",
+        "Las pruebas de confirmación comprueban el comportamiento esperado, mientras que las exploratorias investigan más allá de lo previsto",
+        "Son la misma actividad con nombres distintos, manteniendo informado al equipo",
+        "Las pruebas exploratorias se realizan antes de programar y las de confirmación después de la publicación, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de confirmación verifican los resultados esperados según requisitos o ejemplos conocidos. Las pruebas exploratorias buscan información adicional, riesgos y comportamientos inesperados.",
+      "id": "at-102"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.3.4",
+      "difficulty": "hard",
+      "question": "¿Cómo puede apoyar un probador la calidad del producto después del despliegue en un equipo orientado a DevOps?",
+      "options": [
+        "Negándose a revisar los comentarios de producción porque las pruebas terminan con la publicación, teniendo en cuenta al equipo",
+        "Pidiendo a operaciones que oculte los incidentes al equipo, teniendo en cuenta al equipo",
+        "Ayudando a definir alertas, paneles o comprobaciones útiles que revelen problemas de calidad durante la operación",
+        "Eliminando las pruebas de aceptación del sprint y manteniendo informado al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "En un contexto de DevOps, los probadores pueden ayudar a definir los comentarios que recibe el equipo durante la operación real. Las señales de producción son valiosas para aprender.",
+      "id": "at-103"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.3.7",
+      "difficulty": "easy",
+      "question": "¿Por qué deben mantenerse en control de versiones los guiones automatizados y los recursos de prueba relacionados?",
+      "options": [
+        "Para que los probadores puedan ocultar los fallos a los desarrolladores, teniendo en cuenta al equipo",
+        "Para impedir que alguien revise la lógica de pruebas anterior, teniendo en cuenta al equipo",
+        "Para evitar el uso de canalizaciones de CI, teniendo en cuenta al equipo",
+        "Para que los cambios sean trazables y puedan evolucionar junto con el producto"
+      ],
+      "correctIndex": 3,
+      "explanation": "El control de versiones favorece la colaboración, la trazabilidad y la sincronización de los cambios. Los recursos de prueba deben evolucionar junto con el sistema.",
+      "id": "at-104"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.5.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es un beneficio práctico de la propiedad colectiva del código en un equipo al estilo XP?",
+      "options": [
+        "Más integrantes del equipo pueden mejorar o corregir código sin esperar a una única persona responsable",
+        "Un especialista designado controla los cambios de cada módulo para evitar defectos, como prioridad del equipo",
+        "Elimina la necesidad de revisar el código y mantiene informado al equipo",
+        "Garantiza estilos de programación idénticos sin estándares y mantiene informado al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "La propiedad colectiva reduce los cuellos de botella asociados a una sola persona experta. Junto con buenas pruebas y estándares compartidos, favorece un flujo más rápido.",
+      "id": "at-105"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.4.1",
+      "difficulty": "hard",
+      "question": "El sprint termina mañana y hoy se ha integrado un cambio de alto riesgo en los pagos. ¿Qué enfoque de pruebas es el MÁS adecuado?",
+      "options": [
+        "Repartir el tiempo restante por igual entre todas las historias, como prioridad del equipo",
+        "Priorizar pruebas específicas del cambio de pagos y de los recorridos críticos de clientes que podrían verse afectados",
+        "Aplazar todas las pruebas porque no vale la pena examinar cambios tardíos, teniendo en cuenta al equipo",
+        "Ejecutar pruebas de humo de interfaz como sustituto de las comprobaciones de otros niveles, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los cambios tardíos de alto riesgo requieren atención específica. Las pruebas ágiles usan el riesgo para dirigir el tiempo limitado hacia las actividades de mayor valor.",
+      "id": "at-106"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.3.5",
+      "difficulty": "hard",
+      "question": "Durante un taller de identificación de riesgos (risk storming), ¿qué aportación valiosa puede hacer un probador?",
+      "options": [
+        "Enumerar defectos del sprint anterior sin considerar riesgos emergentes para que las partes interesadas aporten comentarios oportunos",
+        "Estimar la velocidad de las próximas cuatro versiones, como prioridad del equipo",
+        "Identificar flujos frágiles, fallos poco probables pero costosos y supuestos que merecen comprobaciones específicas",
+        "Sustituir por completo la priorización del propietario del producto, manteniendo informado al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los probadores suelen detectar dónde los fallos pueden ser sutiles o costosos. Esa perspectiva fortalece la planificación basada en riesgos.",
+      "id": "at-107"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.3.8",
+      "difficulty": "medium",
+      "question": "¿Por qué es importante restablecer o aislar los datos entre ejecuciones automatizadas de pruebas?",
+      "options": [
+        "Hace más lenta la ejecución de pruebas sin ningún otro beneficio, teniendo en cuenta al equipo",
+        "Garantiza que desaparezcan los defectos de interfaz, como prioridad del equipo",
+        "Es pertinente para las pruebas de rendimiento, no para las comprobaciones habituales, teniendo en cuenta al equipo",
+        "Reduce las dependencias ocultas para que los resultados sean más fiables y repetibles"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los datos compartidos que quedan de ejecuciones anteriores pueden causar fallos no deterministas. Aislar o restablecer el estado ayuda a mantener la fiabilidad de las pruebas.",
+      "id": "at-108"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.5.3",
+      "difficulty": "medium",
+      "question": "¿Por qué puede mejorar la calidad la programación en pareja en equipos ágiles?",
+      "options": [
+        "Porque la revisión continua durante la programación puede detectar errores y difundir conocimientos pronto",
+        "Porque evita toda necesidad de pruebas automatizadas, teniendo en cuenta al equipo",
+        "Porque garantiza que el trabajo se termine al doble de velocidad, teniendo en cuenta al equipo",
+        "Porque una persona escribe código mientras la otra permanece inactiva, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "La programación en pareja proporciona comentarios inmediatos durante la implementación. Puede revelar defectos pronto y compartir el conocimiento entre integrantes.",
+      "id": "at-109"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.4.2",
+      "difficulty": "easy",
+      "question": "¿Por qué a veces se llama documentación viva a las pruebas de aceptación ejecutables?",
+      "options": [
+        "Se mantienen precisas cuando cambia el comportamiento sin necesidad de actualizarlas, como prioridad del equipo",
+        "Porque describen el comportamiento esperado del sistema en un formato que se puede comprobar repetidamente",
+        "Se redactan para analistas de negocio, no para todo el equipo, como prioridad del equipo",
+        "Porque se archivan tras cada sprint y no se reutilizan, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cuando se mantienen actualizadas, las pruebas de aceptación ejecutables describen el comportamiento y lo verifican. Su valor depende de que sigan alineadas con el software.",
+      "id": "at-110"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.3.6",
+      "difficulty": "hard",
+      "question": "El equipo puede automatizar este sprint una comprobación de regresión repetida o volver a ejecutarla manualmente. ¿Cómo puede aportar valor un probador a ese debate?",
+      "options": [
+        "Sostener que la ejecución manual es superior para las comprobaciones repetidas de regresión, teniendo en cuenta al equipo",
+        "Decidir en solitario sin involucrar al equipo, como prioridad del equipo",
+        "Explicar el equilibrio entre el coste inicial de automatización y el ahorro futuro de tiempo para recibir comentarios",
+        "Aplazar la decisión hasta después de la publicación, como prioridad del equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los probadores pueden ayudar al equipo a equilibrar el esfuerzo a corto plazo con el valor recurrente. La repetición y el riesgo suelen justificar la inversión en automatización.",
+      "id": "at-111"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.3.9",
+      "difficulty": "easy",
+      "question": "¿Qué valor aporta a un equipo ágil un panel de pruebas visible?",
+      "options": [
+        "Sustituye todas las conversaciones sobre riesgos y ayuda al equipo a coordinar sus próximos pasos",
+        "Permite que la gerencia apruebe cada confirmación de código y favorece el entendimiento compartido",
+        "Sirve como repositorio de casos de prueba obsoletos y ayuda al equipo a coordinar sus próximos pasos",
+        "Facilita que el equipo detecte y aborde señales, tendencias y fallos de calidad"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los paneles pueden actuar como radiadores de información sobre la calidad. Su principal valor consiste en hacer visibles las señales para impulsar acciones útiles.",
+      "id": "at-112"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.5.4",
+      "difficulty": "easy",
+      "question": "Si una dependencia externa bloquea el avance de un elemento del sprint, ¿qué debe hacer primero el equipo?",
+      "options": [
+        "Hacer visible el impedimento y colaborar para eliminarlo o encontrar una alternativa",
+        "Ocultar el problema hasta la revisión del sprint, manteniendo informado al equipo",
+        "Esperar a la próxima sesión de planificación de versiones, manteniendo informado al equipo",
+        "Cerrar la historia como terminada para proteger el gráfico de trabajo pendiente, manteniendo informado al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los equipos ágiles hacen visibles los bloqueos cuanto antes. La colaboración temprana ofrece la mejor oportunidad de resolver o mitigar el problema.",
+      "id": "at-113"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.4.3",
+      "difficulty": "easy",
+      "question": "¿Cuál es el propósito principal de una conversación de los Tres Amigos?",
+      "options": [
+        "Aprobar las horas extra del sprint y ayudar al equipo a coordinar sus próximos pasos",
+        "Crear un entendimiento compartido de un elemento de la pila desde las perspectivas de negocio, desarrollo y pruebas",
+        "Decidir los objetivos presupuestarios anuales y favorecer el entendimiento compartido del equipo",
+        "Sustituir la revisión del sprint y favorecer el entendimiento compartido del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las conversaciones de los Tres Amigos alinean distintas perspectivas en torno a una historia. Ese entendimiento compartido mejora la calidad antes de empezar a programar.",
+      "id": "at-114"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.3.7",
+      "difficulty": "medium",
+      "question": "¿Qué habilidad técnica ayuda más a un probador a diagnosticar fallos rápidamente en un equipo ágil?",
+      "options": [
+        "Redactar resúmenes ejecutivos para la gerencia y mantener informado al equipo",
+        "Evitar toda salida de herramientas para mantener la imparcialidad, teniendo en cuenta al equipo",
+        "Leer registros, respuestas de API y otras evidencias técnicas para acotar las posibles causas",
+        "Estimar en días ideales en vez de puntos de historia y mantener informado al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Saber examinar evidencia técnica mejora la comunicación con los desarrolladores y acelera el aislamiento de problemas.",
+      "id": "at-115"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.4.1",
+      "difficulty": "easy",
+      "question": "¿Cómo puede ayudar al equipo ágil la automatización centrada en la accesibilidad?",
+      "options": [
+        "Demostrando que el producto es totalmente accesible en todos los contextos reales y manteniendo informado al equipo",
+        "Sustituyendo todas las pruebas de usabilidad con personas con discapacidad y manteniendo informado al equipo",
+        "Limitando las comprobaciones de accesibilidad al contraste de color para que las partes interesadas aporten comentarios oportunos",
+        "Detectando pronto algunos problemas evidentes de accesibilidad para que se puedan resolver antes de una revisión posterior"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las comprobaciones automatizadas de accesibilidad son filtros tempranos útiles. No demuestran accesibilidad total, pero pueden revelar rápidamente problemas evidentes.",
+      "id": "at-116"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.5.5",
+      "difficulty": "hard",
+      "question": "¿Por qué suelen mejorar el flujo de entrega ágil los tamaños de lote pequeños?",
+      "options": [
+        "Facilitan detectar problemas y adaptarse antes de invertir demasiado trabajo",
+        "Eliminan la necesidad de priorizar y favorecen el entendimiento compartido del equipo",
+        "Hacen innecesario el retrabajo y ayudan al equipo a coordinar sus próximos pasos",
+        "Permiten que el equipo omita el perfeccionamiento de la pila y ayude a coordinar sus próximos pasos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los lotes pequeños acortan los ciclos de comentarios y reducen el coste de descubrir errores. Esto facilita la adaptación y la hace menos costosa.",
+      "id": "at-117"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.4.4",
+      "difficulty": "easy",
+      "question": "En un contexto ágil, ¿qué suele significar desplazar las pruebas hacia la izquierda?",
+      "options": [
+        "Trasladar toda la ejecución de pruebas al equipo de operaciones, teniendo en cuenta al equipo",
+        "Incorporar actividades de calidad antes, durante el perfeccionamiento, el diseño y la programación",
+        "Reducir la cantidad de probadores del equipo",
+        "Ejecutar pruebas de rendimiento antes de la publicación, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Desplazar las pruebas hacia la izquierda significa abordar la calidad antes, no después. Las conversaciones y comprobaciones tempranas reducen el descubrimiento tardío de defectos.",
+      "id": "at-118"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.3.8",
+      "difficulty": "easy",
+      "question": "¿Cómo puede ayudar un probador si una historia parece demasiado grande para un sprint?",
+      "options": [
+        "Aumentar la estimación hasta que quepa en el sprint, teniendo en cuenta al equipo",
+        "Trasladar todas las pruebas al siguiente sprint, teniendo en cuenta al equipo",
+        "Sugerir segmentos y ejemplos que dividan el trabajo en incrementos más pequeños y comprobables",
+        "Pedir al Scrum Master que programe una parte, como prioridad del equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los probadores pueden ayudar a encontrar divisiones del comportamiento y los datos que permitan separar historias con sentido. Los incrementos pequeños son más fáciles de desarrollar y verificar.",
+      "id": "at-119"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.4.2",
+      "difficulty": "hard",
+      "question": "¿Por qué podría incluir un equipo un indicador de rendimiento sencillo en CI para una API crítica?",
+      "options": [
+        "Para demostrar que el sistema soporta cualquier carga futura de producción, teniendo en cuenta al equipo",
+        "Para eliminar la necesidad de pruebas no funcionales más exhaustivas, teniendo en cuenta al equipo",
+        "Para medir directamente el valor de negocio desde la canalización, teniendo en cuenta al equipo",
+        "Para recibir un aviso temprano si un cambio de código degrada considerablemente el comportamiento de respuesta"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un indicador pequeño en CI puede revelar pronto regresiones repentinas. Complementa, pero no sustituye, una evaluación más exhaustiva del rendimiento.",
+      "id": "at-120"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.6.1",
+      "difficulty": "medium",
+      "question": "Una parte interesada solicita un cambio valioso cerca del final del plazo de publicación. ¿Qué enfoque es MÁS coherente con la planificación ágil?",
+      "options": [
+        "Evaluar el valor y el impacto, y después volver a priorizar el alcance si el cambio merece la pena",
+        "Rechazar la solicitud porque los planes deben permanecer fijos una vez iniciada la versión, teniendo en cuenta al equipo",
+        "Añadir la solicitud sin hablar de compensaciones con el equipo, teniendo en cuenta al equipo",
+        "Aplazar todas las pruebas actuales hasta implementar la nueva funcionalidad, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "La planificación ágil es adaptable. Los equipos consideran el nuevo valor y las compensaciones, y luego ajustan el alcance de forma deliberada en vez de tratar los planes como inamovibles.",
+      "id": "at-121"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.4.5",
+      "difficulty": "medium",
+      "question": "Un campo acepta edades entre 18 y 65 años, ambos inclusive. ¿Qué conjunto de valores aplica MEJOR el análisis de valores límite?",
+      "options": [
+        "18, 30, 65, teniendo en cuenta al equipo",
+        "17, 18, 19, 64, 65, 66",
+        "20, 40, 60, teniendo en cuenta al equipo",
+        "0, 18, 65, 100, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de valores límite se centran en los valores situados en los extremos del intervalo válido y a su alrededor. Ese conjunto examina ambos límites, válidos e inválidos.",
+      "id": "at-122"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.4.1",
+      "difficulty": "medium",
+      "question": "¿Por qué puede colaborar un probador con un diseñador de UX en un flujo de trabajo nuevo?",
+      "options": [
+        "Para sustituir por completo las pruebas funcionales por revisiones de diseño, como prioridad del equipo",
+        "Para excluir a los desarrolladores de las conversaciones sobre experiencia de usuario, teniendo en cuenta al equipo",
+        "Para considerar los riesgos de usabilidad y las interacciones confusas antes de que los encuentren los clientes",
+        "Para evitar el uso de criterios de aceptación, como prioridad del equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "La colaboración con UX ayuda al equipo a descubrir pronto problemas de usabilidad. Muchos problemas de calidad se relacionan con comportamientos confusos, no solo con fallos funcionales.",
+      "id": "at-123"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.4.3",
+      "difficulty": "medium",
+      "question": "Cuando falla en CI una prueba automatizada de interfaz, ¿qué práctica ayuda más al diagnóstico?",
+      "options": [
+        "Volver a ejecutar toda la canalización sin guardar ningún artefacto, teniendo en cuenta al equipo",
+        "Eliminar de inmediato la prueba que falla para que las partes interesadas aporten comentarios oportunos",
+        "Pedir al propietario del producto que depure el marco de pruebas y mantener informado al equipo",
+        "Capturar evidencia útil del fallo, como capturas de pantalla, registros o trazas de red"
+      ],
+      "correctIndex": 3,
+      "explanation": "Una buena evidencia del fallo acorta la investigación y reduce las conjeturas. Así, los comentarios de las pruebas automatizadas son más útiles.",
+      "id": "at-124"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.6.2",
+      "difficulty": "hard",
+      "question": "Un producto tiene una fecha de publicación reglamentaria fija, pero no cabrán todas las funcionalidades deseadas. ¿Qué estrategia se alinea MEJOR con la entrega ágil?",
+      "options": [
+        "Dar prioridad primero a los elementos de mayor valor y riesgo para poder aplazar el alcance de menor valor si hace falta",
+        "Fijar el alcance y dejar que varíe la calidad si falta tiempo, como prioridad del equipo",
+        "Aplazar las pruebas hasta que se programe todo el alcance previsto para que las partes interesadas aporten comentarios oportunos",
+        "Exigir que todos los equipos hagan horas extra hasta incluir todos los elementos deseados, como prioridad del equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cuando el plazo es fijo, los equipos ágiles gestionan activamente el alcance. Entregar primero los elementos más importantes preserva el valor y reduce el riesgo.",
+      "id": "at-125"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.4.6",
+      "difficulty": "hard",
+      "question": "Una historia añade los estados de pedido Nuevo, Pagado, Enviado y Cancelado. ¿Qué idea de prueba aprovecha mejor el análisis de transiciones de estado?",
+      "options": [
+        "Comprobar que se vean las etiquetas de estado sin comprobar transiciones válidas, mientras ayuda al equipo a coordinar sus próximos pasos",
+        "Verificar transiciones permitidas, como de Pagado a Enviado, y rechazar las no válidas, como de Cancelado a Pagado",
+        "Ejecutar una prueba de rendimiento con 1.000 pedidos mientras ayuda al equipo a coordinar sus próximos pasos",
+        "Pedir al propietario del producto que vuelva a estimar la historia y favorecer el entendimiento compartido del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de transición de estado examinan los cambios válidos e inválidos entre estados. Son útiles cuando importan las reglas del flujo de trabajo.",
+      "id": "at-126"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.4.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es el mejor rol de un probador en un taller de mapeo de ejemplos o especificación?",
+      "options": [
+        "Observar en silencio en lugar de aportar ejemplos, como prioridad del equipo",
+        "Aprobar las decisiones de arquitectura de todo el equipo, teniendo en cuenta al equipo",
+        "Aportar preguntas, casos límite e ideas de pruebas que precisen las expectativas",
+        "Convertir directamente cada ejemplo en un defecto, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los probadores aportan una actitud inquisitiva que afina los ejemplos compartidos. Esto mejora la claridad antes de empezar el desarrollo.",
+      "id": "at-127"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.4.4",
+      "difficulty": "medium",
+      "question": "Dos herramientas pueden automatizar pruebas en el navegador. Una se integra con la pila del equipo y es fácil de mantener; la otra tiene más publicidad, pero encaja peor. ¿Cuál debería preferir el equipo?",
+      "options": [
+        "La herramienta más promocionada, porque la popularidad predice el éxito a largo plazo",
+        "La herramienta más cara, porque el coste implica calidad",
+        "La herramienta que tenga más funciones, sin importar la curva de aprendizaje",
+        "La herramienta que mejor se adapte al flujo de trabajo del equipo y sea más fácil de mantener"
+      ],
+      "correctIndex": 3,
+      "explanation": "La elección de herramientas debe basarse en su adecuación al contexto del equipo y en su facilidad de mantenimiento. La popularidad por sí sola no garantiza eficacia.",
+      "id": "at-128"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.6.3",
+      "difficulty": "easy",
+      "question": "¿Qué se entiende por incremento del producto al final de un sprint?",
+      "options": [
+        "Una parte funcional del producto potencialmente publicable que cumple los criterios de finalización del equipo",
+        "Un borrador que describe lo que los desarrolladores esperan crear después, como prioridad del equipo",
+        "Cualquier código confirmado en una rama privada, como prioridad del equipo",
+        "Una lista de defectos restantes para la versión, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un incremento del sprint es un producto funcional, no solo una actividad parcial. Debe cumplir los estándares de finalización acordados por el equipo.",
+      "id": "at-129"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.4.7",
+      "difficulty": "easy",
+      "question": "¿Qué regla de finalización favorece mejor la calidad dentro de un sprint?",
+      "options": [
+        "Una historia está terminada cuando acaba la programación, aunque sigan fallando pruebas de regresión, como prioridad del equipo",
+        "Una historia solo está terminada cuando pasan las pruebas acordadas y los defectos críticos pendientes se resuelven o se aceptan conscientemente",
+        "Una historia está terminada cuando se menciona dos veces en la reunión diaria para que las partes interesadas aporten comentarios oportunos",
+        "Una historia está terminada en cuanto el propietario del producto redacta los criterios de aceptación para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 1,
+      "explanation": "La finalización debe representar trabajo probado y utilizable, no solo código terminado. Pasar las comprobaciones acordadas forma parte de una definición significativa de terminado.",
+      "id": "at-130"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.4.3",
+      "difficulty": "hard",
+      "question": "¿Qué comportamiento es el MENOS coherente con el rol del probador ágil?",
+      "options": [
+        "Ayudar al equipo a entender pronto los riesgos, como prioridad del equipo",
+        "Colaborar en los criterios de calidad durante el perfeccionamiento, como prioridad del equipo",
+        "Actuar como único guardián que decide en privado si otras personas pueden publicar",
+        "Compartir con los desarrolladores lo aprendido en sesiones exploratorias para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 2,
+      "explanation": "La calidad en los equipos ágiles es una responsabilidad compartida. El modelo de un guardián único crea cuellos de botella y debilita la responsabilidad de todo el equipo.",
+      "id": "at-131"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.4.5",
+      "difficulty": "hard",
+      "question": "Un rediseño importante de la interfaz rompió muchas pruebas de extremo a extremo, aunque el comportamiento principal no cambió. ¿Qué mejora reduciría MÁS probablemente el esfuerzo de mantenimiento futuro?",
+      "options": [
+        "Añadir más aserciones basadas en píxeles a cada pantalla para que las partes interesadas aporten comentarios oportunos",
+        "Dejar de automatizar las regresiones y ayudar al equipo a coordinar sus próximos pasos",
+        "Congelar la interfaz para que las pruebas automatizadas no requieran mantenimiento y favorecer el entendimiento compartido",
+        "Trasladar las comprobaciones adecuadas a niveles inferiores y mantener las pruebas de interfaz centradas en recorridos críticos de usuario"
+      ],
+      "correctIndex": 3,
+      "explanation": "Cuando demasiadas comprobaciones dependen de detalles de la interfaz, el coste de mantenimiento aumenta. Trasladar la cobertura apropiada a niveles inferiores y seleccionar las pruebas de interfaz mejora el conjunto.",
+      "id": "at-132"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.6.4",
+      "difficulty": "medium",
+      "question": "¿Qué comportamiento refleja mejor a un equipo ágil autogestionado?",
+      "options": [
+        "Decidir en colaboración cómo lograr el objetivo del sprint y quién se encargará de cada trabajo",
+        "Esperar a que el gerente del proyecto asigne cada tarea con detalle, teniendo en cuenta al equipo",
+        "Evitar que el equipo adquiera habilidades diversas para preservar la especialización, manteniendo informado al equipo",
+        "Escalar cada decisión técnica menor a la alta dirección, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los equipos autogestionados organizan su propio trabajo para alcanzar objetivos compartidos. No dependen de que alguien externo les asigne todas las tareas en detalle.",
+      "id": "at-133"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.4.8",
+      "difficulty": "medium",
+      "question": "¿Cuándo deben considerarse las pruebas no funcionales importantes para una funcionalidad nueva?",
+      "options": [
+        "En un sprint de estabilización separado, después de completar todas las funcionalidades y mantener informado al equipo",
+        "Durante la conversación sobre la historia y su implementación, para abordar los riesgos de calidad pertinentes en la iteración",
+        "Después de que los usuarios informen problemas en producción para que las partes interesadas aporten comentarios oportunos",
+        "Después de fijar la fecha de publicación sin posibilidad de cambiarla, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las inquietudes no funcionales importantes deben plantearse pronto. Abordarlas tarde aumenta el coste y el riesgo.",
+      "id": "at-134"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.4.4",
+      "difficulty": "medium",
+      "question": "¿Cómo mejora el uso de ejemplos concretos la colaboración entre probadores, desarrolladores y representantes del negocio?",
+      "options": [
+        "Elimina la necesidad de conversar sobre los requisitos, teniendo en cuenta al equipo",
+        "Garantiza que la automatización sea fácil para que las partes interesadas aporten comentarios oportunos",
+        "Crea una referencia compartida del comportamiento esperado que los distintos roles pueden debatir con claridad",
+        "Sustituye las primeras conversaciones sobre requisitos por un taller después de programar, manteniendo informado al equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los ejemplos concretos facilitan debatir y verificar requisitos abstractos. Ayudan a los distintos roles a alinearse con la misma intención.",
+      "id": "at-135"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.4.6",
+      "difficulty": "medium",
+      "question": "¿Qué describe mejor las pruebas en pareja?",
+      "options": [
+        "Dos probadores ejecutan de forma independiente el mismo guion sin hablar, como prioridad del equipo",
+        "Un sustituto obligatorio de todas las pruebas automatizadas para que las partes interesadas aporten comentarios oportunos",
+        "Una forma de dividir un informe de defectos en dos incidencias para que las partes interesadas aporten comentarios oportunos",
+        "Un probador y otro integrante del equipo exploran, debaten y evalúan el producto juntos en tiempo real"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas en pareja combinan distintas perspectivas durante una investigación práctica. Suelen mejorar el aprendizaje y acortar los ciclos de comentarios.",
+      "id": "at-136"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.6.5",
+      "difficulty": "easy",
+      "question": "¿Cuál es el principal beneficio de un radiador de información, como un tablero de tareas visible?",
+      "options": [
+        "Ofrece al equipo y a las partes interesadas una visión rápida y compartida del trabajo y el progreso actuales",
+        "Almacena notas confidenciales de la gerencia fuera del alcance del equipo para que las partes interesadas aporten comentarios oportunos",
+        "Sustituye toda comunicación directa y favorece el entendimiento compartido del equipo",
+        "Mide automáticamente la complejidad del código fuente para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los radiadores de información hacen que los datos importantes sobre el estado sean fáciles de ver. Esa visibilidad favorece la alineación y las conversaciones oportunas.",
+      "id": "at-137"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.4.9",
+      "difficulty": "easy",
+      "question": "¿Qué informe de defecto es MÁS útil en un equipo ágil?",
+      "options": [
+        "Un mensaje de una línea que diga «no funciona» sin contexto y mantenga informado al equipo",
+        "Un informe conciso con pasos claros para reproducir el problema, el resultado observado y el esperado",
+        "Una plantilla de 20 páginas que omite capturas de pantalla y registros, teniendo en cuenta al equipo",
+        "Una nota almacenada en privado hasta la revisión del sprint, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "La comunicación de defectos en equipos ágiles debe ser rápida y práctica. La información clara para reproducirlos ayuda al equipo a responder con eficiencia.",
+      "id": "at-138"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.4.5",
+      "difficulty": "medium",
+      "question": "El equipo de atención al cliente informa que «el proceso de pago a veces se congela», pero ofrece pocos detalles. ¿Qué debe hacer primero el probador?",
+      "options": [
+        "Cerrar el problema hasta que se adjunte un análisis completo de causa raíz para favorecer el entendimiento compartido",
+        "Suponer que se trata de un problema de capacitación de usuarios para favorecer el entendimiento compartido",
+        "Colaborar con atención al cliente y con el equipo técnico para reunir contexto que permita reproducir o clasificar el problema",
+        "Reescribir el informe como un criterio de aceptación satisfactorio para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los informes imprecisos de campo requieren aclaraciones antes de que el equipo pueda actuar eficazmente. Los probadores pueden convertir síntomas anecdóticos en información útil.",
+      "id": "at-139"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.5.1",
+      "difficulty": "medium",
+      "question": "¿Por qué puede ser más eficaz un taller de especificación que intercambiar requisitos por correo electrónico?",
+      "options": [
+        "Garantiza que no habrá cambios futuros en los requisitos y ayuda al equipo a coordinar sus próximos pasos",
+        "Elimina la necesidad de ejemplos escritos para que las partes interesadas aporten comentarios oportunos",
+        "Es útil cuando los probadores no forman parte del equipo para que las partes interesadas aporten comentarios oportunos",
+        "Crea rápidamente un entendimiento compartido y permite resolver dudas mientras se elaboran los ejemplos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los talleres interactivos hacen aflorar rápidamente los malentendidos. Son especialmente eficaces cuando el equipo usa ejemplos concretos para debatir el comportamiento.",
+      "id": "at-140"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.6.6",
+      "difficulty": "medium",
+      "question": "Un gráfico de trabajo pendiente del sprint aumenta durante dos días seguidos. ¿Cuál es la MEJOR interpretación?",
+      "options": [
+        "El equipo descubrió o añadió más trabajo pendiente del que completó",
+        "El sprint se considera fallido automáticamente, manteniendo informado al equipo",
+        "El equipo debe dejar de hacer pruebas para reducir la línea, teniendo en cuenta al equipo",
+        "Los gráficos de trabajo pendiente se actualizan al final del sprint, no a diario, teniendo en cuenta al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un aumento indica que creció la estimación del trabajo restante. Esto puede ocurrir al descubrir trabajo oculto o cuando cambia el alcance.",
+      "id": "at-141"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.5.1",
+      "difficulty": "hard",
+      "question": "¿Por qué los equipos ágiles suelen preferir muchas pruebas automatizadas de nivel inferior y menos pruebas de extremo a extremo?",
+      "options": [
+        "Porque los métodos ágiles prohíben las pruebas de extremo a extremo para que las partes interesadas aporten comentarios oportunos",
+        "Porque las pruebas de nivel inferior suelen ser más rápidas y fallan con mayor precisión, lo que favorece comentarios rápidos",
+        "Porque las pruebas de nivel inferior cubren mejor la usabilidad y mantienen informado al equipo",
+        "Porque las partes interesadas del negocio no pueden entender el comportamiento de extremo a extremo, como prioridad del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las comprobaciones de nivel inferior, rápidas y específicas, ofrecen comentarios eficientes y facilitan el diagnóstico. Las pruebas de extremo a extremo siguen siendo útiles, pero suelen ser menos numerosas.",
+      "id": "at-142"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.4.6",
+      "difficulty": "easy",
+      "question": "¿Por qué suelen preferir los probadores ágiles una conversación rápida acompañada de evidencia ligera en vez de un documento formal extenso sobre un defecto?",
+      "options": [
+        "Porque los equipos ágiles no registran defectos, como prioridad del equipo",
+        "Porque los desarrolladores no pueden leer informes escritos, manteniendo informado al equipo",
+        "Porque la rapidez y el entendimiento compartido mejoran cuando la información es oportuna y concisa",
+        "Porque los datos de calidad no son importantes en el desarrollo ágil, como prioridad del equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "La comunicación ágil busca ser eficaz y útil. La evidencia ligera acompañada de una conversación suele resolver los problemas más rápido que el papeleo extenso.",
+      "id": "at-143"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.5.2",
+      "difficulty": "medium",
+      "question": "¿Cómo pueden ayudar las marcas de funcionalidad (feature flags) a las prácticas de prueba y publicación ágiles?",
+      "options": [
+        "Eliminando la necesidad de probar las regresiones del código marcado y ayudando al equipo a coordinar sus próximos pasos",
+        "Sustituyendo la priorización de la pila y ayudando al equipo a coordinar sus próximos pasos, teniendo en cuenta al equipo",
+        "Garantizando que las funcionalidades sin terminar estén listas automáticamente para producción y ayudando al equipo a coordinar sus próximos pasos",
+        "Permitiendo habilitar selectivamente el comportamiento nuevo y reduciendo el riesgo de exponerlo de inmediato a todos los usuarios"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las marcas de funcionalidad pueden separar el despliegue de la exposición a los usuarios. Esto da a los equipos más control sobre el lanzamiento y el aprendizaje.",
+      "id": "at-144"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.6.7",
+      "difficulty": "easy",
+      "question": "¿Por qué las publicaciones frecuentes reducen el riesgo del producto?",
+      "options": [
+        "Porque los cambios pequeños llegan antes a los usuarios y son más fáciles de evaluar y revertir si hace falta",
+        "Porque publicar con frecuencia garantiza que no habrá incidentes en producción y favorece el entendimiento compartido",
+        "Porque las publicaciones frecuentes eliminan la necesidad de priorizar y ayudan al equipo a coordinar sus próximos pasos",
+        "Porque permiten a los equipos omitir las pruebas de regresión para que las partes interesadas aporten comentarios oportunos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las publicaciones más pequeñas y frecuentes limitan el tamaño de cada conjunto de cambios. Esto facilita detectar, entender y resolver los problemas.",
+      "id": "at-145"
+    },
+    {
+      "chapter": "2. Fundamentos de las pruebas ágiles",
+      "loRef": "FL-AT-2.5.2",
+      "difficulty": "hard",
+      "question": "Un defecto intermitente solo aparece cuando un proceso en segundo plano coincide con el procesamiento de un pago. ¿Cuál es la MEJOR respuesta de pruebas ágiles?",
+      "options": [
+        "Cerrar el problema hasta que los usuarios finales puedan reproducirlo, manteniendo informado al equipo",
+        "Colaborar entre distintos roles para reproducir las condiciones temporales y aprender lo suficiente para diseñar comprobaciones específicas",
+        "Añadir más pruebas de humo de interfaz y esperar que alguna falle, teniendo en cuenta al equipo",
+        "Evitar la investigación porque los defectos intermitentes quedan fuera del alcance del sprint, como prioridad del equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los problemas intermitentes suelen requerir una investigación colaborativa. Reproducir las condiciones ayuda al equipo a crear pruebas y correcciones específicas.",
+      "id": "at-146"
+    },
+    {
+      "chapter": "3. Rol y habilidades del probador ágil",
+      "loRef": "FL-AT-3.4.7",
+      "difficulty": "hard",
+      "question": "Se estimó una historia sin considerar la configuración del entorno de pruebas ni las necesidades de datos especializados. ¿Cómo debe responder un probador?",
+      "options": [
+        "No decir nada para no cuestionar la estimación del equipo y favorecer el entendimiento compartido",
+        "Eliminar las tareas de prueba del plan del sprint para que las partes interesadas aporten comentarios oportunos",
+        "Señalar el trabajo y los riesgos ocultos para que el equipo pueda asumir un compromiso más realista",
+        "Suponer que el propietario del producto descubrirá el problema más adelante, como prioridad del equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "El probador aporta valor al visibilizar el trabajo de calidad oculto antes de cerrar los compromisos. La planificación realista depende de esa visibilidad.",
+      "id": "at-147"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.5.3",
+      "difficulty": "hard",
+      "question": "¿Por qué son valiosas las especificaciones ejecutables más allá del sprint en que se crearon?",
+      "options": [
+        "Deben descartarse una vez aceptada la funcionalidad inicial, teniendo en cuenta al equipo",
+        "Solo son útiles para especialistas de automatización, no para otros roles del equipo, teniendo en cuenta al equipo",
+        "Hacen innecesarias para siempre las pruebas exploratorias y mantienen informado al equipo",
+        "Sirven como referencia de comportamiento mantenible si se mantienen alineadas con el producto"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las especificaciones ejecutables pueden seguir siendo útiles mientras reflejen el comportamiento actual. Proporcionan tanto documentación como verificación repetible.",
+      "id": "at-148"
+    },
+    {
+      "chapter": "1. Desarrollo ágil de software",
+      "loRef": "FL-AT-1.6.8",
+      "difficulty": "hard",
+      "question": "¿Por qué está estrechamente relacionada la excelencia técnica con la agilidad del negocio?",
+      "options": [
+        "Porque las buenas prácticas de ingeniería hacen que el cambio sea más seguro, rápido y menos costoso para el producto",
+        "El código limpio y las pruebas fiables benefician principalmente a los arquitectos, como prioridad del equipo",
+        "La agilidad del negocio depende de aumentar la documentación, no de responder al cambio, como prioridad del equipo",
+        "La excelencia técnica es importante después de la primera publicación, como prioridad del equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un diseño fiable, la automatización y un código fácil de mantener reducen la fricción de los cambios. Esto ayuda al negocio a responder rápidamente sin sacrificar la calidad.",
+      "id": "at-149"
+    },
+    {
+      "chapter": "4. Métodos, técnicas y herramientas de pruebas ágiles",
+      "loRef": "FL-AT-4.5.4",
+      "difficulty": "medium",
+      "question": "¿Cuál es el principal beneficio de añadir, cuando corresponda, comprobaciones de seguridad automatizadas al inicio de la canalización?",
+      "options": [
+        "Garantizan que el producto sea totalmente seguro frente a todas las amenazas y mantienen informado al equipo",
+        "Pueden detectar antes ciertas clases de problemas de seguridad, cuando suele ser más barato corregirlos",
+        "Eliminan la necesidad de conversar sobre diseño seguro, como prioridad del equipo",
+        "Deben sustituir todas las demás pruebas no funcionales y mantener informado al equipo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las comprobaciones de seguridad automatizadas tempranas agilizan los comentarios sobre algunas vulnerabilidades o configuraciones incorrectas. Complementan prácticas de seguridad más amplias.",
+      "id": "at-150"
+    }
+  ]
+}

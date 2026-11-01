@@ -1,0 +1,2256 @@
+{
+  "moduleId": "performance-testing",
+  "moduleName": "Pruebas de rendimiento (Performance Testing)",
+  "questions": [
+    {
+      "id": "pt-001",
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes opciones es un objetivo habitual de las pruebas de rendimiento?",
+      "options": [
+        "Confirmar que la aplicación cumple sus requisitos funcionales para todos los roles de usuario y las interfaces compatibles",
+        "Evaluar el comportamiento de un sistema en cuanto a capacidad de respuesta y estabilidad bajo una carga de trabajo determinada",
+        "Comprobar que el diseño de la interfaz de usuario coincide con las maquetas aprobadas durante el uso normal",
+        "Confirmar que el código fuente sigue las convenciones acordadas de nomenclatura y formato"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de rendimiento evalúan el comportamiento de un sistema (por ejemplo, el tiempo de respuesta, el throughput/rendimiento y el uso de recursos) bajo una carga de trabajo determinada."
+    },
+    {
+      "id": "pt-002",
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.2",
+      "difficulty": "easy",
+      "question": "¿Cuál de los siguientes ejemplos representa un riesgo de rendimiento no funcional que las pruebas de rendimiento buscan reducir?",
+      "options": [
+        "El mensaje de confirmación después de la compra contiene un error tipográfico en una de sus oraciones",
+        "La página de pago rechaza un número de tarjeta de crédito válido que se introdujo con espacios entre los grupos de dígitos",
+        "La página de pago tarda 15 segundos en responder con una carga concurrente moderada, lo que frustra a los usuarios",
+        "La aplicación muestra el símbolo de moneda incorrecto a los clientes de una región"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los tiempos de respuesta lentos bajo carga son un riesgo de rendimiento clásico, distinto de los problemas de corrección funcional, como una validación incorrecta, errores tipográficos o un formato equivocado."
+    },
+    {
+      "id": "pt-003",
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones distingue MEJOR las pruebas de carga de las pruebas de estrés?",
+      "options": [
+        "Las pruebas de estrés examinan el diseño visual de la interfaz con un uso intenso, mientras que las pruebas de carga examinan la corrección de las reglas de negocio",
+        "Las pruebas de carga comprueban el comportamiento con el nivel de uso mínimo previsto, mientras que las pruebas de estrés comprueban el comportamiento cuando el sistema permanece inactivo durante mucho tiempo",
+        "Las pruebas de carga comprueban el comportamiento bajo una carga realista prevista o máxima, mientras que las pruebas de estrés superan la capacidad normal para encontrar el punto de fallo",
+        "Las pruebas de carga comprueban el comportamiento con el nivel de uso mínimo que espera el negocio, mientras que las pruebas de estrés comprueban períodos prolongados de inactividad sin usuarios"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de carga evalúan el rendimiento con niveles de carga realistas previstos o máximos; las pruebas de estrés superan deliberadamente la capacidad normal para observar cómo y cuándo falla el sistema."
+    },
+    {
+      "id": "pt-004",
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.2.2",
+      "difficulty": "medium",
+      "question": "Las pruebas de resistencia (pruebas de soak) están diseñadas PRINCIPALMENTE para detectar:",
+      "options": [
+        "La degradación gradual, como fugas de memoria o agotamiento de recursos, que solo aparece tras un funcionamiento prolongado y sostenido",
+        "Resultados incorrectos que aparecen solo cuando dos usuarios actualizan el mismo registro casi al mismo tiempo durante un breve pico de carga",
+        "Fallos que surgen cuando el sistema se reinicia repetidamente en poco tiempo bajo una carga ligera y constante",
+        "Bloqueos inmediatos que ocurren al aplicar de una vez un único pico breve de carga extremadamente alta a la aplicación"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de resistencia (o soak) ejecutan el sistema con una carga realista sostenida durante un período prolongado para revelar problemas graduales, como fugas de memoria, que las pruebas breves no detectarían."
+    },
+    {
+      "id": "pt-005",
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.2.3",
+      "difficulty": "medium",
+      "question": "Las pruebas de picos evalúan el comportamiento de un sistema cuando:",
+      "options": [
+        "La carga aumenta de forma repentina y pronunciada durante un período breve y luego vuelve a la normalidad, por ejemplo, durante una venta relámpago",
+        "La carga aumenta gradualmente y de forma previsible durante varios días hasta que el sistema alcanza su capacidad planificada",
+        "La carga se mantiene en un nivel moderado y constante durante muchas horas mientras el equipo observa la evolución lenta de la memoria y el disco",
+        "El volumen de datos de la base de datos crece de forma constante mientras la cantidad de usuarios activos permanece igual"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de picos evalúan el comportamiento del sistema cuando la carga aumenta bruscamente durante un período breve (por ejemplo, durante una venta relámpago o un evento viral) y luego disminuye, para comprobar su estabilidad y recuperación."
+    },
+    {
+      "id": "pt-006",
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones es un riesgo habitual del producto que justifica realizar pruebas de rendimiento al principio de un proyecto?",
+      "options": [
+        "Es posible que la combinación de colores corporativa se aplique de forma ligeramente distinta en la página de inicio de sesión respecto de la guía de estilo",
+        "Es posible que el documento de requisitos esté redactado con una variante regional de la ortografía distinta de la que usa el cliente",
+        "Es posible que la arquitectura no pueda escalar para admitir la cantidad prevista de usuarios concurrentes, lo que provocaría tiempos de respuesta inaceptables en el lanzamiento",
+        "Es posible que el equipo de desarrollo elija una herramienta de compilación que el personal de operaciones no conozca, lo que ralentizaría el despliegue más adelante"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un riesgo clave de rendimiento es que la arquitectura elegida no escale lo suficiente; por eso, los riesgos relacionados con el rendimiento suelen identificarse y probarse lo antes posible."
+    },
+    {
+      "id": "pt-007",
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes métricas mide la cantidad de transacciones que se completan correctamente por unidad de tiempo?",
+      "options": [
+        "Uso de CPU",
+        "Throughput/rendimiento",
+        "Tiempo de respuesta",
+        "Tasa de errores"
+      ],
+      "correctIndex": 1,
+      "explanation": "El throughput/rendimiento mide la tasa a la que el sistema procesa transacciones (por ejemplo, solicitudes por segundo) y es una métrica clave junto con el tiempo de respuesta y el uso de recursos."
+    },
+    {
+      "id": "pt-008",
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.2",
+      "difficulty": "medium",
+      "question": "Al analizar la experiencia de usuario bajo carga, ¿cuál de las siguientes suele ser una métrica MÁS informativa que el tiempo de respuesta promedio por sí solo?",
+      "options": [
+        "La cantidad total de servidores del entorno, ya que más servidores implican una mejor experiencia de usuario",
+        "La cantidad de evaluadores que participaron en la prueba, que indica cuán exhaustivamente se aplicó la carga",
+        "El tiempo de respuesta del percentil 90 o 95, que muestra la experiencia de la parte más lenta de las solicitudes",
+        "El tiempo de respuesta mínimo observado, que muestra la mejor experiencia que tuvieron los usuarios durante la ejecución"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los tiempos de respuesta por percentiles (por ejemplo, el percentil 95) revelan la experiencia de la cola de solicitudes más lentas, que los promedios pueden ocultar, y ofrecen una visión más realista de la peor experiencia de usuario."
+    },
+    {
+      "id": "pt-009",
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.1",
+      "difficulty": "medium",
+      "question": "Durante la planificación de las pruebas de rendimiento, ¿por qué es importante definir modelos de carga de trabajo realistas (por ejemplo, patrones típicos de comportamiento de los usuarios)?",
+      "options": [
+        "Para que el generador de carga se pueda configurar con menos usuarios virtuales, ya que los usuarios realistas exigen menos",
+        "Para poder reutilizar los mismos scripts en las pruebas de aceptación, ya que un modelo realista elimina la necesidad de diseñar pruebas funcionales por separado",
+        "Para que los resultados reflejen cómo se espera que se use el sistema en producción, en lugar de un patrón de uso arbitrario",
+        "Para que la prueba se pueda ejecutar sin supervisión, porque un modelo realista ya indica dónde están los cuellos de botella"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los modelos realistas de carga de trabajo (que reflejan el comportamiento real o previsto de los usuarios, las combinaciones de transacciones y los tiempos de espera) son esenciales para que los resultados de las pruebas de rendimiento sean significativos y representativos de las condiciones de producción."
+    },
+    {
+      "id": "pt-010",
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una condición previa necesaria para ejecutar una prueba de rendimiento válida?",
+      "options": [
+        "Un entorno de prueba con una base de datos casi vacía para que las consultas respondan rápido y los resultados sean más fáciles de leer",
+        "Un entorno de prueba con el hardware de menor capacidad disponible para que los cuellos de botella aparezcan lo antes posible",
+        "Un entorno de prueba construido con el hardware de menor capacidad disponible para que los cuellos de botella aparezcan lo antes posible durante el ciclo de pruebas",
+        "Un entorno de prueba que, en la medida de lo posible, se parezca a producción en escala, configuración y volumen de datos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Para que los resultados sean significativos, el entorno de pruebas de rendimiento debe representar a producción tanto como sea posible, incluidas la escala, la configuración y las cantidades realistas de datos."
+    },
+    {
+      "id": "pt-011",
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.2.1",
+      "difficulty": "medium",
+      "question": "Durante la ejecución de una prueba de rendimiento, ¿qué actividad es esencial además de simplemente generar carga?",
+      "options": [
+        "Desactivar todas las herramientas de supervisión para que no interfieran con las mediciones",
+        "Iniciar la ejecución sin criterios de éxito acordados, para que las expectativas no sesguen los resultados",
+        "Supervisar los recursos del sistema (CPU, memoria, red y base de datos) para correlacionar la carga con el comportamiento de rendimiento observado",
+        "Desactivar todos los componentes de registro y supervisión de los servidores para evitar que cualquier sobrecarga adicional altere las mediciones"
+      ],
+      "correctIndex": 2,
+      "explanation": "Es esencial supervisar los recursos del sistema durante la ejecución para correlacionar la carga aplicada con el comportamiento del rendimiento y ayudar a diagnosticar los cuellos de botella."
+    },
+    {
+      "id": "pt-012",
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué capacidad es una función CENTRAL que se espera de la mayoría de las herramientas de pruebas de rendimiento y carga?",
+      "options": [
+        "Simular muchos usuarios virtuales concurrentes que ejecutan transacciones definidas contra el sistema bajo prueba",
+        "Generar automáticamente documentación de usuario a partir de las transacciones registradas después de cada ejecución",
+        "Realizar análisis estático del código fuente de la aplicación para encontrar incumplimientos de los estándares de codificación",
+        "Generar automáticamente documentación de usuario y material de capacitación a partir de las transacciones registradas en los scripts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una capacidad central de las herramientas de pruebas de rendimiento es generar y simular carga, normalmente coordinando a muchos usuarios virtuales que ejecutan scripts de transacciones de forma concurrente."
+    },
+    {
+      "id": "pt-013",
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes elementos suele formar parte del panel de una herramienta de supervisión del rendimiento durante una prueba de carga?",
+      "options": [
+        "El diff del código fuente de la confirmación más reciente respecto de la versión anterior",
+        "Métricas en tiempo real de CPU, memoria y tiempo de respuesta, correlacionadas con la carga de usuarios virtuales aplicada",
+        "Estadísticas de campañas de marketing que muestran cuántos visitantes abrieron el último correo promocional",
+        "El calendario del responsable de pruebas con las reuniones previstas durante la ventana de prueba"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los paneles de supervisión del rendimiento suelen mostrar métricas del sistema en tiempo real (CPU, memoria, tiempo de respuesta, etc.) correlacionadas con la carga generada, para ayudar a identificar cuellos de botella."
+    },
+    {
+      "id": "pt-014",
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.1",
+      "difficulty": "medium",
+      "question": "Después de una prueba de carga, los tiempos de respuesta aumentan bruscamente cuando los usuarios concurrentes superan los 500, mientras que el uso de CPU sigue siendo bajo, pero se agotan las conexiones a la base de datos. ¿Qué indica esto con MAYOR probabilidad?",
+      "options": [
+        "Una fuga de memoria en la capa web que reduce gradualmente la memoria heap disponible para cada solicitud",
+        "Un cuello de botella relacionado con el tamaño del conjunto de conexiones a la base de datos o con la contención en la base de datos, no con la capacidad bruta de CPU",
+        "Un cuello de botella limitado por CPU en el servidor de aplicaciones que limita la cantidad de solicitudes que puede procesar",
+        "Una fuga de memoria en la capa web que reduce gradualmente la memoria heap disponible para cada solicitud a medida que la cantidad de usuarios supera ese nivel"
+      ],
+      "correctIndex": 1,
+      "explanation": "El uso bajo de CPU junto con el agotamiento de las conexiones a la base de datos apunta a un cuello de botella en el conjunto de conexiones o en la capa de base de datos, no a una falta de capacidad bruta de CPU."
+    },
+    {
+      "id": "pt-015",
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué debería incluir normalmente un informe de pruebas de rendimiento bien estructurado?",
+      "options": [
+        "Las impresiones de los evaluadores sobre la rapidez del sistema durante la ejecución, sin mediciones detalladas",
+        "El modelo de carga de trabajo, las métricas clave observadas, los cuellos de botella identificados y recomendaciones para los siguientes pasos",
+        "Una lista de los defectos funcionales encontrados durante el ciclo, sin relación con el rendimiento medido",
+        "Una breve declaración de aprobado o no aprobado y la lista de evaluadores participantes, para que las partes interesadas puedan leer el informe rápidamente"
+      ],
+      "correctIndex": 1,
+      "explanation": "Un informe útil de pruebas de rendimiento documenta el modelo de carga de trabajo, las métricas observadas, los cuellos de botella encontrados y recomendaciones prácticas, y proporciona a las partes interesadas contexto suficiente para tomar decisiones."
+    },
+    {
+      "id": "pt-016",
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.1.2",
+      "difficulty": "hard",
+      "question": "¿Cuál de las siguientes opciones es un riesgo del proyecto (no del producto) específico de las iniciativas de pruebas de rendimiento?",
+      "options": [
+        "Es posible que la capa de caché esté configurada de manera que no reduzca las llamadas al backend",
+        "Es posible que el tiempo de respuesta de la aplicación supere los 5 segundos al aplicar la carga máxima prevista",
+        "Es posible que el entorno de pruebas de rendimiento no esté disponible a tiempo y retrase el cronograma de las pruebas de rendimiento",
+        "Es posible que la aplicación no cumpla su objetivo de tiempo de respuesta de 5 segundos con la carga máxima prevista durante el lanzamiento"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un riesgo del proyecto está relacionado con la gestión del propio esfuerzo de pruebas, como la disponibilidad del entorno que retrasa el cronograma; un riesgo del producto, en cambio, se refiere al comportamiento de rendimiento del sistema."
+    },
+    {
+      "id": "pt-017",
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.2.2",
+      "difficulty": "hard",
+      "question": "¿Por qué es importante ejecutar una prueba de rendimiento de referencia en una versión estable y conocida como correcta del sistema antes de realizar cambios arquitectónicos?",
+      "options": [
+        "Es un requisito legal en la mayoría de los mercados regulados, por lo que debe existir una ejecución de referencia antes de publicar el software para los clientes",
+        "Proporciona un punto de referencia para comparar los resultados después de cambios futuros y detectar regresiones introducidas",
+        "Es un requisito legal para publicar software para los clientes en la mayoría de los mercados regulados",
+        "Una vez que existe, ya no hace falta realizar más pruebas de rendimiento en el sistema modificado"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una prueba de referencia establece un punto de comparación para las métricas clave de rendimiento de una versión conocida como correcta, lo que permite detectar regresiones introducidas por cambios posteriores."
+    },
+    {
+      "id": "pt-018",
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.1",
+      "difficulty": "easy",
+      "question": "Antes del lanzamiento de un producto importante, ¿qué partes interesadas suelen tener MAYOR interés en los resultados de las pruebas de rendimiento?",
+      "options": [
+        "Principalmente el equipo legal, que necesita los resultados para respaldar el registro de la marca del producto",
+        "Los diseñadores gráficos que crearon el logotipo, porque evalúan la calidad visual de cada pantalla con distintos niveles de carga",
+        "Los equipos de operaciones e infraestructura y las partes interesadas del negocio, preocupados por la capacidad, los costos y la experiencia de usuario a escala",
+        "Principalmente los diseñadores gráficos que crearon el logotipo, porque evalúan la calidad visual de cada pantalla"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los resultados de las pruebas de rendimiento interesan especialmente a los equipos de operaciones e infraestructura (para planificar la capacidad) y a las partes interesadas del negocio, preocupadas por la experiencia de usuario y los costos a escala."
+    },
+    {
+      "id": "pt-019",
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué factor se debe considerar cuidadosamente al seleccionar una herramienta de pruebas de rendimiento para un proyecto específico?",
+      "options": [
+        "Si la herramienta recibió una reseña positiva en una revista especializada publicada durante el último año",
+        "Si la herramienta está entre las más caras del mercado, porque el precio indica calidad",
+        "Si la interfaz de la herramienta sigue la misma combinación de colores que las pautas de marca de la empresa",
+        "Si la herramienta admite los protocolos y las tecnologías que usa el sistema bajo prueba"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un criterio clave para seleccionar herramientas de pruebas de rendimiento es la compatibilidad con los protocolos y tecnologías del sistema bajo prueba, para garantizar que la herramienta pueda generar y medir el tráfico pertinente."
+    },
+    {
+      "id": "pt-020",
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.1",
+      "difficulty": "hard",
+      "question": "Una prueba de rendimiento muestra tiempos de respuesta aceptables con 100 usuarios concurrentes, pero estos empeoran de forma pronunciada y no lineal por encima de 300 usuarios. ¿Qué es lo MÁS probable que indique este patrón?",
+      "options": [
+        "Se está alcanzando un límite de escalabilidad o un cuello de botella alrededor de ese nivel de concurrencia, que requiere más investigación",
+        "Los datos de prueba se prepararon en el idioma equivocado, lo que ralentiza el procesamiento cuando aumenta el volumen",
+        "Los datos de prueba se prepararon en el idioma equivocado, lo que ralentiza el procesamiento cuando la cantidad de registros supera cierto umbral",
+        "La prueba se ejecutó en un día en que se sabe que la red es más lenta, por lo que se puede ignorar la ralentización"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un deterioro pronunciado y no lineal por encima de cierto umbral de concurrencia suele indicar que se está alcanzando un límite de escalabilidad o un cuello de botella (por ejemplo, en un conjunto de subprocesos o de conexiones, o por contención de recursos), por lo que se justifica una investigación más profunda."
+    },
+    {
+      "id": "pt-021",
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.2",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes opciones es un ejemplo de requisito no funcional pertinente para las pruebas de rendimiento?",
+      "options": [
+        "El sistema permitirá que los usuarios registrados restablezcan su contraseña mediante un enlace enviado a la dirección de correo electrónico registrada",
+        "El sistema permitirá importar registros de clientes desde archivos CSV de hasta un tamaño definido",
+        "El sistema responderá a una consulta de búsqueda en un máximo de 2 segundos con una carga de 500 usuarios concurrentes",
+        "El sistema permitirá que los usuarios registrados restablezcan su contraseña mediante un enlace enviado por correo electrónico"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los requisitos de rendimiento son no funcionales y suelen especificar objetivos medibles, como un tiempo de respuesta bajo una carga definida, en lugar de describir la funcionalidad que ofrece el sistema."
+    },
+    {
+      "id": "pt-022",
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué diferencia el tiempo de respuesta del throughput/rendimiento como métricas de rendimiento?",
+      "options": [
+        "El throughput/rendimiento es el tiempo que tarda en completarse una solicitud, mientras que el tiempo de respuesta es la cantidad de transacciones por período",
+        "El tiempo de respuesta es lo que tarda en completarse una solicitud; el throughput/rendimiento es la cantidad de transacciones procesadas por período",
+        "Solo importa el tiempo de respuesta en las pruebas de rendimiento; el throughput/rendimiento es exclusivamente una métrica de negocio",
+        "El throughput/rendimiento es el tiempo que tarda en completarse una solicitud, mientras que el tiempo de respuesta es la cantidad de transacciones que procesa el sistema en un período determinado"
+      ],
+      "correctIndex": 1,
+      "explanation": "El tiempo de respuesta mide cuánto tarda en completarse una solicitud individual, mientras que el throughput/rendimiento mide la tasa a la que el sistema procesa transacciones (por ejemplo, transacciones por segundo): son dos métricas de rendimiento relacionadas pero distintas."
+    },
+    {
+      "id": "pt-023",
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.3.1",
+      "difficulty": "medium",
+      "question": "¿Por qué es importante definir modelos realistas de carga de trabajo antes de ejecutar una prueba de rendimiento?",
+      "options": [
+        "Hacen que la prueba termine más rápido, porque los usuarios realistas generan menos solicitudes que los scripts",
+        "Garantizan que la prueba refleje los patrones de uso previstos, para que los resultados sean significativos y útiles para tomar medidas",
+        "Eliminan la necesidad de definir criterios de aceptación, ya que el modelo implica los objetivos",
+        "Hacen que la prueba termine antes, porque los usuarios realistas generan menos solicitudes que los scripts y, por ello, se necesitan menos usuarios virtuales en total"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los resultados de las pruebas de rendimiento solo son significativos si el modelo de carga de trabajo refleja de forma realista los patrones de uso previstos en producción (por ejemplo, la cantidad de usuarios, la combinación de transacciones y los tiempos de espera); los modelos poco realistas pueden llevar a conclusiones engañosas."
+    },
+    {
+      "id": "pt-024",
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones es un riesgo típico del producto que las pruebas de rendimiento buscan mitigar?",
+      "options": [
+        "Es posible que el documento de requisitos contenga errores ortográficos que confundan a sus lectores",
+        "Es posible que la interfaz use un estilo de fuente incoherente en varias pantallas de la aplicación",
+        "Es posible que el sistema se vuelva lento o deje de responder con carga máxima, lo que provocaría una mala experiencia de usuario o la pérdida de transacciones",
+        "Es posible que la interfaz de usuario use fuentes y espaciados incoherentes en varias pantallas, lo que haría que la aplicación pareciera poco profesional"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un riesgo clave del producto que abordan las pruebas de rendimiento es que el sistema se vuelva lento, deje de responder o sea inestable con cargas máximas o sostenidas, lo que afecta directamente la experiencia de usuario y los resultados del negocio."
+    },
+    {
+      "id": "pt-025",
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito principal de las pruebas de carga?",
+      "options": [
+        "Determinar el comportamiento del sistema bajo un rango previsto y realista de condiciones de carga de usuarios",
+        "Comprobar que la interfaz de usuario del sistema cumple las pautas de accesibilidad para quienes usan tecnología de asistencia",
+        "Revisar el código fuente para encontrar vulnerabilidades de seguridad que podrían aprovecharse bajo carga",
+        "Comprobar que la interfaz de usuario del sistema cumple las pautas de accesibilidad"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de carga evalúan el comportamiento del sistema bajo un rango previsto y realista de condiciones de carga, y verifican si cumple los objetivos de rendimiento con los niveles de uso esperados."
+    },
+    {
+      "id": "pt-026",
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito principal de las pruebas de estrés?",
+      "options": [
+        "Verificar que los cálculos de nivel unitario devuelven valores correctos para un conjunto de entradas límite",
+        "Evaluar el comportamiento por encima de la carga normal o máxima, a menudo hasta el punto de fallo, y observar cómo se recupera el sistema",
+        "Confirmar que el sistema cumple sus objetivos de tiempo de respuesta con la carga máxima prevista para el lanzamiento, sin superar ese nivel",
+        "Confirmar que el sistema cumple sus objetivos de tiempo de respuesta con la carga máxima prevista para el lanzamiento"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de estrés llevan el sistema más allá de la carga normal o máxima, a menudo hasta el punto de fallo, para entender cómo y cuándo se degrada y si se recupera de forma controlada."
+    },
+    {
+      "id": "pt-027",
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.3",
+      "difficulty": "medium",
+      "question": "¿Qué evalúan principalmente las pruebas de soak (o pruebas de resistencia)?",
+      "options": [
+        "La estabilidad y el comportamiento del sistema bajo una carga sostenida durante mucho tiempo, para revelar problemas como fugas de memoria",
+        "La capacidad del sistema para afrontar un único pico repentino de carga que vuelve rápidamente a la normalidad, como durante una venta relámpago",
+        "El tiempo de respuesta de una transacción aislada cuando el sistema está completamente inactivo",
+        "La capacidad del sistema para afrontar un pico repentino y breve de carga que luego vuelve a la normalidad"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de soak (o de resistencia) evalúan la estabilidad y el comportamiento del sistema bajo una carga sostenida durante un período prolongado, con el fin de detectar problemas que solo aparecen con el tiempo, como fugas de memoria o el agotamiento gradual de recursos."
+    },
+    {
+      "id": "pt-028",
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.4",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito principal de las pruebas de picos?",
+      "options": [
+        "Validar que el esquema de la base de datos pueda admitir el crecimiento previsto de los registros almacenados durante los próximos meses de funcionamiento",
+        "Probar el comportamiento durante un aumento gradual y planificado de la carga que se extiende a lo largo de muchos meses",
+        "Evaluar el comportamiento del sistema cuando la carga aumenta o disminuye bruscamente durante un período breve",
+        "Comprobar que los mensajes de error que se muestran durante una sobrecarga sean accesibles para todos los usuarios"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de picos evalúan el comportamiento del sistema ante aumentos (o disminuciones) repentinos y pronunciados de la carga en poco tiempo, como una venta relámpago o una noticia de última hora que provoca un aumento rápido del tráfico."
+    },
+    {
+      "id": "pt-029",
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.3.1",
+      "difficulty": "hard",
+      "question": "¿Qué métrica indicaría de forma MÁS directa una fuga de memoria durante una prueba de resistencia/soak?",
+      "options": [
+        "Una disminución de la cantidad de sesiones de usuario activas al comienzo de la ejecución de la prueba",
+        "Un único pico breve de CPU que aparece mientras la prueba todavía se está iniciando",
+        "Una tendencia de consumo de memoria que sigue aumentando con el tiempo y no vuelve al valor de referencia",
+        "Un tiempo de respuesta que permanece constante durante toda la ejecución de la prueba"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una tendencia de consumo de memoria que aumenta gradualmente y no vuelve al valor de referencia durante una prueba de resistencia sostenida es un indicador clásico de una fuga de memoria."
+    },
+    {
+      "id": "pt-030",
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué tarea suele realizarse PRIMERO al planificar una prueba de rendimiento?",
+      "options": [
+        "Definir los objetivos de las pruebas de rendimiento y los criterios de aceptación según los requisitos de las partes interesadas",
+        "Ejecutar la prueba de carga a escala completa en el sistema de producción activo para obtener datos reales",
+        "Retirar el entorno de pruebas una vez escritos los primeros scripts",
+        "Analizar el informe final de la prueba y preparar recomendaciones para las partes interesadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "La planificación de las pruebas de rendimiento suele comenzar con la definición de objetivos claros y criterios de aceptación basados en los requisitos de las partes interesadas y del negocio; estos orientan después el modelado de la carga de trabajo, la preparación del entorno y la ejecución."
+    },
+    {
+      "id": "pt-031",
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Por qué es importante establecer una referencia de rendimiento al principio del proceso de pruebas?",
+      "options": [
+        "Una referencia sustituye las pruebas de rendimiento posteriores, porque se supone que las versiones siguientes se comportan igual",
+        "Una referencia solo es pertinente para los casos de prueba funcionales escritos primero en el proyecto",
+        "Una referencia pierde su valor cuando el sistema se optimiza por primera vez",
+        "Una referencia proporciona un punto de comparación con los resultados posteriores para detectar regresiones"
+      ],
+      "correctIndex": 3,
+      "explanation": "Una referencia de rendimiento ofrece un punto de comparación que permite detectar regresiones o mejoras a medida que el sistema cambia con el tiempo."
+    },
+    {
+      "id": "pt-032",
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.2.1",
+      "difficulty": "medium",
+      "question": "Durante la ejecución de las pruebas de rendimiento, ¿cuál es una tarea clave relacionada con la supervisión?",
+      "options": [
+        "Evitar por completo la supervisión de recursos del sistema para que la sobrecarga de medición no afecte los resultados",
+        "Supervisar los recursos del sistema junto con las métricas de la aplicación para relacionar los problemas con sus causas raíz",
+        "Supervisar solo la estación de trabajo del evaluador, porque allí se consultan y almacenan los resultados",
+        "Supervisar solo la estación de trabajo del evaluador y los generadores de carga, ya que no se debe intervenir el sistema bajo prueba"
+      ],
+      "correctIndex": 1,
+      "explanation": "Supervisar los recursos del sistema (CPU, memoria, red, E/S de disco y base de datos) junto con las métricas de la aplicación ayuda a relacionar los problemas de rendimiento observados con sus causas raíz."
+    },
+    {
+      "id": "pt-033",
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.3.1",
+      "difficulty": "hard",
+      "question": "Durante la ejecución de una prueba, los tiempos de respuesta empeoran considerablemente después de 30 minutos de carga sostenida y luego se estabilizan en un nivel más alto. ¿Qué debería investigar primero el evaluador de rendimiento?",
+      "options": [
+        "Si un recurso, como un conjunto de conexiones o una caché, alcanzó un umbral que cambió el comportamiento del sistema",
+        "Si la ortografía de los datos de prueba coincidía con el esquema de la base de datos de producción, pues una diferencia también ralentizaría las consultas",
+        "Si la ortografía de los datos de prueba coincidía exactamente con el esquema de la base de datos de producción",
+        "Si el equipo de marketing había aprobado las notas de la versión antes de iniciar la prueba"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un cambio de los tiempos de respuesta que se estabiliza en un nuevo nivel degradado suele indicar que un recurso (como un conjunto de conexiones, una caché o un conjunto de subprocesos) llegó a un punto de saturación o umbral, y ese es un primer aspecto lógico que investigar."
+    },
+    {
+      "id": "pt-034",
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.4.1",
+      "difficulty": "medium",
+      "question": "¿Qué aspecto importante se debe considerar al preparar datos para una prueba de rendimiento?",
+      "options": [
+        "Los datos de prueba deben tener un volumen mínimo para que la prueba termine pronto, independientemente de las características de producción",
+        "Los datos de prueba deben ser escasos para que la prueba termine pronto, ya que el volumen de datos no afecta los tiempos de respuesta medidos",
+        "Los evaluadores deben introducir manualmente los datos de prueba mientras se ejecuta la prueba para mantener el realismo",
+        "Los datos de prueba deben reflejar volúmenes y variedad realistas, similares a los de producción, para producir resultados válidos y significativos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los datos realistas para las pruebas de rendimiento —que reflejen volúmenes, distribuciones y variedad similares a los de producción— son esenciales para obtener resultados válidos, significativos y representativos."
+    },
+    {
+      "id": "pt-035",
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una función habitual de las herramientas de pruebas de rendimiento que se usan para simular varios usuarios concurrentes?",
+      "options": [
+        "Crear automáticamente el plan de marketing del proyecto a partir del comportamiento observado de los usuarios",
+        "Generar automáticamente el código fuente de la aplicación a partir de las transacciones registradas",
+        "Contar con usuarios virtuales que simulan muchas personas interactuando simultáneamente con el sistema",
+        "Traducir automáticamente la interfaz de usuario a varios idiomas para realizar pruebas globales"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una función central de las herramientas de pruebas de rendimiento es la capacidad de generar carga con usuarios virtuales, que simulan la interacción simultánea de muchos usuarios o transacciones con el sistema bajo prueba sin necesitar esa cantidad de personas físicas."
+    },
+    {
+      "id": "pt-036",
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.2",
+      "difficulty": "medium",
+      "question": "¿Por qué podría un evaluador elegir una herramienta de pruebas de carga a nivel de protocolo (por ejemplo, HTTP) en lugar de una basada en la interfaz gráfica para pruebas de carga a gran escala?",
+      "options": [
+        "Escalan peor que las herramientas gráficas, ya que cada usuario virtual necesita su propia instancia completa del navegador",
+        "No pueden simular usuarios concurrentes, solo usuarios que trabajan uno tras otro en secuencia",
+        "Generan una carga menos significativa porque omiten la interfaz gráfica de la aplicación",
+        "Normalmente necesitan muchos menos recursos por usuario virtual y, por tanto, pueden generar cargas mucho mayores"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las herramientas a nivel de protocolo interactúan directamente con el protocolo de comunicación subyacente (por ejemplo, HTTP) en lugar de controlar un navegador o una interfaz gráfica completa por cada usuario virtual. Por lo general, requieren muchos menos recursos y permiten simular cargas mucho mayores."
+    },
+    {
+      "id": "pt-037",
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué tipo de herramienta usaría un evaluador para correlacionar los tiempos de respuesta de la aplicación con el uso de recursos del servidor subyacente durante una prueba?",
+      "options": [
+        "Una herramienta de gestión de requisitos que vincula cada requisito con los casos de prueba que lo cubren",
+        "Una herramienta de gestión de requisitos que vincula cada requisito con sus casos de prueba e informa la cobertura alcanzada",
+        "Una herramienta de seguimiento de defectos que registra y prioriza los problemas encontrados durante las pruebas",
+        "Una herramienta de supervisión de sistemas o infraestructura que registra en tiempo real la CPU, la memoria, la E/S de disco y la red"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las herramientas de supervisión de sistemas e infraestructura capturan en tiempo real el uso de recursos (CPU, memoria, E/S de disco y red), que los evaluadores correlacionan con los tiempos de respuesta de la aplicación para diagnosticar cuellos de botella."
+    },
+    {
+      "id": "pt-038",
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.1",
+      "difficulty": "medium",
+      "question": "Al analizar los resultados de las pruebas de rendimiento, ¿qué suele sugerir un aumento repentino y pronunciado del tiempo de respuesta con una cantidad específica de usuarios concurrentes?",
+      "options": [
+        "Que la prueba se ejecutó en un día en que la red suele ser más lenta de lo habitual",
+        "Que los datos de prueba se cargaron en el orden equivocado, lo que ralentiza el procesamiento con esa cantidad de usuarios",
+        "Que el evaluador cometió un error tipográfico en el script al configurar la cantidad de usuarios",
+        "Que el sistema alcanzó un cuello de botella o un punto de saturación con ese nivel de carga"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un aumento pronunciado del tiempo de respuesta con un nivel de carga específico suele indicar que el sistema alcanzó un cuello de botella o un punto de saturación de recursos, un hallazgo importante que se debe informar e investigar."
+    },
+    {
+      "id": "pt-039",
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.2",
+      "difficulty": "medium",
+      "question": "¿Por qué se deben informar los tiempos de respuesta por percentiles (por ejemplo, percentiles 90 o 95), además del tiempo de respuesta promedio?",
+      "options": [
+        "Muestran la experiencia de las solicitudes más lentas, que el promedio puede ocultar, y ofrecen una visión más completa de la experiencia de usuario",
+        "Aportan poco valor analítico, porque el promedio ya resume todos los tiempos de respuesta en una sola cifra fácil de informar",
+        "Aportan poco valor analítico, porque el promedio ya resume todos los tiempos de respuesta",
+        "Son importantes sobre todo en las pruebas funcionales, donde se debe comprobar cada respuesta individualmente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los promedios pueden ocultar la experiencia de una parte significativa de usuarios que sufren tiempos de respuesta más lentos; las métricas por percentiles (por ejemplo, el percentil 95) revelan esa cola de solicitudes y ofrecen una visión más completa de la experiencia real."
+    },
+    {
+      "id": "pt-040",
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.1",
+      "difficulty": "hard",
+      "question": "Un informe de pruebas de rendimiento muestra que se cumplen los objetivos de tiempo de respuesta, pero el uso de CPU del servidor de aplicaciones supera el 90 % de forma constante durante toda la prueba. ¿Qué debería recomendar el evaluador?",
+      "options": [
+        "Declarar que la prueba falló, porque un uso de CPU superior al 90 % incumple los criterios de aceptación aunque se hayan cumplido los objetivos de tiempo de respuesta",
+        "Recomendar desactivar la supervisión de CPU, ya que los resultados de tiempo de respuesta ya muestran el resultado",
+        "Declarar que la prueba falló, porque un uso de CPU superior al 90 % siempre incumple los criterios de aceptación",
+        "Señalar el uso elevado de CPU como un riesgo, porque queda poco margen, y sugerir más investigación o planificación de capacidad"
+      ],
+      "correctIndex": 3,
+      "explanation": "Aunque se cumplan los objetivos de tiempo de respuesta, un uso de recursos constantemente elevado (como una CPU por encima del 90 %) indica que queda poco margen para crecer o afrontar picos inesperados; debe señalarse como riesgo y dar lugar a más investigación o planificación de capacidad, no ignorarse."
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.3",
+      "difficulty": "easy",
+      "question": "¿Qué afirmación describe mejor por qué las pruebas de rendimiento son importantes para las partes interesadas del negocio?",
+      "options": [
+        "Proporcionan pruebas de que el sistema puede admitir la actividad prevista sin demoras que perjudiquen los ingresos o la reputación",
+        "Confirman que el equipo siguió las reglas de estilo de codificación acordadas durante todo el proyecto, lo que reduce los costos de mantenimiento para el negocio",
+        "Garantizan que las versiones futuras no tendrán ningún tipo de defecto, incluidos los funcionales",
+        "Confirman que el equipo siguió las reglas de estilo de codificación acordadas durante todo el proyecto"
+      ],
+      "correctIndex": 0,
+      "explanation": "A las partes interesadas del negocio les importa porque los sistemas lentos o inestables pueden reducir las conversiones, dañar la confianza y aumentar los costos operativos. Las pruebas de rendimiento aportan evidencia antes del lanzamiento.",
+      "id": "pt-041"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.4",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes opciones es el MEJOR ejemplo de requisito de rendimiento medible?",
+      "options": [
+        "El sitio web utilizará un diseño adaptable que funcione bien con distintos tamaños de pantalla",
+        "El sistema debería ser rápido para la mayoría de los usuarios durante el horario laboral habitual",
+        "El 95 % de los envíos de pagos se completará en un máximo de 3 segundos con 200 pedidos por minuto",
+        "La aplicación debería parecer moderna y ágil para los usuarios en todos los dispositivos habituales"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un requisito de rendimiento útil es medible y está vinculado tanto a una métrica como a una carga de trabajo. Términos vagos como «rápido» o «moderno» no se pueden probar adecuadamente.",
+      "id": "pt-042"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.2.4",
+      "difficulty": "easy",
+      "question": "En un modelo de carga de trabajo, ¿qué representa el tiempo de reflexión?",
+      "options": [
+        "El tiempo necesario para compilar y empaquetar los scripts de prueba antes de iniciar la ejecución",
+        "La pausa entre una acción del usuario y la siguiente, que representa cómo interactúan las personas reales con el sistema",
+        "El tiempo que un subproceso del servidor espera a que otra transacción en curso libere un bloqueo de la base de datos",
+        "El tiempo que un subproceso del servidor espera a que otra transacción libere un bloqueo de la base de datos"
+      ],
+      "correctIndex": 1,
+      "explanation": "El tiempo de reflexión modela la pausa natural entre acciones del usuario, como leer una página o decidir qué seleccionar a continuación. Sin él, la prueba puede exagerar la intensidad del uso.",
+      "id": "pt-043"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.2.5",
+      "difficulty": "medium",
+      "question": "¿Cuál es la principal diferencia entre un modelo de carga abierto y uno cerrado?",
+      "options": [
+        "Un modelo abierto está destinado a pruebas basadas en interfaz gráfica, mientras que uno cerrado se usa para pruebas a nivel de protocolo",
+        "Un modelo abierto usa solo API públicas, mientras que uno cerrado requiere sesiones de usuario autenticadas",
+        "Un modelo abierto se usa para pruebas gráficas, mientras que uno cerrado se usa para pruebas de protocolo sin navegador",
+        "Un modelo abierto se basa en el trabajo que llega con el tiempo, mientras que uno cerrado mantiene un conjunto fijo de usuarios que repite ciclos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los modelos abiertos se centran en la tasa de llegada, por ejemplo, solicitudes por segundo. Los modelos cerrados se centran en una cantidad fija de usuarios concurrentes que repiten acciones.",
+      "id": "pt-044"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.3.2",
+      "difficulty": "easy",
+      "question": "¿Por qué es importante la combinación de transacciones al definir un perfil de carga de trabajo?",
+      "options": [
+        "Determina la cantidad de máquinas generadoras de carga necesarias, así que no hace falta decidir por separado la cantidad de usuarios virtuales",
+        "Determina la cantidad de generadores de carga necesarios, independientemente de la cantidad de usuarios virtuales",
+        "Garantiza que la prueba incluya las proporciones correctas de distintas acciones, como buscar, navegar y comprar",
+        "Solo importa después de la ejecución, al comparar los resultados de distintos tipos de transacción"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las distintas transacciones ejercitan diferentes componentes del sistema. Se necesita una combinación realista para que la carga de trabajo refleje el comportamiento real en producción.",
+      "id": "pt-045"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.5",
+      "difficulty": "easy",
+      "question": "En el contexto de las pruebas de rendimiento, ¿qué describe la escalabilidad?",
+      "options": [
+        "Cuántos requisitos funcionales aprobaron las partes interesadas antes del lanzamiento",
+        "Qué tan atractiva y coherente se ve la interfaz gráfica en pantallas grandes",
+        "Con qué frecuencia puede el equipo de desarrollo desplegar cambios en producción",
+        "Qué tan bien sigue cumpliendo el sistema sus objetivos de rendimiento cuando aumenta la carga de trabajo o los recursos"
+      ],
+      "correctIndex": 3,
+      "explanation": "La escalabilidad describe cómo cambia el rendimiento cuando crece la demanda y, cuando corresponde, se agrega capacidad. Ayuda a los equipos a entender los límites del crecimiento futuro.",
+      "id": "pt-046"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.2.6",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación distingue mejor la latencia del tiempo de respuesta de extremo a extremo?",
+      "options": [
+        "La latencia es todo el tiempo que espera el usuario a que termine un proceso de negocio, mientras que el tiempo de respuesta es solo la demora de la conexión de red",
+        "La latencia suele referirse a la demora en la transmisión de datos, mientras que el tiempo de respuesta abarca todo el tiempo transcurrido, incluido el procesamiento",
+        "La latencia es todo el tiempo que espera el usuario a que termine un proceso de negocio, mientras que el tiempo de respuesta es solo la demora de red",
+        "Ambos términos significan exactamente lo mismo en cualquier sistema y se pueden intercambiar en los informes"
+      ],
+      "correctIndex": 1,
+      "explanation": "La latencia suele ser un componente de la espera total. El tiempo de respuesta normalmente incluye la demora de red más el procesamiento de la aplicación y del backend.",
+      "id": "pt-047"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.3.3",
+      "difficulty": "easy",
+      "question": "Un plan de pruebas especifica 1.000 cuentas con sesión iniciada, pero solo 150 usuarios realizarán transacciones activamente al mismo tiempo. ¿Qué métrica describe más directamente el valor 150?",
+      "options": [
+        "Período de retención de datos",
+        "Concurrencia",
+        "Densidad de defectos",
+        "Cobertura de código"
+      ],
+      "correctIndex": 1,
+      "explanation": "La concurrencia se refiere a cuántos usuarios o sesiones están activos al mismo tiempo. La cantidad total de cuentas registradas o con sesión iniciada no equivale necesariamente a la actividad concurrente.",
+      "id": "pt-048"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.4.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es una ventaja clave de analizar los riesgos de rendimiento durante el trabajo de requisitos y arquitectura, en lugar de esperar hasta las pruebas del sistema?",
+      "options": [
+        "Garantiza que no será necesario supervisar producción después del lanzamiento",
+        "Elimina la necesidad de definir criterios de aceptación medibles más adelante en el proyecto",
+        "Puede revelar pronto problemas de diseño costosos, cuando todavía es menos caro corregirlos",
+        "Hace innecesarias las pruebas funcionales porque la arquitectura ya está validada"
+      ],
+      "correctIndex": 2,
+      "explanation": "Prestar atención al rendimiento desde el principio puede influir en la arquitectura, las suposiciones de capacidad y las interfaces antes de que resulte costoso rehacerlas. Esta es una ventaja central de desplazar las pruebas hacia etapas tempranas.",
+      "id": "pt-049"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.3.4",
+      "difficulty": "hard",
+      "question": "Una página parece rápida en una demostración en la computadora portátil de un desarrollador, pero se vuelve lenta en un entorno realista de pruebas de rendimiento. ¿Qué explicación es MÁS plausible?",
+      "options": [
+        "La computadora portátil siempre es más débil que los servidores de prueba, así que el resultado anterior debe ser un error de medición",
+        "La computadora portátil es más potente que los servidores de prueba, así que el primer resultado debe ser correcto y el posterior un error de medición",
+        "Un volumen de datos realista, las condiciones de red, la infraestructura compartida o la contención en el backend pueden revelar demoras que un entorno local oculta",
+        "El rendimiento depende únicamente de la representación del navegador, por lo que las condiciones del backend no pueden explicar la diferencia"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las demostraciones locales suelen omitir volúmenes de datos similares a producción, contención, llamadas de integración y efectos de red. Esos factores pueden cambiar sustancialmente el rendimiento observado.",
+      "id": "pt-050"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.6",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación refleja MEJOR cómo se suele juzgar la gravedad de un problema de rendimiento?",
+      "options": [
+        "Según el lenguaje de programación y el framework usados para implementar el componente donde se observó primero la ralentización",
+        "Según el impacto del deterioro o la inestabilidad en el negocio, los usuarios y las operaciones bajo condiciones previstas",
+        "Según si el problema ocurrió un viernes en lugar de cualquier otro día de la semana",
+        "Según la cantidad de capturas de pantalla adjuntas al informe del defecto"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una demora pequeña en una función de poco valor puede importar menos que una ralentización moderada en el pago o el inicio de sesión. La gravedad depende del impacto, no solo de los milisegundos.",
+      "id": "pt-051"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.7",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes es la razón más sólida para definir los objetivos de rendimiento en función tanto de la carga de trabajo como del nivel de calidad?",
+      "options": [
+        "Porque un objetivo de tiempo sin contexto no indica bajo qué demanda se debe seguir cumpliendo",
+        "Porque las métricas deben ocultarse a las partes interesadas hasta que termine el proyecto",
+        "Porque las definiciones de carga no tienen relación con la experiencia de los usuarios finales",
+        "Porque los objetivos de rendimiento solo son pertinentes para los equipos de infraestructura y operaciones"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un objetivo como «menos de 2 segundos» está incompleto si no especifica la carga pertinente, por ejemplo, con 500 usuarios concurrentes o 100 solicitudes por segundo.",
+      "id": "pt-052"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.2.7",
+      "difficulty": "easy",
+      "question": "En las pruebas de rendimiento, ¿qué es una transacción de negocio?",
+      "options": [
+        "Una acción o un flujo de trabajo significativo para el usuario final, como realizar un pedido, que la prueba mide como una unidad",
+        "Un paso de aprobación financiera que se debe completar antes de que el proyecto pueda comprar servidores adicionales para la prueba",
+        "Un acuerdo contractual entre el proveedor de la herramienta y el proyecto sobre las condiciones de licencia",
+        "Cualquier línea de código modificada durante un sprint que afecte el procesamiento de respuestas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de rendimiento suelen medir transacciones de negocio porque representan actividades importantes para los usuarios y las partes interesadas. Algunos ejemplos son iniciar sesión, buscar y pagar.",
+      "id": "pt-053"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.2.8",
+      "difficulty": "easy",
+      "question": "¿Qué descripción corresponde MEJOR a un cuello de botella?",
+      "options": [
+        "Un recurso o componente que limita el throughput/rendimiento general o provoca demoras crecientes bajo carga",
+        "Una convención de nomenclatura que el equipo aplica a los scripts del repositorio de pruebas",
+        "Un certificado de seguridad que los generadores de carga usan para autenticarse en el sistema",
+        "Un método para comprimir archivos de registro al terminar una prueba y ahorrar espacio en disco"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un cuello de botella es el elemento limitante del sistema. Impide que el resto del sistema alcance un mejor rendimiento general.",
+      "id": "pt-054"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.3.5",
+      "difficulty": "easy",
+      "question": "¿Por qué se suele usar un período de calentamiento antes de recopilar las mediciones formales de una prueba de rendimiento?",
+      "options": [
+        "Para reducir un poco las cifras de throughput/rendimiento, de modo que los resultados parezcan más conservadores a las partes interesadas",
+        "Para ocultar defectos que suelen producirse al comienzo de una prueba y que el informe parezca más limpio",
+        "Para ocultar los defectos que suelen producirse al comienzo de una prueba y que las mediciones parezcan más limpias en el informe",
+        "Para permitir que se estabilicen las cachés, las conexiones y la compilación JIT, de modo que las mediciones reflejen el comportamiento en estado estable"
+      ],
+      "correctIndex": 3,
+      "explanation": "Muchos sistemas se comportan de forma distinta justo después de iniciarse. El calentamiento ayuda a separar los efectos de arranque de las mediciones representativas en estado estable.",
+      "id": "pt-055"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.8",
+      "difficulty": "hard",
+      "question": "¿Qué afirmación distingue mejor la elasticidad de la escalabilidad?",
+      "options": [
+        "La elasticidad se refiere a la capacidad de respuesta de la interfaz bajo carga, mientras que la escalabilidad se refiere a la velocidad del procesamiento por lotes nocturno",
+        "La elasticidad es la capacidad de respuesta de la interfaz y la escalabilidad es la velocidad del procesamiento por lotes",
+        "La elasticidad es el ajuste automático de la capacidad cuando cambia la demanda, mientras que la escalabilidad es la capacidad más amplia de gestionar el crecimiento",
+        "La escalabilidad requiere infraestructura en la nube, mientras que la elasticidad solo se puede lograr con hardware local"
+      ],
+      "correctIndex": 2,
+      "explanation": "La escalabilidad se refiere en general al comportamiento ante el crecimiento. La elasticidad consiste específicamente en adaptar la capacidad hacia arriba o hacia abajo, a menudo de forma automática, cuando cambia la carga.",
+      "id": "pt-056"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.3.6",
+      "difficulty": "medium",
+      "question": "Un equipo modela a cada usuario virtual como si enviara solicitudes continuamente y sin pausas, aunque los usuarios de producción dedican tiempo a leer las pantallas. ¿Cuál es el principal riesgo?",
+      "options": [
+        "Los datos de supervisión ya no necesitarán marcas de tiempo porque la carga es constante",
+        "La prueba se convierte automáticamente en una prueba de picos válida del comportamiento en producción",
+        "La prueba puede aplicar una carga de trabajo poco realista e intensa y llevar a conclusiones engañosas sobre las necesidades de capacidad",
+        "El sistema parecerá tener más capacidad disponible de la que realmente tiene, porque las solicitudes se distribuyen uniformemente"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ignorar el tiempo de reflexión realista suele aumentar la frecuencia de solicitudes por encima del comportamiento real de los usuarios. Esto puede distorsionar la combinación de transacciones y las conclusiones sobre capacidad.",
+      "id": "pt-057"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.3.7",
+      "difficulty": "medium",
+      "question": "¿Por qué a veces se deben incluir en un modelo de carga de trabajo en línea tareas en segundo plano, como la generación de informes o la sincronización programada?",
+      "options": [
+        "Las tareas programadas son importantes para las pruebas de seguridad, pero no influyen en los resultados de rendimiento",
+        "La actividad en segundo plano puede usar los mismos recursos compartidos que los usuarios interactivos y cambiar el rendimiento observado",
+        "Incluirlas elimina la necesidad de supervisar el uso de recursos durante la prueba, ya que su carga es conocida",
+        "El procesamiento en segundo plano es independiente del procesamiento en línea y no afecta los tiempos de respuesta interactivos"
+      ],
+      "correctIndex": 1,
+      "explanation": "El procesamiento en segundo plano puede competir por CPU, memoria, E/S o capacidad de base de datos. Excluirlo puede hacer que la prueba represente peor las condiciones de producción.",
+      "id": "pt-058"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.4.2",
+      "difficulty": "hard",
+      "question": "¿Qué requisito es el MÁS adecuado para verificar el riesgo relacionado con la experiencia de usuario en un portal de autoservicio con mucho tráfico?",
+      "options": [
+        "Al menos el 95 % de las solicitudes de saldo de cuenta se completará en un máximo de 2 segundos durante el perfil de carga máxima del mediodía",
+        "El portal debería tener un diseño limpio y etiquetas de navegación claras en todas las páginas",
+        "El equipo de operaciones recibirá un correo diario con un resumen de la actividad nocturna",
+        "El portal tendrá un diseño limpio y etiquetas de navegación claras para que los usuarios encuentren las funciones de cuenta en todas las páginas"
+      ],
+      "correctIndex": 0,
+      "explanation": "El riesgo de rendimiento relacionado con la experiencia de usuario se aborda mejor mediante un objetivo de nivel de servicio medible, vinculado a un período de uso y una transacción concretos.",
+      "id": "pt-059"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.4.3",
+      "difficulty": "easy",
+      "question": "Un servicio sigue funcionando con carga elevada al ralentizar primero las funciones no críticas, en lugar de fallar por completo de una sola vez. Esto es un ejemplo de:",
+      "options": [
+        "Partición de equivalencia funcional",
+        "Degradación controlada",
+        "Análisis estático de código",
+        "Enmascaramiento de datos"
+      ],
+      "correctIndex": 1,
+      "explanation": "La degradación controlada consiste en conservar las funciones críticas y, a menudo, reducir el trabajo menos importante cuando la demanda supera las condiciones operativas ideales.",
+      "id": "pt-060"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.3.8",
+      "difficulty": "hard",
+      "question": "¿Qué afirmación explica mejor por qué no se deben tratar como intercambiables la tasa de llegada y la concurrencia?",
+      "options": [
+        "La tasa de llegada es la cantidad de datos que se conservan en el sistema, mientras que la concurrencia es cuánto dura la prueba antes de recopilar los resultados",
+        "La concurrencia es la cantidad de trabajo activo simultáneo, mientras que la tasa de llegada indica con qué frecuencia llega trabajo nuevo; ambas varían de forma independiente",
+        "Solo importa la concurrencia para el rendimiento, porque la tasa de llegada siempre se puede derivar automáticamente de ella",
+        "Ambas métricas son idénticas siempre que haya tiempo de reflexión, así que se puede especificar cualquiera de las dos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Un sistema puede tener una concurrencia alta con una tasa de llegada moderada, o viceversa, según la duración de las transacciones y su cadencia. Los buenos modelos de carga de trabajo reconocen ambas dimensiones.",
+      "id": "pt-061"
+    },
+    {
+      "chapter": "1. Conceptos básicos de las pruebas de rendimiento",
+      "loRef": "PT-1.1.9",
+      "difficulty": "easy",
+      "question": "¿Qué afirmación describe mejor la función de los objetivos de nivel de servicio en las pruebas de rendimiento?",
+      "options": [
+        "Definen expectativas medibles que las pruebas pueden verificar con condiciones de carga acordadas",
+        "Sustituyen la necesidad de un entorno de prueba y de preparar datos de prueba",
+        "Son útiles para las pruebas exploratorias manuales, pero las pruebas automatizadas no pueden verificarlos",
+        "Son notas informales que se escriben después de corregir los defectos y no se usan para la verificación"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los objetivos de nivel de servicio convierten las expectativas de las partes interesadas en objetivos medibles. Después, las pruebas de rendimiento pueden evaluar si el sistema los cumple.",
+      "id": "pt-062"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.3.2",
+      "difficulty": "medium",
+      "question": "Durante un aumento gradual de carga, el throughput/rendimiento sigue creciendo, pero el tiempo de respuesta aumenta rápidamente después de los 400 usuarios. ¿Qué suele indicar esto?",
+      "options": [
+        "El entorno de prueba ahora coincide exactamente con producción, por lo que los resultados son definitivos",
+        "El sistema se acerca a la saturación y atiende el trabajo adicional con menor eficiencia",
+        "La carga de trabajo dejó de ser funcionalmente válida y se deben descartar las mediciones",
+        "Los agentes de supervisión dejaron de recopilar datos, así que las cifras no son fiables"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cerca de la saturación, un sistema puede procesar más trabajo, pero a costa de demoras desproporcionadas. Los efectos de colas suelen hacerse visibles en ese punto.",
+      "id": "pt-063"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.6",
+      "difficulty": "easy",
+      "question": "¿Cuál es el objetivo principal de las pruebas de volumen?",
+      "options": [
+        "Comprobar el sistema con una gran cantidad de usuarios activos todos al mismo tiempo",
+        "Comprobar el sistema con muchísimos usuarios activos exactamente en el mismo momento, como en una venta relámpago",
+        "Identificar la ortografía exacta de los nombres de columnas de la base de datos en todos los esquemas del sistema",
+        "Evaluar el comportamiento cuando el sistema gestiona grandes cantidades de datos, como tablas, archivos o colas de mensajes extensas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de volumen se centran en el tamaño de los datos, no solo en la concurrencia de usuarios. Los conjuntos de datos grandes pueden afectar el rendimiento de la indexación, las búsquedas, el almacenamiento y el procesamiento.",
+      "id": "pt-064"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.7",
+      "difficulty": "easy",
+      "question": "¿Qué intenta descubrir principalmente una prueba de escalabilidad?",
+      "options": [
+        "Si el equipo eligió el producto de supervisión de menor precio entre los evaluados para el entorno de prueba",
+        "Si el sistema sigue funcionando eficazmente a medida que crecen la carga y, cuando es posible, la capacidad, de acuerdo con un patrón de crecimiento",
+        "Si se puede automatizar una sola transacción mediante una herramienta de pruebas con interfaz gráfica para realizar regresiones",
+        "Si los informes de defectos contienen suficientes adjuntos para reproducir cada fallo observado"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de escalabilidad exploran cómo cambia el rendimiento con distintos incrementos de crecimiento. Ayudan a estimar los límites futuros y el beneficio de agregar recursos.",
+      "id": "pt-065"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.8",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación distingue MEJOR las pruebas de picos de las pruebas de estrés?",
+      "options": [
+        "Las pruebas de picos examinan los cambios bruscos de la carga de trabajo, mientras que las pruebas de estrés examinan el comportamiento más allá de la capacidad, haya aumentos repentinos o no",
+        "Las pruebas de estrés usan métricas, mientras que las pruebas de picos son solo observacionales y no registran mediciones",
+        "Las pruebas de estrés dependen de métricas, mientras que las pruebas de picos son solo observacionales y no registran mediciones durante el cambio repentino",
+        "Las pruebas de picos solo se aplican a aplicaciones móviles, mientras que las pruebas de estrés solo se aplican a aplicaciones web"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de picos hacen hincapié en los cambios repentinos de la demanda y el comportamiento de recuperación. Las pruebas de estrés se centran en el funcionamiento más allá de los límites previstos y en las características del fallo.",
+      "id": "pt-066"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.3.3",
+      "difficulty": "medium",
+      "question": "¿Por qué puede ser útil la longitud de la cola como métrica complementaria durante el análisis de rendimiento?",
+      "options": [
+        "Puede sustituir la medición directa del tiempo de respuesta cuando no se pueda capturar este",
+        "Puede sustituir la medición directa del tiempo de respuesta en los casos en que la herramienta de carga no pueda capturarlo",
+        "Solo es pertinente en las máquinas generadoras de carga, no en el sistema bajo prueba",
+        "Muestra el trabajo que espera ser procesado, lo que suele explicar el aumento de los tiempos de respuesta antes de que caiga el throughput/rendimiento"
+      ],
+      "correctIndex": 3,
+      "explanation": "Cuando la demanda supera la capacidad de servicio, las solicitudes pueden empezar a esperar en colas. El aumento de la longitud de la cola suele correlacionarse con una latencia creciente y la saturación.",
+      "id": "pt-067"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.9",
+      "difficulty": "easy",
+      "question": "¿Qué métrica muestra de forma más directa cuántas solicitudes fallaron durante una prueba?",
+      "options": [
+        "Retención de datos",
+        "Tasa de errores",
+        "Ancho de banda de red",
+        "Cantidad de subprocesos"
+      ],
+      "correctIndex": 1,
+      "explanation": "La tasa de errores informa la proporción o la cantidad de transacciones fallidas. Es esencial porque las fallas rápidas también son fallas.",
+      "id": "pt-068"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.3.4",
+      "difficulty": "hard",
+      "question": "Los tiempos de respuesta empeoran durante una prueba mientras el uso de CPU se mantiene moderado, la espera de disco es alta y aumentan bruscamente las lecturas de la base de datos. ¿Qué cuello de botella es MÁS probable?",
+      "options": [
+        "Un identificador de requisito no válido en el plan de pruebas que afecta la trazabilidad",
+        "Ancho de banda de red insuficiente entre la aplicación y la capa web",
+        "Contención de E/S de disco o almacenamiento que afecta la capa de base de datos",
+        "Una cantidad insuficiente de usuarios virtuales en el generador de carga que limita la carga aplicada"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una espera elevada de almacenamiento junto con una actividad de lectura creciente apunta a contención de E/S. El uso moderado de CPU sugiere que la capacidad de cómputo bruta no es el límite principal.",
+      "id": "pt-069"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.10",
+      "difficulty": "easy",
+      "question": "Si un servicio es sensible a los viajes de ida y vuelta por la red, ¿qué cambio probablemente aumentaría MÁS la demora percibida por los usuarios aunque el uso de CPU del servidor no cambiara?",
+      "options": [
+        "Menos comentarios en los scripts de pruebas de carga que ejecutan las transacciones",
+        "Un monitor más grande conectado a la estación de trabajo del evaluador para ver los paneles",
+        "Notas de versión más breves en el ticket de despliegue de la compilación más reciente",
+        "Una latencia de red mayor entre los clientes y el servicio"
+      ],
+      "correctIndex": 3,
+      "explanation": "Cuando las interacciones incluyen varias solicitudes y respuestas, una latencia de red mayor aumenta directamente el tiempo de espera de extremo a extremo, aunque el tiempo de procesamiento del servidor no cambie.",
+      "id": "pt-070"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.3.5",
+      "difficulty": "medium",
+      "question": "¿Por qué la latencia de cola puede representar un riesgo para el negocio incluso cuando el tiempo de respuesta promedio parece aceptable?",
+      "options": [
+        "Los promedios están prohibidos en los informes de rendimiento según todos los estándares, por lo que solo se pueden mostrar valores de cola",
+        "La latencia de cola solo importa en las estaciones de trabajo de desarrollo y no afecta los entornos de producción compartidos",
+        "Los promedios están prohibidos en los informes de rendimiento según todos los estándares, así que solo se pueden informar valores de cola, como los percentiles",
+        "Los promedios pueden ocultar una minoría significativa de solicitudes muy lentas que perjudican a los usuarios o las operaciones sensibles al tiempo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los promedios suavizan los valores extremos. Un sistema puede tener una media aceptable y, aun así, ofrecer demasiadas experiencias lentas a los usuarios reales.",
+      "id": "pt-071"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.1.3",
+      "difficulty": "medium",
+      "question": "Un sistema cumple los objetivos actuales de tiempo de respuesta, pero funciona con un uso de CPU del 92 % en la carga máxima prevista. ¿Por qué sigue siendo un riesgo de rendimiento?",
+      "options": [
+        "Porque un uso de CPU tan elevado demuestra que la aplicación tiene una fuga de memoria",
+        "Porque la carga de trabajo debe haberse medido mal si se cumplieron los objetivos",
+        "Porque las métricas de CPU no significan nada una vez cumplidos los objetivos de tiempo de respuesta",
+        "Porque queda poca capacidad libre para crecer, afrontar vecinos ruidosos o absorber picos de tráfico"
+      ],
+      "correctIndex": 3,
+      "explanation": "Cumplir los objetivos actuales no garantiza resiliencia. Un uso elevado deja poco margen para la variabilidad, las situaciones de conmutación por error o los aumentos futuros de demanda.",
+      "id": "pt-072"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.1.4",
+      "difficulty": "hard",
+      "question": "Una aplicación experimenta breves picos de demanda cada vez que se envía un correo de marketing. ¿Qué riesgo es MÁS pertinente?",
+      "options": [
+        "Es posible que el repositorio de código fuente supere los límites de tamaño de archivo definidos por la plataforma de alojamiento",
+        "Es posible que el esquema de base de datos use nombres de columna demasiado cortos para seguir siendo descriptivos a medida que el modelo de datos crezca en los próximos años",
+        "Es posible que el sistema no pueda absorber rápidamente los picos repentinos de llegadas, lo que provocaría el crecimiento de las colas y fallos temporales",
+        "Es posible que el esquema de base de datos use nombres de columna demasiado cortos para seguir siendo descriptivos con el tiempo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los picos de demanda pueden saturar el control de admisión, las colas, los conjuntos de conexiones o la capacidad de respuesta del escalado automático. Por eso, la degradación transitoria pero importante para el negocio es un riesgo clave.",
+      "id": "pt-073"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.1.5",
+      "difficulty": "easy",
+      "question": "Después de un despliegue, las respuestas son más lentas durante los primeros minutos de tráfico porque las cachés están vacías. ¿Qué riesgo del producto ilustra esto?",
+      "options": [
+        "Riesgo de rendimiento por arranque en frío o calentamiento de la caché",
+        "Riesgo de trazabilidad de requisitos debido a la falta de vínculos entre pruebas y necesidades",
+        "Riesgo de cumplimiento de accesibilidad para usuarios que dependen de tecnología de asistencia",
+        "Riesgo de ramificación en el control de versiones debido a cambios paralelos en la versión"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los sistemas en frío suelen comportarse de forma distinta a los que ya se calentaron. Las cachés vacías o los servicios recién iniciados pueden reducir temporalmente el rendimiento después de un lanzamiento o reinicio.",
+      "id": "pt-074"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.12",
+      "difficulty": "easy",
+      "question": "¿Qué afirmación describe MEJOR las pruebas de capacidad?",
+      "options": [
+        "Validan que los agentes de supervisión estén instalados en todos los servidores del entorno",
+        "Demuestran que la aplicación no contiene defectos lógicos con la carga admitida",
+        "Demuestran que la aplicación no tiene defectos lógicos con el nivel de carga admitido, ya que el sistema se comprueba de extremo a extremo",
+        "Estiman el nivel de carga o el volumen de datos que el sistema puede admitir y seguir cumpliendo los objetivos definidos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de capacidad se ocupan de la demanda admitida en relación con los objetivos acordados. Suelen servir para fundamentar decisiones de escalado y aprovisionamiento.",
+      "id": "pt-075"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.3.6",
+      "difficulty": "hard",
+      "question": "¿Qué observación sugeriría con MAYOR fuerza el agotamiento de recursos, en lugar de una ralentización puntual?",
+      "options": [
+        "Una respuesta tarda un poco más que las demás durante el inicio del script de carga, antes de la primera transacción medida",
+        "Una respuesta tarda un poco más que las demás durante el inicio del script de carga",
+        "El evaluador cambia el nombre del archivo del informe después de completar y archivar la ejecución",
+        "Los descriptores de archivo o las conexiones disponibles se acercan gradualmente a cero mientras aumentan los fallos bajo carga sostenida"
+      ],
+      "correctIndex": 3,
+      "explanation": "El agotamiento ocurre cuando se consume un recurso finito hasta que queda poco o nada disponible. Esto suele provocar fallos crecientes y una recuperación inestable.",
+      "id": "pt-076"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.3.7",
+      "difficulty": "hard",
+      "question": "Durante una prueba, la aplicación se pausa periódicamente mientras el uso de memoria sigue un patrón de dientes de sierra y la CPU experimenta picos breves. ¿Cuál es una explicación probable?",
+      "options": [
+        "El modelo de carga de trabajo cambia por sí solo de cerrado a abierto",
+        "Actividad de recolección de basura o recuperación de memoria que afecta la latencia",
+        "Un defecto en el título del informe que se genera después de la ejecución",
+        "Un cable de red cuya longitud efectiva cambia cada pocos minutos durante la ejecución"
+      ],
+      "correctIndex": 1,
+      "explanation": "El uso de memoria en dientes de sierra con pausas periódicas suele ser un indicio de recolección de basura u otros ciclos de gestión de memoria. Estos pueden provocar picos de latencia.",
+      "id": "pt-077"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.3.8",
+      "difficulty": "medium",
+      "question": "Un equipo optimiza una consulta lenta de la base de datos y, en la siguiente ejecución, aparece un nuevo punto problemático en el conjunto de subprocesos del servidor de aplicaciones. ¿Qué demuestra esto?",
+      "options": [
+        "Que la optimización original no era válida y debe revertirse antes de la siguiente ejecución",
+        "Que los conjuntos de subprocesos y las bases de datos son independientes, así que el nuevo punto problemático es una coincidencia",
+        "Que los cuellos de botella pueden desplazarse cuando se elimina una limitación anterior",
+        "Que las pruebas de rendimiento deben detenerse después de corregir y verificar el primer defecto"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una vez que se alivia un factor limitante, otro puede convertirse en el predominante. Por este motivo, la optimización del rendimiento suele ser iterativa.",
+      "id": "pt-078"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.13",
+      "difficulty": "medium",
+      "question": "Si el throughput/rendimiento deja de aumentar aunque se agregue más carga y la latencia sigue creciendo, ¿cuál es la interpretación más probable?",
+      "options": [
+        "El sistema alcanzó o está muy cerca de su capacidad efectiva máxima",
+        "Se cumplieron los objetivos de tiempo de respuesta en todos los niveles de carga alcanzados",
+        "La carga de trabajo es demasiado pequeña para generar datos útiles, por lo que se necesitan más usuarios",
+        "La herramienta convirtió la ejecución en una suite de regresión funcional"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una meseta de throughput/rendimiento junto con una latencia creciente es un síntoma común de saturación. La demanda adicional se acumula en colas o se ralentiza en lugar de convertirse en más trabajo útil.",
+      "id": "pt-079"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.14",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación sobre las decisiones de aprobado o no aprobado en las pruebas de rendimiento es la MÁS adecuada?",
+      "options": [
+        "Deben basarse en criterios acordados, como los tiempos de respuesta, el throughput/rendimiento y los límites de errores bajo cargas definidas",
+        "Deben depender de lo uniformes que parezcan los gráficos a quienes revisan los resultados, ya que las tendencias visuales muestran el estado general del sistema",
+        "Deben tomarse solo después del lanzamiento del producto, cuando los usuarios reales hayan informado de problemas",
+        "Deben ignorar la cantidad de errores siempre que la latencia promedio sea baja durante el período medido"
+      ],
+      "correctIndex": 0,
+      "explanation": "La decisión de aprobado o no aprobado debe basarse en criterios de aceptación explícitos, vinculados a la carga de trabajo y al riesgo. Las impresiones visuales por sí solas no bastan.",
+      "id": "pt-080"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.2.15",
+      "difficulty": "hard",
+      "question": "¿Qué métrica es MÁS útil para entender con qué eficiencia se usa la infraestructura en relación con el trabajo entregado?",
+      "options": [
+        "La cantidad de documentos de requisitos que las partes interesadas aprobaron hasta el momento",
+        "La cantidad de comentarios incluidos en los scripts de prueba de carga",
+        "Una combinación de throughput/rendimiento y uso de recursos",
+        "La combinación de colores elegida para el panel de supervisión"
+      ],
+      "correctIndex": 2,
+      "explanation": "El throughput/rendimiento muestra el trabajo útil completado, mientras que el uso muestra los recursos consumidos. En conjunto, ayudan a evaluar la eficiencia y la capacidad disponible.",
+      "id": "pt-081"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.1.6",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes opciones es un riesgo típico del producto relacionado con el rendimiento?",
+      "options": [
+        "Es posible que la retrospectiva del sprint empiece más tarde de lo previsto por conflictos de agenda",
+        "Un evaluador podría faltar a una reunión de planificación debido a un compromiso anterior",
+        "Un proceso por lotes nocturno podría exceder su ventana de procesamiento y retrasar actividades de negocio posteriores",
+        "Es posible que la wiki del proyecto use estilos incoherentes para los encabezados de sus páginas"
+      ],
+      "correctIndex": 2,
+      "explanation": "No completar un proceso por lotes dentro de su ventana es un riesgo clásico del producto porque afecta la utilidad operativa del sistema, aunque la funcionalidad sea correcta.",
+      "id": "pt-082"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.3.9",
+      "difficulty": "medium",
+      "question": "¿Por qué un tiempo de respuesta promedio estable junto con un aumento de errores de tiempo de espera todavía puede indicar un problema de rendimiento grave?",
+      "options": [
+        "Porque los errores de tiempo de espera no están relacionados con el rendimiento del sistema bajo prueba",
+        "Porque los errores de tiempo de espera suelen mejorar la satisfacción de los usuarios al reducir la espera",
+        "Porque los promedios se ajustan automáticamente a los datos que faltan y, por eso, siguen siendo fiables",
+        "Porque es posible que las solicitudes fallidas se excluyan del promedio y oculten el deterioro de la calidad del servicio"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los promedios pueden ser engañosos si las solicitudes lentas o fallidas no quedan bien representadas. Se debe analizar el comportamiento de los errores junto con las métricas de latencia.",
+      "id": "pt-083"
+    },
+    {
+      "chapter": "2. Riesgos, métricas y tipos de pruebas de rendimiento",
+      "loRef": "PT-2.1.7",
+      "difficulty": "hard",
+      "question": "¿Qué riesgo es MÁS pertinente cuando el escalado automático tarda varios minutos en agregar capacidad, pero el tráfico puede dispararse en segundos?",
+      "options": [
+        "Es posible que los gráficos de supervisión ya no puedan mostrar marcas de tiempo para las nuevas instancias",
+        "Puede producirse una sobrecarga a corto plazo antes de que haya instancias adicionales disponibles",
+        "Los conflictos de combinación en el control de código fuente pueden aumentar cuando se despliegan más instancias",
+        "Los requisitos funcionales pueden volverse ambiguos cuando se agregan nuevas instancias al grupo"
+      ],
+      "correctIndex": 1,
+      "explanation": "El escalado automático puede mejorar la capacidad sostenida, pero quizá no reaccione lo suficientemente rápido ante picos pronunciados. Ese retraso en sí mismo constituye un riesgo de rendimiento.",
+      "id": "pt-084"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.3",
+      "difficulty": "easy",
+      "question": "¿Qué actividad debería guiar la selección de escenarios para un primer ciclo de pruebas de rendimiento?",
+      "options": [
+        "Elegir los escenarios alfabéticamente por nombre de función para facilitar el seguimiento de la cobertura",
+        "Seleccionar primero las historias de usuario más recientes, independientemente de su importancia para el negocio",
+        "Priorizar las transacciones según su importancia para el negocio y el riesgo de rendimiento",
+        "Omitir cualquier escenario que use la base de datos porque es difícil aislarlo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los primeros ciclos deben centrarse en las áreas con mayor riesgo para los usuarios, el negocio o la arquitectura. La priorización basada en riesgos aumenta el valor de las pruebas.",
+      "id": "pt-085"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.4",
+      "difficulty": "medium",
+      "question": "Cuando los requisitos de rendimiento están incompletos, ¿qué acción del evaluador es la MÁS adecuada durante la planificación?",
+      "options": [
+        "Colaborar con las partes interesadas para aclarar los objetivos medibles, las cargas de trabajo y las prioridades antes de considerar definida la prueba",
+        "Definir en privado los criterios de aprobación y no comentarlos para ahorrar tiempo durante la planificación",
+        "Redactar en privado los criterios de aprobación y no hablar de ellos con las partes interesadas para ahorrar tiempo y evitar desacuerdos durante la planificación",
+        "Sustituir los objetivos numéricos por la frase «rendimiento aceptable» para mantener la flexibilidad del plan"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de rendimiento dependen de expectativas claras. El evaluador debe ayudar a obtener y precisar criterios medibles, no hacer suposiciones.",
+      "id": "pt-086"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.7",
+      "difficulty": "easy",
+      "question": "¿Por qué conviene aislar el entorno para que las pruebas de rendimiento sean repetibles?",
+      "options": [
+        "Garantiza que el rendimiento en producción sea idéntico a los resultados de la prueba",
+        "Reduce la interferencia de cargas de trabajo no relacionadas que podrían distorsionar los resultados",
+        "Elimina la necesidad de registrar los detalles de configuración del entorno de prueba",
+        "Impide instalar herramientas de supervisión en los servidores bajo prueba"
+      ],
+      "correctIndex": 1,
+      "explanation": "La actividad compartida en el mismo entorno puede introducir ruido y conclusiones falsas. El aislamiento mejora la repetibilidad y la confianza en las comparaciones.",
+      "id": "pt-087"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.4.2",
+      "difficulty": "easy",
+      "question": "¿Cuál es el principal propósito de preparar datos de prueba realistas antes de una ejecución de rendimiento?",
+      "options": [
+        "Aumentar deliberadamente la latencia de red para exigirle más al sistema",
+        "Acortar los scripts de prueba de carga y facilitar su lectura a quienes los revisan",
+        "Acortar los scripts de prueba de carga y facilitar su lectura y mantenimiento durante el proyecto",
+        "Asegurarse de que el sistema procese distribuciones, tamaños y relaciones de datos representativos durante la prueba"
+      ],
+      "correctIndex": 3,
+      "explanation": "La estructura de los datos importa. Los conjuntos de datos vacíos o pequeños pueden eludir comportamientos como los costos de indexación, la paginación o la presión sobre la caché que sí existen en producción.",
+      "id": "pt-088"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.4.3",
+      "difficulty": "easy",
+      "question": "¿Por qué es importante parametrizar los scripts de pruebas de rendimiento?",
+      "options": [
+        "Permite que los usuarios virtuales usen entradas variadas en vez de repetir los mismos datos en cada iteración",
+        "Convierte una prueba de carga en una prueba de seguridad al variar los valores de entrada enviados",
+        "Elimina la necesidad de correlacionar los valores dinámicos que devuelve el servidor en sus respuestas",
+        "Impide recopilar métricas por percentiles porque cada usuario tiene datos únicos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los datos parametrizados ayudan a evitar cachés poco realistas, colisiones y fallos por claves duplicadas. También reflejan mejor que el comportamiento de los usuarios varía.",
+      "id": "pt-089"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.4.4",
+      "difficulty": "hard",
+      "question": "Un script registra una vez un token de inicio de sesión y luego reutiliza ese token fijo para todos los usuarios. ¿Qué tarea de mantenimiento es MÁS probable que se necesite?",
+      "options": [
+        "Reemplazar el script por una prueba unitaria que invoque directamente el código de inicio de sesión",
+        "Desactivar el registro del servidor para que no aparezcan errores de token",
+        "Eliminar todos los tiempos de reflexión del script para que las solicitudes se envíen más rápido",
+        "Correlacionar los valores dinámicos de las respuestas del servidor"
+      ],
+      "correctIndex": 3,
+      "explanation": "Muchas aplicaciones devuelven valores dinámicos, como tokens, identificadores o campos ocultos, que se deben extraer y reutilizar correctamente durante la ejecución.",
+      "id": "pt-090"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.2.3",
+      "difficulty": "medium",
+      "question": "¿Por qué se suele preferir un aumento gradual de carga en lugar de iniciar de una vez a todos los usuarios virtuales en una prueba de carga estándar?",
+      "options": [
+        "Hace innecesaria la supervisión, porque se puede observar a simple vista cada incremento de carga",
+        "Permite ver cómo cambian las métricas a medida que crece la demanda y evita un impacto artificial cuando ese no es el objetivo",
+        "Convierte la carga de trabajo en el mismo perfil que una prueba de resistencia, que usa carga constante durante mucho tiempo",
+        "Garantiza que no haya fallos mientras aumenta la carga, porque el sistema siempre tiene tiempo para adaptarse"
+      ],
+      "correctIndex": 1,
+      "explanation": "El aumento gradual ayuda a identificar umbrales y a distinguir el comportamiento normal de escalado de los efectos de un inicio repentino. Un inicio instantáneo completo es más apropiado cuando se busca probar el efecto de un impacto brusco.",
+      "id": "pt-091"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.2.4",
+      "difficulty": "medium",
+      "question": "¿Qué práctica mejora la utilidad de las métricas recopiladas por varias herramientas durante una misma ejecución de rendimiento?",
+      "options": [
+        "Sincronizar los relojes y capturar una línea de tiempo común para los datos de carga, aplicación e infraestructura",
+        "Comparar capturas de pantalla de los paneles en lugar de usar las marcas de tiempo registradas",
+        "Guardar cada flujo de métricas en una zona horaria distinta para mantener separadas las fuentes",
+        "Desactivar la supervisión del servidor hasta el final de la prueba para reducir la sobrecarga"
+      ],
+      "correctIndex": 0,
+      "explanation": "La alineación temporal precisa es esencial para correlacionar los síntomas con sus posibles causas. Los datos no sincronizados pueden volver poco fiable el análisis de causa raíz.",
+      "id": "pt-092"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.8",
+      "difficulty": "hard",
+      "question": "Antes de una prueba a escala completa, ¿por qué es útil realizar una pequeña ejecución de comprobación?",
+      "options": [
+        "Puede revelar problemas en los scripts, los datos, el entorno o la supervisión antes de desperdiciar tiempo en ejecuciones largas",
+        "Sustituye el análisis formal de los resultados una vez completada la prueba a escala completa",
+        "Solo es útil cuando el sistema bajo prueba es un sitio web estático con pocas páginas",
+        "Demuestra el límite de capacidad final del sistema, por lo que ya no se necesitan más pruebas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una ejecución de comprobación confirma que la configuración integral de la prueba funciona. Puede descubrir errores en scripts, monitores averiados o datos incorrectos antes de una ejecución larga o a gran escala.",
+      "id": "pt-093"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.2.5",
+      "difficulty": "easy",
+      "question": "Durante la ejecución, ¿qué información se debería registrar además de los tiempos de respuesta?",
+      "options": [
+        "Solo los nombres de las personas que observaron el panel durante la ejecución",
+        "Solo la combinación de colores favorita del evaluador de turno y la música que se reprodujo en el laboratorio",
+        "El uso de recursos, los errores, el throughput/rendimiento y los eventos importantes del entorno, como reinicios o cambios de configuración",
+        "Solo la cantidad de pestañas del navegador abiertas en el generador de carga"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un buen análisis requiere más que latencia. Las métricas complementarias y los eventos del entorno aportan el contexto necesario para diagnosticar y comparar.",
+      "id": "pt-094"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.9",
+      "difficulty": "easy",
+      "question": "Al probar un trabajo de conciliación nocturno, ¿qué detalle de planificación es especialmente importante?",
+      "options": [
+        "La ventana operativa de procesamiento y las dependencias con sistemas anteriores o posteriores",
+        "La cantidad de pausas para tomar café programadas para el día de la prueba",
+        "La tipografía de las diapositivas que resumen los resultados de la prueba",
+        "Si todos los evaluadores prefieren el mismo diseño de teclado durante la prueba"
+      ],
+      "correctIndex": 0,
+      "explanation": "El rendimiento de los procesos por lotes suele tener sentido en relación con una ventana de negocio, por ejemplo, completar el trabajo durante la noche antes de que comience el procesamiento posterior.",
+      "id": "pt-095"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.5.1",
+      "difficulty": "medium",
+      "question": "¿Qué enfoque respalda mejor las pruebas de rendimiento en una canalización CI/CD?",
+      "options": [
+        "Ejecutar la prueba de resistencia más larga posible en cada confirmación, sin importar el costo",
+        "Automatizar un subconjunto pequeño y repetible de comprobaciones que detecte rápidamente regresiones claras en compilaciones pertinentes",
+        "Evitar las referencias, ya que las canalizaciones solo deberían depender de cifras absolutas fijas",
+        "No recopilar datos de tendencias históricas para juzgar cada ejecución únicamente por sí misma"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las comprobaciones de rendimiento en CI/CD deben ser lo bastante rápidas y específicas para ejecutarse con regularidad y detectar regresiones evidentes. Las investigaciones más largas pueden programarse por separado.",
+      "id": "pt-096"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.5.2",
+      "difficulty": "medium",
+      "question": "¿Qué actividad práctica permite adelantar las pruebas de rendimiento de una aplicación orientada a servicios?",
+      "options": [
+        "Eliminar los requisitos no funcionales durante el refinamiento del backlog para mantener pequeñas las historias",
+        "Ejecutar comprobaciones ligeras de rendimiento en API o componentes críticos antes de las pruebas de integración completas",
+        "Probar solo el sitio web de documentación del proyecto, por ser el componente más sencillo para generar carga",
+        "Esperar a que el tráfico de producción revele los cuellos de botella y corregirlos en la siguiente versión"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las comprobaciones de componentes o API pueden revelar pronto rutas de código ineficientes y diseños deficientes. Complementan las pruebas integrales posteriores.",
+      "id": "pt-097"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.3.2",
+      "difficulty": "hard",
+      "question": "Una ejecución de prueba falla porque muchas solicitudes devuelven errores de acceso no autorizado. ¿Qué debería confirmar el evaluador antes de atribuirlo a la capacidad del sistema?",
+      "options": [
+        "Si el título del informe final se redactó y aprobó antes de analizar siquiera los resultados",
+        "Si los scripts, las credenciales y el manejo de tokens son correctos, para asegurarse de que la propia prueba no cause los fallos",
+        "Si la CPU del generador de carga se mantiene exactamente en el 50 % durante toda la ejecución",
+        "Si el título del informe final ya se redactó y aprobó"
+      ],
+      "correctIndex": 1,
+      "explanation": "No todos los fallos bajo carga son problemas de capacidad. Primero se debe descartar que se deban a la lógica de los scripts, al manejo de la autenticación o a la validez de los datos de prueba.",
+      "id": "pt-098"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.10",
+      "difficulty": "hard",
+      "question": "¿Cómo pueden ayudar los datos de telemetría de producción a planificar las pruebas de rendimiento sin sustituirlas por completo?",
+      "options": [
+        "Eliminan la necesidad de crear cualquier entorno de preproducción, ya que se puede observar y analizar directamente el tráfico real durante la operación",
+        "Eliminan la necesidad de crear un entorno de preproducción, porque el tráfico real se observa directamente",
+        "Pueden informar los patrones realistas de carga de trabajo, los períodos máximos y las combinaciones de transacciones para pruebas controladas posteriores",
+        "Garantizan que la carga futura coincida con la carga observada en el pasado, por lo que no se necesitan pronósticos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los datos operativos son valiosos para diseñar pruebas realistas, pero también se necesitan experimentos controlados para aislar variables y explorar escenarios de riesgo.",
+      "id": "pt-099"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.1.11",
+      "difficulty": "medium",
+      "question": "¿Por qué el plan de pruebas de rendimiento debería registrar detalles clave del entorno, como el tamaño de las instancias, la configuración y la instantánea de datos?",
+      "options": [
+        "Para poder reproducir y comparar los resultados e interpretarlos en el contexto adecuado",
+        "Porque los detalles del entorno solo influyen en la corrección funcional",
+        "Para que los evaluadores eviten explicar los resultados en el informe",
+        "Porque en la práctica la configuración no cambia entre ciclos de prueba"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sin el contexto de cada ejecución, las comparaciones posteriores son débiles o engañosas. Pequeñas diferencias de configuración pueden cambiar sustancialmente los resultados.",
+      "id": "pt-100"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.2.6",
+      "difficulty": "hard",
+      "question": "Durante la ejecución, los tiempos de respuesta mejoran repentinamente a mitad de la prueba porque la caché termina de calentarse. ¿Qué debería hacer el evaluador?",
+      "options": [
+        "Dejar de recopilar métricas de infraestructura, ya que ahora se conoce la causa de la mejora",
+        "Eliminar las primeras mediciones del conjunto de resultados y continuar el análisis como si nunca se hubieran registrado",
+        "Registrar el comportamiento y analizar el calentamiento por separado para no mezclar las conclusiones de estado estable con los efectos de arranque",
+        "Suponer que el sistema de producción no tendrá arranques en frío después de un despliegue o reinicio"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los efectos de calentamiento son observaciones importantes. Separar las fases transitorias y las de estado estable permite interpretar e informar los resultados con mayor precisión.",
+      "id": "pt-101"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.3.3",
+      "difficulty": "hard",
+      "question": "Al investigar una ralentización recién observada, ¿qué secuencia suele ser más eficaz?",
+      "options": [
+        "Confirmar el síntoma, correlacionarlo con la carga de trabajo y los datos de supervisión, formular hipótesis y luego volver a probar los cambios específicos",
+        "Elegir al azar un parámetro del servidor, cambiarlo y esperar que la ralentización desaparezca sin tomar más mediciones",
+        "Reescribir primero el componente afectado de la aplicación y recopilar evidencia cuando el código esté listo",
+        "Elegir al azar un parámetro del servidor, cambiarlo y esperar que la ralentización desaparezca por sí sola"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un diagnóstico estructurado reduce el esfuerzo desperdiciado. La correlación basada en evidencia y las nuevas pruebas dirigidas son fundamentales para el análisis de causa raíz.",
+      "id": "pt-102"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.4.5",
+      "difficulty": "medium",
+      "question": "¿Por qué podrían necesitarse cuentas de prueba únicas para algunos escenarios de rendimiento?",
+      "options": [
+        "Para que el informe JSON generado sea más grande y detallado para quienes lo revisan",
+        "Para que el informe JSON generado sea más grande y detallado y muestre a las partes interesadas todas las cuentas usadas",
+        "Para evitar contención o bloqueos poco realistas cuando muchos usuarios virtuales actualizan el mismo registro o la misma sesión",
+        "Para desactivar los cálculos por percentiles durante la ejecución, ya que cada cuenta tiene sus propios resultados"
+      ],
+      "correctIndex": 2,
+      "explanation": "Usar la misma cuenta para todos los usuarios puede crear puntos de congestión artificiales o un comportamiento no válido. Varias cuentas suelen generar patrones de acceso más realistas.",
+      "id": "pt-103"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.5.3",
+      "difficulty": "hard",
+      "question": "¿Por qué es arriesgado incluir una prueba de resistencia intensa de varias horas en cada solicitud de incorporación de cambios a CI?",
+      "options": [
+        "Puede ser demasiado costosa y retrasar la retroalimentación, lo que vuelve impráctica la canalización para el trabajo cotidiano de desarrollo",
+        "Garantizaría una mejor compatibilidad con los navegadores en todas las versiones admitidas",
+        "Mejoraría la cobertura funcional que ofrecen actualmente las pruebas unitarias",
+        "Mejoraría la cobertura funcional de las pruebas unitarias, ya que la ejecución prolongada recorre más rutas de código"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las comprobaciones de CI necesitan una relación sostenible entre la señal y el costo. Las suites de rendimiento muy largas suelen ser más adecuadas para una programación periódica o una ejecución selectiva.",
+      "id": "pt-104"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.3.4",
+      "difficulty": "hard",
+      "question": "Si un problema de rendimiento aparece en una sola ejecución aislada y no se puede reproducir, ¿cuál es el MEJOR siguiente paso?",
+      "options": [
+        "Eliminar los archivos de resultados para que el resultado extraño no confunda al equipo",
+        "Dar por probado el problema e iniciar de inmediato un rediseño de la arquitectura, ya que sin duda se repetirá en producción",
+        "Descartar todas las referencias históricas a partir de ese momento porque están obsoletas",
+        "Revisar las condiciones de la ejecución y la supervisión para detectar anomalías, y luego repetir la prueba o diseñar un experimento dirigido antes de sacar conclusiones"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las anomalías aisladas pueden deberse al ruido del entorno o a fallos transitorios. La reproducibilidad y el seguimiento dirigido aumentan la confianza en las conclusiones.",
+      "id": "pt-105"
+    },
+    {
+      "chapter": "3. Tareas de las pruebas de rendimiento",
+      "loRef": "PT-3.4.6",
+      "difficulty": "medium",
+      "question": "¿Cuál es el principal beneficio de renovar los datos de prueba entre ejecuciones repetidas de una prueba de referencia cuando los registros se consumen o modifican?",
+      "options": [
+        "Obliga a que los tiempos de respuesta promedio y por percentiles tengan el mismo valor",
+        "Elimina la necesidad de llevar un registro de las versiones de software entre ejecuciones",
+        "Garantiza que el generador de carga use menos CPU en las ejecuciones siguientes",
+        "Mantiene comparables las condiciones de cada ejecución, para que el estado residual del sistema no sesgue los resultados posteriores"
+      ],
+      "correctIndex": 3,
+      "explanation": "Si las ejecuciones anteriores modifican los datos subyacentes, las siguientes quizá ya no representen las mismas condiciones. Renovar los datos ayuda a mantener la imparcialidad de las comparaciones.",
+      "id": "pt-106"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.2.2",
+      "difficulty": "easy",
+      "question": "Al elegir una herramienta de carga, ¿qué criterio es MÁS fundamental?",
+      "options": [
+        "Si sus gráficos predeterminados usan tres o cuatro colores",
+        "Si se publicó el mismo año que la aplicación bajo prueba",
+        "Si puede ejecutar los protocolos o las interfaces que realmente usa el sistema bajo prueba",
+        "Si su instalador es el archivo más pequeño entre las herramientas candidatas"
+      ],
+      "correctIndex": 2,
+      "explanation": "La compatibilidad con los protocolos y las interfaces es un requisito básico. Una herramienta no puede generar una carga significativa si no interactúa correctamente con el sistema de destino.",
+      "id": "pt-107"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.3",
+      "difficulty": "medium",
+      "question": "¿En qué situación resulta especialmente valiosa una herramienta de pruebas a nivel de navegador o interfaz gráfica, a pesar de su mayor costo de recursos por usuario?",
+      "options": [
+        "Cuando el objetivo es editar los requisitos de la aplicación antes de diseñar la prueba",
+        "Cuando el objetivo es generar millones de solicitudes de protocolo sencillas con el menor costo posible por usuario virtual simulado",
+        "Cuando se necesita medir la representación en el cliente y el comportamiento del frontend tal como los muestra un navegador real",
+        "Cuando el objetivo es simular millones de solicitudes de protocolo sencillas con el menor costo posible"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las herramientas a nivel de interfaz gráfica pueden capturar la representación del navegador, la ejecución de scripts del cliente y los tiempos del frontend, aspectos que las herramientas de protocolo no observan directamente.",
+      "id": "pt-108"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.4",
+      "difficulty": "easy",
+      "question": "¿Por qué a veces se necesitan generadores de carga distribuidos?",
+      "options": [
+        "Es posible que un solo inyector no tenga capacidad suficiente de red, CPU o memoria para producir por sí solo la carga requerida",
+        "En las pruebas de rendimiento no se permite usar un solo generador, por lo que varios son obligatorios",
+        "Eliminan la necesidad de analizar los resultados después de la ejecución, ya que cada generador informa sus propios hallazgos",
+        "Eliminan la necesidad de analizar los resultados después de la ejecución, porque cada generador informa sus hallazgos al equipo"
+      ],
+      "correctIndex": 0,
+      "explanation": "A gran escala, la propia infraestructura de la herramienta de carga puede convertirse en un cuello de botella. Distribuir los inyectores permite generar tráfico mayor y más realista.",
+      "id": "pt-109"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.5",
+      "difficulty": "medium",
+      "question": "¿Qué capacidad de una herramienta facilita más directamente la variación realista de los valores de entrada de la prueba?",
+      "options": [
+        "Parametrización desde archivos, almacenes de datos o valores generados",
+        "Reglas de protección de ramas en el sistema de control de código fuente",
+        "Personalización estática del panel con el logotipo y los colores de la empresa",
+        "Corrección automática de errores tipográficos en los títulos de defectos"
+      ],
+      "correctIndex": 0,
+      "explanation": "La parametrización permite que los scripts usen credenciales, términos de búsqueda, identificadores o cargas útiles variados. Esto mejora el realismo y evita repetir solicitudes idénticas.",
+      "id": "pt-110"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.6",
+      "difficulty": "hard",
+      "question": "¿Qué capacidad de scripting es esencial para las aplicaciones que devuelven identificadores de sesión dinámicos o tokens contra falsificación de solicitudes?",
+      "options": [
+        "Comprimir automáticamente los archivos de registro después de cada ejecución",
+        "Imprimir resúmenes en papel de los resultados",
+        "Usar temas de gráficos con colores para los informes de gestión",
+        "Extraer y reutilizar valores dinámicos de respuestas anteriores"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los valores dinámicos se deben capturar y sustituir correctamente; de lo contrario, las solicitudes posteriores no serán válidas. Las herramientas suelen llamar a esto extracción, correlación o vinculación.",
+      "id": "pt-111"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.7",
+      "difficulty": "hard",
+      "question": "¿Por qué se deben evaluar los agentes de supervisión o el rastreo para conocer su sobrecarga antes de una campaña de rendimiento a gran escala?",
+      "options": [
+        "La supervisión deja de ser pertinente una vez que empieza la prueba, así que la sobrecarga no es motivo de preocupación",
+        "La instrumentación puede alterar los tiempos o el uso de recursos lo suficiente como para afectar los resultados medidos",
+        "Cualquier agente de supervisión invalida automáticamente las métricas por percentiles de la ejecución",
+        "La sobrecarga solo importa durante las pruebas unitarias, no cuando el sistema está bajo carga"
+      ],
+      "correctIndex": 1,
+      "explanation": "La instrumentación es útil, pero las herramientas intrusivas pueden alterar el sistema. Los equipos deben entender y gestionar esa compensación.",
+      "id": "pt-112"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.8",
+      "difficulty": "medium",
+      "question": "¿Cuál es el principal valor de una herramienta de supervisión del rendimiento de aplicaciones durante una prueba?",
+      "options": [
+        "Puede escribir historias de usuario automáticamente a partir de las transacciones que ha rastreado en producción",
+        "Puede rastrear transacciones entre componentes de la aplicación y mostrar puntos problemáticos, como métodos lentos o llamadas externas",
+        "Sustituye la necesidad de modelar la carga de trabajo al aprender por sí sola los patrones de uso típicos",
+        "Sustituye la necesidad de modelar la carga de trabajo al aprender por sí sola los patrones de uso a partir de las transacciones rastreadas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las herramientas APM proporcionan visibilidad a nivel de código y transacción que complementa las métricas del sistema. Esto suele agilizar el diagnóstico de cuellos de botella.",
+      "id": "pt-113"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.9",
+      "difficulty": "hard",
+      "question": "¿Por qué es importante sincronizar el tiempo entre los generadores de carga, los monitores y las herramientas APM?",
+      "options": [
+        "Para que los percentiles se conviertan automáticamente en promedios al combinarse",
+        "Para poder correlacionar con precisión eventos de distintas fuentes en una línea de tiempo común",
+        "Para que los scripts de prueba necesiten menos parámetros al ejecutarse en varias máquinas",
+        "Para que cada herramienta pueda ocultar su propio tiempo de inicio del informe final"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los relojes no sincronizados pueden confundir o distorsionar el análisis causal. Las marcas de tiempo precisas son fundamentales para alinear los síntomas con los eventos de infraestructura.",
+      "id": "pt-114"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.2.5",
+      "difficulty": "hard",
+      "question": "Un sistema se comunica mediante HTTP para las solicitudes de los usuarios y mediante una cola de mensajes para el procesamiento asíncrono. ¿Qué elección de herramientas es la MÁS sensata?",
+      "options": [
+        "Usar un grabador de interfaz gráfica e ignorar la mensajería del backend, ya que los usuarios nunca ven la cola",
+        "Evitar la supervisión porque intervienen dos tecnologías y los resultados serían contradictorios",
+        "Usar herramientas que cubran ambos tipos de interacción o combinar herramientas complementarias cuando sea necesario",
+        "Usar solo una presentación, porque el procesamiento asíncrono mediante una cola no se puede probar en la práctica"
+      ],
+      "correctIndex": 2,
+      "explanation": "Muchos sistemas modernos usan varios protocolos. Para realizar pruebas significativas, quizá haya que cubrir tanto las partes síncronas como las asíncronas del flujo de trabajo.",
+      "id": "pt-115"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.2.6",
+      "difficulty": "medium",
+      "question": "¿Qué limitación debería comprobar un equipo antes de suponer que una herramienta de carga puede simular un pico de 50.000 usuarios?",
+      "options": [
+        "Si la herramienta puede exportar sus informes a PDF",
+        "Si las licencias, la capacidad de los inyectores y el diseño de los scripts permiten alcanzar esa escala en la práctica",
+        "Si el responsable de pruebas prefiere gráficos circulares o de barras en los informes",
+        "Si el gestor de incidencias ofrece un modo oscuro para el equipo del proyecto"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las afirmaciones del proveedor no bastan. La escala real depende de las licencias, la eficiencia del protocolo, la infraestructura y la complejidad de los scripts.",
+      "id": "pt-116"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.11",
+      "difficulty": "medium",
+      "question": "¿Por qué las herramientas a nivel de protocolo suelen alcanzar una mayor densidad de usuarios virtuales que las herramientas de navegador completo?",
+      "options": [
+        "Comprimen las transacciones de negocio en menos requisitos, lo que reduce la cantidad de datos necesaria",
+        "Se ejecutan únicamente en los servidores de producción, donde hay más recursos disponibles por usuario",
+        "No necesitan datos de prueba porque las solicitudes se generan automáticamente",
+        "Evitan representar interfaces completas y suelen enviar solicitudes más ligeras directamente en la capa de protocolo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Omitir la representación del navegador y la ejecución de scripts del cliente reduce la sobrecarga por usuario. Esto hace más práctica la generación de carga a gran escala.",
+      "id": "pt-117"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.2.7",
+      "difficulty": "medium",
+      "question": "¿Cuál es una ventaja clave de los generadores de carga alojados en la nube para una aplicación de uso global?",
+      "options": [
+        "Evitan que se produzcan cuellos de botella en la aplicación, porque se agrega capacidad a demanda",
+        "Eliminan la necesidad de estimar los perfiles de carga antes de diseñar la prueba",
+        "Garantizan que no haya variabilidad de red entre los usuarios y los servidores",
+        "Pueden generar tráfico desde varias regiones geográficas con más facilidad que un único laboratorio local"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los generadores en la nube pueden ayudar a modelar la distribución geográfica y reducir las limitaciones de infraestructura local. No eliminan la necesidad de diseñar bien las pruebas.",
+      "id": "pt-118"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.2.8",
+      "difficulty": "hard",
+      "question": "¿Qué capacidad de una herramienta es MÁS útil cuando no se deben exponer datos sensibles similares a los de producción en entornos de prueba compartidos?",
+      "options": [
+        "Compatibilidad con la generación segura de datos de prueba, el enmascaramiento o las fuentes seguras de parámetros",
+        "Una plantilla de presentación integrada para las demostraciones del sprint",
+        "Transiciones animadas entre las páginas del panel de resultados",
+        "Combinación automática de las ramas de git usadas para los scripts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de rendimiento siguen requiriendo prácticas adecuadas de manejo de datos. Las herramientas que permiten usar fuentes seguras o enmascarar datos reducen el riesgo operativo.",
+      "id": "pt-119"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.12",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación describe MEJOR la relación entre las herramientas de supervisión del servidor y las herramientas de medición del cliente?",
+      "options": [
+        "La supervisión del servidor solo se usa después de completar el lanzamiento",
+        "Ofrecen perspectivas complementarias y, a menudo, juntas aportan más que cada una por separado",
+        "La medición en el cliente es útil para las pruebas de seguridad, pero no para el rendimiento",
+        "Informan métricas idénticas, por lo que una de las dos es innecesaria"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las mediciones del cliente revelan lo que experimentan los usuarios, mientras que las métricas del servidor ayudan a explicar por qué ocurre. Combinar ambas mejora el diagnóstico.",
+      "id": "pt-120"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.13",
+      "difficulty": "hard",
+      "question": "Un equipo quiere probar de extremo a extremo un recorrido de pago que incluye la representación del navegador, llamadas a API y una redirección a un servicio de pago de terceros. ¿Qué estrategia de herramientas es la MÁS adecuada?",
+      "options": [
+        "Medir solo la CPU de la base de datos, porque los recorridos completos de usuario son demasiado complejos para probarlos",
+        "Evitar por completo los pasos de terceros, porque no forman parte de la experiencia de usuario",
+        "Medir solo la CPU de la base de datos, porque en la práctica no se pueden probar recorridos completos de usuario entre varios sistemas",
+        "Elegir herramientas que modelen de forma realista el recorrido crítico, quizá combinando enfoques de navegador y de nivel de protocolo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los recorridos complejos de usuario a veces requieren una combinación de herramientas. La elección debe reflejar qué aspectos de la experiencia y la arquitectura se necesitan medir.",
+      "id": "pt-121"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.2.9",
+      "difficulty": "medium",
+      "question": "¿Por qué debería tenerse en cuenta el esfuerzo de mantenimiento al seleccionar una solución de pruebas de rendimiento?",
+      "options": [
+        "Porque el esfuerzo de mantenimiento solo afecta al equipo de diseño gráfico",
+        "Porque las herramientas estables no necesitan adaptarse cuando cambia la aplicación",
+        "Porque una herramienta difícil de mantener suele generar una carga más realista",
+        "Porque los scripts frágiles o difíciles de actualizar pueden encarecer y ralentizar las pruebas de regresión periódicas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de rendimiento suelen tener que repetirse en distintas versiones. El costo de mantenimiento influye mucho en su utilidad y adopción a largo plazo.",
+      "id": "pt-122"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.14",
+      "difficulty": "easy",
+      "question": "¿Cuál es un uso sensato de un script de usuario grabado en una herramienta de rendimiento?",
+      "options": [
+        "Confiar en él sin cambios para todas las pruebas futuras, independientemente de las actualizaciones de la aplicación entre versiones",
+        "Usarlo como punto de partida y luego mejorarlo con parametrización, correlación, cadencia y validaciones",
+        "Suponer que el script grabado representa la carga de trabajo de producción sin más modificaciones",
+        "Confiar en él sin cambios para todas las pruebas futuras, independientemente de las actualizaciones de la aplicación"
+      ],
+      "correctIndex": 1,
+      "explanation": "La grabación acelera la creación de scripts, pero rara vez las grabaciones sin modificar producen una carga robusta, escalable o realista.",
+      "id": "pt-123"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.2.10",
+      "difficulty": "hard",
+      "question": "¿Qué factor es MÁS importante al elegir entre herramientas de rendimiento de código abierto y comerciales?",
+      "options": [
+        "La adecuación a las necesidades técnicas, de soporte y escalabilidad del proyecto, no solo la categoría de licencia",
+        "Si otro equipo ya la usó una vez con otra aplicación de la empresa",
+        "Si el sitio web de la herramienta usa una tipografía moderna y un diseño atractivo que demuestren la atención del proveedor a su producto",
+        "Si el sitio web del producto usa una tipografía moderna y un diseño atractivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "El modelo de licencia es solo una consideración. Los equipos deben evaluar la compatibilidad con protocolos, la escala, los conocimientos, el mantenimiento, los informes y los requisitos de soporte.",
+      "id": "pt-124"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.15",
+      "difficulty": "easy",
+      "question": "¿Qué función resulta MÁS útil para controlar la cadencia de los usuarios y los patrones de llegada en una prueba de carga?",
+      "options": [
+        "Una galería integrada de capturas de pantalla como evidencia",
+        "El cambio automático de nombre de los archivos de resultados después de la ejecución",
+        "Temporizadores, controles de cadencia y funciones de planificación de cargas de trabajo",
+        "La revisión ortográfica en el editor de informes"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las funciones de cadencia y planificación ayudan a implementar tiempos de reflexión realistas, patrones de aumento de carga y perfiles de llegada definidos en el modelo de carga de trabajo.",
+      "id": "pt-125"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.16",
+      "difficulty": "hard",
+      "question": "¿Por qué podría un equipo ampliar una herramienta de rendimiento con complementos o scripts personalizados?",
+      "options": [
+        "Para admitir protocolos, métricas o informes específicos del proyecto que la herramienta no ofrece de fábrica",
+        "Para no tener que actualizar nunca la herramienta a una versión más reciente, ya que los scripts personalizados sustituyen todas sus funciones centrales",
+        "Para convertir la actividad en pruebas exploratorias manuales realizadas por el equipo",
+        "Para eliminar la necesidad de criterios de aceptación en el plan de pruebas, ya que los scripts son flexibles"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las extensiones personalizadas pueden cubrir carencias en el manejo de protocolos, el procesamiento de resultados o la integración con el entorno. Aun así, deben mantenerse cuidadosamente.",
+      "id": "pt-126"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.2.12",
+      "difficulty": "easy",
+      "question": "¿Qué tipo de herramienta ayudaría MEJOR a identificar si el procesador, la memoria o la E/S de un servidor de base de datos se están saturando durante una prueba?",
+      "options": [
+        "Un tablero de refinamiento del backlog del equipo de desarrollo",
+        "Una herramienta de wireframes para esbozar pantallas",
+        "Un administrador de contraseñas para las cuentas de prueba",
+        "Una herramienta de supervisión de infraestructura o del sistema operativo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las herramientas de supervisión de infraestructura observan el comportamiento de los recursos del host. Son complementos esenciales de las herramientas de generación de carga durante el diagnóstico.",
+      "id": "pt-127"
+    },
+    {
+      "chapter": "4. Herramientas para pruebas de rendimiento",
+      "loRef": "PT-4.1.17",
+      "difficulty": "hard",
+      "question": "¿Qué riesgo surge si la propia herramienta de generación de carga queda limitada por la CPU durante una ejecución?",
+      "options": [
+        "Los resultados se vuelven equivalentes a los de una prueba de resistencia",
+        "Es posible que la prueba aplique menos carga de la prevista al sistema bajo prueba y produzca conclusiones engañosamente optimistas",
+        "La aplicación bajo prueba se vuelve automáticamente más rápida porque se retrasan las solicitudes",
+        "La herramienta de carga corrige automáticamente todas las marcas de tiempo de supervisión"
+      ],
+      "correctIndex": 1,
+      "explanation": "Si los inyectores no pueden generar la carga prevista, el sistema bajo prueba no recibe realmente el esfuerzo planificado. También se deben supervisar los cuellos de botella de la herramienta.",
+      "id": "pt-128"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.3",
+      "difficulty": "easy",
+      "question": "Si el tiempo de respuesta promedio del proceso de pago es de 1,5 segundos, pero el percentil 95 es de 6 segundos, ¿cuál es la MEJOR interpretación?",
+      "options": [
+        "El promedio no es válido porque se informan percentiles para las mismas transacciones",
+        "Todos los usuarios tuvieron un tiempo de respuesta cercano a 1,5 segundos durante la prueba",
+        "La prueba falló independientemente de los objetivos porque el percentil supera al promedio",
+        "Muchos pagos son rápidos, pero existe una cola perceptible de respuestas más lentas que no se debe ignorar"
+      ],
+      "correctIndex": 3,
+      "explanation": "El promedio por sí solo oculta la variabilidad. Un percentil 95 elevado indica que una minoría significativa de usuarios podría tener una mala experiencia.",
+      "id": "pt-129"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.5",
+      "difficulty": "hard",
+      "question": "Varias ejecuciones repetidas del mismo escenario producen resultados muy similares. ¿Por qué es importante?",
+      "options": [
+        "Aumenta la confianza en que las mediciones son estables y sirven de base para sacar conclusiones",
+        "Demuestra que el modelo de carga de trabajo era innecesario porque las ejecuciones coinciden",
+        "Demuestra que la aplicación alcanzó escalabilidad ilimitada con los niveles de carga probados",
+        "Significa que se puede eliminar la supervisión en pruebas futuras porque los resultados son estables"
+      ],
+      "correctIndex": 0,
+      "explanation": "La repetibilidad refuerza la confianza en el comportamiento observado. Una variación grande e inexplicable reduciría la certeza de las conclusiones.",
+      "id": "pt-130"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.6",
+      "difficulty": "medium",
+      "question": "¿Por qué se suelen excluir los períodos de calentamiento y enfriamiento del análisis de estado estable?",
+      "options": [
+        "Excluirlos hace que el sistema cumpla siempre sus objetivos, que es la razón principal por la que se introdujo esta práctica",
+        "No se pueden calcular percentiles si se incluyen esos períodos en el conjunto de datos",
+        "Excluirlos hace que el sistema cumpla siempre sus objetivos, que es la razón de esta práctica",
+        "Pueden reflejar efectos de arranque o reducción de carga, en lugar del período de funcionamiento representativo que se está evaluando"
+      ],
+      "correctIndex": 3,
+      "explanation": "El comportamiento durante el inicio y el apagado puede ser interesante, pero normalmente se debe analizar por separado de los niveles de servicio en estado estable.",
+      "id": "pt-131"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.7",
+      "difficulty": "hard",
+      "question": "Un informe muestra que la latencia aumenta al mismo tiempo que crecen las tasas de error y se agota un conjunto de conexiones. ¿Cuál es la MEJOR conclusión analítica?",
+      "options": [
+        "La evidencia respalda una relación probable entre la saturación de las conexiones y la degradación observada del servicio",
+        "El aumento de la latencia muestra que hay que revisar la paleta de colores de la interfaz de usuario",
+        "El aumento de la latencia muestra que hay que revisar la paleta de colores porque los usuarios notan más las páginas lentas que los errores",
+        "Se debe ignorar la ejecución porque varios síntomas simultáneos vuelven poco fiables los datos"
+      ],
+      "correctIndex": 0,
+      "explanation": "La correlación temporal entre los síntomas del servicio y el agotamiento de recursos constituye una sólida cadena de evidencia. Respalda una hipótesis concreta de causa raíz.",
+      "id": "pt-132"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.2",
+      "difficulty": "easy",
+      "question": "¿En qué debería diferir normalmente un resumen para las partes interesadas sénior del negocio de un informe técnico detallado?",
+      "options": [
+        "Debería incluir cada línea de registro sin procesar de todos los servidores implicados para que las personas sénior puedan verificar todos los hallazgos",
+        "Debería incluir todos los registros sin procesar de cada servidor para que no se oculte nada",
+        "Debería destacar el impacto en el negocio, la preparación, los riesgos y las decisiones, con menos detalles de métricas de bajo nivel",
+        "Debería omitir las referencias a la carga de trabajo y los objetivos para mantener breve el mensaje"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las distintas audiencias necesitan distintos niveles de detalle. La dirección suele necesitar conocer las implicaciones y las decisiones, mientras que los equipos de ingeniería requieren evidencia de diagnóstico.",
+      "id": "pt-133"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.3",
+      "difficulty": "hard",
+      "question": "¿Cuál es el propósito principal de analizar tendencias entre muchas ejecuciones de pruebas de rendimiento?",
+      "options": [
+        "Sustituir los criterios de aceptación por comparaciones con ejecuciones anteriores",
+        "Identificar mejoras o deterioros graduales con el tiempo en lugar de depender de un único resultado",
+        "Garantizar que todos los resultados futuros sean mejores que los anteriores",
+        "Demostrar que la herramienta de supervisión no omite ninguna muestra durante las ejecuciones"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las tendencias muestran la dirección y la velocidad del cambio. Esto permite detectar regresiones, riesgos de crecimiento y el impacto de las mejoras a lo largo del tiempo.",
+      "id": "pt-134"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.4",
+      "difficulty": "medium",
+      "question": "¿Qué recomendación es MÁS adecuada cuando un sistema cumple la carga objetivo actual, pero su rendimiento se degrada cada vez más rápido que de forma lineal con cada incremento de carga?",
+      "options": [
+        "Dejar de supervisar el sistema porque hoy se alcanzó la carga objetivo",
+        "Sustituir los informes por percentiles por promedios para simplificar el mensaje",
+        "Investigar los límites de escalabilidad y estimar cuándo el crecimiento futuro podría incumplir los objetivos",
+        "Informar que el sistema está preparado para el futuro y que no se necesita más análisis"
+      ],
+      "correctIndex": 2,
+      "explanation": "El deterioro no lineal sugiere que podría acercarse un umbral o un límite arquitectónico. Cumplir la carga objetivo actual no elimina el riesgo futuro de capacidad.",
+      "id": "pt-135"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.8",
+      "difficulty": "medium",
+      "question": "Una sola ejecución produjo resultados mucho peores que todas las demás ejecuciones comparables. ¿Qué se debería hacer antes de declarar una regresión confirmada?",
+      "options": [
+        "Considerar que la peor ejecución es la más representativa porque revela el comportamiento real",
+        "Eliminar del panel las ejecuciones anteriores con buenos resultados para aclarar la tendencia y usar la peor como nueva referencia",
+        "Promediarla con los resultados de escenarios no relacionados para suavizar la diferencia",
+        "Comprobar si hubo anomalías en el entorno o diferencias de configuración y, si hace falta, repetir la prueba para confirmar el comportamiento"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los valores atípicos pueden ser significativos o deberse al ruido. Verificarlos aumenta la confianza antes de que el equipo actúe sobre los resultados.",
+      "id": "pt-136"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.6",
+      "difficulty": "hard",
+      "question": "Si se cumplen los objetivos de tiempo de respuesta, pero los errores de tiempo de espera aumentan brevemente durante los minutos de carga máxima, ¿cómo se debería informar el resultado?",
+      "options": [
+        "Un resultado con salvedades que indique que se cumplieron los objetivos de latencia, pero destaque el riesgo de fiabilidad por las transacciones fallidas",
+        "Un detalle irrelevante, porque los errores solo importan en las pruebas funcionales",
+        "Un aprobado completo sin salvedades, porque se cumplieron los objetivos de tiempo de respuesta",
+        "Un aprobado completo sin salvedades, porque se cumplieron los objetivos y los tiempos de espera breves fueron transitorios"
+      ],
+      "correctIndex": 0,
+      "explanation": "La calidad del rendimiento incluye completar correctamente las solicitudes, no solo hacerlo con rapidez. Los picos de errores son importantes aunque muchas solicitudes sigan respondiendo a tiempo.",
+      "id": "pt-137"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.7",
+      "difficulty": "easy",
+      "question": "¿Qué hace que una recomendación de rendimiento sea práctica y permita actuar?",
+      "options": [
+        "Usa frases genéricas como «mejorar el rendimiento pronto» para mantener la flexibilidad",
+        "Vincula la evidencia observada con un paso siguiente claro, como optimizar, rediseñar o realizar más pruebas específicas",
+        "Usa frases genéricas como «mejorar el rendimiento pronto», para que el equipo interprete la recomendación más adelante con flexibilidad",
+        "Promete una mejora fija sin evidencia para dar confianza a las partes interesadas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las recomendaciones útiles conectan los hallazgos con las decisiones. Deben ayudar al equipo a saber qué hacer a continuación y por qué.",
+      "id": "pt-138"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.8",
+      "difficulty": "medium",
+      "question": "¿Por qué un informe de rendimiento debería documentar las restricciones importantes del entorno o las diferencias respecto de producción?",
+      "options": [
+        "Porque las diferencias invalidan automáticamente todas las pruebas",
+        "Porque solo los equipos legales leen los informes de rendimiento y necesitan esos detalles",
+        "Porque esas diferencias afectan la confianza con que se pueden extrapolar los resultados a la operación real",
+        "Porque los detalles del entorno se incluyen principalmente por motivos estéticos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las partes interesadas deben comprender las limitaciones de los resultados. Documentar las restricciones les permite interpretar el riesgo y evita afirmaciones excesivas.",
+      "id": "pt-139"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.9",
+      "difficulty": "hard",
+      "question": "¿Qué afirmación distingue MEJOR un síntoma de una causa probable en el análisis del rendimiento?",
+      "options": [
+        "Un tiempo de respuesta lento es un síntoma; la saturación del conjunto de subprocesos podría ser una causa",
+        "En un informe de rendimiento no se deben incluir ni síntomas ni causas",
+        "Los síntomas y las causas son lo mismo en las pruebas de rendimiento",
+        "La saturación del conjunto de subprocesos es un síntoma y el tiempo de respuesta lento es su causa"
+      ],
+      "correctIndex": 0,
+      "explanation": "La degradación observada del servicio es un síntoma. El componente o comportamiento limitante que la produce es la causa probable que el análisis intenta identificar.",
+      "id": "pt-140"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.10",
+      "difficulty": "hard",
+      "question": "El throughput/rendimiento se mantiene estable mientras la longitud de la cola y el tiempo de espera aumentan bruscamente. ¿Qué principio de rendimiento ilustra esto con mayor claridad?",
+      "options": [
+        "La demanda supera la capacidad de servicio, por lo que se acumula trabajo adicional en lugar de completarse más rápido",
+        "El tiempo de reflexión de los usuarios disminuye, lo que reduce la necesidad de más análisis",
+        "El sistema escala de forma lineal y con eficiencia perfecta a medida que se agrega carga",
+        "El sistema escala de forma lineal y con eficiencia perfecta a medida que se agrega carga, así que no hace falta investigar más su capacidad"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cuando la capacidad está saturada, el trabajo nuevo puede esperar más tiempo sin aumentar la producción útil. El crecimiento de la cola es un indicio clásico de esa situación.",
+      "id": "pt-141"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.9",
+      "difficulty": "hard",
+      "question": "Una nueva regla de escalado automático mantiene estable el tiempo de respuesta promedio, pero el percentil 99 sigue aumentando durante los picos repentinos de tráfico. ¿Qué se debería informar?",
+      "options": [
+        "El cambio resolvió todos los problemas de rendimiento porque el tiempo promedio es estable incluso durante los picos repentinos",
+        "El rendimiento promedio mejoró, pero persiste el riesgo de gestionar los picos para las solicitudes más lentas y quizá se necesite un escalado más rápido",
+        "El cambio resolvió todos los problemas de rendimiento porque el tiempo de respuesta promedio es estable",
+        "Es probable que la definición de la carga de trabajo fuera innecesaria para evaluar la regla de escalado"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los promedios estables no garantizan un buen comportamiento durante los picos para los usuarios de la cola lenta. El informe debe distinguir la mejora general del riesgo residual en casos extremos.",
+      "id": "pt-142"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.11",
+      "difficulty": "medium",
+      "question": "¿Por qué vale la pena analizar la varianza o dispersión de los tiempos de respuesta, además de la tendencia central?",
+      "options": [
+        "Porque la varianza sustituye la necesidad de medir la tasa de errores",
+        "Porque la dispersión solo importa cuando el sistema está inactivo entre pruebas",
+        "Porque los promedios dejan de ser válidos matemáticamente siempre que haya dispersión",
+        "Porque dos sistemas con el mismo promedio pueden ofrecer niveles de coherencia muy distintos a los usuarios"
+      ],
+      "correctIndex": 3,
+      "explanation": "La coherencia importa a los usuarios y a las operaciones. Un servicio con grandes fluctuaciones de latencia puede ser menos fiable aunque su media sea aceptable.",
+      "id": "pt-143"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.10",
+      "difficulty": "easy",
+      "question": "¿Qué afirmación resulta más útil en un resumen ejecutivo después de una prueba de rendimiento importante?",
+      "options": [
+        "Varios monitores usaron números de puerto distintos durante la ejecución de la prueba",
+        "Recopilamos muchas métricas y gráficos durante el período de prueba y están disponibles",
+        "Varios monitores usaron números de puerto distintos durante la ejecución y se exportaron varios gráficos a PDF",
+        "El portal cumplió la carga de lanzamiento para búsqueda y pago, pero el pago tiene poco margen y necesita optimización antes del pico"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un resumen ejecutivo debe comunicar rápidamente la preparación, los riesgos principales y las acciones necesarias en un lenguaje pertinente para el negocio.",
+      "id": "pt-144"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.11",
+      "difficulty": "medium",
+      "question": "¿Por qué es arriesgado comparar como si fueran directamente equivalentes dos ejecuciones de rendimiento que usaron perfiles de carga distintos?",
+      "options": [
+        "Las distintas combinaciones, cadencias o concurrencias pueden cambiar el comportamiento del sistema y volver engañosas las comparaciones simplistas",
+        "Porque los perfiles de carga afectan solo el comportamiento de seguridad, no el rendimiento, así que se pueden comparar cualesquiera dos resultados sin ajustes",
+        "Porque los perfiles distintos invalidan automáticamente los archivos JSON de resultados",
+        "Porque las comparaciones significativas requieren capturas de pantalla idénticas de los paneles"
+      ],
+      "correctIndex": 0,
+      "explanation": "Si las condiciones de entrada difieren de manera sustancial, las diferencias de resultados quizá no se deban únicamente a cambios de código o de entorno. El contexto importa al comparar.",
+      "id": "pt-145"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.12",
+      "difficulty": "hard",
+      "question": "¿Qué conclusión es MÁS adecuada cuando el uso de recursos de un componente crece aproximadamente de forma lineal con la carga y permanece por debajo de los umbrales críticos en todos los niveles probados?",
+      "options": [
+        "Ya no será necesario volver a probar el rendimiento de este componente en versiones futuras",
+        "El componente no se convertirá en un cuello de botella con ninguna carga superior a la probada, porque el uso de recursos crece en línea recta",
+        "El componente parece escalar de manera predecible dentro del rango probado, aunque todavía se deben observar los límites que lo superan",
+        "Los objetivos de nivel de servicio dejan de ser pertinentes cuando el escalado parece lineal"
+      ],
+      "correctIndex": 2,
+      "explanation": "El comportamiento lineal observado dentro del rango probado es alentador, pero no demuestra una capacidad ilimitada. Los informes deben indicar cuidadosamente el alcance y las limitaciones.",
+      "id": "pt-146"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.12",
+      "difficulty": "easy",
+      "question": "¿Cuál es el principal valor de anotar en los gráficos de rendimiento eventos como despliegues, vaciados de caché o conmutaciones por error?",
+      "options": [
+        "Garantiza que todos los valores por percentiles sean más bajos en la siguiente ejecución",
+        "Ayuda a explicar cambios repentinos en las métricas al vincularlos con acciones o condiciones conocidas",
+        "Hace que los colores de los gráficos sean más brillantes y estos resulten más fáciles de leer",
+        "Elimina la necesidad de usar marcas de tiempo en las mediciones"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los eventos anotados aportan contexto. Pueden facilitar mucho la observación y explicación de correlaciones e hipótesis sobre causas raíz.",
+      "id": "pt-147"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.13",
+      "difficulty": "hard",
+      "question": "¿Cuándo se debería actualizar la planificación de capacidad a partir de los hallazgos de las pruebas de rendimiento?",
+      "options": [
+        "Solo después de que la aplicación haya fallado en producción con carga real, porque únicamente entonces se conocen sus límites reales",
+        "Solo después de que la aplicación haya fallado en producción con carga real",
+        "Solo si no se usó supervisión durante las pruebas y los datos están incompletos",
+        "Cuando los resultados revelen margen disponible, tendencias de crecimiento o cuellos de botella que afecten de forma sustancial las previsiones de demanda futura"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los resultados de rendimiento son un dato clave para planificar la capacidad porque muestran cuán cerca está el sistema de sus límites y cómo podría afectarlo el crecimiento.",
+      "id": "pt-148"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.1.13",
+      "difficulty": "medium",
+      "question": "Si dos compilaciones tienen tiempos de respuesta similares, pero una consume bastante más CPU para el mismo throughput/rendimiento, ¿qué deberían señalar los analistas?",
+      "options": [
+        "La compilación que usa más CPU es más escalable porque aprovecha más el hardware",
+        "La diferencia demuestra que las métricas se recopilaron mal en una de las ejecuciones",
+        "La compilación que usa más CPU es más escalable porque aprovecha mejor el hardware disponible",
+        "La compilación más reciente podría ser menos eficiente en recursos y reducir el margen futuro, aunque la velocidad percibida por los usuarios sea similar"
+      ],
+      "correctIndex": 3,
+      "explanation": "La eficiencia de recursos afecta los costos y el margen de capacidad. Una latencia similar no implica un comportamiento operativo equivalente.",
+      "id": "pt-149"
+    },
+    {
+      "chapter": "5. Análisis e informes de resultados",
+      "loRef": "PT-5.2.15",
+      "difficulty": "hard",
+      "question": "¿Qué afirmación es la MÁS adecuada al informar una limitación del entorno de prueba?",
+      "options": [
+        "Ocultar la limitación para mantener el resumen breve y centrado en los hallazgos positivos",
+        "Ocultar la limitación para mantener el resumen breve y centrado en los hallazgos positivos, ya que las partes interesadas quieren principalmente un mensaje claro",
+        "Suponer que las partes interesadas deducirán la limitación de los gráficos sin que se mencione",
+        "Indicar claramente la limitación, explicar cómo puede afectar la interpretación y evitar afirmaciones excesivas de certeza"
+      ],
+      "correctIndex": 3,
+      "explanation": "Informar con transparencia genera confianza. Las limitaciones no siempre invalidan los resultados, pero sí determinan hasta dónde se pueden extender las conclusiones.",
+      "id": "pt-150"
+    }
+  ]
+}

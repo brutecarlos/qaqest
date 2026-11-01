@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <title>Análisis y diseño de pruebas — QAQEST</title>
+  <meta name="description" content="Usa técnicas de caja negra, caja blanca y basadas en la experiencia para convertir los objetivos de prueba en comprobaciones específicas." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/es/guide-test-techniques.html" />
+  <link rel="alternate" hreflang="es" href="https://brutecarlos.github.io/qaqest/es/guide-test-techniques.html" />
+  <link rel="alternate" hreflang="en" href="https://brutecarlos.github.io/qaqest/guide-test-techniques.html" />
+  <link rel="alternate" hreflang="x-default" href="https://brutecarlos.github.io/qaqest/guide-test-techniques.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Análisis y diseño de pruebas — QAQEST" />
+  <meta property="og:description" content="Usa técnicas de caja negra, caja blanca y basadas en la experiencia para convertir los objetivos de prueba en comprobaciones específicas." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/es/guide-test-techniques.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Análisis y diseño de pruebas — QAQEST" />
+  <meta name="twitter:description" content="Usa técnicas de caja negra, caja blanca y basadas en la experiencia para convertir los objetivos de prueba en comprobaciones específicas." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Análisis y diseño de pruebas</h1></section>
+    <h2>De la base de prueba a los casos de prueba</h2>
+<p>El análisis de pruebas identifica qué se puede probar y qué condiciones conviene comprobar. El diseño de pruebas convierte esas condiciones en casos, datos y resultados esperados. Una técnica de prueba ofrece un método sistemático para seleccionar o derivar comprobaciones. La técnica más adecuada depende de la información disponible, el riesgo, el tiempo y el comportamiento que se estudia; es posible combinar técnicas en lugar de tratarlas como opciones excluyentes.</p>
+<h2>Técnicas de caja negra</h2>
+<p>Las técnicas de caja negra derivan pruebas del comportamiento observable desde el exterior o de reglas especificadas, sin depender de la estructura interna del código. La <strong>partición de equivalencia</strong> agrupa entradas que se espera que se comporten de forma similar y toma muestras de cada grupo. El <strong>análisis de valores límite</strong> se centra en los extremos, donde los errores son frecuentes. Las <strong>tablas de decisión</strong> muestran combinaciones de condiciones y las acciones resultantes. Las <strong>pruebas de transición de estado</strong> comprueban cómo los eventos llevan al sistema de un estado a otro, incluidas las transiciones no válidas.</p>
+<p><strong>Ejemplo práctico: coste de envío.</strong> Un servicio no cobra gastos de envío para cestas de 50 $ o más; por debajo, cobra 5 $. Las particiones son menos de 50 $ y 50 $ o más. Comprobar los límites de 49,99 $, 50,00 $ y 50,01 $ aporta más información que elegir tres importes arbitrarios dentro del mismo grupo. Para una regla que depende de la afiliación y del importe de la cesta, una tabla de decisión permite representar cada combinación significativa y el coste correspondiente.</p>
+<h2>Técnicas de caja blanca</h2>
+<p>Los métodos de caja blanca utilizan la estructura interna —como sentencias, ramas o flujo de control— para orientar las pruebas. La cobertura de sentencias indica si se ejecutó cada sentencia ejecutable; la cobertura de ramas indica si se ejercitó cada resultado de una decisión. Una batería de pruebas puede alcanzar la cobertura total de sentencias sin ejecutar nunca el resultado falso de una condición; por eso, la cobertura de ramas suele revelar carencias adicionales. La cobertura mide qué partes de la estructura se han ejercitado, pero no demuestra que el software sea correcto ni que los requisitos estén completos.</p>
+<p><strong>Ejemplo práctico: lógica de elegibilidad.</strong> El código concede un descuento si el cliente está activo y el pedido supera un umbral. Prueba con un cliente activo y un pedido grande, y con un cliente inactivo y un pedido grande, para ejercitar los resultados verdadero y falso de la comprobación de actividad. Después, considera un pedido pequeño de un cliente activo para ejercitar la otra decisión. Revisa el flujo de control exacto; ejecutar una línea no significa que se hayan probado todos sus resultados lógicos.</p>
+<h2>Técnicas basadas en la experiencia</h2>
+<p>Los enfoques basados en la experiencia aprovechan los conocimientos, la intuición y las observaciones previas de quien prueba. La predicción de errores convierte fallos probables en comprobaciones específicas: valores vacíos, sesiones caducadas, clics repetidos, caracteres Unicode inusuales o interrupciones de red. Las pruebas exploratorias combinan aprendizaje, diseño y ejecución mientras se investiga un área. Una carta de pruebas orienta la exploración, pero permite seguir las pistas que surjan. Las pruebas basadas en listas de comprobación utilizan riesgos o normas conocidos para dar más coherencia a las tareas repetitivas.</p>
+<p>La experiencia no sustituye a una base de prueba clara. Registra la carta de pruebas, el entorno, las observaciones y los problemas para que los resultados puedan explicarse y sean útiles para otras personas. Combina la exploración con una cobertura planificada: los casos sistemáticos protegen las reglas conocidas y la exploración puede revelar comportamientos que nadie había especificado.</p>
+<h2>Elegir y combinar métodos</h2>
+<p>Utiliza particiones y límites para rangos numéricos, tablas para reglas que interactúan y modelos de estados para comportamientos basados en eventos. Recurre a la cobertura estructural cuando la lógica interna sea importante y se disponga del código. Usa la exploración cuando el producto sea desconocido o el modelo documentado esté incompleto. El riesgo debe determinar la profundidad: un cálculo financiero requiere más combinaciones y una revisión independiente que una etiqueta estética.</p>
+<h2>Términos clave</h2>
+<ul><li><strong>Condición de prueba:</strong> aspecto de una base de prueba seleccionado para probar.</li><li><strong>Elemento de cobertura:</strong> elemento que una técnica pretende ejercitar.</li><li><strong>Cobertura:</strong> proporción de elementos seleccionados que ejercitan las pruebas.</li><li><strong>Oráculo de prueba:</strong> fuente que permite decidir si un resultado observado es correcto.</li><li><strong>Pruebas exploratorias:</strong> aprendizaje, diseño y ejecución simultáneos guiados por una carta de pruebas.</li></ul>
+<p>Antes de ejecutar las pruebas, comprueba que cada caso tenga un resultado esperado observable. Una técnica puede ayudar a elegir las entradas, pero no proporciona automáticamente un oráculo fiable.</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practicar con preguntas CTFL</a></p>
+    <p><a href="guides.html">Todas las guías de estudio</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="../js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

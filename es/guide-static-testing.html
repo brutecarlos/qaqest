@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <title>Pruebas estáticas — QAQEST</title>
+  <meta name="description" content="Detecta problemas de calidad al examinar requisitos, código y otros productos de trabajo sin ejecutar el software." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/es/guide-static-testing.html" />
+  <link rel="alternate" hreflang="es" href="https://brutecarlos.github.io/qaqest/es/guide-static-testing.html" />
+  <link rel="alternate" hreflang="en" href="https://brutecarlos.github.io/qaqest/guide-static-testing.html" />
+  <link rel="alternate" hreflang="x-default" href="https://brutecarlos.github.io/qaqest/guide-static-testing.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Pruebas estáticas — QAQEST" />
+  <meta property="og:description" content="Detecta problemas de calidad al examinar requisitos, código y otros productos de trabajo sin ejecutar el software." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/es/guide-static-testing.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pruebas estáticas — QAQEST" />
+  <meta name="twitter:description" content="Detecta problemas de calidad al examinar requisitos, código y otros productos de trabajo sin ejecutar el software." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Pruebas estáticas</h1></section>
+    <h2>Inspeccionar antes de ejecutar</h2>
+<p>Las pruebas estáticas evalúan un producto de trabajo sin ejecutar el software. Pueden aplicarse a requisitos, diagramas de arquitectura, casos de prueba, código fuente, ayuda para usuarios, contratos o procedimientos operativos. Una persona puede revisar un documento manualmente o una herramienta de análisis estático puede detectar patrones en el código. La diferencia esencial es que el producto examinado no se ejecuta.</p>
+<p>El análisis estático resulta valioso cuando ejecutar el software es costoso, cuando sería caro encontrar defectos en fases tardías o cuando el propio producto de trabajo debe ser claro y coherente. Puede revelar ambigüedades, omisiones, contradicciones, lógica duplicada, incumplimientos de normas de codificación o construcciones sospechosas. No demuestra cómo se comporta el sistema en ejecución en condiciones reales; por eso complementa las pruebas dinámicas, pero no las sustituye.</p>
+<h2>Las revisiones como colaboración estructurada</h2>
+<p>Una revisión es un examen en el que varias personas aportan comentarios sobre un producto de trabajo. Las revisiones informales pueden consistir en una lectura rápida entre colegas. Las modalidades más estructuradas definen funciones y etapas: planificación, preparación individual, debate o análisis de defectos, corrección y seguimiento. Puede haber una persona autora, una moderadora, revisores y una persona encargada de registrar los hallazgos, aunque en revisiones pequeñas se pueden combinar funciones. La moderación ayuda a mantener una revisión constructiva y centrada; quien registra los hallazgos los deja documentados para su seguimiento.</p>
+<p>Entre los objetivos de una revisión pueden estar detectar defectos, mejorar la comprensión compartida, transferir conocimientos y comprobar el cumplimiento. El objetivo determina quién debe participar y qué preparación resulta útil. Antes de la reunión, los revisores deben examinar el material y anotar preguntas o posibles problemas. La reunión no sustituye la preparación ni debe convertirse en una sesión para reescribir línea por línea el trabajo de la persona autora.</p>
+<h2>Comunicar con cuidado los hallazgos de una revisión</h2>
+<p>Los comentarios útiles señalan una ubicación concreta, describen el problema y explican sus consecuencias. Distingue un posible defecto de una preferencia de estilo. Expón los problemas de manera neutral: «La regla de reintento no especifica qué ocurre después del tercer intento» permite actuar mejor que «Esto es confuso». La persona autora es responsable de evaluar y resolver los hallazgos; el grupo de revisión ayuda a detectarlos.</p>
+<h2>Ejemplo práctico: revisar una regla de aceptación</h2>
+<p>Un requisito indica: «La cuenta se bloquea después de varios intentos fallidos de inicio de sesión». Quienes revisan pueden preguntar: ¿cuántos intentos?, ¿durante qué periodo?, ¿un inicio de sesión correcto reinicia el contador?, ¿qué ve el usuario?, ¿el bloqueo es temporal y cómo se recupera el acceso? Estas preguntas revelan reglas de decisión que faltan antes de escribir código. Más adelante, las respuestas pueden convertirse en condiciones y casos de prueba concretos. Así, la revisión mejora tanto el requisito como la futura base de prueba.</p>
+<h2>Herramientas de análisis estático</h2>
+<p>Las herramientas de análisis estático examinan artefactos mediante reglas automatizadas. Un analizador de código puede señalar incoherencias de estilo; un comprobador de tipos puede encontrar valores incompatibles, y un analizador de seguridad puede identificar patrones arriesgados. Configura las reglas con criterio: una avalancha de advertencias de poco valor puede hacer que se ignoren los hallazgos. Revisa los falsos positivos, define las prioridades y comprueba si la herramienta detecta problemas importantes. El resultado de la herramienta es una evidencia que debe investigarse, no un veredicto infalible.</p>
+<h2>Términos clave</h2>
+<ul><li><strong>Pruebas estáticas:</strong> evaluación de un producto de trabajo sin ejecutarlo.</li><li><strong>Revisión:</strong> examen de un producto de trabajo realizado por personas.</li><li><strong>Inspección:</strong> revisión formal con funciones y proceso definidos.</li><li><strong>Análisis estático:</strong> examen automatizado de artefactos, a menudo código fuente.</li><li><strong>Defecto:</strong> imperfección que puede hacer que un producto de trabajo sea incorrecto o inadecuado.</li></ul>
+<p>Los hallazgos estáticos y dinámicos tienen formas distintas. Una revisión de requisitos puede detectar un límite sin definir; una prueba en ejecución puede revelar un fallo en ese límite. Combinar ambos enfoques mejora los comentarios tempranos y la confianza basada en la ejecución.</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practica con preguntas de CTFL</a></p>
+    <p><a href="guides.html">Todas las guías de estudio</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="../js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

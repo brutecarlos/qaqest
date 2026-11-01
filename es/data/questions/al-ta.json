@@ -1,0 +1,2256 @@
+{
+  "moduleId": "al-ta",
+  "moduleName": "Analista de pruebas de nivel avanzado (AL-TA)",
+  "questions": [
+    {
+      "id": "al-ta-001",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.1.1",
+      "difficulty": "medium",
+      "question": "Como analista de pruebas, ¿qué actividad se asocia PRINCIPALMENTE con la etapa de análisis de pruebas para las pruebas funcionales?",
+      "options": [
+        "Configurar y preparar el entorno de ejecución de pruebas para el equipo",
+        "Derivar condiciones de prueba de la base de pruebas teniendo en cuenta los riesgos de calidad",
+        "Compilar y empaquetar el código fuente para desplegarlo en el entorno de preproducción",
+        "Asignar un nivel de gravedad a un defecto una vez finalizada la ejecución de pruebas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los analistas de pruebas identifican condiciones de prueba a partir de la base de pruebas (por ejemplo, requisitos y casos de uso), teniendo en cuenta los riesgos de calidad de las características funcionales."
+    },
+    {
+      "id": "al-ta-002",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.1.1",
+      "difficulty": "medium",
+      "question": "En las pruebas basadas en riesgos, ¿cuál es la PRINCIPAL contribución del analista de pruebas durante la identificación de riesgos?",
+      "options": [
+        "Aprobar el presupuesto general del proyecto y acordar el plan de dotación de personal para las pruebas",
+        "Aportar conocimientos funcionales y del dominio para identificar riesgos funcionales del producto",
+        "Elegir el lenguaje de programación y el marco de trabajo para la implementación",
+        "Decidir la fecha final de entrega junto con la alta dirección"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los analistas de pruebas aportan su experiencia funcional y del dominio a los talleres de riesgos y ayudan a identificar riesgos relacionados con la adecuación funcional, la corrección y otras características de calidad similares."
+    },
+    {
+      "id": "al-ta-003",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.1.2",
+      "difficulty": "medium",
+      "question": "Al analizar un caso de uso, el analista de pruebas debe centrarse en identificar condiciones de prueba para:",
+      "options": [
+        "Solo el escenario principal de éxito, ya que en la práctica los flujos alternativos rara vez son importantes",
+        "El escenario principal de éxito, además de los flujos alternativos y de excepción",
+        "Únicamente los aspectos no funcionales descritos en las notas del caso de uso",
+        "Principalmente los actores mencionados en el caso de uso, en lugar de los propios flujos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Un análisis exhaustivo de los casos de uso considera el escenario principal de éxito y también los flujos alternativos y de excepción, ya que los defectos suelen ocultarse en las rutas menos habituales."
+    },
+    {
+      "id": "al-ta-004",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.1.1",
+      "difficulty": "hard",
+      "question": "Un analista de pruebas diseña pruebas para un formulario con tres casillas independientes (cada una puede estar marcada o desmarcada). Según el método del árbol de clasificación, ¿cuántas combinaciones válidas existen si se deben probar todas las combinaciones (cobertura combinatoria completa)?",
+      "options": [
+        "3",
+        "6",
+        "8",
+        "9"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cada una de las tres casillas binarias independientes tiene dos estados; por tanto, la cobertura combinatoria completa requiere 2^3 = 8 combinaciones."
+    },
+    {
+      "id": "al-ta-005",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.2.1",
+      "difficulty": "hard",
+      "question": "Las pruebas por pares (todas las parejas) se utilizan PRINCIPALMENTE para:",
+      "options": [
+        "Garantizar que se ejecute cada combinación posible de todos los valores de los parámetros",
+        "Sustituir por completo la partición de equivalencia una vez identificados los parámetros",
+        "Reducir la cantidad de casos de prueba y, al mismo tiempo, cubrir cada pareja de valores de los parámetros",
+        "Probar de forma aislada los valores límite de un único parámetro cada vez"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas por pares cubren sistemáticamente todas las combinaciones por parejas de valores de parámetros con muchos menos casos que las pruebas combinatorias exhaustivas. Se basan en la observación empírica de que la mayoría de los defectos de interacción involucran solo dos parámetros."
+    },
+    {
+      "id": "al-ta-006",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.3.1",
+      "difficulty": "medium",
+      "question": "Las pruebas de casos de uso son especialmente útiles para verificar:",
+      "options": [
+        "Procesos de negocio de principio a fin e interacciones entre actores y sistema tal como ocurren en el uso real",
+        "La estructura del código de bajo nivel, como las instrucciones y ramas individuales de los módulos",
+        "La coherencia del estilo visual y la distribución de la interfaz en distintos tamaños de pantalla",
+        "El diseño del esquema de la base de datos y su nivel de normalización"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de casos de uso derivan casos de prueba de descripciones que reflejan cómo los actores interactúan con un sistema para alcanzar un objetivo. Por ello, son adecuadas para probar procesos de negocio realistas de principio a fin."
+    },
+    {
+      "id": "al-ta-007",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.1",
+      "difficulty": "medium",
+      "question": "En las pruebas basadas en defectos, se utiliza una «taxonomía de defectos» para:",
+      "options": [
+        "Organizar los tipos de defectos habituales por categorías y orientar el diseño de pruebas hacia problemas probables",
+        "Generar casos de prueba al azar para que ningún criterio influya en los resultados",
+        "Sustituir en cualquier situación y proyecto todas las demás técnicas de caja negra",
+        "Registrar cuántos defectos ha comunicado cada integrante del equipo de pruebas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una taxonomía de defectos organiza los tipos de defectos comunes (por ejemplo, por categorías como los relacionados con datos o interfaces) para ayudar a diseñar sistemáticamente pruebas dirigidas a las áreas problemáticas probables, basándose en datos históricos."
+    },
+    {
+      "id": "al-ta-008",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes técnicas depende MÁS de los conocimientos del dominio y la intuición del analista de pruebas, y menos de un modelo formal del software?",
+      "options": [
+        "La estimación de errores",
+        "Las pruebas de tabla de decisión, porque las combinaciones de reglas provienen de las corazonadas del analista",
+        "El análisis de valores límite, porque el analista elige los extremos por intuición",
+        "Las pruebas de transición de estado, porque las transiciones se infieren únicamente a partir de la experiencia"
+      ],
+      "correctIndex": 0,
+      "explanation": "La estimación de errores es una técnica basada en la experiencia. El analista utiliza sus conocimientos sobre errores habituales y defectos anteriores para anticipar dónde pueden surgir problemas, sin recurrir a un modelo formal."
+    },
+    {
+      "id": "al-ta-009",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.1.1",
+      "difficulty": "medium",
+      "question": "Como analista de pruebas, ¿en qué característica de calidad te centrarías PRINCIPALMENTE para comprobar si una aplicación es fácil de aprender y manejar para quienes la usan por primera vez?",
+      "options": [
+        "La portabilidad, que abarca la facilidad para trasladar el software entre plataformas",
+        "La capacidad de mantenimiento, que abarca la facilidad con la que los desarrolladores pueden modificar el código",
+        "La usabilidad",
+        "La fiabilidad, que abarca la continuidad del funcionamiento del sistema"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de usabilidad evalúan la facilidad con la que los usuarios previstos pueden aprender a utilizar un sistema, manejarlo y usarlo eficazmente. Es un área de interés principal del analista de pruebas relacionada con la funcionalidad."
+    },
+    {
+      "id": "al-ta-010",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes sería un objetivo de prueba adecuado para las pruebas de adecuación funcional?",
+      "options": [
+        "Confirmar que los cálculos de las reglas de negocio devuelven resultados correctos para las entradas definidas",
+        "Confirmar que el sistema se puede instalar en varios sistemas operativos",
+        "Confirmar que el tiempo de respuesta promedio se mantiene dentro de los límites con 500 usuarios simultáneos",
+        "Confirmar que el código fuente se compila sin advertencias"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de adecuación funcional verifican que las funciones se comporten según lo especificado; por ejemplo, que los cálculos de las reglas de negocio produzcan resultados correctos para las entradas dadas."
+    },
+    {
+      "id": "al-ta-011",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es una ventaja importante de analizar cuidadosamente los criterios de aceptación durante el análisis de pruebas?",
+      "options": [
+        "Es una tarea opcional que aporta poco, porque los analistas ya conocen los objetivos",
+        "Alinea las condiciones de prueba con lo que las partes interesadas consideran terminado y correcto",
+        "Garantiza que el código resultante no contenga ningún defecto",
+        "Elimina la necesidad de realizar más adelante cualquier trabajo de diseño de pruebas"
+      ],
+      "correctIndex": 1,
+      "explanation": "El análisis cuidadoso de los criterios de aceptación garantiza que las condiciones de prueba derivadas reflejen las expectativas de las partes interesadas sobre una funcionalidad correcta y completa."
+    },
+    {
+      "id": "al-ta-012",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.1.2",
+      "difficulty": "hard",
+      "question": "Al utilizar el método del árbol de clasificación, las «clases» representan:",
+      "options": [
+        "Clases de programación orientada a objetos definidas en el código fuente del sistema sometido a prueba",
+        "Niveles de gravedad asignados a los defectos encontrados durante la ejecución de pruebas",
+        "Los niveles de experiencia asignados a los analistas que trabajan en el proyecto",
+        "Las particiones de valores dentro de cada clasificación (un aspecto del objeto de prueba)"
+      ],
+      "correctIndex": 3,
+      "explanation": "En el método del árbol de clasificación, las clasificaciones representan aspectos pertinentes del objeto de prueba, y las clases son las particiones de valores de cada clasificación que luego se combinan en casos de prueba."
+    },
+    {
+      "id": "al-ta-013",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué fuente de información sería MÁS útil para crear una taxonomía de defectos específica de una organización?",
+      "options": [
+        "Datos históricos de defectos y tipos de defectos habituales de proyectos anteriores del mismo dominio",
+        "Listas genéricas de defectos de un campo no relacionado, sin revisarlas en función del producto",
+        "Las opiniones personales del desarrollador de mayor antigüedad, recopiladas sin contrastar ningún dato",
+        "Las métricas de rendimiento de la última prueba de carga de una aplicación no relacionada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las taxonomías de defectos son más útiles cuando se basan en datos históricos reales sobre defectos y en categorías comunes observadas en proyectos o dominios similares."
+    },
+    {
+      "id": "al-ta-014",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.2",
+      "difficulty": "medium",
+      "question": "La diferencia PRINCIPAL entre las pruebas basadas en listas de comprobación y las pruebas ad hoc, como técnicas basadas en la experiencia, es que las primeras:",
+      "options": [
+        "No se pueden reutilizar entre proyectos porque cada lista corresponde a una única versión del producto",
+        "Suelen ser menos exhaustivas que las pruebas ad hoc porque las listas limitan la creatividad",
+        "Siguen una lista estructurada y reutilizable basada en la experiencia o en estándares, por lo que ofrecen mayor coherencia",
+        "No dependen de la experiencia del analista, ya que la lista contiene todas las respuestas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas basadas en listas de comprobación utilizan una lista estructurada, a menudo reutilizable y derivada de la experiencia o de estándares. Esto aporta más coherencia y repetibilidad que las pruebas ad hoc completamente desestructuradas."
+    },
+    {
+      "id": "al-ta-015",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué técnica utilizaría habitualmente un analista de pruebas para evaluar la accesibilidad de una aplicación web para personas con discapacidad?",
+      "options": [
+        "Medir el uso de CPU y memoria del servidor durante una carga elevada de la aplicación",
+        "Revisar el esquema de la base de datos para evaluar su normalización y sus índices",
+        "Comprobar el cumplimiento de pautas como WCAG mediante análisis automatizados y pruebas con tecnologías de asistencia",
+        "Ejecutar análisis estático del código para encontrar variables sin usar y código inalcanzable"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de accesibilidad suelen combinar comprobaciones automatizadas respecto de pautas establecidas, como WCAG, con pruebas manuales que utilizan tecnologías de asistencia, como los lectores de pantalla."
+    },
+    {
+      "id": "al-ta-016",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.3.2",
+      "difficulty": "medium",
+      "question": "Al derivar casos de prueba de un caso de uso con varios flujos alternativos, ¿qué enfoque ofrece el MEJOR equilibrio entre cobertura y esfuerzo?",
+      "options": [
+        "Probar solo el escenario principal de éxito y omitir todos los flujos alternativos para ahorrar tiempo y esfuerzo",
+        "Ejecutar todas las combinaciones posibles de flujos y subflujos, independientemente del riesgo",
+        "Omitir el diseño de pruebas y depender de los comentarios de la supervisión en producción",
+        "Diseñar una prueba para cada flujo alternativo o de excepción, además del escenario principal, y priorizarla según el riesgo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un enfoque práctico basado en riesgos cubre el escenario principal y cada flujo alternativo o de excepción con al menos un caso de prueba, y prioriza los flujos de mayor riesgo para una cobertura más profunda."
+    },
+    {
+      "id": "al-ta-017",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.2.1",
+      "difficulty": "medium",
+      "question": "Durante el análisis de riesgos, el analista de pruebas ayuda a evaluar la «probabilidad» de un riesgo funcional teniendo en cuenta factores como:",
+      "options": [
+        "La complejidad del diseño afectado y la experiencia del equipo que lo construye",
+        "La combinación de colores de la interfaz y la tipografía utilizada en las pantallas",
+        "La cantidad de analistas de pruebas que trabajan en la oficina un día determinado",
+        "La antigüedad y reputación del patrocinador del proyecto en la organización"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre los factores habituales para evaluar la probabilidad se encuentran la complejidad del código o diseño, la experiencia del equipo, el historial de defectos y otros factores técnicos pertinentes para los riesgos funcionales."
+    },
+    {
+      "id": "al-ta-018",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.1.3",
+      "difficulty": "medium",
+      "question": "¿Cuál es un motivo válido para que un analista de pruebas plantee un comentario de revisión durante el análisis de la base de pruebas, incluso antes de comenzar el diseño de pruebas?",
+      "options": [
+        "Un criterio de aceptación es ambiguo y admite dos interpretaciones contradictorias",
+        "El tipo de letra del requisito le resulta difícil de leer en pantalla",
+        "El requisito lo redactó un integrante del equipo con quien el analista trabaja pocas veces",
+        "El documento de requisitos tiene varias páginas en lugar de una sola"
+      ],
+      "correctIndex": 0,
+      "explanation": "El análisis de la base de pruebas suele revelar ambigüedades o incoherencias en los requisitos o criterios de aceptación. Plantearlas pronto, como parte de las pruebas estáticas, evita malentendidos costosos más adelante."
+    },
+    {
+      "id": "al-ta-019",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.2",
+      "difficulty": "hard",
+      "question": "¿En qué se diferencian las pruebas basadas en defectos de las técnicas basadas en especificaciones (de caja negra), como la partición de equivalencia?",
+      "options": [
+        "Derivan condiciones de tipos de defectos probables, no del comportamiento descrito en la base de pruebas",
+        "Nunca consultan ninguna base de pruebas, mientras que las técnicas basadas en especificaciones siempre dependen de ella",
+        "Son enfoques idénticos que en la práctica solo tienen nombres distintos",
+        "Solo se pueden utilizar para pruebas no funcionales, a diferencia de las técnicas basadas en especificaciones"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las técnicas basadas en defectos se derivan sistemáticamente del conocimiento de los tipos de defectos probables (una taxonomía de defectos). Complementan las técnicas basadas en especificaciones, que derivan las pruebas directamente del comportamiento documentado."
+    },
+    {
+      "id": "al-ta-020",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.1.3",
+      "difficulty": "medium",
+      "question": "¿Cuál suele ser el área de interés del analista de pruebas en las pruebas de «interoperabilidad»?",
+      "options": [
+        "Verificar que el código fuente siga las pautas de estilo interno acordadas por el equipo de desarrollo",
+        "Verificar que el uso de CPU se mantenga por debajo de un umbral definido durante los picos de carga",
+        "Verificar que los archivos de registro se roten y archiven correctamente cada noche",
+        "Verificar que el sistema intercambie datos y funcione correctamente con otros sistemas especificados"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de interoperabilidad verifican que un sistema pueda intercambiar datos correctamente e interactuar con otros sistemas o componentes especificados. Es una característica de calidad relacionada con la funcionalidad que los analistas de pruebas suelen abordar."
+    },
+    {
+      "id": "al-ta-021",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.1.1",
+      "difficulty": "medium",
+      "question": "Durante los talleres de identificación de riesgos, ¿qué técnica ayuda MEJOR al analista de pruebas a descubrir riesgos del producto desde las perspectivas de distintas partes interesadas?",
+      "options": [
+        "Sesiones de lluvia de ideas con participantes de desarrollo, negocio y operaciones",
+        "Basarse en la experiencia personal del analista en varios proyectos similares anteriores",
+        "Esperar a que los defectos aparezcan durante la ejecución para descubrir los riesgos",
+        "Reutilizar sin revisar la lista de riesgos de un proyecto anterior no relacionado"
+      ],
+      "correctIndex": 0,
+      "explanation": "La lluvia de ideas con distintas partes interesadas permite descubrir un conjunto de riesgos del producto más amplio y completo que el que se obtendría con una sola perspectiva o reaccionando únicamente después de que aparezcan defectos."
+    },
+    {
+      "id": "al-ta-022",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.2.1",
+      "difficulty": "medium",
+      "question": "En las pruebas basadas en riesgos, ¿cómo se suele asignar el esfuerzo de prueba en relación con los niveles de riesgo identificados?",
+      "options": [
+        "Se dedica el mismo esfuerzo a todas las condiciones de prueba, independientemente de su nivel de riesgo",
+        "Se prueban los elementos de bajo riesgo porque son rápidos y fáciles de completar",
+        "Los elementos de mayor riesgo se prueban antes y con más rigor que los de menor riesgo",
+        "El nivel de riesgo no influye en la distribución del esfuerzo entre las condiciones de prueba"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas basadas en riesgos asignan el esfuerzo de prueba en proporción al riesgo. Por ello, las áreas de mayor riesgo se prueban antes y con más rigor para reducir el riesgo general del producto."
+    },
+    {
+      "id": "al-ta-023",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.3.1",
+      "difficulty": "hard",
+      "question": "A medida que surge nueva información durante un proyecto (por ejemplo, se descubre un defecto crítico en producción), ¿qué debe hacer el analista de pruebas con el registro de riesgos?",
+      "options": [
+        "Dejarlo sin cambios, ya que los riesgos solo se evalúan al inicio del proyecto",
+        "Desecharlo y reiniciar de inmediato toda la planificación de pruebas desde cero",
+        "Reevaluar las calificaciones de probabilidad e impacto y ajustar el enfoque de pruebas en consecuencia",
+        "Comunicar el hallazgo únicamente al departamento de marketing y esperar instrucciones"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas basadas en riesgos son una actividad continua. La nueva información debe dar lugar a una reevaluación de la probabilidad o el impacto de los riesgos y a los ajustes correspondientes de las prioridades de prueba."
+    },
+    {
+      "id": "al-ta-024",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.1.2",
+      "difficulty": "medium",
+      "question": "Al analizar un conjunto de requisitos basados en casos de uso, ¿cuál es una tarea importante del analista de pruebas?",
+      "options": [
+        "Derivar condiciones para el escenario principal de éxito y para los flujos alternativos y de excepción",
+        "Aprobar automáticamente todos los casos de uso sin revisar su contenido ni sus flujos",
+        "Eliminar los flujos de excepción para que el análisis sea sencillo y breve",
+        "Delegar todo el análisis de los casos de uso al equipo de desarrollo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los analistas de pruebas derivan condiciones de prueba no solo del escenario principal de éxito, sino también de los flujos alternativos y de excepción de los casos de uso, para lograr una cobertura más exhaustiva."
+    },
+    {
+      "id": "al-ta-025",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué ventaja ofrece el análisis colaborativo de historias de usuario en el que participan analistas de pruebas, desarrolladores y responsables de producto?",
+      "options": [
+        "Ralentiza al equipo y no aporta ningún beneficio medible dentro del plazo del sprint",
+        "Elimina la necesidad de diseñar pruebas más adelante en el sprint",
+        "Hace innecesaria la definición de terminado del equipo",
+        "Permite detectar pronto ambigüedades y criterios de aceptación ausentes, lo que reduce el retrabajo"
+      ],
+      "correctIndex": 3,
+      "explanation": "El análisis colaborativo de las historias de usuario permite detectar pronto ambigüedades y lagunas en los criterios de aceptación. Así se reduce el costoso retrabajo y mejora la comprensión compartida de lo que se debe construir y probar."
+    },
+    {
+      "id": "al-ta-026",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.3.1",
+      "difficulty": "medium",
+      "question": "¿Qué actividad es principalmente responsabilidad del analista de pruebas durante la implementación de pruebas?",
+      "options": [
+        "Definir la política de pruebas aplicable a toda la organización",
+        "Organizar los casos de prueba en procedimientos de prueba y preparar los datos de prueba",
+        "Aprobar el presupuesto de las herramientas de prueba del proyecto",
+        "Fijar la fecha de entrega del software junto con los patrocinadores del negocio"
+      ],
+      "correctIndex": 1,
+      "explanation": "Durante la implementación de pruebas, los analistas de pruebas organizan los casos de prueba en procedimientos ejecutables, preparan los datos de prueba necesarios y concretan las necesidades del entorno de prueba de su área."
+    },
+    {
+      "id": "al-ta-027",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.1.1",
+      "difficulty": "hard",
+      "question": "Al aplicar la partición de equivalencia, ¿qué consideración adicional debe tener en cuenta el analista de pruebas para un campo numérico con un intervalo válido de 1 a 100?",
+      "options": [
+        "Añadir particiones no válidas por debajo de 1 y por encima de 100, y probar los valores límite 1 y 100",
+        "Probar solo el valor 50, porque representa el punto medio del intervalo válido",
+        "Omitir los valores no válidos porque quedan fuera del ámbito del campo",
+        "Probar por separado todos los enteros del 1 al 100 para tener certeza absoluta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un enfoque exhaustivo de partición de equivalencia también considera las particiones no válidas (por debajo del mínimo y por encima del máximo) y suele combinarse con el análisis de valores límite en los extremos de cada partición."
+    },
+    {
+      "id": "al-ta-028",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.2.1",
+      "difficulty": "hard",
+      "question": "Al utilizar tablas de decisión para diseñar casos de prueba de un conjunto de reglas de negocio, ¿cuál es la principal ventaja frente a las pruebas ad hoc de escenarios?",
+      "options": [
+        "Representan combinaciones de condiciones y sus acciones, lo que facilita una cobertura completa de las reglas",
+        "Eliminan la necesidad de datos de prueba porque todos los resultados ya aparecen en la tabla",
+        "Solo son útiles para probar interfaces de usuario, no reglas de lógica de negocio",
+        "Sustituyen el análisis de requisitos porque las reglas se derivan de la tabla"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las tablas de decisión enumeran sistemáticamente combinaciones de condiciones y las acciones o resultados asociados. Ayudan a lograr una cobertura más completa y trazable de reglas de negocio complejas."
+    },
+    {
+      "id": "al-ta-029",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.3.1",
+      "difficulty": "medium",
+      "question": "¿Para probar qué tipo de comportamiento de un sistema son MÁS adecuadas las pruebas de transición de estado?",
+      "options": [
+        "Comportamientos cuya salida depende de la entrada actual y del historial de eventos",
+        "Comportamientos independientes de los eventos anteriores y del estado actual del sistema",
+        "Una página web estática que no tiene ningún elemento interactivo",
+        "Un panel de informes de solo lectura cuyo estado nunca cambia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de transición de estado son adecuadas para sistemas cuyo comportamiento depende tanto del estado actual como de un evento o entrada, ya que modelan los estados válidos, las transiciones y los eventos que las provocan."
+    },
+    {
+      "id": "al-ta-030",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es el objetivo principal de utilizar una taxonomía de defectos en las pruebas basadas en defectos?",
+      "options": [
+        "Clasificar defectos únicamente para informes estadísticos, sin influir en las decisiones de diseño de pruebas",
+        "Sustituir por completo el diseño de pruebas basado en requisitos",
+        "Proporcionar una lista estructurada de tipos de defectos habituales que oriente las pruebas hacia áreas propensas a defectos",
+        "Asignar a los desarrolladores la responsabilidad por los defectos que introdujeron"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una taxonomía de defectos proporciona una clasificación estructurada de tipos de defectos (por ejemplo, basada en datos históricos) que los analistas pueden usar para orientar el diseño de pruebas hacia áreas propensas a esas categorías de defectos."
+    },
+    {
+      "id": "al-ta-031",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una técnica de diseño de pruebas basada en defectos?",
+      "options": [
+        "Aplicar análisis de valores límite basándose únicamente en la especificación de requisitos",
+        "Ejecutar pruebas de carga dimensionadas según el número previsto de usuarios simultáneos",
+        "Diseñar pruebas a partir de una taxonomía de tipos de defectos habituales en sistemas similares",
+        "Utilizar listas de comprobación para revisar código que solo aplican los desarrolladores a su propio código"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las técnicas de diseño de pruebas basadas en defectos derivan casos de prueba del conocimiento de tipos de defectos habituales (taxonomías de defectos), en lugar de basarse exclusivamente en los documentos de la base de pruebas."
+    },
+    {
+      "id": "al-ta-032",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué distingue la estimación de errores de una técnica formal de diseño de pruebas basada en especificaciones?",
+      "options": [
+        "Siempre produce más casos de prueba que cualquier técnica basada en especificaciones para la misma funcionalidad",
+        "Se puede aplicar a pruebas no funcionales, pero no a pruebas funcionales",
+        "Utiliza la experiencia y la intuición del analista para anticipar defectos, en lugar de derivar las pruebas de una base de pruebas",
+        "Necesita un entorno de ejecución automatizada de pruebas completamente configurado antes de poder utilizarse"
+      ],
+      "correctIndex": 2,
+      "explanation": "La estimación de errores es una técnica basada en la experiencia en la que los analistas utilizan sus conocimientos, intuición y experiencia para anticipar defectos probables y diseñar pruebas para encontrarlos, sin derivarlas sistemáticamente de documentos formales de la base de pruebas."
+    },
+    {
+      "id": "al-ta-033",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.2.1",
+      "difficulty": "medium",
+      "question": "¿Para qué es MÁS útil la comprobación basada en listas de verificación?",
+      "options": [
+        "Garantizar que las condiciones importantes y recurrentes se cubran de forma coherente a partir de la experiencia acumulada",
+        "Sustituir todas las demás técnicas de diseño de pruebas elegidas para el proyecto",
+        "Generar directamente scripts automatizados de pruebas de rendimiento a partir de una lista de elementos",
+        "Derivar las particiones de equivalencia de los campos numéricos de entrada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas basadas en listas de verificación utilizan listas derivadas de la experiencia, los estándares o los problemas habituales para asegurar que las condiciones de prueba importantes y recurrentes se aborden de forma coherente."
+    },
+    {
+      "id": "al-ta-034",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.1.1",
+      "difficulty": "medium",
+      "question": "Como analista de pruebas, ¿en qué característica de calidad te centrarías principalmente para comprobar que un sistema siga siendo comprensible y fácil de usar para sus usuarios finales?",
+      "options": [
+        "La portabilidad, porque abarca el traslado del sistema entre plataformas",
+        "La capacidad de mantenimiento, porque abarca la facilidad para modificar el código",
+        "La usabilidad",
+        "La compatibilidad, porque abarca compartir un entorno con otros productos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de usabilidad se centran en la facilidad con la que los usuarios pueden comprender, aprender a utilizar y manejar el sistema para alcanzar sus objetivos de forma eficaz y satisfactoria. Es un área de calidad central para los analistas de pruebas."
+    },
+    {
+      "id": "al-ta-035",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una subcaracterística de adecuación funcional que evalúa un analista de pruebas?",
+      "options": [
+        "Comportamiento temporal: rapidez de respuesta del sistema bajo carga",
+        "Capacidad de instalación: facilidad para instalar el producto",
+        "Capacidad de prueba: facilidad para diseñar casos de prueba para el sistema",
+        "Corrección funcional: resultados correctos con la precisión necesaria"
+      ],
+      "correctIndex": 3,
+      "explanation": "La corrección funcional, una subcaracterística de la adecuación funcional, se refiere a si el sistema proporciona resultados correctos con el grado de precisión necesario. Es un área de interés clave para los analistas de pruebas."
+    },
+    {
+      "id": "al-ta-036",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.4.1",
+      "difficulty": "medium",
+      "question": "Durante el análisis de pruebas, ¿para qué se definen condiciones de prueba antes de redactar casos de prueba detallados?",
+      "options": [
+        "Para omitir la revisión de la base de pruebas, ya que las condiciones se pueden definir sin consultarla",
+        "Para finalizar el calendario y la estimación del esfuerzo de todo el proyecto de pruebas",
+        "Para decidir qué probar con un nivel de detalle adecuado, mantener la trazabilidad y sentar las bases de los casos de prueba",
+        "Para asignar analistas a los distintos entornos de prueba antes de la ejecución"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las condiciones de prueba identifican qué se debe probar, permiten mantener la trazabilidad con la base de pruebas y sirven de fundamento para diseñar más adelante casos de prueba detallados."
+    },
+    {
+      "id": "al-ta-037",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.4.1",
+      "difficulty": "hard",
+      "question": "¿Qué técnica de pruebas combinatorias reduce la cantidad de casos de prueba necesaria y, al mismo tiempo, cubre las interacciones entre parejas de parámetros de entrada?",
+      "options": [
+        "Pruebas exhaustivas de todas las combinaciones posibles de entradas",
+        "Pruebas de cobertura de instrucciones del código sometido a prueba",
+        "Pruebas aleatorias de humo de las funciones principales",
+        "Pruebas por pares (todas las parejas)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas por pares (todas las parejas) son una técnica combinatoria que reduce la cantidad total de casos de prueba y garantiza que cada pareja de valores de parámetros se ejercite al menos una vez."
+    },
+    {
+      "id": "al-ta-038",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.4.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes es un resultado habitual de la actividad de análisis de riesgos en la que participa el analista de pruebas?",
+      "options": [
+        "El calendario de despliegue en producción acordado con operaciones para la entrega final",
+        "Elementos de riesgo evaluados según su probabilidad e impacto, que se utilizan para priorizar el esfuerzo de prueba",
+        "Un contrato firmado de asistencia al cliente para el primer año",
+        "La evaluación individual del desempeño preparada para cada desarrollador"
+      ],
+      "correctIndex": 1,
+      "explanation": "El análisis de riesgos produce una lista de elementos de riesgo identificados junto con sus evaluaciones de probabilidad e impacto. Esta información se utiliza para priorizar el esfuerzo de diseño y ejecución de pruebas."
+    },
+    {
+      "id": "al-ta-039",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.3.1",
+      "difficulty": "medium",
+      "question": "¿Por qué podría un analista de pruebas combinar técnicas basadas en defectos y técnicas basadas en especificaciones en un mismo proyecto?",
+      "options": [
+        "Cada tipo de técnica se dirige a clases distintas de defectos, por lo que combinarlas mejora la detección",
+        "Ejecutar ambas solo duplica los mismos casos de prueba para añadir redundancia",
+        "Las técnicas basadas en especificaciones se están retirando en toda la industria",
+        "Las técnicas basadas en defectos hacen innecesarios los requisitos escritos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las técnicas basadas en especificaciones y las basadas en defectos se inspiran en fuentes distintas para generar ideas de prueba. Combinarlas suele mejorar la detección global de defectos al cubrir lagunas que una u otra podría dejar."
+    },
+    {
+      "id": "al-ta-040",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.2.1",
+      "difficulty": "hard",
+      "question": "Al planificar pruebas de interoperabilidad, ¿qué debe verificar principalmente un analista de pruebas?",
+      "options": [
+        "Que la interfaz de usuario aplique una paleta de colores y una tipografía coherentes en todas las pantallas",
+        "Que el sistema intercambie información e interactúe correctamente con otros sistemas especificados",
+        "Que el código fuente cumpla el estándar de programación de la empresa",
+        "Que el sistema se pueda desinstalar sin dejar archivos residuales"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de interoperabilidad verifican que un sistema pueda intercambiar información correctamente e interactuar con otros sistemas o componentes especificados. Es una característica de calidad relacionada con la adecuación funcional que interesa a los analistas de pruebas."
+    },
+    {
+      "id": "al-ta-041",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.1.2",
+      "difficulty": "easy",
+      "question": "Un equipo de banca móvil identifica como riesgo importante del producto un «límite diario de transferencias incorrecto». ¿Qué acción del analista de pruebas contribuye MEJOR a la identificación de riesgos?",
+      "options": [
+        "Estimar el presupuesto de hardware necesario para la próxima versión de la aplicación",
+        "Aprobar en nombre de operaciones la lista de comprobación de despliegue en producción",
+        "Enumerar escenarios realistas de clientes en los que los límites varían según el tipo, la región y el estado de la cuenta",
+        "Elegir la estrategia de indexación de la base de datos para las tablas de transferencias"
+      ],
+      "correctIndex": 2,
+      "explanation": "El analista de pruebas aporta detalles del negocio y del dominio que hacen que el riesgo sea concreto y comprobable. Los escenarios que varían las reglas por cuenta y región ayudan a revelar posibles fallos en la lógica de límites de transferencia."
+    },
+    {
+      "id": "al-ta-042",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.2.2",
+      "difficulty": "medium",
+      "question": "Dos funcionalidades tienen un impacto de negocio similar, pero una se modificó en cinco servicios del lado del servidor y la otra solo en el texto de ayuda estático. ¿A cuál se le debe asignar una probabilidad MAYOR?",
+      "options": [
+        "A la funcionalidad del texto de ayuda, porque todos los usuarios ven los cambios de texto y por ello es más probable que fallen",
+        "A la funcionalidad modificada en cinco servicios del lado del servidor, porque tener más componentes implica más posibles puntos de fallo",
+        "A ambas funcionalidades, que automáticamente deberían recibir la misma calificación de probabilidad",
+        "A ninguna, porque la probabilidad solo se puede evaluar después de la entrega"
+      ],
+      "correctIndex": 1,
+      "explanation": "La probabilidad depende de factores como la complejidad técnica y el alcance del cambio. Una modificación que abarca varios servicios ofrece más oportunidades de problemas de integración y lógica que una actualización solo de texto."
+    },
+    {
+      "id": "al-ta-043",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.3.1",
+      "difficulty": "hard",
+      "question": "Durante una implementación piloto se descubre en producción un defecto grave en los cálculos de cupones. ¿Cuál es la MEJOR respuesta inmediata en las pruebas basadas en riesgos?",
+      "options": [
+        "Congelar el registro de riesgos porque ya comenzaron las pruebas de esta versión",
+        "Detener todas las pruebas hasta que el director del proyecto vuelva a redactar el plan completo",
+        "Eliminar del repositorio las pruebas de bajo riesgo para reducir el mantenimiento",
+        "Reevaluar los riesgos relacionados con los precios y volver a priorizar las pruebas de descuentos, totales y facturas"
+      ],
+      "correctIndex": 3,
+      "explanation": "La nueva evidencia de producción debe incorporarse a la evaluación de riesgos. La mejor respuesta es aumentar la prioridad de las áreas de precios relacionadas y ajustar las pruebas en consecuencia."
+    },
+    {
+      "id": "al-ta-044",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.2.3",
+      "difficulty": "easy",
+      "question": "Un informe administrativo poco utilizado requiere un clic adicional, mientras que en el proceso de pago a veces se aplica el impuesto dos veces. ¿Qué área debería recibir primero una cobertura más profunda con un enfoque basado en riesgos?",
+      "options": [
+        "El informe administrativo, porque todos los defectos merecen exactamente el mismo esfuerzo",
+        "El proceso de pago, porque el impacto financiero y para el cliente es mucho mayor",
+        "Ninguna de las dos áreas, hasta medir la cobertura de código de ambas",
+        "El informe administrativo, porque sus usuarios son personal interno y es fácil contactarlos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas basadas en riesgos dedican más esfuerzo a las áreas con mayor impacto para el negocio. Los totales incorrectos durante el pago pueden causar pérdidas económicas y desconfianza de los clientes, por lo que deben tener mayor prioridad."
+    },
+    {
+      "id": "al-ta-045",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.4.2",
+      "difficulty": "medium",
+      "question": "¿Por qué suele ser conveniente ejecutar las pruebas de alto riesgo tan pronto como haya una compilación estable?",
+      "options": [
+        "Deja tiempo para reaccionar si se descubren fallos graves",
+        "Significa que ya no será necesario ejecutar las pruebas de bajo riesgo",
+        "Evita tener que preparar de antemano los resultados esperados",
+        "Garantiza que todos los defectos encontrados se puedan corregir en el mismo sprint"
+      ],
+      "correctIndex": 0,
+      "explanation": "La ejecución temprana de pruebas de alto riesgo da tiempo al equipo para investigar, corregir y volver a probar los fallos importantes. Reduce la posibilidad de descubrir problemas críticos cuando el plazo está a punto de agotarse."
+    },
+    {
+      "id": "al-ta-046",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.2.4",
+      "difficulty": "hard",
+      "question": "Un requisito indica que el redondeo de los intereses varía según la región. ¿Qué factor aumentaría MÁS la calificación del impacto de un defecto en esa regla?",
+      "options": [
+        "El cálculo solo se ejecuta en una página administrativa que pocas personas ven",
+        "El defecto podría causar sanciones regulatorias o cobrar de más a los clientes",
+        "La pantalla que muestra el resultado tiene una distribución sencilla y pocos controles",
+        "La regla está implementada en un único método breve del código"
+      ],
+      "correctIndex": 1,
+      "explanation": "El impacto refleja las consecuencias para el negocio si se produce el defecto. La exposición regulatoria y los cobros incorrectos a clientes hacen que el defecto sea mucho más grave."
+    },
+    {
+      "id": "al-ta-047",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.3.2",
+      "difficulty": "easy",
+      "question": "Los niveles de riesgo se reevalúan en cada sprint. ¿Qué evidencia es la razón MÁS SÓLIDA para reducir una calificación de riesgo del producto que antes era alta?",
+      "options": [
+        "Un desarrollador afirma que el área ahora parece más segura que hace unos sprints",
+        "La funcionalidad se ha vuelto popular entre muchos usuarios de la aplicación",
+        "El equipo de pruebas es más pequeño que en el sprint anterior",
+        "Las pruebas dirigidas repetidas y los cambios recientes relacionados muestran resultados estables y ningún incidente nuevo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las calificaciones de riesgo deben cambiar en función de la evidencia. Los resultados de prueba consistentemente estables y la ausencia de problemas recientes justifican reducir una calificación anterior."
+    },
+    {
+      "id": "al-ta-048",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.4.3",
+      "difficulty": "medium",
+      "question": "Una pasarela de pago se clasifica como de alto riesgo. ¿Qué objetivo de cobertura refleja MEJOR las pruebas basadas en riesgos?",
+      "options": [
+        "Cubrir pagos correctos y también escenarios negativos, de tiempo de espera agotado, reintento y respuesta malformada",
+        "Ejecutar un único pago por el flujo correcto y considerar verificada la pasarela durante todo el ciclo de entrega",
+        "Centrarse en el aspecto y el espaciado alrededor del botón de pago",
+        "Excluir la pasarela de las pruebas de sistema porque el proveedor ya la probó"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las integraciones de alto riesgo necesitan una cobertura más amplia y profunda que un único flujo correcto. Los escenarios negativos y de recuperación son importantes porque ahí suelen aparecer fallos costosos."
+    },
+    {
+      "id": "al-ta-049",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.1.3",
+      "difficulty": "hard",
+      "question": "¿Qué información de un taller es MÁS útil para descubrir riesgos ocultos del producto relacionados con las operaciones reales?",
+      "options": [
+        "La lista de festivos de oficina y las vacaciones previstas para el próximo trimestre",
+        "El plano de los puestos del equipo de desarrollo",
+        "Los tickets recientes de asistencia y las quejas del centro de atención sobre flujos de trabajo similares",
+        "Los indicadores de funcionalidad no utilizados de otra aplicación"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los comentarios operativos muestran cómo falla el producto en la práctica y qué dificultades tienen los usuarios. A menudo revelan riesgos que no son evidentes solo a partir de los requisitos."
+    },
+    {
+      "id": "al-ta-050",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.2.5",
+      "difficulty": "easy",
+      "question": "¿Por qué podría un analista de pruebas asignar un riesgo general MENOR a una funcionalidad técnicamente compleja que a otra más sencilla?",
+      "options": [
+        "La complejidad técnica nunca influye en el riesgo, por lo que ambas funcionalidades se evalúan igual",
+        "Solo los desarrolladores pueden evaluar la probabilidad, así que los analistas de pruebas no pueden compararlas",
+        "Un volumen de código bajo siempre implica un impacto alto, por lo que las funcionalidades sencillas tienen prioridad",
+        "La funcionalidad más sencilla podría usarse con mucha mayor frecuencia y, por tanto, conllevar una exposición de negocio mayor"
+      ],
+      "correctIndex": 3,
+      "explanation": "El riesgo general del producto depende de más factores que la complejidad técnica. Una funcionalidad más sencilla puede merecer mayor prioridad si muchos usuarios dependen de ella o los fallos serían costosos."
+    },
+    {
+      "id": "al-ta-051",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.4.4",
+      "difficulty": "medium",
+      "question": "Una corrección urgente cambia las reglas de prioridad de los descuentos. ¿Qué selección de pruebas de regresión se ajusta MEJOR al enfoque basado en riesgos?",
+      "options": [
+        "Ejecutar solo las pruebas rápidas del tema visual, porque terminan en minutos y dan resultados pronto",
+        "Repetir todas las pruebas del repositorio, independientemente de su relación con el cambio",
+        "Volver a probar precios, promociones, totales de facturas e impuestos, en lugar de la configuración de perfiles",
+        "Omitir las pruebas de regresión porque el cambio se etiquetó como urgente"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de regresión basadas en riesgos se centran en las áreas con mayor probabilidad de verse afectadas por el cambio y cuyo fallo sería más costoso. Los flujos relacionados con precios son una opción mucho mejor que páginas de configuración no relacionadas."
+    },
+    {
+      "id": "al-ta-052",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.3.3",
+      "difficulty": "hard",
+      "question": "¿Qué comunica una declaración sobre el riesgo residual del producto después de las pruebas?",
+      "options": [
+        "Que no queda ningún riesgo importante en el producto porque todas las pruebas planificadas se superaron",
+        "Que aún queda cierto riesgo y se informa a las partes interesadas del nivel de exposición restante",
+        "Que todos los defectos conocidos se corrigieron antes de la entrega",
+        "Que los analistas de pruebas ya no necesitan comunicar resultados a nadie"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas reducen el riesgo, pero rara vez lo eliminan por completo. Las declaraciones de riesgo residual ayudan a las partes interesadas a tomar decisiones informadas sobre la entrega, teniendo en cuenta la exposición restante."
+    },
+    {
+      "id": "al-ta-053",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.1.4",
+      "difficulty": "easy",
+      "question": "Durante la identificación de riesgos, ¿qué pregunta del analista de pruebas tiene MÁS probabilidades de revelar modos de fallo importantes para el negocio?",
+      "options": [
+        "¿Qué tema del entorno de desarrollo prefieren utilizar a diario la mayoría de los desarrolladores?",
+        "¿Qué formateador de código está configurado actualmente en la canalización de integración continua del equipo?",
+        "¿En cuál de los sprints recientes logró el equipo la mayor velocidad?",
+        "¿Qué fallos visibles para el usuario podrían reducir las ventas, causar pérdidas económicas o incumplimientos normativos?"
+      ],
+      "correctIndex": 3,
+      "explanation": "La identificación de riesgos mejora cuando se pregunta por las consecuencias para los clientes y el negocio. Estas preguntas ayudan al equipo a descubrir fallos que conviene priorizar en las pruebas."
+    },
+    {
+      "id": "al-ta-054",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.4.5",
+      "difficulty": "medium",
+      "question": "El tiempo disponible para las pruebas se reduce inesperadamente un 30 %. ¿Qué acción PRESERVA MEJOR la integridad del enfoque basado en riesgos?",
+      "options": [
+        "Reducir en el mismo porcentaje la cobertura de alto y bajo riesgo para que el recorte sea equitativo",
+        "Eliminar primero todas las pruebas negativas porque rara vez encuentran problemas",
+        "Descartar primero escenarios de bajo riesgo y proteger las pruebas dirigidas a los riesgos más altos del producto",
+        "Continuar sin cambios y ahorrar tiempo omitiendo el registro de defectos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cuando hay poco tiempo, el principio clave es proteger en la medida de lo posible la cobertura de los riesgos más altos. Lo más adecuado es reducir primero las pruebas de menor riesgo."
+    },
+    {
+      "id": "al-ta-055",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.2.6",
+      "difficulty": "hard",
+      "question": "¿Qué indicador aumenta MÁS la calificación de probabilidad de una funcionalidad nueva?",
+      "options": [
+        "Se desarrolla en un componente con muchos defectos y por un equipo que no conoce esa área",
+        "Reutiliza el encabezado estándar de página que la empresa usa en todas partes",
+        "Incluye una guía de usuario breve que describe sus funciones principales",
+        "La solicitó una parte interesada interna en vez de un cliente"
+      ],
+      "correctIndex": 0,
+      "explanation": "La probabilidad aumenta cuando se combinan componentes propensos a defectos y poca experiencia del equipo. La densidad histórica de defectos es una evidencia objetiva especialmente útil."
+    },
+    {
+      "id": "al-ta-056",
+      "chapter": "1. Tareas del analista de pruebas en las pruebas basadas en riesgos",
+      "loRef": "AL-TA-1.4.6",
+      "difficulty": "easy",
+      "question": "Un flujo de trabajo de alto riesgo depende de un servicio antifraude que aplica límites de frecuencia. ¿Qué plan refleja MEJOR las pruebas basadas en riesgos?",
+      "options": [
+        "Suponer que el servicio nunca limitará las solicitudes cuando funcione en producción",
+        "Reservar tiempo temprano en el entorno y probar la falta de disponibilidad, la limitación de solicitudes y las respuestas tardías",
+        "Probar una sola transacción aprobada contra el servicio y dar por cerrado el tema",
+        "Aplazar todas las pruebas del servicio antifraude hasta después de la entrega"
+      ],
+      "correctIndex": 1,
+      "explanation": "La dependencia de un tercero aumenta tanto el riesgo de negocio como el de integración. Un plan sólido cubre modos de fallo como la limitación de solicitudes y las interrupciones, no solo las respuestas correctas."
+    },
+    {
+      "id": "al-ta-057",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.1.4",
+      "difficulty": "medium",
+      "question": "Una historia de usuario dice: «Los clientes preferentes reciben envío rápido». ¿Qué debería hacer PRIMERO el analista de pruebas durante el análisis?",
+      "options": [
+        "Escribir de inmediato scripts de automatización y definir los valores más adelante",
+        "Suponer que los desarrolladores ya conocen los valores previstos",
+        "Eliminar la historia porque una frase breve es demasiado ambigua",
+        "Solicitar criterios medibles que definan «preferente» y «rápido»"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los términos ambiguos impiden definir condiciones de prueba y resultados esperados precisos. El analista de pruebas debe solicitar primero detalles de aceptación concretos."
+    },
+    {
+      "id": "al-ta-058",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.2.2",
+      "difficulty": "hard",
+      "question": "Los escenarios de ejemplo muestran totales con impuestos incluidos, pero el glosario define los totales sin impuestos. ¿Cuál es la MEJOR respuesta durante el análisis de pruebas?",
+      "options": [
+        "Plantear un comentario de revisión sobre la incoherencia antes de continuar con el diseño de pruebas",
+        "Elegir en privado una interpretación y diseñar las pruebas a partir de ella",
+        "Ignorar el glosario, ya que los ejemplos trabajados siempre son correctos",
+        "Aceptar cualquiera de los dos totales como resultado satisfactorio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las fuentes contradictorias de la base de pruebas son un hallazgo clásico de revisión. Resolverlo pronto evita desperdiciar esfuerzo de diseño y crear pruebas contradictorias."
+    },
+    {
+      "id": "al-ta-059",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.3.1",
+      "difficulty": "easy",
+      "question": "¿Por qué deben registrarse explícitamente las precondiciones al analizar un caso de uso?",
+      "options": [
+        "Sustituyen la necesidad de especificar los resultados esperados de cada paso de la prueba",
+        "Solo son importantes para los desarrolladores y no sirven para el diseño de pruebas",
+        "Hacen innecesaria la trazabilidad de las pruebas con la base de pruebas",
+        "Definen estados iniciales válidos para no confundir pruebas inválidas con defectos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las precondiciones son importantes porque los mismos pasos pueden tener distinto significado según el estado inicial. Hacerlas explícitas mejora la validez y la repetibilidad."
+    },
+    {
+      "id": "al-ta-060",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.1.5",
+      "difficulty": "medium",
+      "question": "Un modelo de proceso de negocio muestra un pedido que pasa de la revisión de ventas a la aprobación de finanzas. ¿Qué condición de prueba es más fácil pasar por alto si solo se leen historias de usuario aisladas?",
+      "options": [
+        "Las reglas de transferencia y las comprobaciones de autorización entre ambos roles",
+        "El título de la página y el encabezado de la pantalla de revisión de ventas",
+        "El estilo de programación utilizado dentro del servicio de aprobación",
+        "La frecuencia semanal de las copias de seguridad de la base de datos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los modelos de proceso exponen comportamientos entre roles y pasos que pueden quedar ocultos al leer las historias por separado. Las transferencias suelen ser una fuente habitual de defectos."
+    },
+    {
+      "id": "al-ta-061",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.2.3",
+      "difficulty": "hard",
+      "question": "¿Cuál es la razón MÁS SÓLIDA para vincular cada condición de prueba con su requisito, historia o elemento del modelo de origen?",
+      "options": [
+        "Hace que los nombres de los casos de prueba parezcan más formales a quienes los revisan",
+        "Significa que ya no será necesario actualizar las pruebas",
+        "Garantiza que todas las pruebas del conjunto estén automatizadas",
+        "Facilita el análisis del impacto de los cambios y el seguimiento de la cobertura"
+      ],
+      "correctIndex": 3,
+      "explanation": "La trazabilidad ayuda al equipo a ver qué está cubierto y qué debe cambiar cuando se modifica la base de pruebas. Es especialmente valiosa en proyectos que evolucionan con rapidez."
+    },
+    {
+      "id": "al-ta-062",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.1.6",
+      "difficulty": "easy",
+      "question": "¿Qué frase de un requisito indica con mayor claridad que falta información sobre el oráculo durante el análisis?",
+      "options": [
+        "El sistema debe responder rápidamente",
+        "El número de factura tiene exactamente doce caracteres",
+        "Solo los usuarios activos pueden restablecer sus propias contraseñas",
+        "Los pedidos rechazados permanecen visibles para los supervisores a efectos de auditoría"
+      ],
+      "correctIndex": 0,
+      "explanation": "«Rápidamente» es subjetivo si no se vincula con expectativas medibles o criterios de aceptación. Sin aclaraciones, el analista no puede decidir de forma coherente si una prueba se supera o no."
+    },
+    {
+      "id": "al-ta-063",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.3.2",
+      "difficulty": "medium",
+      "question": "Un requisito enumera los estados válidos de un pedido, pero no especifica cómo se producen los cambios de estado. ¿Qué debe solicitar el analista de pruebas?",
+      "options": [
+        "La estructura de paquetes del código fuente que implementa el campo de estado",
+        "El calendario de reuniones del equipo responsable del módulo de pedidos y su lista de trabajo",
+        "Las reglas de transición, los eventos desencadenantes y los cambios prohibidos entre estados",
+        "Una lista más extensa de colores para las etiquetas de estado en pantalla"
+      ],
+      "correctIndex": 2,
+      "explanation": "Conocer únicamente los nombres de los estados no basta para realizar un análisis sólido. Se necesitan reglas de transición para derivar condiciones de prueba y resultados esperados pertinentes."
+    },
+    {
+      "id": "al-ta-064",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.2.4",
+      "difficulty": "hard",
+      "question": "¿Por qué son útiles las conversaciones sobre ejemplos con el responsable de producto durante el análisis de pruebas?",
+      "options": [
+        "Permiten descubrir supuestos ocultos y obtener resultados esperados concretos",
+        "Eliminan la necesidad de ejecutar pruebas posteriormente sobre la funcionalidad",
+        "Garantizan que ningún defecto llegue a producción después de la entrega",
+        "Sustituyen el control de versiones de los activos de prueba"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los ejemplos convierten reglas abstractas en casos concretos, lo que suele revelar comportamientos y resultados esperados ausentes. También mejoran la comprensión compartida entre roles."
+    },
+    {
+      "id": "al-ta-065",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.1.7",
+      "difficulty": "easy",
+      "question": "La especificación de un informe define las columnas que aparecen, pero no el orden de clasificación predeterminado. ¿Cuál es el MEJOR resultado del análisis?",
+      "options": [
+        "Considerar aceptable cualquier orden de clasificación para las partes interesadas",
+        "Plantear un comentario de revisión sobre el comportamiento predeterminado que falta",
+        "Suponer el orden más habitual y continuar con el diseño",
+        "Aplazar las pruebas del informe hasta la fase de pruebas de sistema"
+      ],
+      "correctIndex": 1,
+      "explanation": "El comportamiento ausente es un defecto de la base de pruebas, no algo que el analista deba inventar en silencio. Plantearlo pronto protege la calidad del diseño y las expectativas de las partes interesadas."
+    },
+    {
+      "id": "al-ta-066",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.3.3",
+      "difficulty": "medium",
+      "question": "Al derivar condiciones de prueba a partir de una lógica de decisión, ¿qué suele representar una condición de prueba?",
+      "options": [
+        "Cada valor de datos individual que la lógica podría recibir",
+        "Solo el texto que aparece en la interfaz en cada punto de decisión del flujo",
+        "Una regla, rama o resultado significativo que requiere verificación independiente",
+        "Cada paso de un futuro guion automatizado para la lógica"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las condiciones de prueba deben tener suficiente detalle para orientar el diseño sin reducirse a una enumeración de datos sin procesar. Las reglas y los resultados diferenciados son unidades prácticas de análisis."
+    },
+    {
+      "id": "al-ta-067",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.2.5",
+      "difficulty": "hard",
+      "question": "Dos requisitos describen el mismo nivel de fidelidad con términos distintos. ¿Qué riesgo debe reconocer el analista de pruebas?",
+      "options": [
+        "El código tardará notablemente más en compilar por los términos adicionales",
+        "Las pruebas pueden duplicarse o ser incoherentes si no se armoniza la terminología",
+        "El responsable de producto tendrá que aportar menos ejemplos",
+        "El entorno de prueba podría perder datos aleatoriamente"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las diferencias terminológicas pueden provocar interpretaciones contradictorias, condiciones duplicadas y cobertura incompleta. Se debe resolver la ambigüedad antes de avanzar con el diseño."
+    },
+    {
+      "id": "al-ta-068",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.1.8",
+      "difficulty": "easy",
+      "question": "Un prototipo muestra el botón «Enviar» desactivado hasta que todos los campos obligatorios sean válidos. Además del estado visible del botón, ¿qué debe analizar el analista de pruebas?",
+      "options": [
+        "Solo el tema CSS y la hoja de estilos que determinan la presentación del formulario y del botón",
+        "Cuántos desarrolladores han trabajado en el formulario hasta ahora",
+        "La definición exacta de los campos obligatorios y cómo se pueden corregir los errores",
+        "Qué estación de trabajo utilizó el diseñador para crear el prototipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "El comportamiento visible apunta a reglas subyacentes que deben hacerse explícitas. La definición de los campos obligatorios y la recuperación de errores son objetivos importantes del análisis de pruebas."
+    },
+    {
+      "id": "al-ta-069",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.3.4",
+      "difficulty": "medium",
+      "question": "Para una especificación de API, ¿qué información contribuye MÁS directamente a un análisis de pruebas eficaz?",
+      "options": [
+        "El tipo de letra utilizado para mostrar el documento OpenAPI en el portal interno de desarrollo",
+        "La URL de la página de la wiki interna que describe el servicio",
+        "El tiempo promedio que tardan las revisiones de código del equipo",
+        "Las restricciones de los campos obligatorios y opcionales, los formatos y los valores enumerados"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las restricciones de entradas y salidas son esenciales para derivar condiciones sobre el comportamiento válido, no válido y límite de una API. La apariencia del documento no afecta a la calidad del análisis."
+    },
+    {
+      "id": "al-ta-070",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.2.6",
+      "difficulty": "hard",
+      "question": "¿Por qué puede el análisis temprano de pruebas reducir el costo total del proyecto?",
+      "options": [
+        "Hace innecesaria la gestión de defectos en las fases posteriores",
+        "Detecta lagunas y ambigüedades en la base antes de que el retrabajo sea más costoso",
+        "Reduce a cero el tiempo de ejecución de pruebas en cada entrega",
+        "Elimina la necesidad de que las partes interesadas revisen la base"
+      ],
+      "correctIndex": 1,
+      "explanation": "Por lo general, resulta más barato detectar defectos en requisitos y modelos que hacerlo después de haber creado el código y los productos de trabajo de prueba. El análisis temprano reduce el retrabajo posterior."
+    },
+    {
+      "id": "al-ta-071",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.1.9",
+      "difficulty": "easy",
+      "question": "¿Cuál de los siguientes elementos es el MEJOR candidato a ser una condición de prueba independiente y no solo una variación de datos de prueba?",
+      "options": [
+        "Usar otro apellido y dirección de cliente en el pedido enviado",
+        "Una regla de negocio diferenciada: los pedidos VIP no requieren aprobación del límite de crédito",
+        "Cambiar unos pocos píxeles el tamaño de la ventana del navegador",
+        "Ejecutar la misma prueba a otra hora del día"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una regla diferenciada puede producir resultados distintos y, por tanto, merece su propia condición. Las simples sustituciones de datos suelen incorporarse más adelante, durante el diseño detallado."
+    },
+    {
+      "id": "al-ta-072",
+      "chapter": "2. Análisis de pruebas",
+      "loRef": "AL-TA-2.3.5",
+      "difficulty": "medium",
+      "question": "Un motor de recomendaciones no tiene un único resultado «mejor» evidente para cada entrada. ¿Qué dificultad relacionada con el oráculo debe señalar el analista durante el análisis?",
+      "options": [
+        "Nadie puede probar la funcionalidad porque no existe una única respuesta correcta",
+        "Solo los desarrolladores pueden inspeccionar los resultados",
+        "La trazabilidad con la base de pruebas ya no es necesaria para estas funciones",
+        "Los resultados esperados pueden ser heurísticos o probabilísticos, en lugar de exactos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Algunos sistemas requieren oráculos menos estrictos o comparativos, porque los resultados no son totalmente deterministas. Reconocer pronto esta dificultad ayuda a definir pruebas realistas y criterios de evaluación."
+    },
+    {
+      "id": "al-ta-073",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.4.2",
+      "difficulty": "hard",
+      "question": "Durante la implementación de pruebas, ¿por qué se agrupan los casos de prueba individuales en procedimientos ejecutables?",
+      "options": [
+        "Para ocultar a las partes interesadas los vínculos de trazabilidad de los informes de prueba",
+        "Para que la preparación, la secuencia y la limpieza sean repetibles y eficientes durante la ejecución",
+        "Para garantizar que todas las pruebas agrupadas estén automatizadas",
+        "Para evitar tener que mantener datos de prueba"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los procedimientos ejecutables organizan el flujo práctico de la ejecución. Ayudan a ejecutar los casos de forma coherente y a evitar errores repetidos de preparación."
+    },
+    {
+      "id": "al-ta-074",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.5.1",
+      "difficulty": "easy",
+      "question": "Una prueba falla porque no se cargaron los datos de referencia. ¿Qué debe registrar PRIMERO el analista de pruebas?",
+      "options": [
+        "Un problema del entorno o de la preparación, con evidencia que explique por qué no se pudo obtener un resultado",
+        "Un defecto del producto con la máxima gravedad para llamar la atención del equipo de inmediato",
+        "Una solicitud para que el responsable de producto vuelva a redactar el requisito",
+        "Nada, porque no vale la pena registrar los problemas de preparación"
+      ],
+      "correctIndex": 0,
+      "explanation": "Si el fallo se debe al entorno de prueba o a la preparación de los datos, el primer registro debe reflejarlo. De lo contrario, el registro de defectos será engañoso."
+    },
+    {
+      "id": "al-ta-075",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.4.3",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito PRINCIPAL de preparar los resultados esperados antes de comenzar la ejecución?",
+      "options": [
+        "Hacer que las decisiones de aprobado o no aprobado sean más coherentes y dependan menos de conjeturas",
+        "Evitar tener que comparar el comportamiento real con el esperado",
+        "Evitar tener que comparar el comportamiento real con el esperado",
+        "Sustituir la necesidad de realizar comentarios de revisión sobre la base de pruebas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los resultados esperados preparados permiten emitir veredictos fiables y reducen la ambigüedad durante la ejecución. Son especialmente importantes en cálculos complejos y reglas de negocio."
+    },
+    {
+      "id": "al-ta-076",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.5.2",
+      "difficulty": "hard",
+      "question": "¿Por qué es útil registrar los resultados reales en puntos de control importantes durante una prueba larga de principio a fin?",
+      "options": [
+        "Ayuda a determinar dónde apareció por primera vez una desviación",
+        "Garantiza que se conozca la causa raíz del defecto",
+        "Elimina la necesidad de capturas de pantalla y registros de ejecución",
+        "Hace innecesaria la limpieza posterior de los datos de prueba"
+      ],
+      "correctIndex": 0,
+      "explanation": "La evidencia de los puntos de control permite acotar dónde divergió el comportamiento de lo esperado. Esto agiliza la investigación y mejora la reproducibilidad."
+    },
+    {
+      "id": "al-ta-077",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.4.4",
+      "difficulty": "easy",
+      "question": "Un conjunto de pruebas incluye algunas que crean registros de clientes y otras que los modifican. ¿Qué orden es MÁS sensato?",
+      "options": [
+        "Ejecutar primero las pruebas de modificación para ahorrar tiempo de preparación durante la ejecución",
+        "Ejecutar las pruebas en orden aleatorio para descubrir defectos ocultos",
+        "Crear primero los registros y luego modificarlos, con una limpieza clara o una gestión de dependencias",
+        "Omitir la limpieza, ya que las pruebas posteriores podrían reutilizar los datos restantes"
+      ],
+      "correctIndex": 2,
+      "explanation": "El orden de ejecución debe respetar las dependencias de datos. Una preparación y limpieza claras hacen que el conjunto sea repetible y reducen los falsos fallos."
+    },
+    {
+      "id": "al-ta-078",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.6.1",
+      "difficulty": "medium",
+      "question": "Después de entregar una corrección de un defecto, ¿qué distingue las pruebas de confirmación de las pruebas de regresión?",
+      "options": [
+        "La regresión vuelve a ejecutar solo el paso que falló originalmente, mientras que la confirmación lo omite",
+        "Son actividades idénticas que solo difieren en la terminología del proyecto",
+        "La confirmación se realiza antes de la implementación y la regresión después de la entrega",
+        "La confirmación vuelve a ejecutar la prueba afectada; la regresión comprueba que las áreas relacionadas y no modificadas sigan funcionando"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de confirmación verifican que el defecto específico se haya corregido. Las pruebas de regresión buscan efectos secundarios no deseados en la funcionalidad relacionada."
+    },
+    {
+      "id": "al-ta-079",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.4.5",
+      "difficulty": "hard",
+      "question": "¿Por qué se deben mantener conjuntos de datos de prueba bajo control de versiones?",
+      "options": [
+        "Para impedir la trazabilidad con los requisitos",
+        "Para garantizar que los analistas no puedan comparar los resultados entre ejecuciones",
+        "Para evitar documentar las reglas de negocio que sustentan los datos",
+        "Para facilitar la repetición de las pruebas y la gestión del historial de cambios"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los datos bajo control de versiones mejoran la repetibilidad y la auditabilidad. También ayudan a entender por qué cambiaron los resultados cuando evolucionaron las reglas de negocio o el comportamiento del producto."
+    },
+    {
+      "id": "al-ta-080",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.5.3",
+      "difficulty": "easy",
+      "question": "Un fallo solo ocurre cuando el idioma del navegador es francés. ¿Qué detalle del incidente es MÁS importante registrar?",
+      "options": [
+        "La hora exacta en que el analista hizo una pausa para almorzar durante la sesión de prueba",
+        "Únicamente el identificador del requisito sometido a prueba",
+        "El nombre de la rama del sistema de control de versiones utilizada",
+        "La configuración regional y el entorno, además de los pasos exactos y los datos de prueba"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los detalles del entorno son esenciales cuando un fallo depende de la configuración de localización. Sin ellos, resulta mucho más difícil reproducir y diagnosticar el problema."
+    },
+    {
+      "id": "al-ta-081",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.4.6",
+      "difficulty": "medium",
+      "question": "¿Cuándo debe actualizar un analista de pruebas un procedimiento de prueba existente?",
+      "options": [
+        "Solo al cerrar el proyecto, cuando por fin se conocen todos los cambios del producto",
+        "Nunca, porque los procedimientos deben permanecer estables históricamente",
+        "Siempre que los cambios hagan que los pasos o resultados esperados queden obsoletos",
+        "Solo después de que el equipo de automatización solicite expresamente una actualización"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los productos de trabajo de prueba deben evolucionar junto con el producto y la base de pruebas. Los procedimientos obsoletos producen resultados falsos y desperdician tiempo de ejecución."
+    },
+    {
+      "id": "al-ta-082",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.5.4",
+      "difficulty": "hard",
+      "question": "¿Cuál es la MEJOR razón para suspender la ejecución de un conjunto de pruebas?",
+      "options": [
+        "Una parte interesada pregunta cuántas pruebas quedan por ejecutar",
+        "El equipo quiere publicar informes de estado más coloridos para las partes interesadas",
+        "Un problema bloqueante del entorno hace que los veredictos de las pruebas no sean fiables",
+        "Se encuentra un defecto de baja prioridad durante la ejecución"
+      ],
+      "correctIndex": 2,
+      "explanation": "La suspensión se justifica cuando continuar produciría resultados engañosos o desperdiciaría esfuerzo. Los entornos no fiables son un motivo habitual."
+    },
+    {
+      "id": "al-ta-083",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.6.2",
+      "difficulty": "easy",
+      "question": "Desde la perspectiva del analista de pruebas, ¿qué resultado de la finalización de las pruebas es especialmente útil?",
+      "options": [
+        "Una lista del equipo de oficina y el mobiliario utilizados durante la entrega",
+        "Un resumen de los planes de vacaciones de los desarrolladores para el próximo trimestre",
+        "Las lagunas de cobertura, los defectos sin resolver y las lecciones que mejoran los futuros productos de prueba",
+        "Una promesa del equipo de que no habrá problemas para los clientes"
+      ],
+      "correctIndex": 2,
+      "explanation": "La información de finalización debe ayudar a las partes interesadas a evaluar la exposición restante y ayudar al equipo a mejorar. Las lagunas de cobertura y las lecciones reutilizables contribuyen a ambos objetivos."
+    },
+    {
+      "id": "al-ta-084",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.4.7",
+      "difficulty": "medium",
+      "question": "¿Por qué se ejecuta un pequeño conjunto de pruebas de humo antes de las pruebas detalladas con scripts en una nueva compilación?",
+      "options": [
+        "Para sustituir todas las pruebas posteriores previstas para la nueva compilación sometida a prueba",
+        "Para detectar rápidamente una inestabilidad grave y evitar desperdiciar esfuerzo en pruebas más profundas",
+        "Para eliminar la necesidad de registrar incidentes durante la ejecución",
+        "Para verificar únicamente los aspectos cosméticos de la nueva compilación"
+      ],
+      "correctIndex": 1,
+      "explanation": "Un conjunto de pruebas de humo ofrece rápidamente información sobre si la compilación es suficientemente estable para realizar pruebas más profundas. Así se protegen el tiempo y la capacidad del entorno."
+    },
+    {
+      "id": "al-ta-085",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.5.5",
+      "difficulty": "hard",
+      "question": "Un guion de prueba manual indica: «Verifique que la factura se vea correcta». ¿Qué debería mejorar el analista de pruebas durante la implementación?",
+      "options": [
+        "Eliminar el paso del guion porque nadie lo puede verificar",
+        "Convertir el script en un plan de proyecto para el equipo",
+        "Sustituir el paso ambiguo por comprobaciones observables y valores esperados",
+        "Añadir más capturas de pantalla, pero dejar los criterios sin aclarar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las instrucciones ambiguas provocan veredictos incoherentes. Las comprobaciones observables y las expectativas explícitas hacen que el caso de prueba sea repetible y auditable."
+    },
+    {
+      "id": "al-ta-086",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.6.3",
+      "difficulty": "easy",
+      "question": "Una corrección de una regla fiscal modificó una biblioteca de cálculos compartida. ¿Qué pruebas de seguimiento son MÁS adecuadas?",
+      "options": [
+        "Volver a ejecutar solo la prueba que falló, porque fue la única que tuvo un fallo",
+        "Omitir las pruebas porque el cambio en la biblioteca es interno al código",
+        "Esperar a la supervisión en producción en lugar de probar el cambio",
+        "Ejecutar pruebas de confirmación y pruebas de regresión dirigidas a las funciones que utilizan la misma biblioteca"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los componentes compartidos generan riesgo de efectos secundarios más allá del defecto original. En esta situación, las pruebas de regresión dirigidas complementan las pruebas de confirmación."
+    },
+    {
+      "id": "al-ta-087",
+      "chapter": "2. Proceso de pruebas",
+      "loRef": "AL-TA-2.4.8",
+      "difficulty": "medium",
+      "question": "¿Qué hace que los resultados registrados de la ejecución sean realmente auditables?",
+      "options": [
+        "Registrar solo la confianza que sintió el analista al terminar la jornada",
+        "Omitir los detalles del entorno para que los registros sean breves",
+        "Vincular el procedimiento, los datos utilizados, la versión del entorno y el resultado observado",
+        "Depender de la memoria del analista en lugar de conservar evidencia"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los resultados auditables permiten que otra persona entienda qué se ejecutó y qué ocurrió. El contexto esencial incluye el procedimiento, los datos, el entorno y el resultado."
+    },
+    {
+      "id": "al-ta-088",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.1.3",
+      "difficulty": "hard",
+      "question": "Un código de restablecimiento de contraseña debe contener exactamente seis dígitos. ¿Qué conjunto de particiones es MÁS adecuado para la partición de equivalencia?",
+      "options": [
+        "Una sola partición que abarque todos los valores que cualquier usuario podría intentar introducir",
+        "Seis particiones, una para cada posición del dígito en el código",
+        "Valores numéricos válidos de seis dígitos, además de valores no válidos más cortos, más largos y no numéricos",
+        "Una partición distinta para cada código posible"
+      ],
+      "correctIndex": 2,
+      "explanation": "La partición de equivalencia agrupa entradas que deberían comportarse de la misma manera. En esta regla, la longitud y el formato numérico definen las principales clases válidas y no válidas."
+    },
+    {
+      "id": "al-ta-089",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.1.4",
+      "difficulty": "easy",
+      "question": "Una regla de edad para una membresía acepta valores del 18 al 65, inclusive. ¿Qué conjunto de valores límite es MEJOR para el análisis de valores límite?",
+      "options": [
+        "18 y 65",
+        "0, 18, 65, 100",
+        "17, 18, 19, 64, 65, 66",
+        "20, 30, 40, 50, 60"
+      ],
+      "correctIndex": 2,
+      "explanation": "El análisis de valores límite se centra en los extremos y en los valores cercanos, porque los defectos suelen concentrarse allí. El conjunto elegido ejercita ambos lados de los dos límites inclusivos."
+    },
+    {
+      "id": "al-ta-090",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.2.2",
+      "difficulty": "medium",
+      "question": "¿Qué requisito es MÁS adecuado para las pruebas de tabla de decisión?",
+      "options": [
+        "Una página estática «Acerca de nosotros» que describe la historia y el personal de la empresa",
+        "Un costo de envío que depende del destino, el valor del pedido y el nivel de membresía",
+        "Una pantalla de presentación que cambia entre unas pocas imágenes",
+        "Un cuadro de búsqueda con un solo campo y sin reglas de negocio"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las tablas de decisión son adecuadas cuando los resultados dependen de combinaciones de condiciones. Las combinaciones de reglas de negocio, como los precios de envío, son un caso típico."
+    },
+    {
+      "id": "al-ta-091",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.3.2",
+      "difficulty": "hard",
+      "question": "Una cuenta se bloquea después de tres intentos consecutivos de inicio de sesión fallidos. ¿Qué secuencia de prueba comprueba MEJOR el comportamiento de bloqueo?",
+      "options": [
+        "Fallos una vez y luego iniciar sesión correctamente con la contraseña adecuada",
+        "Iniciar sesión correctamente tres veces seguidas sin ningún fallo",
+        "Alternar inicios de sesión fallidos y correctos durante un periodo prolongado",
+        "Fallar tres veces seguidas y luego intentar iniciar sesión con la contraseña correcta"
+      ],
+      "correctIndex": 3,
+      "explanation": "El comportamiento de transición de estado depende de la secuencia y del estado actual. Tres fallos consecutivos seguidos de una contraseña correcta comprueban directamente si el estado pasó a bloqueado."
+    },
+    {
+      "id": "al-ta-092",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.4.2",
+      "difficulty": "easy",
+      "question": "Al crear un árbol de clasificación para un formulario de reserva de viajes, ¿cuál es el MEJOR ejemplo de una clasificación?",
+      "options": [
+        "Método de pago",
+        "Número de empleado del analista que ejecuta las comprobaciones",
+        "Nombre del sprint en que se creó el formulario",
+        "Configuración de protección de ramas del repositorio de código"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una clasificación es un aspecto pertinente del objeto de prueba cuyos valores influyen en el comportamiento. En los sistemas de reserva, el método de pago suele modificar flujos, reglas o validaciones."
+    },
+    {
+      "id": "al-ta-093",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.5.1",
+      "difficulty": "medium",
+      "question": "Se crea un conjunto de pruebas por pares para navegador, rol de usuario y moneda. ¿Qué tipo de defecto AÚN podría escapar?",
+      "options": [
+        "Cualquier defecto que dependa de un par de valores de factores, ya que todos los pares están cubiertos",
+        "Un defecto que solo se active con una combinación específica de los tres factores",
+        "Cualquier defecto que aparezca en un navegador por sí solo",
+        "Todos los problemas de usabilidad de las páginas de reserva, por definición"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas por pares garantizan la cobertura de parejas, pero no de todas las combinaciones. Un defecto que requiera una interacción específica de tres factores podría permanecer."
+    },
+    {
+      "id": "al-ta-094",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.6.1",
+      "difficulty": "hard",
+      "question": "Un caso de uso incluye un flujo alternativo en el que el usuario cancela un pedido antes del pago. ¿Qué resultado esperado es MÁS importante diseñar para ese flujo?",
+      "options": [
+        "Se libera la reserva y no se genera ningún cargo",
+        "El sistema imprime un registro de depuración oculto de la sesión",
+        "Se actualiza la imagen de perfil del usuario",
+        "Se borra la memoria caché del navegador en la próxima visita"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los flujos alternativos requieren resultados pertinentes propios, no solo el flujo principal correcto. En una cancelación, es fundamental comprobar que no se genere un cargo y que se liberen los recursos reservados."
+    },
+    {
+      "id": "al-ta-095",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.1.5",
+      "difficulty": "easy",
+      "question": "Una regla de reserva exige que la fecha de inicio sea igual o anterior a la fecha de finalización. ¿Qué par de entradas es MÁS valioso como prueba centrada en los límites?",
+      "options": [
+        "Inicio: 10 de mayo; finalización: 20 de mayo",
+        "Inicio: 1 de junio; finalización: 30 de junio",
+        "Inicio: 15 de mayo; finalización: 15 de mayo",
+        "Inicio: 1 de enero; finalización: 31 de diciembre"
+      ],
+      "correctIndex": 2,
+      "explanation": "La igualdad es el límite crítico porque la regla permite que las fechas de inicio y finalización coincidan. Muchos defectos de validación de fechas aparecen alrededor de este extremo."
+    },
+    {
+      "id": "al-ta-096",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.2.3",
+      "difficulty": "medium",
+      "question": "Una tabla de decisión incluye una combinación de condiciones que nunca puede ocurrir en el dominio de negocio. ¿Qué debe hacer el analista de pruebas?",
+      "options": [
+        "Mantenerla y probarla como una regla de negocio normal",
+        "Duplicarla varias veces en la tabla para mejorar la cobertura",
+        "Convertir automáticamente toda la tabla en un modelo de estado",
+        "Eliminar o marcar la regla imposible para no dedicarle esfuerzo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las combinaciones imposibles deben identificarse y excluirse de la cobertura normal de reglas. De lo contrario, la tabla resulta engañosa e ineficiente."
+    },
+    {
+      "id": "al-ta-097",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.3.3",
+      "difficulty": "hard",
+      "question": "¿Cuál es un objetivo importante al utilizar pruebas de transición de estado en un flujo de trabajo?",
+      "options": [
+        "Probar solo las transiciones válidas más habituales, ya que son las más utilizadas",
+        "Sustituir todas las pruebas orientadas a datos por pruebas de transición",
+        "Comprobar que los eventos no válidos en un estado determinado se rechacen o gestionen correctamente",
+        "Ignorar el comportamiento de los tiempos de espera porque rara vez se activa"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de estado sólidas incluyen transiciones no válidas, ya que el sistema debe responder a ellas de forma segura. Centrarse solo en las rutas válidas deja lagunas."
+    },
+    {
+      "id": "al-ta-098",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.4.3",
+      "difficulty": "easy",
+      "question": "Un árbol de clasificación incluye la edad del cliente y el tipo de billete, pero los billetes infantiles solo son válidos para clientes jóvenes. ¿Qué debe hacer el analista de pruebas?",
+      "options": [
+        "Generar todas las combinaciones de edad y tipo de billete y tratarlas como entradas válidas",
+        "Eliminar una de las dos clasificaciones para evitar el conflicto",
+        "Sustituir el árbol de clasificación por pruebas puramente aleatorias",
+        "Modelar la restricción para no tratar las combinaciones no válidas como comportamiento esperado"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los modelos combinatorios son más útiles cuando representan explícitamente las restricciones de negocio. Así se evita el esfuerzo innecesario y la creación de expectativas incorrectas."
+    },
+    {
+      "id": "al-ta-099",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.5.2",
+      "difficulty": "medium",
+      "question": "Después de crear un conjunto de pruebas por pares para una pantalla de configuración compleja, ¿qué pruebas adicionales siguen siendo MÁS probablemente necesarias?",
+      "options": [
+        "Ninguna, porque la cobertura por pares ya sustituye todo el resto del diseño de pruebas",
+        "Pruebas de rendimiento y nada más",
+        "Pruebas elegidas al azar y nada más",
+        "Pruebas de valores límite de alto riesgo y restricciones de reglas que la cobertura por pares no garantiza"
+      ],
+      "correctIndex": 3,
+      "explanation": "La cobertura por pares es eficiente, pero no sustituye las pruebas específicas de límites, restricciones u otras condiciones de alto riesgo. Estas también requieren atención."
+    },
+    {
+      "id": "al-ta-100",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.6.2",
+      "difficulty": "hard",
+      "question": "Al derivar pruebas de casos de uso que abarcan varios sistemas, ¿qué ofrece el MEJOR oráculo?",
+      "options": [
+        "El resultado de negocio esperado y los cambios de datos en cada sistema involucrado",
+        "La aparición de la pantalla final de confirmación al terminar el flujo",
+        "La cantidad de llamadas a API realizadas durante el escenario",
+        "La estimación del equipo expresada en puntos de historia"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de casos de uso de principio a fin necesitan oráculos más amplios que un mensaje final de la interfaz. Los resultados de negocio coherentes y los efectos sobre los datos entre sistemas son evidencias más sólidas."
+    },
+    {
+      "id": "al-ta-101",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.1.6",
+      "difficulty": "easy",
+      "question": "Un campo de comentarios opcional permite una entrada vacía y hasta 200 caracteres. ¿Qué particiones son MÁS pertinentes?",
+      "options": [
+        "Entrada vacía válida, entrada válida de hasta 200 caracteres y entrada no válida de más de 200 caracteres",
+        "Exactamente 200 particiones, una por cada longitud posible del comentario introducido",
+        "Una sola partición válida, porque el campo es opcional",
+        "Solo particiones no válidas, porque los campos opcionales son de bajo riesgo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los campos opcionales también se benefician de la partición. La distinción clave es entre una entrada vacía válida, contenido válido dentro del límite y contenido que supera la longitud máxima."
+    },
+    {
+      "id": "al-ta-102",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.2.4",
+      "difficulty": "medium",
+      "question": "Una tabla de decisión para la aprobación de descuentos tiene cinco condiciones binarias y, por ello, muchas columnas. ¿Cuál es el MEJOR primer paso para simplificarla?",
+      "options": [
+        "Probar cada columna de la tabla sin revisar antes las reglas",
+        "Convertir la tabla en un manual de usuario del equipo",
+        "Descartar las condiciones que sean menos convenientes de preparar",
+        "Combinar los resultados equivalentes y eliminar las combinaciones imposibles cuando esté justificado"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las tablas de decisión suelen hacerse más eficientes al eliminar reglas imposibles y combinar reglas equivalentes. Así se mantiene una cobertura sistemática sin duplicaciones innecesarias."
+    },
+    {
+      "id": "al-ta-103",
+      "chapter": "3. Diseño de pruebas",
+      "loRef": "AL-TA-3.3.4",
+      "difficulty": "hard",
+      "question": "Un evento de tiempo de espera agotado puede ocurrir mientras un pedido espera el pago o después de haber sido cancelado. ¿Qué idea importante de pruebas basadas en estados se desprende de esto?",
+      "options": [
+        "Se deben omitir los tiempos de espera del diseño de pruebas porque son poco frecuentes en producción",
+        "Solo se debe probar el primer estado del modelo",
+        "El mismo evento puede requerir resultados esperados distintos según el estado",
+        "No se necesita un modelo de estados cuando los eventos se repiten"
+      ],
+      "correctIndex": 2,
+      "explanation": "En las pruebas de transición de estado, los eventos se interpretan según el estado actual. Repetir el mismo evento en distintos estados puede revelar diferencias importantes de comportamiento."
+    },
+    {
+      "id": "al-ta-104",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.3",
+      "difficulty": "easy",
+      "question": "Los defectos históricos que llegaron a producción en el proceso de pago con varias monedas se concentran en el redondeo, la conversión de divisas y el análisis de formatos regionales. ¿Qué clase de defectos debería priorizar el siguiente ciclo de diseño de pruebas?",
+      "options": [
+        "Defectos en la ubicación del logotipo de la empresa",
+        "Defectos en la validación de la seguridad de las contraseñas",
+        "Defectos en la incorporación de nuevos desarrolladores",
+        "Defectos de precisión y conversión de formatos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas basadas en defectos utilizan patrones conocidos para orientar el esfuerzo. En este caso, el historial señala claramente problemas de precisión de cálculo y gestión de formatos de datos."
+    },
+    {
+      "id": "al-ta-105",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.4",
+      "difficulty": "medium",
+      "question": "Una taxonomía de defectos incluye la clase «incompatibilidad de interfaz». ¿Qué idea de prueba se dirige MEJOR a esa clase?",
+      "options": [
+        "Comprobar que el título de la página coincida con las pautas de marca del sitio web de la empresa",
+        "Cambiar el tamaño de letra de las etiquetas de la interfaz",
+        "Comparar los gráficos de evolución del sprint de varios equipos",
+        "Intercambiar datos a los que les falten campos opcionales o que utilicen versiones inesperadas del esquema"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las incompatibilidades de interfaz suelen aparecer cuando los sistemas conectados discrepan sobre la estructura, la opcionalidad o las versiones de los mensajes. Por ello, las variaciones de esquema entre servicios son una buena idea de prueba dirigida."
+    },
+    {
+      "id": "al-ta-106",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.2.2",
+      "difficulty": "hard",
+      "question": "¿Por qué debe actualizarse una taxonomía de defectos después del análisis de causa raíz de defectos nuevos?",
+      "options": [
+        "Para ampliar los informes históricos y hacerlos más detallados para la dirección",
+        "Para registrar patrones de defectos emergentes que orienten el diseño de pruebas futuro",
+        "Para garantizar que nunca sea necesario cerrar los incidentes",
+        "Para sustituir definitivamente el análisis de riesgos en proyectos posteriores"
+      ],
+      "correctIndex": 1,
+      "explanation": "La taxonomía debe aprovechar la nueva evidencia. Actualizarla con patrones de defectos reales hace que las futuras pruebas basadas en defectos sean más específicas y útiles."
+    },
+    {
+      "id": "al-ta-107",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.5",
+      "difficulty": "easy",
+      "question": "Los defectos que llegaron a producción se concentran en archivos importados que contienen valores nulos en columnas opcionales. ¿Qué debe hacer el analista de pruebas?",
+      "options": [
+        "Evitar por completo las pruebas de importación de archivos porque son inestables",
+        "Diseñar pruebas de importación dirigidas con variaciones de valores nulos, campos vacíos y campos ausentes",
+        "Probar únicamente los nombres y tamaños de los archivos importados",
+        "Pedir a operaciones que limpie los archivos manualmente antes de importarlos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cuando el historial apunta a problemas con valores nulos, probar directamente variaciones de datos ausentes y vacíos es una respuesta eficaz."
+    },
+    {
+      "id": "al-ta-108",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.2.3",
+      "difficulty": "medium",
+      "question": "¿En qué sentido ayuda más una taxonomía de defectos específica del dominio que una taxonomía puramente genérica?",
+      "options": [
+        "Garantiza que los conjuntos de pruebas resultantes siempre sean más pequeños que los genéricos",
+        "Hace innecesarios los requisitos escritos para el diseño de pruebas",
+        "Solo se puede aplicar a las pruebas unitarias",
+        "Destaca los tipos de defectos especialmente habituales y costosos en ese dominio"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las categorías genéricas son útiles, pero las específicas del dominio reflejan mejor los fallos que realmente importan en un área de producto. Esto mejora la priorización."
+    },
+    {
+      "id": "al-ta-109",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.6",
+      "difficulty": "hard",
+      "question": "Al aplicar pruebas basadas en defectos a una función de búsqueda con un historial extenso de errores, ¿qué fuente es MEJOR para generar nuevas ideas de prueba?",
+      "options": [
+        "Solo los títulos de los elementos de la lista de trabajo del sprint actual",
+        "El plano de evacuación y el plan de seguridad contra incendios de la oficina",
+        "Los informes de defectos anteriores y los tickets de asistencia sobre esa función",
+        "Una selección aleatoria de registros de API no relacionados"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los defectos anteriores son evidencia directa de los fallos que ha tenido la función. Constituyen un punto de partida sólido para diseñar pruebas dirigidas basadas en defectos."
+    },
+    {
+      "id": "al-ta-110",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.2.4",
+      "difficulty": "easy",
+      "question": "Un equipo clasifica casi todos los defectos como «Otros». ¿Cuál es la principal consecuencia?",
+      "options": [
+        "La entrega se vuelve inmediatamente más segura para los usuarios porque se clasifican menos defectos",
+        "La taxonomía pierde utilidad para orientar las futuras pruebas dirigidas",
+        "La corrección de defectos se acelera sin esfuerzo adicional",
+        "La trazabilidad con los requisitos mejora automáticamente"
+      ],
+      "correctIndex": 1,
+      "explanation": "El uso excesivo de categorías vagas destruye el valor de la taxonomía. Si las categorías no distinguen patrones, no pueden orientar mejores pruebas futuras."
+    },
+    {
+      "id": "al-ta-111",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.7",
+      "difficulty": "medium",
+      "question": "¿Qué prueba se dirige más directamente a defectos por omisión en un formulario regido por reglas?",
+      "options": [
+        "Comprobar que el color de fondo de la página coincida exactamente con el archivo de diseño",
+        "Revisar la lista del equipo de pruebas y la cobertura de vacaciones de este trimestre",
+        "Ejecutar un escenario que debería activar una validación obligatoria y comprobar si falta",
+        "Comparar las marcas de tiempo de las compilaciones entre entornos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los defectos por omisión aparecen cuando falta un comportamiento requerido. Diseñar un escenario que debería activarlo es la forma más directa de descubrir la ausencia."
+    },
+    {
+      "id": "al-ta-112",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.8",
+      "difficulty": "hard",
+      "question": "Un defecto conocido permitía aplicar dos veces un descuento al editar un pedido. ¿Qué idea de seguimiento aprovecha MEJOR el enfoque basado en defectos?",
+      "options": [
+        "Ejecutar únicamente la prueba de humo de inicio de sesión en la nueva compilación",
+        "Ignorar la edición de pedidos porque el defecto ya se conoce",
+        "Centrarse en el espaciado visual del formulario del pedido",
+        "Volver a probar los flujos de creación, edición y cancelación que activan el recálculo de precios"
+      ],
+      "correctIndex": 3,
+      "explanation": "El patrón del defecto apunta a la lógica de recálculo que se activa con los cambios del flujo de trabajo. Por tanto, los flujos relacionados que vuelven a calcular los totales son objetivos sólidos para pruebas adicionales."
+    },
+    {
+      "id": "al-ta-113",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.3.2",
+      "difficulty": "easy",
+      "question": "¿Qué ventaja tiene considerar tanto los patrones de defectos del producto como las causas de defectos relacionadas con el proceso?",
+      "options": [
+        "Permite realizar pruebas dirigidas y también fundamentar mejoras preventivas",
+        "Garantiza que el equipo encuentre absolutamente todos los defectos antes de la entrega",
+        "Hace innecesarias las retrospectivas del equipo",
+        "Permite que los analistas de pruebas dejen de revisar los requisitos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los patrones del producto orientan dónde probar, mientras que las causas relacionadas con el proceso pueden señalar mejoras en las revisiones, los estándares o la comunicación. En conjunto, favorecen la detección y la prevención."
+    },
+    {
+      "id": "al-ta-114",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.9",
+      "difficulty": "medium",
+      "question": "Un analizador suele fallar con longitudes máximas de campos y separadores poco habituales. ¿Qué pruebas dirigidas se ajustan MEJOR a las clases de defectos observadas?",
+      "options": [
+        "Registros típicos que siguen el formato estándar",
+        "Análisis de seguridad del entorno de alojamiento y su configuración de red",
+        "Actualizaciones aleatorias de la página durante el análisis",
+        "Longitudes límite y combinaciones de delimitadores poco comunes"
+      ],
+      "correctIndex": 3,
+      "explanation": "El historial señala dos posibles patrones de fallo: la gestión de límites y el análisis de separadores. Las pruebas deben ejercitar directamente esos puntos débiles."
+    },
+    {
+      "id": "al-ta-115",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.2.5",
+      "difficulty": "hard",
+      "question": "Si una organización dispone de pocos datos históricos sobre defectos para un producto nuevo, ¿de dónde puede obtener razonablemente una taxonomía inicial?",
+      "options": [
+        "Solo de la guía de identidad visual de la empresa",
+        "De una lista de atajos de teclado que los desarrolladores usan en sus editores",
+        "De una muestra aleatoria de métricas de producción de otra empresa",
+        "De sistemas comparables, estándares y experiencia del equipo en el dominio"
+      ],
+      "correctIndex": 3,
+      "explanation": "Una taxonomía inicial puede construirse a partir de fuentes externas pertinentes y de la experiencia. Se fortalecerá a medida que se acumulen datos locales sobre defectos."
+    },
+    {
+      "id": "al-ta-116",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.3.3",
+      "difficulty": "easy",
+      "question": "Cuando una prueba basada en defectos revela un fallo nuevo, ¿qué hace que el resultado sea especialmente valioso para mejorar la taxonomía?",
+      "options": [
+        "Que se cierre muy rápidamente, aunque el informe tenga poca documentación",
+        "Que se clasifique con claridad y conserve suficiente contexto del desencadenante para reconocer el patrón después",
+        "Que muchas personas sigan el elemento en el gestor de defectos",
+        "Que ocurra en un entorno de desarrollo y no en uno de prueba"
+      ],
+      "correctIndex": 1,
+      "explanation": "La taxonomía mejora cuando los defectos se registran de forma que se conserve el patrón significativo. El contexto del desencadenante ayuda a diseñar mejores pruebas dirigidas en el futuro."
+    },
+    {
+      "id": "al-ta-117",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.1.10",
+      "difficulty": "medium",
+      "question": "La taxonomía de un servicio de pago incluye las solicitudes duplicadas como clase habitual de defecto. ¿Qué escenario se dirige MEJOR a esa clase?",
+      "options": [
+        "Enviar un pago normal a través de una red estable y comprobar la página de confirmación",
+        "Cambiar el idioma de la página antes de pagar",
+        "Reintentar después de una respuesta poco clara y comprobar que solo se genere un cargo",
+        "Imprimir dos veces la página de confirmación"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los defectos de solicitudes duplicadas suelen aparecer al reintentar o cuando hay incertidumbre. La prueba debe demostrar que las solicitudes se gestionan de forma idempotente, no solo que el flujo principal funciona."
+    },
+    {
+      "id": "al-ta-118",
+      "chapter": "4. Pruebas basadas en defectos",
+      "loRef": "AL-TA-4.2.6",
+      "difficulty": "hard",
+      "question": "¿Qué indicio sugiere que una taxonomía de defectos es DEMASIADO general para ser útil?",
+      "options": [
+        "Sus categorías son lo bastante específicas como para inspirar pruebas concretas",
+        "Sus categorías son tan vagas que no sugieren ideas de prueba diferenciadas",
+        "El equipo la revisa después de cada entrega importante del producto",
+        "Incluye elementos históricos y específicos del dominio"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una taxonomía útil ayuda a pensar en pruebas dirigidas. Si las categorías son demasiado vagas, desaparece ese valor práctico."
+    },
+    {
+      "id": "al-ta-119",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.3",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes es la MEJOR misión de prueba exploratoria con un objetivo definido?",
+      "options": [
+        "Probar todo lo que se encuentre en la aplicación durante los próximos días laborables",
+        "Verificar que toda la entrega esté lista para publicarse",
+        "Comprobar si el equipo de desarrollo sigue el plan",
+        "Explorar el cálculo del total de pedidos con artículos sujetos y exentos de impuestos y cupones"
+      ],
+      "correctIndex": 3,
+      "explanation": "Una buena misión define un área concreta, un propósito y riesgos probables. Esto mantiene la exploración enfocada sin limitarla en exceso."
+    },
+    {
+      "id": "al-ta-120",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.4",
+      "difficulty": "medium",
+      "question": "¿Por qué suelen limitarse las sesiones de pruebas exploratorias a un periodo definido?",
+      "options": [
+        "Para impedir que el analista aprenda sobre el producto",
+        "Para mantener el enfoque y facilitar la comparación y gestión de los resultados del análisis posterior",
+        "Para garantizar que el analista encuentre como máximo un defecto por sesión",
+        "Para evitar tomar notas durante la sesión"
+      ],
+      "correctIndex": 1,
+      "explanation": "Limitar la sesión a un periodo definido fomenta la disciplina y ayuda a planificar, comparar y debatir sus resultados. También evita que la exploración se prolongue sin rumbo."
+    },
+    {
+      "id": "al-ta-121",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.2.2",
+      "difficulty": "hard",
+      "question": "¿Cuándo son especialmente valiosas las pruebas basadas en listas de verificación?",
+      "options": [
+        "Cuando el equipo quiere ignorar lo aprendido sobre el producto a partir de incidentes anteriores",
+        "Cuando se necesita cubrir de forma coherente áreas recurrentes de regresión o sujetas a requisitos de cumplimiento",
+        "Cuando nadie del equipo conoce el dominio",
+        "Cuando se prohíbe a los analistas reutilizar su experiencia"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las listas de verificación son especialmente útiles cuando hay que aplicar de forma coherente comprobaciones recurrentes e importantes. Transforman lo aprendido anteriormente en una cobertura repetible."
+    },
+    {
+      "id": "al-ta-122",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.5",
+      "difficulty": "easy",
+      "question": "¿Cuál es el propósito PRINCIPAL de una reunión de análisis posterior a una sesión exploratoria?",
+      "options": [
+        "Compartir hallazgos, cobertura, obstáculos e ideas para las siguientes sesiones",
+        "Decidir qué desarrollador fue responsable de causar cada defecto encontrado",
+        "Convertir todas las notas de la sesión en comentarios en el código fuente",
+        "Sustituir los informes formales de defectos de la sesión"
+      ],
+      "correctIndex": 0,
+      "explanation": "La reunión posterior convierte el aprendizaje individual en conocimiento del equipo. También aclara qué se cubrió y qué conviene hacer a continuación."
+    },
+    {
+      "id": "al-ta-123",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.6",
+      "difficulty": "medium",
+      "question": "¿Qué escenario es un buen ejemplo de estimación de errores para una función de carga de archivos?",
+      "options": [
+        "Cargar un PDF corriente una sola vez y comprobar que aparezca en la lista",
+        "Cargar un archivo con un nombre muy largo y caracteres especiales no admitidos",
+        "Cambiar la configuración de la impresora de la oficina",
+        "Revisar el gráfico de evolución del proyecto"
+      ],
+      "correctIndex": 1,
+      "explanation": "La estimación de errores se basa en la experiencia con patrones de fallo habituales. Los nombres largos y los caracteres inusuales suelen causar problemas en la gestión de cargas."
+    },
+    {
+      "id": "al-ta-124",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.7",
+      "difficulty": "hard",
+      "question": "En las pruebas exploratorias basadas en sesiones, ¿qué artefacto contribuye MÁS a la rendición de cuentas y la repetibilidad?",
+      "options": [
+        "El recuerdo de lo que intentó el analista, escrito varios días después de la sesión",
+        "Una captura de pantalla del calendario del equipo de esa semana",
+        "La cantidad de líneas de código modificadas en la compilación",
+        "Notas de sesión que registren la misión, el tiempo dedicado, los datos utilizados y los problemas encontrados"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las notas de sesión estructuradas ayudan a otras personas a entender qué se exploró y qué se observó. Así se facilitan el seguimiento y la revisión."
+    },
+    {
+      "id": "al-ta-125",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.2.3",
+      "difficulty": "easy",
+      "question": "¿De dónde deberían proceder MÁS habitualmente los elementos de una lista de verificación?",
+      "options": [
+        "Únicamente de las preferencias personales del analista más nuevo",
+        "De defectos anteriores, estándares y riesgos conocidos del producto",
+        "Del horario de almuerzo del equipo en los días de prueba",
+        "De lo que fuera más fácil automatizar en el sprint anterior"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las listas de verificación útiles se basan en evidencia y experiencia. Los fallos anteriores, las reglas del dominio y los riesgos son fuentes mucho mejores que la mera conveniencia."
+    },
+    {
+      "id": "al-ta-126",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.8",
+      "difficulty": "medium",
+      "question": "¿Cuál es una ventaja importante de las pruebas exploratorias en pareja?",
+      "options": [
+        "Una persona maneja la prueba mientras la otra observa, formula preguntas y propone otras rutas",
+        "Garantiza que se encuentren el doble de defectos que con una sola persona",
+        "Elimina la necesidad de definir una misión para la sesión",
+        "Solo se pueden realizar cuando se prueban API"
+      ],
+      "correctIndex": 0,
+      "explanation": "El trabajo en pareja puede mejorar la generación de ideas y la calidad de la observación porque las dos personas desempeñan funciones complementarias. También favorece el intercambio de conocimientos."
+    },
+    {
+      "id": "al-ta-127",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.9",
+      "difficulty": "hard",
+      "question": "Una misión de prueba dice: «Probar toda la aplicación». ¿Cuál es la MEJOR mejora?",
+      "options": [
+        "Limitarla a una función, un flujo de trabajo o un área de riesgo con una misión clara",
+        "Ampliarla para no pasar por alto nada de la aplicación durante la sesión",
+        "Convertirla directamente en un informe de defectos",
+        "Eliminar todos los objetivos y dejar que el analista improvise"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una misión debe concentrar el esfuerzo, no dispersarlo. Limitar el alcance hace que la sesión tenga más propósito y produzca resultados más útiles."
+    },
+    {
+      "id": "al-ta-128",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.10",
+      "difficulty": "easy",
+      "question": "¿Por qué deben variar los analistas exploratorios los datos de formas realistas y también no realistas?",
+      "options": [
+        "Para descubrir defectos tanto en los flujos normales como en la gestión de robustez",
+        "Porque los requisitos nunca importan cuando se explora el producto",
+        "Porque solo los datos no realistas permiten descubrir defectos",
+        "Porque así se acorta automáticamente cada sesión de prueba"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los datos realistas comprueban el uso probable, mientras que los no realistas ponen a prueba la resiliencia y la gestión de casos límite. Ambas perspectivas aportan valor."
+    },
+    {
+      "id": "al-ta-129",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.2.4",
+      "difficulty": "medium",
+      "question": "¿Cuándo debe revisarse o retirarse una lista de verificación de pruebas?",
+      "options": [
+        "Nunca, porque una lista que ha permanecido estable mucho tiempo siempre sigue siendo correcta",
+        "Cuando sus elementos quedan obsoletos o los defectos que llegaron a producción muestran que faltan comprobaciones clave",
+        "Solo cuando se incorpora un nuevo responsable del proyecto",
+        "Solo después de cambiar el nombre del repositorio"
+      ],
+      "correctIndex": 1,
+      "explanation": "La lista debe evolucionar junto con el producto y los nuevos aprendizajes. Los elementos obsoletos desperdician esfuerzo, mientras que las comprobaciones ausentes dejan riesgos sin cubrir."
+    },
+    {
+      "id": "al-ta-130",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.11",
+      "difficulty": "hard",
+      "question": "¿Qué distingue las pruebas exploratorias de las pruebas totalmente ad hoc?",
+      "options": [
+        "Tienen una misión deliberada, se centran en el aprendizaje y requieren tomar notas de forma disciplinada",
+        "Prohíben cualquier desviación de un guion de prueba completamente detallado",
+        "Las pruebas ad hoc siempre ofrecen mayor trazabilidad",
+        "No existe ninguna diferencia significativa entre ambas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas exploratorias son flexibles, pero no carecen de rumbo. Las misiones, el aprendizaje y una estructura ligera las distinguen del trabajo ad hoc sin estructura."
+    },
+    {
+      "id": "al-ta-131",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.12",
+      "difficulty": "easy",
+      "question": "¿Cómo pueden mejorar las personas ficticias (personas) las pruebas basadas en la experiencia?",
+      "options": [
+        "Sustituyen la necesidad de requisitos escritos como base para diseñar pruebas",
+        "Orientan escenarios en torno a distintos objetivos, capacidades y frustraciones de los usuarios",
+        "Solo son pertinentes para las pruebas de rendimiento",
+        "Garantizan que solo se ejecuten pruebas positivas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las personas ficticias ayudan a imaginar comportamientos y necesidades reales diversos. A menudo revelan problemas que pasarían inadvertidos desde la perspectiva de un único usuario genérico."
+    },
+    {
+      "id": "al-ta-132",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.13",
+      "difficulty": "medium",
+      "question": "Un analista repite una y otra vez sus escenarios favoritos durante la exploración. ¿Qué riesgo genera esto?",
+      "options": [
+        "Sesgo de cobertura, que deja otras áreas importantes poco exploradas",
+        "Cobertura automática de todos los valores límite",
+        "Una taxonomía de defectos más sólida para proyectos futuros",
+        "Sesgo de cobertura que deja otras áreas importantes poco exploradas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las técnicas basadas en la experiencia pueden favorecer rutas conocidas si no se orientan. Las misiones, las heurísticas y las reuniones de análisis ayudan a contrarrestar el sesgo de cobertura."
+    },
+    {
+      "id": "al-ta-133",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.2.5",
+      "difficulty": "hard",
+      "question": "¿Cuál es la MEJOR manera de combinar pruebas con scripts y pruebas exploratorias en una misma funcionalidad?",
+      "options": [
+        "Usar solo sesiones exploratorias porque los scripts de prueba son obsoletos en los proyectos modernos",
+        "Usar solo scripts porque la exploración nunca se puede repetir",
+        "Mantener ambos enfoques en entregas distintas",
+        "Usar guiones para la regresión principal y sesiones exploratorias para los nuevos riesgos relacionados con los cambios"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ambos enfoques se complementan. Los scripts proporcionan una cobertura de regresión fiable, mientras que la exploración ayuda a descubrir problemas nuevos o imprevistos."
+    },
+    {
+      "id": "al-ta-134",
+      "chapter": "5. Pruebas basadas en la experiencia",
+      "loRef": "AL-TA-5.1.15",
+      "difficulty": "easy",
+      "question": "¿Qué enfoque exploratorio contribuye MEJOR a probar una API con muchos filtros opcionales?",
+      "options": [
+        "Una misión sobre combinaciones de filtros, parámetros omitidos y valores predeterminados sospechosos",
+        "Una misión que solo compruebe si el proceso del servidor se inicia sin bloquearse",
+        "No definir una misión, ya que las API no se pueden explorar",
+        "Una lista de verificación sobre la velocidad de la red de la oficina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas exploratorias pueden ser específicas y eficaces aunque no haya una interfaz gráfica. Los filtros opcionales y los valores predeterminados son áreas propicias para descubrir problemas en las API."
+    },
+    {
+      "id": "al-ta-135",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.1.4",
+      "difficulty": "medium",
+      "question": "Falta por completo del producto entregado un formato de exportación solicitado. ¿Qué característica de calidad se ve afectada PRINCIPALMENTE?",
+      "options": [
+        "Accesibilidad de la usabilidad",
+        "Capacidad de instalación de la portabilidad",
+        "Coexistencia de la compatibilidad",
+        "Completitud funcional"
+      ],
+      "correctIndex": 3,
+      "explanation": "La completitud funcional se refiere a si están presentes las funciones necesarias. La ausencia de un formato de exportación solicitado es un ejemplo claro."
+    },
+    {
+      "id": "al-ta-136",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.1.5",
+      "difficulty": "hard",
+      "question": "Una función de facturación calcula incorrectamente los totales de impuestos para entradas válidas. ¿Qué subcaracterística de la adecuación funcional se ve afectada MÁS directamente?",
+      "options": [
+        "Pertinencia funcional",
+        "Corrección funcional",
+        "Capacidad de instalación",
+        "Coexistencia"
+      ],
+      "correctIndex": 1,
+      "explanation": "La función existe, pero produce un resultado incorrecto. Se trata principalmente de un problema de corrección funcional."
+    },
+    {
+      "id": "al-ta-137",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.1.6",
+      "difficulty": "easy",
+      "question": "Un flujo de trabajo se puede completar técnicamente, pero para realizar una acción rutinaria en lote los usuarios deben navegar por cinco pantallas innecesarias. ¿Qué subcaracterística se ve afectada MÁS?",
+      "options": [
+        "Completitud funcional",
+        "Pertinencia funcional",
+        "Capacidad de sustitución",
+        "Interoperabilidad"
+      ],
+      "correctIndex": 1,
+      "explanation": "La pertinencia funcional considera si las funciones proporcionadas ayudan a los usuarios a realizar sus tareas de manera eficaz. Un flujo innecesariamente complicado indica que la función no se adapta bien a la tarea."
+    },
+    {
+      "id": "al-ta-138",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.2.2",
+      "difficulty": "medium",
+      "question": "En la página de inicio, los usuarios nuevos no saben por dónde empezar su tarea principal. ¿Qué subcaracterística de usabilidad se ve MÁS amenazada?",
+      "options": [
+        "Capacidad de instalación, porque el usuario no encuentra cómo empezar a instalar el producto",
+        "Madurez",
+        "Confidencialidad",
+        "Capacidad de reconocimiento de la adecuación"
+      ],
+      "correctIndex": 3,
+      "explanation": "Si los usuarios no reconocen cómo empezar a utilizar el sistema para lograr sus objetivos, la capacidad de reconocimiento de la adecuación es deficiente. Es un problema de usabilidad, no de portabilidad."
+    },
+    {
+      "id": "al-ta-139",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.2.3",
+      "difficulty": "hard",
+      "question": "¿Qué idea de prueba aborda MEJOR la protección contra errores del usuario en una acción destructiva?",
+      "options": [
+        "Comprobar si la etiqueta del botón está en negrita y coincide con la guía de estilo",
+        "Medir el tiempo de CPU que tarda la solicitud de eliminación",
+        "Revisar la lista de verificación que utilizan los desarrolladores",
+        "Verificar que la eliminación requiera confirmación y ofrezca recuperación cuando corresponda"
+      ],
+      "correctIndex": 3,
+      "explanation": "La protección contra errores del usuario reduce la probabilidad o las consecuencias de cometer errores. La confirmación y la recuperación son comprobaciones habituales para operaciones destructivas."
+    },
+    {
+      "id": "al-ta-140",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.2.4",
+      "difficulty": "easy",
+      "question": "¿Por qué suele ser insuficiente un análisis automatizado de accesibilidad por sí solo?",
+      "options": [
+        "No puede comprobar en absoluto la estructura HTML ni los atributos de una página",
+        "Siempre produce falsos positivos y nada más",
+        "Puede pasar por alto problemas de uso real, como el flujo con lectores de pantalla y la interacción mediante teclado",
+        "Solo es pertinente para las pruebas de rendimiento"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las herramientas automatizadas son valiosas, pero no pueden evaluar por completo la accesibilidad en el uso real. Siguen siendo importantes las comprobaciones manuales de la calidad de la interacción y del uso de tecnologías de asistencia."
+    },
+    {
+      "id": "al-ta-141",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.3.1",
+      "difficulty": "medium",
+      "question": "Una aplicación de gestión documental impide que otra aplicación de contabilidad utilice correctamente el mismo controlador de impresora. ¿Qué subcaracterística de compatibilidad se ve MÁS afectada?",
+      "options": [
+        "Interoperabilidad",
+        "Coexistencia",
+        "Capacidad de aprendizaje",
+        "Capacidad de sustitución"
+      ],
+      "correctIndex": 1,
+      "explanation": "La coexistencia se refiere a si un producto puede funcionar bien en un entorno compartido sin perjudicar a otros productos. El conflicto con el controlador de impresora corresponde a este aspecto."
+    },
+    {
+      "id": "al-ta-142",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.3.2",
+      "difficulty": "hard",
+      "question": "Dos sistemas conectados intercambian fechas, pero uno espera DD/MM/AAAA y el otro MM/DD/AAAA. ¿En qué deben centrarse MÁS las pruebas de interoperabilidad?",
+      "options": [
+        "La frecuencia de las reuniones y los hábitos de comunicación entre los dos equipos de desarrollo",
+        "La distribución de la página únicamente en el lado emisor",
+        "La correspondencia de datos y la coherencia semántica entre los sistemas",
+        "Las advertencias del compilador en módulos no relacionados"
+      ],
+      "correctIndex": 2,
+      "explanation": "La interoperabilidad no consiste solo en enviar datos, sino también en compartir su significado. Las diferencias de formato de fecha son un riesgo típico de integración semántica."
+    },
+    {
+      "id": "al-ta-143",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.4.1",
+      "difficulty": "easy",
+      "question": "¿Qué escenario se dirige MEJOR a la capacidad de instalación?",
+      "options": [
+        "Verificar las fórmulas fiscales utilizadas al generar facturas para los clientes",
+        "Completar correctamente tanto una primera instalación como una actualización, y ofrecer una recuperación clara si se produce un fallo",
+        "Probar si un botón está centrado en la página",
+        "Revisar tendencias de defectos de otro proyecto"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de capacidad de instalación se centran en la facilidad para instalar, actualizar o recuperar el producto. Son importantes tanto las primeras instalaciones como las actualizaciones."
+    },
+    {
+      "id": "al-ta-144",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.4.2",
+      "difficulty": "medium",
+      "question": "Una aplicación web debe seguir siendo utilizable en un monitor de escritorio y en el navegador de una tableta, sin modificaciones del producto. ¿Qué subcaracterística de portabilidad es MÁS pertinente?",
+      "options": [
+        "Accesibilidad",
+        "Interoperabilidad",
+        "Adaptabilidad",
+        "Capacidad de recuperación"
+      ],
+      "correctIndex": 2,
+      "explanation": "La adaptabilidad se refiere a la capacidad del software para funcionar en distintos entornos sin modificaciones adicionales. Las variaciones de dispositivo y pantalla son un ejemplo habitual."
+    },
+    {
+      "id": "al-ta-145",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.4.3",
+      "difficulty": "hard",
+      "question": "Un equipo quiere sustituir un motor de informes por otro sin cambiar los flujos de trabajo de negocio dependientes. ¿Qué subcaracterística de portabilidad es MÁS pertinente?",
+      "options": [
+        "Protección contra errores del usuario",
+        "Capacidad de sustitución",
+        "Capacidad de reconocimiento de la adecuación",
+        "Coexistencia"
+      ],
+      "correctIndex": 1,
+      "explanation": "La capacidad de sustitución se refiere a la facilidad con la que un producto o componente puede reemplazarse por otro en el mismo entorno. Ese es el aspecto central del escenario."
+    },
+    {
+      "id": "al-ta-146",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.2.5",
+      "difficulty": "easy",
+      "question": "¿Qué evidencia respalda MÁS directamente la afirmación de que un flujo de trabajo es usable?",
+      "options": [
+        "Usuarios representativos completan tareas clave con poca ayuda y pocos errores evitables",
+        "El porcentaje de cobertura de código ha aumentado de forma constante en las últimas tres compilaciones",
+        "El proyecto terminó antes de lo previsto",
+        "Todos los archivos de registro se archivaron correctamente"
+      ],
+      "correctIndex": 0,
+      "explanation": "La usabilidad se demuestra mejor mediante evidencia del desempeño en tareas realistas. Completar las tareas con poca asistencia y pocos errores es una evidencia sólida."
+    },
+    {
+      "id": "al-ta-147",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.2.6",
+      "difficulty": "medium",
+      "question": "Una etiqueta de botón se alarga en alemán hasta ocultar parcialmente la acción principal. ¿Qué característica de calidad se ve afectada MÁS directamente?",
+      "options": [
+        "Portabilidad",
+        "Usabilidad",
+        "Madurez",
+        "Modularidad"
+      ],
+      "correctIndex": 1,
+      "explanation": "Si los cambios de localización hacen que una acción sea difícil de percibir o utilizar, el problema más directo es de usabilidad. Afecta a la interacción de los usuarios con la interfaz."
+    },
+    {
+      "id": "al-ta-148",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.2.7",
+      "difficulty": "hard",
+      "question": "¿Por qué las pruebas de usabilidad suelen requerir observación y heurísticas definidas en lugar de una única salida esperada exacta?",
+      "options": [
+        "Porque un equipo de analistas no puede probar la usabilidad de ninguna manera significativa",
+        "Porque las heurísticas deben sustituir todos los requisitos escritos del producto",
+        "Porque los resultados de usabilidad implican comportamiento y criterio humanos, no solo resultados fijos",
+        "Porque la observación solo es útil en las pruebas de seguridad"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de usabilidad suelen tratar sobre el comportamiento humano, la confusión y la eficiencia, aspectos que no siempre se representan mediante un único valor de salida exacto. La observación estructurada ayuda a fundamentar los veredictos."
+    },
+    {
+      "id": "al-ta-149",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.3.3",
+      "difficulty": "easy",
+      "question": "Un sistema asociado devuelve un valor de enumeración desconocido en una respuesta. ¿Qué debería esperar una buena prueba de interoperabilidad?",
+      "options": [
+        "Una gestión controlada con un error claro o un valor alternativo, sin corrupción de datos",
+        "La aceptación automática de cualquier valor desconocido sin registrar el dato inesperado",
+        "Un bloqueo de la aplicación para que el problema sea evidente",
+        "Un ciclo de reintentos silencioso e infinito"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una interoperabilidad sólida incluye la gestión segura de datos externos inesperados pero plausibles. Es preferible una respuesta controlada a la corrupción, el bloqueo o los reintentos interminables."
+    },
+    {
+      "id": "al-ta-150",
+      "chapter": "6. Pruebas de las características de calidad del software",
+      "loRef": "AL-TA-6.4.4",
+      "difficulty": "medium",
+      "question": "Después de desinstalar y volver a instalar el producto, se reutiliza incorrectamente una configuración obsoleta y falla la preparación. ¿Qué indica esto MÁS probablemente?",
+      "options": [
+        "Un defecto exclusivamente de seguridad, sin relación con la portabilidad ni la instalación",
+        "Un defecto de portabilidad relacionado con la capacidad de instalación o la migración de configuración",
+        "Solo un error tipográfico en la documentación de instalación",
+        "Un defecto en la lógica de una tabla de decisión"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los flujos de instalación y reinstalación forman parte de las características de calidad relacionadas con la portabilidad. El uso incorrecto de una configuración obsoleta apunta a un defecto de preparación o migración."
+    }
+  ]
+}

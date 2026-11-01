@@ -1,0 +1,1506 @@
+{
+  "moduleId": "ctfl",
+  "moduleName": "Probador Certificado, Nivel Básico (CTFL)",
+  "questions": [
+    {
+      "id": "ctfl-001",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.1.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes es la razón MÁS precisa por la que las pruebas son necesarias?",
+      "options": [
+        "Eliminan todos los defectos del software para que no quede nada que pueda fallar después de su publicación",
+        "Reducen el riesgo de una calidad deficiente al encontrar defectos y proporcionar información a las partes interesadas",
+        "Demuestran que el software se comportará correctamente para todos los usuarios en producción",
+        "Hacen innecesarias las revisiones y el análisis estático porque las pruebas dinámicas cubren lo mismo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas no pueden garantizar un software sin defectos ni eliminar todos los riesgos; su propósito es reducir el riesgo de problemas relacionados con la calidad al encontrar defectos y proporcionar información a las partes interesadas."
+    },
+    {
+      "id": "ctfl-002",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es la diferencia clave entre error, defecto y fallo?",
+      "options": [
+        "Un fallo produce un defecto en el código, y ese defecto da lugar a un error humano",
+        "Un error humano puede introducir un defecto, y la ejecución de ese defecto puede causar un fallo",
+        "Los tres términos son sinónimos y pueden usarse indistintamente en un informe de defectos",
+        "Las pruebas estáticas pueden encontrar un defecto, mientras que un fallo solo puede observarse mediante pruebas dinámicas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Un error humano puede introducir un defecto (fallo o bug) en un producto de trabajo; cuando se ejecuta el código que contiene un defecto, puede causar un fallo (una desviación observable del comportamiento esperado)."
+    },
+    {
+      "id": "ctfl-003",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.2.1",
+      "difficulty": "easy",
+      "question": "¿Qué afirmación sobre los siete principios de las pruebas es CORRECTA?",
+      "options": [
+        "Las pruebas exhaustivas son posibles cuando se redacta un conjunto de casos de prueba suficientemente grande",
+        "La paradoja del pesticida indica que volver a ejecutar pruebas idénticas aumenta con el tiempo su capacidad para encontrar defectos",
+        "Las pruebas tempranas apenas afectan al costo, porque corregir defectos cuesta lo mismo en cualquier etapa",
+        "Las pruebas pueden revelar defectos, pero no demostrar que no quede ninguno"
+      ],
+      "correctIndex": 3,
+      "explanation": "Uno de los siete principios de las pruebas establece que las pruebas pueden mostrar que hay defectos, pero no demostrar que no queda ninguno, aunque no se encuentre ningún defecto."
+    },
+    {
+      "id": "ctfl-004",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.2.1",
+      "difficulty": "medium",
+      "question": "El principio de la «paradoja del pesticida» en las pruebas establece que:",
+      "options": [
+        "Las mismas pruebas dejan de encontrar defectos nuevos, por lo que deben revisarse con regularidad",
+        "La calidad de los entornos de prueba se deteriora gradualmente y deben reconstruirse periódicamente",
+        "Las pruebas automatizadas no se ven afectadas porque los guiones se ejecutan siempre de la misma manera",
+        "Los probadores deben retirar cada caso de prueba después de una ejecución para mantener actualizado el conjunto"
+      ],
+      "correctIndex": 0,
+      "explanation": "El principio de la paradoja del pesticida señala que repetir las mismas pruebas acabará dejando de encontrar defectos nuevos, por lo que los casos de prueba deben revisarse, variarse y actualizarse periódicamente."
+    },
+    {
+      "id": "ctfl-005",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.4.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes opciones describe MEJOR un caso de prueba?",
+      "options": [
+        "Un documento que describe el alcance, el enfoque, los recursos y el calendario de las pruebas de todo un proyecto",
+        "Una herramienta que ejecuta automáticamente pruebas de regresión y guarda sus resultados para analizarlos después",
+        "Precondiciones, entradas, acciones, resultados esperados y poscondiciones de una condición de prueba",
+        "Un registro de un fallo observado durante la ejecución de pruebas, entregado al equipo de desarrollo para su investigación"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un caso de prueba es una especificación formal que incluye precondiciones, entradas/acciones, resultados esperados y poscondiciones, y se elabora para ejercitar una condición de prueba específica."
+    },
+    {
+      "id": "ctfl-006",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.5.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes actividades suele formar parte de la etapa de «análisis de pruebas» del proceso fundamental de pruebas?",
+      "options": [
+        "Ejecutar los casos de prueba preparados y registrar los resultados frente a los resultados esperados",
+        "Examinar la base de pruebas para identificar características y definir condiciones de prueba",
+        "Preparar el entorno de prueba y cargar los datos necesarios para la ejecución",
+        "Resumir los resultados de las pruebas para las partes interesadas al terminar el esfuerzo de pruebas"
+      ],
+      "correctIndex": 1,
+      "explanation": "El análisis de pruebas consiste en analizar la base de pruebas para identificar características comprobables y definir las condiciones de prueba correspondientes; responde a la pregunta «qué probar»."
+    },
+    {
+      "id": "ctfl-007",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.5.3",
+      "difficulty": "medium",
+      "question": "¿Durante qué actividad del proceso fundamental de pruebas se crean casos y procedimientos de prueba a partir de las condiciones de prueba?",
+      "options": [
+        "Seguimiento y control de pruebas",
+        "Diseño de pruebas",
+        "Finalización de pruebas",
+        "Implementación de pruebas"
+      ],
+      "correctIndex": 1,
+      "explanation": "El diseño de pruebas es la actividad en la que las condiciones de prueba se transforman en casos de prueba y otros productos de prueba; responde a la pregunta «cómo probar»."
+    },
+    {
+      "id": "ctfl-008",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.6.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes es una tarea típica de un probador y no de un responsable de pruebas?",
+      "options": [
+        "Definir la estrategia y la política generales de pruebas para todo el proyecto",
+        "Analizar y evaluar los requisitos y las especificaciones de diseño para determinar si se pueden probar",
+        "Asignar presupuesto y personal a las actividades de prueba planificadas",
+        "Elegir el grado de automatización de pruebas que se adoptará en toda la organización"
+      ],
+      "correctIndex": 1,
+      "explanation": "Revisar y analizar los requisitos y las especificaciones de diseño, diseñar pruebas y ejecutarlas son tareas típicas de un probador; la estrategia, la asignación de recursos y la política de automatización suelen corresponder a la gestión de pruebas."
+    },
+    {
+      "id": "ctfl-009",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.3.1",
+      "difficulty": "medium",
+      "question": "¿Por qué es importante considerar las habilidades y la mentalidad necesarias al asignar personal a las actividades de prueba?",
+      "options": [
+        "Las pruebas requieren una actitud destructiva en la que los probadores supongan que el equipo de desarrollo es descuidado",
+        "Lo mejor es dejar las pruebas al equipo de desarrollo, que conoce bien el código y la intención del diseño",
+        "La curiosidad, el pensamiento crítico y la atención al detalle, junto con conocimientos técnicos y del dominio",
+        "Las pruebas dependen de las habilidades técnicas, por lo que la comunicación apenas importa para los probadores"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas eficaces se benefician de probadores con una mentalidad crítica y curiosa, atención al detalle y conocimientos técnicos y del dominio pertinentes, además de buenas habilidades de comunicación."
+    },
+    {
+      "id": "ctfl-010",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.1.1",
+      "difficulty": "easy",
+      "question": "En un ciclo de vida de desarrollo de software iterativo, ¿cuándo deberían comenzar idealmente las actividades de prueba?",
+      "options": [
+        "Cuando se haya integrado un sistema completo y funcional al final del proyecto",
+        "Lo antes posible en la práctica, junto con el trabajo de desarrollo correspondiente en cada iteración",
+        "Solo en la última iteración, cuando el conjunto final de funciones sea lo bastante estable para probarlo",
+        "Después de la puesta en producción, para que el comportamiento real de los usuarios determine qué se prueba"
+      ],
+      "correctIndex": 1,
+      "explanation": "Independientemente del modelo de ciclo de vida, las actividades de prueba deberían comenzar lo antes posible, a menudo en paralelo con las actividades de desarrollo correspondientes (pruebas desde el inicio o shift-left)."
+    },
+    {
+      "id": "ctfl-011",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué caracteriza a un «nivel de prueba» en el contexto del ciclo de vida del software?",
+      "options": [
+        "Una clasificación de defectos según el daño que podrían causar a los usuarios",
+        "Un recuento de los casos de prueba ejecutados durante un único ciclo de ejecución",
+        "Un grupo de actividades de prueba organizado y gestionado conjuntamente, que comparte una base de pruebas",
+        "Otro nombre para una técnica de prueba, como el análisis de valores límite"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un nivel de prueba es un grupo de actividades de prueba organizadas y gestionadas conjuntamente (por ejemplo, pruebas de componentes, integración, sistema y aceptación); cada nivel tiene su propia base y sus propios objetos de prueba."
+    },
+    {
+      "id": "ctfl-012",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué nivel de prueba se centra principalmente en verificar las interacciones y las interfaces entre componentes o sistemas integrados?",
+      "options": [
+        "Pruebas de integración",
+        "Pruebas de componentes",
+        "Pruebas de aceptación",
+        "Pruebas del sistema de un único componente aislado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de integración se centran en las interacciones y las interfaces entre componentes (pruebas de integración de componentes) o entre sistemas (pruebas de integración de sistemas)."
+    },
+    {
+      "id": "ctfl-013",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.2.2",
+      "difficulty": "easy",
+      "question": "Las pruebas de aceptación suelen realizarse para:",
+      "options": [
+        "Encontrar tantos defectos de programación como sea posible en componentes individuales",
+        "Generar confianza en que el sistema satisface las necesidades de los usuarios, del negocio o normativas",
+        "Medir cuánto código fuente han ejercitado las pruebas unitarias",
+        "Sustituir las pruebas de sistema cuando el calendario es ajustado"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de aceptación suelen ser responsabilidad de clientes/usuarios o personal de operaciones y se centran en generar confianza en el sistema, no principalmente en encontrar defectos."
+    },
+    {
+      "id": "ctfl-014",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.2.3",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones es un ejemplo de un tipo de prueba funcional?",
+      "options": [
+        "Medir el tiempo de respuesta promedio de una búsqueda con una carga elevada de usuarios",
+        "Comprobar que el inicio de sesión acepta credenciales válidas y rechaza las no válidas",
+        "Revisar el código fuente para comprobar que cumple los estándares de programación del equipo",
+        "Comprobar que la aplicación se instala correctamente en cada plataforma compatible"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas funcionales evalúan las funciones que debe realizar el sistema, por ejemplo, verificar que la autenticación del inicio de sesión responde correctamente a determinadas entradas."
+    },
+    {
+      "id": "ctfl-015",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.2.3",
+      "difficulty": "medium",
+      "question": "Las pruebas no funcionales evalúan características como:",
+      "options": [
+        "La usabilidad, la eficiencia del rendimiento, la fiabilidad y la seguridad del sistema",
+        "Si una regla de negocio produce el resultado correcto para determinadas entradas",
+        "Si el código contiene instrucciones que nunca se pueden ejecutar",
+        "Si el documento de requisitos está completo y redactado de forma coherente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas no funcionales evalúan características de calidad como la usabilidad, la eficiencia del rendimiento, la fiabilidad, la seguridad, la compatibilidad y la portabilidad."
+    },
+    {
+      "id": "ctfl-016",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.2.4",
+      "difficulty": "medium",
+      "question": "Las pruebas de caja blanca se describen mejor como pruebas que:",
+      "options": [
+        "Se basan únicamente en la especificación, sin tener en cuenta cómo se ha construido el software",
+        "Se basan en el análisis de la estructura interna del objeto de prueba, como su código",
+        "Realizan los usuarios finales en el sistema en producción después de su publicación",
+        "Se centran en características de calidad como el rendimiento, y no en las funciones"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de caja blanca se derivan de la estructura interna o la implementación del objeto de prueba (por ejemplo, el código o la arquitectura) y la ejercitan, por ejemplo, mediante la cobertura de instrucciones o de ramas."
+    },
+    {
+      "id": "ctfl-017",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito principal de las pruebas de confirmación (repetición de pruebas)?",
+      "options": [
+        "Comprobar que las partes no relacionadas del sistema no se han visto afectadas por un cambio",
+        "Medir el rendimiento del sistema en condiciones de carga máxima",
+        "Comprobar que se ha corregido un defecto notificado anteriormente",
+        "Validar el cumplimiento de las normativas de seguridad aplicables"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de confirmación (repetición de pruebas) vuelven a ejecutar un caso de prueba que había fallado para confirmar que se ha corregido el defecto notificado."
+    },
+    {
+      "id": "ctfl-018",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.3.1",
+      "difficulty": "medium",
+      "question": "Las pruebas de regresión se realizan para:",
+      "options": [
+        "Comprobar que los cambios no hayan perjudicado funcionalidades que antes funcionaban",
+        "Encontrar defectos en funcionalidades que no existían antes del cambio",
+        "Sustituir las pruebas de confirmación una vez entregada una corrección",
+        "Ejecutarse una sola vez al final del proyecto como actividad de aprobación final"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de regresión comprueban que las funcionalidades que antes funcionaban sigan funcionando correctamente después de los cambios (por ejemplo, correcciones de defectos, mejoras o cambios del entorno)."
+    },
+    {
+      "id": "ctfl-019",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.4.1",
+      "difficulty": "hard",
+      "question": "En las pruebas de mantenimiento, el «análisis de impacto» se utiliza principalmente para:",
+      "options": [
+        "Evaluar los efectos de un cambio en el sistema existente, tanto previstos como imprevistos",
+        "Estimar cuánto costará una nueva herramienta de prueba dentro del presupuesto de pruebas",
+        "Elegir qué probadores se asignarán al proyecto de mantenimiento",
+        "Calcular cuántos casos de prueba requerirían las pruebas exhaustivas del sistema"
+      ],
+      "correctIndex": 0,
+      "explanation": "El análisis de impacto evalúa las consecuencias de los cambios realizados en un sistema y ayuda a determinar el alcance necesario de las pruebas de regresión durante el mantenimiento."
+    },
+    {
+      "id": "ctfl-020",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.1.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes es una característica clave de las pruebas estáticas?",
+      "options": [
+        "Necesitan que el software sometido a prueba se esté ejecutando en un entorno de prueba",
+        "Se aplican al código fuente, pero no se pueden usar con documentos de requisitos",
+        "En todos los casos dependen de herramientas especializadas de automatización de pruebas",
+        "Examinan productos de trabajo, como requisitos o código, sin ejecutarlos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas estáticas examinan un producto de trabajo (por ejemplo, requisitos, diseño, código o casos de prueba) manualmente o con ayuda de herramientas, sin ejecutar el código."
+    },
+    {
+      "id": "ctfl-021",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes defectos es MÁS probable que se encuentre mediante pruebas estáticas y no dinámicas?",
+      "options": [
+        "Una fuga de memoria que solo aparece después de 48 horas de ejecución continua",
+        "Tiempos de respuesta lentos cuando hay muchos usuarios activos al mismo tiempo",
+        "Una condición de carrera que solo aparece con una temporización concreta en producción",
+        "Un requisito ambiguo o ausente en una especificación"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las técnicas de pruebas estáticas, como las revisiones, son eficaces para encontrar defectos en requisitos y documentos de diseño, como ambigüedades, antes de ejecutar código alguno."
+    },
+    {
+      "id": "ctfl-022",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.2.1",
+      "difficulty": "medium",
+      "question": "En un proceso formal de revisión, ¿cuál es el propósito principal de la actividad de «inicio»?",
+      "options": [
+        "Corregir todos los defectos que hayan identificado los revisores en el producto de trabajo",
+        "Elaborar el informe final de revisión junto con las métricas recopiladas",
+        "Distribuir el producto de trabajo y asegurarse de que los participantes comprendan los objetivos",
+        "Cerrar formalmente la revisión y archivar después el producto de trabajo revisado"
+      ],
+      "correctIndex": 2,
+      "explanation": "La actividad de inicio reúne a los participantes, distribuye los documentos y explica los objetivos y el proceso de revisión para que todos comprendan sus funciones."
+    },
+    {
+      "id": "ctfl-023",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.2.2",
+      "difficulty": "medium",
+      "question": "¿Qué tipo de revisión suele ser el MÁS formal, normalmente la dirige un moderador con formación e incluye funciones y criterios de entrada y salida definidos?",
+      "options": [
+        "Revisión informal",
+        "Recorrido (walkthrough)",
+        "Revisión técnica",
+        "Inspección"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las inspecciones son el tipo de revisión más formal: siguen un proceso definido, cuentan con un moderador con formación, funciones establecidas, recopilación de métricas y criterios de entrada y salida."
+    },
+    {
+      "id": "ctfl-024",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.2.3",
+      "difficulty": "easy",
+      "question": "En una revisión formal, ¿qué función recopila las anomalías señaladas por los revisores y registra los defectos, las decisiones y los puntos pendientes durante la reunión?",
+      "options": [
+        "Responsable",
+        "Autor",
+        "Secretario (registrador)",
+        "Moderador (facilitador)"
+      ],
+      "correctIndex": 2,
+      "explanation": "El secretario (registrador) recopila y documenta los problemas, defectos, riesgos y puntos pendientes identificados durante la reunión de revisión."
+    },
+    {
+      "id": "ctfl-025",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.3.1",
+      "difficulty": "medium",
+      "question": "¿Qué factor es MÁS probable que contribuya al éxito del proceso de revisión en una organización?",
+      "options": [
+        "Omitir la formación de los revisores para reducir los costos de revisión",
+        "Exigir responsabilidades personales a los autores cuando se encuentran muchos defectos",
+        "El apoyo de la dirección, que proporciona tiempo y recursos suficientes para las revisiones",
+        "Omitir el seguimiento una vez registrados los defectos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Entre los factores de éxito de las revisiones se encuentran el apoyo de la dirección, la asignación de tiempo suficiente, un ambiente sin culpabilización y la formación adecuada de los participantes."
+    },
+    {
+      "id": "ctfl-026",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.1.1",
+      "difficulty": "easy",
+      "question": "Las técnicas de prueba de caja negra se basan principalmente en:",
+      "options": [
+        "El análisis de la especificación del objeto de prueba, no de su estructura interna",
+        "El análisis de la estructura del código interno y del flujo de control del objeto sometido a prueba",
+        "La experiencia y la intuición del probador, aplicadas sin ningún modelo ni documento formal",
+        "El lenguaje de programación y el entorno de trabajo en que se ha implementado el sistema"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las técnicas de caja negra derivan las condiciones y los casos de prueba del análisis de la base de pruebas (por ejemplo, las especificaciones), sin tener en cuenta la estructura interna del software."
+    },
+    {
+      "id": "ctfl-027",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.2.1",
+      "difficulty": "hard",
+      "question": "Un campo acepta valores enteros del 1 al 100, ambos inclusive. Mediante el análisis de valores límite (límites de dos valores), ¿qué conjunto cubre todos los puntos de prueba límite de este intervalo?",
+      "options": [
+        "1, 50, 100",
+        "-1, 0, 101, 102",
+        "0, 1, 100, 101",
+        "1, 2, 99, 100"
+      ],
+      "correctIndex": 2,
+      "explanation": "El análisis de valores límite de dos valores prueba los límites mínimo y máximo válidos y los valores no válidos inmediatamente fuera de ellos: 0 (justo por debajo del mínimo), 1 (mínimo), 100 (máximo) y 101 (justo por encima del máximo)."
+    },
+    {
+      "id": "ctfl-028",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.2.2",
+      "difficulty": "hard",
+      "question": "Un sistema clasifica las edades de las personas solicitantes como «Menor» (0-17), «Adulto» (18-64) y «Persona mayor» (65+). ¿Cuántas particiones de equivalencia existen para valores de edad válidos y cuántas se necesitan como mínimo para lograr la cobertura de particiones de equivalencia?",
+      "options": [
+        "3 particiones; al menos 3 casos de prueba, uno por partición",
+        "1 partición; basta un solo caso de prueba",
+        "3 particiones; se necesitan exactamente 6 casos de prueba, dos por partición",
+        "2 particiones; 2 casos de prueba, uno para menores y otro para adultos y personas mayores"
+      ],
+      "correctIndex": 0,
+      "explanation": "Hay tres particiones válidas (Menor, Adulto, Persona mayor). Para alcanzar la cobertura mínima de particiones de equivalencia se requiere al menos un caso de prueba por partición, es decir, un mínimo de 3 casos."
+    },
+    {
+      "id": "ctfl-029",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.2.3",
+      "difficulty": "hard",
+      "question": "Una tabla de decisión tiene las condiciones C1 y C2, cada una con valores verdadero/falso, que producen 4 reglas. ¿Qué nivel de cobertura se alcanza si se diseña un caso de prueba para CADA regla (columna) de la tabla?",
+      "options": [
+        "100 % de cobertura de la tabla de decisión",
+        "0 % de cobertura de la tabla de decisión",
+        "50 % de cobertura de la tabla de decisión",
+        "La cobertura de las tablas de decisión no se puede medir"
+      ],
+      "correctIndex": 0,
+      "explanation": "La cobertura de la tabla de decisión se calcula dividiendo el número de reglas probadas entre el número total de reglas. Probar las 4 reglas (un caso por regla) alcanza el 100 % de cobertura."
+    },
+    {
+      "id": "ctfl-030",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.2.4",
+      "difficulty": "medium",
+      "question": "Las pruebas de transición de estado son MÁS adecuadas para probar un sistema en el que:",
+      "options": [
+        "La salida depende únicamente de la entrada actual, independientemente de lo ocurrido anteriormente en el sistema",
+        "El software no tiene estados distinguibles, por lo que su comportamiento no se puede modelar de esta manera",
+        "El comportamiento depende del estado actual y de los eventos anteriores, dentro de un conjunto finito de estados",
+        "Solo es necesario comprobar características de rendimiento, como el caudal y la latencia"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de transición de estado se utilizan con sistemas que se pueden modelar mediante un número finito de estados y transiciones entre ellos, cuyo comportamiento depende del estado actual y del historial (por ejemplo, el bloqueo de inicio de sesión)."
+    },
+    {
+      "id": "ctfl-031",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.3.1",
+      "difficulty": "medium",
+      "question": "La cobertura de instrucciones mide:",
+      "options": [
+        "El porcentaje de resultados de decisión ejercitados por el conjunto de pruebas",
+        "El porcentaje de instrucciones ejecutables ejercitadas por el conjunto de pruebas",
+        "El porcentaje de requisitos que tienen al menos un caso de prueba",
+        "El porcentaje de particiones de equivalencia ejercitadas por el conjunto de pruebas"
+      ],
+      "correctIndex": 1,
+      "explanation": "La cobertura de instrucciones mide el porcentaje de instrucciones ejecutables que ha ejercitado un conjunto de pruebas; es un criterio de cobertura de caja blanca (basado en la estructura)."
+    },
+    {
+      "id": "ctfl-032",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.3.2",
+      "difficulty": "hard",
+      "question": "Considere: IF (a > 0 AND b > 0) THEN ... Para alcanzar el 100 % de cobertura de decisión (ramas) de esta decisión se necesita, como MÍNIMO:",
+      "options": [
+        "1 caso de prueba, porque una sola instrucción IF tiene una única rama",
+        "2 casos de prueba: uno que haga verdadera la decisión y otro que la haga falsa",
+        "4 casos de prueba, que cubran todas las combinaciones de las dos condiciones",
+        "Un caso de prueba por cada instrucción del código"
+      ],
+      "correctIndex": 1,
+      "explanation": "La cobertura de decisión requiere ejercitar al menos una vez cada resultado de la decisión (verdadero y falso). Para una sola instrucción IF se necesitan como mínimo 2 casos de prueba, independientemente del número de condiciones que la compongan."
+    },
+    {
+      "id": "ctfl-033",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.4.1",
+      "difficulty": "medium",
+      "question": "Las pruebas exploratorias se describen MEJOR como un enfoque en el que:",
+      "options": [
+        "Los casos de prueba se guionizan por completo y se aprueban formalmente antes de permitir cualquier ejecución",
+        "Las herramientas generan y ejecutan todas las pruebas sin que intervenga ningún probador",
+        "Los probadores diseñan y ejecutan pruebas, y aprenden de ellas al mismo tiempo, utilizando los hallazgos para orientar las pruebas posteriores",
+        "Las pruebas se limitan al nivel unitario y las realiza el equipo de desarrollo que escribió el código"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas exploratorias son una técnica basada en la experiencia: los probadores diseñan y ejecutan pruebas de forma dinámica a partir de sus conocimientos y de la información que obtienen durante las pruebas, que orienta el diseño posterior."
+    },
+    {
+      "id": "ctfl-034",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.4.2",
+      "difficulty": "medium",
+      "question": "Las pruebas basadas en listas de comprobación se apoyan en:",
+      "options": [
+        "Un modelo formal de particiones de entrada válidas y no válidas",
+        "Un criterio matemático de cobertura aplicado al código fuente",
+        "Guiones de prueba generados automáticamente a partir de los requisitos",
+        "La experiencia del probador y una lista de elementos que orientan el diseño y la ejecución"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas basadas en listas de comprobación son una técnica basada en la experiencia. Los probadores diseñan y ejecutan pruebas para cubrir los elementos de una lista derivada de la experiencia, las normas o los problemas conocidos."
+    },
+    {
+      "id": "ctfl-035",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una finalidad típica de un plan de pruebas?",
+      "options": [
+        "Describir el alcance, los objetivos, el enfoque, los recursos y el calendario de las actividades de prueba",
+        "Registrar cada defecto encontrado hasta el momento en la versión actual del producto",
+        "Sustituir la estrategia general de pruebas de la organización para todos sus proyectos",
+        "Especificar detalladamente cómo se implementará en código el sistema sometido a prueba"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un plan de pruebas describe el alcance, el enfoque, los objetivos, los recursos y el calendario de las actividades de prueba previstas, e identifica, entre otros aspectos, los elementos de prueba, las características que se probarán, las tareas y los riesgos."
+    },
+    {
+      "id": "ctfl-036",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.2.1",
+      "difficulty": "hard",
+      "question": "Un riesgo de producto en las pruebas de software se describe MEJOR como un riesgo relacionado con:",
+      "options": [
+        "La gestión y el control del propio proyecto de pruebas, como la dotación de personal o los retrasos del calendario",
+        "La fricción entre departamentos de la organización que ralentiza la toma de decisiones del proyecto",
+        "La calidad del objeto de prueba, por ejemplo, que el software no realice una función requerida",
+        "Los costos de licencia de las herramientas de prueba que el equipo tiene previsto utilizar en el proyecto"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los riesgos de producto están directamente relacionados con el objeto de prueba (la calidad del producto), como la posibilidad de que el software no realice correctamente las funciones previstas."
+    },
+    {
+      "id": "ctfl-037",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones es un ejemplo de riesgo de PROYECTO y no de riesgo de producto?",
+      "options": [
+        "La aplicación podría responder demasiado lento cuando muchos usuarios están activos al mismo tiempo",
+        "La función de inicio de sesión podría aceptar erróneamente una contraseña incorrecta de una persona atacante",
+        "Un probador clave podría marcharse antes de que termine la ejecución de las pruebas, lo que retrasaría el calendario",
+        "El sistema podría ser vulnerable a ataques de inyección SQL a través del campo de búsqueda"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los riesgos de proyecto se relacionan con la gestión y el control del proyecto de pruebas, como la dotación de personal, las habilidades, la organización o la planificación; los demás casos describen riesgos de calidad del producto."
+    },
+    {
+      "id": "ctfl-038",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito principal de hacer seguimiento a los criterios de entrada y salida durante la ejecución de pruebas?",
+      "options": [
+        "Seleccionar el lenguaje de programación que se usará para escribir los guiones de automatización",
+        "Calcular cuánto debería cobrar cada integrante del equipo de pruebas este trimestre",
+        "Eliminar la necesidad de elaborar un informe de resumen de pruebas al final de las pruebas",
+        "Determinar cuándo puede comenzar una actividad de prueba y cuándo puede considerarse terminada"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los criterios de entrada definen las precondiciones para comenzar una actividad de prueba, mientras que los criterios de salida definen qué se debe cumplir para considerarla terminada; ambos ayudan a gestionar y controlar las pruebas."
+    },
+    {
+      "id": "ctfl-039",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.4.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes campos suele aparecer en un informe de defectos?",
+      "options": [
+        "La evaluación del rendimiento del probador en su última revisión",
+        "Identificador único, descripción del fallo, pasos para reproducirlo, resultado esperado frente al real y gravedad",
+        "Material de marketing del proveedor de la herramienta de prueba",
+        "El código fuente completo de la aplicación sometida a prueba"
+      ],
+      "correctIndex": 1,
+      "explanation": "Un informe de defectos suele incluir un identificador único, una descripción del fallo, pasos para reproducirlo, resultados esperados y reales, gravedad, prioridad y estado, entre otros campos."
+    },
+    {
+      "id": "ctfl-040",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es un RIESGO potencial de introducir una nueva herramienta de prueba en una organización sin evaluarla debidamente?",
+      "options": [
+        "La herramienta corrige los defectos que encuentra sin que tenga que intervenir el equipo de desarrollo",
+        "Expectativas poco realistas, esfuerzo de mantenimiento subestimado y dependencia excesiva",
+        "El uso de la herramienta elimina de inmediato los costos de prueba una vez realizada la compra",
+        "Introducir una herramienta de prueba no supone ningún riesgo significativo para el calendario o el presupuesto del proyecto"
+      ],
+      "correctIndex": 1,
+      "explanation": "Entre los riesgos de introducir una herramienta se encuentran las expectativas poco realistas, la subestimación del tiempo, el costo y el esfuerzo de mantenimiento, la dependencia excesiva de la herramienta y no evaluarla adecuadamente antes de adoptarla."
+    },
+    {
+      "id": "ctfl-041",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.2.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes es una categoría de herramientas que brinda apoyo específico a la ejecución y al registro de pruebas?",
+      "options": [
+        "Herramientas de ejecución de pruebas que ejecutan pruebas y registran los resultados",
+        "Herramientas de gestión de requisitos que almacenan y permiten trazar requisitos",
+        "Editores de código fuente que utiliza el equipo de desarrollo",
+        "Herramientas de planificación de proyectos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las herramientas de ejecución de pruebas ejecutan pruebas automáticamente, comparan los resultados reales con los esperados y registran los resultados, a diferencia de otras categorías, como las herramientas de gestión de requisitos o de proyectos."
+    },
+    {
+      "id": "ctfl-042",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.1.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes opciones explica mejor por qué las pruebas contribuyen al aseguramiento de la calidad?",
+      "options": [
+        "Las pruebas son lo mismo que el aseguramiento de la calidad, por lo que lo hacen redundante",
+        "Las pruebas solo comienzan cuando han terminado todas las actividades de aseguramiento de la calidad",
+        "Las pruebas y el aseguramiento de la calidad no guardan relación ni comparten información",
+        "Las pruebas son una actividad de calidad entre varias y proporcionan información para mejorar"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas son una actividad de control de calidad que proporciona información objetiva a las partes interesadas. El aseguramiento de la calidad es más amplio y se centra en mejorar los procesos; los resultados de las pruebas contribuyen a ello."
+    },
+    {
+      "id": "ctfl-043",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.1.3",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación sobre la relación entre las pruebas y la depuración es CORRECTA?",
+      "options": [
+        "La depuración es una actividad de prueba que realizan los probadores para encontrar defectos nuevos",
+        "Las pruebas y la depuración son una sola actividad que normalmente realiza la misma persona",
+        "Las pruebas revelan fallos; la depuración encuentra y corrige la causa",
+        "La depuración se realiza antes de las pruebas en todos los modelos del ciclo de vida del desarrollo de software"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas pueden mostrar que se producen fallos, pero localizar el defecto subyacente y corregirlo (depuración) suele ser una actividad de desarrollo distinta de las pruebas."
+    },
+    {
+      "id": "ctfl-044",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.1.2",
+      "difficulty": "medium",
+      "question": "Un probador introduce una fecha válida, pero el sistema la rechaza debido a un error de programación en la lógica de validación de fechas. ¿Cuál es el término CORRECTO para referirse al propio error de programación?",
+      "options": [
+        "Un defecto (fallo)",
+        "Un fallo",
+        "Un error (equivocación)",
+        "Un riesgo"
+      ],
+      "correctIndex": 0,
+      "explanation": "El código defectuoso es el defecto (o fallo); el error humano que lo introdujo es el error, y el comportamiento incorrecto observable al ejecutarlo es el fallo."
+    },
+    {
+      "id": "ctfl-045",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siete principios de las pruebas establece que los defectos tienden a concentrarse en un pequeño número de módulos?",
+      "options": [
+        "Falacia de ausencia de errores",
+        "Las pruebas dependen del contexto",
+        "Las pruebas exhaustivas son imposibles",
+        "Agrupación de defectos"
+      ],
+      "correctIndex": 3,
+      "explanation": "La agrupación de defectos señala que, por lo general, un pequeño número de módulos contiene la mayoría de los defectos encontrados o es responsable de la mayoría de los fallos operativos, de forma similar al principio de Pareto."
+    },
+    {
+      "id": "ctfl-046",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.2.1",
+      "difficulty": "medium",
+      "question": "El principio de las pruebas denominado «falacia de ausencia de errores» advierte que:",
+      "options": [
+        "Un sistema sin defectos conocidos puede considerarse listo para su publicación a los usuarios",
+        "Corregir defectos aporta poco valor si el sistema sigue sin satisfacer las necesidades de los usuarios",
+        "El software no puede tener cero defectos, así que no vale la pena buscarlos",
+        "Los defectos tienden a aparecer en los mismos pocos módulos cada vez que se prueba una versión"
+      ],
+      "correctIndex": 1,
+      "explanation": "Incluso un sistema sin defectos puede no satisfacer las necesidades de los usuarios, ser difícil de usar o incumplir los requisitos del negocio; por tanto, eliminar defectos por sí solo no basta para tener éxito."
+    },
+    {
+      "id": "ctfl-047",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.2.1",
+      "difficulty": "easy",
+      "question": "¿Qué principio de las pruebas establece que las actividades de prueba deben variar según el dominio de aplicación, por ejemplo, probando de manera distinta un sistema crítico para la seguridad y un sitio de comercio electrónico?",
+      "options": [
+        "Las pruebas muestran la presencia de defectos",
+        "Las pruebas tempranas ahorran tiempo y dinero",
+        "La paradoja del pesticida",
+        "Las pruebas dependen del contexto"
+      ],
+      "correctIndex": 3,
+      "explanation": "El principio «las pruebas dependen del contexto» reconoce que el alcance, las técnicas y el rigor de las pruebas deben adaptarse al contexto específico, como la criticidad para la seguridad, las normativas o los riesgos."
+    },
+    {
+      "id": "ctfl-048",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.3.1",
+      "difficulty": "medium",
+      "question": "¿Por qué podrían los probadores independientes (por ejemplo, un equipo de pruebas separado) encontrar defectos distintos de los que encuentra el equipo de desarrollo que escribió el código?",
+      "options": [
+        "Los probadores independientes conocen menos los requisitos, por lo que prueban de forma más amplia",
+        "Se prohíbe a los probadores independientes hablar con el equipo de desarrollo",
+        "La independencia garantiza que se encontrarán todos los defectos del producto",
+        "La independencia reduce el sesgo de autoría y aporta una perspectiva nueva sobre el trabajo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Cierto grado de independencia suele ayudar a los probadores a identificar defectos que los autores pasan por alto debido a su familiaridad y a sus suposiciones sobre su propio trabajo, aunque la independencia total no siempre es viable ni conveniente."
+    },
+    {
+      "id": "ctfl-049",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.4.2",
+      "difficulty": "easy",
+      "question": "En la terminología de pruebas, una «condición de prueba» es:",
+      "options": [
+        "Un aspecto comprobable de un componente o sistema, como una función, en el que se pueden basar las pruebas",
+        "Un valor de entrada específico que se utiliza en un único caso de prueba durante la ejecución",
+        "El resultado final de aprobado o fallido de un caso de prueba después de ejecutarlo por completo",
+        "El entorno físico o virtual en el que se ejecutarán las pruebas planificadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una condición de prueba es un aspecto comprobable (por ejemplo, una función, una transacción o un atributo no funcional) identificado a partir de la base de pruebas, del que luego se derivan casos de prueba."
+    },
+    {
+      "id": "ctfl-050",
+      "chapter": "1. Fundamentos de las pruebas",
+      "loRef": "FL-1.5.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones describe MEJOR una «base de pruebas»?",
+      "options": [
+        "El hardware y la infraestructura en los que se ejecutarán las pruebas planificadas",
+        "El informe que resume los resultados de las pruebas para las partes interesadas al finalizarlas",
+        "La información que se utiliza como referencia para el análisis y el diseño de pruebas, como los requisitos",
+        "La herramienta que se utiliza para gestionar los casos de prueba y hacer seguimiento de su estado de ejecución"
+      ],
+      "correctIndex": 2,
+      "explanation": "La base de pruebas es toda la información (especificaciones de requisitos, documentos de diseño, historias de usuario, análisis de riesgos, etc.) que se utiliza como fuente para derivar condiciones y casos de prueba."
+    },
+    {
+      "id": "ctfl-051",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.1.3",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una ventaja de utilizar un modelo bien definido del ciclo de vida del desarrollo de software al planificar las pruebas?",
+      "options": [
+        "Evita que sea necesario actualizar el plan de pruebas a medida que avanza el proyecto",
+        "Ayuda a determinar cuándo deben realizarse las pruebas en relación con las actividades de desarrollo",
+        "Garantiza que no se introduzcan defectos en el código durante el desarrollo",
+        "Elimina la necesidad de un entorno de prueba específico para el proyecto"
+      ],
+      "correctIndex": 1,
+      "explanation": "Comprender el modelo del ciclo de vida (por ejemplo, secuencial o iterativo) ayuda a los probadores a saber cuándo planificar, diseñar y ejecutar pruebas en relación con las actividades de desarrollo correspondientes."
+    },
+    {
+      "id": "ctfl-052",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.1.4",
+      "difficulty": "medium",
+      "question": "En un contexto de DevOps con entrega continua, ¿por qué es especialmente importante un alto nivel de automatización de pruebas?",
+      "options": [
+        "DevOps descarta por completo las pruebas manuales, así que todas las comprobaciones deben guionizarse de antemano",
+        "DevOps elimina la necesidad de cualquier tipo de prueba antes de entregar una versión",
+        "Los ciclos de entrega rápidos y frecuentes requieren una retroalimentación rápida que las pruebas manuales no pueden proporcionar",
+        "Las pruebas automatizadas no requieren mantenimiento, lo que mantiene barato el proceso de entrega"
+      ],
+      "correctIndex": 2,
+      "explanation": "DevOps y la entrega continua dependen de compilaciones y publicaciones rápidas y frecuentes; se necesita un conjunto sólido de pruebas automatizadas para proporcionar la retroalimentación rápida que exigen estos ciclos cortos."
+    },
+    {
+      "id": "ctfl-053",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes suele ser una base de pruebas para las pruebas de componentes (unitarias)?",
+      "options": [
+        "Documentos de requisitos del negocio y de necesidades de los usuarios",
+        "Criterios de aceptación de usuarios y escenarios de negocio",
+        "Diseño detallado, código y modelos de datos",
+        "Informes de incidentes de producción del servicio en funcionamiento"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de componentes suelen basarse en especificaciones de diseño detallado, el propio código y modelos de datos, ya que se centran en componentes individuales de forma aislada."
+    },
+    {
+      "id": "ctfl-054",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.2.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones describe MEJOR las «pruebas de aceptación operativa»?",
+      "options": [
+        "Pruebas que realizan los usuarios finales para validar sus propios procesos y flujos de trabajo del negocio",
+        "Pruebas que se llevan a cabo para demostrar el cumplimiento de requisitos legales o normativos",
+        "Pruebas realizadas durante la integración de componentes para comprobar las interfaces entre las partes",
+        "Pruebas de aspectos operativos como las copias de seguridad, la restauración y la recuperación ante desastres"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de aceptación operativa se centran en aspectos operativos, como las copias de seguridad y la restauración, la recuperación ante desastres, la gestión de usuarios y las tareas de mantenimiento. Suelen realizarlas administradores de sistemas."
+    },
+    {
+      "id": "ctfl-055",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.2.4",
+      "difficulty": "medium",
+      "question": "¿Qué combinación de tipo de prueba y ejemplo está CORRECTAMENTE emparejada?",
+      "options": [
+        "Pruebas funcionales: verificar que el total de un carrito de compras se calcula correctamente",
+        "Pruebas no funcionales: verificar que una regla de negocio aplica el descuento correcto",
+        "Pruebas de caja blanca: verificar que el sistema cumple los requisitos de usabilidad",
+        "Pruebas relacionadas con cambios: verificar por primera vez una función completamente nueva"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verificar que una función específica (calcular un total) produce el resultado correcto es un ejemplo de prueba funcional; las demás opciones emparejan un tipo de prueba con un ejemplo inadecuado."
+    },
+    {
+      "id": "ctfl-056",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.2.4",
+      "difficulty": "easy",
+      "question": "¿Qué característica de calidad evaluaría PRINCIPALMENTE una «prueba de seguridad»?",
+      "options": [
+        "Si los datos y los recursos están protegidos contra el acceso no autorizado",
+        "Si la interfaz de usuario sigue las pautas de imagen corporativa",
+        "Si el software se instala en varios sistemas operativos",
+        "Si los tiempos de respuesta se mantienen dentro del objetivo bajo carga"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de seguridad evalúan la confidencialidad, la integridad, la autenticidad y otros aspectos relacionados con la protección de datos y recursos contra el acceso no autorizado."
+    },
+    {
+      "id": "ctfl-057",
+      "chapter": "2. Pruebas a lo largo del ciclo de vida del software",
+      "loRef": "FL-2.3.1",
+      "difficulty": "hard",
+      "question": "Una empresa decide volver a ejecutar automáticamente un subconjunto de pruebas cada vez que se confirma un cambio de código. ¿Cuál es la mejor descripción?",
+      "options": [
+        "Pruebas de regresión integradas en un flujo de integración continua",
+        "Pruebas de confirmación de un defecto corregido en la confirmación más reciente",
+        "Pruebas de aceptación realizadas por usuarios del negocio con cada confirmación de código",
+        "Pruebas de mantenimiento posteriores a la publicación del software en producción"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ejecutar automáticamente un subconjunto de pruebas con cada confirmación de código para detectar efectos secundarios no deseados de los cambios es una forma de pruebas de regresión, que suele integrarse en los flujos de CI."
+    },
+    {
+      "id": "ctfl-058",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.1.1",
+      "difficulty": "easy",
+      "question": "¿Qué productos de trabajo se pueden examinar normalmente mediante técnicas de pruebas estáticas?",
+      "options": [
+        "Código fuente ejecutable del repositorio",
+        "Archivos binarios compilados generados por la compilación",
+        "Archivos de registro de producción del sistema en funcionamiento",
+        "Requisitos, historias de usuario, código y planes de prueba"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las técnicas de pruebas estáticas, como las revisiones y el análisis estático, se pueden aplicar a muchos tipos de productos de trabajo, incluidos requisitos, historias de usuario, documentos de diseño, código y documentación de pruebas."
+    },
+    {
+      "id": "ctfl-059",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una ventaja de las pruebas estáticas frente a las pruebas dinámicas?",
+      "options": [
+        "Pueden medir el rendimiento real en tiempo de ejecución y el uso de recursos del sistema en ejecución",
+        "Siempre encuentran más defectos que las pruebas dinámicas en cualquier tipo de proyecto",
+        "Hacen innecesarias las pruebas dinámicas una vez concluidas las revisiones",
+        "Encuentran defectos antes de que se pueda ejecutar el código, lo que reduce el costo de corregirlos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas estáticas se pueden realizar antes de que exista código o de que este sea ejecutable, lo que permite encontrar y corregir antes y a menor costo defectos en requisitos o diseño que si se encontraran más tarde mediante pruebas dinámicas."
+    },
+    {
+      "id": "ctfl-060",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.2.1",
+      "difficulty": "medium",
+      "question": "Durante la actividad de «revisión individual» (preparación) de una revisión formal, los participantes principalmente:",
+      "options": [
+        "Examinan el producto de trabajo por su cuenta con antelación y anotan defectos y preguntas",
+        "Se reúnen en grupo para analizar el producto de trabajo y registrar todos los defectos encontrados",
+        "Aprueban formalmente el producto de trabajo para que pase a la siguiente fase",
+        "Aplican correcciones a los defectos que ya han encontrado los demás participantes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Durante la revisión individual (preparación), cada participante examina por su cuenta el producto de trabajo antes de la reunión de revisión e identifica posibles defectos, preguntas y comentarios para la reunión."
+    },
+    {
+      "id": "ctfl-061",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.2.3",
+      "difficulty": "easy",
+      "question": "En una revisión formal, ¿qué función suele ser responsable del producto de trabajo revisado y de corregir los defectos identificados?",
+      "options": [
+        "El moderador",
+        "El revisor",
+        "El responsable",
+        "El autor"
+      ],
+      "correctIndex": 3,
+      "explanation": "El autor creó el producto de trabajo objeto de revisión y, por lo general, es responsable de resolver (corregir) los defectos encontrados."
+    },
+    {
+      "id": "ctfl-062",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.2.2",
+      "difficulty": "medium",
+      "question": "Un «recorrido» (walkthrough), como tipo de revisión, suele caracterizarse por:",
+      "options": [
+        "La dirección de la sesión por parte del autor, a menudo con el objetivo informal de generar consenso o enseñar",
+        "Un proceso formal con criterios estrictos de entrada y salida, dirigido por un moderador con formación",
+        "La ausencia del autor en la sesión para que los revisores puedan hablar con libertad",
+        "El análisis del producto de trabajo mediante herramientas, sin participantes humanos"
+      ],
+      "correctIndex": 0,
+      "explanation": "En un recorrido, normalmente el autor dirige la sesión con el objetivo de obtener comentarios, generar consenso o enseñar a los participantes; suele ser menos formal que una inspección."
+    },
+    {
+      "id": "ctfl-063",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.2.4",
+      "difficulty": "medium",
+      "question": "¿Qué factor se suele tener en cuenta al decidir el grado de formalidad de una revisión para un producto de trabajo determinado?",
+      "options": [
+        "El número de participantes que estén disponibles ese día",
+        "Si el moderador prefiere las reuniones formales a las conversaciones informales",
+        "El lenguaje de programación y el entorno de trabajo utilizados por el equipo de desarrollo",
+        "La madurez del proceso, la criticidad del producto de trabajo y los requisitos normativos"
+      ],
+      "correctIndex": 3,
+      "explanation": "La formalidad de la revisión suele elegirse en función de factores como el modelo del ciclo de vida, la madurez del proceso, la criticidad del producto de trabajo, los requisitos legales y normativos y las limitaciones de tiempo y presupuesto."
+    },
+    {
+      "id": "ctfl-064",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones favorece MEJOR una cultura de revisión sin culpabilización que ayude a que las revisiones tengan éxito?",
+      "options": [
+        "Clasificar públicamente a los autores según el número de defectos encontrados en su trabajo",
+        "Exigir que los autores justifiquen cada comentario ante el equipo directivo",
+        "No proporcionar ningún comentario a los autores para evitar que se sientan criticados",
+        "Centrar los comentarios en el producto de trabajo, no en la persona, y valorar los defectos encontrados"
+      ],
+      "correctIndex": 3,
+      "explanation": "Una cultura de revisión eficaz considera los defectos encontrados como contribuciones valiosas para mejorar el producto de trabajo y se centra objetivamente en el artefacto, en vez de criticar personalmente al autor."
+    },
+    {
+      "id": "ctfl-065",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.1.2",
+      "difficulty": "hard",
+      "question": "Un documento de requisitos indica: «el sistema debe responder rápidamente a las solicitudes de los usuarios». ¿Qué tipo de defecto señalaría con MÁS probabilidad una revisión estática?",
+      "options": [
+        "Un defecto de rendimiento que solo las pruebas de carga podrían llegar a revelar",
+        "Una vulnerabilidad de seguridad en la forma en que el sistema gestiona las solicitudes entrantes",
+        "Un defecto de regresión introducido por un cambio reciente en el código",
+        "Una ambigüedad, ya que «rápidamente» no es medible ni comprobable tal como está redactado"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas estáticas son eficaces para detectar requisitos ambiguos o no comprobables, como un término vago y no medible como «rápidamente», antes de escribir código alguno."
+    },
+    {
+      "id": "ctfl-066",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.2.3",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes opciones describe MEJOR la responsabilidad habitual de la función de «responsable» en una revisión formal?",
+      "options": [
+        "Registrar los defectos y los puntos pendientes señalados durante la reunión de revisión",
+        "Corregir después todos los defectos identificados por los revisores",
+        "Decidir qué revisiones se realizarán, asignar recursos y comprobar que se cumplan los objetivos",
+        "Dirigir la reunión de revisión y moderar el debate entre los participantes"
+      ],
+      "correctIndex": 2,
+      "explanation": "El responsable suele decidir qué elementos se revisarán, asignar tiempo y recursos para las revisiones dentro de los calendarios del proyecto y evaluar si se cumplen los objetivos de revisión."
+    },
+    {
+      "id": "ctfl-067",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué tipo de problema detectan habitualmente las herramientas de análisis estático en el código fuente SIN ejecutarlo?",
+      "options": [
+        "Código inalcanzable, variables no declaradas e incumplimientos de estándares de programación",
+        "Uso de memoria del sistema en ejecución con carga máxima en el entorno de prueba",
+        "El nivel de satisfacción de los usuarios finales con la interfaz que se les ha proporcionado",
+        "Tiempos de respuesta de transacciones de negocio concretas mientras se ejecuta el sistema"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las herramientas de análisis estático examinan la estructura del código sin ejecutarlo y suelen detectar problemas como código inalcanzable, variables no utilizadas e incumplimientos de estándares de programación."
+    },
+    {
+      "id": "ctfl-068",
+      "chapter": "3. Pruebas estáticas",
+      "loRef": "FL-3.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué suele ocurrir durante la actividad de «seguimiento» al final de un proceso formal de revisión?",
+      "options": [
+        "No se hace nada más, porque la revisión se considera terminada al concluir la reunión",
+        "Se comprueba que se hayan gestionado los defectos y se recopilan métricas sobre la propia revisión",
+        "Se programa la reunión de inicio para la siguiente revisión del próximo producto de trabajo",
+        "Se envía por primera vez el producto de trabajo a los revisores para que puedan empezar"
+      ],
+      "correctIndex": 1,
+      "explanation": "El seguimiento confirma que los defectos se hayan gestionado adecuadamente (corregidos, aplazados o rechazados con justificación) y recopila métricas para comprobar si se cumplen los criterios de salida y mejorar futuras revisiones."
+    },
+    {
+      "id": "ctfl-069",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación distingue CORRECTAMENTE las técnicas de prueba de caja negra, de caja blanca y basadas en la experiencia?",
+      "options": [
+        "Las técnicas de caja negra utilizan la estructura interna del código, mientras que las de caja blanca solo utilizan especificaciones",
+        "Las técnicas de caja negra usan especificaciones, las de caja blanca usan la estructura y las basadas en la experiencia usan los conocimientos del probador",
+        "Las tres categorías son funcionalmente iguales y solo se diferencian en el nombre",
+        "Las técnicas basadas en la experiencia solo se pueden aplicar a pruebas no funcionales"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las técnicas de caja negra se basan en especificaciones, las de caja blanca se basan en la estructura y las técnicas basadas en la experiencia aprovechan las habilidades, la intuición y la experiencia del probador con sistemas o defectos similares."
+    },
+    {
+      "id": "ctfl-070",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.2.1",
+      "difficulty": "hard",
+      "question": "Un campo de contraseña debe tener entre 8 y 20 caracteres. Mediante el análisis de valores límite con límites de dos valores, ¿qué valores se deben probar para el límite MÍNIMO?",
+      "options": [
+        "8 y 9",
+        "7 y 8",
+        "1 y 8",
+        "19 y 20"
+      ],
+      "correctIndex": 1,
+      "explanation": "El análisis de valores límite de dos valores para un mínimo de 8 comprueba el valor no válido inmediatamente inferior (7) y el mínimo válido (8)."
+    },
+    {
+      "id": "ctfl-071",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.2.2",
+      "difficulty": "hard",
+      "question": "Un sistema de descuentos aplica: 0 % a pedidos inferiores a 50 $, 10 % a pedidos de 50 $ a 199,99 $ y 20 % a pedidos de 200 $ o más. Mediante la partición de equivalencia, ¿cuántas particiones válidas existen para el importe del pedido?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctIndex": 2,
+      "explanation": "Hay tres particiones válidas de descuentos según el importe del pedido: menos de 50 $, de 50 $ a 199,99 $ y 200 $ o más; cada una produce un comportamiento de descuento distinto."
+    },
+    {
+      "id": "ctfl-072",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.2.3",
+      "difficulty": "hard",
+      "question": "Una tabla de decisión combina las condiciones «Tiene un cupón válido» (S/N) y «El total del pedido es >= 50 $» (S/N), lo que produce 4 reglas con acciones distintas. Si dos casos de prueba solo cubren 2 de las 4 reglas, ¿qué cobertura de la tabla de decisión se ha alcanzado?",
+      "options": [
+        "25 %",
+        "75 %",
+        "100 %",
+        "50 %"
+      ],
+      "correctIndex": 3,
+      "explanation": "La cobertura de la tabla de decisión = (reglas ejercitadas / reglas totales) × 100 %. Cubrir 2 de 4 reglas equivale a una cobertura del 50 %."
+    },
+    {
+      "id": "ctfl-073",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.2.4",
+      "difficulty": "medium",
+      "question": "Un modelo de estados tiene 4 estados y 6 transiciones válidas. Un conjunto de pruebas visita los 4 estados, pero ejercita solo 3 de las transiciones válidas. ¿Qué cobertura de transiciones válidas se ha alcanzado?",
+      "options": [
+        "25 %",
+        "50 %",
+        "75 %",
+        "100 %"
+      ],
+      "correctIndex": 1,
+      "explanation": "La cobertura de transiciones válidas es el número de transiciones válidas ejercitadas dividido entre el número total de transiciones válidas: 3 de 6 es el 50 %, aunque se hayan visitado todos los estados."
+    },
+    {
+      "id": "ctfl-074",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una VENTAJA CLAVE del análisis de valores límite frente a la partición de equivalencia simple?",
+      "options": [
+        "Siempre necesita menos casos de prueba que la partición de equivalencia",
+        "Se centra en los extremos de los intervalos, donde es más probable que haya defectos de límite de uno en uno",
+        "Elimina la necesidad de analizar la especificación",
+        "Solo se aplica a pruebas no funcionales"
+      ],
+      "correctIndex": 1,
+      "explanation": "El análisis de valores límite complementa la partición de equivalencia al centrarse específicamente en los valores límite, donde los errores de uno en uno y otros similares son empíricamente más frecuentes."
+    },
+    {
+      "id": "ctfl-075",
+      "chapter": "4. Análisis y diseño de pruebas (técnicas de prueba)",
+      "loRef": "FL-4.3.1",
+      "difficulty": "medium",
+      "question": "¿Por qué se considera que una cobertura del 100 % de instrucciones es, por lo general, un criterio más sólido que ejecutar solo unos pocos casos de prueba del «camino feliz», pero que aun así no basta por sí sola?",
+      "options": [
+        "Se ejecutó cada instrucción al menos una vez, pero puede que no se hayan probado algunos resultados de decisión",
+        "Las pruebas ejercitaron todas las combinaciones posibles de entradas",
+        "Para alcanzar la cobertura total siempre se necesitan más casos de prueba que para la cobertura de decisión",
+        "Solo se puede aplicar a pruebas no funcionales y no al comportamiento funcional"
+      ],
+      "correctIndex": 0,
+      "explanation": "La cobertura del 100 % de instrucciones confirma que se ejecutó cada instrucción al menos una vez, pero puede que una decisión con dos ramas solo se haya probado con uno de sus resultados, dejando la lógica de decisión insuficientemente probada."
+    },
+    {
+      "id": "ctfl-076",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones se incluiría normalmente en una estrategia de pruebas y no en un plan de pruebas específico de un proyecto?",
+      "options": [
+        "El calendario de ejecución de pruebas durante un sprint concreto de un proyecto",
+        "La lista de defectos registrados durante un ciclo de pruebas específico",
+        "Los nombres de los probadores asignados a una versión determinada",
+        "El enfoque general de pruebas de la organización para varios proyectos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Una estrategia de pruebas suele ser una descripción de alto nivel del enfoque general de pruebas para toda la organización o programa; un plan de pruebas aborda los detalles de un proyecto o nivel concreto."
+    },
+    {
+      "id": "ctfl-077",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.1.3",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones es un ejemplo de estrategia de pruebas «analítica»?",
+      "options": [
+        "Un enfoque basado en riesgos que prioriza el esfuerzo según la probabilidad y el impacto de los riesgos de producto",
+        "Pruebas guiadas únicamente por la intuición del probador, sin análisis previo de ningún tipo",
+        "Reutilizar casos de prueba de un proyecto anterior no relacionado sin adaptarlos al proyecto actual",
+        "Elegir casos de prueba al azar, sin tener en cuenta los requisitos ni los riesgos"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las estrategias analíticas, como las pruebas basadas en riesgos, analizan sistemáticamente una base (por ejemplo, requisitos o riesgos) para determinar y priorizar las condiciones y los casos de prueba."
+    },
+    {
+      "id": "ctfl-078",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.2.2",
+      "difficulty": "hard",
+      "question": "Durante las pruebas basadas en riesgos, un riesgo de producto con alta probabilidad y alto impacto debería dar lugar, por lo general, a:",
+      "options": [
+        "Pruebas menos rigurosas para ahorrar tiempo para otras áreas",
+        "Pruebas más exhaustivas y tempranas en esa área de riesgo",
+        "Ninguna prueba, porque las pruebas no pueden reducir el riesgo",
+        "Aplazar las pruebas hasta después de la publicación"
+      ],
+      "correctIndex": 1,
+      "explanation": "En las pruebas basadas en riesgos, las áreas con niveles de riesgo más altos (que combinan probabilidad e impacto) suelen probarse antes y de forma más exhaustiva para reducir el riesgo residual antes de la publicación."
+    },
+    {
+      "id": "ctfl-079",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.2.3",
+      "difficulty": "medium",
+      "question": "¿Qué actividad forma parte del proceso continuo de gestión de riesgos a lo largo de un proyecto, y no es una actividad que se realiza una sola vez?",
+      "options": [
+        "Los riesgos se evalúan una vez al inicio y luego no se modifica la evaluación",
+        "El responsable de pruebas puede identificar por sí solo nuevos riesgos del proyecto",
+        "La identificación, el análisis y la mitigación de riesgos se revisan a medida que evoluciona el proyecto",
+        "Los riesgos de producto y los riesgos de proyecto se evalúan exactamente con los mismos criterios"
+      ],
+      "correctIndex": 2,
+      "explanation": "La gestión de riesgos es iterativa: pueden surgir riesgos nuevos y las evaluaciones de riesgos existentes quizá deban actualizarse durante el proyecto a medida que se disponga de más información."
+    },
+    {
+      "id": "ctfl-080",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.3.2",
+      "difficulty": "medium",
+      "question": "¿Qué métrica sería MÁS útil para hacer seguimiento del avance de las pruebas durante su ejecución?",
+      "options": [
+        "El número total de personas empleadas actualmente en la empresa",
+        "Los colores elegidos para el panel de la herramienta de gestión de pruebas",
+        "Los casos de prueba ejecutados, aprobados, fallidos y bloqueados en comparación con el total planificado",
+        "El número de descansos que toma cada día el equipo de pruebas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Entre las métricas habituales de avance de las pruebas están el porcentaje de casos de prueba planificados que se han ejecutado y su estado (aprobado, fallido o bloqueado), lo que ayuda a comprobar si las pruebas avanzan según los criterios de salida."
+    },
+    {
+      "id": "ctfl-081",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.3.3",
+      "difficulty": "medium",
+      "question": "Si el seguimiento de las pruebas revela que la ejecución está muy retrasada, ¿qué acción de CONTROL de pruebas podría tomar un responsable de pruebas?",
+      "options": [
+        "Continuar exactamente según lo planificado e ignorar el retraso observado",
+        "Volver a priorizar las pruebas según el riesgo para ejecutar primero las áreas críticas durante el tiempo restante",
+        "Cancelar de inmediato toda la fase de pruebas sin consultar a las partes interesadas",
+        "Añadir muchos casos de prueba de baja prioridad para compensar el tiempo perdido"
+      ],
+      "correctIndex": 1,
+      "explanation": "El control de pruebas implica tomar medidas correctivas a partir de la información de seguimiento, como volver a priorizar las pruebas según el riesgo cuando el tiempo es limitado, para asegurar que se ejecuten las pruebas más importantes."
+    },
+    {
+      "id": "ctfl-082",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.4.2",
+      "difficulty": "medium",
+      "question": "¿Qué información de un informe de defectos ayuda al equipo de desarrollo a decidir CON QUÉ URGENCIA debe corregirlo, a diferencia de la gravedad de su impacto técnico?",
+      "options": [
+        "Gravedad",
+        "El nombre del probador",
+        "Prioridad",
+        "La versión del sistema operativo del entorno de prueba"
+      ],
+      "correctIndex": 2,
+      "explanation": "La prioridad indica la urgencia o el orden en que se debería corregir un defecto respecto de otros; la gravedad refleja el impacto técnico o de negocio del defecto. Ambas pueden diferir."
+    },
+    {
+      "id": "ctfl-083",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.1.4",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones sería normalmente un criterio de SALIDA para un nivel de pruebas de sistema?",
+      "options": [
+        "Se han ejecutado todas las pruebas planificadas y se ha corregido una proporción acordada de defectos críticos",
+        "Al menos un integrante del equipo de desarrollo ha revisado por encima el código del sistema sometido a prueba",
+        "La persona responsable del proyecto ha aprobado el presupuesto inicial del esfuerzo de pruebas",
+        "Se ha solicitado el entorno de prueba, pero todavía no se ha configurado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre los criterios de salida habituales se encuentran completar la ejecución de pruebas planificada y resolver/verificar una proporción acordada de defectos (a menudo ponderada por gravedad), además de otras condiciones medibles."
+    },
+    {
+      "id": "ctfl-084",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué factor aumentaría MÁS directamente el componente de «impacto» de un riesgo de producto (si la probabilidad permanece constante)?",
+      "options": [
+        "La función la utiliza un pequeño grupo de probadores internos y nadie más",
+        "La función es crítica para muchos clientes de pago y es fundamental para los ingresos",
+        "Está previsto retirar la función del producto en la próxima versión",
+        "La función ya cuenta con documentación exhaustiva sobre el comportamiento previsto"
+      ],
+      "correctIndex": 1,
+      "explanation": "El impacto refleja las consecuencias de materializarse un riesgo. El fallo de una función muy utilizada y fundamental para los ingresos tendría un impacto de negocio mucho mayor que el de una función poco conocida o que pronto se retirará."
+    },
+    {
+      "id": "ctfl-085",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.3.1",
+      "difficulty": "easy",
+      "question": "¿Cuál suele ser el propósito PRINCIPAL de un informe de resumen de pruebas?",
+      "options": [
+        "Culpar a las personas por los defectos encontrados en una etapa tardía del proyecto",
+        "Sustituir el plan de pruebas en todos los proyectos futuros de la organización",
+        "Enumerar el salario y otros detalles laborales de cada probador",
+        "Proporcionar a las partes interesadas un resumen de las pruebas realizadas, los resultados, la calidad y el riesgo residual"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un informe de resumen de pruebas comunica a las partes interesadas un resumen de las actividades y los resultados de las pruebas, junto con una evaluación de la calidad y los riesgos pendientes, normalmente al final de un nivel o una fase de prueba."
+    },
+    {
+      "id": "ctfl-086",
+      "chapter": "5. Gestión de las actividades de prueba",
+      "loRef": "FL-5.2.2",
+      "difficulty": "hard",
+      "question": "¿Cuál de las siguientes opciones ilustra MEJOR el uso de un enfoque basado en riesgos para determinar TÉCNICAS de prueba (no solo la prioridad)?",
+      "options": [
+        "Aplicar la misma técnica a todas las funciones, independientemente de su nivel de riesgo",
+        "Omitir el diseño de pruebas para funciones de alto riesgo con el fin de ahorrar tiempo para la ejecución",
+        "Asignar la función de mayor riesgo al probador con menos experiencia",
+        "Usar técnicas rigurosas, como tablas de decisión, para reglas complejas de alto riesgo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas basadas en riesgos pueden influir no solo en el orden y la profundidad de las pruebas, sino también en la elección de las técnicas, aplicando técnicas más rigurosas donde el riesgo sea mayor."
+    },
+    {
+      "id": "ctfl-087",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una VENTAJA potencial de usar herramientas de gestión de pruebas?",
+      "options": [
+        "Mejoran la trazabilidad entre requisitos, pruebas y defectos",
+        "Eliminan la necesidad de probadores una vez configurada la herramienta",
+        "Proporcionan una cobertura completa de los requisitos sin ningún esfuerzo adicional del equipo",
+        "Eliminan todos los riesgos del proyecto una vez que se utilizan"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las herramientas de gestión de pruebas facilitan la trazabilidad (vincular requisitos con pruebas y defectos) y proporcionan funciones de elaboración de informes y seguimiento que ayudan a gestionar el avance, aunque no garantizan la cobertura ni eliminan los riesgos."
+    },
+    {
+      "id": "ctfl-088",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.2.2",
+      "difficulty": "medium",
+      "question": "¿Qué categoría de herramientas se usaría para apoyar las pruebas estáticas mediante la comprobación automática del código fuente frente a los estándares de programación?",
+      "options": [
+        "Herramientas de pruebas de rendimiento",
+        "Herramientas de preparación de datos de prueba",
+        "Herramientas de ejecución de pruebas",
+        "Herramientas de análisis estático"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las herramientas de análisis estático examinan código (u otros artefactos) sin ejecutarlo y suelen utilizarse para comprobar el cumplimiento de los estándares de programación, calcular métricas y detectar ciertos tipos de defectos."
+    },
+    {
+      "id": "ctfl-089",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.2.3",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito PRINCIPAL de una herramienta de preparación de datos de prueba?",
+      "options": [
+        "Generar o extraer datos de prueba, como datos de producción con campos enmascarados",
+        "Escribir casos de prueba completos desde cero sin ningún tipo de intervención humana",
+        "Medir el rendimiento del sistema sometido a prueba mientras está bajo carga",
+        "Sustituir una herramienta de gestión de requisitos en el proceso de pruebas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las herramientas de preparación de datos de prueba ayudan a crear, extraer, seleccionar subconjuntos o anonimizar datos (por ejemplo, enmascarar campos sensibles de datos de producción) para utilizarlos como entradas realistas en las pruebas."
+    },
+    {
+      "id": "ctfl-090",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.2.4",
+      "difficulty": "medium",
+      "question": "Una herramienta «comparadora de pruebas» se utiliza para:",
+      "options": [
+        "Comparar la productividad de dos probadores distintos durante varias semanas",
+        "Comparar los costos de dos herramientas de gestión de pruebas ofrecidas por proveedores",
+        "Comparar las especificaciones de hardware de dos entornos de prueba en uso",
+        "Comparar los resultados reales del objeto de prueba con los resultados esperados"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las herramientas comparadoras de pruebas comparan automáticamente los resultados reales (por ejemplo, archivos de salida, contenido de pantalla o estado de una base de datos) con los resultados esperados; suelen formar parte de las herramientas de ejecución de pruebas."
+    },
+    {
+      "id": "ctfl-091",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.1.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes opciones describe MEJOR una ventaja general del uso de herramientas de prueba?",
+      "options": [
+        "Eliminar la necesidad de probadores con experiencia en el proyecto una vez implementadas las herramientas",
+        "Dejar el software libre de defectos en cuanto se ejecuten las pruebas automatizadas",
+        "Reducir el trabajo manual repetitivo, como volver a ejecutar pruebas de regresión",
+        "Garantizar que el costo de las licencias de las herramientas sea siempre cero para el proyecto"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las herramientas pueden automatizar tareas repetitivas, como la ejecución de pruebas de regresión, mejorar la coherencia y la repetibilidad y liberar tiempo de los probadores para tareas más exploratorias o analíticas."
+    },
+    {
+      "id": "ctfl-092",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una LIMITACIÓN o un riesgo habitual de la automatización de pruebas, incluso con una buena herramienta?",
+      "options": [
+        "Las pruebas automatizadas se ejecutan más rápido que las manuales en todos los casos, sin importar qué comprueben",
+        "Las pruebas automatizadas no requieren mantenimiento una vez escritas y confirmadas en el repositorio",
+        "Las comprobaciones automatizadas que se limitan a repetirse pueden generar una falsa confianza con el tiempo",
+        "Las pruebas automatizadas pueden sustituir por completo las pruebas exploratorias del proyecto"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los conjuntos de regresión automatizados también pueden verse afectados por la paradoja del pesticida: ejecutar repetidamente las mismas comprobaciones puede dejar de encontrar defectos nuevos, a menos que el conjunto se revise y evolucione."
+    },
+    {
+      "id": "ctfl-093",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.2.5",
+      "difficulty": "medium",
+      "question": "¿Qué tipo de herramienta está diseñada específicamente para simular una gran cantidad de usuarios virtuales simultáneos y evaluar el comportamiento del sistema bajo carga?",
+      "options": [
+        "Herramienta de pruebas de rendimiento/carga",
+        "Herramienta de gestión de requisitos",
+        "Herramienta de análisis estático",
+        "Herramienta de medición de cobertura"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las herramientas de pruebas de rendimiento (carga) simulan muchos usuarios virtuales o transacciones simultáneos para evaluar los tiempos de respuesta, el caudal y el uso de recursos bajo una carga prevista o máxima."
+    },
+    {
+      "id": "ctfl-094",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.2.5",
+      "difficulty": "medium",
+      "question": "Una «herramienta de cobertura de código» se utiliza principalmente para:",
+      "options": [
+        "Medir qué instrucciones o ramas del código ejercitaron las pruebas",
+        "Escribir automáticamente el nuevo código fuente de una función a partir de sus requisitos",
+        "Predecir cuántos defectos se encontrarán en producción después de la publicación",
+        "Gestionar el presupuesto y el calendario de todo el proyecto para sus patrocinadores"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las herramientas de cobertura de código instrumentan o analizan la ejecución del código para informar qué instrucciones, ramas u otros elementos estructurales se ejercitaron durante la ejecución de las pruebas."
+    },
+    {
+      "id": "ctfl-095",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.1.2",
+      "difficulty": "hard",
+      "question": "Antes de seleccionar una herramienta de automatización de pruebas para una organización, ¿cuál de las siguientes es una primera medida RECOMENDADA?",
+      "options": [
+        "Comprar la herramienta más cara suponiendo que es la más adecuada",
+        "Evaluar las necesidades, las limitaciones y la madurez de los procesos, y considerar una prueba de concepto",
+        "Dejar que cada equipo elija su propia herramienta sin coordinación",
+        "Automatizar de inmediato todos los casos de prueba manuales existentes, sean adecuados o no"
+      ],
+      "correctIndex": 1,
+      "explanation": "La práctica recomendada es evaluar las necesidades de la organización, revisar el proceso de pruebas actual y realizar una prueba de concepto con una o varias herramientas candidatas antes de comprometer a toda la organización con una herramienta."
+    },
+    {
+      "id": "ctfl-096",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.2.1",
+      "difficulty": "easy",
+      "question": "¿Qué categoría de herramientas ayudaría más directamente a gestionar y hacer seguimiento de los informes de defectos durante todo su ciclo de vida (nuevo, abierto, corregido, cerrado)?",
+      "options": [
+        "Herramienta de análisis estático",
+        "Herramienta de pruebas de rendimiento",
+        "Herramienta de gestión de defectos",
+        "Herramienta de preparación de datos de prueba"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las herramientas de gestión de defectos (incidentes) permiten registrar, hacer seguimiento y gestionar el estado del flujo de trabajo de los informes de defectos, desde su creación hasta su resolución y cierre."
+    },
+    {
+      "id": "ctfl-097",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones es un FACTOR DE ÉXITO habitual para introducir herramientas en una organización?",
+      "options": [
+        "Implementar la herramienta en toda la organización de una vez, sin una fase piloto",
+        "Omitir por completo la formación porque se supone que la herramienta es intuitiva",
+        "Elegir la herramienta sin consultar a las personas que tendrán que utilizarla",
+        "Probarla en un proyecto pequeño, impartir formación y establecer pautas de uso antes de su adopción general"
+      ],
+      "correctIndex": 3,
+      "explanation": "Entre los factores de éxito para adoptar herramientas se encuentran probarlas en un proyecto piloto, proporcionar formación y asesoramiento adecuados y definir pautas de uso claras antes de implementarlas de forma más amplia."
+    },
+    {
+      "id": "ctfl-098",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.2.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una herramienta que apoya la GESTIÓN de las pruebas y sus actividades, y no su ejecución?",
+      "options": [
+        "Una herramienta de ejecución de pruebas de interfaz gráfica que vuelve a reproducir acciones de usuario grabadas anteriormente",
+        "Una herramienta de supervisión del rendimiento que mide los tiempos de respuesta de transacciones activas",
+        "Una herramienta de gestión de requisitos que permite trazar los requisitos hasta los casos de prueba",
+        "Una herramienta de cobertura de código que instrumenta el código fuente del sistema sometido a prueba"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las herramientas de gestión de requisitos (y otras similares, como las herramientas de gestión de pruebas) apoyan la gestión de las pruebas, por ejemplo, mediante la trazabilidad, la planificación y los informes. Se diferencian de las herramientas que ejecutan o analizan las pruebas directamente."
+    },
+    {
+      "id": "ctfl-099",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.2.4",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación sobre las herramientas de ejecución de pruebas de grabación y reproducción es MÁS precisa?",
+      "options": [
+        "Los guiones grabados no necesitan mantenimiento, por muchos cambios que se hagan en la interfaz de usuario",
+        "Generan aserciones útiles por sí solas, sin intervención del probador",
+        "Solo se pueden utilizar para pruebas de rendimiento, no para pruebas funcionales",
+        "Crean pruebas rápidamente, pero los guiones suelen requerir mucho mantenimiento después de cambios en la interfaz"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las herramientas de grabación y reproducción pueden generar guiones rápidamente al capturar acciones de usuario, pero estos suelen ser frágiles y requieren bastante mantenimiento cada vez que cambia la interfaz de usuario."
+    },
+    {
+      "id": "ctfl-100",
+      "chapter": "6. Herramientas de prueba",
+      "loRef": "FL-6.1.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes afirmaciones sobre las herramientas de prueba es CORRECTA?",
+      "options": [
+        "Cada categoría de herramienta realiza una sola función sin solaparse con las demás",
+        "Algunas herramientas combinan varias funciones, como la gestión de pruebas y el seguimiento de defectos",
+        "Las herramientas de prueba solo son útiles para organizaciones grandes",
+        "Una herramienta, una vez comprada, nunca necesita volver a evaluarse"
+      ],
+      "correctIndex": 1,
+      "explanation": "Muchas herramientas comerciales y de código abierto combinan varias capacidades (por ejemplo, gestión de pruebas, seguimiento de defectos e informes) en lugar de limitarse estrictamente a una sola categoría."
+    }
+  ]
+}

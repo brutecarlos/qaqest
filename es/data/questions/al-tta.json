@@ -1,0 +1,2256 @@
+{
+  "moduleId": "al-tta",
+  "moduleName": "Analista técnico de pruebas de nivel avanzado (AL-TTA)",
+  "questions": [
+    {
+      "id": "al-tta-001",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.2.1",
+      "difficulty": "hard",
+      "question": "¿Qué criterio de cobertura de caja blanca exige además probar todas las combinaciones de resultados de las condiciones de una decisión?",
+      "options": [
+        "Cobertura de sentencias, ejecutando cada línea ejecutable una vez",
+        "Cobertura del flujo de datos",
+        "Cobertura de decisiones",
+        "Cobertura de condiciones múltiples"
+      ],
+      "correctIndex": 3,
+      "explanation": "La cobertura de condiciones múltiples exige probar todas las combinaciones posibles de resultados de las condiciones individuales de una decisión."
+    },
+    {
+      "id": "al-tta-002",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.1.1",
+      "difficulty": "medium",
+      "question": "Como analista técnico de pruebas, ¿qué tipo de riesgo ayudaría a identificar PRINCIPALMENTE durante el análisis de riesgos?",
+      "options": [
+        "Riesgos organizativos relacionados con las comunicaciones ejecutivas y los planes de dotación del departamento",
+        "Riesgos técnicos relacionados con la estructura del código, la arquitectura y la calidad no funcional",
+        "Riesgos contractuales relacionados con las condiciones de pago a proveedores y las responsabilidades legales",
+        "Riesgos de negocio relacionados con el posicionamiento en el mercado y las decisiones de precios"
+      ],
+      "correctIndex": 1,
+      "explanation": "El analista técnico de pruebas aporta conocimientos técnicos al análisis de riesgos y se centra en riesgos arquitectónicos, estructurales y no funcionales, como el rendimiento, la seguridad y la fiabilidad."
+    },
+    {
+      "id": "al-tta-003",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.1",
+      "difficulty": "hard",
+      "question": "¿Qué criterio de cobertura estructural exige ejecutar todos los caminos factibles del grafo de flujo de control de un programa?",
+      "options": [
+        "Cobertura de caminos",
+        "Cobertura de condiciones",
+        "Cobertura de sentencias",
+        "Cobertura de decisiones"
+      ],
+      "correctIndex": 0,
+      "explanation": "La cobertura de caminos es el criterio estructural más riguroso y, por lo general, menos práctico: exige ejecutar todos los caminos posibles del código."
+    },
+    {
+      "id": "al-tta-004",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.2.2",
+      "difficulty": "hard",
+      "question": "La cobertura de condiciones/decisiones modificada (MC/DC) exige que:",
+      "options": [
+        "Alguna prueba ejecute cada sentencia del programa al menos una vez",
+        "Solo se prueben ambos resultados globales de la decisión: verdadero y falso",
+        "Se demuestre que cada condición influye de forma independiente en el resultado de la decisión",
+        "Se prueben todas las combinaciones de valores de las condiciones de la decisión"
+      ],
+      "correctIndex": 2,
+      "explanation": "MC/DC exige demostrar que cada condición de una decisión puede influir de forma independiente en su resultado. Se exige habitualmente en normas de software crítico para la seguridad y no requiere probar todas las combinaciones."
+    },
+    {
+      "id": "al-tta-005",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una técnica de prueba de caja blanca basada en el flujo de control?",
+      "options": [
+        "Partición de equivalencia de los dominios de entrada",
+        "Pruebas basadas en listas de comprobación de usabilidad y accesibilidad",
+        "Pruebas de casos de uso de escenarios de negocio",
+        "Pruebas de cobertura de sentencias y decisiones (ramas)"
+      ],
+      "correctIndex": 3,
+      "explanation": "La cobertura de sentencias y de decisiones (ramas) son técnicas de caja blanca basadas en el flujo de control que analizan la estructura de ejecución del código."
+    },
+    {
+      "id": "al-tta-006",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué puede detectar el analista técnico de pruebas con herramientas de análisis estático SIN ejecutar el código?",
+      "options": [
+        "Posibles desreferencias de valores nulos, código inalcanzable e incumplimientos de normas de codificación",
+        "El consumo de memoria en tiempo real durante la ejecución del sistema",
+        "Fallos que solo aparecen al ejecutar entradas específicas",
+        "Los tiempos de respuesta reales bajo carga de producción en vivo"
+      ],
+      "correctIndex": 0,
+      "explanation": "El análisis estático detecta patrones estructurales y posibles defectos, como riesgos de desreferencia nula, código muerto e incumplimientos de normas, sin ejecutar el programa."
+    },
+    {
+      "id": "al-tta-007",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.2.1",
+      "difficulty": "hard",
+      "question": "¿Qué técnica analiza cómo se definen, usan y eliminan las variables durante la ejecución para diseñar casos de prueba dirigidos a defectos de datos?",
+      "options": [
+        "Análisis de valores límite",
+        "Pruebas de caminos del flujo de control",
+        "Pruebas de transición de estados",
+        "Pruebas del flujo de datos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas del flujo de datos se centran en secuencias de definiciones y usos de variables (por ejemplo, pares definición-uso) para detectar defectos como el uso de una variable antes de definirla correctamente."
+    },
+    {
+      "id": "al-tta-008",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué característica de calidad se evalúa PRINCIPALMENTE con técnicas de pruebas de seguridad como las pruebas de penetración?",
+      "options": [
+        "Usabilidad",
+        "Portabilidad",
+        "Seguridad",
+        "Corrección funcional"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de seguridad, incluidas las pruebas de penetración y el análisis de vulnerabilidades, evalúan principalmente la seguridad: confidencialidad, integridad y propiedades relacionadas."
+    },
+    {
+      "id": "al-tta-009",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué buscan detectar PRINCIPALMENTE las pruebas de fiabilidad, como una prueba de resistencia de 72 horas?",
+      "options": [
+        "Fugas de memoria, agotamiento de recursos o pérdida gradual de estabilidad con el tiempo",
+        "Traducciones ausentes para un idioma o configuración regional",
+        "Redacción y gramática incorrectas en los mensajes de error",
+        "Desajustes estéticos de los elementos y controles de la interfaz"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de resistencia mantienen el sistema bajo carga durante un periodo prolongado para detectar problemas como fugas de memoria o agotamiento gradual de recursos."
+    },
+    {
+      "id": "al-tta-010",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.3.1",
+      "difficulty": "medium",
+      "question": "¿Qué característica de calidad evalúa la facilidad con que se puede modificar o ampliar un sistema, o corregir sus defectos?",
+      "options": [
+        "Portabilidad",
+        "Adecuación funcional",
+        "Capacidad de mantenimiento",
+        "Compatibilidad"
+      ],
+      "correctIndex": 2,
+      "explanation": "La capacidad de mantenimiento evalúa la facilidad de modificar el software, ya sea para corregirlo, adaptarlo o mejorarlo, y también abarca su analizabilidad y capacidad de prueba."
+    },
+    {
+      "id": "al-tta-011",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué actividad se asocia MÁS estrechamente con el papel del analista técnico de pruebas, en lugar del analista de pruebas?",
+      "options": [
+        "Derivar casos de prueba exclusivamente de requisitos de negocio y flujos de trabajo visibles para el usuario",
+        "Diseñar pruebas de caja blanca a partir de la estructura del código y evaluar características no funcionales como el rendimiento y la seguridad",
+        "Preparar escenarios de pruebas de aceptación en el lenguaje de los usuarios de negocio",
+        "Validar que las reglas de negocio se implementen según las expectativas de las partes interesadas"
+      ],
+      "correctIndex": 1,
+      "explanation": "El analista técnico de pruebas suele centrarse en las pruebas estructurales (de caja blanca) y en características de calidad técnicas y no funcionales, complementando el enfoque funcional y de negocio del analista de pruebas."
+    },
+    {
+      "id": "al-tta-012",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué factor técnico suele AUMENTAR la probabilidad de riesgo en un módulo concreto?",
+      "options": [
+        "Que no se haya modificado el módulo en más de dos años",
+        "Baja complejidad ciclomática junto con un equipo estable, experimentado y con personal suficiente",
+        "Alta complejidad ciclomática, una reescritura reciente e historial de defectos",
+        "Un informe limpio de análisis estático, sin advertencias en el módulo"
+      ],
+      "correctIndex": 2,
+      "explanation": "La alta complejidad, los cambios importantes recientes y el historial de defectos suelen aumentar la probabilidad de que haya más defectos en un módulo."
+    },
+    {
+      "id": "al-tta-013",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.2",
+      "difficulty": "hard",
+      "question": "Para el código IF (a) THEN x=1 ELSE IF (b) THEN x=2 ELSE x=3, ¿cuál es el número mínimo de casos de prueba necesario para lograr una cobertura de decisiones del 100 %?",
+      "options": [
+        "1",
+        "3",
+        "4",
+        "2"
+      ],
+      "correctIndex": 1,
+      "explanation": "El código contiene dos decisiones con cuatro resultados posibles (a verdadero o falso; b verdadero o falso). Se cubren con tres pruebas: a verdadero; a falso y b verdadero; a falso y b falso."
+    },
+    {
+      "id": "al-tta-014",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.1",
+      "difficulty": "medium",
+      "question": "A diferencia del análisis estático, ¿cómo detectan defectos las herramientas de análisis dinámico?",
+      "options": [
+        "Revisando documentos de diseño en una inspección formal",
+        "Supervisando el software durante su ejecución, por ejemplo, para detectar fugas de memoria o punteros inválidos",
+        "Analizando el código para calcular métricas de complejidad y acoplamiento",
+        "Examinando el código fuente para encontrar incumplimientos de reglas sin ejecutarlo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las herramientas de análisis dinámico funcionan mientras se ejecuta el software y detectan problemas en tiempo de ejecución, como fugas de memoria, punteros inválidos o problemas de uso de recursos, que el análisis estático no puede observar."
+    },
+    {
+      "id": "al-tta-015",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.4.1",
+      "difficulty": "medium",
+      "question": "¿Qué evalúan MÁS directamente las pruebas de compatibilidad?",
+      "options": [
+        "Si el sistema se puede trasladar a otra plataforma con poco esfuerzo",
+        "Si puede coexistir e interoperar con otro software en un entorno compartido sin efectos adversos",
+        "Si resiste intentos de acceder a datos sin autorización",
+        "Si funciona más rápido que la versión anterior bajo una carga habitual"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas de compatibilidad comprueban que un sistema pueda coexistir con otro software que comparta el entorno, sin afectar negativamente a los recursos compartidos ni a la funcionalidad."
+    },
+    {
+      "id": "al-tta-016",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.2.1",
+      "difficulty": "medium",
+      "question": "¿Por qué puede participar el analista técnico de pruebas en las revisiones de código junto con los desarrolladores?",
+      "options": [
+        "Para aprobar todas las solicitudes de cambio relacionadas con el código revisado",
+        "Para aportar una perspectiva de pruebas sobre la capacidad de prueba, la cobertura estructural y los riesgos técnicos",
+        "Para escribir el código de producción en nombre del equipo de desarrollo",
+        "Para sustituir al autor al decidir qué defectos deben corregirse"
+      ],
+      "correctIndex": 1,
+      "explanation": "En las revisiones de código, el analista técnico de pruebas aporta valor al centrarse en la capacidad de prueba, los riesgos estructurales y otros aspectos técnicos que complementan la perspectiva de implementación del desarrollador."
+    },
+    {
+      "id": "al-tta-017",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.2.1",
+      "difficulty": "medium",
+      "question": "La cobertura de condiciones exige que:",
+      "options": [
+        "Cada condición individual se evalúe como verdadera y falsa, aunque esto no garantice la cobertura de decisiones",
+        "Se demuestre que la decisión global da como resultado verdadero y falso",
+        "Se prueben todas las combinaciones de valores de las condiciones de la decisión",
+        "Se ejecute cada sentencia, independientemente de las condiciones"
+      ],
+      "correctIndex": 0,
+      "explanation": "La cobertura de condiciones exige que cada condición individual tome los valores verdadero y falso, pero por sí sola no garantiza que el resultado global de la decisión se haya probado en ambos sentidos."
+    },
+    {
+      "id": "al-tta-018",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué hallazgo del análisis estático suele ser de GRAN valor porque puede causar fallos impredecibles durante la ejecución?",
+      "options": [
+        "Una posible desreferencia de puntero nulo o el uso de una variable sin inicializar",
+        "Una función sin comentario explicativo en su encabezado",
+        "Un nombre de variable que no sigue la convención del equipo",
+        "Un archivo fuente cuyas líneas exceden el límite de longitud acordado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los posibles accesos mediante punteros nulos o el uso de variables sin inicializar son hallazgos de gran valor, porque suelen corresponder a defectos reales que pueden provocar fallos o comportamiento indefinido."
+    },
+    {
+      "id": "al-tta-019",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.2",
+      "difficulty": "hard",
+      "question": "Una prueba de penetración descubre que no se depuran las entradas del usuario antes de usarlas en una consulta a la base de datos. ¿Qué clase de vulnerabilidad indica MÁS probablemente?",
+      "options": [
+        "Denegación de servicio",
+        "Fijación de sesión",
+        "Secuencias de comandos en sitios cruzados (XSS)",
+        "Inyección SQL"
+      ],
+      "correctIndex": 3,
+      "explanation": "El uso directo de entradas no depuradas del usuario en consultas a la base de datos es un indicador clásico de vulnerabilidad de inyección SQL, que permite manipular las consultas."
+    },
+    {
+      "id": "al-tta-020",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué medida recomendaría normalmente el analista técnico de pruebas para un riesgo técnico ALTO asociado a un módulo heredado complejo y con poca cobertura?",
+      "options": [
+        "Eliminar las pruebas existentes del módulo para liberar tiempo de pruebas",
+        "Posponer la atención al módulo porque hasta ahora ha funcionado",
+        "Permitir cambios con solo las comprobaciones informales del desarrollador",
+        "Aumentar la cobertura estructural, como la de ramas, y añadir análisis estático y dinámico específicos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Para código complejo, de alto riesgo y con poca cobertura, una mitigación técnica habitual es aumentar la cobertura estructural y aplicar análisis estático y dinámico específicos."
+    },
+    {
+      "id": "al-tta-021",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es una responsabilidad principal del analista técnico de pruebas que lo diferencia del analista de pruebas?",
+      "options": [
+        "Diseñar y ejecutar pruebas basadas en la estructura interna y el riesgo técnico, incluidas las pruebas no funcionales",
+        "Realizar sesiones exploratorias sobre flujos de trabajo de negocio",
+        "Redactar criterios de aceptación e historias de usuario para las partes interesadas",
+        "Especificar condiciones de prueba a partir de reglas de negocio y casos de uso"
+      ],
+      "correctIndex": 0,
+      "explanation": "El analista técnico de pruebas se centra en las pruebas estructurales (de caja blanca), las características de calidad técnicas y los aspectos no funcionales, más orientados al código y la arquitectura que el papel del analista de pruebas enfocado en el negocio."
+    },
+    {
+      "id": "al-tta-022",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.1.1",
+      "difficulty": "medium",
+      "question": "Desde la perspectiva del analista técnico de pruebas, ¿qué factor es MÁS relevante al evaluar la probabilidad de un riesgo técnico?",
+      "options": [
+        "El número de partes interesadas que asistieron al inicio del proyecto",
+        "El presupuesto de marketing asignado a la funcionalidad",
+        "El diseño visual y los colores de la interfaz",
+        "La complejidad del código, los factores técnicos y organizativos, y el historial de defectos de componentes similares"
+      ],
+      "correctIndex": 3,
+      "explanation": "El analista técnico de pruebas evalúa la probabilidad considerando la complejidad del código, factores técnicos y organizativos (por ejemplo, la presión de tiempo y la experiencia del equipo) y el historial de defectos en componentes similares."
+    },
+    {
+      "id": "al-tta-023",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.2.1",
+      "difficulty": "hard",
+      "question": "¿Cómo debería adaptar el analista técnico de pruebas el enfoque de prueba para un componente identificado como de alto riesgo técnico?",
+      "options": [
+        "Programar sus pruebas solo cuando hayan terminado todos los elementos de bajo riesgo",
+        "Usar técnicas más rigurosas y objetivos de cobertura más altos, y probarlo antes",
+        "Publicarlo y confiar en que los usuarios encuentren los problemas",
+        "Reducir las pruebas porque las partes complejas son difíciles de probar"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los componentes de alto riesgo técnico requieren técnicas de prueba más rigurosas, mayor cobertura y atención temprana para reducir el riesgo residual antes de la publicación."
+    },
+    {
+      "id": "al-tta-024",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué mide la cobertura de sentencias en las pruebas estructurales?",
+      "options": [
+        "El porcentaje de resultados de decisiones que las pruebas ejercitan",
+        "El porcentaje de requisitos cubiertos por al menos un caso de prueba ejecutado",
+        "El porcentaje de sentencias ejecutables ejercitadas por las pruebas",
+        "El porcentaje de defectos notificados que se han corregido"
+      ],
+      "correctIndex": 2,
+      "explanation": "La cobertura de sentencias mide el porcentaje de sentencias ejecutables del código que el conjunto de pruebas ha ejercitado al menos una vez."
+    },
+    {
+      "id": "al-tta-025",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué garantiza alcanzar una cobertura de decisiones del 100 %?",
+      "options": [
+        "Ejecutar al menos una vez todas las combinaciones posibles de entradas",
+        "Que no queden defectos en el código ejercitado",
+        "Una cobertura de sentencias del 100 %, ya que se ejecuta cada rama y, con ello, todas las sentencias alcanzables",
+        "Una cobertura de condiciones múltiples del 100 %, ya que se visitan todos los resultados"
+      ],
+      "correctIndex": 2,
+      "explanation": "La cobertura de decisiones del 100 % implica una cobertura de sentencias del 100 %, porque se ejecutan ambas ramas de cada decisión y, por tanto, todas las sentencias alcanzables. No garantiza todas las combinaciones ni la ausencia de defectos."
+    },
+    {
+      "id": "al-tta-026",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.3.1",
+      "difficulty": "hard",
+      "question": "¿Qué criterio de cobertura estructural demuestra la influencia de cada condición individual en una decisión y evita el crecimiento exponencial de casos de prueba de la cobertura de condiciones múltiples?",
+      "options": [
+        "Cobertura de condiciones múltiples con todas las combinaciones de resultados",
+        "Cobertura de bucles",
+        "Cobertura de ramas (decisiones)",
+        "Cobertura de condiciones/decisiones modificada (MC/DC)"
+      ],
+      "correctIndex": 3,
+      "explanation": "MC/DC exige demostrar que cada condición de una decisión influye de forma independiente en su resultado, con menos casos de prueba que la cobertura completa de condiciones múltiples."
+    },
+    {
+      "id": "al-tta-027",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.4.1",
+      "difficulty": "hard",
+      "question": "¿Cuál describe MEJOR el propósito de las pruebas del flujo de datos como técnica de caja blanca?",
+      "options": [
+        "Comprobar el cumplimiento de pautas de accesibilidad para usuarios con discapacidad",
+        "Seguir las variables desde su definición hasta su uso y detectar anomalías, como el uso de una variable no definida",
+        "Confirmar la coherencia de la disposición de pantallas y controles de la interfaz",
+        "Medir la rapidez de respuesta de las consultas a la base de datos al aumentar la carga"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las pruebas del flujo de datos se centran en las secuencias de definición y uso de variables. Diseñan pruebas que siguen los caminos desde la definición hasta el uso y ayudan a detectar anomalías."
+    },
+    {
+      "id": "al-tta-028",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.2.2",
+      "difficulty": "medium",
+      "question": "¿Por qué puede preferir un analista técnico de pruebas la cobertura de ramas a la cobertura de sentencias en módulos críticos?",
+      "options": [
+        "La cobertura de ramas se aplica a la interfaz, pero no a la lógica de negocio",
+        "La cobertura de ramas se mide sin instrumentar ni analizar el código fuente",
+        "La cobertura de ramas suele requerir menos pruebas que la de sentencias para el mismo código",
+        "La cobertura de ramas también exige probar ambos resultados de cada decisión y ofrece mayor garantía estructural"
+      ],
+      "correctIndex": 3,
+      "explanation": "La cobertura de ramas (decisiones) exige ejercitar los resultados verdadero y falso de cada decisión. Ofrece más posibilidades de detectar defectos que la cobertura de sentencias por sí sola, especialmente en lógica crítica."
+    },
+    {
+      "id": "al-tta-029",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es el objetivo principal del análisis estático que realiza un analista técnico de pruebas?",
+      "options": [
+        "Encontrar defectos en el código o diseño sin ejecutar el software, por ejemplo, código inalcanzable o variables no utilizadas",
+        "Ejecutar el código en producción y observar el comportamiento de usuarios reales",
+        "Calcular la desviación presupuestaria del proyecto en cada hito",
+        "Medir la satisfacción de usuarios finales mediante encuestas"
+      ],
+      "correctIndex": 0,
+      "explanation": "El análisis estático examina artefactos de código o diseño sin ejecutar el software, mediante herramientas o revisiones manuales, para detectar problemas como código inalcanzable, variables no utilizadas o incumplimientos de normas."
+    },
+    {
+      "id": "al-tta-030",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.2.1",
+      "difficulty": "hard",
+      "question": "¿Para qué se usa principalmente la complejidad ciclomática en el análisis técnico de pruebas?",
+      "options": [
+        "Para estimar el número de caminos independientes del código y orientar cuántas pruebas se necesitan para la cobertura de decisiones",
+        "Para valorar el atractivo de la interfaz para el público destinatario",
+        "Para ordenar las funcionalidades según su prioridad comercial para la siguiente versión",
+        "Para determinar el número exacto de defectos ocultos en un módulo"
+      ],
+      "correctIndex": 0,
+      "explanation": "La complejidad ciclomática indica el número de caminos linealmente independientes de un módulo y sirve para estimar el esfuerzo de prueba; orienta cuántas pruebas puede requerir aproximadamente la cobertura completa de decisiones."
+    },
+    {
+      "id": "al-tta-031",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es un ejemplo de análisis dinámico, a diferencia del análisis estático?",
+      "options": [
+        "Inspeccionar un documento de requisitos para comprobar que esté completo y no sea ambiguo",
+        "Leer detenidamente un plan de pruebas antes de aprobarlo",
+        "Verificar el código fuente según las normas de codificación sin ejecutar el programa",
+        "Detectar fugas de memoria o punteros inválidos observando el programa durante su ejecución"
+      ],
+      "correctIndex": 3,
+      "explanation": "El análisis dinámico evalúa el comportamiento del programa durante su ejecución, por ejemplo, para detectar fugas de memoria, punteros inválidos o problemas de recursos en tiempo de ejecución."
+    },
+    {
+      "id": "al-tta-032",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.1",
+      "difficulty": "medium",
+      "question": "¿De qué característica de calidad es principalmente responsable el analista técnico de pruebas al evaluar la facilidad con que se puede modificar, ampliar o corregir un sistema?",
+      "options": [
+        "Adecuación funcional",
+        "Portabilidad",
+        "Capacidad de mantenimiento",
+        "Usabilidad"
+      ],
+      "correctIndex": 2,
+      "explanation": "La capacidad de mantenimiento se refiere a la facilidad con que se puede modificar, corregir o mejorar un sistema, y es un aspecto de calidad importante para el analista técnico de pruebas."
+    },
+    {
+      "id": "al-tta-033",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué aspecto del sistema buscan verificar principalmente las pruebas de seguridad realizadas por un analista técnico de pruebas?",
+      "options": [
+        "Que los datos y sistemas estén protegidos frente al acceso, uso, divulgación o destrucción no autorizados",
+        "Que el material de marketing no tenga errores ortográficos ni gramaticales",
+        "Que las notas de versión enumeren todos los cambios de la compilación",
+        "Que las pantallas sigan las pautas corporativas de marca y estilo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de seguridad evalúan la confidencialidad, integridad, autenticidad, disponibilidad y no repudio de los datos y sistemas, y verifican su protección frente a acciones no autorizadas."
+    },
+    {
+      "id": "al-tta-034",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.2.1",
+      "difficulty": "hard",
+      "question": "¿Cuál es una subcaracterística de la portabilidad que podría probar un analista técnico de pruebas?",
+      "options": [
+        "Capacidad de aprendizaje: facilidad con que los usuarios nuevos dominan el sistema",
+        "Adaptabilidad: capacidad del software para adaptarse a distintos entornos",
+        "Exactitud: corrección de los resultados producidos",
+        "Comportamiento temporal: rapidez de respuesta bajo carga elevada"
+      ],
+      "correctIndex": 1,
+      "explanation": "La adaptabilidad, subcaracterística de la portabilidad, evalúa la eficacia y eficiencia con que un sistema se adapta a entornos de hardware, software o condiciones ambientales diferentes o cambiantes."
+    },
+    {
+      "id": "al-tta-035",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.2.2",
+      "difficulty": "medium",
+      "question": "¿Qué evalúan más directamente las pruebas de fiabilidad realizadas por un analista técnico de pruebas?",
+      "options": [
+        "El grado en que las partes interesadas revisaron los requisitos",
+        "La coherencia visual de los iconos y las etiquetas en todas las pantallas",
+        "El coste de licencias y ejecución de las herramientas de prueba",
+        "La capacidad de realizar las funciones requeridas, en las condiciones especificadas y durante un periodo determinado, sin fallos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de fiabilidad evalúan si el sistema puede realizar sus funciones requeridas bajo condiciones especificadas y durante un periodo determinado sin fallos; incluyen aspectos como madurez, disponibilidad y tolerancia a fallos."
+    },
+    {
+      "id": "al-tta-036",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué tarea suele realizar un analista técnico de pruebas durante la implementación de pruebas estructurales?",
+      "options": [
+        "Aprobar el alcance general del proyecto con el patrocinador",
+        "Negociar las condiciones del contrato con un proveedor externo",
+        "Configurar herramientas de medición de cobertura e instrumentar el código sometido a prueba",
+        "Redactar el folleto de marketing que anuncia la versión"
+      ],
+      "correctIndex": 2,
+      "explanation": "El analista técnico de pruebas configura herramientas, como las de cobertura de código, para medir la cobertura estructural durante la implementación de un enfoque de pruebas estructurales."
+    },
+    {
+      "id": "al-tta-037",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.5.1",
+      "difficulty": "hard",
+      "question": "¿Qué técnica se centra específicamente en los bucles y comprueba casos como cero iteraciones, una iteración y el máximo de iteraciones?",
+      "options": [
+        "Pruebas de tablas de decisión",
+        "Pruebas por pares",
+        "Partición de equivalencia",
+        "Pruebas de bucles"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de bucles son una técnica estructural que se centra en la validez de las construcciones de bucle y suele probar límites como cero, una y el máximo de iteraciones."
+    },
+    {
+      "id": "al-tta-038",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.3.1",
+      "difficulty": "medium",
+      "question": "En una evaluación de riesgos técnicos, ¿qué suele representar el impacto?",
+      "options": [
+        "La probabilidad de que haya un defecto en un componente del sistema",
+        "El número de casos de prueba necesarios para cubrir el componente",
+        "La consecuencia o gravedad del daño si el riesgo se materializa",
+        "El número de desarrolladores asignados al componente"
+      ],
+      "correctIndex": 2,
+      "explanation": "El impacto representa la consecuencia o gravedad de un problema si el riesgo se materializa y se combina con la probabilidad para determinar el nivel global de riesgo."
+    },
+    {
+      "id": "al-tta-039",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.4.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es un beneficio habitual de usar herramientas de análisis estático al inicio del desarrollo?",
+      "options": [
+        "Detectan antes y con menor coste ciertos defectos, como código inalcanzable o variables no declaradas, que las pruebas dinámicas",
+        "Hacen innecesarias las revisiones formales de código",
+        "Garantizan que el software superará todas las pruebas dinámicas posteriores",
+        "Sustituyen al control de versiones para registrar cambios en el código"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las herramientas de análisis estático detectan ciertos tipos de defectos antes en el ciclo de vida, antes de ejecutar el código, y normalmente resulta más barato corregirlos que los defectos encontrados después mediante pruebas dinámicas."
+    },
+    {
+      "id": "al-tta-040",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.3.1",
+      "difficulty": "hard",
+      "question": "¿Qué verifican principalmente las pruebas de compatibilidad que realiza un analista técnico de pruebas?",
+      "options": [
+        "Que el manual de usuario se haya traducido a varios idiomas",
+        "Que el equipo haya seguido de cerca el calendario de sprints acordado",
+        "Que el sistema coexista y comparta recursos con otros sistemas sin perjudicarlos, e interopere cuando sea necesario",
+        "Que el equipo de marketing haya aprobado las notas de versión"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de compatibilidad evalúan si un sistema puede coexistir con otros que comparten un entorno y sus recursos, e interoperar correctamente cuando sea necesario, sin afectarse entre sí."
+    },
+    {
+      "id": "al-tta-041",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.3.1",
+      "difficulty": "easy",
+      "question": "¿Qué contribución ayuda más a que una canalización de integración continua detecte rápidamente regresiones estructurales en código crítico?",
+      "options": [
+        "Añadir temas de color y widgets al panel del equipo en cada versión",
+        "Unificar los informes de defectos en un resumen mensual",
+        "Ejecutar todas las pruebas automatizadas una sola vez al final de la versión",
+        "Publicar las tendencias de cobertura y análisis estático del módulo modificado"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las tendencias de cobertura y los resultados del análisis estático proporcionan información técnica rápida sobre si los cambios han aumentado el riesgo estructural."
+    },
+    {
+      "id": "al-tta-042",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.2.2",
+      "difficulty": "medium",
+      "question": "Cuando los desarrolladores indican que no se puede reproducir un defecto, ¿qué mejora debería recomendar primero el analista técnico de pruebas?",
+      "options": [
+        "Esperar a que los usuarios de producción vuelvan a informar del defecto",
+        "Añadir registros deterministas e identificadores de correlación en torno al flujo que falla",
+        "Reducir los datos de diagnóstico recopilados para simplificar el análisis",
+        "Eliminar las aserciones que fallan para que la prueba deje de notificar el problema"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los diagnósticos deterministas facilitan la reproducción y el aislamiento de fallos intermitentes sin debilitar la prueba."
+    },
+    {
+      "id": "al-tta-043",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.4.1",
+      "difficulty": "hard",
+      "question": "Un componente oculta todo su estado y consulta directamente el reloj del sistema. ¿Qué rediseño mejoraría más su capacidad de prueba técnica automatizada?",
+      "options": [
+        "Retirar las pruebas unitarias y sustituirlas por guiones manuales",
+        "Fusionarlo con módulos vecinos para reducir la profundidad de llamadas y el número de interfaces",
+        "Inyectar el reloj y exponer el comportamiento mediante interfaces observables",
+        "Añadir muchos más comentarios en línea sobre el manejo del tiempo"
+      ],
+      "correctIndex": 2,
+      "explanation": "La inyección del tiempo elimina la falta de determinismo y las interfaces observables permiten verificar el comportamiento sin acceder a detalles internos de implementación."
+    },
+    {
+      "id": "al-tta-044",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.3.2",
+      "difficulty": "easy",
+      "question": "Para un módulo integrado que depende de un sensor físico aún no disponible, ¿qué apoyo resulta más útil para las pruebas automatizadas tempranas?",
+      "options": [
+        "Hacer una demostración del dispositivo terminado a los patrocinadores",
+        "Ejecutar solo las pruebas de aceptación finales en el hardware de producción",
+        "Usar un controlador de prueba con un simulador o doble de prueba de sensor configurable",
+        "Posponer todas las pruebas hasta recibir el hardware físico"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los controladores y simuladores permiten ejecutar pruebas técnicas de la lógica de bajo nivel antes de disponer del hardware real."
+    },
+    {
+      "id": "al-tta-045",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.5.1",
+      "difficulty": "medium",
+      "question": "Al elegir una herramienta de cobertura para un módulo crítico para la seguridad, ¿qué capacidad es más importante?",
+      "options": [
+        "Incluir un cliente de chat para que el equipo pueda comunicarse",
+        "Medir con precisión el criterio estructural requerido para el lenguaje y la compilación de destino",
+        "Generar informes con el estilo gráfico de la empresa",
+        "Admitir únicamente la ejecución manual de casos de prueba"
+      ],
+      "correctIndex": 1,
+      "explanation": "La herramienta debe medir correctamente el criterio requerido en el entorno real; de lo contrario, las evidencias de cobertura no son fiables."
+    },
+    {
+      "id": "al-tta-046",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.2.3",
+      "difficulty": "hard",
+      "question": "Durante una revisión de arquitectura, ¿qué pregunta del analista técnico de pruebas aborda más directamente la capacidad de prueba?",
+      "options": [
+        "¿Se pueden aplazar las correcciones de defectos hasta después de la puesta en producción?",
+        "¿Se puede consolidar el código fuente en menos archivos para simplificar la compilación y publicación?",
+        "¿Se pueden provocar de forma controlada fallos externos, tiempos de espera y reintentos?",
+        "¿Se pueden acortar y simplificar las notas de versión?"
+      ],
+      "correctIndex": 2,
+      "explanation": "La inyección controlada de fallos indica claramente que la gestión de errores puede probarse de forma sistemática."
+    },
+    {
+      "id": "al-tta-047",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.6.1",
+      "difficulty": "easy",
+      "question": "Una lista creciente de advertencias de análisis estático suprimidas suele indicar ¿qué?",
+      "options": [
+        "La garantía de que no pueden producirse fallos en tiempo de ejecución",
+        "Una señal de deuda técnica que puede estar ocultando defectos reales",
+        "Una señal positiva de que se está reduciendo la deuda técnica",
+        "Una mejora de la cobertura de requisitos de negocio por parte de las pruebas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las advertencias suprimidas pueden normalizar el riesgo y hacer que el equipo preste menos atención a hallazgos importantes."
+    },
+    {
+      "id": "al-tta-048",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.3.3",
+      "difficulty": "medium",
+      "question": "¿Qué artefacto de transferencia resulta más útil al añadir pruebas automatizadas no funcionales a la integración continua?",
+      "options": [
+        "El compromiso de investigar los fallos más adelante",
+        "Pasos de ejecución repetibles, requisitos del entorno y umbrales de aprobación o fallo",
+        "Una captura del informe final sin detalles sobre cómo se generó",
+        "Una lista de asistentes a la reunión de planificación"
+      ],
+      "correctIndex": 1,
+      "explanation": "La integración continua necesita instrucciones ejecutables y repetibles y umbrales claros para interpretar los resultados de forma coherente."
+    },
+    {
+      "id": "al-tta-049",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.4.2",
+      "difficulty": "hard",
+      "question": "Un servicio devuelve identificadores y marcas de tiempo aleatorios en cada respuesta. ¿Qué debería añadirse para que las aserciones automatizadas sean estables?",
+      "options": [
+        "La posibilidad de fijar la semilla aleatoria o enmascarar campos variables en el oráculo",
+        "Una regla para repetir los casos fallidos hasta que pasen sin cambios",
+        "Más comprobaciones manuales en cada prueba automatizada",
+        "Reducir los registros que genera el servicio"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las salidas estables o normalizadas son esenciales para que las pruebas fallen solo ante diferencias de comportamiento relevantes."
+    },
+    {
+      "id": "al-tta-050",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.5.2",
+      "difficulty": "easy",
+      "question": "¿Qué actividad encaja mejor con el analista técnico de pruebas durante la evaluación de herramientas?",
+      "options": [
+        "Posponer las comprobaciones de integración hasta después de la compra",
+        "Realizar una prueba de concepto con código y datos reales del proyecto",
+        "Elegir la herramienta que genere los informes más extensos",
+        "Elegir la herramienta con los iconos más atractivos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una prueba de concepto con artefactos realistas revela si la herramienta aporta valor en el contexto real del proyecto."
+    },
+    {
+      "id": "al-tta-051",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.2.4",
+      "difficulty": "medium",
+      "question": "¿Por qué puede solicitar el analista técnico de pruebas puntos de diagnóstico adicionales en un sistema altamente asíncrono?",
+      "options": [
+        "Para observar el orden de los eventos y las transiciones de estado cuando ocurren fallos",
+        "Para sustituir todos los registros de negocio por mensajes exclusivos para pruebas",
+        "Para impedir que los desarrolladores reproduzcan y depuren problemas en sus equipos",
+        "Para aumentar la complejidad y dificultar la ingeniería inversa del código"
+      ],
+      "correctIndex": 0,
+      "explanation": "La observabilidad suele ser clave para comprender las condiciones de carrera y los fallos relacionados con la sincronización."
+    },
+    {
+      "id": "al-tta-052",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.5.3",
+      "difficulty": "hard",
+      "question": "En un proyecto regulado, ¿por qué podrían rechazar un arnés de prueba casero y sencillo para informar oficialmente de la cobertura estructural?",
+      "options": [
+        "Puede carecer de evidencias de corrección o cualificación necesarias para confiar en la medición",
+        "Los organismos reguladores permiten esas herramientas a analistas de negocio, pero no a probadores",
+        "Tiende a sobreestimar la cobertura lograda por las pruebas",
+        "No se puede combinar con ningún tipo de ejecución automatizada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Para presentar evidencias en un entorno regulado, puede ser necesario justificar, validar o cualificar el propio método de medición."
+    },
+    {
+      "id": "al-tta-053",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.6.2",
+      "difficulty": "easy",
+      "question": "¿Qué cambio de código suele mejorar las pruebas automatizadas con un riesgo mínimo para el producto?",
+      "options": [
+        "Separar los cálculos puros de los efectos secundarios de entrada y salida",
+        "Combinar varios módulos no relacionados en una sola función extensa",
+        "Sustituir los mensajes de registro significativos por identificadores aleatorios",
+        "Eliminar los códigos de error para simplificar la escritura de aserciones"
+      ],
+      "correctIndex": 0,
+      "explanation": "Desacoplar los cálculos de los efectos secundarios facilita controlar y verificar la lógica en las pruebas."
+    },
+    {
+      "id": "al-tta-054",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.3.4",
+      "difficulty": "medium",
+      "question": "Una prueba de rendimiento a nivel de unidad produce resultados variables porque se ejecuta en una máquina compartida. ¿Qué debería hacer primero el analista técnico de pruebas?",
+      "options": [
+        "Estabilizar el entorno y definir un protocolo de medición repetible",
+        "Convertir la prueba en manual y registrar los resultados a mano",
+        "Eliminarla, ya que las herramientas automatizadas no miden el rendimiento con fiabilidad",
+        "Aumentar el umbral hasta que la prueba pase en todas las ejecuciones variables"
+      ],
+      "correctIndex": 0,
+      "explanation": "Es necesario controlar las condiciones de medición antes de poder usar los resultados para tomar decisiones técnicas."
+    },
+    {
+      "id": "al-tta-055",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.6.3",
+      "difficulty": "hard",
+      "question": "¿Qué problema de automatización debilita más la confianza en las pruebas técnicas?",
+      "options": [
+        "Fallos intermitentes que no guardan relación con cambios del producto",
+        "Pruebas que se ejecutan en paralelo en varias máquinas",
+        "Pruebas que generan registros detallados de cada paso",
+        "Pruebas que se ejecutan más rápido tras optimizar el código de prueba"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas inestables erosionan la confianza, porque el equipo no puede saber si un fallo indica un defecto del producto o inestabilidad de la prueba."
+    },
+    {
+      "id": "al-tta-056",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.5.4",
+      "difficulty": "easy",
+      "question": "Al introducir una nueva herramienta de análisis estático, ¿qué responsabilidad corresponde más naturalmente al analista técnico de pruebas?",
+      "options": [
+        "Ajustar las reglas y los umbrales junto con los desarrolladores según los riesgos",
+        "Retirar todas las prácticas de revisión existentes una vez que la herramienta funcione",
+        "Encargarse de los cálculos de nómina del equipo del proyecto",
+        "Aprobar cambios en la marca y la identidad visual del producto"
+      ],
+      "correctIndex": 0,
+      "explanation": "El analista técnico de pruebas ayuda a alinear los hallazgos de la herramienta con el riesgo técnico para centrar al equipo en las comprobaciones de mayor valor."
+    },
+    {
+      "id": "al-tta-057",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.3.5",
+      "difficulty": "medium",
+      "question": "Un equipo exige reproducir manualmente cada defecto antes de automatizarlo. ¿Cuál es la objeción técnica más sólida?",
+      "options": [
+        "La reproducción manual es lenta y difícil de repetir, mientras que la automatización conserva las condiciones exactas",
+        "La ejecución manual ofrece más cobertura estructural que la automatizada",
+        "Las pruebas automatizadas no pueden examinar el comportamiento técnico de un sistema",
+        "La reproducción manual casi siempre es más rápida que escribir una prueba automatizada"
+      ],
+      "correctIndex": 0,
+      "explanation": "Codificar la reproducción como una prueba automatizada conserva las condiciones que revelaron el defecto y reduce el esfuerzo de diagnóstico futuro."
+    },
+    {
+      "id": "al-tta-058",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.4.3",
+      "difficulty": "hard",
+      "question": "En un entorno de pruebas con varios servicios, ¿qué diseño ayuda mejor a aislar un posible defecto de interfaz?",
+      "options": [
+        "Enviar todo el tráfico de prueba a los servicios de producción en vivo",
+        "Redactar más manuales de usuario para cada servicio",
+        "Aleatorizar el orden de inicio de todos los servicios",
+        "Virtualizar los límites entre servicios con respuestas controlables"
+      ],
+      "correctIndex": 3,
+      "explanation": "El comportamiento controlable en los límites ayuda a determinar si el fallo se origina en el servicio invocador, el invocado o el contrato entre ambos."
+    },
+    {
+      "id": "al-tta-059",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.6.4",
+      "difficulty": "easy",
+      "question": "¿Qué tendencia interesaría más al analista técnico de pruebas al revisar la calidad del código a lo largo del tiempo?",
+      "options": [
+        "Aumento de la complejidad y de la lógica duplicada en el código que cambia con frecuencia",
+        "Disminución de las invitaciones de calendario y las reuniones de estado",
+        "Aumento del número de emojis en los mensajes de confirmación",
+        "Ampliación de la lista de días festivos de la empresa"
+      ],
+      "correctIndex": 0,
+      "explanation": "El aumento de la complejidad y la duplicación eleva el riesgo técnico, porque aumenta la probabilidad de introducir defectos al realizar cambios."
+    },
+    {
+      "id": "al-tta-060",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.2.5",
+      "difficulty": "medium",
+      "question": "Al revisar una API destinada a pruebas de inyección de fallos, ¿qué característica resulta más útil?",
+      "options": [
+        "Tiempos de espera explícitos y respuestas de fallo configurables",
+        "Un logotipo colorido en la página OpenAPI generada",
+        "Una política que prohíba los casos de prueba negativos para la interfaz",
+        "Una regla que exija contenido aleatorio en cada respuesta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de inyección de fallos dependen de la posibilidad de provocar y observar escenarios de fallo controlados."
+    },
+    {
+      "id": "al-tta-061",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.6.5",
+      "difficulty": "hard",
+      "question": "Un equipo registra solo la tasa de aprobación de pruebas de extremo a extremo e ignora la cobertura de bajo nivel y los hallazgos de las herramientas. ¿Qué riesgo persiste?",
+      "options": [
+        "No será necesario ningún diagnóstico adicional en etapas posteriores",
+        "Las pruebas de sistema aprobadas proporcionan automáticamente una cobertura completa de caminos",
+        "Los puntos ciegos estructurales críticos pueden quedar ocultos tras pruebas de sistema aprobadas",
+        "Por definición, la deuda técnica se reduce al aumentar la tasa de aprobación"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas de sistema pueden pasar por alto ramas de riesgo, gestores de errores y problemas de flujo de datos que revelarían las evidencias técnicas."
+    },
+    {
+      "id": "al-tta-062",
+      "chapter": "1. Tareas del analista técnico de pruebas",
+      "loRef": "AL-TTA-1.3.6",
+      "difficulty": "easy",
+      "question": "¿Qué tarea es un buen ejemplo de apoyo técnico a las pruebas para mejorar la capacidad de mantenimiento?",
+      "options": [
+        "Sustituir las pruebas automatizadas por hojas de cálculo mantenidas manualmente",
+        "Crear constructores y funciones auxiliares reutilizables para los datos de prueba",
+        "Cambiar el nombre del producto por motivos de marketing antes de su publicación",
+        "Eliminar utilidades compartidas para que cada prueba las vuelva a implementar"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los activos técnicos de prueba reutilizables reducen el coste de mantenimiento y facilitan ampliar futuras suites de regresión."
+    },
+    {
+      "id": "al-tta-063",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.1.3",
+      "difficulty": "easy",
+      "question": "¿Qué componente suele requerir atención técnica temprana por sus riesgos?",
+      "options": [
+        "Una presentación que explica al personal la hoja de ruta del producto",
+        "Un prototipo archivado que ya no forma parte de la versión y no se modifica",
+        "Una biblioteca de autenticación compartida por todos los servicios dirigidos a clientes",
+        "Una página de ayuda estática sin lógica ejecutable"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un defecto en una biblioteca crítica compartida puede afectar a muchos servicios, por lo que su impacto y exposición son elevados."
+    },
+    {
+      "id": "al-tta-064",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.2.2",
+      "difficulty": "medium",
+      "question": "¿Por qué la falta de observabilidad aumenta el riesgo técnico en un flujo de trabajo distribuido?",
+      "options": [
+        "Las pruebas de regresión dejan de ser necesarias para cambios posteriores",
+        "La interfaz resulta más sencilla para sus usuarios",
+        "Los fallos son más difíciles de detectar, localizar y diagnosticar",
+        "El rendimiento del sistema mejora bajo una carga elevada"
+      ],
+      "correctIndex": 2,
+      "explanation": "La falta de observabilidad aumenta la probabilidad de que los fallos importantes pasen inadvertidos o tarden demasiado en investigarse."
+    },
+    {
+      "id": "al-tta-065",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.3.1",
+      "difficulty": "hard",
+      "question": "Un nuevo planificador de pagos introduce control de concurrencia en las actualizaciones de cuentas. ¿Por qué suele considerarse de alto riesgo técnico?",
+      "options": [
+        "El control de concurrencia elimina todos los defectos de estado en las actualizaciones",
+        "El código de planificación está exento de las técnicas de prueba estructural",
+        "Los fallos de sincronización poco frecuentes son difíciles de provocar, diagnosticar y contener, y su impacto es financiero",
+        "Se espera que pocos usuarios utilicen la función después del lanzamiento"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los defectos de concurrencia suelen ser intermitentes y tener gran impacto, especialmente si afectan a la integridad financiera."
+    },
+    {
+      "id": "al-tta-066",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.1.4",
+      "difficulty": "easy",
+      "question": "En el análisis de riesgos técnicos, ¿qué describe el impacto?",
+      "options": [
+        "Si el formateador cambia el estilo de sangría del código",
+        "Cuántos desarrolladores prefieren trabajar en el componente",
+        "El número de reuniones programadas durante el sprint",
+        "El daño o la pérdida que se produce si ocurre el fallo"
+      ],
+      "correctIndex": 3,
+      "explanation": "El impacto refleja las consecuencias de un fallo, no el esfuerzo de prueba que espera invertir el equipo."
+    },
+    {
+      "id": "al-tta-067",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.2.3",
+      "difficulty": "medium",
+      "question": "Un paquete de terceros tiene una vulnerabilidad crítica divulgada recientemente. ¿Qué debería señalar de inmediato el analista técnico de pruebas?",
+      "options": [
+        "El riesgo solo existe si el equipo modificó el código fuente del paquete",
+        "El paquete ya no puede influir en las decisiones de publicación",
+        "La exposición puede ser alta aunque no haya cambiado el código local",
+        "En respuesta, solo deben ajustarse las pruebas de usabilidad"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las vulnerabilidades heredadas pueden generar un riesgo técnico importante aunque el código de la aplicación no haya cambiado."
+    },
+    {
+      "id": "al-tta-068",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.2.4",
+      "difficulty": "hard",
+      "question": "¿Qué situación aumenta más la probabilidad de un riesgo técnico?",
+      "options": [
+        "Un archivo de configuración de solo lectura sin comportamiento en tiempo de ejecución",
+        "Un módulo complejo reescrito recientemente y a cargo de un equipo sin experiencia",
+        "Un módulo estable con lógica sencilla, amplia cobertura de regresión y pocos cambios recientes",
+        "Una biblioteca sin cambios desde hace años y con pocos defectos"
+      ],
+      "correctIndex": 1,
+      "explanation": "La complejidad, los cambios recientes y la falta de familiaridad del equipo se combinan para aumentar la probabilidad de defectos latentes."
+    },
+    {
+      "id": "al-tta-069",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.3.2",
+      "difficulty": "easy",
+      "question": "Un analizador heredado recibe correcciones frecuentes en producción, pero casi no tiene pruebas automatizadas. ¿Cuál es la mejor primera medida de mitigación?",
+      "options": [
+        "Añadir pruebas de caracterización y estructurales específicas en los caminos propensos a defectos",
+        "Esperar a disponer de financiación para una reescritura completa",
+        "Excluir el analizador de todos los planes de regresión para ahorrar tiempo",
+        "Confiar en las demostraciones del equipo de marketing para comprobar que funciona"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas específicas pueden reducir rápidamente el riesgo al fijar el comportamiento actual y ejercitar las ramas de riesgo."
+    },
+    {
+      "id": "al-tta-070",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.1.5",
+      "difficulty": "medium",
+      "question": "¿Qué artefacto ayuda más a identificar cómo podría afectar un componente con fallos a los componentes vecinos?",
+      "options": [
+        "Una lista de la ubicación de los escritorios en la oficina",
+        "Un diagrama de arquitectura o de dependencias entre interfaces",
+        "La paleta de colores de la interfaz del producto",
+        "El calendario de almuerzos del equipo durante el proyecto"
+      ],
+      "correctIndex": 1,
+      "explanation": "La información sobre dependencias ayuda a estimar el alcance del impacto y a priorizar las pruebas de integración."
+    },
+    {
+      "id": "al-tta-071",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.3.3",
+      "difficulty": "hard",
+      "question": "Un servicio de carga de archivos expuesto a Internet utiliza un analizador propio para contenido no confiable. ¿Qué enfoque de pruebas es más apropiado?",
+      "options": [
+        "Omitir las pruebas negativas porque los archivos proceden de usuarios",
+        "Realizar pruebas específicas de robustez, seguridad y estructura del análisis y la gestión de errores",
+        "Comprobar que la página de inicio se carga después de cada despliegue",
+        "Limitarse a pruebas de camino positivo desde la interfaz"
+      ],
+      "correctIndex": 1,
+      "explanation": "El análisis propio de entradas no confiables es un área clásica de alto riesgo que requiere pruebas negativas y estructurales exhaustivas."
+    },
+    {
+      "id": "al-tta-072",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.2.5",
+      "difficulty": "easy",
+      "question": "¿Qué cambio suele reducir la probabilidad de fallos técnicos en un módulo?",
+      "options": [
+        "Introducir estado global oculto para compartir datos entre las personas que llaman al módulo",
+        "Aumentar la frecuencia de cambios y omitir las revisiones de código",
+        "Mantener el módulo pequeño y estable, con buena cobertura de pruebas automatizadas",
+        "Eliminar los diagnósticos de los caminos de gestión de fallos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los módulos pequeños y estables con buena automatización ofrecen menos oportunidades de introducir y no detectar defectos."
+    },
+    {
+      "id": "al-tta-073",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.2.6",
+      "difficulty": "medium",
+      "question": "¿Por qué es relevante una alta frecuencia de cambios al evaluar riesgos técnicos?",
+      "options": [
+        "Las modificaciones frecuentes aumentan la probabilidad de introducir defectos nuevos",
+        "Garantiza que los defectos siempre se detecten antes",
+        "Afecta principalmente a la planificación de la oficina, no al riesgo del software",
+        "Elimina la necesidad de pruebas de regresión del módulo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Incluso el código sencillo se vuelve más arriesgado si cambia con frecuencia, porque las evidencias anteriores pueden dejar de corresponder al estado actual."
+    },
+    {
+      "id": "al-tta-074",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.3.4",
+      "difficulty": "hard",
+      "question": "Dos módulos causarían daños similares si fallaran, pero uno utiliza concurrencia compleja y ha tenido bloqueos mutuos. ¿Cómo debería clasificarse?",
+      "options": [
+        "Con mayor riesgo, porque su probabilidad es más alta aunque el impacto sea similar",
+        "Con menor riesgo, porque los problemas de concurrencia son principalmente teóricos",
+        "Con el mismo riesgo, porque al clasificarlos solo importa la magnitud del impacto",
+        "Sin clasificar, porque debe ignorarse el historial técnico"
+      ],
+      "correctIndex": 0,
+      "explanation": "La clasificación de riesgos depende tanto del impacto como de la probabilidad; el historial de defectos de concurrencia aumenta esta última."
+    },
+    {
+      "id": "al-tta-075",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.1.6",
+      "difficulty": "easy",
+      "question": "¿Qué sugiere la repetición de defectos en un mismo subsistema?",
+      "options": [
+        "Que el subsistema ya no necesita más pruebas",
+        "Que pueden ignorarse las dependencias arquitectónicas del subsistema",
+        "Que el equipo de pruebas originó los defectos encontrados",
+        "Que es probable que queden fallos latentes similares en esa misma área"
+      ],
+      "correctIndex": 3,
+      "explanation": "La concentración de defectos es una señal práctica de que puede haber más fallos en la misma área."
+    },
+    {
+      "id": "al-tta-076",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.1.7",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación refleja mejor cómo se suele priorizar la exposición en las pruebas basadas en riesgos?",
+      "options": [
+        "Combinando la probabilidad y el impacto, en vez de basarse solo en el esfuerzo",
+        "Según la antigüedad de los comentarios del código fuente",
+        "Según el tamaño del equipo que despliega la versión",
+        "Según el tiempo medio de ejecución esperado de cada prueba"
+      ],
+      "correctIndex": 0,
+      "explanation": "La priorización basada en riesgos se centra en las áreas donde un fallo es a la vez probable y perjudicial."
+    },
+    {
+      "id": "al-tta-077",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.3.5",
+      "difficulty": "hard",
+      "question": "Para una ruta de transacción sensible al rendimiento, ¿cuál es la mejor medida basada en riesgos antes de iniciar la regresión completa?",
+      "options": [
+        "Sustituir las pruebas automatizadas por la medición manual de tiempos con cronómetro",
+        "Registrar solo la velocidad media de trabajo del equipo de desarrollo",
+        "Dejar las comprobaciones de rendimiento para la última semana antes del lanzamiento",
+        "Ejecutar temprano un análisis de carga específico en la ruta crítica"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las evidencias técnicas tempranas en la ruta crítica pueden revelar riesgos graves de rendimiento cuando todavía hay tiempo para actuar."
+    },
+    {
+      "id": "al-tta-078",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.3.6",
+      "difficulty": "easy",
+      "question": "¿Por qué pueden ser más estrictos los criterios de salida de un área de alto riesgo técnico que los de una utilidad de bajo riesgo?",
+      "options": [
+        "Los criterios de salida deben ser idénticos para todos los componentes",
+        "Las utilidades de bajo riesgo están exentas de cualquier prueba",
+        "Los criterios estrictos solo sirven para satisfacer las necesidades documentales de la oficina del proyecto",
+        "Las áreas de mayor riesgo requieren evidencias más sólidas de que el riesgo residual es aceptable"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las evidencias más estrictas están justificadas cuando las consecuencias o la probabilidad de fallo son mayores."
+    },
+    {
+      "id": "al-tta-079",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.1.8",
+      "difficulty": "medium",
+      "question": "¿Qué elemento merece mayor prioridad en una discusión de riesgos?",
+      "options": [
+        "Un comentario del código que supera la longitud de línea recomendada",
+        "Un error estético que aparece a menudo en los registros de depuración",
+        "Un informe de pruebas con la marca corporativa desactualizada",
+        "Un fallo poco frecuente que puede corromper datos de clientes"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un fallo catastrófico aunque sea poco frecuente puede tener prioridad sobre problemas menores comunes, debido a su impacto mucho mayor."
+    },
+    {
+      "id": "al-tta-080",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.2.7",
+      "difficulty": "hard",
+      "question": "¿Cómo deberían influir los hallazgos del análisis estático en la evaluación de riesgos técnicos?",
+      "options": [
+        "Solo son relevantes después del lanzamiento y de que los usuarios informen de problemas",
+        "Deben dejarse de lado hasta que fallen las pruebas de sistema",
+        "Pueden ayudar a identificar puntos críticos y orientar pruebas más exhaustivas y específicas",
+        "Eliminan la necesidad de probar el software en tiempo de ejecución"
+      ],
+      "correctIndex": 2,
+      "explanation": "Hallazgos como API peligrosas, riesgos de desreferencia nula o picos de complejidad ayudan a centrar las pruebas donde el riesgo técnico es mayor."
+    },
+    {
+      "id": "al-tta-081",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.2.8",
+      "difficulty": "easy",
+      "question": "¿Por qué suele considerarse más arriesgado un algoritmo sin documentar entregado por un contratista externo?",
+      "options": [
+        "El código externo es inmutable y nunca se modifica",
+        "Las lagunas de conocimiento dificultan la revisión, el mantenimiento y el diagnóstico de defectos",
+        "La documentación apenas influye en el riesgo técnico de un componente",
+        "El código de contratistas no se puede probar con técnicas estándar"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cuando la intención del diseño no está clara, el equipo tiene menos base para revisar, analizar el impacto y diseñar pruebas precisas."
+    },
+    {
+      "id": "al-tta-082",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.1.9",
+      "difficulty": "medium",
+      "question": "Un defecto de escalado automático puede iniciar muchas instancias innecesarias bajo carga. ¿Por qué suele valorarse su impacto como alto?",
+      "options": [
+        "Impide que se produzcan otros defectos en el mismo servicio",
+        "Solo afecta a métricas estéticas de supervisión en los paneles",
+        "Reduce la necesidad de supervisar la plataforma en ejecución",
+        "Puede elevar considerablemente los costes y desestabilizar la plataforma durante los picos de tráfico"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los fallos de escalado automático pueden amplificar rápidamente el impacto operativo al desperdiciar recursos o desestabilizar el servicio."
+    },
+    {
+      "id": "al-tta-083",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.3.7",
+      "difficulty": "hard",
+      "question": "Se encuentran secretos codificados en la automatización del despliegue. ¿Por qué suele ser un riesgo técnico alto?",
+      "options": [
+        "Una vulneración puede propagarse ampliamente y ser fácil de explotar",
+        "Solo importan cuando se renueve el hardware",
+        "Aceleran demasiado el despliegue",
+        "Solo influyen en el formato de los scripts de automatización"
+      ],
+      "correctIndex": 0,
+      "explanation": "La exposición de secretos puede permitir un acceso no autorizado generalizado, por lo que la probabilidad y el impacto son graves."
+    },
+    {
+      "id": "al-tta-084",
+      "chapter": "2. Pruebas basadas en riesgos",
+      "loRef": "AL-TTA-2.3.8",
+      "difficulty": "medium",
+      "question": "Tras añadir medidas de mitigación para un componente arriesgado, ¿qué debe seguir comunicando el analista técnico de pruebas?",
+      "options": [
+        "El riesgo residual y las hipótesis no probadas que persisten",
+        "Que las pruebas han terminado y no hay nada más que explicar a las partes interesadas",
+        "Que ya no es necesario hablar de riesgos",
+        "Que las medidas garantizan que el componente no tenga defectos"
+      ],
+      "correctIndex": 0,
+      "explanation": "El riesgo rara vez llega a cero, por lo que las partes interesadas deben comprender la incertidumbre restante."
+    },
+    {
+      "id": "al-tta-085",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.3",
+      "difficulty": "easy",
+      "question": "Para lograr cobertura de decisiones en una sentencia if-else sencilla, ¿qué deben hacer las pruebas?",
+      "options": [
+        "Ejecutar solo la rama más larga en cada prueba",
+        "Usar todos los valores posibles de la variable que controla la decisión",
+        "Ejercitar tanto el resultado verdadero como el falso de la decisión",
+        "Ejecutar todas las sentencias en orden alfabético según su etiqueta"
+      ],
+      "correctIndex": 2,
+      "explanation": "La cobertura de decisiones exige tomar cada resultado de decisión al menos una vez."
+    },
+    {
+      "id": "al-tta-086",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.2.3",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación describe correctamente la cobertura de condiciones?",
+      "options": [
+        "Solo se mide la proporción de sentencias ejecutadas",
+        "Se tiene en cuenta la evaluación de cortocircuito de las condiciones",
+        "Cada condición atómica de una decisión se evalúa como verdadera y falsa al menos una vez",
+        "Se ejecutan todos los caminos factibles del código"
+      ],
+      "correctIndex": 2,
+      "explanation": "La cobertura de condiciones se refiere a los valores de verdad de las condiciones individuales que forman una decisión."
+    },
+    {
+      "id": "al-tta-087",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.2.4",
+      "difficulty": "hard",
+      "question": "Una decisión contiene tres condiciones booleanas independientes. ¿Cuántas combinaciones requiere la cobertura completa de condiciones múltiples?",
+      "options": [
+        "3",
+        "8",
+        "6",
+        "9"
+      ],
+      "correctIndex": 1,
+      "explanation": "La cobertura de condiciones múltiples exige todas las combinaciones verdadero-falso; para tres condiciones son 2^3 = 8."
+    },
+    {
+      "id": "al-tta-088",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.2.5",
+      "difficulty": "easy",
+      "question": "¿Por qué se suele elegir MC/DC en lugar de la cobertura completa de condiciones múltiples para lógica crítica?",
+      "options": [
+        "Ignora por completo el resultado global de la decisión",
+        "Se puede cumplir sin ejecutar el código",
+        "Es un criterio más débil que la cobertura de sentencias",
+        "Aporta evidencias sólidas de que cada condición influye y requiere menos pruebas"
+      ],
+      "correctIndex": 3,
+      "explanation": "MC/DC conserva una gran capacidad para detectar defectos y evita la explosión combinatoria de la cobertura de condiciones múltiples."
+    },
+    {
+      "id": "al-tta-089",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.4",
+      "difficulty": "medium",
+      "question": "Si un camino de flujo de control no es factible porque sus condiciones nunca pueden cumplirse juntas, ¿qué implica para la cobertura de caminos?",
+      "options": [
+        "Solo los caminos factibles pueden incluirse en la cobertura completa de caminos",
+        "Debe forzarse la ejecución del camino no factible con datos especiales",
+        "Hay que abandonar todos los objetivos de cobertura de caminos del código",
+        "Ya no se puede lograr cobertura de decisiones en el código"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los criterios estructurales se interpretan según el comportamiento factible; los caminos no factibles deben justificarse, no forzarse artificialmente."
+    },
+    {
+      "id": "al-tta-090",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.5",
+      "difficulty": "hard",
+      "question": "¿Qué implica una complejidad ciclomática de 6 para las pruebas de caminos básicos?",
+      "options": [
+        "No se pueden escribir más de 6 casos de prueba para el código",
+        "Las pruebas deben ejecutar al menos 6 sentencias",
+        "Por definición, el código ya tiene cobertura completa de decisiones",
+        "Hay 6 caminos linealmente independientes que considerar como referencia"
+      ],
+      "correctIndex": 3,
+      "explanation": "La complejidad ciclomática aproxima la cantidad de caminos linealmente independientes que deberían considerarse para la cobertura de caminos básicos."
+    },
+    {
+      "id": "al-tta-091",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.4.2",
+      "difficulty": "easy",
+      "question": "¿Qué es un LCSAJ en las pruebas estructurales?",
+      "options": [
+        "Una secuencia lineal de código seguida de un salto",
+        "Una lista de comprobación para la aceptación del usuario",
+        "Un registro de mediciones de carga y esfuerzo obtenidas durante una prueba",
+        "Una instantánea del contenido de la memoria dinámica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un LCSAJ es una unidad estructural de bajo nivel formada por código secuencial y el salto que la termina."
+    },
+    {
+      "id": "al-tta-092",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.4.3",
+      "difficulty": "medium",
+      "question": "En las pruebas del flujo de datos, ¿qué es un par definición-uso?",
+      "options": [
+        "Una decisión junto con la sentencia de retorno que la sigue",
+        "Dos sentencias cualesquiera que aparecen consecutivamente en el código",
+        "Dos variables diferentes asignadas en un mismo bloque",
+        "La definición de una variable y un uso posterior al que se llega sin redefinirla"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas del flujo de datos siguen cómo los valores definidos llegan a usos posteriores por caminos concretos."
+    },
+    {
+      "id": "al-tta-093",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.3.2",
+      "difficulty": "hard",
+      "question": "¿Por qué las pruebas de bucles prestan especial atención a cero iteraciones, una iteración y los límites?",
+      "options": [
+        "La cobertura de decisiones no tiene en cuenta las construcciones de bucle",
+        "Un bucle se puede probar con un único valor de entrada",
+        "Las variables de bucle no suponen riesgos y no requieren atención",
+        "Los defectos de inicialización y de límites de una unidad suelen aparecer cerca de los extremos de iteración"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los recuentos de iteraciones límite son puntos donde suelen fallar la preparación, la terminación y la lógica de límites."
+    },
+    {
+      "id": "al-tta-094",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.3.3",
+      "difficulty": "easy",
+      "question": "En el caso de bucles anidados, ¿cuál es una estrategia inicial habitual?",
+      "options": [
+        "Omitir el bucle interno, ya que el externo lo cubre en todas las pruebas",
+        "Elegir al azar el número de iteraciones de todos los bucles",
+        "Probar los límites del bucle interno y mantener los externos en valores sencillos",
+        "Configurar todos los bucles con el número máximo de iteraciones desde la primera prueba"
+      ],
+      "correctIndex": 2,
+      "explanation": "Controlar un bucle cada vez facilita aislar los defectos en la lógica de iteraciones anidadas."
+    },
+    {
+      "id": "al-tta-095",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.6",
+      "difficulty": "medium",
+      "question": "¿Por qué deben incluirse los gestores de excepciones en el análisis de cobertura de ramas?",
+      "options": [
+        "Solo cuentan para la cobertura de sentencias",
+        "No se pueden activar durante las pruebas",
+        "Son solo documentación y no tienen comportamiento ejecutable que deba probarse",
+        "Son resultados alternativos del flujo de control y contienen lógica propia"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las rutas de captura, recuperación y limpieza suelen tener comportamientos propios que deben ejercitarse explícitamente."
+    },
+    {
+      "id": "al-tta-096",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.5.1",
+      "difficulty": "hard",
+      "question": "Al diseñar pruebas de API a partir de la estructura del código del servidor, ¿cuál es el principal foco estructural?",
+      "options": [
+        "El tamaño del equipo de desarrollo del servidor",
+        "El aspecto y la marca del portal para desarrolladores de la API",
+        "El orden alfabético y los nombres de los puntos de conexión del portal",
+        "Las ramas de validación, autorización y asignación de errores"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas de API basadas en el código se dirigen a rutas internas diferenciadas, como las ramas de validación y la lógica de asignación de excepciones."
+    },
+    {
+      "id": "al-tta-097",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.7",
+      "difficulty": "easy",
+      "question": "Una suite de pruebas alcanza una cobertura de sentencias del 100 %. ¿Qué podría seguir faltando?",
+      "options": [
+        "La ejecución del resultado falso de algunas decisiones",
+        "La compilación del programa sometido a prueba",
+        "La ejecución de cada sentencia al menos una vez por alguna prueba",
+        "La disponibilidad de un entorno donde ejecutar las pruebas"
+      ],
+      "correctIndex": 0,
+      "explanation": "La cobertura de sentencias puede no detectar resultados de decisión sin probar cuando las sentencias ejecutadas coinciden."
+    },
+    {
+      "id": "al-tta-098",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.8",
+      "difficulty": "medium",
+      "question": "En un grafo de flujo de control, ¿qué suelen representar las aristas?",
+      "options": [
+        "Las transferencias de control entre nodos",
+        "Las líneas de comentarios del archivo fuente",
+        "Los valores de datos que se proporcionan a las pruebas",
+        "Las prioridades asignadas a los defectos encontrados"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las aristas conectan los puntos del programa entre los que puede pasar la ejecución."
+    },
+    {
+      "id": "al-tta-099",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.3.4",
+      "difficulty": "hard",
+      "question": "¿Qué aspecto estructural adicional debe tenerse en cuenta al probar una función recursiva con caja blanca?",
+      "options": [
+        "Solo hay que examinar la pila de llamadas más profunda posible",
+        "El código recursivo no se puede representar en un grafo de flujo de control",
+        "La recursión hace innecesaria la cobertura de ramas de la función",
+        "Hay que ejercitar tanto el caso base como el avance recursivo hacia la terminación"
+      ],
+      "correctIndex": 3,
+      "explanation": "La lógica recursiva solo es segura si las pruebas demuestran tanto la entrada en la recursión como una terminación correcta."
+    },
+    {
+      "id": "al-tta-100",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.2.6",
+      "difficulty": "easy",
+      "question": "¿En qué se centra principalmente la cobertura de condiciones?",
+      "options": [
+        "En el número de requisitos vinculados al código",
+        "En si el código contiene suficientes comentarios explicativos",
+        "En que cada condición atómica tome los valores verdadero y falso",
+        "Solo en el resultado final de la decisión"
+      ],
+      "correctIndex": 2,
+      "explanation": "La cobertura de condiciones se centra en las partes booleanas individuales que forman una decisión."
+    },
+    {
+      "id": "al-tta-101",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.4.4",
+      "difficulty": "medium",
+      "question": "Una variable se asigna en una rama y luego se usa después de la convergencia de las ramas. ¿Qué debe tener en cuenta la prueba del flujo de datos?",
+      "options": [
+        "Si el punto de convergencia se encuentra dentro de un bucle",
+        "El color usado para dibujar cada rama del diagrama",
+        "Los caminos de definición a uso que atraviesan las distintas ramas",
+        "Si los nombres de las variables son lo bastante descriptivos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las distintas ramas pueden definir o no los valores de manera diferente; por ello, el uso posterior requiere comprobaciones específicas de definición-uso."
+    },
+    {
+      "id": "al-tta-102",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.9",
+      "difficulty": "hard",
+      "question": "¿Por qué puede complicar el código inalcanzable la interpretación de los objetivos de cobertura estructural?",
+      "options": [
+        "Afecta a las pruebas de usabilidad, pero no a las estructurales",
+        "Se cuenta automáticamente como código cubierto",
+        "Las herramientas de cobertura no pueden leer los archivos fuente",
+        "El denominador medido puede incluir código que no se puede ejecutar hasta que se elimine o justifique"
+      ],
+      "correctIndex": 3,
+      "explanation": "El equipo debe distinguir entre cobertura no alcanzada y código que realmente no tiene ningún camino de ejecución."
+    },
+    {
+      "id": "al-tta-103",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.3.5",
+      "difficulty": "easy",
+      "question": "¿Qué prueba centrada en bucles resulta especialmente útil para revelar errores de inicialización?",
+      "options": [
+        "Una prueba que omite todo el código de configuración",
+        "Una prueba que solo usa un tamaño de entrada promedio",
+        "Una prueba que desactiva las aserciones para acelerar la ejecución",
+        "Una prueba en la que el cuerpo del bucle no se ejecuta ninguna vez"
+      ],
+      "correctIndex": 3,
+      "explanation": "Comprobar la ejecución con cero iteraciones permite verificar que el código funciona correctamente antes de la primera pasada."
+    },
+    {
+      "id": "al-tta-104",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.2.7",
+      "difficulty": "medium",
+      "question": "¿Por qué importa la evaluación de cortocircuito al probar estructuralmente decisiones compuestas?",
+      "options": [
+        "Significa que las decisiones ya no producen valores booleanos",
+        "Puede que algunas condiciones no se evalúen en cada ejecución de la decisión",
+        "Hace imposible medir la cobertura de ramas del código con estas decisiones",
+        "Solo cambia el formato del código fuente"
+      ],
+      "correctIndex": 1,
+      "explanation": "Con la lógica de cortocircuito, hay que elegir cuidadosamente las pruebas si se espera ejercitar cada condición."
+    },
+    {
+      "id": "al-tta-105",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.4.5",
+      "difficulty": "hard",
+      "question": "En las pruebas LCSAJ, ¿qué distingue dos LCSAJ que comparten la misma secuencia lineal?",
+      "options": [
+        "Sus distintos destinos o puntos finales del salto",
+        "La antigüedad del código",
+        "El estilo de sangría y el ajuste de líneas del código",
+        "La cantidad de comentarios en el bloque"
+      ],
+      "correctIndex": 0,
+      "explanation": "El salto de terminación forma parte de la unidad estructural, por lo que distintas salidas definen LCSAJ diferentes."
+    },
+    {
+      "id": "al-tta-106",
+      "chapter": "3. Técnicas de prueba de caja blanca",
+      "loRef": "AL-TTA-3.1.10",
+      "difficulty": "hard",
+      "question": "¿Por qué rara vez es práctico lograr una cobertura completa de caminos en sistemas reales?",
+      "options": [
+        "Las herramientas de cobertura se niegan a contar caminos en cualquier programa",
+        "Los bucles, la recursión y las decisiones combinadas multiplican enormemente el número de caminos",
+        "La cobertura de caminos es un criterio más débil que la cobertura de sentencias",
+        "Los sistemas reales no contienen lógica de ramificación que se pueda cubrir"
+      ],
+      "correctIndex": 1,
+      "explanation": "Incluso un flujo de control moderado puede generar demasiados caminos para enumerarlos y ejecutarlos exhaustivamente."
+    },
+    {
+      "id": "al-tta-107",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.1.3",
+      "difficulty": "easy",
+      "question": "¿Qué suele significar una advertencia de almacenamiento sin uso del análisis estático?",
+      "options": [
+        "Se eliminó inesperadamente una fila de la base de datos durante la ejecución en producción",
+        "Se asigna un valor, pero no se lee antes de sobrescribirlo o descartarlo",
+        "El programa se quedó sin espacio en disco durante la ejecución",
+        "El nombre de una variable es más corto de lo permitido por la guía de estilo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las asignaciones sin uso suelen indicar lógica redundante o que falta el uso previsto del valor asignado."
+    },
+    {
+      "id": "al-tta-108",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.2.2",
+      "difficulty": "medium",
+      "question": "¿Para qué es más útil la complejidad ciclomática?",
+      "options": [
+        "Para estimar el número de caminos independientes que deben considerarse y el esfuerzo relativo de revisión",
+        "Para medir la memoria RAM que consume el software en ejecución",
+        "Para contar las historias de usuario previstas para una versión",
+        "Para estimar la probabilidad de que se intente un ataque de seguridad"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una complejidad mayor indica más lógica de decisión y, por lo general, más caminos estructurales que requieren atención."
+    },
+    {
+      "id": "al-tta-109",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.1.4",
+      "difficulty": "hard",
+      "question": "¿Cómo puede ayudar un grafo de llamadas al modificar una utilidad compartida de riesgo?",
+      "options": [
+        "Demuestra que no es necesario hacer pruebas de regresión tras cambiar la utilidad",
+        "Sustituye la revisión del código fuente modificado",
+        "Detecta automáticamente las fugas de memoria de la utilidad",
+        "Muestra los invocadores directos e indirectos que quizá requieran pruebas específicas"
+      ],
+      "correctIndex": 3,
+      "explanation": "El análisis de impacto mejora cuando el equipo puede ver qué caminos de código dependen de la utilidad modificada."
+    },
+    {
+      "id": "al-tta-110",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.1.5",
+      "difficulty": "easy",
+      "question": "¿Cómo se suele clasificar el código situado después de una sentencia return incondicional?",
+      "options": [
+        "Código inalcanzable",
+        "Punto crítico de rendimiento",
+        "Contención entre hilos",
+        "Doble de prueba"
+      ],
+      "correctIndex": 0,
+      "explanation": "Si no se puede alcanzar una sentencia, el análisis estático suele notificarla como código inalcanzable o muerto."
+    },
+    {
+      "id": "al-tta-111",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.2.3",
+      "difficulty": "medium",
+      "question": "¿Qué anomalía de flujo de datos se indica cuando una variable se define y luego se vuelve a definir sin usarse entre ambas operaciones?",
+      "options": [
+        "Un patrón sospechoso de asignación redundante",
+        "Un caso que exige ejercitar la cobertura de bucles",
+        "Un par definición-uso normal que no requiere atención",
+        "Una corrupción de memoria cierta durante la ejecución"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una redefinición antes del uso puede indicar que la primera asignación es innecesaria o que se omitió el uso previsto."
+    },
+    {
+      "id": "al-tta-112",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.2",
+      "difficulty": "hard",
+      "question": "Durante una prueba de resistencia, el consumo de memoria aumenta de forma constante mientras la carga se mantiene estable. ¿Qué indica esto con mayor probabilidad?",
+      "options": [
+        "Un bloque de código muerto comentado",
+        "Una mejor portabilidad entre plataformas",
+        "Una mayor cobertura de ramas",
+        "Una fuga de memoria o un problema de objetos retenidos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Si el trabajo se mantiene estable pero la memoria sigue creciendo, es probable que el software no libere o reutilice los objetos correctamente."
+    },
+    {
+      "id": "al-tta-113",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.3",
+      "difficulty": "easy",
+      "question": "¿Qué es un puntero inválido o referencia no válida?",
+      "options": [
+        "Un puntero que se usa dentro de una herramienta de cobertura de caja blanca",
+        "Una rama cuya condición siempre da verdadero en cada prueba",
+        "Una referencia que apunta a memoria impredecible o no permitida",
+        "Un contador que informa del uso de CPU a lo largo del tiempo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los punteros inválidos pueden provocar fallos o corrupción silenciosa porque el programa deja de controlar el destino de la referencia."
+    },
+    {
+      "id": "al-tta-114",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.4",
+      "difficulty": "medium",
+      "question": "Un perfilador muestra que el 70 % del tiempo de ejecución se dedica a serializar JSON. ¿Cuál es la mejor interpretación?",
+      "options": [
+        "Solo hay que seguir probando la capa de red",
+        "El perfilador falla, porque ninguna función puede dominar el tiempo de ejecución",
+        "La aplicación ya ha logrado una cobertura completa de caminos",
+        "La serialización de JSON es un punto crítico de rendimiento que conviene investigar"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los perfiladores ayudan a centrar la optimización y las mediciones en el código que realmente consume tiempo."
+    },
+    {
+      "id": "al-tta-115",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.5",
+      "difficulty": "hard",
+      "question": "¿Qué tipo de herramienta de ejecución es más adecuada para diagnosticar contención de bloqueos y bloqueos mutuos?",
+      "options": [
+        "Una herramienta de comparación de capturas de pantalla",
+        "Un analizador de concurrencia o de hilos",
+        "Un corrector ortográfico aplicado al código fuente",
+        "Un verificador estático de convenciones de nombres"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los analizadores de hilos observan durante la ejecución los bloqueos y problemas de sincronización."
+    },
+    {
+      "id": "al-tta-116",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.6",
+      "difficulty": "easy",
+      "question": "Un algoritmo recursivo falla solo con entradas muy grandes. ¿Qué síntoma de ejecución debería investigarse primero?",
+      "options": [
+        "Una etiqueta desactualizada en el sistema de seguimiento de incidencias",
+        "Agotamiento de la pila por una recursión profunda",
+        "La ausencia del logotipo y los recursos de marca en la página inicial",
+        "Un nivel bajo de cobertura de sentencias"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una profundidad recursiva elevada suele manifestarse en tiempo de ejecución como desbordamiento o agotamiento de la pila."
+    },
+    {
+      "id": "al-tta-117",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.2.4",
+      "difficulty": "medium",
+      "question": "En una revisión técnica de código numérico, ¿qué elemento de la lista de comprobación resulta especialmente valioso?",
+      "options": [
+        "Si el equipo prefiere tabuladores o espacios para la sangría",
+        "Posibles desbordamientos, subdesbordamientos y pérdida de precisión",
+        "Si el código tiene suficientes líneas en blanco",
+        "Si los nombres de las variables están en orden alfabético"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los defectos numéricos suelen aparecer en los límites de rango o por supuestos de precisión que se pasan por alto con facilidad."
+    },
+    {
+      "id": "al-tta-118",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.1.6",
+      "difficulty": "hard",
+      "question": "Si un analizador estático genera demasiados falsos positivos, ¿cuál es la mejor respuesta?",
+      "options": [
+        "Tratar cada advertencia como un defecto confirmado",
+        "Ajustar las reglas y las líneas base para que los hallazgos de gran valor sigan siendo visibles",
+        "Ejecutar el analizador solo en producción después de desplegar la versión",
+        "Desactivar permanentemente el análisis en el proyecto"
+      ],
+      "correctIndex": 1,
+      "explanation": "Un análisis bien ajustado mantiene las advertencias importantes como elementos accionables sin saturar al equipo con ruido."
+    },
+    {
+      "id": "al-tta-119",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.2.5",
+      "difficulty": "easy",
+      "question": "¿Por qué resulta útil la detección de código duplicado para el analista técnico de pruebas?",
+      "options": [
+        "Garantiza que el código se ejecute más rápido",
+        "Sustituye las revisiones de código del proceso",
+        "La lógica duplicada puede ampliar el alcance de regresión y repetir los mismos defectos",
+        "Mide la compatibilidad con distintos navegadores"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cuando la misma lógica aparece en varios lugares, puede ser necesario revisar cada copia para detectar el defecto y aplicar su corrección."
+    },
+    {
+      "id": "al-tta-120",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.7",
+      "difficulty": "medium",
+      "question": "¿Por qué son valiosos los sanitizadores en tiempo de ejecución para las pruebas de C o C++?",
+      "options": [
+        "Sustituyen todas las revisiones de diseño",
+        "Pueden detectar accesos no válidos a memoria durante la ejecución y aportar contexto",
+        "Demuestran automáticamente la portabilidad a todas las plataformas compatibles",
+        "Mejoran la disposición de las pantallas para los usuarios"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los sanitizadores instrumentan la ejecución para revelar defectos como desbordamientos de búfer y uso de memoria después de liberarla."
+    },
+    {
+      "id": "al-tta-121",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.8",
+      "difficulty": "hard",
+      "question": "¿Cómo pueden ayudar al diagnóstico las instantáneas de la memoria dinámica tomadas antes y después de una prueba larga?",
+      "options": [
+        "Eliminan la necesidad de generar carga para la prueba",
+        "Demuestran que el código no tiene condiciones de carrera ni bloqueos mutuos",
+        "Informan de la cobertura de sentencias alcanzada",
+        "Muestran qué objetos se retuvieron inesperadamente con el tiempo"
+      ],
+      "correctIndex": 3,
+      "explanation": "Comparar instantáneas es una forma habitual de identificar clases u objetos que se acumulan continuamente."
+    },
+    {
+      "id": "al-tta-122",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.2.6",
+      "difficulty": "easy",
+      "question": "En una revisión técnica centrada en interfaces, ¿qué pregunta contribuye mejor a las pruebas de robustez?",
+      "options": [
+        "¿Cuántas reuniones de equipo se celebraron el mes pasado?",
+        "¿Cómo se informan a los clientes las entradas no válidas, los tiempos de espera y los fallos parciales?",
+        "¿Deberían prohibirse las pruebas negativas de la interfaz?",
+        "¿Qué imagen de fondo prefiere el equipo de API?"
+      ],
+      "correctIndex": 1,
+      "explanation": "La robustez depende de que la interfaz se comporte de forma clara y coherente en condiciones anómalas."
+    },
+    {
+      "id": "al-tta-123",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.1.7",
+      "difficulty": "medium",
+      "question": "¿Por qué resulta útil el análisis de contaminación en las pruebas técnicas?",
+      "options": [
+        "Rastrea los datos no confiables que llegan a operaciones sensibles",
+        "Mide el tiempo de CPU que consume un bucle",
+        "Sustituye por completo las pruebas de penetración de especialistas en seguridad",
+        "Cuenta automáticamente los LCSAJ del código"
+      ],
+      "correctIndex": 0,
+      "explanation": "El seguimiento de flujos de datos de riesgo puede revelar vías de inyección y límites de confianza inseguros antes de la ejecución."
+    },
+    {
+      "id": "al-tta-124",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.1.8",
+      "difficulty": "hard",
+      "question": "¿Por qué merece una revisión cuidadosa tras un cambio una utilidad con un alto grado de entrada?",
+      "options": [
+        "Un alto grado de entrada significa que el código no contiene ramas",
+        "Solo se puede probar mediante ejecución manual",
+        "Un defecto puede afectar a muchos caminos dependientes y ampliar el alcance del impacto",
+        "Las utilidades con muchos invocadores siempre son más lentas que el resto del código"
+      ],
+      "correctIndex": 2,
+      "explanation": "La concentración de llamadas es importante porque un cambio pequeño puede tener muchas consecuencias indirectas."
+    },
+    {
+      "id": "al-tta-125",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.2.7",
+      "difficulty": "easy",
+      "question": "¿Qué tendencia de métricas de código suele indicar un aumento del riesgo para la capacidad de mantenimiento?",
+      "options": [
+        "Un número estable de cuentas de prueba en los entornos compartidos",
+        "Más hardware instalado en la oficina",
+        "Aumento de la complejidad y la longitud de las funciones en cada versión",
+        "Menos mensajes de chat archivados en el canal del equipo"
+      ],
+      "correctIndex": 2,
+      "explanation": "El aumento de la complejidad es una señal temprana práctica de que será más difícil comprender y modificar el código."
+    },
+    {
+      "id": "al-tta-126",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.9",
+      "difficulty": "medium",
+      "question": "La primera iteración de una prueba comparativa es mucho más lenta porque las cachés están frías y la compilación JIT no se ha calentado. ¿Cuál es la mejor práctica?",
+      "options": [
+        "Informar solo de la ejecución más lenta por precaución",
+        "Descartar todas las mediciones posteriores a la primera iteración",
+        "Separar el calentamiento de las mediciones en estado estable",
+        "Desactivar la automatización de las pruebas de rendimiento"
+      ],
+      "correctIndex": 2,
+      "explanation": "Hay que controlar los efectos del calentamiento para que las conclusiones de rendimiento reflejen un comportamiento estable en tiempo de ejecución."
+    },
+    {
+      "id": "al-tta-127",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.3.10",
+      "difficulty": "hard",
+      "question": "¿Por qué suelen ser difíciles de reproducir de forma consistente los defectos de uso de memoria después de liberarla?",
+      "options": [
+        "Solo ocurren en secciones de código comentadas",
+        "Pueden depender de los patrones de temporización y reutilización de memoria durante la ejecución",
+        "Desaparecen siempre al repetir las pruebas con la misma configuración",
+        "La cobertura de sentencias por sí sola basta para detectarlos"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una vez liberada la memoria, la aparición del fallo puede variar según el comportamiento del asignador y la temporización de la ejecución."
+    },
+    {
+      "id": "al-tta-128",
+      "chapter": "4. Técnicas analíticas",
+      "loRef": "AL-TTA-4.2.8",
+      "difficulty": "medium",
+      "question": "Si la capacidad de revisión es limitada, ¿qué módulos deberían priorizarse para una revisión técnica exhaustiva?",
+      "options": [
+        "Los módulos a cargo del equipo más grande",
+        "Los módulos que se compilan más rápido",
+        "Los módulos con alta complejidad, cambios recientes e historial de defectos",
+        "Los módulos con los paneles más coloridos"
+      ],
+      "correctIndex": 2,
+      "explanation": "La combinación de varios indicadores de riesgo permite dedicar el esfuerzo de revisión técnica a las áreas donde probablemente sea más útil."
+    },
+    {
+      "id": "al-tta-129",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.3.2",
+      "difficulty": "easy",
+      "question": "Ejecutar el mismo producto en Windows, Linux y macOS sin cambiar el código evalúa principalmente ¿qué característica de calidad?",
+      "options": [
+        "Facilidad de revisión",
+        "Portabilidad",
+        "Completitud funcional",
+        "Comercialización"
+      ],
+      "correctIndex": 1,
+      "explanation": "La portabilidad se refiere a la facilidad con que el software se puede trasladar o adaptar a distintos entornos."
+    },
+    {
+      "id": "al-tta-130",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.3.3",
+      "difficulty": "medium",
+      "question": "¿Qué deberían verificar más directamente las pruebas de instalabilidad?",
+      "options": [
+        "Que el equipo haya estimado con precisión las historias de usuario durante la planificación",
+        "Que el código fuente tenga baja complejidad",
+        "Que cada API del producto devuelva datos en JSON",
+        "Que la instalación, actualización y desinstalación funcionen correctamente y se recuperen de los fallos"
+      ],
+      "correctIndex": 3,
+      "explanation": "La instalabilidad incluye una configuración correcta y la gestión segura de fallos durante la instalación o actualización."
+    },
+    {
+      "id": "al-tta-131",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.4.2",
+      "difficulty": "hard",
+      "question": "Dos sistemas intercambian el mismo campo numérico, pero uno lo interpreta como segundos y el otro como milisegundos. ¿Qué tipo de problema es?",
+      "options": [
+        "Una carencia de cobertura de sentencias del código",
+        "Un resultado satisfactorio de las pruebas de portabilidad",
+        "Un problema exclusivamente de capacidad de mantenimiento del código",
+        "Un defecto de interoperabilidad"
+      ],
+      "correctIndex": 3,
+      "explanation": "Aunque ambos sistemas se comuniquen sintácticamente, pueden no interoperar semánticamente."
+    },
+    {
+      "id": "al-tta-132",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.4.3",
+      "difficulty": "easy",
+      "question": "¿Qué comprueban principalmente las pruebas de coexistencia?",
+      "options": [
+        "Si el producto puede compartir recursos con otro software sin interferencias inaceptables",
+        "Si las pruebas han cubierto todas las ramas del código",
+        "Si se han traducido todos los comentarios del código",
+        "Si los desarrolladores están de acuerdo con las convenciones de nombres"
+      ],
+      "correctIndex": 0,
+      "explanation": "La coexistencia consiste en compartir un entorno —por ejemplo, CPU, memoria, red o identificadores de archivo— sin interferencias perjudiciales."
+    },
+    {
+      "id": "al-tta-133",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.2.2",
+      "difficulty": "medium",
+      "question": "Tras reiniciar una base de datos, un servicio reanuda el trabajo en cola sin perder los datos confirmados. ¿Qué aspecto de fiabilidad demuestra?",
+      "options": [
+        "Instalabilidad",
+        "Confidencialidad",
+        "Sustituibilidad",
+        "Capacidad de recuperación"
+      ],
+      "correctIndex": 3,
+      "explanation": "La capacidad de recuperación se refiere a la eficacia con que el sistema restablece el servicio y los datos después de una interrupción."
+    },
+    {
+      "id": "al-tta-134",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.3",
+      "difficulty": "hard",
+      "question": "¿Qué cambio mejoraría más la analizabilidad desde la perspectiva de la capacidad de mantenimiento?",
+      "options": [
+        "Ocultar los errores detrás de un único mensaje genérico de éxito para todos los clientes",
+        "Añadir diagnósticos estructurados y límites claros entre módulos",
+        "Concentrar más comportamiento en un único método largo",
+        "Sustituir el texto de los registros por códigos numéricos aleatorios"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los diagnósticos adecuados y la estructura modular facilitan comprender, rastrear y corregir los fallos."
+    },
+    {
+      "id": "al-tta-135",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.4",
+      "difficulty": "easy",
+      "question": "¿Qué objetivo de seguridad favorece principalmente una cuenta de servicio con privilegios mínimos?",
+      "options": [
+        "Reducir los objetivos de cobertura aplicables al código dentro del alcance de la cuenta",
+        "Limitar los daños si la cuenta se ve comprometida",
+        "Mejorar la legibilidad del texto en pantalla",
+        "Eliminar la necesidad de realizar copias de seguridad"
+      ],
+      "correctIndex": 1,
+      "explanation": "El principio de privilegios mínimos reduce el alcance de los daños derivados del uso indebido o la vulneración de la cuenta."
+    },
+    {
+      "id": "al-tta-136",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.2.3",
+      "difficulty": "medium",
+      "question": "¿En qué se centran principalmente las pruebas de comportamiento temporal?",
+      "options": [
+        "En si el instalador muestra el logotipo de la empresa",
+        "En la frecuencia con que se actualizan los comentarios del código",
+        "En el número de talleres de riesgos programados en el proyecto",
+        "En los tiempos de respuesta y el rendimiento bajo condiciones especificadas"
+      ],
+      "correctIndex": 3,
+      "explanation": "El comportamiento temporal se centra en la rapidez de respuesta del sistema y la cantidad de trabajo que puede procesar."
+    },
+    {
+      "id": "al-tta-137",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.5",
+      "difficulty": "hard",
+      "question": "¿Qué propiedad de seguridad protegen más directamente los archivos cifrados almacenados?",
+      "options": [
+        "Sustituibilidad",
+        "Modularidad",
+        "Disponibilidad de los datos almacenados",
+        "Confidencialidad"
+      ],
+      "correctIndex": 3,
+      "explanation": "El cifrado ayuda principalmente a impedir la divulgación no autorizada del contenido de los datos."
+    },
+    {
+      "id": "al-tta-138",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.6",
+      "difficulty": "easy",
+      "question": "¿Por qué suele mejorar la modularidad la capacidad de mantenimiento?",
+      "options": [
+        "Elimina la necesidad de probar el código",
+        "Hace desaparecer todos los problemas de rendimiento",
+        "Los cambios se pueden limitar a una zona sin propagarse a otras no relacionadas",
+        "Garantiza que el código no contenga defectos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los módulos bien definidos reducen los efectos en cadena y facilitan comprender y modificar el código."
+    },
+    {
+      "id": "al-tta-139",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.3.4",
+      "difficulty": "medium",
+      "question": "Sustituir un controlador de base de datos por otro mediante la misma interfaz estándar demuestra principalmente ¿qué subcaracterística?",
+      "options": [
+        "Tolerancia a fallos",
+        "Sustituibilidad",
+        "Idoneidad",
+        "Autenticidad"
+      ],
+      "correctIndex": 1,
+      "explanation": "La sustituibilidad se refiere a la posibilidad de reemplazar un elemento del producto por otro con el mismo propósito."
+    },
+    {
+      "id": "al-tta-140",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.2.4",
+      "difficulty": "hard",
+      "question": "Un servicio continúa funcionando en modo degradado durante una partición de red y se sincroniza después. ¿Qué aspecto de fiabilidad se observa principalmente?",
+      "options": [
+        "Compatibilidad de marca",
+        "Cobertura de sentencias",
+        "Tolerancia a fallos",
+        "Instalabilidad"
+      ],
+      "correctIndex": 2,
+      "explanation": "La tolerancia a fallos es la capacidad de seguir prestando un servicio aceptable pese a ciertos fallos."
+    },
+    {
+      "id": "al-tta-141",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.7",
+      "difficulty": "easy",
+      "question": "¿Por qué son una debilidad grave de seguridad los identificadores de sesión predecibles?",
+      "options": [
+        "Aumentan el tamaño de las copias de seguridad",
+        "Los atacantes pueden adivinar identificadores válidos y secuestrar sesiones",
+        "Reducen la capacidad del compilador para optimizar el código generado",
+        "Disminuyen la cobertura de ramas que pueden alcanzar las pruebas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los identificadores predecibles pueden permitir que un atacante suplante a usuarios al anticipar los valores de sesión futuros."
+    },
+    {
+      "id": "al-tta-142",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.2.5",
+      "difficulty": "medium",
+      "question": "¿A qué pregunta deben responder las pruebas de utilización de recursos?",
+      "options": [
+        "Si las páginas de ayuda están redactadas con claridad",
+        "Si participan suficientes personas en las revisiones de código",
+        "Si la CPU, la memoria y las operaciones de E/S se mantienen dentro de límites aceptables bajo carga",
+        "Si cada requisito tiene un identificador único en la herramienta de seguimiento"
+      ],
+      "correctIndex": 2,
+      "explanation": "La utilización de recursos mide la eficiencia con que el sistema consume recursos compartidos mientras realiza su trabajo."
+    },
+    {
+      "id": "al-tta-143",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.4.4",
+      "difficulty": "hard",
+      "question": "Dos aplicaciones funcionan correctamente por separado, pero al ejecutarse juntas una deja a la otra sin ancho de banda de disco. ¿Qué problema de calidad revela?",
+      "options": [
+        "Un éxito de portabilidad",
+        "Un problema de coexistencia",
+        "Un problema de sustituibilidad",
+        "Una advertencia de almacenamiento sin uso"
+      ],
+      "correctIndex": 1,
+      "explanation": "El problema solo aparece cuando el software comparte el entorno con otro software, que es precisamente lo que evalúa la coexistencia."
+    },
+    {
+      "id": "al-tta-144",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.4.5",
+      "difficulty": "easy",
+      "question": "Abrir con la herramienta actual archivos creados por una versión anterior evalúa más directamente ¿qué?",
+      "options": [
+        "La interoperabilidad o compatibilidad retroactiva de los artefactos intercambiados",
+        "La complejidad ciclomática de la herramienta",
+        "La cobertura de bucles alcanzada por las pruebas",
+        "El uso de memoria dinámica de la herramienta en ejecución"
+      ],
+      "correctIndex": 0,
+      "explanation": "Si los artefactos intercambiados siguen siendo utilizables entre versiones o herramientas, la compatibilidad es adecuada."
+    },
+    {
+      "id": "al-tta-145",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.3.5",
+      "difficulty": "medium",
+      "question": "Una aplicación solo falla en un sistema de archivos que distingue entre mayúsculas y minúsculas porque mezcla el uso de mayúsculas en los nombres de archivo. ¿Qué característica se ve más directamente afectada?",
+      "options": [
+        "Seguridad",
+        "Portabilidad",
+        "Usabilidad",
+        "Completitud funcional"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los supuestos ocultos sobre la plataforma suelen manifestarse como problemas de portabilidad entre entornos."
+    },
+    {
+      "id": "al-tta-146",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.8",
+      "difficulty": "hard",
+      "question": "¿Qué problema de capacidad de mantenimiento indica más directamente la duplicación de reglas de validación dispersas en varios servicios?",
+      "options": [
+        "Sustituibilidad garantizada de cada servicio",
+        "Mayor confidencialidad de los datos procesados",
+        "Mala modificabilidad, porque los cambios deben aplicarse de forma coherente en varios lugares",
+        "Mejor analizabilidad de la lógica de validación"
+      ],
+      "correctIndex": 2,
+      "explanation": "La duplicación dispersa aumenta la probabilidad de que los cambios futuros sean incompletos o incoherentes."
+    },
+    {
+      "id": "al-tta-147",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.2.6",
+      "difficulty": "easy",
+      "question": "Reiniciar un proceso desde un punto de control después de un fallo comprueba principalmente ¿qué aspecto de fiabilidad?",
+      "options": [
+        "Capacidad de recuperación",
+        "Interoperabilidad",
+        "Estilo del código",
+        "Compatibilidad"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reiniciar desde un punto de control permite evaluar directamente la capacidad de restablecer el servicio después de un fallo."
+    },
+    {
+      "id": "al-tta-148",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.4.6",
+      "difficulty": "medium",
+      "question": "Cuando clientes antiguos y servidores nuevos siguen funcionando mediante la negociación de versiones de API, ¿qué característica se demuestra más directamente?",
+      "options": [
+        "Instalabilidad",
+        "Interoperabilidad",
+        "Sustituibilidad",
+        "Simplicidad ciclomática"
+      ],
+      "correctIndex": 1,
+      "explanation": "La negociación de versiones es una técnica habitual para mantener la interoperabilidad de sistemas que evolucionan de forma independiente."
+    },
+    {
+      "id": "al-tta-149",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.1.9",
+      "difficulty": "hard",
+      "question": "¿Por qué es un defecto de seguridad grave poder eludir los límites de frecuencia mediante solicitudes paralelas?",
+      "options": [
+        "Afecta a la portabilidad del servicio y a nada más",
+        "Afecta principalmente al formato del texto de las respuestas",
+        "Debilita la protección contra el abuso y puede facilitar ataques de denegación de servicio o de fuerza bruta",
+        "Mejora la equidad del rendimiento entre clientes"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los límites de frecuencia son un control defensivo; eludirlos facilita el abuso y puede amplificar el impacto de un ataque."
+    },
+    {
+      "id": "al-tta-150",
+      "chapter": "5. Características de calidad para pruebas técnicas",
+      "loRef": "AL-TTA-5.3.6",
+      "difficulty": "hard",
+      "question": "¿Por qué debe probarse una biblioteca nativa portable en plataformas de 32 y 64 bits con distintos supuestos de modelo de datos?",
+      "options": [
+        "La portabilidad excluye el uso de pruebas automatizadas",
+        "La cobertura de ramas se define por separado para cada arquitectura de CPU y debe medirse en cada una",
+        "Pueden fallar supuestos ocultos sobre el tamaño, la alineación o la representación de los tipos",
+        "En una de las plataformas no existen herramientas de análisis dinámico"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los problemas multiplataforma suelen aparecer cuando el código presupone un ancho de entero, tamaño de puntero o diseño de memoria concretos."
+    }
+  ]
+}

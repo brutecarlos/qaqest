@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <title>QAQEST — Exámenes de práctica gratuitos para certificaciones de pruebas de software</title>
+  <meta name="description" content="QAQEST ofrece prácticas gratuitas y simulacros cronometrados alineados con los programas de estudio de ISTQB: Nivel Fundamentos, Agile Tester, Nivel Avanzado y módulos de Especialista. Contenido en español traducido por QAQEST, no oficial." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/es/" />
+  <link rel="alternate" hreflang="es" href="https://brutecarlos.github.io/qaqest/es/" />
+  <link rel="alternate" hreflang="en" href="https://brutecarlos.github.io/qaqest/" />
+  <link rel="alternate" hreflang="x-default" href="https://brutecarlos.github.io/qaqest/" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="QAQEST — Exámenes de práctica gratuitos para certificaciones de pruebas de software" />
+  <meta property="og:description" content="QAQEST ofrece prácticas gratuitas y simulacros cronometrados alineados con los programas de estudio de ISTQB: Nivel Fundamentos, Agile Tester, Nivel Avanzado y módulos de Especialista. Contenido en español traducido por QAQEST, no oficial." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/es/" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="QAQEST — Exámenes de práctica gratuitos para certificaciones de pruebas de software" />
+  <meta name="twitter:description" content="QAQEST ofrece prácticas gratuitas y simulacros cronometrados alineados con los programas de estudio de ISTQB: Nivel Fundamentos, Agile Tester, Nivel Avanzado y módulos de Especialista. Contenido en español traducido por QAQEST, no oficial." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Practica mejor. Aprueba con confianza.</h1>
+      <p>
+        Prácticas gratuitas y simulacros cronometrados para certificaciones de pruebas de software.
+        Elige un módulo, alineado con los temas de los programas de estudio de ISTQB&reg;, y pon a prueba
+        tus conocimientos &mdash; sin necesidad de registrarte.
+      </p>
+    </section>
+
+    <div class="disclaimer">
+      QAQEST es un recurso de estudio independiente y no oficial. No está
+      afiliado, respaldado ni patrocinado por ISTQB&reg;. Los nombres de los programas de estudio se
+      mencionan solo para describir los temas tratados. Las preguntas en español son una traducción
+      realizada por QAQEST y no son material oficial; consulta al proveedor oficial para las reglas vigentes del examen.
+    </div>
+
+    <section class="module-card home-start" aria-labelledby="start-heading">
+      <h2 id="start-heading">¿Eres nuevo? Empieza aquí</h2>
+      <p class="module-desc">¿No sabes con qué certificación empezar? Responde un cuestionario de 1 minuto y obtén una ruta de estudio.</p>
+      <p><a class="btn btn-primary" href="start.html">Empieza aquí</a> <a href="planner.html">Planificador de estudio</a></p>
+    </section>
+
+    <section class="module-card" aria-labelledby="guides-heading">
+      <h2 id="guides-heading">Guías de estudio</h2>
+      <p class="module-desc">Consulta apuntes originales de CTFL en lenguaje sencillo, ejemplos resueltos, consejos para el examen y una referencia rápida de técnicas de prueba.</p>
+      <p><a class="btn btn-primary" href="guides.html">Explorar las guías de estudio</a> <a href="faq.html">Leer las preguntas frecuentes</a></p>
+    </section>
+
+    <h2 class="section-title">Elige un módulo de certificación</h2>
+    <div id="module-grid" class="module-grid">
+      <p>Cargando módulos&hellip;</p>
+    </div>
+
+    <section id="daily-question-card" class="module-card daily-question" aria-labelledby="daily-question-heading" hidden>
+      <h2 id="daily-question-heading">Pregunta del día</h2>
+      <div id="daily-question-content" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/storage.js"></script>
+  <script src="js/badges.js"></script>
+  <script src="js/daily.js"></script>
+  <script src="../js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
