@@ -1,0 +1,2256 @@
+{
+  "moduleId": "test-automation",
+  "moduleName": "Ingeniero certificado en automatización de pruebas",
+  "questions": [
+    {
+      "id": "ta-001",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué factor es MÁS importante evaluar antes de introducir la automatización de pruebas para un conjunto de pruebas determinado?",
+      "options": [
+        "La combinación de colores de la herramienta de gestión de pruebas, independientemente de que los resultados esperados y los datos de prueba sean estables",
+        "El lenguaje de programación favorito del ingeniero de automatización, sin considerar la estabilidad de las pruebas ni la frecuencia de repetición",
+        "La idoneidad de los casos de prueba para automatizarlos, teniendo en cuenta su estabilidad, repetibilidad y retorno de la inversión",
+        "La cantidad de probadores manuales empleados actualmente, sin considerar el esfuerzo de configuración ni el mantenimiento a lo largo del tiempo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Para decidir qué automatizar, hay que evaluar si los casos de prueba son estables y repetibles, y si ofrecen un retorno de la inversión suficiente para justificar el esfuerzo de automatización."
+    },
+    {
+      "id": "ta-002",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes es una idea ERRÓNEA común sobre la automatización de pruebas que las organizaciones deben evitar?",
+      "options": [
+        "Que la automatización no vale la pena ni siquiera para comprobaciones de regresión estables y repetidas con frecuencia",
+        "Que la automatización de pruebas puede mejorar la coherencia de las pruebas de regresión repetidas, aunque una persona todavía debe interpretar el resultado",
+        "Que la automatización de pruebas requiere un proceso bien definido y mantenimiento continuo, aunque una persona todavía debe interpretar el resultado",
+        "Que la automatización de pruebas puede sustituir por completo a los probadores humanos cualificados y a las pruebas exploratorias"
+      ],
+      "correctIndex": 3,
+      "explanation": "Una idea errónea común y costosa es que la automatización puede sustituir por completo a los probadores. En realidad, complementa las pruebas realizadas por personas cualificadas, incluidas las exploratorias, pero no puede reemplazarlas totalmente."
+    },
+    {
+      "id": "ta-003",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes es un factor CLAVE para determinar el retorno de la inversión (ROI) de automatizar un caso de prueba concreto?",
+      "options": [
+        "Comparar la frecuencia prevista de repetición durante la vida útil de la prueba con los costos de creación y mantenimiento.",
+        "El color del icono que representa la prueba en la herramienta de gestión de pruebas",
+        "La cantidad de letras del título del caso de prueba, sin considerar su estabilidad ni la frecuencia de repetición",
+        "Si el caso de prueba fue escrito por un probador sénior o júnior"
+      ],
+      "correctIndex": 0,
+      "explanation": "El ROI de la automatización de pruebas depende en gran medida de la frecuencia con que se volverá a ejecutar una prueba (lo que permite amortizar el costo de automatización) frente al costo continuo de crear y mantener el script automatizado."
+    },
+    {
+      "id": "ta-004",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.1",
+      "difficulty": "medium",
+      "question": "En la arquitectura genérica de automatización de pruebas (gTAA), ¿qué capa se encarga de definir los casos y datos de prueba con independencia de la implementación técnica subyacente?",
+      "options": [
+        "La capa de adaptación de pruebas",
+        "La capa de definición de pruebas",
+        "La capa de ejecución de pruebas, sin separar la intención de la prueba de su implementación",
+        "La capa de generación de pruebas"
+      ],
+      "correctIndex": 1,
+      "explanation": "En la gTAA, la capa de definición de pruebas especifica los casos y datos de prueba en un nivel abstracto, separado de los detalles técnicos de su ejecución."
+    },
+    {
+      "id": "ta-005",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.2",
+      "difficulty": "hard",
+      "question": "¿Qué capa de la gTAA proporciona la interfaz entre el marco de automatización y el objeto de prueba específico, por ejemplo, al enviar comandos a un navegador o a la aplicación bajo prueba?",
+      "options": [
+        "La capa de gestión de pruebas, sin separar la intención de la prueba de su implementación",
+        "La capa de definición de pruebas, sin separar la intención de la prueba de su implementación",
+        "La capa de generación de pruebas, sin separar la intención de la prueba de su implementación",
+        "La capa de adaptación de pruebas"
+      ],
+      "correctIndex": 3,
+      "explanation": "La capa de adaptación de pruebas proporciona las interfaces necesarias para interactuar con el objeto de prueba específico o sus componentes y aísla el resto del marco de los detalles técnicos de bajo nivel."
+    },
+    {
+      "id": "ta-006",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes es un riesgo COMÚN al implementar una nueva solución de automatización de pruebas en una organización?",
+      "options": [
+        "Que la automatización de pruebas elimine por completo e inmediatamente la carga de trabajo del equipo de pruebas",
+        "Que las pruebas automatizadas se evalúen solo por la cantidad de defectos, sin tener en cuenta la cobertura ni el contexto",
+        "Que las pruebas automatizadas no requieran ningún tiempo de configuración",
+        "Subestimar el esfuerzo necesario para mantener los scripts automatizados a medida que evoluciona la aplicación bajo prueba"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un riesgo frecuente es subestimar el esfuerzo continuo de mantenimiento de los scripts automatizados a medida que cambia la aplicación. Si no se planifica, esto puede reducir el ROI esperado."
+    },
+    {
+      "id": "ta-007",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué métrica sería MÁS útil para evaluar a lo largo del tiempo el estado y la fiabilidad de un conjunto de pruebas de regresión automatizadas?",
+      "options": [
+        "La longitud media de los nombres de los casos de prueba, sin considerar qué decisión debería respaldar esta medida",
+        "El porcentaje de pruebas inestables (que fallan de forma intermitente sin que exista un defecto subyacente real) en el conjunto",
+        "La cantidad total de diapositivas de PowerPoint usadas en reuniones de estado, sin contexto sobre la cobertura o la fiabilidad",
+        "La cantidad de probadores que tienen plaza de estacionamiento de la empresa, aunque el público destinatario no pueda actuar en función del resultado"
+      ],
+      "correctIndex": 1,
+      "explanation": "El seguimiento de la tasa de pruebas inestables permite evaluar la fiabilidad del conjunto. Una proporción elevada reduce la confianza en los resultados automatizados e indica que hay que estabilizar las pruebas."
+    },
+    {
+      "id": "ta-008",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué tipo de prueba suele ser el MEJOR candidato para automatizar?",
+      "options": [
+        "Una prueba de regresión estable y repetida con frecuencia, con resultados esperados claros y deterministas",
+        "Una evaluación de usabilidad muy subjetiva que depende del criterio humano, sin considerar la estabilidad ni la frecuencia de repetición",
+        "Una sesión de pruebas exploratorias puntual sin resultados esperados definidos, sin considerar la estabilidad ni la frecuencia de repetición",
+        "Una prueba que se ejecutará principalmente una sola vez en una funcionalidad que probablemente se rediseñará pronto"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas estables y repetidas con frecuencia, con resultados esperados deterministas, ofrecen el mejor ROI de automatización, a diferencia de las sesiones exploratorias puntuales o las evaluaciones muy subjetivas."
+    },
+    {
+      "id": "ta-009",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.2.1",
+      "difficulty": "hard",
+      "question": "Un enfoque de automatización de pruebas «basado en palabras clave» tiene principalmente como objetivo:",
+      "options": [
+        "Usar palabras clave reutilizables y de alto nivel para separar la intención de la prueba de los detalles de implementación.",
+        "Exigir que los probadores escriban código de automatización de bajo nivel para cada escenario",
+        "Eliminar la necesidad de cualquier dato de prueba",
+        "Sustituir por completo la necesidad de un marco de automatización de pruebas"
+      ],
+      "correctIndex": 0,
+      "explanation": "La automatización basada en palabras clave expresa los pasos de prueba mediante palabras clave reutilizables de alto nivel (por ejemplo, «Iniciar sesión» o «Añadir al carrito»). Así separa qué hace la prueba de cómo se implementa y mejora el mantenimiento y la legibilidad."
+    },
+    {
+      "id": "ta-010",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué práctica ayuda a reducir el riesgo de que las pruebas automatizadas se vuelvan frágiles cuando la interfaz de usuario de la aplicación cambia con frecuencia?",
+      "options": [
+        "Codificar de forma fija las coordenadas exactas en píxeles de cada elemento de la interfaz en todos los scripts de prueba",
+        "Duplicar el mismo código de interacción con la interfaz en cada script de prueba",
+        "Usar localizadores estables y Page Objects para aislar los cambios de la interfaz de la lógica de prueba.",
+        "Evitar cualquier estructura en los scripts de automatización, sin un plan de responsables ni de recuperación"
+      ],
+      "correctIndex": 2,
+      "explanation": "El uso de localizadores de elementos estables y de patrones de abstracción como Page Object Model aísla la estructura de la interfaz de la lógica de prueba, por lo que los cambios en la interfaz requieren actualizar menos lugares."
+    },
+    {
+      "id": "ta-011",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.2.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de los siguientes es un BENEFICIO habitual de la automatización de pruebas cuando se aplica adecuadamente?",
+      "options": [
+        "Ejecutar más rápido las pruebas de regresión repetitivas, para que los probadores puedan dedicar tiempo a las pruebas exploratorias y a actividades de mayor valor",
+        "Independizarse por completo del calendario de versiones del equipo de desarrollo",
+        "Eliminar la necesidad de planificar o diseñar las pruebas",
+        "Garantizar que la automatización evitará defectos en producción sin que una persona analice las pruebas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un beneficio clave de la automatización de pruebas es acelerar las pruebas de regresión repetitivas, lo que permite a los probadores dedicar más tiempo a las pruebas exploratorias y a otras actividades que aportan un valor único."
+    },
+    {
+      "id": "ta-012",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes sería una función útil de los informes de pruebas automatizadas para diagnosticar rápidamente un fallo?",
+      "options": [
+        "Adjuntar automáticamente capturas de pantalla, registros y trazas de pila en el momento del fallo",
+        "Eliminar todos los registros inmediatamente después de que termine una ejecución de pruebas, sin contexto sobre la cobertura ni la fiabilidad",
+        "Informar solo un recuento único de aprobadas y fallidas, sin ningún otro detalle ni contexto sobre cobertura o fiabilidad",
+        "Aleatorizar el orden de los resultados en cada informe, sin contexto sobre la cobertura ni la fiabilidad"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los diagnósticos detallados de fallos, como las capturas de pantalla, los registros y las trazas de pila que se recopilan automáticamente, aceleran considerablemente el análisis de la causa raíz de los fallos de pruebas automatizadas."
+    },
+    {
+      "id": "ta-013",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.1",
+      "difficulty": "medium",
+      "question": "Antes de introducir la automatización de pruebas, ¿por qué es importante evaluar la madurez del proceso de pruebas actual de la organización?",
+      "options": [
+        "Porque la madurez del proceso de pruebas no guarda relación con el éxito de la automatización, sin considerar la estabilidad ni la frecuencia de repetición",
+        "Porque la automatización se usa principalmente en organizaciones sin ninguna experiencia en pruebas manuales",
+        "Porque los procesos maduros suelen garantizar que la automatización no será necesaria, sin considerar la estabilidad ni la frecuencia de repetición",
+        "Porque la automatización puede amplificar los problemas existentes en un proceso de pruebas inmaduro o mal definido en vez de resolverlos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Automatizar un proceso de pruebas mal definido o caótico tiende a amplificar sus problemas (por ejemplo, resultados esperados poco claros), no a resolverlos. Por eso se recomienda evaluar primero la madurez del proceso."
+    },
+    {
+      "id": "ta-014",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.3",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes es un beneficio de organizar la arquitectura de automatización de pruebas por capas (como en la gTAA), en lugar de escribir scripts monolíticos?",
+      "options": [
+        "Permite que el marco permanezca sin cambios a medida que evoluciona la aplicación",
+        "Elimina la necesidad de gestionar los datos de prueba, aunque los escenarios requieran entradas diferentes",
+        "Dificulta el mantenimiento del marco con el tiempo, sin separar la intención de la prueba de su implementación",
+        "La separación en capas aísla los cambios y mejora el mantenimiento sin tener que reescribir las definiciones de las pruebas."
+      ],
+      "correctIndex": 3,
+      "explanation": "Una arquitectura por capas aísla responsabilidades. Así, un cambio en el objeto de prueba (por ejemplo, en la interfaz) afecta principalmente a la capa de adaptación, sin exigir que se reescriban las definiciones de prueba de nivel superior."
+    },
+    {
+      "id": "ta-015",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes es un plan de CONTINGENCIA válido si, a mitad de la adopción, se descubre que una herramienta de automatización elegida no es adecuada?",
+      "options": [
+        "Culpar a los probadores por las deficiencias de la herramienta",
+        "Cancelar de inmediato todas las actividades de pruebas del proyecto",
+        "Seguir usando indefinidamente la herramienta inadecuada, independientemente de su impacto en el proyecto",
+        "Documentar una alternativa, como reevaluar la herramienta por etapas o volver al enfoque anterior."
+      ],
+      "correctIndex": 3,
+      "explanation": "Una buena planificación de la implementación de la automatización contempla opciones de contingencia, como una alternativa documentada, por si la herramienta elegida resulta inadecuada durante el despliegue."
+    },
+    {
+      "id": "ta-016",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué afirmación sobre la relación entre la automatización de pruebas y el ciclo de vida del desarrollo de software es CORRECTA?",
+      "options": [
+        "Alinear la arquitectura y las herramientas con el SDLC, incluida su canalización de entrega.",
+        "Las decisiones de arquitectura no necesitan tener en cuenta cómo el equipo desarrolla y entrega el software",
+        "La arquitectura no necesita admitir CI en contextos de entrega iterativa",
+        "El SDLC no influye en cómo se activan o informan las pruebas automatizadas, aunque una persona aún deba interpretar el resultado"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una estrategia eficaz de automatización tiene en cuenta el modelo de ciclo de vida en uso; por ejemplo, garantiza que las pruebas automatizadas puedan ejecutarse en una canalización de CI/CD para respaldar la cadencia de entrega ágil o DevOps."
+    },
+    {
+      "id": "ta-017",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes métricas ayuda a evaluar si los esfuerzos de automatización de pruebas están dando resultados a lo largo del tiempo?",
+      "options": [
+        "El orden alfabético de los nombres de los casos de prueba, aunque el público destinatario no pueda actuar en función del resultado",
+        "La cantidad de monitores en el escritorio de cada probador, aunque el público destinatario no pueda actuar en función del resultado",
+        "La cantidad de veces que aparece la palabra «prueba» en el acta del proyecto",
+        "Comparar las tendencias del tiempo de ejecución y de la tasa de aprobaciones con el valor entregado y el esfuerzo de mantenimiento."
+      ],
+      "correctIndex": 3,
+      "explanation": "Entre las métricas útiles de automatización se incluyen las tendencias del tiempo de ejecución y la estabilidad de la tasa de aprobaciones (menos fallos intermitentes con el tiempo), además de comparar el valor entregado (defectos detectados, tiempo ahorrado) con el esfuerzo continuo de mantenimiento."
+    },
+    {
+      "id": "ta-018",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.2",
+      "difficulty": "hard",
+      "question": "Un equipo tiene 500 casos de pruebas de regresión manuales. ¿Cuál de los siguientes criterios es MENOS pertinente para decidir cuáles automatizar primero?",
+      "options": [
+        "La posición alfabética del título del caso de prueba en la hoja de cálculo",
+        "La frecuencia prevista de repetición del caso de prueba, sin considerar la estabilidad ni la frecuencia de repetición",
+        "La estabilidad prevista de la funcionalidad subyacente, sin considerar la estabilidad ni la frecuencia de repetición",
+        "El esfuerzo manual que requiere actualmente cada ejecución del caso de prueba, sin considerar la estabilidad ni la frecuencia de repetición"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los criterios de selección para la automatización deben basarse en factores como la frecuencia de ejecución, la estabilidad de la funcionalidad y el esfuerzo manual que se ahorra, no en un factor arbitrario como el orden alfabético de los títulos."
+    },
+    {
+      "id": "ta-019",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.2.2",
+      "difficulty": "medium",
+      "question": "En comparación con scripts sencillos de «grabar y reproducir», un marco de automatización bien diseñado que usa los principios de la gTAA suele ser:",
+      "options": [
+        "Imposible de integrar con las canalizaciones de CI/CD",
+        "Destinado principalmente a las pruebas de rendimiento y rara vez a las pruebas funcionales",
+        "Más fácil de mantener y ampliar gracias a la separación de responsabilidades.",
+        "Más costoso de crear y mantener, sin aportar ningún beneficio"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un marco por capas diseñado según los principios de la gTAA suele ser más fácil de mantener y ampliar que los scripts improvisados de grabación y reproducción, porque las responsabilidades están separadas en vez de duplicadas en los scripts."
+    },
+    {
+      "id": "ta-020",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes sería un indicador claro de que una iniciativa de automatización de pruebas corre el riesgo de no ofrecer el ROI esperado?",
+      "options": [
+        "El conjunto de pruebas automatizadas está integrado en la canalización de CI, sin un plan de responsables ni de recuperación",
+        "Se añaden pruebas automatizadas gradualmente junto con nuevas funcionalidades, sin un plan de responsables ni de recuperación",
+        "El conjunto de pruebas automatizadas se ejecuta rápida y fiablemente con un mantenimiento mínimo",
+        "El esfuerzo de mantenimiento supera el ahorro de tiempo de ejecución manual entre versiones."
+      ],
+      "correctIndex": 3,
+      "explanation": "Si el esfuerzo de mantenimiento de los scripts supera sistemáticamente el tiempo ahorrado en pruebas manuales, la iniciativa no está logrando el ROI previsto y debe revisarse."
+    },
+    {
+      "id": "ta-021",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de los siguientes es un objetivo habitual al introducir la automatización de pruebas en un proyecto?",
+      "options": [
+        "Eliminar por completo la necesidad de probadores humanos",
+        "Garantizar que el software no tendrá ningún defecto",
+        "Eliminar la necesidad de planificar las pruebas",
+        "Automatizar de forma coherente las comprobaciones repetitivas para agilizar la retroalimentación y liberar tiempo para pruebas complejas."
+      ],
+      "correctIndex": 3,
+      "explanation": "La automatización de pruebas busca mejorar la eficiencia y la coherencia de las pruebas repetitivas (como las suites de regresión), para que los probadores puedan dedicar tiempo a actividades de mayor valor, como las pruebas exploratorias y el análisis de escenarios complejos."
+    },
+    {
+      "id": "ta-022",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una idea errónea común sobre la automatización de pruebas que un ingeniero de automatización debe abordar?",
+      "options": [
+        "La automatización puede acelerar la ejecución de pruebas repetitivas, aunque una persona todavía debe interpretar el resultado",
+        "La automatización requiere inversión continua en mantenimiento y no elimina todas las pruebas manuales",
+        "Las pruebas automatizadas pueden ejecutarse repetidamente sin intervención manual una vez configuradas",
+        "Las pruebas automatizadas son útiles para las pruebas de regresión, aunque una persona todavía debe interpretar el resultado"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una idea errónea común es que la automatización es una inversión única que no requiere mantenimiento continuo y que puede sustituir por completo las pruebas manuales. En realidad, las suites automatizadas requieren mantenimiento constante y no sustituyen todas las formas de prueba, como las exploratorias o de usabilidad."
+    },
+    {
+      "id": "ta-023",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes actividades de prueba suele ser la MENOS adecuada para automatizar por completo?",
+      "options": [
+        "Las pruebas de regresión repetitivas de funciones básicas estables",
+        "Las pruebas basadas en datos con muchas combinaciones de entradas",
+        "Las pruebas exploratorias que dependen de la creatividad, intuición e investigación adaptativa del probador",
+        "Las pruebas de humo después de cada compilación, sin comprobar si la actividad es adecuada para automatizar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las pruebas exploratorias dependen en gran medida de la creatividad, intuición e investigación adaptativa humanas, por lo que son fundamentalmente difíciles de automatizar por completo, a diferencia de las pruebas de regresión o de humo repetitivas y bien definidas."
+    },
+    {
+      "id": "ta-024",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.2",
+      "difficulty": "medium",
+      "question": "Al realizar un análisis del retorno de la inversión (ROI) de la automatización de pruebas, ¿qué factor debe incluirse?",
+      "options": [
+        "La combinación de colores de la interfaz de usuario de la herramienta de automatización, independientemente de que los resultados esperados y los datos de prueba sean estables",
+        "El costo inicial de la licencia de la herramienta de automatización, ignorando la estabilidad, la frecuencia de repetición, el esfuerzo de configuración y los costos del ciclo de vida",
+        "La cantidad de integrantes del equipo que prefieren las pruebas manuales, ignorando la estabilidad, la frecuencia de repetición, el esfuerzo de configuración y los costos del ciclo de vida",
+        "Los costos de mantenimiento continuo, el esfuerzo inicial de configuración y el ahorro previsto en el tiempo de ejecución durante la vida útil del conjunto de pruebas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un análisis significativo del ROI considera todos los costos del ciclo de vida (configuración y mantenimiento continuo) frente a los beneficios previstos (ahorro de tiempo, mayor cobertura y retroalimentación más rápida), en vez de fijarse solo en el costo inicial de la licencia."
+    },
+    {
+      "id": "ta-025",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué característica del sistema bajo prueba (SUT) lo convierte en un BUEN candidato para la automatización de pruebas?",
+      "options": [
+        "Una interfaz de usuario que cambia con frecuencia y no tiene identificadores estables para sus elementos",
+        "Una funcionalidad estable y madura con resultados esperados bien definidos y repetibles",
+        "Un prototipo de uso único que se descartará después de una sola demostración, sin considerar la estabilidad ni la frecuencia de repetición",
+        "Una funcionalidad cuyos requisitos siguen negociándose activamente y cambian a diario"
+      ],
+      "correctIndex": 1,
+      "explanation": "La automatización funciona mejor con funcionalidades estables y maduras, y con resultados esperados bien definidos y repetibles, porque mantener las pruebas automatizadas es costoso cuando las funciones cambian con frecuencia o no tienen resultados claros."
+    },
+    {
+      "id": "ta-026",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.2",
+      "difficulty": "medium",
+      "question": "¿Por qué es importante la capacidad de prueba de la aplicación bajo prueba al prepararse para la automatización?",
+      "options": [
+        "La capacidad de prueba no influye en la facilidad para automatizar las pruebas",
+        "La capacidad de prueba es principalmente pertinente para las pruebas de hardware, sin considerar estabilidad ni frecuencia de repetición",
+        "La capacidad de prueba solo importa en las pruebas manuales, no en la automatización, sin considerar estabilidad ni frecuencia de repetición",
+        "Las interfaces estables y los datos de prueba controlables hacen que la automatización sea más fácil y menos costosa de mantener."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las aplicaciones diseñadas teniendo en cuenta la capacidad de prueba —por ejemplo, con localizadores estables, API accesibles y datos o estados de prueba controlables— son mucho más fáciles y menos costosas de automatizar y mantener."
+    },
+    {
+      "id": "ta-027",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes es un objetivo habitual al seleccionar casos de prueba para automatizarlos, en vez de automatizarlo todo?",
+      "options": [
+        "Automatizar principalmente casos de prueba que se ejecutan exactamente una vez, sin considerar estabilidad ni frecuencia de repetición",
+        "Automatizar el conjunto existente sin evaluar primero el valor o la estabilidad de las pruebas, sin considerar estabilidad ni frecuencia de repetición",
+        "Automatizar pruebas al azar, sin criterios de priorización, sin considerar estabilidad ni frecuencia de repetición",
+        "Dar prioridad a las pruebas estables y frecuentes cuyo valor sea alto en relación con el costo de automatización."
+      ],
+      "correctIndex": 3,
+      "explanation": "La buena práctica consiste en priorizar los casos estables y ejecutados con frecuencia (como las pruebas de regresión) que ofrecen un buen retorno de la inversión, en vez de intentar automatizar indiscriminadamente todos los casos."
+    },
+    {
+      "id": "ta-028",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.1",
+      "difficulty": "hard",
+      "question": "En la arquitectura genérica de automatización de pruebas (gTAA), ¿cuál es la función principal de la capa de adaptación de pruebas?",
+      "options": [
+        "Gestionar el presupuesto y la dotación de personal del proyecto",
+        "Almacenar los resultados de las pruebas en una base de datos",
+        "Adaptar las definiciones genéricas de pruebas a las interfaces específicas del SUT.",
+        "Diseñar la disposición visual de los informes de pruebas"
+      ],
+      "correctIndex": 2,
+      "explanation": "La capa de adaptación de pruebas de la gTAA proporciona adaptadores de interfaz que conectan las definiciones o scripts genéricos con las interfaces técnicas específicas del sistema bajo prueba y permiten reutilizarlos en distintos SUT o ante cambios de interfaz."
+    },
+    {
+      "id": "ta-029",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.2",
+      "difficulty": "hard",
+      "question": "¿Qué capa de la gTAA se encarga principalmente de definir datos de prueba, resultados esperados y procedimientos de prueba en un nivel lógico e independiente de la implementación?",
+      "options": [
+        "La capa de definición de pruebas",
+        "La capa de adaptación de pruebas, sin separar la intención de la prueba de su implementación",
+        "La capa de ejecución de pruebas, sin separar la intención de la prueba de su implementación",
+        "La capa de generación de pruebas, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 0,
+      "explanation": "La capa de definición de pruebas define casos, datos y resultados esperados en un nivel lógico, con independencia de la implementación técnica concreta usada para ejecutarlos."
+    },
+    {
+      "id": "ta-030",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es un beneficio clave de separar los scripts de los datos de prueba en un marco de automatización (diseño basado en datos)?",
+      "options": [
+        "Elimina la necesidad de un motor de ejecución de pruebas",
+        "Un mismo script puede usar varios conjuntos de datos, lo que reduce la duplicación y el mantenimiento.",
+        "Desalienta la reutilización de datos de prueba aunque varios escenarios compartan entradas",
+        "Exige reescribir el script para cada nuevo valor de datos"
+      ],
+      "correctIndex": 1,
+      "explanation": "El diseño basado en datos separa la lógica de prueba (los scripts) de los datos, de modo que un mismo script pueda ejecutarse con distintos conjuntos de datos. Esto reduce la duplicación y facilita el mantenimiento de la suite."
+    },
+    {
+      "id": "ta-031",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.2.2",
+      "difficulty": "hard",
+      "question": "En un marco de automatización de pruebas basado en palabras clave, ¿cuál es el propósito principal de las «palabras clave»?",
+      "options": [
+        "Definir palabras clave de marketing del proyecto para SEO",
+        "Sustituir la necesidad de datos de prueba, sin separar la intención de la prueba de su implementación",
+        "Son acciones reutilizables de alto nivel que ocultan los detalles de implementación.",
+        "Almacenar el código fuente HTML sin procesar de cada página, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los marcos basados en palabras clave usan términos reutilizables de alto nivel que representan acciones de negocio o de interfaz. Abstraen los detalles de implementación para que se puedan componer casos con esos bloques, incluso sin programar."
+    },
+    {
+      "id": "ta-032",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.1",
+      "difficulty": "medium",
+      "question": "Un equipo que introduce la automatización de pruebas observa que las partes interesadas esperan que elimine todas las pruebas manuales durante el primer mes. ¿Cuál es la respuesta MÁS adecuada?",
+      "options": [
+        "Automatizar el 100 % de los casos durante la primera semana, sin importar su idoneidad ni planificar responsables o recuperación",
+        "Explicar que la automatización complementa las pruebas manuales, no las sustituye, y establecer plazos realistas.",
+        "Aceptar esa expectativa y disolver inmediatamente el equipo de pruebas manuales, sin planificar responsables o recuperación",
+        "Ignorar por completo las expectativas de las partes interesadas y seguir adelante sin comunicarse, sin planificar responsables o recuperación"
+      ],
+      "correctIndex": 1,
+      "explanation": "Gestionar las expectativas poco realistas de las partes interesadas es importante para reducir riesgos de implementación. Hay que presentar la automatización como complemento de las pruebas manuales y exploratorias, y comunicar plazos realistas."
+    },
+    {
+      "id": "ta-033",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué contingencia debe planificar un equipo si la herramienta comercial de automatización elegida deja de recibir soporte o se descontinúa?",
+      "options": [
+        "Una estrategia de salida o migración, por ejemplo, mantener las definiciones de prueba en un formato independiente de la herramienta cuando sea viable",
+        "No hace falta contingencia porque rara vez se descontinúan las herramientas",
+        "Volver a escribir manualmente todos los resultados de memoria, sin planificar responsables, fiabilidad o recuperación si falla el enfoque",
+        "Detener indefinidamente todas las pruebas, sin planificar responsables, fiabilidad o recuperación si falla el enfoque"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un buen plan de contingencia contempla la posibilidad de que se descontinúe una herramienta: mantener los activos de prueba tan independientes de ella como sea viable o planificar una migración reduce el riesgo de dependencia."
+    },
+    {
+      "id": "ta-034",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.1",
+      "difficulty": "hard",
+      "question": "¿Qué práctica ayuda a reducir el riesgo de pruebas automatizadas «inestables» (que fallan de forma intermitente)?",
+      "options": [
+        "Eliminar todas las aserciones de los scripts de prueba, sin planificar responsables ni recuperación",
+        "Ejecutar todas las pruebas simultáneamente en un entorno compartido y no controlado",
+        "Volver a ejecutar los fallos hasta que pasen sin investigar la causa, sin planificar responsables ni recuperación",
+        "Usar sincronización robusta, localizadores estables y datos aislados para reducir la inestabilidad."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas inestables suelen deberse a problemas de temporización, localizadores poco estables o datos compartidos y no controlados. La sincronización adecuada, los localizadores estables y el aislamiento de datos reducen estos problemas."
+    },
+    {
+      "id": "ta-035",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué métrica ayudaría MEJOR al equipo a evaluar con el tiempo el retorno de la inversión de sus esfuerzos de automatización?",
+      "options": [
+        "La cantidad de ingenieros de automatización contratados, como indicador aislado y sin cobertura, fiabilidad ni contexto de ejecución",
+        "Comparar los costos de configuración y mantenimiento con el tiempo de ejecución ahorrado y los beneficios de calidad medibles entre versiones",
+        "La cantidad de proveedores de herramientas de prueba evaluados durante la selección, aunque el público destinatario no pueda actuar en función del resultado",
+        "La cantidad de líneas de código del marco de automatización, aunque el público destinatario no pueda actuar en función del resultado"
+      ],
+      "correctIndex": 1,
+      "explanation": "El ROI compara los costos del ciclo de vida, incluida la configuración y el mantenimiento, con beneficios como el tiempo ahorrado y los resultados de calidad medibles. Los defectos detectados pueden aportar información, pero no deben tratarse como valor financiero sin una relación demostrable."
+    },
+    {
+      "id": "ta-036",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué consideración es importante al generar informes de ejecución de pruebas automatizadas para distintas partes interesadas?",
+      "options": [
+        "Rara vez incluir un resumen de aprobaciones y fallos en los informes",
+        "Generar informes principalmente una vez al año, sin contexto sobre cobertura ni fiabilidad",
+        "Adaptar los resúmenes y el nivel de detalle diagnóstico a cada público.",
+        "Proporcionar exactamente los mismos registros técnicos de bajo nivel a todos los públicos"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los informes eficaces adaptan el nivel de detalle y el formato al público: por ejemplo, paneles o resúmenes concisos para la dirección y registros detallados o trazas de pila para que los ingenieros investiguen los fallos."
+    },
+    {
+      "id": "ta-037",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes métricas se suele seguir para evaluar a lo largo del tiempo el estado de un conjunto de pruebas de regresión automatizadas?",
+      "options": [
+        "La cantidad de tazas de café consumidas durante las ejecuciones, sin contexto sobre cobertura ni fiabilidad",
+        "El orden alfabético de los nombres de archivo de los scripts, sin contexto sobre cobertura ni fiabilidad",
+        "La cantidad de monitores físicos que usa el equipo de automatización, sin contexto sobre cobertura ni fiabilidad",
+        "La tasa de aprobaciones del conjunto y la tendencia de fallos inestables o intermitentes"
+      ],
+      "correctIndex": 3,
+      "explanation": "El seguimiento de las tendencias de la tasa de aprobaciones y la frecuencia de fallos inestables a lo largo del tiempo ayuda a evaluar y mantener la salud y fiabilidad del conjunto de regresión automatizado."
+    },
+    {
+      "id": "ta-038",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.3.1",
+      "difficulty": "medium",
+      "question": "¿Qué factor debe tenerse en cuenta al decidir el nivel adecuado (unidad, API/servicio o interfaz de usuario) para automatizar una prueba?",
+      "options": [
+        "El nivel de automatización no influye en la estabilidad ni en la velocidad de ejecución, aunque una persona aún deba interpretar el resultado",
+        "Las pruebas de interfaz de usuario se pueden automatizar, pero las de unidad y API no, aunque una persona aún deba interpretar el resultado",
+        "Preferir comprobaciones rápidas y estables de unidad/API y reservar la automatización de interfaz para flujos críticos de extremo a extremo.",
+        "Preferir la automatización de interfaz a las comprobaciones de servicio o unidad aunque las de nivel inferior ofrezcan suficiente confianza"
+      ],
+      "correctIndex": 2,
+      "explanation": "Según el concepto de pirámide de automatización, las pruebas de unidad y API suelen ser más rápidas, estables y económicas de mantener que las de interfaz. Por eso se suele priorizar la automatización en niveles inferiores y reservar la interfaz para flujos críticos de extremo a extremo."
+    },
+    {
+      "id": "ta-039",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.4.1",
+      "difficulty": "medium",
+      "question": "¿Por qué es importante el control de versiones para el código y los datos de prueba de automatización?",
+      "options": [
+        "Sustituye la necesidad de informes de ejecución de pruebas, sin considerar estabilidad ni frecuencia de repetición",
+        "No aporta ningún beneficio real a los proyectos de automatización, sin considerar estabilidad ni frecuencia de repetición",
+        "Permite seguir los cambios, colaborar de forma segura y revertir actualizaciones problemáticas de automatización.",
+        "Es principalmente útil para el código de la aplicación en producción, no para el código de pruebas, sin considerar estabilidad ni frecuencia de repetición"
+      ],
+      "correctIndex": 2,
+      "explanation": "El control de versiones del código y los datos de automatización permite colaborar de forma segura, seguir el historial de cambios y revertir cambios problemáticos, igual que con el código de producción."
+    },
+    {
+      "id": "ta-040",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.3.1",
+      "difficulty": "hard",
+      "question": "¿Cuál de las siguientes describe MEJOR el beneficio de usar una arquitectura de automatización de pruebas por capas (como la gTAA), en lugar de un enfoque con un único script monolítico?",
+      "options": [
+        "Deja el marco libre de mantenimiento después de su configuración inicial, sin separar la intención de la prueba de su implementación",
+        "La separación en capas aísla responsabilidades y limita el impacto de los cambios en el marco.",
+        "No ofrece ventajas frente a los scripts monolíticos y solo añade complejidad innecesaria",
+        "Elimina la necesidad de cualquier capa de adaptación de pruebas, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 1,
+      "explanation": "La arquitectura por capas aísla responsabilidades como la definición de pruebas, la adaptación al SUT y la ejecución. Así, los cambios en una capa (por ejemplo, en la interfaz) tienen un impacto limitado en las demás, lo que mejora el mantenimiento y la reutilización."
+    },
+    {
+      "id": "ta-041",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.1",
+      "difficulty": "easy",
+      "question": "Un equipo quiere introducir automatización principalmente para acortar el tiempo entre un cambio de código y una respuesta útil de las pruebas. ¿Qué objetivo principal respalda esto?",
+      "options": [
+        "Eliminar la necesidad de revisiones de código",
+        "Sustituir cada prueba manual por un script grabado",
+        "Evitar todo trabajo de configuración de entornos",
+        "Reducir el tiempo de respuesta ejecutando automáticamente comprobaciones adecuadas después de los cambios"
+      ],
+      "correctIndex": 3,
+      "explanation": "Uno de los objetivos más claros de la automatización es obtener respuestas más rápidas sobre los cambios. Esto ayuda a detectar antes las regresiones y a actuar mientras el contexto aún está presente."
+    },
+    {
+      "id": "ta-042",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes actividades de prueba suele ser la MENOS adecuada para automatizar por completo?",
+      "options": [
+        "Evaluar si un flujo de trabajo nuevo resulta intuitivo para quienes lo usan por primera vez",
+        "Comprobar el mismo contrato de API en cada compilación, aunque una persona aún deba interpretar el resultado",
+        "Ejecutar cálculos deterministas con muchos conjuntos de datos, aunque una persona aún deba interpretar el resultado",
+        "Ejecutar a diario una prueba de humo de los servicios básicos, aunque una persona aún deba interpretar el resultado"
+      ],
+      "correctIndex": 0,
+      "explanation": "La usabilidad y la experiencia intuitiva dependen mucho de la percepción y el juicio humanos. La automatización puede ayudar a evaluarlas, pero no sustituirlos por completo."
+    },
+    {
+      "id": "ta-043",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.2",
+      "difficulty": "hard",
+      "question": "¿Qué afirmación expresa una expectativa realista para una iniciativa de automatización madura?",
+      "options": [
+        "La automatización elimina la necesidad de analizar los fallos",
+        "La automatización es valiosa para las pruebas de GUI",
+        "Una vez creados los scripts, el conjunto puede ejecutarse para siempre sin mantenimiento",
+        "La automatización complementa las pruebas humanas y requiere atención continua a medida que evoluciona el producto"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las suites automatizadas requieren mantenimiento, análisis de resultados y adaptación continua. Son más eficaces cuando se utilizan junto con actividades de prueba dirigidas por personas."
+    },
+    {
+      "id": "ta-044",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.3.1",
+      "difficulty": "easy",
+      "question": "¿Por qué muchos equipos prefieren automatizar más comprobaciones a nivel de unidad o API que a nivel de interfaz completa?",
+      "options": [
+        "Las comprobaciones de nivel inferior suelen ser más rápidas, estables y fáciles de diagnosticar",
+        "Las pruebas de API no requieren preparar datos de prueba, aunque una persona aún deba interpretar el resultado",
+        "La automatización de interfaz suele encontrar defectos más profundos que las pruebas de unidad",
+        "Las comprobaciones de unidad son las únicas pruebas que pueden ejecutarse en CI"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las comprobaciones automatizadas de nivel inferior suelen ejecutarse más rápido y sus fallos son más específicos. Por eso constituyen una base sólida para la pirámide de automatización."
+    },
+    {
+      "id": "ta-045",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es la razón principal por la que una estrategia de automatización suele seguir la pirámide de pruebas?",
+      "options": [
+        "Equilibrar velocidad, fiabilidad y confianza dando prioridad a más comprobaciones de nivel inferior",
+        "Concentrar primero el esfuerzo en las comprobaciones más lentas, aunque una persona aún deba interpretar el resultado",
+        "Maximizar la cantidad de comparaciones de capturas de pantalla, aunque una persona aún deba interpretar el resultado",
+        "Asegurar que cada requisito se pruebe mediante la interfaz, aunque una persona aún deba interpretar el resultado"
+      ],
+      "correctIndex": 0,
+      "explanation": "La pirámide promueve una combinación equilibrada de comprobaciones automatizadas, con más pruebas rápidas y estables de nivel inferior que costosas pruebas de extremo a extremo por interfaz. Esto mejora la calidad de la retroalimentación y el mantenimiento."
+    },
+    {
+      "id": "ta-046",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.2.2",
+      "difficulty": "hard",
+      "question": "Después de automatizar un conjunto amplio de pruebas de regresión, ¿por qué normalmente deben continuar las pruebas exploratorias?",
+      "options": [
+        "Las pruebas exploratorias son principalmente la forma de comprobar resultados exactos esperados, aunque una persona aún deba interpretar el resultado",
+        "Las pruebas exploratorias existen principalmente para ralentizar las versiones, aunque una persona aún deba interpretar el resultado",
+        "Las pruebas exploratorias son necesarias porque la automatización no puede guardar resultados, aunque una persona aún deba interpretar el resultado",
+        "Las pruebas exploratorias se adaptan mejor a riesgos nuevos y comportamientos inesperados"
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas exploratorias ayudan a descubrir problemas que pueden pasar por alto las comprobaciones con scripts, especialmente ante riesgos nuevos o interacciones inesperadas. La automatización y la exploración cumplen funciones distintas."
+    },
+    {
+      "id": "ta-047",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.1",
+      "difficulty": "easy",
+      "question": "¿Qué objetivo para un primer programa de automatización tiene MÁS probabilidades de causar problemas?",
+      "options": [
+        "Automatizar comprobaciones de regresión estables y de valor claro",
+        "Automatizar el 100 % de todas las pruebas en un trimestre, sin importar su idoneidad",
+        "Usar la automatización para obtener comentarios frecuentes en la canalización de entrega",
+        "Empezar por las áreas cuya ejecución es repetitiva y determinista"
+      ],
+      "correctIndex": 1,
+      "explanation": "El objetivo indiscriminado de automatizarlo todo ignora el costo, la idoneidad y el mantenimiento. Los programas eficaces priorizan según el valor y la viabilidad."
+    },
+    {
+      "id": "ta-048",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es una consecuencia probable de tratar la automatización de pruebas únicamente como una forma de reducir la plantilla?",
+      "options": [
+        "El marco se volverá independiente de los proveedores automáticamente",
+        "El esfuerzo de mantenimiento desaparecerá del presupuesto",
+        "El equipo podría priorizar la cantidad de scripts en vez de la cobertura de riesgos del producto",
+        "Los atributos de calidad subjetivos serán más fáciles de automatizar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Si la automatización se plantea solo como una herramienta para reducir personal, el equipo puede perseguir objetivos equivocados. Una buena automatización se centra en reducir riesgos, acelerar la retroalimentación y mejorar la repetibilidad."
+    },
+    {
+      "id": "ta-049",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.2.1",
+      "difficulty": "hard",
+      "question": "¿Qué situación demuestra MEJOR que un conjunto de pruebas de humo automatizadas aporta valor?",
+      "options": [
+        "Se ejecuta rara vez porque requiere configuración manual de varios equipos",
+        "Contiene sobre todo escenarios inestables que fallan de forma intermitente",
+        "Ofrece rápidamente confianza en que los flujos críticos siguen funcionando después de cada implementación",
+        "Solo cubre un navegador para que los informes sean más fáciles de leer, aunque una persona aún deba interpretar el resultado"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un conjunto de pruebas de humo aporta valor cuando confirma rápidamente que los flujos básicos funcionan después de una compilación o implementación. La velocidad y la fiabilidad son esenciales."
+    },
+    {
+      "id": "ta-050",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.2.2",
+      "difficulty": "easy",
+      "question": "¿Por qué son importantes los resultados esperados deterministas para que una prueba sea una buena candidata a la automatización?",
+      "options": [
+        "Reducen la necesidad de usar control de versiones para el código de prueba",
+        "Eliminan la necesidad de registros y diagnósticos",
+        "Permiten que oráculos automatizados fiables determinen si la prueba se aprueba o falla",
+        "Eliminan los falsos negativos sin necesidad de validación adicional"
+      ],
+      "correctIndex": 2,
+      "explanation": "La automatización funciona mejor cuando se puede determinar de manera coherente si una prueba se aprueba o falla. Los resultados esperados ambiguos hacen que los veredictos automatizados sean menos fiables."
+    },
+    {
+      "id": "ta-051",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.3.2",
+      "difficulty": "medium",
+      "question": "¿Cuándo suele ser sensato posponer la automatización?",
+      "options": [
+        "Cuando la funcionalidad es un prototipo de corta duración que cambia cada pocos días",
+        "Cuando la prueba puede ejecutarse desatendida en CI",
+        "Cuando el escenario se ejecuta en cada ciclo de regresión",
+        "Cuando los resultados esperados son estables y medibles"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las funcionalidades de corta duración o muy inestables suelen generar trabajo repetido de automatización con poco valor a largo plazo. Esperar puede evitar esfuerzos hasta que el comportamiento se estabilice."
+    },
+    {
+      "id": "ta-052",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.2.1",
+      "difficulty": "hard",
+      "question": "¿Cuál es un beneficio habitual de programar la ejecución de suites automatizadas durante la noche?",
+      "options": [
+        "Pueden ofrecer una retroalimentación más amplia sin consumir las horas centrales de trabajo",
+        "Garantizan que los fallos sean defectos del producto, aunque una persona aún deba interpretar el resultado",
+        "Eliminan la necesidad de entornos de prueba, aunque una persona aún deba interpretar el resultado",
+        "Evitan la necesidad de cualquier trabajo de mantenimiento, aunque una persona aún deba interpretar el resultado"
+      ],
+      "correctIndex": 0,
+      "explanation": "La ejecución nocturna puede ampliar la retroalimentación sin interrumpir el trabajo diurno. El equipo puede revisar los resultados al comenzar la jornada siguiente."
+    },
+    {
+      "id": "ta-053",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.1",
+      "difficulty": "easy",
+      "question": "¿Qué afirmación sobre el alcance de la automatización es CORRECTA?",
+      "options": [
+        "La automatización es más eficaz cuando se aplica a actividades cuyo valor y repetibilidad justifican el costo",
+        "La automatización debe dirigirse a las funcionalidades más recientes, sin comprobar si la actividad es adecuada para automatizar",
+        "Automatizar los casos manuales aunque la repetición o el valor esperado sean bajos",
+        "La automatización es útil una vez que el producto se ha estabilizado por completo"
+      ],
+      "correctIndex": 0,
+      "explanation": "La automatización debe aplicarse selectivamente donde aporte un valor claro. Las decisiones sobre su alcance deben tener en cuenta la repetibilidad, el riesgo y el costo de mantenimiento."
+    },
+    {
+      "id": "ta-054",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.2",
+      "difficulty": "medium",
+      "question": "¿Por qué el enfoque de automatización debe asignar responsables claros del marco y de las suites?",
+      "options": [
+        "Para mantener el código de pruebas separado de las demás prácticas de ingeniería",
+        "Para asegurarse de que una sola persona pueda ejecutar la suite",
+        "Para garantizar que el mantenimiento, los estándares y la evolución se gestionen activamente",
+        "Para evitar integrar las pruebas en CI/CD"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sin responsables claros, los activos automatizados suelen deteriorarse porque nadie coordina las actualizaciones, revisiones y el mantenimiento. La responsabilidad favorece la sostenibilidad."
+    },
+    {
+      "id": "ta-055",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.3.1",
+      "difficulty": "hard",
+      "question": "¿Por qué las comprobaciones automatizadas a nivel de API suelen complementar bien las pruebas de interfaz?",
+      "options": [
+        "Eliminan la necesidad de cualquier prueba de interfaz",
+        "Validan la lógica de negocio mediante interfaces estables y son más rápidas que los flujos de interfaz de extremo a extremo",
+        "Verifican la disposición visual con más precisión que las personas",
+        "Las comprobaciones de API aportan más evidencia de accesibilidad que las pruebas en navegador"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las comprobaciones de API suelen abarcar lógica importante mediante interfaces más estables y ofrecen respuestas más rápidas. Complementan las pruebas de interfaz, pero no las sustituyen por completo."
+    },
+    {
+      "id": "ta-056",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.2.2",
+      "difficulty": "easy",
+      "question": "En el contexto de la automatización, ¿qué significa principalmente la repetibilidad?",
+      "options": [
+        "Hay que reescribir una prueba después de cada compilación, aunque una persona aún deba interpretar el resultado",
+        "La prueba debe requerir datos distintos cada vez para seguir siendo válida, aunque una persona aún deba interpretar el resultado",
+        "La prueba no debe volver a ejecutarse una vez aprobada, aunque una persona aún deba interpretar el resultado",
+        "La prueba puede volver a ejecutarse en las mismas condiciones y producir resultados coherentes"
+      ],
+      "correctIndex": 3,
+      "explanation": "La repetibilidad significa que una misma prueba puede ejecutarse de nuevo en condiciones controladas y producir resultados coherentes. Es una propiedad fundamental para que la automatización sea fiable."
+    },
+    {
+      "id": "ta-057",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.1",
+      "difficulty": "medium",
+      "question": "¿Por qué la automatización no puede compensar requisitos poco claros o constantemente cuestionados?",
+      "options": [
+        "Porque los requisitos poco claros solo importan a los desarrolladores",
+        "Porque las comprobaciones automatizadas también necesitan una expectativa definida que verificar",
+        "Porque las herramientas de automatización no pueden conectarse al control de código fuente",
+        "Porque la automatización funciona para las pruebas de rendimiento"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las comprobaciones automatizadas verifican el comportamiento esperado, por lo que dependen de expectativas claras. Si el requisito no está claro, la automatización perpetuará la confusión en lugar de resolverla."
+    },
+    {
+      "id": "ta-058",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.3.2",
+      "difficulty": "hard",
+      "question": "¿Qué uso de la automatización es MÁS adecuado en una canalización de solicitudes de incorporación de cambios?",
+      "options": [
+        "Un conjunto pequeño de comprobaciones rápidas y fiables que detecte pronto regresiones importantes",
+        "Aprobaciones manuales de responsables de pruebas, aunque una persona aún deba interpretar el resultado",
+        "La suite completa y lenta de extremo a extremo, sin importar la duración, aunque una persona aún deba interpretar el resultado",
+        "Una muestra aleatoria de pruebas para que cada ejecución sea diferente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las canalizaciones de solicitudes de incorporación de cambios se benefician de comprobaciones rápidas y fiables que protegen el flujo de trabajo. Las suites muy lentas o inestables suelen ubicarse más adelante en la canalización."
+    },
+    {
+      "id": "ta-059",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.2.1",
+      "difficulty": "easy",
+      "question": "Se corrigió un defecto en una regla de pagos estable y su reaparición tendría un gran impacto empresarial. ¿Cuál es la MEJOR medida de seguimiento?",
+      "options": [
+        "Trasladar el escenario principalmente a las pruebas exploratorias",
+        "Confiar en la memoria para volver a probarlo durante las versiones principales",
+        "Esperar a que aparezcan varios defectos similares antes de automatizar",
+        "Añadir una comprobación de regresión automatizada específica en el nivel de prueba más eficaz"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un riesgo de regresión de gran impacto es un motivo sólido para añadir una comprobación automatizada. Por lo general, el nivel más eficaz es el más bajo que ofrece suficiente confianza."
+    },
+    {
+      "id": "ta-060",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.2",
+      "difficulty": "medium",
+      "question": "¿Por qué es una buena práctica aplicar al código de pruebas una disciplina de ingeniería similar a la del código de producción?",
+      "options": [
+        "Permite ignorar estándares de nomenclatura y estructura, aunque una persona aún deba interpretar el resultado",
+        "Mejora el mantenimiento, la calidad de las revisiones y la fiabilidad a largo plazo",
+        "Elimina la necesidad de diseñar las pruebas, aunque una persona aún deba interpretar el resultado",
+        "Garantiza que ninguna prueba falle jamás, aunque una persona aún deba interpretar el resultado"
+      ],
+      "correctIndex": 1,
+      "explanation": "El código de automatización es un activo duradero y se beneficia de las revisiones, la refactorización y los estándares. Descuidar estas prácticas suele elevar el costo de mantenimiento."
+    },
+    {
+      "id": "ta-061",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.1.1",
+      "difficulty": "hard",
+      "question": "¿Por qué es un enfoque deficiente medir el éxito de la automatización solo por la cantidad de scripts creados?",
+      "options": [
+        "El recuento de scripts es útil para las pruebas de rendimiento, aunque una persona aún deba interpretar el resultado",
+        "La cantidad de scripts debería disminuir con el tiempo, aunque una persona aún deba interpretar el resultado",
+        "Una cantidad elevada de scripts significa automáticamente que el mantenimiento es mejor",
+        "El recuento de scripts dice poco sobre la cobertura de riesgos, la fiabilidad o el valor empresarial"
+      ],
+      "correctIndex": 3,
+      "explanation": "La cantidad por sí sola no indica si la automatización mejora la confianza o la eficiencia. La calidad, pertinencia y fiabilidad importan más que el número bruto de scripts."
+    },
+    {
+      "id": "ta-062",
+      "chapter": "1. Introducción a la automatización de pruebas",
+      "loRef": "CTAE-1.3.1",
+      "difficulty": "easy",
+      "question": "Al elegir dónde automatizar un escenario, ¿cuál es el MEJOR principio rector?",
+      "options": [
+        "Preferir el nivel más alto porque cubre indirectamente más código",
+        "Usar el nivel más visible para que las partes interesadas puedan verlo ejecutarse",
+        "Elegir el nivel práctico más bajo que proporcione la confianza necesaria",
+        "Automatizar a menudo el mismo escenario en todos los niveles disponibles"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un principio habitual es automatizar en el nivel más bajo que todavía ofrezca suficiente confianza. Esto suele mejorar la velocidad, estabilidad y facilidad de diagnóstico."
+    },
+    {
+      "id": "ta-063",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué situación ofrece el ARGUMENTO EMPRESARIAL MÁS SÓLIDO para automatizar primero una prueba?",
+      "options": [
+        "Una revisión subjetiva de diseño debatida en talleres",
+        "Un cálculo estable que se usa en cada versión y es costoso de verificar manualmente",
+        "Un prototipo inestable sin comportamiento esperado acordado",
+        "Un script de demostración puntual para una funcionalidad que se eliminará la semana que viene"
+      ],
+      "correctIndex": 1,
+      "explanation": "Una comprobación estable, repetida con frecuencia y laboriosa suele ofrecer un ROI sólido. Las actividades puntuales o inestables rara vez justifican el esfuerzo inicial de automatización."
+    },
+    {
+      "id": "ta-064",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.2",
+      "difficulty": "hard",
+      "question": "¿Qué debería ocurrir con una estimación del ROI si la interfaz de una funcionalidad se rediseña en cada sprint y los scripts requieren reparaciones constantes?",
+      "options": [
+        "Debe ignorarse el ROI una vez iniciada la automatización",
+        "El ROI no se ve afectado porque solo importa el tiempo de ejecución",
+        "El ROI esperado debe aumentar porque el equipo modifica las pruebas con frecuencia",
+        "El ROI esperado debe disminuir porque el costo de mantenimiento aumenta considerablemente"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los rediseños frecuentes aumentan el esfuerzo de mantenimiento y pueden reducir el ahorro de la automatización. El ROI debe reflejar el costo del ciclo de vida, no solo la velocidad de ejecución."
+    },
+    {
+      "id": "ta-065",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.2",
+      "difficulty": "easy",
+      "question": "¿Qué característica del SUT mejora MÁS la capacidad de prueba para la automatización?",
+      "options": [
+        "Un proceso de diseño basado principalmente en capturas de pantalla, sin considerar estabilidad ni frecuencia de repetición",
+        "Reglas de negocio accesibles mediante API estables y una configuración predecible de los datos de prueba",
+        "El requisito de que todas las pruebas usen una cuenta de administrador compartida, sin considerar estabilidad ni frecuencia de repetición",
+        "Identificadores de controles que cambian con frecuencia y se generan aleatoriamente durante la ejecución"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las interfaces estables y los datos de prueba controlables facilitan la creación y el mantenimiento de la automatización. Las interfaces aleatorias o muy acopladas producen el efecto contrario."
+    },
+    {
+      "id": "ta-066",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.3.1",
+      "difficulty": "medium",
+      "question": "¿Qué criterio es MENOS útil al seleccionar un pequeño conjunto piloto de pruebas para automatizar?",
+      "options": [
+        "La estabilidad de la funcionalidad cubierta, sin considerar estabilidad ni frecuencia de repetición",
+        "La frecuencia con la que se repiten las pruebas, sin considerar estabilidad ni frecuencia de repetición",
+        "La facilidad para reconocer automáticamente un resultado correcto",
+        "Si el título del caso de prueba empieza por una letra temprana del alfabeto"
+      ],
+      "correctIndex": 3,
+      "explanation": "La selección del piloto debe basarse en la estabilidad, la repetición y la posibilidad de automatizar los resultados. El orden alfabético no tiene relación significativa con el valor."
+    },
+    {
+      "id": "ta-067",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.1",
+      "difficulty": "hard",
+      "question": "¿Por qué es útil una prueba de concepto durante la evaluación de herramientas?",
+      "options": [
+        "Permite comprobar si la herramienta puede automatizar flujos representativos en el contexto real",
+        "Sustituye la necesidad de cualquier argumento empresarial, sin considerar estabilidad ni frecuencia de repetición",
+        "Garantiza que el costo de mantenimiento futuro será cero",
+        "Demuestra que la herramienta es la opción más barata en todos los escenarios"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una prueba de concepto revela la adecuación práctica, las dificultades de integración y las limitaciones en el entorno real del equipo. Aporta más información que las afirmaciones del proveedor por sí solas."
+    },
+    {
+      "id": "ta-068",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.4.1",
+      "difficulty": "easy",
+      "question": "Al comparar herramientas de automatización, ¿qué pregunta es MÁS importante?",
+      "options": [
+        "¿Puede la herramienta cambiar automáticamente el nombre de las pruebas por nombres más largos?",
+        "¿Admite la herramienta la pila tecnológica de la aplicación y los entornos de destino?",
+        "¿Cuántos temas predeterminados ofrece el visor de informes?",
+        "¿El sitio web del proveedor usa colores de marca modernos?, sin considerar estabilidad ni frecuencia de repetición"
+      ],
+      "correctIndex": 1,
+      "explanation": "La herramienta debe funcionar con las tecnologías de la aplicación y los entornos de ejecución. Las características cosméticas son secundarias frente a la compatibilidad técnica."
+    },
+    {
+      "id": "ta-069",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.4.1",
+      "difficulty": "medium",
+      "question": "¿Por qué suelen guardarse los scripts y los datos de prueba de automatización en un sistema de control de versiones?",
+      "options": [
+        "Para evitar el uso de ramas en trabajos paralelos",
+        "Para impedir que otras personas revisen las pruebas",
+        "Para mantener la trazabilidad de los cambios y permitir colaboración, reversión e historial reproducible",
+        "Para garantizar que las pruebas solo puedan ejecutarse en una máquina"
+      ],
+      "correctIndex": 2,
+      "explanation": "El control de versiones facilita el trabajo en equipo, la auditabilidad y la evolución segura de las pruebas y los datos. También ayuda a alinear los activos automatizados con los cambios de la aplicación."
+    },
+    {
+      "id": "ta-070",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.2",
+      "difficulty": "hard",
+      "question": "¿Por qué es importante planificar pronto la gestión de datos de prueba antes de ampliar la automatización?",
+      "options": [
+        "Porque los datos no gestionados provocan rápidamente pruebas frágiles, colisiones y resultados poco fiables",
+        "Porque suele ser seguro usar datos aleatorios de producción",
+        "Porque los datos de prueba solo importan en las pruebas de rendimiento",
+        "Los datos de prueba realistas apenas son pertinentes para las comprobaciones automatizadas"
+      ],
+      "correctIndex": 0,
+      "explanation": "La automatización fiable depende de datos controlados y adecuados. Sin una estrategia de datos, las suites suelen volverse inestables y difíciles de mantener."
+    },
+    {
+      "id": "ta-071",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.3.1",
+      "difficulty": "easy",
+      "question": "¿Qué prueba manual es la MEJOR candidata a automatizar?",
+      "options": [
+        "Un taller de lluvia de ideas sobre riesgos futuros",
+        "Una prueba improvisada de una funcionalidad aún no implementada",
+        "Un cálculo determinista del impuesto de un pedido que se repite en muchas regiones en cada versión",
+        "Una evaluación subjetiva de la percepción de la marca"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un cálculo determinista, repetitivo y de gran volumen es un objetivo sólido para la automatización. Las actividades subjetivas o indefinidas no lo son."
+    },
+    {
+      "id": "ta-072",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es un obstáculo importante para la automatización cuando no se puede restablecer el entorno de prueba a un estado conocido?",
+      "options": [
+        "Los informes ya no pueden incluir capturas de pantalla, sin considerar estabilidad ni frecuencia de repetición",
+        "Las pruebas de interfaz se ven afectadas; las pruebas de API suelen ser seguras, sin considerar estabilidad ni frecuencia de repetición",
+        "Los resultados de las pruebas pueden depender de datos residuales y de ejecuciones anteriores",
+        "El costo de la licencia de la herramienta se duplica automáticamente, sin considerar estabilidad ni frecuencia de repetición"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sin un restablecimiento o aislamiento fiable del entorno, resulta más difícil confiar en los resultados automatizados. El estado oculto de ejecuciones anteriores suele causar resultados incoherentes."
+    },
+    {
+      "id": "ta-073",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.1",
+      "difficulty": "hard",
+      "question": "¿Por qué muchas organizaciones empiezan la automatización con un piloto limitado en lugar de implementarla en toda la empresa?",
+      "options": [
+        "Un piloto es obligatorio cuando se prohíben las pruebas manuales, sin considerar estabilidad ni frecuencia de repetición",
+        "Un piloto evita tener que capacitar a alguien, sin considerar estabilidad ni frecuencia de repetición",
+        "Un piloto reduce el riesgo y ayuda a validar las suposiciones sobre herramientas, habilidades y valor",
+        "Un piloto garantiza que todas las pruebas futuras no necesitarán mantenimiento, sin considerar estabilidad ni frecuencia de repetición"
+      ],
+      "correctIndex": 2,
+      "explanation": "Un piloto permite aprender con poco costo antes de ampliar la iniciativa. Puede revelar carencias de proceso, habilidades y herramientas cuando todavía es fácil y barato cambiar."
+    },
+    {
+      "id": "ta-074",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.4.1",
+      "difficulty": "easy",
+      "question": "¿En qué situación podría ser MEJOR elegir una herramienta de automatización de código abierto?",
+      "options": [
+        "Cuando el criterio principal de evaluación es el tamaño del puesto del proveedor en una conferencia, sin considerar estabilidad ni frecuencia de repetición",
+        "Cuando el equipo necesita flexibilidad y extensibilidad a nivel de código, y dispone de las habilidades para mantenerla",
+        "Cuando el producto no tiene una pila técnica con la que integrarse, sin considerar estabilidad ni frecuencia de repetición",
+        "Cuando la herramienta debe garantizar que no requerirá mantenimiento, sin considerar estabilidad ni frecuencia de repetición"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las herramientas de código abierto pueden ser adecuadas cuando importan la flexibilidad y la extensibilidad, y el equipo puede mantener la solución. La elección correcta depende del contexto, no solo del modelo de licencia."
+    },
+    {
+      "id": "ta-075",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.2",
+      "difficulty": "medium",
+      "question": "¿Por qué suelen participar desarrolladores y personal de operaciones en la selección de herramientas de automatización?",
+      "options": [
+        "Deben elegir herramientas únicamente según sus preferencias personales",
+        "Sus aportes importan después de comprar la herramienta, sin considerar estabilidad ni frecuencia de repetición",
+        "Pueden evaluar puntos de integración, canalizaciones, entornos y aspectos de mantenimiento",
+        "Se les necesita principalmente para aprobar los colores de los informes"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las herramientas de automatización suelen interactuar con canalizaciones de compilación, entornos e interfaces de aplicaciones. La participación interfuncional ayuda a evitar problemas de adopción imprevistos."
+    },
+    {
+      "id": "ta-076",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.3.1",
+      "difficulty": "hard",
+      "question": "¿Qué prueba suele ser una mala candidata para la automatización?",
+      "options": [
+        "Una comprobación de regresión con resultados medibles, sin considerar estabilidad ni frecuencia de repetición",
+        "Una comprobación de compatibilidad de API para integraciones con socios",
+        "Un escenario cuyos criterios de aprobación dependen principalmente del juicio estético humano",
+        "Una tarea de validación de datos que se repite en cada versión"
+      ],
+      "correctIndex": 2,
+      "explanation": "Cuando los criterios de aprobación son principalmente subjetivos, es difícil confiar en los veredictos automatizados. En esos casos, la evaluación humana sigue siendo importante."
+    },
+    {
+      "id": "ta-077",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.2",
+      "difficulty": "easy",
+      "question": "¿Por qué debe incluir un argumento empresarial para la automatización los costos de capacitación e incorporación?",
+      "options": [
+        "Porque los costos de capacitación importan después de los primeros 1000 scripts, sin considerar estabilidad ni frecuencia de repetición",
+        "Porque esos costos influyen en cuándo, o incluso si, la inversión resulta rentable",
+        "Porque los argumentos empresariales deben incluir principalmente beneficios, no costos, sin considerar estabilidad ni frecuencia de repetición",
+        "Porque se puede ignorar la capacitación si la herramienta tiene una interfaz gráfica"
+      ],
+      "correctIndex": 1,
+      "explanation": "Un argumento empresarial realista incluye los costos relacionados con las personas, además de los costos de herramientas y mantenimiento. De lo contrario, se puede sobreestimar el rendimiento esperado."
+    },
+    {
+      "id": "ta-078",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.1",
+      "difficulty": "medium",
+      "question": "Si un requisito puede comprobarse mediante una API estable o un flujo de interfaz frágil, ¿qué opción suele ser mejor para la cobertura de automatización principal?",
+      "options": [
+        "La API estable, porque suele ser más rápida y menos frágil",
+        "El flujo de interfaz frágil, porque es visualmente más rico, sin considerar estabilidad ni frecuencia de repetición",
+        "Ninguno debe automatizarse hasta que la versión esté en producción, sin considerar estabilidad ni frecuencia de repetición",
+        "Automatizar ambas opciones antes de evaluar su costo y estabilidad"
+      ],
+      "correctIndex": 0,
+      "explanation": "Si ambas opciones ofrecen suficiente confianza, la interfaz más estable y rápida suele ser el mejor objetivo principal de automatización. Se pueden añadir selectivamente comprobaciones de interfaz cuando hagan falta."
+    },
+    {
+      "id": "ta-079",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.4.1",
+      "difficulty": "hard",
+      "question": "¿Por qué es útil etiquetar las pruebas automatizadas por finalidad, como humo, regresión o contrato?",
+      "options": [
+        "Ayuda a seleccionar los subconjuntos adecuados para las distintas etapas de la canalización y necesidades de informes",
+        "Elimina la necesidad de trazabilidad con los requisitos",
+        "Garantiza un orden de ejecución perfecto",
+        "Impide que las pruebas tengan control de versiones"
+      ],
+      "correctIndex": 0,
+      "explanation": "Las etiquetas significativas facilitan la organización y la ejecución de grupos de pruebas en el contexto adecuado. Las distintas etapas de la canalización suelen requerir subconjuntos diferentes."
+    },
+    {
+      "id": "ta-080",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.1.2",
+      "difficulty": "easy",
+      "question": "¿Por qué debe examinar un equipo el modelo de licencia de una herramienta antes de planificar una ejecución paralela a gran escala?",
+      "options": [
+        "El modelo de licencia influye en la generación de informes, pero no en el costo de la ejecución paralela",
+        "Los costos de licencia dejan de ser importantes después de un piloto exitoso",
+        "Las ejecuciones paralelas pueden cambiar el costo operativo real de la solución",
+        "La ejecución paralela es imposible con cualquier herramienta comercial, sin considerar estabilidad ni frecuencia de repetición"
+      ],
+      "correctIndex": 2,
+      "explanation": "Algunas herramientas cobran según la cantidad de usuarios, máquinas o ejecuciones simultáneas. Esto puede afectar considerablemente las estimaciones de costos a largo plazo."
+    },
+    {
+      "id": "ta-081",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.2",
+      "difficulty": "medium",
+      "question": "¿Cómo puede ayudar la virtualización de servicios durante la preparación de la automatización?",
+      "options": [
+        "Eliminando la necesidad de validar integraciones reales",
+        "Simulando dependencias no disponibles o costosas para ejecutar las pruebas antes y con mayor fiabilidad",
+        "Garantizando que el comportamiento en producción y en pruebas sea idéntico",
+        "Sustituyendo el control de versiones de los entornos de prueba"
+      ],
+      "correctIndex": 1,
+      "explanation": "La virtualización puede hacer viable la automatización cuando los sistemas de los que depende son inestables, no están disponibles o son costosos. Mejora el control, pero no elimina la necesidad de comprobar integraciones reales."
+    },
+    {
+      "id": "ta-082",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.3.1",
+      "difficulty": "hard",
+      "question": "¿Qué información es MÁS útil al priorizar una lista pendiente de automatización?",
+      "options": [
+        "El orden alfabético de los nombres de las funcionalidades",
+        "La cantidad de capturas de pantalla que incluye cada prueba manual",
+        "Qué pruebas se escribieron un lunes, sin considerar estabilidad ni frecuencia de repetición",
+        "Una combinación del riesgo empresarial, la frecuencia de ejecución y el mantenimiento previsto"
+      ],
+      "correctIndex": 3,
+      "explanation": "La priorización debe reflejar el valor y el costo. El riesgo, la repetición y el mantenimiento previsto son factores pertinentes."
+    },
+    {
+      "id": "ta-083",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.1",
+      "difficulty": "easy",
+      "question": "¿Por qué deben estabilizarse los entornos de prueba antes de ampliar una suite automatizada?",
+      "options": [
+        "Porque los entornos inestables pueden hacer que pruebas correctas parezcan poco fiables",
+        "Porque la calidad del entorno afecta principalmente a las pruebas de rendimiento, sin considerar estabilidad ni frecuencia de repetición",
+        "Porque los entornos estables eliminan la necesidad de aserciones, sin considerar estabilidad ni frecuencia de repetición",
+        "Porque las herramientas de automatización pueden corregir automáticamente los fallos del entorno"
+      ],
+      "correctIndex": 0,
+      "explanation": "La inestabilidad del entorno suele parecer una inestabilidad de automatización, aunque los scripts sean correctos. Estabilizar los entornos aumenta la confianza en los resultados."
+    },
+    {
+      "id": "ta-084",
+      "chapter": "2. Preparación para la automatización de pruebas",
+      "loRef": "CTAE-2.2.2",
+      "difficulty": "medium",
+      "question": "¿Qué indicio sugiere que un sistema TODAVÍA no está listo para una automatización amplia de la interfaz?",
+      "options": [
+        "Expone puntos de prueba estables y localizadores predecibles",
+        "Genera identificadores de elementos aleatorios y no permite configurar de forma controlada los datos de prueba",
+        "Tiene escenarios de regresión bien definidos",
+        "Admite configurar estados deterministas mediante API"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los localizadores aleatorios y la falta de control del estado hacen que la automatización de interfaz sea costosa y frágil. Normalmente hay que resolver estos problemas antes de ampliarla."
+    },
+    {
+      "id": "ta-085",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.1",
+      "difficulty": "hard",
+      "question": "Dentro de una arquitectura de automatización por capas, ¿cuál es el propósito principal de la capa de generación de pruebas?",
+      "options": [
+        "Crear o derivar pruebas ejecutables a partir de modelos, especificaciones o activos seleccionados",
+        "Sustituir todos los registros por capturas de pantalla, sin separar la intención de la prueba de su implementación",
+        "Gestionar la dotación de personal del proyecto aunque los cambios de interfaz se propaguen a muchos escenarios",
+        "Almacenar los binarios del navegador para la ejecución local"
+      ],
+      "correctIndex": 0,
+      "explanation": "La capa de generación se ocupa de producir pruebas o estructuras de prueba a partir de fuentes de nivel superior. Se sitúa por encima de los detalles técnicos de ejecución."
+    },
+    {
+      "id": "ta-086",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.3",
+      "difficulty": "easy",
+      "question": "¿Qué responsabilidad corresponde MÁS directamente a la capa de ejecución de pruebas?",
+      "options": [
+        "Definir palabras clave legibles para el negocio para futuras versiones",
+        "Gestionar la ejecución de pruebas automatizadas y recopilar los resultados en tiempo de ejecución",
+        "Diseñar la interfaz de usuario del producto, sin separar la intención de la prueba de su implementación",
+        "Elegir el presupuesto del proyecto para los entornos, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 1,
+      "explanation": "La capa de ejecución coordina la forma en que se ejecutan las pruebas y recopila sus resultados. Se centra en el control durante la ejecución, no en el diseño de pruebas de negocio."
+    },
+    {
+      "id": "ta-087",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Cómo ayuda la capa de adaptación de pruebas cuando cambia la API de un controlador de navegador?",
+      "options": [
+        "Impide que el SUT cambie en el futuro, sin separar la intención de la prueba de su implementación",
+        "Aísla el cambio para que las definiciones de pruebas de nivel superior requieran pocos cambios o ninguno",
+        "Reescribe automáticamente todos los documentos de requisitos",
+        "Elimina la necesidad de registros de ejecución de pruebas, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 1,
+      "explanation": "La capa de adaptación protege el resto del marco frente a cambios de interfaz de bajo nivel. Esta separación es una ventaja clave del diseño mantenible por capas."
+    },
+    {
+      "id": "ta-088",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.3.1",
+      "difficulty": "hard",
+      "question": "¿Cuál es la principal ventaja de usar Page Object Model en la automatización de interfaz?",
+      "options": [
+        "Garantiza que las pruebas de interfaz se ejecuten más rápido que las pruebas de API",
+        "Sustituye la necesidad de aserciones, sin separar la intención de la prueba de su implementación",
+        "Hace que todas las pruebas sean independientes de la navegación de la aplicación",
+        "Centraliza las interacciones con las páginas y reduce la duplicación de la lógica de acciones y localizadores"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los objetos de página encapsulan la estructura y las interacciones de la interfaz en un solo lugar. Esto reduce la duplicación y concentra los cambios cuando evolucionan las pantallas."
+    },
+    {
+      "id": "ta-089",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.2.2",
+      "difficulty": "easy",
+      "question": "¿Cuál es un beneficio clave de un marco basado en palabras clave?",
+      "options": [
+        "Las acciones legibles para el negocio pueden reutilizarse, mientras los detalles de implementación permanecen centralizados",
+        "El marco ya no necesita ninguna capa de abstracción, sin separar la intención de la prueba de su implementación",
+        "Los datos de prueba ya no pueden variar entre ejecuciones, sin separar la intención de la prueba de su implementación",
+        "Cada probador debe escribir llamadas de bajo nivel al controlador en todos los escenarios, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 0,
+      "explanation": "El diseño basado en palabras clave separa la intención de la implementación. Las acciones reutilizables hacen que las pruebas sean más legibles y fáciles de mantener."
+    },
+    {
+      "id": "ta-090",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.2.1",
+      "difficulty": "medium",
+      "question": "Cuando hay que repetir la misma validación con cientos de combinaciones de entrada, ¿qué capacidad del marco es MÁS útil?",
+      "options": [
+        "Volver a grabar el escenario para cada conjunto de entradas",
+        "Usar notas para la ejecución manual, sin separar la intención de la prueba de su implementación",
+        "Codificar todos los valores directamente en cada método de prueba",
+        "Ejecución basada en datos que reutiliza la lógica con muchos conjuntos de datos"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los enfoques basados en datos reducen la duplicación al mantener constante la lógica y variar las entradas y los resultados esperados. Esto es eficiente para conjuntos de datos grandes."
+    },
+    {
+      "id": "ta-091",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.3",
+      "difficulty": "hard",
+      "question": "¿Por qué suele ser una mala decisión colocar aserciones de negocio directamente en el código de bajo nivel de un adaptador?",
+      "options": [
+        "Por defecto, hace que la ejecución sea más rápida, sin separar la intención de la prueba de su implementación",
+        "La mayoría de las herramientas comerciales lo exigen, sin separar la intención de la prueba de su implementación",
+        "Mezcla niveles de abstracción y dificulta la reutilización y el mantenimiento",
+        "Elimina la necesidad de definiciones de prueba, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los adaptadores de bajo nivel deben centrarse en interactuar con el SUT o sus interfaces. Mezclarlos con aserciones de negocio aumenta el acoplamiento y la carga de mantenimiento."
+    },
+    {
+      "id": "ta-092",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.3.1",
+      "difficulty": "easy",
+      "question": "Un marco proporciona operaciones reutilizables como «crear cliente» y «enviar factura» que usan muchas pruebas. ¿Qué beneficio arquitectónico aporta?",
+      "options": [
+        "Elimina la necesidad de variar los datos de prueba",
+        "Garantiza que cada prueba cubra una ruta única principalmente una vez",
+        "Fomenta la reutilización y mantiene coherente la lógica de los flujos de trabajo en toda la suite",
+        "Garantiza que no haya inestabilidad en las pruebas de interfaz, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las operaciones de negocio compartidas reducen la duplicación y fomentan flujos de trabajo coherentes. Los cambios se pueden realizar de forma centralizada en vez de en muchas pruebas."
+    },
+    {
+      "id": "ta-093",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.2",
+      "difficulty": "medium",
+      "question": "Si cambia el formato de un punto de conexión de una API de terceros, ¿qué área de la gTAA debería absorber idealmente la mayor parte del cambio?",
+      "options": [
+        "Los componentes de adaptación que traducen entre las pruebas y la interfaz externa",
+        "La estrategia de ramas del control de código fuente",
+        "Todas las pruebas de negocio por igual",
+        "Principalmente la configuración del panel de informes"
+      ],
+      "correctIndex": 0,
+      "explanation": "La traducción de interfaces corresponde a los límites de adaptación. Una buena arquitectura impide que un cambio de bajo nivel se propague a todas las pruebas."
+    },
+    {
+      "id": "ta-094",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.3.1",
+      "difficulty": "hard",
+      "question": "¿Por qué suele ser mejor una utilidad centralizada de espera o reintentos que dispersar pausas arbitrarias en las pruebas?",
+      "options": [
+        "Estandariza la sincronización y facilita ajustarla",
+        "Hace innecesarios los localizadores, sin separar la intención de la prueba de su implementación",
+        "Depender de esperas fijas evita fallos de temporización sin comprobar el estado observable de la aplicación",
+        "Oculta los problemas de temporización en vez de informarlos para su diagnóstico"
+      ],
+      "correctIndex": 0,
+      "explanation": "La sincronización centralizada reduce la duplicación y facilita mejorar de forma coherente el comportamiento temporal. Las pausas arbitrarias suelen hacer que las pruebas sean lentas e inestables."
+    },
+    {
+      "id": "ta-095",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.2.2",
+      "difficulty": "easy",
+      "question": "En comparación con scripts de grabación y reproducción, ¿por qué suelen ser preferibles las abstracciones compuestas en una suite de larga duración?",
+      "options": [
+        "No requieren decisiones de diseño del marco, sin separar la intención de la prueba de su implementación",
+        "Garantizan una mayor detección de defectos en todos los escenarios",
+        "Son más fáciles de refactorizar, revisar y adaptar a medida que cambia la aplicación",
+        "Solo los proveedores de herramientas pueden entenderlas, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las abstracciones compuestas favorecen un código de prueba mantenible que evoluciona con el producto. Los scripts de grabación y reproducción suelen volverse frágiles y repetitivos."
+    },
+    {
+      "id": "ta-096",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.2.2",
+      "difficulty": "medium",
+      "question": "¿Qué suele proporcionar un catálogo de palabras clave o una biblioteca de acciones en una solución basada en palabras clave?",
+      "options": [
+        "Garantiza que las personas no técnicas rara vez necesiten ayuda para las revisiones",
+        "Una lista de contraseñas de bases de datos de producción, sin separar la intención de la prueba de su implementación",
+        "Un sustituto de todas las aserciones y datos de prueba",
+        "Correspondencias entre pasos de alto nivel y los detalles ejecutables de implementación"
+      ],
+      "correctIndex": 3,
+      "explanation": "El catálogo vincula las palabras clave legibles con la lógica técnica que las ejecuta. Esto es esencial para separar la intención de la implementación."
+    },
+    {
+      "id": "ta-097",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.3",
+      "difficulty": "hard",
+      "question": "¿Por qué la capa de ejecución debe recopilar de forma coherente registros, capturas de pantalla e información de tiempos?",
+      "options": [
+        "Eliminan la necesidad de clasificar los fallos",
+        "Estos artefactos facilitan el diagnóstico y permiten generar informes fiables",
+        "Evitan que se produzcan problemas en el entorno",
+        "Hacen que las aserciones sean opcionales"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los artefactos de ejecución coherentes aceleran la investigación y refuerzan la confianza en los resultados. Son especialmente valiosos cuando se producen fallos en ejecuciones desatendidas."
+    },
+    {
+      "id": "ta-098",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.2.1",
+      "difficulty": "easy",
+      "question": "¿Cómo ayudan a las pruebas automatizadas las fixtures parametrizadas o los constructores de configuración?",
+      "options": [
+        "Hacen imposible auditar la preparación del estado, sin separar la intención de la prueba de su implementación",
+        "Permiten reutilizar patrones de configuración controlados con valores específicos del escenario",
+        "Sustituyen la necesidad de configurar el entorno",
+        "Garantizan que todas las pruebas usen datos idénticos, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las fixtures parametrizadas reducen la duplicación en la configuración y conservan la flexibilidad. También aclaran la intención mejor que una configuración manual dispersa por las pruebas."
+    },
+    {
+      "id": "ta-099",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.3.1",
+      "difficulty": "medium",
+      "question": "¿Por qué puede mejorar el mantenimiento una capa dedicada a construir datos de prueba?",
+      "options": [
+        "Obliga a cada prueba a gestionar inserciones de base de datos sin procesar, sin separar la intención de la prueba de su implementación",
+        "Garantiza que rara vez haya que limpiar los datos, sin separar la intención de la prueba de su implementación",
+        "Elimina la necesidad de validar resultados, sin separar la intención de la prueba de su implementación",
+        "Mantiene reutilizable la lógica de creación de datos y la separa de la intención del escenario"
+      ],
+      "correctIndex": 3,
+      "explanation": "Separar la creación de datos del flujo del escenario hace que las pruebas sean más fáciles de leer y cambiar. También centraliza las actualizaciones cuando evolucionan las reglas de datos."
+    },
+    {
+      "id": "ta-100",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.3.1",
+      "difficulty": "hard",
+      "question": "¿Qué práctica constituye un antipatrón en la automatización de interfaz mantenible?",
+      "options": [
+        "Permitir que cada prueba manipule directamente selectores CSS sin procesar",
+        "Centralizar los selectores en objetos de página",
+        "Recopilar diagnósticos cuando falla una prueba, sin separar la intención de la prueba de su implementación",
+        "Usar métodos auxiliares de nivel de negocio, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 0,
+      "explanation": "Si cada prueba define sus propios selectores, los cambios de interfaz requieren modificaciones en muchos lugares. Centralizar los selectores reduce ese acoplamiento."
+    },
+    {
+      "id": "ta-101",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.4.1",
+      "difficulty": "easy",
+      "question": "¿Cuál es un requisito clave para ejecutar pruebas automatizadas en paralelo de forma fiable?",
+      "options": [
+        "Hacer que las pruebas reutilicen una cuenta y un conjunto de datos compartidos durante la ejecución paralela",
+        "Aislar las pruebas en cuanto a datos, estado del entorno y recursos compartidos",
+        "Usar en la suite la duración de espera máxima posible, sin separar la intención de la prueba de su implementación",
+        "Ejecutar todas las pruebas mediante la interfaz, independientemente de su propósito, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 1,
+      "explanation": "La paralelización funciona mejor cuando las pruebas no interfieren entre sí. El estado mutable compartido es una causa frecuente de ejecuciones paralelas poco fiables."
+    },
+    {
+      "id": "ta-102",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Cómo pueden encajar los stubs o drivers en una arquitectura genérica de automatización?",
+      "options": [
+        "Eliminan la necesidad de programar la ejecución de pruebas",
+        "Pertenecen a los paneles de supervisión del rendimiento, sin separar la intención de la prueba de su implementación",
+        "Pueden actuar como adaptadores o interfaces controladas para los componentes que las pruebas necesitan ejercitar",
+        "Sustituyen permanentemente todos los servicios de producción"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los stubs y drivers pueden facilitar una interacción controlada con partes del sistema o sus dependencias. A menudo se sitúan cerca de los límites de interfaz de la arquitectura."
+    },
+    {
+      "id": "ta-103",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.4.1",
+      "difficulty": "hard",
+      "question": "¿Por qué es valiosa la ejecución basada en configuración para ejecutar la misma suite en local, en CI y en infraestructura remota?",
+      "options": [
+        "Separa los ajustes específicos del entorno de la lógica de prueba",
+        "La configuración hace reproducibles los fallos sin comprobar las diferencias del entorno",
+        "Impide que la suite use distintos navegadores, sin separar la intención de la prueba de su implementación",
+        "Elimina la necesidad de informes en CI, sin separar la intención de la prueba de su implementación"
+      ],
+      "correctIndex": 0,
+      "explanation": "La ejecución basada en configuración mantiene portable la lógica de prueba entre entornos. Esto reduce la duplicación y simplifica los cambios operativos."
+    },
+    {
+      "id": "ta-104",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.1.1",
+      "difficulty": "easy",
+      "question": "¿En qué lugar debería transformar idealmente un marco las filas de un archivo CSV en escenarios de prueba abstractos antes de ejecutarlos?",
+      "options": [
+        "En el informe HTML final, sin separar la intención de la prueba de su implementación",
+        "En el archivo de configuración del controlador del navegador, sin separar la intención de la prueba de su implementación",
+        "Dentro de las definiciones de localizadores de cada objeto de página",
+        "En una capa de generación o preparación por encima de los detalles de ejecución de bajo nivel"
+      ],
+      "correctIndex": 3,
+      "explanation": "La transformación de datos externos en estructuras de escenarios es una responsabilidad de nivel superior a la ejecución directa. Mantener esta lógica por encima de los adaptadores técnicos conserva la separación."
+    },
+    {
+      "id": "ta-105",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.3.1",
+      "difficulty": "medium",
+      "question": "¿Por qué suelen ser más fáciles de mantener las aserciones expresadas cerca de la intención de negocio que dentro de métodos auxiliares de localizadores?",
+      "options": [
+        "Hacen imposible reproducir los fallos",
+        "Garantizan que los datos de prueba no puedan cambiar, independientemente de la reutilización o de las responsabilidades de las capas de arquitectura",
+        "Se entienden en términos del dominio y evitan ocultar la lógica de verificación en código de bajo nivel",
+        "Permiten que las páginas omitan la sincronización, aunque los cambios de interfaz se propaguen a muchos escenarios"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las aserciones de negocio son más fáciles de leer y revisar porque expresan los resultados esperados en el lenguaje del dominio. Ocultarlas en métodos auxiliares de bajo nivel oscurece su significado."
+    },
+    {
+      "id": "ta-106",
+      "chapter": "3. La arquitectura genérica de automatización de pruebas (gTAA)",
+      "loRef": "CTAE-3.3.1",
+      "difficulty": "hard",
+      "question": "¿Por qué suele ser mejor una biblioteca de comandos compartida que copiar la misma secuencia de pasos en muchas pruebas?",
+      "options": [
+        "Impide parametrizar las pruebas, sin separar la intención de la prueba de su implementación",
+        "Garantiza que cada prueba siga siendo única aunque el comportamiento sea el mismo",
+        "Hace innecesarias las revisiones de código, sin separar la intención de la prueba de su implementación",
+        "Concentra el mantenimiento en un lugar y fomenta un comportamiento coherente"
+      ],
+      "correctIndex": 3,
+      "explanation": "Los comandos compartidos reducen la duplicación y abaratan los cambios. Las secuencias de pasos copiadas suelen divergir y aumentar el esfuerzo de mantenimiento."
+    },
+    {
+      "id": "ta-107",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.2",
+      "difficulty": "easy",
+      "question": "¿Cuál es la MEJOR forma de reducir el riesgo de dependencia de un proveedor en un programa de automatización?",
+      "options": [
+        "Codificar de forma fija el comportamiento específico del proveedor en cada script, sin planificar responsables ni recuperación",
+        "Mantener la intención de las pruebas y las abstracciones del marco lo más independientes posible de un proveedor",
+        "Guardar todo el conocimiento en el portal del proveedor aunque se reduzca la fiabilidad o la confianza en las versiones",
+        "Evitar documentar la organización de las pruebas aunque se reduzca la fiabilidad o la confianza en las versiones"
+      ],
+      "correctIndex": 1,
+      "explanation": "La independencia de las herramientas mejora cuando la intención de negocio y las abstracciones reutilizables no están estrechamente vinculadas a un producto. Esto facilita una posible migración futura."
+    },
+    {
+      "id": "ta-108",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.3.1",
+      "difficulty": "medium",
+      "question": "¿Qué contingencia sería MÁS útil si la persona especialista principal en automatización del equipo se marchara inesperadamente?",
+      "options": [
+        "Responsabilidad compartida, documentación y revisiones de código que distribuyan el conocimiento",
+        "Mantener el marco comprensible principalmente para esa persona especialista",
+        "Pausar todas las pruebas hasta contratar a alguien que la sustituya",
+        "Eliminar pruebas inestables para reducir las preguntas, sin planificar responsables ni recuperación"
+      ],
+      "correctIndex": 0,
+      "explanation": "La concentración del conocimiento es un riesgo importante para la entrega. La responsabilidad compartida y la documentación reducen las interrupciones cuando cambian los roles."
+    },
+    {
+      "id": "ta-109",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.2",
+      "difficulty": "hard",
+      "question": "¿Qué situación muestra que una suite inestable está generando una confianza falsa?",
+      "options": [
+        "Los datos de prueba se aíslan en cada ejecución, aunque esto debilite la fiabilidad o la confianza en las versiones",
+        "Se investigan los fallos con registros y comprobaciones del entorno, sin planificar responsables ni recuperación",
+        "Las pruebas de humo estables bloquean las implementaciones ante regresiones críticas, sin planificar responsables ni recuperación",
+        "Se ignoran habitualmente los fallos o se vuelven a ejecutar hasta que todo pasa, sin analizar la causa raíz"
+      ],
+      "correctIndex": 3,
+      "explanation": "Si el equipo normaliza los fallos ruidosos y simplemente vuelve a ejecutar las pruebas hasta que pasen, puede pasar por alto señales importantes. Esto socava la confianza en la suite."
+    },
+    {
+      "id": "ta-110",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.1",
+      "difficulty": "easy",
+      "question": "¿Cómo puede reducir un equipo la resistencia organizativa a un nuevo enfoque de automatización?",
+      "options": [
+        "Mantener la iniciativa oculta hasta completar el despliegue, sin planificar responsables ni recuperación",
+        "Medir el éxito principalmente por la cantidad de herramientas compradas",
+        "Sustituir la capacitación sobre procesos por diapositivas promocionales del proveedor, sin planificar responsables ni recuperación",
+        "Mostrar avances graduales, involucrar pronto a las partes interesadas y explicar cómo evolucionan los roles"
+      ],
+      "correctIndex": 3,
+      "explanation": "La adopción del cambio mejora cuando las personas comprenden su propósito y ven su valor práctico. La participación temprana y los avances visibles ayudan a generar apoyo."
+    },
+    {
+      "id": "ta-111",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es un riesgo importante de automatizar escenarios mientras los requisitos siguen cambiando a diario?",
+      "options": [
+        "La automatización puede requerir retrabajo frecuente antes de aportar valor",
+        "Las pruebas manuales se vuelven imposibles, sin planificar responsables ni recuperación",
+        "Ya no será necesario generar informes, sin planificar responsables ni recuperación",
+        "Los scripts capturarán automáticamente los cambios de requisitos de forma correcta"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los requisitos muy inestables suelen provocar cambios repetidos en los activos automatizados. En esos casos, el costo de mantenimiento puede superar el beneficio a corto plazo."
+    },
+    {
+      "id": "ta-112",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.2",
+      "difficulty": "hard",
+      "question": "¿Cuándo debería plantearse un equipo pausar el desarrollo de nuevas pruebas para reducir la deuda de automatización?",
+      "options": [
+        "Cuando las reparaciones y la inestabilidad consumen la capacidad necesaria para mantener la confianza en la suite",
+        "Cuando el proveedor publica un logotipo nuevo, sin planificar responsables, fiabilidad o recuperación si falla el enfoque",
+        "Seguir añadiendo pruebas y suponer que una cobertura más amplia estabilizará la suite sin abordar las causas",
+        "Cuando la suite alcance el 100 % de cobertura del producto, sin planificar responsables ni recuperación"
+      ],
+      "correctIndex": 0,
+      "explanation": "Si la inestabilidad y las reparaciones consumen la mayor parte del esfuerzo, seguir ampliando la suite puede empeorar el problema. Antes de continuar, puede ser necesario estabilizarla."
+    },
+    {
+      "id": "ta-113",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.2",
+      "difficulty": "easy",
+      "question": "Un entorno de pruebas de terceros usado por muchas pruebas automatizadas no está disponible durante una semana. ¿Qué contingencia es MÁS razonable?",
+      "options": [
+        "Detener todas las versiones sin importar el riesgo real, sin planificar responsables, fiabilidad o recuperación si falla el enfoque",
+        "Fingir que las pruebas se aprobaron y publicar un informe en verde, aunque se reduzcan la fiabilidad o la confianza en las versiones",
+        "Usar stubs, comprobaciones de alcance reducido o entornos alternativos, cuando corresponda, para conservar la retroalimentación crítica",
+        "Eliminar permanentemente todas las pruebas que dependan del entorno, aunque se reduzcan la fiabilidad o la confianza en las versiones"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una contingencia práctica conserva toda la retroalimentación significativa que sea posible y comunica con transparencia las limitaciones. Fingir que todas las pruebas se aprobaron sería engañoso."
+    },
+    {
+      "id": "ta-114",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.1",
+      "difficulty": "medium",
+      "question": "¿Por qué las cuentas de prueba compartidas suponen un riesgo para las suites automatizadas?",
+      "options": [
+        "Las cuentas compartidas mejoran el aislamiento entre pruebas simultáneas, sin planificar responsables ni recuperación",
+        "Las ejecuciones simultáneas pueden interferir entre sí y producir resultados no deterministas",
+        "Eliminan la necesidad de limpiar los datos entre pruebas, sin planificar responsables ni recuperación",
+        "Garantizan que los informes se generen más rápido, aunque se reduzcan la fiabilidad o la confianza en las versiones"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las cuentas mutables compartidas suelen provocar colisiones y dependencias ocultas entre ejecuciones. Es más seguro usar cuentas aisladas o mecanismos de restablecimiento."
+    },
+    {
+      "id": "ta-115",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.2",
+      "difficulty": "hard",
+      "question": "¿Por qué normalmente deben ponerse en cuarentena y registrarse las pruebas inestables en vez de ignorarlas sin más?",
+      "options": [
+        "El equipo necesita visibilidad para corregirlas sin contaminar las señales sobre versiones",
+        "La cuarentena significa que ya no requieren mantenimiento",
+        "Ignorarlas mejora su estabilidad con el tiempo, sin planificar responsables ni recuperación",
+        "Una prueba en cuarentena verifica automáticamente el entorno de producción"
+      ],
+      "correctIndex": 0,
+      "explanation": "La cuarentena puede proteger la toma de decisiones y mantener la visibilidad y la responsabilidad. El abandono silencioso suele deteriorar la salud de la suite."
+    },
+    {
+      "id": "ta-116",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.1",
+      "difficulty": "easy",
+      "question": "¿Cuál es el riesgo de hacer que una puerta de calidad para versiones dependa principalmente de una suite de interfaz muy grande y frágil?",
+      "options": [
+        "Una puerta de interfaz grande ofrece protección completa frente a defectos en producción",
+        "El esfuerzo de mantenimiento desaparece porque la suite es grande",
+        "Las pruebas de interfaz se vuelven equivalentes a las pruebas de unidad",
+        "Una retroalimentación lenta y ruidosa puede retrasar la entrega sin aportar una confianza proporcional"
+      ],
+      "correctIndex": 3,
+      "explanation": "Una puerta frágil puede crear cuellos de botella y poca confianza. Una protección eficaz de las versiones suele combinar comprobaciones fiables de varios niveles."
+    },
+    {
+      "id": "ta-117",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.2",
+      "difficulty": "medium",
+      "question": "Si la capacidad de CI es demasiado limitada para ejecutar la suite completa en cada confirmación de código, ¿qué alternativa es razonable?",
+      "options": [
+        "Ejecutar las pruebas más largas porque son las más costosas",
+        "Priorizar subconjuntos críticos y rápidos en cada confirmación y programar las suites más amplias para más adelante",
+        "Marcar como aprobadas las pruebas en cola sin ejecutarlas, sin planificar responsables ni recuperación",
+        "Desactivar por completo la automatización hasta comprar más hardware"
+      ],
+      "correctIndex": 1,
+      "explanation": "La ejecución por etapas es una contingencia habitual cuando la infraestructura es limitada. Conserva la retroalimentación rápida y permite ejecutar más adelante una cobertura amplia."
+    },
+    {
+      "id": "ta-118",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.1",
+      "difficulty": "hard",
+      "question": "¿Qué suele ocurrir cuando no está clara la responsabilidad del mantenimiento del marco después de su implementación inicial?",
+      "options": [
+        "El costo de automatización se vuelve fijo y predecible para siempre",
+        "La dependencia del proveedor desaparece automáticamente",
+        "Se descuidan las dependencias, los estándares y las reparaciones hasta que cae la fiabilidad",
+        "Los entornos de prueba dejan de ser importantes, sin planificar responsables ni recuperación"
+      ],
+      "correctIndex": 2,
+      "explanation": "La falta de claridad sobre las responsabilidades suele llevar a descuidar el mantenimiento. A medida que envejece el marco, disminuyen la fiabilidad y la facilidad de mantenimiento."
+    },
+    {
+      "id": "ta-119",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.3.1",
+      "difficulty": "easy",
+      "question": "¿Por qué los estándares de codificación y las revisiones por pares del código de pruebas reducen el riesgo de implementación?",
+      "options": [
+        "Garantizan que las pruebas puedan escribirlas principalmente una sola persona, sin planificar responsables ni recuperación",
+        "Eliminan la necesidad de cualquier arquitectura de marco, sin planificar responsables ni recuperación",
+        "Garantizan que los informes no contengan falsos positivos",
+        "Mejoran la coherencia y facilitan detectar pronto defectos en los activos de automatización"
+      ],
+      "correctIndex": 3,
+      "explanation": "La disciplina de ingeniería ayuda a que el código de automatización siga siendo comprensible y sólido. Las revisiones pueden detectar patrones frágiles antes de que se extiendan."
+    },
+    {
+      "id": "ta-120",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es un riesgo importante de usar datos personales similares a los de producción en entornos de prueba automatizados sin controles?",
+      "options": [
+        "La suite suele ejecutarse más rápido, sin planificar responsables ni recuperación",
+        "Las partes interesadas del negocio confiarán más en la suite",
+        "Pueden producirse infracciones de privacidad y cumplimiento normativo",
+        "La ejecución paralela deja de ser necesaria"
+      ],
+      "correctIndex": 2,
+      "explanation": "Los entornos de automatización también necesitan gobernanza de datos. Los datos confidenciales deben protegerse, enmascararse o evitarse según las políticas aplicables."
+    },
+    {
+      "id": "ta-121",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.1",
+      "difficulty": "hard",
+      "question": "¿Por qué no basta una demostración pulida de un proveedor para aprobar una herramienta de automatización para un despliegue amplio?",
+      "options": [
+        "Una demostración sustituye las pruebas piloto, aunque se reduzcan la fiabilidad o la confianza en las versiones",
+        "El lenguaje de la herramienta difiere del lenguaje del producto y limita la integración",
+        "Las demostraciones prueban que la resistencia organizativa es imposible",
+        "Puede que no refleje las limitaciones reales de integración, la complejidad de los flujos de trabajo ni las necesidades de mantenimiento"
+      ],
+      "correctIndex": 3,
+      "explanation": "La compatibilidad real depende de los sistemas, las canalizaciones y los escenarios del equipo. Una demostración puede ser útil, pero no demuestra que la herramienta sea adecuada en la práctica."
+    },
+    {
+      "id": "ta-122",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.1",
+      "difficulty": "easy",
+      "question": "¿Qué práctica ayuda a reducir la inestabilidad relacionada con los tiempos entre navegadores o máquinas distintos?",
+      "options": [
+        "Aumentar uniformemente las demoras fijas en toda la suite",
+        "Usar sincronización robusta basada en condiciones observables, en lugar de esperas arbitrarias",
+        "Volver a ejecutar toda la suite hasta que desaparezcan todos los fallos",
+        "Ejecutar las pruebas principalmente en el equipo portátil más rápido de un desarrollador"
+      ],
+      "correctIndex": 1,
+      "explanation": "La sincronización basada en condiciones suele ser más fiable y eficiente que las demoras fijas dispersas. También se adapta mejor a las variaciones normales de ejecución."
+    },
+    {
+      "id": "ta-123",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es el riesgo de paralelizar las pruebas antes de que la configuración y la limpieza sean idempotentes?",
+      "options": [
+        "La ejecución paralela mejora la detección de defectos aunque las pruebas compartan estado mutable",
+        "Las ejecuciones pueden interferir entre sí y producir fallos engañosos",
+        "La ejecución pasará a ser serial automáticamente",
+        "Los informes ya no podrán incluir marcas de tiempo, sin planificar responsables ni recuperación"
+      ],
+      "correctIndex": 1,
+      "explanation": "La ejecución paralela amplifica los problemas de estado oculto. Una configuración y limpieza idempotentes ayudan a mantener las ejecuciones independientes y repetibles."
+    },
+    {
+      "id": "ta-124",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.2",
+      "difficulty": "hard",
+      "question": "Si el proveedor principal de CI sufre una interrupción el día de una versión, ¿qué contingencia es MÁS útil?",
+      "options": [
+        "Una ruta de ejecución alternativa documentada para las comprobaciones críticas, como un ejecutor de respaldo o una alternativa manual controlada",
+        "Esperar indefinidamente sin comunicarlo, sin planificar responsables, fiabilidad o recuperación si falla el enfoque",
+        "Eliminar la configuración de la canalización para simplificar la recuperación",
+        "Omitir todos los controles de calidad y publicar la versión a ciegas, sin planificar responsables, fiabilidad o recuperación si falla el enfoque"
+      ],
+      "correctIndex": 0,
+      "explanation": "Los planes de entrega resilientes definen qué comprobaciones críticas aún pueden ejecutarse y cómo tomar decisiones durante las interrupciones. Esto reduce la confusión bajo presión."
+    },
+    {
+      "id": "ta-125",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.1.1",
+      "difficulty": "easy",
+      "question": "¿Por qué es importante gestionar el cambio cuando los probadores manuales temen que la automatización los sustituya?",
+      "options": [
+        "La resistencia mejora por sí misma la calidad del marco, aunque se reduzcan la fiabilidad o la confianza en las versiones",
+        "El problema desaparece cuando se habilitan los paneles",
+        "Una interpretación equivocada de los objetivos puede reducir la adopción y la cooperación, aunque la solución técnica sea sólida",
+        "La gestión del cambio solo se aplica a los desarrolladores"
+      ],
+      "correctIndex": 2,
+      "explanation": "La adopción es tanto organizativa como técnica. Si las personas no entienden los objetivos, la iniciativa puede encontrar resistencia y ser menos eficaz."
+    },
+    {
+      "id": "ta-126",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es el peligro de contabilizar las pruebas inestables en cuarentena como si se hubieran aprobado en los resultados principales?",
+      "options": [
+        "Las pruebas en cuarentena se vuelven estables automáticamente, sin planificar responsables ni recuperación",
+        "Las partes interesadas podrían sobrestimar la confianza real que ofrece la suite",
+        "Mejora el análisis de la causa raíz de los problemas del entorno",
+        "La suite se vuelve más rápida porque se resumen los resultados"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los resultados principales deben reflejar la confianza real. Contabilizar las pruebas en cuarentena como aprobadas oculta riesgos y distorsiona la toma de decisiones."
+    },
+    {
+      "id": "ta-127",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.2.1",
+      "difficulty": "hard",
+      "question": "Cuando la interfaz cambia rápidamente, pero los contratos de los servicios básicos son estables, ¿qué táctica sensata puede reducir el riesgo?",
+      "options": [
+        "Duplicar primero cada prueba de interfaz en tres navegadores distintos",
+        "Detener toda la automatización hasta que la interfaz quede congelada permanentemente",
+        "Dar más énfasis a la automatización en el nivel estable de servicios y mantener una cobertura selectiva de interfaz",
+        "Depender principalmente de las pruebas de regresión manuales a partir de entonces, aunque se reduzcan la fiabilidad o la confianza en las versiones"
+      ],
+      "correctIndex": 2,
+      "explanation": "Adaptar la cobertura a niveles más estables puede conservar la confianza y reducir los problemas de mantenimiento. Se pueden mantener comprobaciones selectivas de interfaz para los comportamientos críticos de extremo a extremo."
+    },
+    {
+      "id": "ta-128",
+      "chapter": "4. Riesgos y contingencias de la implementación",
+      "loRef": "CTAE-4.3.1",
+      "difficulty": "easy",
+      "question": "¿Por qué debe un programa de automatización hacer un seguimiento de las dependencias del marco y planificar las actualizaciones deliberadamente?",
+      "options": [
+        "Adoptar actualizaciones de dependencias sin comprobar la compatibilidad, sin planificar responsables ni recuperación",
+        "Las dependencias obsoletas pueden crear riesgos de seguridad, compatibilidad y mantenimiento",
+        "Las versiones de dependencias importan para el código de producción, sin planificar responsables ni recuperación",
+        "El seguimiento de dependencias hace imposible migrar de herramienta, sin planificar responsables ni recuperación"
+      ],
+      "correctIndex": 1,
+      "explanation": "Los marcos de automatización dependen de bibliotecas, navegadores y controladores que evolucionan. Las actualizaciones planificadas ayudan a evitar fallos repentinos y problemas de soporte."
+    },
+    {
+      "id": "ta-129",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué métrica refleja MEJOR la fiabilidad de una suite automatizada a lo largo del tiempo?",
+      "options": [
+        "La tasa de fallos inestables",
+        "La duración media de las reuniones",
+        "La cantidad de extensiones de archivo usadas en el repositorio",
+        "La cantidad total de autores de pruebas"
+      ],
+      "correctIndex": 0,
+      "explanation": "La tasa de fallos inestables indica con qué frecuencia la suite produce señales poco fiables. Una inestabilidad alta reduce directamente la confianza en los resultados de automatización."
+    },
+    {
+      "id": "ta-130",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.2",
+      "difficulty": "hard",
+      "question": "Para la alta dirección, ¿qué informe de automatización suele ser MÁS útil?",
+      "options": [
+        "Una traza de pila sin procesar por cada aserción fallida, sin contexto sobre cobertura ni fiabilidad",
+        "Una vista de tendencias del tiempo de ciclo, la tasa de aprobaciones críticas y el valor obtenido de la automatización",
+        "Una lista de todas las solicitudes de red de la ejecución, sin contexto sobre cobertura ni fiabilidad",
+        "Una lista de localizadores de elementos modificados en este sprint, sin contexto sobre cobertura ni fiabilidad"
+      ],
+      "correctIndex": 1,
+      "explanation": "La dirección suele necesitar información concisa sobre resultados y tendencias vinculadas al valor de entrega. Los artefactos técnicos detallados son más útiles para los ingenieros."
+    },
+    {
+      "id": "ta-131",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.2.1",
+      "difficulty": "easy",
+      "question": "Para los ingenieros que investigan una prueba fallida, ¿qué contenido del informe es MÁS útil?",
+      "options": [
+        "Un promedio semanal de todas las tasas de aprobación históricas",
+        "Principalmente el color del estado de la compilación, sin contexto sobre cobertura ni fiabilidad",
+        "Capturas de pantalla, registros, tiempos y la aserción o excepción exacta",
+        "La cantidad total de pruebas ejecutadas"
+      ],
+      "correctIndex": 2,
+      "explanation": "La investigación requiere pruebas contextualizadas de la ejecución fallida. Los diagnósticos detallados reducen el tiempo necesario para entender qué ocurrió."
+    },
+    {
+      "id": "ta-132",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Por qué podría un equipo hacer un seguimiento del tiempo mediano de ejecución además de la duración total de la suite?",
+      "options": [
+        "El tiempo mediano garantiza que la suite no tenga inestabilidad",
+        "El tiempo mediano ayuda a mostrar si las pruebas habituales se ralentizan, aunque unos pocos valores atípicos distorsionen el total",
+        "Solo se puede usar la duración total en CI",
+        "El tiempo mediano es útil para las pruebas manuales"
+      ],
+      "correctIndex": 1,
+      "explanation": "La duración mediana puede revelar tendencias generales de ralentización sin que unos pocos casos extremos dominen el resultado. Complementa la duración total, no la sustituye."
+    },
+    {
+      "id": "ta-133",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.2",
+      "difficulty": "hard",
+      "question": "¿Por qué puede ser engañosa la tasa de aprobaciones por sí sola como métrica principal de automatización?",
+      "options": [
+        "Puede ocultar pruebas omitidas, reintentadas o en cuarentena que reducen la confianza real",
+        "La tasa de aprobaciones mide automáticamente el ROI, sin contexto sobre cobertura ni fiabilidad",
+        "La tasa de aprobaciones es pertinente para pruebas de interfaz aunque el público destinatario no pueda actuar en función del resultado",
+        "Una tasa de aprobaciones alta demuestra que el mantenimiento de la suite es barato"
+      ],
+      "correctIndex": 0,
+      "explanation": "La tasa de aprobaciones necesita contexto. Un porcentaje en verde puede ocultar inestabilidad o lagunas si el modelo de informes excluye detalles importantes."
+    },
+    {
+      "id": "ta-134",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.3.1",
+      "difficulty": "easy",
+      "question": "¿Qué medida representa mejor un crecimiento saludable de la automatización que el simple recuento de scripts?",
+      "options": [
+        "El aumento del tamaño del almacenamiento de capturas de pantalla",
+        "El aumento de la cobertura de riesgos pertinente lograda con comprobaciones automatizadas fiables",
+        "El aumento de la longitud media de los nombres de pruebas",
+        "El aumento de la cantidad de temas de informes"
+      ],
+      "correctIndex": 1,
+      "explanation": "El crecimiento útil se traduce en mejor cobertura y retroalimentación fiable, no solo en más archivos. Los recuentos pueden aumentar sin mejorar la confianza."
+    },
+    {
+      "id": "ta-135",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué vista de informe ayudaría MEJOR a identificar un cuello de botella de rendimiento en la propia suite de pruebas?",
+      "options": [
+        "Una tendencia de las pruebas más lentas, agrupadas por componente o etiqueta",
+        "La cantidad de navegadores instalados en cada equipo portátil",
+        "Una lista de los cumpleaños del equipo del proyecto",
+        "Un mapa de la distribución de asientos de la oficina"
+      ],
+      "correctIndex": 0,
+      "explanation": "Examinar las tendencias de las pruebas más lentas ayuda a optimizar donde más importa. Agrupar por componente o etiqueta añade contexto útil para actuar."
+    },
+    {
+      "id": "ta-136",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.3.1",
+      "difficulty": "hard",
+      "question": "¿Qué métrica es MÁS pertinente para hacer un seguimiento del ROI de la automatización?",
+      "options": [
+        "Las horas de ejecución manual ahorradas en comparación con el esfuerzo de creación y mantenimiento de la automatización",
+        "La cantidad de comentarios en los archivos de código fuente de pruebas",
+        "La cantidad de compilaciones archivadas en CI",
+        "La cantidad de espacios en blanco en el HTML del informe"
+      ],
+      "correctIndex": 0,
+      "explanation": "El ROI depende de equilibrar el esfuerzo invertido con el valor obtenido. El tiempo ahorrado y el esfuerzo de mantenimiento son partes centrales de esa comparación."
+    },
+    {
+      "id": "ta-137",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.2.1",
+      "difficulty": "easy",
+      "question": "¿Por qué es útil clasificar los fallos en los informes de automatización?",
+      "options": [
+        "Sustituye la necesidad de registros y capturas de pantalla, aunque el público destinatario no pueda actuar en función del resultado",
+        "Garantiza que no haya falsos positivos, sin contexto sobre cobertura ni fiabilidad",
+        "Impide que las partes interesadas vean pruebas fallidas",
+        "Distingue los defectos del producto de los problemas de scripts y del entorno para facilitar las acciones apropiadas"
+      ],
+      "correctIndex": 3,
+      "explanation": "La clasificación ayuda a asignar los fallos a los responsables adecuados y a detectar problemas sistémicos. No todas las pruebas fallidas tienen la misma causa ni prioridad."
+    },
+    {
+      "id": "ta-138",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es un beneficio clave de las líneas de tendencia históricas en un panel de automatización?",
+      "options": [
+        "Garantizan que cada compilación produzca resultados idénticos",
+        "Son útiles cuando no falla ninguna prueba, aunque el público destinatario no pueda actuar en función del resultado",
+        "Ayudan a distinguir incidentes aislados del deterioro o la mejora continuos",
+        "Eliminan la necesidad de inspeccionar los fallos más recientes"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las tendencias aportan un contexto que una sola ejecución no puede ofrecer. Ayudan a reconocer si la fiabilidad, la velocidad o la cobertura están mejorando o empeorando."
+    },
+    {
+      "id": "ta-139",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.2",
+      "difficulty": "hard",
+      "question": "Para un panel de decisiones sobre versiones, ¿qué información es MÁS importante?",
+      "options": [
+        "Una exportación completa de los valores históricos de datos de prueba",
+        "El estado de los subconjuntos de pruebas críticos, los fallos sin resolver y las limitaciones de fiabilidad conocidas",
+        "La cantidad total de confirmaciones de código en el repositorio desde el inicio del proyecto",
+        "Todos los localizadores usados por el marco de interfaz"
+      ],
+      "correctIndex": 1,
+      "explanation": "Las decisiones de versión dependen del riesgo actual, no solo del volumen de información. Los resultados de rutas críticas y sus limitaciones deben mostrarse de inmediato."
+    },
+    {
+      "id": "ta-140",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.2.1",
+      "difficulty": "easy",
+      "question": "¿Por qué suelen presentarse por separado las comprobaciones de solicitudes de incorporación de cambios y los resultados de las pruebas nocturnas o de regresión completa?",
+      "options": [
+        "Porque las canalizaciones de solicitudes de incorporación de cambios no pueden almacenar métricas",
+        "Porque rara vez debe ejecutarse la misma prueba en dos contextos",
+        "Porque distintos públicos y decisiones dependen de alcances y expectativas de prueba diferentes",
+        "Porque las suites nocturnas no generan artefactos, sin contexto sobre cobertura ni fiabilidad"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las comprobaciones de puerta rápida y las suites amplias de regresión cumplen propósitos distintos. Separar los informes facilita interpretar correctamente los resultados."
+    },
+    {
+      "id": "ta-141",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.2.1",
+      "difficulty": "medium",
+      "question": "¿Por qué suele ser insuficiente una captura de pantalla por sí sola para diagnosticar un fallo de automatización?",
+      "options": [
+        "Las capturas de pantalla son útiles para las pruebas de API, aunque el público destinatario no pueda actuar en función del resultado",
+        "Una captura de pantalla basta para distinguir los defectos del producto de los problemas de automatización",
+        "Puede que no muestre la aserción, el contexto temporal, los registros ni el estado oculto del sistema implicados",
+        "No se pueden adjuntar capturas de pantalla a los informes, sin contexto sobre cobertura ni fiabilidad"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las imágenes pueden ayudar, pero rara vez cuentan toda la historia. A menudo se necesitan registros, aserciones y detalles de tiempo para entender la causa raíz."
+    },
+    {
+      "id": "ta-142",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.3.1",
+      "difficulty": "hard",
+      "question": "¿Qué métrica puede ayudar al equipo a evaluar si la automatización reduce los defectos de regresión que llegan a producción?",
+      "options": [
+        "La proporción de comentarios con respecto al código en el marco",
+        "Las tendencias que comparan las regresiones pertinentes en producción con la cobertura de las comprobaciones automatizadas críticas",
+        "La cantidad de usuarios de prueba creados cada día",
+        "La cantidad de carpetas del repositorio de pruebas"
+      ],
+      "correctIndex": 1,
+      "explanation": "Comparar las tendencias de regresiones en producción con la cobertura de comprobaciones automatizadas críticas puede revelar lagunas que conviene investigar. La relación es una señal, no una prueba de que la automatización haya causado cambios en los defectos que llegan a producción."
+    },
+    {
+      "id": "ta-143",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.1",
+      "difficulty": "easy",
+      "question": "¿Por qué debería investigarse una caída repentina en la cantidad de pruebas automatizadas ejecutadas?",
+      "options": [
+        "Puede indicar errores de selección, problemas del entorno o cobertura omitida silenciosamente",
+        "Una caída repentina en la cantidad de ejecuciones demuestra que la suite es más eficiente",
+        "Demuestra que las pruebas restantes son más valiosas",
+        "Es normal y rara vez afecta la confianza, sin contexto sobre cobertura ni fiabilidad"
+      ],
+      "correctIndex": 0,
+      "explanation": "Una reducción de la cantidad de pruebas ejecutadas puede indicar una pérdida accidental de cobertura o problemas operativos. Esto puede reducir la confianza aunque la tasa de aprobaciones siga alta."
+    },
+    {
+      "id": "ta-144",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué métrica indica con mayor claridad un problema de mantenimiento en la suite de automatización?",
+      "options": [
+        "El tamaño medio de fuente en el visor de informes",
+        "El aumento del tiempo medio necesario para reparar pruebas rotas después de cambios en el producto",
+        "La frecuencia con la que los probadores hablan de calidad en las reuniones",
+        "La cantidad de paneles compartidos con la dirección"
+      ],
+      "correctIndex": 1,
+      "explanation": "Si el esfuerzo de reparación sigue aumentando, es probable que el mantenimiento se esté deteriorando. Esta tendencia afecta directamente al ROI y a la velocidad del equipo."
+    },
+    {
+      "id": "ta-145",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.2.1",
+      "difficulty": "hard",
+      "question": "¿Por qué deben mostrarse las pruebas omitidas por separado en los informes en vez de mezclarse con las aprobadas?",
+      "options": [
+        "Una prueba omitida aporta más confianza que una aprobada, sin contexto sobre cobertura ni fiabilidad",
+        "Mostrar por separado las pruebas omitidas hace que los paneles sean imposibles de leer",
+        "Las pruebas omitidas suelen indicar que se eliminó la funcionalidad",
+        "Las pruebas omitidas representan falta de evidencia y no deben confundirse con una verificación satisfactoria"
+      ],
+      "correctIndex": 3,
+      "explanation": "Una comprobación omitida no aporta evidencia sobre el requisito que debía verificar. Informarla claramente evita una falsa sensación de confianza."
+    },
+    {
+      "id": "ta-146",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.2.2",
+      "difficulty": "easy",
+      "question": "¿Cuál es un beneficio práctico de los informes de ejecuciones de automatización por rama?",
+      "options": [
+        "Impiden los reintentos de pruebas en CI",
+        "Garantizan que no habrá conflictos de fusión",
+        "Sustituyen la necesidad de saber qué confirmación de código activó la ejecución",
+        "Ayudan a determinar si los fallos se limitan a una línea de cambios o son generalizados"
+      ],
+      "correctIndex": 3,
+      "explanation": "El contexto de rama ayuda a relacionar los fallos con el código que se está modificando. Esto agiliza la clasificación y reduce la confusión cuando hay varios flujos activos."
+    },
+    {
+      "id": "ta-147",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué métrica puede revelar el desperdicio causado por pruebas inestables que requieren reintentos frecuentes?",
+      "options": [
+        "El tamaño del logotipo en el informe HTML",
+        "La cantidad de complementos del IDE desactivados",
+        "La tasa de reintentos por prueba o suite",
+        "La cantidad de gestores de paquetes usados"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una tasa de reintentos alta suele indicar una automatización inestable o frágil. También oculta el costo operativo real de obtener un resultado satisfactorio."
+    },
+    {
+      "id": "ta-148",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.2.1",
+      "difficulty": "hard",
+      "question": "¿Por qué es útil que un informe de fallos incluya la última compilación o confirmación de código conocida en la que pasó esa misma prueba?",
+      "options": [
+        "Reduce el intervalo de investigación y ayuda a identificar posibles fuentes del cambio",
+        "Garantiza que el fallo sea un defecto del producto",
+        "Elimina la necesidad de detalles sobre los datos de prueba",
+        "Es pertinente para la ejecución manual de pruebas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Saber cuándo pasó una prueba por última vez ayuda a centrar la investigación en los cambios recientes. Es especialmente útil en canalizaciones que cambian rápidamente."
+    },
+    {
+      "id": "ta-149",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.1.2",
+      "difficulty": "easy",
+      "question": "¿Cómo puede evaluar un equipo si la paralelización realmente mejora el rendimiento de la automatización?",
+      "options": [
+        "Contando principalmente cuántas máquinas están encendidas",
+        "Comparando las tendencias de duración de la suite con el uso de trabajadores y la estabilidad",
+        "Siguiendo cuántas personas mencionan la velocidad en el chat",
+        "Midiendo el tamaño de los archivos de informe antes y después de paralelizar"
+      ],
+      "correctIndex": 1,
+      "explanation": "La paralelización solo es útil si acorta la retroalimentación sin perjudicar de forma desproporcionada la fiabilidad. Deben evaluarse conjuntamente la duración, el uso de capacidad y la estabilidad."
+    },
+    {
+      "id": "ta-150",
+      "chapter": "5. Informes y métricas de automatización de pruebas",
+      "loRef": "CTAE-5.3.1",
+      "difficulty": "medium",
+      "question": "¿Por qué deben revisarse las métricas cuantitativas de automatización junto con análisis periódicos de pruebas obsoletas o duplicadas?",
+      "options": [
+        "Porque las métricas solo son pertinentes durante la primera versión, sin contexto sobre cobertura ni fiabilidad",
+        "Porque las pruebas obsoletas mejoran automáticamente la cobertura, sin contexto sobre cobertura ni fiabilidad",
+        "Porque las cifras por sí solas pueden parecer saludables aunque la suite contenga comprobaciones redundantes o de poco valor",
+        "Porque las pruebas duplicadas reducen el esfuerzo de mantenimiento aunque el público destinatario no pueda actuar en función del resultado"
+      ],
+      "correctIndex": 2,
+      "explanation": "Las métricas aportan señales, pero hace falta una revisión cualitativa para mantener la suite alineada con los riesgos actuales. De lo contrario, pueden acumularse pruebas de poco valor sin que nadie lo advierta."
+    }
+  ]
+}

@@ -1,0 +1,2256 @@
+{
+  "moduleId": "al-tm",
+  "moduleName": "Gestor de Pruebas de Nivel Avanzado (AL-TM)",
+  "questions": [
+    {
+      "id": "al-tm-001",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.1.1",
+      "difficulty": "medium",
+      "question": "Un gestor de pruebas que elabora un plan de pruebas maestro para un proyecto con varios niveles lo utilizaría principalmente para:",
+      "options": [
+        "Documentar los resultados esperados de un único caso de prueba sin actualizarlo según el alcance actual.",
+        "Sustituir por completo la necesidad de planes de pruebas específicos para cada nivel, sin actualizarlo según el alcance actual.",
+        "Coordinar y alinear las actividades de prueba entre varios niveles y equipos del proyecto.",
+        "Registrar las notas diarias de reunión del equipo de desarrollo sin actualizarlo según el alcance actual."
+      ],
+      "correctIndex": 2,
+      "explanation": "Un plan de pruebas maestro se utiliza a nivel de proyecto o programa para coordinar varios niveles de prueba y suele complementarse con planes específicos para cada nivel."
+    },
+    {
+      "id": "al-tm-002",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una responsabilidad PRINCIPAL del gestor de pruebas durante la planificación de las pruebas?",
+      "options": [
+        "Definir el enfoque, los objetivos y el alcance generales de las pruebas, así como las estimaciones de recursos y calendario necesarias.",
+        "Redactar personalmente todos los casos de prueba individuales sin comprobar su capacidad de prueba.",
+        "Corregir los defectos encontrados por los probadores, aunque difieran las prioridades y las restricciones.",
+        "Utilizar el mismo enfoque de pruebas en todos los proyectos, independientemente de los riesgos o del ciclo de vida, sin adaptarlo al contexto del proyecto."
+      ],
+      "correctIndex": 0,
+      "explanation": "La planificación de las pruebas es una responsabilidad esencial de la gestión de pruebas e incluye el enfoque, los objetivos y el alcance de las pruebas, además de la estimación de los recursos y el calendario necesarios."
+    },
+    {
+      "id": "al-tm-003",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones distingue MEJOR un «plan de pruebas maestro» de un «plan de pruebas de nivel»?",
+      "options": [
+        "Un plan de pruebas de nivel suele sustituir al plan maestro, sin actualizarlo según el alcance actual.",
+        "Ambos cubren exactamente el mismo alcance y solo tienen títulos distintos, sin actualizar el alcance actual.",
+        "Definir los criterios de salida en los planes de nivel, pero no en el nivel general de pruebas, sin actualizar el alcance actual.",
+        "Un plan maestro coordina las pruebas entre niveles; un plan de nivel detalla un nivel de prueba específico."
+      ],
+      "correctIndex": 3,
+      "explanation": "El plan de pruebas maestro proporciona la estrategia general y coordina varios niveles de prueba, mientras que el plan de nivel se centra en los detalles de un único nivel."
+    },
+    {
+      "id": "al-tm-004",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué técnica de estimación se basa en el juicio colectivo de miembros experimentados del equipo y suele emplear un método de consenso grupal?",
+      "options": [
+        "El análisis de puntos de función, como compromiso preciso pese a una incertidumbre considerable en la estimación.",
+        "Wideband Delphi, que utiliza estimaciones independientes de expertos y debates iterativos.",
+        "Las pruebas de regresión, sin comprobar si el trabajo anterior es comparable.",
+        "El análisis estático, sin comprobar si el trabajo anterior es comparable."
+      ],
+      "correctIndex": 1,
+      "explanation": "Wideband Delphi es una técnica de estimación basada en expertos, en la que un grupo de personas con experiencia estima el esfuerzo de forma iterativa hasta alcanzar una estimación consensuada."
+    },
+    {
+      "id": "al-tm-005",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes factores utilizaría con mayor probabilidad un gestor de pruebas como dato de entrada para una estimación basada en métricas (datos históricos)?",
+      "options": [
+        "Usar la fecha objetivo del patrocinador como estimación sin desglosar las tareas, pese a los cambios de alcance o capacidad.",
+        "La opinión personal del director general sin datos que la respalden, pese a los cambios de alcance o capacidad.",
+        "El esfuerzo medio y las tasas de defectos registrados en proyectos anteriores comparables.",
+        "Usar un porcentaje fijo del esfuerzo de desarrollo sin comprobar si existen datos históricos comparables."
+      ],
+      "correctIndex": 2,
+      "explanation": "Las técnicas de estimación basadas en métricas utilizan datos históricos (por ejemplo, métricas de esfuerzo y defectos de proyectos anteriores comparables) para estimar el esfuerzo actual de pruebas."
+    },
+    {
+      "id": "al-tm-006",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué métrica ayudaría al gestor de pruebas a determinar si la tasa de detección de defectos aumenta o disminuye con el tiempo (tendencia de defectos)?",
+      "options": [
+        "Un gráfico de la tasa de detección de defectos a lo largo del tiempo que muestre si los hallazgos aumentan o disminuyen.",
+        "Informar del número bruto de ejecuciones sin explicar el alcance bloqueado ni la cobertura basada en riesgos.",
+        "Esperar hasta el cierre para informar de desviaciones o riesgos de publicación, pese a los cambios en las condiciones de ejecución.",
+        "Usar los totales brutos de ejecución como evidencia de preparación sin considerar la cobertura, pese a los cambios en las condiciones de ejecución."
+      ],
+      "correctIndex": 0,
+      "explanation": "El seguimiento de la tasa de detección de defectos a lo largo del tiempo permite identificar tendencias, como si las pruebas convergen (disminuye la tasa de defectos) o siguen apareciendo defectos, y ayuda a tomar decisiones sobre la preparación para la publicación."
+    },
+    {
+      "id": "al-tm-007",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.2.1",
+      "difficulty": "hard",
+      "question": "Un gestor de pruebas observa que la tasa de detección de defectos sigue aumentando bruscamente poco antes de la fecha de publicación prevista. ¿Cuál es la acción de control de pruebas MÁS adecuada?",
+      "options": [
+        "Ignorar la tendencia y publicar exactamente según lo previsto, sin cambios pese a las modificaciones en las condiciones de ejecución.",
+        "Detener de inmediato todas las actividades de prueba, sin explicar el alcance bloqueado ni la cobertura basada en riesgos.",
+        "Reducir a la mitad el equipo de pruebas para ahorrar costes, sin explicar el alcance bloqueado ni la cobertura basada en riesgos.",
+        "Comunicar el riesgo para la estabilidad y recomendar más pruebas o aplazar la publicación, de acuerdo con los criterios acordados y el riesgo residual."
+      ],
+      "correctIndex": 3,
+      "explanation": "Un aumento de la tasa de detección cerca de la publicación indica una posible inestabilidad, pero no determina automáticamente si se debe publicar. El gestor de pruebas debe comunicar el riesgo y recomendar una respuesta basada en evidencia."
+    },
+    {
+      "id": "al-tm-008",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes es un aspecto clave que debe considerar un gestor de pruebas al asignar tareas a los probadores?",
+      "options": [
+        "Asignar todas las tareas al probador de mayor experiencia, independientemente de su adecuación, sin considerar las competencias ni la carga de trabajo.",
+        "Ajustar las competencias y el conocimiento del dominio requeridos a la complejidad de la tarea, teniendo también en cuenta la independencia y las oportunidades de desarrollo.",
+        "Asignar las tareas exclusivamente por orden alfabético del apellido, sin considerar las competencias ni la carga de trabajo.",
+        "Ignorar por completo el nivel de competencia al asignar tareas, sin considerar la adecuación ni la carga de trabajo."
+      ],
+      "correctIndex": 1,
+      "explanation": "Una asignación eficaz de tareas tiene en cuenta las competencias y la experiencia necesarias, un nivel adecuado de independencia y las oportunidades para que los miembros del equipo desarrollen nuevas competencias."
+    },
+    {
+      "id": "al-tm-009",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué enfoque de liderazgo suele ser MÁS eficaz para motivar a un equipo de pruebas durante un ciclo de publicación exigente?",
+      "options": [
+        "Culpar públicamente a las personas por cualquier defecto que llegue a producción, en detrimento de los objetivos compartidos del equipo.",
+        "Eliminar por completo los plazos y la estructura, en detrimento de los objetivos compartidos del equipo.",
+        "Proporcionar objetivos claros, reconocer el buen trabajo y mantener una comunicación abierta y de apoyo.",
+        "Negarse a comunicar el estado del proyecto para reducir el ruido, en detrimento de los objetivos compartidos del equipo."
+      ],
+      "correctIndex": 2,
+      "explanation": "Un liderazgo eficaz de pruebas establece objetivos claros, reconoce las contribuciones y ofrece una comunicación de apoyo, lo que ayuda a mantener la motivación, especialmente en periodos de mucha presión."
+    },
+    {
+      "id": "al-tm-010",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de los siguientes elementos se incluiría normalmente en una política de pruebas de la organización?",
+      "options": [
+        "Los objetivos generales y los principios de pruebas de la organización, en gran medida independientes de un proyecto concreto.",
+        "Los casos de prueba exactos que se ejecutarán en el próximo sprint, tratando una plantilla como si fuera específica del proyecto.",
+        "Utilizar actualizaciones informales en lugar de registrar las decisiones acordadas, sin actualizar el alcance actual.",
+        "Los identificadores específicos de errores encontrados en la versión actual, tratando una plantilla como si fuera específica del proyecto."
+      ],
+      "correctIndex": 0,
+      "explanation": "Una política de pruebas define los objetivos generales, los principios y el enfoque de pruebas de una organización, en un nivel superior al de los planes o estrategias de pruebas de un proyecto."
+    },
+    {
+      "id": "al-tm-011",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.1.1",
+      "difficulty": "medium",
+      "question": "Como parte de las actividades de cierre de pruebas, ¿qué debe asegurarse de que ocurra el gestor de pruebas?",
+      "options": [
+        "Eliminar inmediatamente toda la documentación de pruebas después de la publicación, antes de confirmar la corrección mediante nuevas pruebas.",
+        "No hace falta comunicarse con las partes interesadas después de la publicación, antes de confirmar la corrección mediante nuevas pruebas.",
+        "Disolver el equipo antes de redactar el informe resumen final de pruebas, pese al flujo de trabajo de defectos acordado.",
+        "Archivar o transferir adecuadamente todos los productos de prueba (casos de prueba, entornos y herramientas) y registrar las lecciones aprendidas."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las actividades de cierre de pruebas incluyen comprobar que se hayan completado los entregables, archivar los productos de prueba, transferir los artefactos útiles y registrar las lecciones aprendidas para futuros proyectos."
+    },
+    {
+      "id": "al-tm-012",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una responsabilidad CLAVE del gestor de pruebas respecto al proceso de gestión de defectos?",
+      "options": [
+        "Corregir personalmente todos los defectos notificados sin una persona responsable clara ni una aceptación del riesgo residual.",
+        "Establecer un flujo de trabajo eficaz para los defectos y asegurarse de que se clasifiquen, prioricen y sigan hasta su resolución.",
+        "Ignorar permanentemente los defectos de baja gravedad basándose solo en recuentos, sin distinguir entre gravedad y prioridad.",
+        "Impedir que los desarrolladores vean los informes de defectos antes de confirmar la corrección mediante nuevas pruebas."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los gestores de pruebas suelen encargarse de establecer y supervisar un proceso eficaz de gestión de defectos, asegurándose de que estos se clasifiquen, prioricen y sigan hasta su resolución."
+    },
+    {
+      "id": "al-tm-013",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué factor justificaría MÁS directamente adaptar el proceso de pruebas estándar a un proyecto concreto (por ejemplo, omitir parte de la documentación formal)?",
+      "options": [
+        "La preferencia personal de un único probador sin otra justificación ni adaptación al contexto del proyecto.",
+        "Una decisión aleatoria tomada sin análisis, aplicando el mismo rigor independientemente del ciclo de vida o la criticidad.",
+        "El contexto del proyecto, como los requisitos normativos, la criticidad, el tamaño del equipo o el modelo de ciclo de vida.",
+        "Usar el mismo enfoque de pruebas en todos los proyectos, independientemente de los riesgos o del ciclo de vida, sin adaptarlo al contexto del proyecto."
+      ],
+      "correctIndex": 2,
+      "explanation": "Los procesos de pruebas deben adaptarse en función de factores del contexto del proyecto, como las restricciones normativas, la criticidad, el tamaño del equipo y el modelo de ciclo de vida de desarrollo elegido."
+    },
+    {
+      "id": "al-tm-014",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.2.1",
+      "difficulty": "hard",
+      "question": "Un gestor de pruebas estima que la ejecución de las pruebas requerirá 200 horas-persona y el equipo cuenta con 5 probadores, cada uno disponible 8 horas al día. ¿Cuántos días laborables durará aproximadamente la ejecución, suponiendo dedicación a tiempo completo?",
+      "options": [
+        "5 días, con una capacidad de 40 horas-persona por día laborable.",
+        "2 días, sin incluir las nuevas pruebas ni el esfuerzo del entorno.",
+        "10 días, como compromiso preciso pese a una incertidumbre considerable en la estimación.",
+        "40 días, aplicando una proporción fija pese a los cambios de alcance o capacidad."
+      ],
+      "correctIndex": 0,
+      "explanation": "200 horas-persona / (5 probadores × 8 horas al día = 40 horas-persona por día) = 5 días laborables, suponiendo dedicación plena y sin otras restricciones."
+    },
+    {
+      "id": "al-tm-015",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones es una decisión de «control de pruebas», en lugar de limitarse al «seguimiento de pruebas»?",
+      "options": [
+        "Observar que hasta el momento se ha ejecutado el 30 % de los casos de prueba previstos, pese a los cambios en las condiciones de ejecución.",
+        "Registrar diariamente el número de defectos encontrados sin tomar otras medidas, pese a los cambios en las condiciones de ejecución.",
+        "Consultar un gráfico del panel sin tomar ninguna decisión, pese a los cambios en las condiciones de ejecución.",
+        "Decidir reasignar probadores de un módulo de bajo riesgo a otro de alto riesgo que acumula retraso."
+      ],
+      "correctIndex": 3,
+      "explanation": "El seguimiento consiste en recopilar e informar información sobre el estado; el control consiste en actuar a partir de esa información, por ejemplo, reasignando recursos para abordar riesgos o problemas de calendario."
+    },
+    {
+      "id": "al-tm-016",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.1.2",
+      "difficulty": "medium",
+      "question": "Desde la perspectiva de la gestión de pruebas, ¿cuál de las siguientes opciones describe MEJOR un uso adecuado de las pruebas independientes en un proyecto?",
+      "options": [
+        "Trasladar la mayor parte de las pruebas a una organización externa, con independencia del coste o el contexto, en detrimento de los objetivos compartidos del equipo.",
+        "Utilizar probadores independientes cuando su objetividad aporte valor, equilibrando ese beneficio con el coste y las necesidades de comunicación.",
+        "Depender de las pruebas de los desarrolladores sin revisión independiente, incluso cuando otra perspectiva pudiera ser valiosa, en detrimento de los objetivos compartidos del equipo.",
+        "Pedir al desarrollador original que pruebe su propio código sin revisión independiente, en detrimento de los objetivos compartidos del equipo."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los gestores de pruebas sopesan las ventajas de la independencia (menor sesgo del autor) frente a costes como el esfuerzo de comunicación y un menor conocimiento del dominio, y eligen el nivel de independencia adecuado al contexto."
+    },
+    {
+      "id": "al-tm-017",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones sería una «lección aprendida» valiosa que registrar al cerrar las pruebas?",
+      "options": [
+        "Cerrar los defectos cuando se entrega una corrección, antes de confirmarla mediante nuevas pruebas, pese al flujo de trabajo acordado.",
+        "Cerrar o aplazar defectos por conveniencia, sin evaluar el impacto empresarial, basándose solo en recuentos y sin distinguir la gravedad ni la prioridad.",
+        "Qué técnicas o herramientas de prueba funcionaron bien o mal y qué mejoras de proceso recomendar para futuros proyectos.",
+        "Cerrar o aplazar defectos por conveniencia, sin evaluar el impacto empresarial, pese al flujo de trabajo de defectos acordado."
+      ],
+      "correctIndex": 2,
+      "explanation": "Las lecciones aprendidas suelen centrarse en lo que funcionó bien o mal en los procesos, las técnicas y las herramientas, y aportan información práctica para mejorar proyectos futuros."
+    },
+    {
+      "id": "al-tm-018",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué elementos se esperarían en una sección de riesgos bien redactada de un plan de pruebas?",
+      "options": [
+        "Los riesgos identificados del proyecto y del producto, su probabilidad e impacto evaluados y las acciones de mitigación previstas.",
+        "Una lista de todos los botones de la interfaz de la aplicación, sin actualizar el alcance actual.",
+        "Copiar un plan anterior sin comprobar el alcance actual ni las hipótesis, sin actualizar el alcance actual.",
+        "Copiar un artefacto de un proyecto anterior sin comprobar si su alcance sigue siendo aplicable, sin actualizar el alcance actual."
+      ],
+      "correctIndex": 0,
+      "explanation": "La sección de riesgos de un plan de pruebas suele documentar los riesgos identificados (del proyecto y del producto), la probabilidad y el impacto evaluados, y cómo se mitigarán o supervisarán."
+    },
+    {
+      "id": "al-tm-019",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una razón válida por la que un gestor de pruebas podría recomendar un enfoque de pruebas basado en riesgos para todo un proyecto?",
+      "options": [
+        "Garantiza que nunca llegue ningún defecto a producción, aunque difieran las prioridades y las restricciones.",
+        "Elimina la necesidad de planificar las pruebas, aunque difieran las prioridades y las restricciones.",
+        "Aplica la misma profundidad de pruebas a todas las funcionalidades, independientemente de su importancia, sin adaptar el proceso al contexto del proyecto.",
+        "Ayuda a concentrar los recursos y el tiempo limitados de prueba en las áreas que probablemente causarían problemas importantes si no se detectaran."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las pruebas basadas en riesgos ayudan a asignar eficazmente el tiempo y los recursos limitados, dedicando más esfuerzo a las áreas de mayor riesgo en lugar de tratar todas las funcionalidades por igual."
+    },
+    {
+      "id": "al-tm-020",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.1.3",
+      "difficulty": "medium",
+      "question": "¿Cuál es un DESAFÍO habitual de las técnicas de estimación de pruebas basadas en expertos (por ejemplo, Wideband Delphi)?",
+      "options": [
+        "Suelen producir estimaciones perfectamente exactas, sin margen de error, como compromiso preciso pese a una incertidumbre considerable.",
+        "Pueden verse afectadas por un sesgo optimista o por la falta de datos históricos pertinentes cuando los expertos tienen poca experiencia en trabajos similares.",
+        "No pueden utilizarse en proyectos ágiles bajo ninguna circunstancia, sin comprobar si el trabajo anterior es comparable.",
+        "No requieren ninguna intervención de expertos, sin incluir nuevas pruebas ni el esfuerzo del entorno."
+      ],
+      "correctIndex": 1,
+      "explanation": "La estimación basada en expertos puede verse afectada por el sesgo optimista, el pensamiento grupal o la falta de experiencia directamente pertinente, lo que puede reducir su precisión frente a métricas históricas sólidas."
+    },
+    {
+      "id": "al-tm-021",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.1.1",
+      "difficulty": "medium",
+      "question": "¿De qué tarea es MÁS responsable el gestor de pruebas durante la actividad de planificación de las pruebas?",
+      "options": [
+        "Redactar los pasos detallados de cada caso de prueba individual, sin adaptar el proceso al contexto del proyecto.",
+        "Ejecutar personalmente las pruebas de regresión en cada publicación, aplicando el mismo rigor con independencia del ciclo de vida o la criticidad.",
+        "Definir el enfoque general, los objetivos y el alcance de las pruebas, así como los recursos necesarios.",
+        "Corregir los defectos encontrados durante la ejecución de las pruebas, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 2,
+      "explanation": "La planificación de las pruebas es principalmente responsabilidad de la gestión de pruebas e implica definir los objetivos, el alcance, el enfoque general y las necesidades de recursos; los probadores y desarrolladores suelen encargarse de redactar los casos de prueba detallados y corregir defectos."
+    },
+    {
+      "id": "al-tm-022",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito principal del seguimiento y control de las pruebas como actividad continua de gestión de pruebas?",
+      "options": [
+        "Comparar el progreso real de las pruebas con el plan y tomar medidas correctivas cuando se produzcan desviaciones.",
+        "Redactar la especificación inicial de requisitos, sin adaptar el proceso al contexto del proyecto.",
+        "Diseñar nuevos casos de prueba principalmente después de que termine el proyecto, sin adaptar el proceso al contexto del proyecto.",
+        "Eliminar la necesidad de un plan de pruebas, sin comprobar la capacidad de prueba."
+      ],
+      "correctIndex": 0,
+      "explanation": "El seguimiento y control de las pruebas compara el progreso real (por ejemplo, la cobertura, los defectos y el calendario) con el plan, lo que permite al gestor de pruebas tomar medidas correctivas cuando hay desviaciones."
+    },
+    {
+      "id": "al-tm-023",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.2.1",
+      "difficulty": "medium",
+      "question": "Como gestor de pruebas, ¿cuál es una razón válida para adaptar el proceso de pruebas a un proyecto concreto?",
+      "options": [
+        "Utilizar normalmente exactamente el mismo proceso, independientemente de las diferencias entre proyectos, sin adaptar el proceso al contexto del proyecto.",
+        "Evitar cualquier análisis de riesgos en proyectos pequeños, aunque difieran las prioridades y las restricciones.",
+        "Omitir por completo la planificación de pruebas en proyectos breves, aunque difieran las prioridades y las restricciones.",
+        "Ajustar el nivel de formalidad y rigor al contexto del proyecto, como los requisitos normativos, el nivel de riesgo y el tamaño del equipo."
+      ],
+      "correctIndex": 3,
+      "explanation": "El gestor de pruebas adapta el proceso al contexto específico del proyecto —incluidos los requisitos normativos, los niveles de riesgo, el tamaño del equipo y la madurez de la organización— en lugar de aplicar un enfoque rígido e idéntico para todos."
+    },
+    {
+      "id": "al-tm-024",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.1.2",
+      "difficulty": "medium",
+      "question": "Según las normas habituales de documentación de pruebas, ¿qué describe normalmente un plan de pruebas de nivel?",
+      "options": [
+        "La política corporativa de pruebas completa para todos los proyectos, tratando una plantilla como si fuera específica del proyecto.",
+        "El enfoque, el alcance, los recursos y el calendario específicos de las actividades de prueba de un nivel concreto (por ejemplo, las pruebas del sistema).",
+        "Principalmente los defectos encontrados en un único ciclo de prueba, tratando una plantilla como si fuera específica del proyecto.",
+        "La evaluación del rendimiento personal de cada probador, tratando una plantilla como si fuera específica del proyecto."
+      ],
+      "correctIndex": 1,
+      "explanation": "Un plan de pruebas de nivel se centra en un nivel específico (como las pruebas del sistema o de aceptación) y detalla su alcance, enfoque, recursos y calendario, a diferencia del plan maestro, que abarca varios niveles."
+    },
+    {
+      "id": "al-tm-025",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.2.1",
+      "difficulty": "medium",
+      "question": "¿Por qué es importante que un gestor de pruebas mantenga la trazabilidad entre los requisitos y los casos de prueba?",
+      "options": [
+        "La trazabilidad no tiene valor práctico y sirve principalmente para cumplir trámites, sin actualizar el alcance actual.",
+        "Sustituye la necesidad de informes de ejecución de pruebas, sin actualizar el alcance actual.",
+        "Permite analizar el impacto de los cambios en los requisitos y demostrar la cobertura de la base de prueba.",
+        "Solo se requiere para las pruebas automatizadas, no para las manuales, sin actualizar el alcance actual."
+      ],
+      "correctIndex": 2,
+      "explanation": "La trazabilidad entre los requisitos y los casos de prueba permite al gestor de pruebas analizar el impacto de los cambios en los requisitos y demostrar el grado de cobertura de la base de prueba."
+    },
+    {
+      "id": "al-tm-026",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.3.1",
+      "difficulty": "medium",
+      "question": "¿En qué momento suele elaborar el gestor de pruebas un informe resumen de pruebas?",
+      "options": [
+        "En hitos definidos o al final de un nivel de prueba o del proyecto, para resumir las actividades y resultados de las pruebas y evaluarlos frente a los criterios de salida.",
+        "Antes de que comience cualquier prueba, tratando una plantilla como si fuera específica del proyecto.",
+        "Principalmente cuando ocurre un incidente crítico en producción, tratando una plantilla como si fuera específica del proyecto.",
+        "Principalmente si el proyecto no cumple el plazo, tratando una plantilla como si fuera específica del proyecto."
+      ],
+      "correctIndex": 0,
+      "explanation": "El informe resumen de pruebas se elabora en hitos definidos o al final de un nivel de prueba o del proyecto; resume las pruebas realizadas y sus resultados, y evalúa estos frente a los criterios de salida definidos."
+    },
+    {
+      "id": "al-tm-027",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué técnica de estimación se basa en datos históricos y métricas de proyectos anteriores similares para predecir el esfuerzo de pruebas?",
+      "options": [
+        "Wideband Delphi basado únicamente en conjeturas individuales, sin datos y pese a cambios de alcance o capacidad.",
+        "Una estimación por lanzamiento de moneda, como compromiso preciso pese a una incertidumbre considerable.",
+        "Usar un porcentaje fijo del esfuerzo de desarrollo sin comprobar si existen datos históricos comparables.",
+        "Una estimación basada en métricas que utiliza mediciones de proyectos anteriores pertinentes."
+      ],
+      "correctIndex": 3,
+      "explanation": "La estimación basada en métricas utiliza datos históricos y mediciones de proyectos anteriores similares (por ejemplo, esfuerzo por caso de prueba o defectos por unidad de tamaño) para obtener estimaciones para el proyecto actual."
+    },
+    {
+      "id": "al-tm-028",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es la principal ventaja de utilizar Wideband Delphi (o una técnica similar a Planning Poker) para estimar las pruebas?",
+      "options": [
+        "Elimina la necesidad de contar con expertos, pese a la incertidumbre considerable de la estimación.",
+        "Agrupa valoraciones independientes de expertos mediante rondas iterativas para alcanzar una estimación más fiable.",
+        "Garantiza que la estimación quede dentro del presupuesto, pese a cambios de alcance o capacidad.",
+        "Es más rápida que cualquier otra técnica de estimación, con independencia del tamaño del proyecto y pese a cambios de alcance o capacidad."
+      ],
+      "correctIndex": 1,
+      "explanation": "Wideband Delphi recopila estimaciones independientes de varios expertos y las somete a rondas iterativas de debate para llegar a una estimación grupal más meditada y fiable que la conjetura de una sola persona."
+    },
+    {
+      "id": "al-tm-029",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.2.1",
+      "difficulty": "hard",
+      "question": "¿Qué factor debe considerar un gestor de pruebas al planificar la ejecución de pruebas en varios niveles?",
+      "options": [
+        "Estimar a partir de un porcentaje fijo de desarrollo sin validar si el trabajo es comparable, pese a cambios de alcance o capacidad.",
+        "Usar un porcentaje fijo del esfuerzo de desarrollo sin comprobar si existen datos históricos comparables.",
+        "Las dependencias entre niveles de prueba, la disponibilidad de los entornos de prueba y las restricciones de recursos.",
+        "Usar un porcentaje fijo del esfuerzo de desarrollo sin comprobar si existen datos históricos comparables, como compromiso preciso pese a la incertidumbre considerable de la estimación."
+      ],
+      "correctIndex": 2,
+      "explanation": "Una planificación eficaz de las pruebas tiene en cuenta las dependencias entre niveles, la disponibilidad de los entornos y las restricciones de recursos, ya que estos factores afectan directamente a cuándo se pueden realizar las actividades de prueba."
+    },
+    {
+      "id": "al-tm-030",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.2.2",
+      "difficulty": "medium",
+      "question": "La alta dirección cuestiona por excesiva la estimación inicial del gestor de pruebas. ¿Cuál es la respuesta MÁS adecuada?",
+      "options": [
+        "Presentar las hipótesis, los datos históricos y los fundamentos basados en riesgos de la estimación, y negociar con transparencia el alcance, el plazo o los recursos.",
+        "Aceptar de inmediato cualquier cifra reducida sin justificación y sin incluir nuevas pruebas ni el esfuerzo del entorno.",
+        "Negarse a debatir la estimación, como compromiso preciso pese a la incertidumbre considerable, y pese a los cambios de alcance o capacidad.",
+        "Dimitir inmediatamente del proyecto, aplicando una proporción fija y sin incluir nuevas pruebas ni el esfuerzo del entorno."
+      ],
+      "correctIndex": 0,
+      "explanation": "El gestor de pruebas debe justificar las estimaciones mediante datos e hipótesis, y negociar las compensaciones entre alcance, calendario y recursos con transparencia, en lugar de ceder sin más o negarse a dialogar."
+    },
+    {
+      "id": "al-tm-031",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué métrica suele utilizar un gestor de pruebas para supervisar el progreso durante la ejecución?",
+      "options": [
+        "Esperar hasta el cierre para informar de desviaciones o riesgos de publicación, pese a cambios en las condiciones de ejecución.",
+        "Usar los totales brutos de ejecución como evidencia de preparación sin considerar la cobertura, pese a cambios en las condiciones de ejecución.",
+        "Informar de recuentos brutos de ejecución tratando el volumen como medida de preparación.",
+        "El porcentaje de casos de prueba planificados que se han ejecutado, informando por separado de los resultados satisfactorios y fallidos."
+      ],
+      "correctIndex": 3,
+      "explanation": "Entre las métricas habituales de progreso se incluyen el porcentaje de pruebas planificadas ejecutadas, las tasas de aprobación y fallo, y las tasas de detección de defectos. Todas ayudan a evaluar si las pruebas avanzan según lo previsto."
+    },
+    {
+      "id": "al-tm-032",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué indica al gestor de pruebas que la tasa de detección de defectos siga siendo alta y no muestre señales de estabilizarse cerca del final previsto de la ejecución?",
+      "options": [
+        "Que las pruebas han terminado y se debe publicar de inmediato, sin relacionar la métrica con los criterios de salida.",
+        "Que aún puede haber defectos importantes sin descubrir, por lo que quizá sea necesario continuar las pruebas o reevaluar los criterios de salida.",
+        "Que todos los defectos encontrados son falsos positivos, sin tener en cuenta el alcance bloqueado ni la cobertura ponderada por riesgos, pese a cambios en las condiciones de ejecución.",
+        "Que el equipo debe dejar de registrar defectos para acelerar el calendario, tratando el volumen como medida de preparación."
+      ],
+      "correctIndex": 1,
+      "explanation": "Si la tasa de detección no se estabiliza (la tendencia se mantiene o aumenta en lugar de disminuir), puede indicar que quedan defectos sin descubrir y llevar al gestor a reconsiderar si se cumplen realmente los criterios de salida."
+    },
+    {
+      "id": "al-tm-033",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.2.1",
+      "difficulty": "hard",
+      "question": "Si el progreso real de las pruebas se desvía considerablemente del plan, ¿qué medida de control podría tomar el gestor de pruebas?",
+      "options": [
+        "Ignorar la desviación y seguir el plan independientemente del impacto y de los cambios en las condiciones de ejecución.",
+        "Cancelar todo el proyecto de pruebas sin análisis ni consideración del alcance bloqueado o de la cobertura ponderada por riesgos.",
+        "Repriorizar las pruebas restantes según los riesgos, ajustar el calendario o solicitar recursos adicionales.",
+        "Ampliar automáticamente la fecha de publicación exactamente un año, pese a los cambios en las condiciones de ejecución."
+      ],
+      "correctIndex": 2,
+      "explanation": "Las medidas de control pueden incluir repriorizar las pruebas según los riesgos, ajustar el calendario, negociar el alcance o solicitar recursos adicionales. La elección depende de la naturaleza y la causa de la desviación."
+    },
+    {
+      "id": "al-tm-034",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.3.1",
+      "difficulty": "medium",
+      "question": "¿Qué información suele incluir el gestor de pruebas en un informe de estado dirigido a las partes interesadas de alto nivel?",
+      "options": [
+        "Un resumen conciso del progreso, los riesgos y los impedimentos, junto con una recomendación o previsión, adaptado a la audiencia.",
+        "Diferencias exhaustivas del código fuente línea por línea, sin explicar el alcance bloqueado ni la cobertura de riesgos.",
+        "Las opiniones personales de cada probador sobre los demás, pese a los cambios en las condiciones de ejecución.",
+        "Informes financieros no relacionados de otros departamentos, tratando el volumen como medida de preparación."
+      ],
+      "correctIndex": 0,
+      "explanation": "Los informes para las partes interesadas de alto nivel deben ser concisos y destacar el progreso, los riesgos, los impedimentos y las previsiones o recomendaciones, con un grado de detalle adecuado a la audiencia."
+    },
+    {
+      "id": "al-tm-035",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.1.1",
+      "difficulty": "medium",
+      "question": "¿Qué factor es MÁS importante al formar un equipo de pruebas equilibrado?",
+      "options": [
+        "Asegurarse de que todas las personas tengan competencias idénticas, sin considerar su adecuación ni su carga de trabajo.",
+        "Contratar principalmente a los probadores de mayor experiencia y coste, con independencia de las necesidades del proyecto y en detrimento de los objetivos compartidos.",
+        "Seleccionar probadores solo por su disponibilidad e ignorar la adecuación de sus competencias, en detrimento de los objetivos compartidos.",
+        "Equilibrar las competencias técnicas, el conocimiento del dominio y las habilidades interpersonales según las necesidades del proyecto."
+      ],
+      "correctIndex": 3,
+      "explanation": "Un equipo de pruebas equilibrado combina competencias técnicas, conocimiento del dominio y habilidades interpersonales, de acuerdo con las necesidades y los riesgos concretos del proyecto."
+    },
+    {
+      "id": "al-tm-036",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.1.2",
+      "difficulty": "medium",
+      "question": "¿Cuál es una responsabilidad clave del gestor de pruebas al incorporar a un nuevo probador al equipo?",
+      "options": [
+        "Asignarle de inmediato las tareas más complejas y de mayor riesgo, sin orientación y en detrimento de los objetivos compartidos.",
+        "Ofrecerle orientación sobre el contexto del proyecto, las herramientas y los procesos, y el apoyo necesario para que pueda contribuir eficazmente.",
+        "Omitir la presentación de los procesos del equipo, sin considerar la adecuación de sus competencias ni su carga de trabajo.",
+        "No asignarle ninguna tarea de prueba durante todo el proyecto, en detrimento de los objetivos compartidos."
+      ],
+      "correctIndex": 1,
+      "explanation": "Una incorporación eficaz incluye orientar a los nuevos miembros sobre el contexto del proyecto, las herramientas y los procesos, así como brindarles apoyo para que puedan contribuir productivamente cuanto antes."
+    },
+    {
+      "id": "al-tm-037",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.2.1",
+      "difficulty": "medium",
+      "question": "¿Qué factor motivador suele considerarse importante para que los probadores cualificados permanezcan en un equipo?",
+      "options": [
+        "Asignar indefinidamente la misma tarea repetitiva, sin variación y en detrimento de los objetivos compartidos.",
+        "No ofrecer comentarios sobre el rendimiento, sin considerar la adecuación de las competencias ni la carga de trabajo.",
+        "Ofrecer oportunidades de desarrollo profesional, reconocer las contribuciones y proporcionar trabajo significativo y variado.",
+        "Impedir toda colaboración con otros miembros del equipo, en detrimento de los objetivos compartidos."
+      ],
+      "correctIndex": 2,
+      "explanation": "Las oportunidades de desarrollo profesional, el reconocimiento y el trabajo significativo y variado son factores motivadores ampliamente reconocidos que ayudan a retener a los miembros cualificados, a diferencia de las tareas monótonas o la falta de comentarios."
+    },
+    {
+      "id": "al-tm-038",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.3.1",
+      "difficulty": "hard",
+      "question": "¿Cómo debería abordar normalmente un gestor de pruebas un conflicto entre dos probadores con opiniones distintas sobre las prioridades de las pruebas?",
+      "options": [
+        "Facilitar un debate para comprender cada perspectiva, remitirse a los criterios acordados de riesgo y prioridad, y alcanzar una solución colaborativa.",
+        "Ignorar el conflicto y esperar que se resuelva solo, sin considerar las competencias ni la carga de trabajo.",
+        "Apartar de inmediato a ambos probadores del proyecto, sin considerar las competencias ni la carga de trabajo.",
+        "Tomar una decisión sin escuchar los argumentos de ninguna de las partes, sin considerar las competencias ni la carga de trabajo."
+      ],
+      "correctIndex": 0,
+      "explanation": "Una buena resolución de conflictos facilita el diálogo abierto, comprende cada perspectiva y basa la decisión en criterios objetivos acordados (como la priorización basada en riesgos), en lugar de evitar el problema o actuar unilateralmente."
+    },
+    {
+      "id": "al-tm-039",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.4.1",
+      "difficulty": "medium",
+      "question": "Al externalizar parte de las pruebas a un proveedor externo, ¿cuál de las siguientes es una preocupación clave de la gestión de pruebas?",
+      "options": [
+        "Suponer que no se necesita supervisión una vez firmado el contrato, en detrimento de los objetivos compartidos.",
+        "Ignorar por completo las diferencias culturales o de zona horaria, en detrimento de los objetivos compartidos.",
+        "Evitar documentar las responsabilidades acordadas, en detrimento de los objetivos compartidos.",
+        "Establecer canales de comunicación, expectativas de calidad y mecanismos de presentación de informes claros con el proveedor."
+      ],
+      "correctIndex": 3,
+      "explanation": "La gestión de pruebas externalizadas o distribuidas requiere establecer canales de comunicación, expectativas de calidad y mecanismos de supervisión e información claros, para garantizar resultados coherentes pese a la relación con el proveedor."
+    },
+    {
+      "id": "al-tm-040",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.1.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito principal de un proceso de gestión de defectos supervisado por el gestor de pruebas?",
+      "options": [
+        "Ocultar defectos a las partes interesadas para proteger la reputación del proyecto, pese al flujo de trabajo de defectos acordado.",
+        "Garantizar que los defectos se notifiquen, clasifiquen, sigan y resuelvan de forma coherente mediante un ciclo de vida acordado.",
+        "Eliminar la necesidad de una herramienta de seguimiento de defectos basándose solo en recuentos, sin distinguir la gravedad ni la prioridad.",
+        "Atribuir la culpa a los desarrolladores por cada defecto, pese al flujo de trabajo de defectos acordado."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los procesos de gestión de defectos garantizan que estos se notifiquen, clasifiquen (por ejemplo, asignando gravedad y prioridad), sigan y resuelvan de manera coherente mediante un ciclo de vida acordado, lo que favorece la transparencia y la toma de decisiones eficaz."
+    },
+    {
+      "id": "al-tm-041",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.1.2",
+      "difficulty": "medium",
+      "question": "¿Qué función suele desempeñar el gestor de pruebas en las reuniones de clasificación de defectos?",
+      "options": [
+        "Corregir personalmente todos los defectos notificados antes de confirmar la corrección mediante nuevas pruebas.",
+        "Impedir que los desarrolladores aporten información sobre los defectos, basándose solo en recuentos y sin distinguir gravedad o prioridad.",
+        "Facilitar el debate y ayudar al equipo a acordar la gravedad, la prioridad y los siguientes pasos para cada defecto.",
+        "Cerrar o aplazar defectos por conveniencia, sin evaluar el impacto empresarial y pese al flujo de trabajo acordado."
+      ],
+      "correctIndex": 2,
+      "explanation": "El gestor de pruebas suele facilitar la clasificación de defectos y ayudar a las partes interesadas a acordar la gravedad, la prioridad y los siguientes pasos adecuados para cada defecto notificado."
+    },
+    {
+      "id": "al-tm-042",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.2.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una actividad habitual de cierre de pruebas cerca del final de un nivel de prueba o de un proyecto?",
+      "options": [
+        "Comprobar que se hayan completado los entregables planificados, archivar los productos de prueba y registrar las lecciones aprendidas.",
+        "Redactar el acta de constitución inicial del proyecto sin una persona responsable clara ni aceptación del riesgo residual.",
+        "Iniciar la recopilación de requisitos para un proyecto completamente nuevo, pese al flujo de trabajo de defectos acordado.",
+        "Contratar probadores para un proyecto futuro no relacionado antes de confirmar las correcciones mediante nuevas pruebas."
+      ],
+      "correctIndex": 0,
+      "explanation": "Las actividades de cierre incluyen verificar que se hayan completado los entregables previstos, archivar los productos de prueba para reutilizarlos en el futuro y registrar las lecciones aprendidas para mejorar proyectos posteriores."
+    },
+    {
+      "id": "al-tm-043",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.2.2",
+      "difficulty": "medium",
+      "question": "Desde la perspectiva del gestor de pruebas, ¿por qué es importante registrar las lecciones aprendidas como parte del cierre de pruebas?",
+      "options": [
+        "No aporta ningún beneficio práctico y se hace principalmente para cumplir requisitos burocráticos, pese al flujo de trabajo acordado.",
+        "Solo se requiere si el proyecto fracasó por completo, pese al flujo de trabajo acordado.",
+        "Sustituye la necesidad de un informe resumen de pruebas antes de confirmar una corrección mediante nuevas pruebas.",
+        "Ayuda a la organización a mejorar los procesos de prueba y evitar que se repitan errores anteriores en proyectos futuros."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las lecciones aprendidas ayudan a la organización a identificar qué funcionó y qué no, y contribuyen a la mejora continua de los procesos para evitar que se repitan errores anteriores en proyectos futuros."
+    },
+    {
+      "id": "al-tm-044",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones refleja MEJOR la función del gestor de pruebas respecto a los criterios de entrada y salida de un nivel de prueba?",
+      "options": [
+        "Ignorar los criterios de entrada y salida porque ralentizan la entrega, pese a las diferencias de riesgo y obligaciones.",
+        "Definir y acordar los criterios de entrada y salida con las partes interesadas, y supervisar su cumplimiento antes de permitir que se avance.",
+        "Definir principalmente los criterios de salida y rara vez los de entrada, aplicando el mismo rigor independientemente del ciclo de vida o la criticidad.",
+        "Delegar todas las decisiones sobre los criterios en los probadores, sin supervisión ni adaptación al contexto del proyecto."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los gestores de pruebas colaboran con las partes interesadas para definir los criterios de entrada y salida de los niveles de prueba, y supervisan su cumplimiento para decidir con fundamento si se puede pasar a la fase siguiente."
+    },
+    {
+      "id": "al-tm-045",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.4.1",
+      "difficulty": "hard",
+      "question": "Un gestor de pruebas necesita documentar los productos de prueba que se reutilizarán en futuros proyectos de características similares. ¿Qué práctica favorece más este objetivo?",
+      "options": [
+        "Eliminar todos los productos de prueba inmediatamente al concluir el proyecto, pese a los cambios en la evidencia o la propiedad.",
+        "Guardar los productos de prueba principalmente en los portátiles personales de los probadores, sin actualizarlos según el alcance actual.",
+        "Mantener un repositorio bien organizado y con control de versiones para casos de prueba, datos y scripts, con documentación clara.",
+        "Evitar documentar la justificación del diseño de pruebas, tratando una plantilla como si fuera específica del proyecto."
+      ],
+      "correctIndex": 2,
+      "explanation": "Mantener los productos de prueba en un repositorio bien organizado, documentado y con control de versiones favorece su reutilización en proyectos similares y concuerda con las buenas prácticas de cierre de pruebas y gestión del conocimiento."
+    },
+    {
+      "id": "al-tm-046",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.3.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes es una causa habitual de estimaciones de pruebas inexactas que un gestor de pruebas debe tener en cuenta?",
+      "options": [
+        "Subestimar el impacto de los cambios en los requisitos, la ampliación del alcance o los riesgos técnicos que no se comprenden suficientemente.",
+        "Usar datos históricos bien documentados de proyectos comparables, pese a cambios de alcance o capacidad.",
+        "Incluir a varios expertos en la estimación, como compromiso preciso pese a una incertidumbre considerable.",
+        "Revisar periódicamente las estimaciones a medida que avanza el proyecto, aplicando una proporción fija pese a cambios de alcance o capacidad."
+      ],
+      "correctIndex": 0,
+      "explanation": "Las estimaciones inexactas suelen deberse a subestimar los cambios en los requisitos, la ampliación del alcance o los riesgos técnicos mal comprendidos. El uso de datos históricos, la participación de expertos y la revisión periódica suelen mejorar su precisión."
+    },
+    {
+      "id": "al-tm-047",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.4.1",
+      "difficulty": "medium",
+      "question": "¿Qué visualización utilizan habitualmente los gestores de pruebas para seguir el número acumulado de defectos encontrados frente a los corregidos con el tiempo?",
+      "options": [
+        "Un diagrama de topología de red para la arquitectura, no para las tendencias de defectos, pese a cambios en las condiciones de ejecución.",
+        "Usar los totales brutos de ejecución como evidencia de preparación sin considerar la cobertura.",
+        "Informar de recuentos brutos de ejecución sin relacionar la métrica con los criterios de salida.",
+        "Un gráfico de tendencias de defectos que compara los totales acumulados de defectos notificados y resueltos a lo largo del tiempo."
+      ],
+      "correctIndex": 3,
+      "explanation": "Comparar a lo largo del tiempo los totales de defectos notificados y resueltos permite ver si la acumulación de defectos aumenta o se estabiliza; el gráfico no tiene por qué seguir una curva en S."
+    },
+    {
+      "id": "al-tm-048",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.5.1",
+      "difficulty": "medium",
+      "question": "¿Por qué podría un gestor de pruebas mantener reuniones periódicas individuales con cada integrante del equipo?",
+      "options": [
+        "Asignar el trabajo solo según la disponibilidad, sin ajustar las competencias a la complejidad de las tareas y en detrimento de los objetivos compartidos.",
+        "Hablar en privado sobre el progreso individual, los desafíos y el desarrollo profesional, y recabar comentarios.",
+        "Criticar públicamente al probador ante todo el equipo, en detrimento de los objetivos compartidos.",
+        "Evitar hablar nunca sobre problemas de rendimiento, sin considerar las competencias ni la carga de trabajo."
+      ],
+      "correctIndex": 1,
+      "explanation": "Las reuniones individuales proporcionan un espacio privado para hablar sobre el progreso de cada persona, abordar desafíos, apoyar su desarrollo profesional y recabar comentarios sinceros."
+    },
+    {
+      "id": "al-tm-049",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.3.1",
+      "difficulty": "hard",
+      "question": "Al decidir si un proyecto puede finalizar las pruebas del sistema pese a que algunos defectos sigan abiertos, ¿qué debe sopesar principalmente el gestor de pruebas?",
+      "options": [
+        "Aplazar defectos por conveniencia de entrega sin documentar el riesgo residual ni considerar la gravedad o el impacto empresarial.",
+        "El orden alfabético de los identificadores de defectos, basándose solo en recuentos y sin distinguir gravedad o prioridad, pese al flujo de trabajo acordado.",
+        "La gravedad y prioridad de los defectos abiertos, su impacto empresarial y si incumplen los criterios de salida acordados o los niveles de riesgo aceptables.",
+        "Si los defectos se encontraron un lunes o un viernes, sin una persona responsable clara ni aceptación del riesgo residual."
+      ],
+      "correctIndex": 2,
+      "explanation": "Las decisiones de salida deben sopesar la gravedad y el impacto empresarial de los defectos abiertos frente a los criterios de salida acordados y al nivel de riesgo aceptable de la organización, no frente a factores arbitrarios o irrelevantes."
+    },
+    {
+      "id": "al-tm-050",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.4.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones describe mejor la relación entre una política de pruebas y una estrategia de pruebas en una organización?",
+      "options": [
+        "La política de pruebas establece los objetivos de la organización; la estrategia de pruebas describe el enfoque general para alcanzarlos.",
+        "La política y la estrategia de pruebas suelen ser exactamente el mismo documento con títulos distintos, sin adaptación al contexto del proyecto.",
+        "La estrategia de pruebas se elabora principalmente después de completar todas las pruebas, sin adaptación al contexto del proyecto.",
+        "Los probadores redactan la política de pruebas sin intervención de la dirección, sin adaptación al contexto del proyecto."
+      ],
+      "correctIndex": 0,
+      "explanation": "La política de pruebas define los objetivos y principios de alto nivel de la organización, mientras que la estrategia describe el enfoque general para alcanzarlos y suele aplicarse a varios proyectos."
+    },
+    {
+      "id": "al-tm-051",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.5.1",
+      "difficulty": "medium",
+      "question": "¿Qué norma o referencia se utiliza habitualmente como guía para estructurar documentación de pruebas, como los planes de prueba?",
+      "options": [
+        "Usar actualizaciones informales en lugar de registrar las decisiones acordadas, sin actualizar el alcance actual.",
+        "Copiar un plan anterior sin comprobar el alcance ni las hipótesis actuales.",
+        "Copiar un artefacto de un proyecto anterior sin comprobar si su alcance sigue siendo aplicable.",
+        "La norma de documentación de pruebas IEEE 829 (o su sucesora ISO/IEC/IEEE 29119-3)."
+      ],
+      "correctIndex": 3,
+      "explanation": "IEEE 829 y su sucesora ISO/IEC/IEEE 29119-3 son normas de referencia habituales que proporcionan plantillas y orientación para estructurar la documentación de pruebas, incluidos los planes de prueba, y los gestores de pruebas las conocen."
+    },
+    {
+      "id": "al-tm-052",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.4.1",
+      "difficulty": "hard",
+      "question": "El gestor de pruebas observa que queda menos tiempo del previsto inicialmente debido a un retraso en la entrega del desarrollo. ¿Qué medida refleja una buena práctica de gestión de pruebas?",
+      "options": [
+        "Eliminar actividades de prueba sin informar a las partes interesadas, pese a la incertidumbre considerable de la estimación.",
+        "Renegociar con las partes interesadas el alcance, el calendario o los recursos, según una priorización actualizada basada en riesgos.",
+        "Continuar exactamente con el plan original, ignorando el cambio de calendario y los cambios de alcance o capacidad.",
+        "Cancelar todo el proyecto sin debatirlo ni comprobar si el trabajo anterior es comparable."
+      ],
+      "correctIndex": 1,
+      "explanation": "Cuando cambian las circunstancias (por ejemplo, se retrasa una entrega), el gestor de pruebas debe renegociar con transparencia el alcance, el calendario o los recursos con las partes interesadas, y utilizar la priorización basada en riesgos para concentrar eficazmente el esfuerzo restante."
+    },
+    {
+      "id": "al-tm-053",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.5.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones es un indicador cualitativo (en lugar de cuantitativo) del progreso de las pruebas?",
+      "options": [
+        "El porcentaje de casos de prueba ejecutados, sin relacionar la métrica con los criterios de salida.",
+        "El número de defectos críticos abiertos, sin considerar el alcance bloqueado ni la cobertura ponderada por riesgos.",
+        "La confianza subjetiva del equipo en que el producto está preparado para publicarse, recabada mediante un debate.",
+        "El número de scripts de prueba automatizados redactados, tratando el volumen como medida de preparación."
+      ],
+      "correctIndex": 2,
+      "explanation": "La confianza subjetiva recabada mediante el debate es un indicador cualitativo; en cambio, el porcentaje ejecutado y los recuentos de defectos y scripts son indicadores cuantitativos (numéricos) del progreso."
+    },
+    {
+      "id": "al-tm-054",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.6.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es un posible riesgo de basarse únicamente en métricas cuantitativas (como el número de casos de prueba ejecutados) para evaluar el rendimiento de un probador?",
+      "options": [
+        "Puede incentivar a los probadores a priorizar la cantidad de casos sobre la calidad y a pasar por alto escenarios importantes más difíciles de probar.",
+        "No hay ningún riesgo: las métricas cuantitativas por sí solas suelen ser suficientes y justas, en detrimento de los objetivos compartidos del equipo.",
+        "Garantiza que lleguen menos defectos a producción, independientemente de las competencias y la carga de trabajo, para cualquier función y contexto de proyecto.",
+        "Elimina la necesidad de supervisión por parte del gestor de pruebas, sin considerar las competencias ni la carga de trabajo."
+      ],
+      "correctIndex": 0,
+      "explanation": "Un uso excesivo de métricas cuantitativas simples puede crear incentivos contraproducentes, por ejemplo, favorecer casos fáciles de ejecutar frente a escenarios más valiosos pero difíciles de probar, lo que puede reducir la eficacia general de las pruebas."
+    },
+    {
+      "id": "al-tm-055",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.4.1",
+      "difficulty": "medium",
+      "question": "¿Qué información suele ser esencial en un informe de defectos bien redactado?",
+      "options": [
+        "La opinión personal del probador sobre las competencias de programación del desarrollador, pese al flujo de trabajo de defectos acordado.",
+        "Principalmente una descripción de una sola palabra, como «roto», pese al flujo de trabajo de defectos acordado.",
+        "Cerrar o aplazar defectos por conveniencia, sin evaluar el impacto empresarial y pese al flujo de trabajo acordado.",
+        "Los pasos para reproducir el defecto, los resultados esperados y reales, la gravedad y los detalles del entorno."
+      ],
+      "correctIndex": 3,
+      "explanation": "Un informe de defectos bien redactado incluye pasos claros para reproducirlo, resultados esperados y reales, gravedad/prioridad y detalles del entorno, lo que permite a los desarrolladores comprender y abordar el problema con eficacia."
+    },
+    {
+      "id": "al-tm-056",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.5.1",
+      "difficulty": "hard",
+      "question": "¿Qué situación llevaría con mayor probabilidad al gestor de pruebas a revisar y actualizar la estrategia general de pruebas a mitad del proyecto?",
+      "options": [
+        "Que un probador se tome las vacaciones anuales previstas, aunque cambien las prioridades y las restricciones.",
+        "Un cambio significativo en el perfil de riesgo del proyecto, como un nuevo requisito normativo importante o un cambio de arquitectura.",
+        "Una corrección tipográfica menor en la documentación de usuario, aplicando el mismo rigor independientemente del ciclo de vida o la criticidad.",
+        "El traslado de la oficina a otro edificio, aunque cambien las prioridades y las restricciones."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los cambios significativos en el perfil de riesgo del proyecto —como nuevos requisitos normativos o cambios importantes de arquitectura— justifican que el gestor de pruebas revise y adapte la estrategia, a diferencia de sucesos rutinarios de bajo impacto."
+    },
+    {
+      "id": "al-tm-057",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.6.1",
+      "difficulty": "medium",
+      "question": "¿Qué ventaja tiene mantener el plan de pruebas como un «documento vivo» que se actualiza durante el proyecto, en lugar de redactarlo una sola vez y dejarlo estático?",
+      "options": [
+        "No aporta ninguna ventaja y solo añade trabajo administrativo innecesario, sin actualizar el alcance actual.",
+        "Elimina la necesidad de un informe resumen de pruebas al final del proyecto, sin actualizar el alcance actual.",
+        "Refleja los riesgos, el alcance y las condiciones reales del calendario vigentes, y mantiene a las partes interesadas alineadas a medida que evoluciona el proyecto.",
+        "Garantiza que nunca cambien los requisitos, pese a los cambios en la evidencia o la propiedad."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tratar el plan como un documento vivo y actualizarlo conforme evoluciona el proyecto ayuda a mantenerlo alineado con los riesgos, el alcance y las condiciones reales del calendario, así como a mantener alineadas a las partes interesadas."
+    },
+    {
+      "id": "al-tm-058",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.5.1",
+      "difficulty": "medium",
+      "question": "¿Cuál de las siguientes opciones describe MEJOR la estimación de pruebas «descendente» frente a la «ascendente»?",
+      "options": [
+        "La estimación descendente parte de datos de alto nivel; la ascendente suma estimaciones detalladas de tareas.",
+        "La estimación descendente y la ascendente son exactamente la misma técnica con nombres distintos, pese a cambios de alcance o capacidad.",
+        "La estimación descendente se utiliza principalmente en proyectos de hardware, como compromiso preciso pese a una incertidumbre considerable.",
+        "La estimación ascendente ignora todo desglose detallado de tareas y aplica una proporción fija pese a cambios de alcance o capacidad."
+      ],
+      "correctIndex": 0,
+      "explanation": "La estimación descendente obtiene una cifra global a partir de características de alto nivel o proyectos análogos; la ascendente calcula el total sumando estimaciones detalladas de tareas o elementos de prueba."
+    },
+    {
+      "id": "al-tm-059",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.6.1",
+      "difficulty": "medium",
+      "question": "El gestor de pruebas observa que la tasa de aprobación de las pruebas de regresión automatizadas disminuye de forma constante en varias compilaciones. ¿Cuál es un primer paso razonable?",
+      "options": [
+        "Desactivar de inmediato todas las pruebas automatizadas para ocultar la tendencia descendente, pese a los cambios en las condiciones de ejecución.",
+        "Ignorar la tendencia porque las pruebas automatizadas suelen ser exactas, pese a los cambios en las condiciones de ejecución.",
+        "Despedir a los ingenieros de automatización sin investigar, pese a los cambios en las condiciones de ejecución.",
+        "Investigar si hay defectos reales, inestabilidad del entorno o pruebas inestables u obsoletas antes de actuar."
+      ],
+      "correctIndex": 3,
+      "explanation": "Antes de tomar medidas drásticas, el gestor de pruebas debe investigar la causa raíz de la disminución de la tasa de aprobación, que podría deberse a regresiones reales, problemas del entorno o pruebas inestables u obsoletas, y responder en consecuencia."
+    },
+    {
+      "id": "al-tm-060",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.7.1",
+      "difficulty": "hard",
+      "question": "Al dotar un proyecto con una combinación de probadores experimentados y júnior, ¿qué estrategia favorece MEJOR el desarrollo del equipo y la gestión de riesgos?",
+      "options": [
+        "Asignar principalmente las áreas de mayor riesgo a probadores júnior sin supervisión, en detrimento de los objetivos compartidos.",
+        "Emparejar a probadores júnior con mentores experimentados en las áreas de mayor riesgo y aumentar gradualmente su responsabilidad independiente.",
+        "Rara vez permitir que los probadores júnior realicen actividades de prueba, sin considerar las competencias ni la carga de trabajo.",
+        "Asignar tareas al azar, sin tener en cuenta las competencias ni el nivel de riesgo y sin considerar la adecuación de competencias ni la carga de trabajo."
+      ],
+      "correctIndex": 1,
+      "explanation": "La mentoría de probadores júnior por parte de colegas experimentados en áreas de mayor riesgo equilibra el desarrollo de competencias con la gestión de riesgos y aumenta gradualmente la independencia y capacidad de los júnior."
+    },
+    {
+      "id": "al-tm-061",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.5.1",
+      "difficulty": "medium",
+      "question": "¿Para qué se asignan «gravedad» y «prioridad» a un informe de defectos, en vez de utilizar una única valoración combinada?",
+      "options": [
+        "Gravedad y prioridad suelen significar lo mismo, por lo que ambas son redundantes.",
+        "Los desarrolladores establecen la prioridad y la gravedad es irrelevante para la gestión, basándose solo en recuentos y sin distinguir ambos conceptos.",
+        "La gravedad describe el impacto; la prioridad, la urgencia, por lo que ambas valoraciones pueden diferir.",
+        "Principalmente importa la gravedad; la prioridad rara vez se usa en la gestión de defectos, pese al flujo acordado."
+      ],
+      "correctIndex": 2,
+      "explanation": "La gravedad refleja el impacto técnico o funcional de un defecto, mientras que la prioridad indica la urgencia de corregirlo según las necesidades del negocio. Un defecto de baja gravedad puede tener prioridad alta (por ejemplo, una errata visible en la página de inicio), por lo que conviene registrar ambos valores por separado."
+    },
+    {
+      "id": "al-tm-062",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.6.1",
+      "difficulty": "medium",
+      "question": "¿Qué ventaja ofrece involucrar pronto al gestor de pruebas en la definición de requisitos, en lugar de hacerlo solo cuando comienza el desarrollo?",
+      "options": [
+        "La participación temprana permite detectar y resolver problemas de capacidad de prueba y ambigüedades antes de que sea necesario un retrabajo costoso.",
+        "No aporta ninguna ventaja; los gestores de pruebas solo deben participar una vez finalizada la programación, sin adaptar el proceso al contexto del proyecto.",
+        "Garantiza que los requisitos ya no cambien, aunque difieran las prioridades y las restricciones.",
+        "Elimina la necesidad de un plan de pruebas, aunque difieran las prioridades y las restricciones."
+      ],
+      "correctIndex": 0,
+      "explanation": "La participación temprana del gestor de pruebas (y, en general, de los probadores) en la definición de requisitos ayuda a identificar ambigüedades y problemas de capacidad de prueba antes de que sea más costoso corregirlos en etapas posteriores."
+    },
+    {
+      "id": "al-tm-063",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.7.1",
+      "difficulty": "medium",
+      "question": "¿Qué incluiría normalmente un registro de riesgos mantenido por un gestor de pruebas?",
+      "options": [
+        "Usar actualizaciones informales en lugar de registrar las decisiones acordadas, sin actualizar el alcance actual.",
+        "Copiar un artefacto de un proyecto anterior sin comprobar si su alcance sigue siendo aplicable.",
+        "Copiar un plan anterior sin comprobar el alcance ni las hipótesis actuales.",
+        "Una lista de riesgos, junto con su probabilidad, impacto, medidas de mitigación y estado actual."
+      ],
+      "correctIndex": 3,
+      "explanation": "Un registro de riesgos suele enumerar los riesgos identificados, junto con su probabilidad, impacto, responsable, medidas de mitigación o contingencia y estado actual; es una herramienta dinámica para la gestión continua de riesgos."
+    },
+    {
+      "id": "al-tm-064",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.6.1",
+      "difficulty": "medium",
+      "question": "¿Por qué podría añadir el gestor de pruebas tiempo de contingencia (margen) al calendario de ejecución de las pruebas?",
+      "options": [
+        "Porque el tiempo de contingencia es obligatorio por ley en todos los proyectos, como compromiso preciso pese a una incertidumbre considerable.",
+        "Para tener en cuenta incertidumbres, como tasas de defectos inesperadas, indisponibilidad del entorno o compilaciones que llegan tarde.",
+        "Para que el calendario parezca intencionadamente peor de lo necesario, pese a cambios de alcance o capacidad.",
+        "El tiempo de contingencia rara vez es apropiado en la planificación profesional de pruebas, pese a cambios de alcance o capacidad."
+      ],
+      "correctIndex": 1,
+      "explanation": "El tiempo de contingencia (margen) ayuda a absorber incertidumbres del calendario, como tasas de defectos inesperadas, indisponibilidad del entorno o retrasos en la recepción de compilaciones, y reduce el riesgo de establecer un calendario poco realista."
+    },
+    {
+      "id": "al-tm-065",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.7.1",
+      "difficulty": "hard",
+      "question": "Una parte interesada solicita al gestor de pruebas una recomendación de publicar o no publicar. ¿En qué combinación de información debería basarse?",
+      "options": [
+        "Principalmente en la intuición personal, sin recurrir a datos y pese a cambios en las condiciones de ejecución.",
+        "En el número de casos de prueba planificados al principio del proyecto, con independencia de lo que haya cambiado desde entonces.",
+        "La cobertura alcanzada, los defectos pendientes y su impacto empresarial, el estado de los criterios de salida y el riesgo residual.",
+        "Únicamente en la fecha de publicación que prefiere el departamento de marketing, pese a cambios en las condiciones de ejecución y sin comprobar los criterios acordados, la cobertura o el riesgo residual."
+      ],
+      "correctIndex": 2,
+      "explanation": "Una recomendación fundamentada de publicar o no publicar se basa en información objetiva: la cobertura alcanzada, el impacto empresarial de los defectos pendientes, el cumplimiento de los criterios de salida y el riesgo residual de la publicación, no en intuiciones o preferencias irrelevantes."
+    },
+    {
+      "id": "al-tm-066",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.6.1",
+      "difficulty": "easy",
+      "question": "Un equipo de una aplicación móvil trabaja en sprints de dos semanas y despliega a diario en un entorno de preproducción. ¿Cómo debería adaptar eficazmente el proceso de pruebas el gestor?",
+      "options": [
+        "Utilizar ciclos de planificación breves, documentación ligera y comprobaciones frecuentes y automatizadas de humo y regresión.",
+        "Retrasar todas las pruebas hasta el último sprint para facilitar el mantenimiento de la documentación, sin adaptar el proceso al contexto del proyecto.",
+        "Exigir la aprobación formal de cada caso de prueba antes de iniciar cualquier ejecución, sin adaptar el proceso al contexto del proyecto.",
+        "Tratar cada sprint como un proyecto en cascada independiente con una fase completa de transferencia, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 0,
+      "explanation": "Los ciclos rápidos de entrega necesitan un proceso de pruebas ligero pero disciplinado. La automatización frecuente y los ciclos de retroalimentación cortos permiten responder a los cambios rápidos sin perder el control."
+    },
+    {
+      "id": "al-tm-067",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.6.2",
+      "difficulty": "medium",
+      "question": "Durante el inicio del proyecto, ¿qué actividad ayuda mejor al gestor de pruebas a alinear el proceso con los objetivos del negocio?",
+      "options": [
+        "Elegir de antemano los identificadores de defectos para que los informes parezcan organizados, sin comprobar la capacidad de prueba.",
+        "Esperar hasta que comience la ejecución para preguntar a las partes interesadas qué es lo más importante, sin adaptar el proceso al contexto del proyecto.",
+        "Copiar el enfoque de pruebas del proyecto anterior sin revisar el contexto del actual, sin adaptar el proceso a este contexto.",
+        "Facilitar un taller para identificar características de calidad críticas, riesgos empresariales clave y expectativas de publicación."
+      ],
+      "correctIndex": 3,
+      "explanation": "La alineación temprana con las partes interesadas permite al gestor de pruebas adaptar el proceso a las prioridades reales del negocio. También proporciona una base sólida para decidir el alcance, la profundidad de las pruebas y los informes."
+    },
+    {
+      "id": "al-tm-068",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.7.1",
+      "difficulty": "hard",
+      "question": "Un programa incluye un módulo de control relacionado con la seguridad y un sitio web promocional de bajo riesgo. ¿Qué enfoque de gestión de pruebas es más adecuado?",
+      "options": [
+        "Aplicar el mismo nivel de rigor a ambos flujos de trabajo para simplificar los informes, sin adaptar el proceso al contexto del proyecto.",
+        "Adaptar la profundidad de las pruebas, la independencia y los puntos de aprobación al riesgo y las obligaciones de cada flujo de trabajo.",
+        "Centrarse principalmente en el flujo de trabajo cuyo desarrollo termine primero, aplicando el mismo rigor independientemente del ciclo de vida o la criticidad.",
+        "Delegar todas las decisiones de planificación a los desarrolladores porque los flujos de trabajo son muy distintos, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los distintos perfiles de riesgo requieren diferentes niveles de control y evidencia. La gestión de pruebas debe ajustar el rigor al impacto en el negocio, al riesgo técnico y a las necesidades normativas."
+    },
+    {
+      "id": "al-tm-069",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.7.2",
+      "difficulty": "easy",
+      "question": "¿Cuál es la principal ventaja de gestión de definir los criterios de salida de las pruebas antes de comenzar la ejecución?",
+      "options": [
+        "Garantiza que no se encuentren defectos en fases tardías, sin adaptar el proceso al contexto del proyecto.",
+        "Elimina la necesidad de informar del estado durante la ejecución, aplicando el mismo rigor con independencia del ciclo de vida o la criticidad.",
+        "Establece una base objetiva para evaluar la finalización y debatir si el producto está preparado para publicarse.",
+        "Permite al equipo omitir las nuevas pruebas tras las correcciones, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 2,
+      "explanation": "Los criterios de salida predefinidos hacen que las decisiones de finalización sean menos subjetivas y ayudan al gestor a explicar el estado y el riesgo residual mediante reglas acordadas."
+    },
+    {
+      "id": "al-tm-070",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.8.1",
+      "difficulty": "medium",
+      "question": "Un equipo quiere comenzar las pruebas del sistema, aunque varias interfaces externas son inestables y la supervisión del entorno está incompleta. ¿Qué debe hacer primero el gestor de pruebas?",
+      "options": [
+        "Confirmar de nuevo los criterios de entrada, hacer visibles los riesgos y acordar qué debe estabilizarse antes de que comiencen pruebas significativas.",
+        "Iniciar de inmediato la ejecución y registrar los fallos como defectos del producto, sin adaptar el proceso al contexto del proyecto.",
+        "Omitir las pruebas del sistema y pasar directamente a preparar la publicación, sin comprobar la capacidad de prueba.",
+        "Pedir a cada probador que decida individualmente si el entorno es suficientemente adecuado, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 0,
+      "explanation": "Los criterios de entrada protegen la eficacia de las pruebas. Si no se cumplen, el gestor debe hacer visible el riesgo y acordar medidas correctivas, en vez de generar resultados engañosos."
+    },
+    {
+      "id": "al-tm-071",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.8.2",
+      "difficulty": "hard",
+      "question": "Al final del proyecto, un cambio importante de arquitectura afecta a servicios compartidos por muchas funcionalidades. En un enfoque basado en riesgos, ¿qué debe determinar la profundidad de las pruebas de regresión?",
+      "options": [
+        "Los probadores disponibles esta semana, sin adaptar el proceso al contexto del proyecto.",
+        "Principalmente las funcionalidades que fallaron en la publicación anterior, sin adaptar el proceso al contexto del proyecto.",
+        "Una muestra aleatoria de pruebas de cada subsistema, sin adaptar el proceso al contexto del proyecto.",
+        "Los componentes modificados, junto con las integraciones críticas para el negocio y las rutas de fallo a las que podrían afectar."
+      ],
+      "correctIndex": 3,
+      "explanation": "El alcance de regresión debe basarse en el impacto y el riesgo, no en la conveniencia. Los cambios en la arquitectura compartida pueden afectar a muchas rutas críticas además del código modificado directamente."
+    },
+    {
+      "id": "al-tm-072",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.9.1",
+      "difficulty": "easy",
+      "question": "¿Qué práctica favorece mejor la capacidad de prueba cuando se debaten los requisitos por primera vez?",
+      "options": [
+        "Evitar debatir el comportamiento esperado hasta que se complete el código, sin adaptar el proceso al contexto del proyecto.",
+        "Solicitar criterios de aceptación medibles y formas de observar los resultados en registros, informes o interfaces.",
+        "Documentar principalmente los flujos positivos para facilitar la aprobación de los requisitos, aplicando el mismo rigor con independencia del ciclo de vida o la criticidad.",
+        "Excluir las expectativas no funcionales porque se probarán más adelante, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los requisitos que se pueden probar son específicos y observables. Prestar atención temprana a los criterios de aceptación y a la visibilidad reduce la ambigüedad y el retrabajo posterior."
+    },
+    {
+      "id": "al-tm-073",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.9.2",
+      "difficulty": "medium",
+      "question": "Una organización pasa de publicar trimestralmente a una entrega continua. ¿Qué cambio debería priorizar primero el gestor de pruebas en el proceso?",
+      "options": [
+        "Sustituir a todos los probadores por desarrolladores, aunque difieran las prioridades y las restricciones.",
+        "Dejar de realizar pruebas exploratorias porque las publicaciones son demasiado frecuentes, aplicando el mismo rigor con independencia del ciclo de vida o la criticidad.",
+        "Redefinir los puntos de control de calidad mediante etapas más pequeñas y frecuentes, respaldadas por mecanismos de retroalimentación más rápidos.",
+        "Mantener el mismo ciclo de informes y la misma frecuencia de aprobaciones, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 2,
+      "explanation": "La entrega continua requiere ciclos de control más cortos. Las etapas más pequeñas y la retroalimentación más rápida permiten que el proceso siga el ritmo de las publicaciones frecuentes."
+    },
+    {
+      "id": "al-tm-074",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.10.1",
+      "difficulty": "hard",
+      "question": "Una solución utiliza varios componentes de terceros sin cambios y un motor de precios recién desarrollado que realiza cálculos esenciales para los ingresos. ¿Dónde debería centrarse más el esfuerzo de pruebas?",
+      "options": [
+        "Principalmente en el nuevo motor de precios y en las integraciones que podrían provocar fallos críticos para el negocio.",
+        "Por igual en todos los componentes, porque la equidad es importante, sin adaptar el proceso al contexto del proyecto.",
+        "Principalmente en los componentes de terceros porque es más fácil corregir el código interno, sin adaptar el proceso al contexto del proyecto.",
+        "Principalmente en las comprobaciones de la interfaz de usuario porque son lo primero que ven los clientes, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 0,
+      "explanation": "El esfuerzo de pruebas debe seguir los riesgos empresariales y técnicos. Un motor nuevo esencial para los ingresos y sus integraciones merecen más atención que componentes reutilizados y estables."
+    },
+    {
+      "id": "al-tm-075",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.10.2",
+      "difficulty": "easy",
+      "question": "Desde la perspectiva de la gestión, ¿qué afirmación sobre las pruebas independientes es más precisa?",
+      "options": [
+        "Las pruebas independientes suelen ser más baratas que las realizadas por el equipo integrado, sin adaptar el proceso al contexto del proyecto.",
+        "Los probadores independientes rara vez deben colaborar con los desarrolladores, sin adaptar el proceso al contexto del proyecto.",
+        "La independencia importa principalmente en las pruebas de rendimiento, pese a las diferencias de riesgo y obligaciones.",
+        "Una mayor independencia puede mejorar la objetividad, pero también aumentar el esfuerzo de comunicación y reducir el conocimiento inmediato del dominio."
+      ],
+      "correctIndex": 3,
+      "explanation": "La independencia aporta una perspectiva nueva, pero también tiene contrapartidas. El gestor de pruebas equilibra las ventajas y los costes según el contexto del proyecto."
+    },
+    {
+      "id": "al-tm-076",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.11.1",
+      "difficulty": "medium",
+      "question": "El análisis de incidentes en producción muestra que muchos problemas escapados se debieron a interfaces entre equipos mal entendidas. ¿Qué cambio de proceso es más adecuado?",
+      "options": [
+        "Reducir todas las pruebas de interfaces y dedicar más tiempo a las pruebas unitarias, sin adaptar el proceso al contexto del proyecto.",
+        "Añadir revisiones tempranas de interfaces entre equipos y reforzar el diseño y la ejecución de pruebas centradas en la integración.",
+        "Pedir a cada equipo que defina su propia escala de gravedad para problemas de interfaces, aplicando el mismo rigor independientemente del ciclo de vida o la criticidad.",
+        "Aplazar el registro de defectos hasta la retrospectiva de la publicación, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los problemas que escapan en las interfaces suelen indicar una coordinación insuficiente entre equipos y un enfoque de integración débil. El proceso debe abordar esos puntos de fallo antes."
+    },
+    {
+      "id": "al-tm-077",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.11.2",
+      "difficulty": "hard",
+      "question": "El comité del programa quiere que todos los equipos sigan un proceso de pruebas idéntico para facilitar la elaboración de informes consolidados. ¿Qué debería recomendar el gestor de pruebas?",
+      "options": [
+        "Permitir que cada equipo ignore por completo la gobernanza del programa, sin comprobar la capacidad de prueba.",
+        "Imponer los mismos documentos, puntos de control y técnicas a todos los equipos, independientemente de los riesgos o el ciclo de vida y sin adaptar el proceso al contexto del proyecto.",
+        "Mantener un marco común de gobernanza y una base común de informes, permitiendo adaptar el proceso a cada equipo cuando su contexto sea distinto.",
+        "Basar el proceso principalmente en las preferencias del equipo más maduro, sin adaptarlo al contexto del proyecto."
+      ],
+      "correctIndex": 2,
+      "explanation": "La coherencia es útil para la gobernanza, pero una uniformidad rígida puede ser ineficiente. Un marco compartido con adaptaciones controladas conserva tanto la comparabilidad como la pertinencia."
+    },
+    {
+      "id": "al-tm-078",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.12.1",
+      "difficulty": "easy",
+      "question": "Antes de elegir una nueva herramienta de gestión o presentación de informes de pruebas, ¿qué debe definir primero el gestor de pruebas?",
+      "options": [
+        "El problema empresarial que se debe resolver, los flujos de información necesarios y las principales necesidades de integración.",
+        "El diseño del stand del proveedor en la última conferencia, sin adaptar el proceso al contexto del proyecto.",
+        "Cuántos paneles opcionales puede mostrar la herramienta de forma predeterminada, sin adaptar el proceso al contexto del proyecto.",
+        "Qué integrante del equipo prefiere más los colores de la interfaz, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 0,
+      "explanation": "La selección de herramientas debe partir de las necesidades, no de las funcionalidades. Unos objetivos y requisitos de integración claros ayudan a evitar una solución costosa que no se ajuste a las necesidades."
+    },
+    {
+      "id": "al-tm-079",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.12.2",
+      "difficulty": "medium",
+      "question": "Al final de las pruebas, el alcance del producto se amplía para incluir un nuevo país con reglas fiscales particulares. ¿Qué debería ocurrir en el proceso de pruebas?",
+      "options": [
+        "Nada, porque los cambios de proceso al final del proyecto suelen ser perjudiciales y no debe adaptarse el proceso al contexto del proyecto.",
+        "Detener las pruebas de las funciones existentes y pasar por completo a la nueva funcionalidad del país, sin adaptar el proceso al contexto del proyecto.",
+        "Tratar el alcance adicional principalmente como documentación porque los requisitos ya se aprobaron, sin adaptar el proceso al contexto del proyecto.",
+        "Actualizar la evaluación de riesgos, revisar las prioridades y las hipótesis sobre los criterios de entrada y salida, y ajustar el plan con transparencia."
+      ],
+      "correctIndex": 3,
+      "explanation": "Una ampliación importante del alcance modifica el riesgo y la carga de trabajo. El gestor debe actualizar las hipótesis y comunicar cómo afectan a las prioridades y a la preparación."
+    },
+    {
+      "id": "al-tm-080",
+      "chapter": "1. Proceso de pruebas",
+      "loRef": "AL-TM-1.13.1",
+      "difficulty": "hard",
+      "question": "Un proveedor entrega un componente clave con escasa evidencia de pruebas internas y poca observabilidad. ¿Qué respuesta de gestión permite mantener mejor la confianza en la entrega?",
+      "options": [
+        "Aceptar el componente como de bajo riesgo porque lo entrega un proveedor, sin adaptar el proceso al contexto del proyecto.",
+        "Considerar que el componente entraña mayor riesgo para el producto, reforzar las comprobaciones independientes y controlar más las decisiones de progresión.",
+        "Reducir las pruebas independientes para ahorrar tiempo en la integración, aplicando el mismo rigor independientemente del ciclo de vida o la criticidad.",
+        "Suponer que la supervisión en producción revelará con suficiente rapidez cualquier problema importante, sin adaptar el proceso al contexto del proyecto."
+      ],
+      "correctIndex": 1,
+      "explanation": "La escasez de evidencia y la baja observabilidad aumentan la incertidumbre. El gestor de pruebas debe responder incrementando el escrutinio y controlando el riesgo con mayor rigor."
+    },
+    {
+      "id": "al-tm-081",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.7.1",
+      "difficulty": "easy",
+      "question": "¿Cuál es el propósito principal de una estrategia de pruebas organizacional?",
+      "options": [
+        "Enumerar todos los casos de prueba del sprint actual, pese a los cambios en la evidencia o la propiedad.",
+        "Sustituir de forma permanente todos los documentos de planificación de los proyectos, sin actualizar el alcance actual.",
+        "Describir los enfoques, las normas y los principios de pruebas predeterminados que los proyectos deben adaptar.",
+        "Almacenar principalmente capturas de pantalla de defectos de publicaciones anteriores, sin actualizar el alcance actual."
+      ],
+      "correctIndex": 2,
+      "explanation": "La estrategia organizacional ofrece a los proyectos un punto de partida reutilizable. Cada proyecto debe adaptar esas directrices a su propio contexto."
+    },
+    {
+      "id": "al-tm-082",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.7.2",
+      "difficulty": "medium",
+      "question": "Un plan de pruebas maestro hace referencia a planes separados para las pruebas del sistema y las pruebas de aceptación del usuario. ¿Qué contenido corresponde más claramente al plan maestro?",
+      "options": [
+        "La gobernanza general de las pruebas, los principales hitos y las dependencias entre niveles de prueba.",
+        "Los datos de prueba detallados de un escenario de aceptación, sin actualizar el alcance actual.",
+        "Copiar un artefacto de un proyecto anterior sin comprobar si su alcance sigue siendo aplicable.",
+        "Principalmente los defectos descubiertos tras la publicación, sin actualizar el alcance actual."
+      ],
+      "correctIndex": 0,
+      "explanation": "El plan maestro coordina la visión general entre niveles. Los detalles de ejecución suelen pertenecer a los planes específicos de cada nivel."
+    },
+    {
+      "id": "al-tm-083",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.8.1",
+      "difficulty": "hard",
+      "question": "Un proyecto regulado quiere reducir la documentación para avanzar más rápido. ¿Qué decisión sobre la documentación es la más adecuada?",
+      "options": [
+        "Eliminar primero los registros de aprobación porque no aportan valor en un trabajo regulado, sin actualizar el alcance actual.",
+        "Utilizar acuerdos verbales no documentados para que el equipo avance más rápido, sin actualizar el alcance actual.",
+        "Dejar de elaborar informes resumen hasta después de la publicación, tratando una plantilla como si fuera específica del proyecto.",
+        "Adaptar el formato y el nivel de detalle cuando sea posible, pero conservar la trazabilidad, las aprobaciones y la evidencia exigidas por las obligaciones."
+      ],
+      "correctIndex": 3,
+      "explanation": "La adaptación debe reducir el trabajo innecesario, no eliminar la evidencia de control requerida. En contextos regulados, el gestor debe conservar lo necesario para el cumplimiento y el aseguramiento."
+    },
+    {
+      "id": "al-tm-084",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.8.2",
+      "difficulty": "easy",
+      "question": "¿Qué artefacto es más adecuado para registrar las hipótesis detrás de las estimaciones de pruebas y los principales riesgos del calendario?",
+      "options": [
+        "Una biblioteca de capturas de defectos como único registro de las hipótesis de estimación y las dependencias del calendario, sin actualizar el alcance actual.",
+        "El plan de pruebas del proyecto o sus notas de planificación, donde la información se pueda revisar y actualizar.",
+        "Copiar un artefacto de un proyecto anterior sin comprobar si su alcance sigue siendo aplicable.",
+        "El manual de operaciones de producción, sin actualizar el alcance actual."
+      ],
+      "correctIndex": 1,
+      "explanation": "Las hipótesis de estimación y los riesgos de planificación deben estar visibles y ser revisables. El plan de pruebas es el lugar habitual para registrar y mantener ese contexto."
+    },
+    {
+      "id": "al-tm-085",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.9.1",
+      "difficulty": "medium",
+      "question": "¿Por qué mantendría un gestor de pruebas un panel de calidad del producto separado de la lista detallada de defectos?",
+      "options": [
+        "Para ocultar los datos brutos al equipo, tratando una plantilla como si fuera específica del proyecto.",
+        "Para sustituir permanentemente todos los informes formales, pese a los cambios en la evidencia o la propiedad.",
+        "Para ofrecer a las partes interesadas una visión concisa de las tendencias y los riesgos sin obligarlas a revisar cada ticket.",
+        "Para evitar el seguimiento de las pruebas bloqueadas, tratando una plantilla como si fuera específica del proyecto."
+      ],
+      "correctIndex": 2,
+      "explanation": "Cada audiencia necesita un nivel de detalle distinto. Los paneles resumen las señales más importantes para las decisiones de gestión."
+    },
+    {
+      "id": "al-tm-086",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.9.2",
+      "difficulty": "hard",
+      "question": "Un plan de pruebas reutilizado del año anterior todavía hace referencia a interfaces retiradas y entornos obsoletos. ¿Cuál es el mayor riesgo de gestión?",
+      "options": [
+        "El plan puede generar una confianza falsa y dirigir la ejecución hacia tareas que ya no se corresponden con la realidad.",
+        "El equipo encontrará automáticamente más defectos porque el plan es más largo, sin actualizar el alcance actual.",
+        "Las partes interesadas lo preferirán porque contiene más detalles históricos, sin actualizar el alcance actual.",
+        "Reducirá la necesidad de actualizar la trazabilidad, sin actualizar el alcance actual."
+      ],
+      "correctIndex": 0,
+      "explanation": "Los documentos desactualizados pueden inducir a error en la planificación, la ejecución y los informes. La reutilización solo es útil si el contenido se actualiza activamente para reflejar el alcance y los riesgos actuales."
+    },
+    {
+      "id": "al-tm-087",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.10.1",
+      "difficulty": "easy",
+      "question": "¿Qué afirmación sobre ISO/IEC/IEEE 29119 e IEEE 829 es más precisa para un gestor de pruebas?",
+      "options": [
+        "Prohíben cualquier enfoque ágil de documentación, tratando una plantilla como si fuera específica del proyecto.",
+        "Definen valores de gravedad de defectos para todos los sectores, sin actualizar el alcance actual.",
+        "Se aplican principalmente cuando todas las pruebas son manuales, tratando una plantilla como si fuera específica del proyecto.",
+        "Son ejemplos de directrices para estructurar documentación de pruebas y los proyectos pueden adaptar su uso al contexto."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las normas de documentación proporcionan estructura y terminología. Los gestores de pruebas las utilizan como orientación y las adaptan a las necesidades de la organización y del proyecto."
+    },
+    {
+      "id": "al-tm-088",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.10.2",
+      "difficulty": "medium",
+      "question": "¿Qué debería destacar un informe resumen de pruebas para una reunión del comité de dirección?",
+      "options": [
+        "Todas las líneas del registro de ejecución generadas durante el ciclo de prueba, sin actualizar el alcance actual.",
+        "El estado respecto a los objetivos y criterios de salida, los riesgos importantes sin resolver y una recomendación clara.",
+        "Principalmente el número de casos de prueba diseñados hasta el momento, sin actualizar el alcance actual.",
+        "Los nombres de todas las personas que asistieron a las reuniones de clasificación, sin actualizar el alcance actual."
+      ],
+      "correctIndex": 1,
+      "explanation": "Las partes interesadas de alto nivel necesitan un resumen orientado a la toma de decisiones. El informe debe relacionar los resultados y los riesgos residuales con el siguiente paso recomendado."
+    },
+    {
+      "id": "al-tm-089",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.11.1",
+      "difficulty": "hard",
+      "question": "Un proveedor solicita el plan de pruebas de nivel cuando la ejecución ya ha comenzado. ¿Qué problema es más probable?",
+      "options": [
+        "El proyecto terminará automáticamente antes de lo previsto, sin actualizar el alcance actual.",
+        "El proveedor podrá ignorar sin riesgo el flujo de trabajo de defectos acordado, sin actualizar el alcance actual.",
+        "Es posible que el proveedor aún no tenga claro el alcance, las responsabilidades y las expectativas de finalización.",
+        "El equipo ya no necesitará informes de estado, tratando una plantilla como si fuera específica del proyecto."
+      ],
+      "correctIndex": 2,
+      "explanation": "El acceso tardío a los documentos de planificación esenciales suele provocar una alineación tardía. Esto puede generar expectativas incompatibles sobre el alcance, la evidencia y los entregables."
+    },
+    {
+      "id": "al-tm-090",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.11.2",
+      "difficulty": "easy",
+      "question": "¿Qué información documentada define más directamente quién aprueba los principales entregables y decisiones de prueba?",
+      "options": [
+        "La sección de gobernanza o responsabilidades del plan de pruebas, donde se define la autoridad para aprobar.",
+        "La estrategia de ramificación del código fuente, sin actualizar el alcance actual.",
+        "Usar actualizaciones informales en lugar de registrar las decisiones acordadas, sin actualizar el alcance actual.",
+        "El archivo de datos de prueba, tratando una plantilla como si fuera específica del proyecto."
+      ],
+      "correctIndex": 0,
+      "explanation": "La autoridad para aprobar debe quedar explícita. Una sección de gobernanza documentada evita confusiones sobre las aprobaciones y la escalación."
+    },
+    {
+      "id": "al-tm-091",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.12.1",
+      "difficulty": "medium",
+      "question": "Una matriz de trazabilidad muestra varios requisitos críticos sin pruebas vinculadas. ¿Cuál es la mejor medida siguiente?",
+      "options": [
+        "Ignorar la brecha si la tendencia de defectos parece favorable, tratando una plantilla como si fuera específica del proyecto.",
+        "Eliminar la matriz porque ahora muestra un problema, tratando una plantilla como si fuera específica del proyecto.",
+        "Suponer que los requisitos son de bajo riesgo porque no se redactaron pruebas, sin actualizar el alcance actual.",
+        "Investigar si realmente falta cobertura y, antes de afirmar que se ha completado el trabajo, actualizar las pruebas o las decisiones de alcance."
+      ],
+      "correctIndex": 3,
+      "explanation": "Los vínculos ausentes pueden indicar brechas reales de cobertura o defectos de trazabilidad. En ambos casos, el gestor debe resolver la brecha antes de utilizar la documentación para el aseguramiento."
+    },
+    {
+      "id": "al-tm-092",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.12.2",
+      "difficulty": "hard",
+      "question": "Varios equipos envían informes de estado con escalas distintas para la gravedad de los defectos. ¿Qué mejora de la documentación sería más útil?",
+      "options": [
+        "Permitir que cada equipo mantenga sus propias definiciones para conservar flexibilidad, sin actualizar el alcance actual.",
+        "Establecer un glosario común para los informes, definiciones de gravedad y plantillas compartidas que permitan comparar los informes.",
+        "Eliminar la gravedad de los defectos de todos los informes, tratando una plantilla como si fuera específica del proyecto.",
+        "Informar principalmente del número total de defectos, independientemente de su impacto y sin actualizar el alcance actual."
+      ],
+      "correctIndex": 1,
+      "explanation": "Las definiciones compartidas son esenciales para que los informes consolidados sean fiables. Sin ellas, las métricas agregadas pueden inducir a error."
+    },
+    {
+      "id": "al-tm-093",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.13.1",
+      "difficulty": "easy",
+      "question": "¿Por qué se deben mantener los productos de prueba y los documentos esenciales bajo control de versiones?",
+      "options": [
+        "Para impedir que cualquier revisor vea el contenido histórico, sin actualizar el alcance actual.",
+        "Para garantizar que todos los defectos sean reproducibles, sin actualizar el alcance actual.",
+        "Para facilitar la colaboración, la reversión de cambios y la auditabilidad de qué cambió y cuándo.",
+        "Para sustituir la necesidad de procedimientos de copia de seguridad, sin actualizar el alcance actual."
+      ],
+      "correctIndex": 2,
+      "explanation": "El control de versiones conserva el historial y facilita el trabajo en equipo. Resulta especialmente útil cuando los planes, scripts y datos evolucionan durante el proyecto."
+    },
+    {
+      "id": "al-tm-094",
+      "chapter": "2. Documentación de gestión de pruebas",
+      "loRef": "AL-TM-2.13.2",
+      "difficulty": "medium",
+      "question": "Al introducir una nueva herramienta de gestión de pruebas, ¿qué debería documentarse primero para evitar una adopción caótica?",
+      "options": [
+        "El flujo de trabajo, las funciones, los campos obligatorios y las reglas de presentación de informes que debe seguir el equipo.",
+        "Principalmente la lista de complementos opcionales que admite la herramienta, sin actualizar el alcance actual.",
+        "La prohibición de realizar pruebas manuales fuera de la herramienta, sin actualizar el alcance actual.",
+        "Copiar un artefacto de un proyecto anterior sin comprobar si su alcance sigue siendo aplicable."
+      ],
+      "correctIndex": 0,
+      "explanation": "Una herramienta no crea por sí sola un proceso. Antes de que pueda respaldarlo eficazmente, se necesitan reglas de trabajo y responsabilidades claras."
+    },
+    {
+      "id": "al-tm-095",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.6.1",
+      "difficulty": "easy",
+      "question": "¿Cuál de las siguientes estimaciones es un ejemplo de estimación ascendente de pruebas?",
+      "options": [
+        "Partir del presupuesto total del proyecto y asignar un porcentaje arbitrario a las pruebas, pese a cambios de alcance o capacidad.",
+        "Comparar de manera informal el proyecto con una versión anterior y elegir la misma cifra, como compromiso preciso pese a una incertidumbre considerable.",
+        "Basarse principalmente en la intuición de la dirección, sin desglosar tareas y aplicando una proporción fija pese a cambios de alcance o capacidad.",
+        "Sumar las estimaciones detalladas de las tareas de planificación, configuración del entorno, diseño y ejecución de pruebas, e informes."
+      ],
+      "correctIndex": 3,
+      "explanation": "La estimación ascendente parte de elementos de trabajo detallados. A menudo requiere más esfuerzo, pero facilita detectar hipótesis y tareas omitidas."
+    },
+    {
+      "id": "al-tm-096",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.6.2",
+      "difficulty": "medium",
+      "question": "Los datos históricos muestran que estabilizar 12 comprobaciones de regresión automatizadas suele requerir una jornada de probador. Para una versión similar que necesita 240 comprobaciones, ¿cuál es la estimación de esfuerzo de referencia?",
+      "options": [
+        "12 jornadas de probador, como compromiso preciso pese a una incertidumbre considerable.",
+        "20 jornadas de probador, según la tasa observada de 12 comprobaciones por jornada.",
+        "24 jornadas de probador, sin comprobar si el trabajo anterior es comparable y pese a cambios de alcance o capacidad.",
+        "240 jornadas de probador, sin comprobar si el trabajo anterior es comparable y pese a cambios de alcance o capacidad."
+      ],
+      "correctIndex": 1,
+      "explanation": "A razón de 12 comprobaciones por jornada de probador, 240 comprobaciones requieren 20 jornadas. Las proporciones históricas son útiles si el nuevo trabajo es realmente comparable."
+    },
+    {
+      "id": "al-tm-097",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.7.1",
+      "difficulty": "hard",
+      "question": "En una sesión de Wideband Delphi, ¿por qué es útil que los expertos preparen sus estimaciones iniciales de forma independiente antes del debate grupal?",
+      "options": [
+        "Garantiza que la primera estimación sea la definitiva, aplicando una proporción fija.",
+        "Elimina la necesidad de documentar hipótesis, pese a cambios de alcance o capacidad.",
+        "Reduce el anclaje y el pensamiento grupal antes de debatir las hipótesis.",
+        "Hace innecesarios los datos históricos para todas las estimaciones futuras, como compromiso preciso pese a una incertidumbre considerable."
+      ],
+      "correctIndex": 2,
+      "explanation": "Las estimaciones iniciales independientes ayudan a revelar diferencias genuinas de criterio. Así, el debate posterior se basa en las hipótesis y no en la presión social temprana."
+    },
+    {
+      "id": "al-tm-098",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.7.2",
+      "difficulty": "easy",
+      "question": "¿Qué factor justifica más añadir un margen al calendario después de la entrega del entorno de pruebas?",
+      "options": [
+        "La posibilidad de que defectos de configuración, interfaces inestables o retrasos en el acceso reduzcan el tiempo de ejecución productiva.",
+        "La preferencia del equipo por reuniones de estado más breves, sin comprobar si el trabajo anterior es comparable.",
+        "El deseo de ocultar a la dirección estimaciones inexactas, como compromiso preciso pese a una incertidumbre considerable.",
+        "Estimar a partir de un porcentaje fijo de desarrollo sin validar si el trabajo es comparable, pese a cambios de alcance o capacidad."
+      ],
+      "correctIndex": 0,
+      "explanation": "El margen debe absorber incertidumbres realistas. La inestabilidad del entorno es una causa habitual de pérdida de tiempo de prueba y de la necesidad de replanificar."
+    },
+    {
+      "id": "al-tm-099",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.8.1",
+      "difficulty": "medium",
+      "question": "Un proyecto tiene una fecha de finalización y una cantidad de personal fijas, pero el alcance de las pruebas ha aumentado. ¿Cuál es la respuesta de gestión más realista?",
+      "options": [
+        "Prometer la misma profundidad en todas las áreas y esperar que aumente la productividad, pese a cambios de alcance o capacidad.",
+        "Prohibir todas las nuevas pruebas de corrección para ahorrar tiempo, como compromiso preciso pese a una incertidumbre considerable.",
+        "Ampliar indefinidamente la jornada de los probadores sin revisar el plan y aplicando una proporción fija pese a cambios de alcance o capacidad.",
+        "Renegociar las prioridades del alcance o la aceptación del riesgo residual, en vez de fingir que nada ha cambiado."
+      ],
+      "correctIndex": 3,
+      "explanation": "Cuando las restricciones y el alcance entran en conflicto, es inevitable hacer concesiones. El gestor debe explicitarlas en lugar de ocultar su impacto."
+    },
+    {
+      "id": "al-tm-100",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.8.2",
+      "difficulty": "hard",
+      "question": "Dos componentes tienen un tamaño similar, pero uno es esencial para el negocio y se integra con cinco sistemas externos. ¿Cómo debería afectar esto a la estimación de pruebas?",
+      "options": [
+        "Ambos componentes deben recibir la misma estimación porque tienen el mismo tamaño, como compromiso preciso pese a una incertidumbre considerable.",
+        "El componente integrado y esencial para el negocio debe recibir más esfuerzo de prueba, porque la complejidad y el impacto aumentan el riesgo.",
+        "El componente más sencillo debe recibir más esfuerzo porque se terminará antes, pese a cambios de alcance o capacidad.",
+        "No debe hacerse ninguna estimación hasta terminar la programación, sin comprobar si el trabajo anterior es comparable y pese a cambios de alcance o capacidad."
+      ],
+      "correctIndex": 1,
+      "explanation": "El tamaño por sí solo no basta para estimar las pruebas. Las interfaces, el impacto empresarial y el riesgo suelen requerir más esfuerzo de planificación y ejecución."
+    },
+    {
+      "id": "al-tm-101",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.9.1",
+      "difficulty": "easy",
+      "question": "¿Cuál es una debilidad importante de basar una nueva estimación de pruebas únicamente en la duración del calendario de proyectos anteriores?",
+      "options": [
+        "Normalmente produce estimaciones más altas que el juicio de expertos, aplicando una proporción fija.",
+        "Solo puede utilizarse en proyectos externalizados, pese a cambios de alcance o capacidad.",
+        "Ignora las diferencias de alcance, riesgo, automatización, dotación de personal y contexto técnico.",
+        "Elimina la necesidad de considerar las dependencias de planificación, como compromiso preciso pese a una incertidumbre considerable."
+      ],
+      "correctIndex": 2,
+      "explanation": "La duración histórica puede ser útil, pero debe interpretarse en su contexto. Los calendarios aparentemente similares pueden ocultar factores de esfuerzo muy distintos."
+    },
+    {
+      "id": "al-tm-102",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.9.2",
+      "difficulty": "medium",
+      "question": "Un equipo de pruebas distribuido abarca tres zonas horarias y comparte un único entorno de rendimiento, que es un recurso escaso. ¿Qué táctica de planificación sería más útil?",
+      "options": [
+        "Crear franjas horarias reservadas, puntos de transferencia definidos y reglas explícitas para reservar el entorno.",
+        "Permitir que cada persona compita informalmente por el entorno cada día, pese a cambios de alcance o capacidad.",
+        "Prohibir las notas de transferencia nocturnas porque son difíciles de leer, como compromiso preciso pese a una incertidumbre considerable.",
+        "Planificar todo el trabajo de rendimiento para la última semana, aplicando principalmente una proporción fija pese a cambios de alcance o capacidad."
+      ],
+      "correctIndex": 0,
+      "explanation": "Los recursos escasos compartidos requieren una planificación deliberada. Las franjas y transferencias claras reducen el tiempo de inactividad, los conflictos y los bloqueos accidentales."
+    },
+    {
+      "id": "al-tm-103",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.10.1",
+      "difficulty": "hard",
+      "question": "Tras la primera semana de ejecución, el esfuerzo real ya duplica la estimación. ¿Qué debe hacer primero el gestor de pruebas?",
+      "options": [
+        "Suspender todos los informes de defectos hasta que mejore la estimación, pese a cambios de alcance o capacidad.",
+        "Sustituir en el plan la estimación original sin dar explicaciones, como compromiso preciso pese a una incertidumbre considerable.",
+        "Suponer que el equipo recuperará naturalmente el retraso antes del final, aplicando una proporción fija pese a cambios de alcance o capacidad.",
+        "Analizar la causa, utilizar los datos reales de rendimiento para volver a estimar el trabajo restante y, después, decidir medidas de control."
+      ],
+      "correctIndex": 3,
+      "explanation": "Una desviación temprana es una señal, no solo una cifra. El gestor debe comprender los factores que la causan y replanificar basándose en la evidencia del progreso real."
+    },
+    {
+      "id": "al-tm-104",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.10.2",
+      "difficulty": "easy",
+      "question": "¿Qué actividad suele olvidarse en las estimaciones de pruebas, aunque puede consumir un esfuerzo considerable?",
+      "options": [
+        "Imprimir el calendario corporativo de días festivos, como compromiso preciso pese a una incertidumbre considerable.",
+        "Repetir las pruebas de defectos, elaborar informes y coordinarse con desarrolladores y partes interesadas.",
+        "Excluir las nuevas pruebas y la configuración del entorno del esfuerzo de pruebas, pese a cambios de alcance o capacidad.",
+        "Usar un porcentaje fijo del esfuerzo de desarrollo sin comprobar si existen datos históricos comparables."
+      ],
+      "correctIndex": 1,
+      "explanation": "El esfuerzo de pruebas no consiste únicamente en redactar y ejecutar pruebas. El seguimiento de defectos y la comunicación pueden consumir mucho tiempo, especialmente en proyectos complejos."
+    },
+    {
+      "id": "al-tm-105",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.11.1",
+      "difficulty": "medium",
+      "question": "¿Por qué pueden diferir considerablemente las estimaciones descendente y ascendente para el mismo esfuerzo de pruebas?",
+      "options": [
+        "Porque una de ellas debe ser necesariamente incorrecta, aplicando una proporción fija sin comprobar si el trabajo previo es comparable.",
+        "Porque las estimaciones ascendentes se utilizan principalmente en proyectos de seguridad, tratando la estimación como una certeza.",
+        "Porque las tareas ocultas, las distintas hipótesis o las definiciones de alcance incoherentes pueden afectar más a un enfoque que al otro.",
+        "Porque las estimaciones descendentes rara vez incluyen riesgos, como compromiso preciso pese a una incertidumbre considerable."
+      ],
+      "correctIndex": 2,
+      "explanation": "Los distintos enfoques de estimación ponen de manifiesto información diferente. Las grandes diferencias suelen revelar trabajo omitido, alcance poco claro o hipótesis defectuosas que deben revisarse."
+    },
+    {
+      "id": "al-tm-106",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.11.2",
+      "difficulty": "hard",
+      "question": "Un programa necesita una estimación temprana de pruebas antes de que los requisitos estén maduros. ¿Qué enfoque es el más adecuado?",
+      "options": [
+        "Proporcionar un intervalo aproximado de estimación descendente con hipótesis explícitas y prever su refinamiento a medida que mejore la información.",
+        "Esperar a que todos los requisitos sean definitivos y no proporcionar ninguna estimación, pese a cambios de alcance o capacidad.",
+        "Comprometerse con una cifra exacta única para facilitar la aprobación de la financiación, como compromiso preciso pese a una incertidumbre considerable.",
+        "Utilizar principalmente recuentos de defectos de proyectos no relacionados, aplicando una proporción fija pese a cambios de alcance o capacidad."
+      ],
+      "correctIndex": 0,
+      "explanation": "Las estimaciones tempranas deben reflejar la incertidumbre. Un intervalo con sus hipótesis es más honesto y útil que una precisión falsa."
+    },
+    {
+      "id": "al-tm-107",
+      "chapter": "3. Estimación y planificación temporal de las pruebas",
+      "loRef": "AL-TM-3.12.1",
+      "difficulty": "easy",
+      "question": "¿Qué decisión sobre la dotación de personal reduce mejor el riesgo de un punto único de fallo en el calendario de pruebas?",
+      "options": [
+        "Asignar todo el conocimiento especializado a una sola persona para ser más eficientes, pese a cambios de alcance o capacidad.",
+        "Mantener el conocimiento de los datos de prueba principalmente en manos del proveedor, como compromiso preciso pese a una incertidumbre considerable.",
+        "Evitar cualquier solapamiento de responsabilidades entre probadores, aplicando una proporción fija.",
+        "Formar a varios integrantes del equipo en las funcionalidades y los entornos críticos."
+      ],
+      "correctIndex": 3,
+      "explanation": "La formación cruzada mejora la resiliencia. Si una persona no está disponible, es menos probable que las pruebas se detengan en una ruta crítica."
+    },
+    {
+      "id": "al-tm-108",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.6.1",
+      "difficulty": "easy",
+      "question": "¿Qué suele mostrar un gráfico de trabajo pendiente cuando se utiliza para la gestión de pruebas?",
+      "options": [
+        "Principalmente el número acumulado de incidentes en producción, pese a cambios en las condiciones de ejecución.",
+        "La cantidad de trabajo de prueba planificado que queda por realizar con el paso del tiempo, y si la finalización mantiene el ritmo previsto.",
+        "La fecha definitiva de publicación elegida por marketing, sin considerar el alcance bloqueado ni la cobertura ponderada por riesgos.",
+        "Informar de una tasa de aprobación sin revelar las pruebas omitidas o bloqueadas, pese a cambios en las condiciones de ejecución."
+      ],
+      "correctIndex": 1,
+      "explanation": "Un gráfico de trabajo pendiente se centra en el trabajo restante. Ayuda al gestor a ver si el progreso apunta a terminar según lo previsto o a desviarse del plan."
+    },
+    {
+      "id": "al-tm-109",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.6.2",
+      "difficulty": "medium",
+      "question": "Los defectos encontrados por semana disminuyen, pero aumenta el número de defectos críticos sin resolver. ¿Cuál es la mejor interpretación?",
+      "options": [
+        "El producto claramente se está estabilizando, sin explicar el alcance bloqueado ni la cobertura de riesgos.",
+        "La herramienta de defectos está definitivamente averiada, sin considerar el alcance bloqueado ni la cobertura ponderada por riesgos y pese a cambios en las condiciones de ejecución.",
+        "El equipo encuentra menos problemas nuevos, pero el riesgo aún puede estar aumentando porque los problemas graves no se resuelven con suficiente rapidez.",
+        "Los criterios de salida ya deben cumplirse, sin explicar el alcance bloqueado ni la cobertura de riesgos."
+      ],
+      "correctIndex": 2,
+      "explanation": "Distintas métricas pueden evolucionar en direcciones opuestas. Una menor tasa de detección no compensa el aumento del riesgo crítico sin resolver."
+    },
+    {
+      "id": "al-tm-110",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.7.1",
+      "difficulty": "hard",
+      "question": "Un panel indica estado verde porque se ejecutaron muchas pruebas, pero las áreas de alto riesgo solo recibieron una cobertura superficial. ¿Qué debe hacer el gestor de pruebas?",
+      "options": [
+        "Informar de la limitación, añadir indicadores de cobertura de riesgos y evitar presentar el volumen de ejecución como única evidencia de preparación.",
+        "Aceptar el estado verde porque las métricas de volumen son objetivas, tratando el volumen como medida de preparación.",
+        "Ocultar el panel hasta después de la publicación, sin explicar el alcance bloqueado ni la cobertura de riesgos.",
+        "Convertir todos los escenarios de alto riesgo en pruebas de baja prioridad, sin relacionar la métrica con los criterios de salida."
+      ],
+      "correctIndex": 0,
+      "explanation": "Un buen gestor explica qué significa una métrica y qué no significa. Un número elevado de ejecuciones no basta si siguen sin probarse las áreas de mayor riesgo."
+    },
+    {
+      "id": "al-tm-111",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.7.2",
+      "difficulty": "easy",
+      "question": "¿Qué audiencia suele necesitar la información diaria más detallada sobre las pruebas bloqueadas y las transferencias de defectos?",
+      "options": [
+        "Los auditores externos de la empresa para productos no relacionados, pese a cambios en las condiciones de ejecución.",
+        "El departamento de relaciones públicas, pese a cambios en las condiciones de ejecución.",
+        "Principalmente el área de compras, pese a cambios en las condiciones de ejecución.",
+        "Los responsables operativos de pruebas y los coordinadores de ejecución, que pueden eliminar los bloqueos."
+      ],
+      "correctIndex": 3,
+      "explanation": "Los datos operativos detallados son más útiles para quienes eliminan bloqueos y dirigen la ejecución diaria. Las partes interesadas de alto nivel suelen necesitar un resumen."
+    },
+    {
+      "id": "al-tm-112",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.8.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es el propósito principal de definir umbrales de tolerancia para las métricas de prueba?",
+      "options": [
+        "Hacer que todos los informes parezcan más matemáticos, pese a cambios en las condiciones de ejecución.",
+        "Activar una revisión o una acción antes de que las desviaciones sean demasiado grandes para gestionarlas con facilidad.",
+        "Sustituir el juicio del gestor de pruebas, sin considerar el alcance bloqueado ni la cobertura ponderada por riesgos.",
+        "Asegurar que todas las métricas lleguen a cero antes de la publicación, pese a cambios en las condiciones de ejecución."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los umbrales ayudan a tomar decisiones. Permiten al gestor detectar excepciones con suficiente antelación para responder eficazmente."
+    },
+    {
+      "id": "al-tm-113",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.8.2",
+      "difficulty": "hard",
+      "question": "La tasa de aprobación de pruebas pasa del 60 % al 95 % después de aplazar muchas pruebas fallidas para una publicación posterior. ¿Cuál es la mejor interpretación?",
+      "options": [
+        "La calidad ha mejorado claramente, sin relacionar la métrica con los criterios de salida.",
+        "Las pruebas aplazadas deben contarse como aprobadas, sin considerar el alcance bloqueado ni la cobertura ponderada por riesgos.",
+        "La mejora puede ser engañosa porque cambió el alcance, por lo que el resultado debe comunicarse con ese contexto.",
+        "La tasa de aprobación ya no es una métrica útil en ningún proyecto, pese a cambios en las condiciones de ejecución."
+      ],
+      "correctIndex": 2,
+      "explanation": "Los cambios de alcance pueden distorsionar las métricas. El gestor debe explicar los cambios en el denominador, en lugar de presentar la cifra sin contexto."
+    },
+    {
+      "id": "al-tm-114",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.9.1",
+      "difficulty": "easy",
+      "question": "¿Qué medida ayuda mejor al gestor de pruebas a determinar si las nuevas pruebas de corrección siguen el ritmo de las correcciones entregadas?",
+      "options": [
+        "El tiempo transcurrido desde que una corrección está lista hasta que finaliza la nueva prueba, que mide la demora en validar la corrección.",
+        "El número total de historias de usuario en el backlog, pese a cambios en las condiciones de ejecución.",
+        "Informar de recuentos brutos de ejecución tratando el volumen como medida de preparación.",
+        "El tamaño medio del paquete de compilación, pese a cambios en las condiciones de ejecución."
+      ],
+      "correctIndex": 0,
+      "explanation": "El tiempo del ciclo de repetición de pruebas refleja directamente la rapidez con que se validan las correcciones. Las demoras prolongadas pueden ocultar un cuello de botella creciente."
+    },
+    {
+      "id": "al-tm-115",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.9.2",
+      "difficulty": "medium",
+      "question": "Un panel resumen indica estado ámbar, mientras que un informe detallado afirma que la ejecución avanza según lo previsto. ¿Qué debe hacer el gestor de pruebas?",
+      "options": [
+        "Publicar ambas versiones sin explicaciones porque los distintos documentos pueden discrepar, pese a cambios en las condiciones de ejecución.",
+        "Eliminar el informe detallado porque los paneles suelen tener razón, pese a cambios en las condiciones de ejecución.",
+        "Promediar los dos estados y calificar el proyecto como verde, sin relacionar la métrica con los criterios de salida.",
+        "Conciliar las definiciones, los periodos y las hipótesis de cada vista, y luego explicar la diferencia a las partes interesadas."
+      ],
+      "correctIndex": 3,
+      "explanation": "Los mensajes contradictorios reducen la confianza. El gestor debe rastrear el origen de la diferencia y armonizar la base de los informes."
+    },
+    {
+      "id": "al-tm-116",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.10.1",
+      "difficulty": "hard",
+      "question": "El gráfico de trabajo completado para el alcance probado se está aplanando mientras sigue habiendo muchos cambios en el código. ¿Qué riesgo indica este patrón?",
+      "options": [
+        "El gráfico demuestra que las pruebas han terminado, tratando el volumen como medida de preparación.",
+        "Los cambios pueden superar la capacidad de validación, por lo que el progreso aparente hacia la preparación podría no ser fiable.",
+        "El proyecto tiene muy pocos documentos de requisitos, sin considerar el alcance bloqueado ni la cobertura ponderada por riesgos.",
+        "Los desarrolladores encuentran más defectos de pruebas unitarias de lo previsto, pese a cambios en las condiciones de ejecución."
+      ],
+      "correctIndex": 1,
+      "explanation": "Muchos cambios en el código junto con un crecimiento estancado de la cobertura sugieren inestabilidad. El producto puede estar cambiando más rápido de lo que las pruebas pueden generar confianza."
+    },
+    {
+      "id": "al-tm-117",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.10.2",
+      "difficulty": "easy",
+      "question": "¿Qué debe incluir siempre una recomendación de publicar o no publicar?",
+      "options": [
+        "Principalmente la decisión final, para no distraer a las partes interesadas, pese a cambios en las condiciones de ejecución.",
+        "La promesa de que no habrá problemas después de la publicación, sin considerar el alcance bloqueado ni la cobertura ponderada por riesgos.",
+        "El fundamento de la recomendación, los riesgos residuales y las hipótesis o condiciones asociadas.",
+        "Todo el historial de cada comentario de defecto registrado, pese a cambios en las condiciones de ejecución."
+      ],
+      "correctIndex": 2,
+      "explanation": "Es difícil confiar en una recomendación si no se explica su fundamento. Las partes interesadas necesitan el razonamiento, no solo la etiqueta."
+    },
+    {
+      "id": "al-tm-118",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.11.1",
+      "difficulty": "medium",
+      "question": "La tasa de aparición de defectos es baja esta semana porque el entorno de pruebas no estuvo disponible durante tres días. ¿Cómo debería informar de esa métrica el gestor?",
+      "options": [
+        "Indicar explícitamente que la reducción del tiempo de ejecución limitó la detección de defectos e impide sacar conclusiones firmes sobre la calidad.",
+        "Presentarla como evidencia de una mejora en la calidad del producto, sin explicar el alcance bloqueado ni la cobertura de riesgos.",
+        "No añadir ningún comentario porque la métrica es numéricamente correcta, pese a cambios en las condiciones de ejecución.",
+        "Convertir los días de bloqueo en pruebas aprobadas, sin relacionar la métrica con los criterios de salida."
+      ],
+      "correctIndex": 0,
+      "explanation": "Las métricas necesitan contexto. Una baja tasa de defectos puede deberse a que hubo menos oportunidades de ejecutar pruebas, no a una mayor estabilidad del producto."
+    },
+    {
+      "id": "al-tm-119",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.11.2",
+      "difficulty": "hard",
+      "question": "Las pruebas exploratorias descubren problemas graves de usabilidad que no aparecen en el panel de ejecución con scripts. ¿Cuál es la mejor acción de control?",
+      "options": [
+        "Ignorarlos hasta que una métrica cuantitativa también cambie a rojo, tratando el volumen como medida de preparación.",
+        "Eliminar las pruebas exploratorias de los ciclos futuros, sin explicar el alcance bloqueado ni la cobertura de riesgos.",
+        "Contar cada problema de usabilidad como una prueba aprobada para equilibrar el panel, pese a cambios en las condiciones de ejecución.",
+        "Incluir los hallazgos cualitativos en los informes de estado, reevaluar los riesgos y ajustar las prioridades con las partes interesadas pertinentes."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las métricas de ejecución con scripts no siempre capturan los riesgos importantes. El gestor debe integrar la evidencia cualitativa en la toma de decisiones y el control."
+    },
+    {
+      "id": "al-tm-120",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.12.1",
+      "difficulty": "easy",
+      "question": "¿Por qué comparar el esfuerzo planificado con el real por flujo de trabajo, en lugar de considerar solo el total general del proyecto?",
+      "options": [
+        "Porque alarga todos los informes y suele mejorar la calidad de las decisiones, pese a cambios en las condiciones de ejecución.",
+        "Puede revelar excesos locales o capacidad ociosa que un total consolidado podría ocultar.",
+        "Impide utilizar paneles, sin considerar el alcance bloqueado ni la cobertura ponderada por riesgos.",
+        "Garantiza que no será necesario replanificar, pese a cambios en las condiciones de ejecución."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los totales agregados pueden ocultar desequilibrios importantes. El análisis por flujo de trabajo permite al gestor dirigir las medidas correctivas con mayor precisión."
+    },
+    {
+      "id": "al-tm-121",
+      "chapter": "4. Seguimiento y control del progreso de las pruebas",
+      "loRef": "AL-TM-4.12.2",
+      "difficulty": "hard",
+      "question": "Un proveedor externo informa semanalmente de los porcentajes de aprobación, pero omite las pruebas bloqueadas y el alcance omitido. ¿Qué debe solicitar el gestor de pruebas?",
+      "options": [
+        "Principalmente un porcentaje de aprobación en una fuente más grande, sin explicar el alcance bloqueado ni la cobertura de riesgos.",
+        "La promesa de mantener las cifras en verde las próximas semanas, sin considerar el alcance bloqueado ni la cobertura ponderada por riesgos.",
+        "Un informe de estado más completo que incluya denominador, recuentos de elementos bloqueados y omitidos, tendencias de gravedad e hipótesis de presentación.",
+        "Menos detalles para que el informe sea más breve, sin explicar el alcance bloqueado ni la cobertura de riesgos."
+      ],
+      "correctIndex": 2,
+      "explanation": "Un único porcentaje de aprobación se puede interpretar mal fácilmente. Para que los informes sean comparables y prácticos, deben mostrar el alcance, los bloqueos y los riesgos, no solo los resultados."
+    },
+    {
+      "id": "al-tm-122",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.7.1",
+      "difficulty": "easy",
+      "question": "¿Cuál es la principal ventaja de emparejar a un probador júnior con uno sénior en una funcionalidad de alto riesgo?",
+      "options": [
+        "Permite transferir conocimientos y, al mismo tiempo, dar apoyo al trabajo de alto riesgo.",
+        "Garantiza que el probador júnior no necesitará comentarios, en detrimento de los objetivos compartidos del equipo.",
+        "Elimina la necesidad de revisar los resultados, en detrimento de los objetivos compartidos del equipo.",
+        "Garantiza que ambos probadores trabajarán exactamente a la misma velocidad, en detrimento de los objetivos compartidos del equipo."
+      ],
+      "correctIndex": 0,
+      "explanation": "El trabajo en pareja puede desarrollar capacidades sin sacrificar la calidad. Es especialmente útil cuando el trabajo es importante y, al mismo tiempo, brinda una oportunidad de aprendizaje."
+    },
+    {
+      "id": "al-tm-123",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.7.2",
+      "difficulty": "medium",
+      "question": "Los probadores remotos dicen sentirse desconectados de las decisiones sobre el producto y enterarse tarde de los cambios en los requisitos. ¿Qué medida sería más útil?",
+      "options": [
+        "Reducir sus reuniones para que no tengan oportunidad de hacer preguntas, en detrimento de los objetivos compartidos del equipo.",
+        "Trasladar todas las comunicaciones a chats privados entre responsables, en detrimento de los objetivos compartidos del equipo.",
+        "Pedirles que utilicen los tickets de defectos como principal fuente de información sobre el producto, en detrimento de los objetivos compartidos del equipo.",
+        "Invitarlos a la refinación del backlog, las revisiones de riesgos y las demostraciones a las partes interesadas, no solo a las reuniones de ejecución."
+      ],
+      "correctIndex": 3,
+      "explanation": "Los integrantes de equipos distribuidos necesitan acceso al contexto, no solo a las tareas. Su participación en las conversaciones clave sobre el producto mejora la alineación y la motivación."
+    },
+    {
+      "id": "al-tm-124",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.8.1",
+      "difficulty": "hard",
+      "question": "Un probador con mucha experiencia descarta habitualmente y en público las ideas de sus colegas, lo que perjudica la confianza del equipo. ¿Qué debe hacer el gestor de pruebas?",
+      "options": [
+        "Ignorar el comportamiento porque el probador encuentra muchos defectos, en detrimento de los objetivos compartidos del equipo.",
+        "Asesorar en privado al probador sobre el comportamiento esperado, explicar el impacto y hacer seguimiento de la mejora.",
+        "Criticar públicamente al probador en la siguiente reunión de estado, en detrimento de los objetivos compartidos del equipo.",
+        "Retirar inmediatamente todas las responsabilidades de revisión al equipo entero, en detrimento de los objetivos compartidos del equipo."
+      ],
+      "correctIndex": 1,
+      "explanation": "Un buen rendimiento técnico no justifica un comportamiento perjudicial. Los gestores eficaces abordan la situación de forma directa y justa, y establecen expectativas claras."
+    },
+    {
+      "id": "al-tm-125",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.8.2",
+      "difficulty": "easy",
+      "question": "¿Qué señal indica mejor que un probador está preparado para asumir más responsabilidades?",
+      "options": [
+        "Se ofrece principalmente para las tareas más fáciles, en detrimento de los objetivos compartidos del equipo.",
+        "Evita los debates sobre comentarios y rendimiento, sin considerar la adecuación de sus competencias ni su carga de trabajo.",
+        "Entrega resultados de forma constante, gestiona bien la ambigüedad y ayuda a los demás sin supervisión estrecha.",
+        "Prefiere trabajar para siempre en una única pantalla conocida, en detrimento de los objetivos compartidos del equipo."
+      ],
+      "correctIndex": 2,
+      "explanation": "La ampliación de responsabilidades suele apoyarse en resultados constantes, buen criterio y una influencia cada vez mayor en los resultados del equipo."
+    },
+    {
+      "id": "al-tm-126",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.9.1",
+      "difficulty": "medium",
+      "question": "Al recurrir a personal contratado para cubrir picos de demanda de pruebas, ¿qué debe aclarar primero el gestor de pruebas?",
+      "options": [
+        "El alcance, las restricciones de acceso, las expectativas de confidencialidad, los entregables y los criterios de aceptación.",
+        "Principalmente dónde se sentarán durante las visitas a la oficina, en detrimento de los objetivos compartidos del equipo.",
+        "Qué defectos tienen permitido ignorar, en detrimento de los objetivos compartidos del equipo.",
+        "Cuándo sustituirán al personal contratado los empleados permanentes, en detrimento de los objetivos compartidos del equipo."
+      ],
+      "correctIndex": 0,
+      "explanation": "La dotación temporal funciona cuando las expectativas son explícitas. Un alcance, unos controles y unas reglas de aceptación claros reducen la incorporación ineficiente y el retrabajo."
+    },
+    {
+      "id": "al-tm-127",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.9.2",
+      "difficulty": "hard",
+      "question": "Dos subequipos optimizan sus propias métricas y se niegan a colaborar con un paquete de regresión compartido. ¿Cuál es la mejor respuesta?",
+      "options": [
+        "Permitir que cada equipo proteja principalmente sus propios objetivos, sin considerar las competencias ni la carga de trabajo.",
+        "Asignar el paquete de regresión permanentemente al equipo que menos se queje, en detrimento de los objetivos compartidos.",
+        "Dejar de medir por completo los resultados del equipo, sin considerar las competencias ni la carga de trabajo.",
+        "Alinear los objetivos e incentivos con los resultados de calidad del programa y aclarar la responsabilidad compartida sobre el recurso de regresión."
+      ],
+      "correctIndex": 3,
+      "explanation": "La optimización local puede perjudicar la entrega global. El gestor debe reforzar los objetivos compartidos y aclarar las responsabilidades entre equipos."
+    },
+    {
+      "id": "al-tm-128",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.10.1",
+      "difficulty": "easy",
+      "question": "¿Por qué es importante reconocer las actividades de prevención de defectos, además de los defectos encontrados?",
+      "options": [
+        "Porque se debe desalentar en lo posible la detección de defectos, en detrimento de los objetivos compartidos del equipo.",
+        "Porque las actividades de prevención pueden reducir el coste de los fallos posteriores, aunque no aparezcan en los recuentos sencillos de errores.",
+        "Porque las actividades de prevención sustituyen automáticamente las pruebas de ejecución, en detrimento de los objetivos compartidos del equipo.",
+        "Porque la prevención se puede medir principalmente por la asistencia a reuniones, en detrimento de los objetivos compartidos del equipo."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los buenos equipos de pruebas también aportan valor al prevenir problemas. El reconocimiento no debe premiar únicamente la actividad posterior más visible."
+    },
+    {
+      "id": "al-tm-129",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.10.2",
+      "difficulty": "medium",
+      "question": "Un nuevo responsable de automatización quiere reescribir de una sola vez todos los casos de regresión manual, pero el equipo ya está sobrecargado. ¿Cuál es la mejor respuesta?",
+      "options": [
+        "Aprobar la reescritura de inmediato porque la automatización suele ahorrar tiempo, en detrimento de los objetivos compartidos del equipo.",
+        "Detener todas las pruebas manuales hasta que termine la reescritura de la automatización, en detrimento de los objetivos compartidos del equipo.",
+        "Planificar la automatización por fases según la prioridad y el riesgo, equilibrando las necesidades de entrega a corto plazo con la mejora a largo plazo.",
+        "Retirar permanentemente del proyecto al responsable de automatización, sin considerar las competencias ni la carga de trabajo."
+      ],
+      "correctIndex": 2,
+      "explanation": "Incluso las grandes iniciativas de mejora deben ajustarse a la realidad de la entrega. Un enfoque por fases protege los compromisos actuales y desarrolla las capacidades de forma deliberada."
+    },
+    {
+      "id": "al-tm-130",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.11.1",
+      "difficulty": "hard",
+      "question": "Un proveedor externo de pruebas cumple los objetivos de volumen de ejecución, pero muchos informes de defectos no se pueden reproducir. ¿Qué debe hacer el gestor de pruebas?",
+      "options": [
+        "Endurecer las expectativas de calidad de los informes, proporcionar ejemplos y revisiones, y medir explícitamente el estándar de notificación de defectos.",
+        "Ignorar la calidad de los informes porque se alcanzó el objetivo de volumen, sin considerar las competencias ni la carga de trabajo.",
+        "Pedir al equipo interno que reescriba en silencio todos los defectos del proveedor, sin considerar las competencias ni la carga de trabajo.",
+        "Reducir el nivel de calidad para que el proveedor pueda seguir cumpliendo sus métricas, en detrimento de los objetivos compartidos del equipo."
+      ],
+      "correctIndex": 0,
+      "explanation": "Un volumen sin resultados utilizables es un resultado deficiente. El gestor debe controlar los criterios de calidad del proveedor, no solo su rendimiento."
+    },
+    {
+      "id": "al-tm-131",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.11.2",
+      "difficulty": "easy",
+      "question": "¿Qué es un tema útil para la agenda de las reuniones individuales periódicas con los probadores?",
+      "options": [
+        "Comandos detallados de despliegue en producción para cada publicación, en detrimento de los objetivos compartidos del equipo.",
+        "Clasificaciones privadas de todos los demás integrantes del equipo, en detrimento de los objetivos compartidos.",
+        "Principalmente cifras del presupuesto del proyecto sin debatirlas, en detrimento de los objetivos compartidos del equipo.",
+        "Bloqueos, comentarios y objetivos de desarrollo, para detectar los problemas pronto y apoyar el crecimiento."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las reuniones individuales funcionan mejor cuando apoyan el rendimiento, el desarrollo y la resolución de problemas. Ofrecen un espacio seguro para plantear dificultades a tiempo."
+    },
+    {
+      "id": "al-tm-132",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.12.1",
+      "difficulty": "medium",
+      "question": "¿Cómo puede reducir el gestor de pruebas los silos de conocimiento en un equipo distribuido?",
+      "options": [
+        "Mantener el conocimiento del dominio dentro de los subequipos regionales para maximizar la especialización, en detrimento de los objetivos compartidos.",
+        "Rotar la responsabilidad sobre las funcionalidades, compartir guías prácticas y organizar revisiones entre sedes o sesiones de trabajo en pareja.",
+        "Asignar cada área crítica a una única persona experta reconocida, en detrimento de los objetivos compartidos del equipo.",
+        "Limitar la documentación para que las conversaciones sigan siendo informales, en detrimento de los objetivos compartidos del equipo."
+      ],
+      "correctIndex": 1,
+      "explanation": "El intercambio deliberado de conocimientos reduce los riesgos para el calendario y la calidad. La rotación y las prácticas compartidas aumentan la resiliencia del equipo."
+    },
+    {
+      "id": "al-tm-133",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.12.2",
+      "difficulty": "hard",
+      "question": "La productividad de un probador que antes era fiable disminuye de repente tras una reorganización. ¿Cuál es la primera medida que debe tomar el gestor de pruebas?",
+      "options": [
+        "Bajar inmediatamente la evaluación del probador sin hablar con él, en detrimento de los objetivos compartidos del equipo.",
+        "Transferir permanentemente todo el trabajo del probador a otras personas ese mismo día, en detrimento de los objetivos compartidos del equipo.",
+        "Mantener una conversación privada para comprender las causas y acordar apoyos o ajustes según lo aprendido.",
+        "Anunciar la disminución en la próxima reunión del equipo para ejercer presión, en detrimento de los objetivos compartidos."
+      ],
+      "correctIndex": 2,
+      "explanation": "Un cambio repentino en el rendimiento puede tener causas estructurales, no solo de motivación. Una buena gestión empieza por comprender el problema antes de elegir una medida."
+    },
+    {
+      "id": "al-tm-134",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.13.1",
+      "difficulty": "easy",
+      "question": "¿Qué enfoque de dotación de personal favorece mejor la independencia de las pruebas de aceptación?",
+      "options": [
+        "Incluir a representantes del negocio o a un grupo de aceptación separado en la planificación y evaluación.",
+        "Limitar las pruebas de aceptación a los desarrolladores originales, en detrimento de los objetivos compartidos del equipo.",
+        "Asignar principalmente al ingeniero de automatización la representación de todos los usuarios, en detrimento de los objetivos compartidos.",
+        "Omitir las pruebas de aceptación cuando las pruebas del sistema son exhaustivas, en detrimento de los objetivos compartidos del equipo."
+      ],
+      "correctIndex": 0,
+      "explanation": "Las pruebas de aceptación se benefician de la participación de personas capaces de evaluar la idoneidad para el uso empresarial con cierta independencia respecto a la implementación."
+    },
+    {
+      "id": "al-tm-135",
+      "chapter": "5. Gestión del equipo de pruebas",
+      "loRef": "AL-TM-5.13.2",
+      "difficulty": "hard",
+      "question": "¿Cuál es el mayor riesgo de gestión de recompensar a los probadores únicamente según los «defectos encontrados por persona»?",
+      "options": [
+        "Normalmente aumenta la moral porque la regla es sencilla, en detrimento de los objetivos compartidos del equipo.",
+        "Garantiza informes de defectos mejores, sin considerar las competencias ni la carga de trabajo.",
+        "Elimina la necesidad de orientación o comentarios, sin considerar las competencias ni la carga de trabajo.",
+        "Puede fomentar la manipulación de las métricas, desalentar la colaboración y restar valor a la prevención y al trabajo de calidad difícil de medir."
+      ],
+      "correctIndex": 3,
+      "explanation": "Los incentivos demasiado limitados pueden distorsionar el comportamiento. La gestión de pruebas debe reconocer los resultados y el trabajo en equipo, no solo las cifras individuales fáciles de contar."
+    },
+    {
+      "id": "al-tm-136",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.5.1",
+      "difficulty": "easy",
+      "question": "¿Por qué es útil una taxonomía de defectos para un gestor de pruebas?",
+      "options": [
+        "Garantiza que todos los defectos se corregirán en un ciclo, pese al flujo de trabajo de defectos acordado.",
+        "Facilita el análisis de tendencias, los informes y la identificación de patrones de problemas recurrentes.",
+        "Sustituye la necesidad de asignar gravedad y prioridad, basándose solo en recuentos y sin distinguir ambos conceptos.",
+        "Se necesita principalmente por razones legales, pese al flujo de trabajo de defectos acordado."
+      ],
+      "correctIndex": 1,
+      "explanation": "Una categorización coherente hace más útiles los datos de defectos. Ayuda a los gestores a detectar grupos de problemas y oportunidades de mejora entre versiones."
+    },
+    {
+      "id": "al-tm-137",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.5.2",
+      "difficulty": "medium",
+      "question": "Un defecto marcado como corregido sigue reapareciendo en compilaciones posteriores. ¿Qué mejora del proceso sería más útil?",
+      "options": [
+        "Reducir la cantidad de nuevas pruebas para detectar menos recurrencias, pese al flujo de trabajo acordado.",
+        "Cerrar el defecto tras el primer intento de corrección para evitar reaperturas, basándose solo en recuentos y sin distinguir gravedad o prioridad.",
+        "Reforzar la definición de finalización para incluir la corrección de la causa raíz y evidencia de protección frente a regresiones.",
+        "Permitir a los desarrolladores decidir si es necesario repetir la prueba, pese al flujo de trabajo de defectos acordado."
+      ],
+      "correctIndex": 2,
+      "explanation": "La recurrencia indica que el proceso de corrección es demasiado superficial. Unas expectativas de cierre más estrictas pueden reducir los ciclos repetidos y la falsa confianza."
+    },
+    {
+      "id": "al-tm-138",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.6.1",
+      "difficulty": "hard",
+      "question": "Durante la clasificación, responsables de desarrollo quieren reducir la gravedad de un defecto que afecta a los clientes para proteger las métricas de los SLA. ¿Qué debe hacer el gestor de pruebas?",
+      "options": [
+        "Aplicar los criterios de gravedad acordados y la evidencia del impacto empresarial, en lugar de permitir que la presión política redefina el defecto.",
+        "Aceptar la menor gravedad porque el código pertenece a desarrollo, sin considerar la gravedad ni el impacto empresarial.",
+        "Asignar la gravedad máxima a todos los demás defectos para equilibrar, sin considerar la gravedad ni el impacto empresarial.",
+        "Aplazar la clasificación hasta después de decidir la publicación, sin responsable claro ni aceptación del riesgo residual."
+      ],
+      "correctIndex": 0,
+      "explanation": "La gravedad debe reflejar el impacto, no la conveniencia. Los criterios coherentes protegen la integridad de la comunicación de riesgos y las decisiones de publicación."
+    },
+    {
+      "id": "al-tm-139",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.6.2",
+      "difficulty": "easy",
+      "question": "¿Qué resultado del cierre es más útil para las estimaciones de pruebas futuras?",
+      "options": [
+        "Una lista de preferencias del equipo para almorzar, antes de confirmar la corrección mediante nuevas pruebas.",
+        "Aplazar defectos por conveniencia de entrega sin documentar el riesgo residual, pese al flujo de trabajo acordado.",
+        "Cerrar o aplazar defectos por conveniencia, sin evaluar el impacto empresarial y pese al flujo acordado.",
+        "Un registro del esfuerzo real, los patrones de defectos y las principales interrupciones del entorno o del proceso."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las estimaciones futuras mejoran cuando los datos históricos incluyen el esfuerzo, los riesgos y los patrones de interrupciones. Los datos del cierre deben facilitar el aprendizaje, no solo el archivo."
+    },
+    {
+      "id": "al-tm-140",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.7.1",
+      "difficulty": "medium",
+      "question": "¿Cuándo es razonable aplazar un defecto a una versión posterior?",
+      "options": [
+        "Siempre que la corrección resulte incómoda para el equipo de desarrollo, pese al flujo de trabajo acordado.",
+        "Cuando las partes interesadas comprenden el riesgo residual y aceptan que es admisible dentro de los objetivos de la versión.",
+        "Principalmente cuando el defecto es difícil de reproducir, basándose solo en recuentos y sin distinguir gravedad o prioridad.",
+        "Siempre que el defecto se haya encontrado después de congelar el código, pese al flujo de trabajo acordado."
+      ],
+      "correctIndex": 1,
+      "explanation": "El aplazamiento es una decisión de riesgo, no de conveniencia. Es necesario comprender el impacto restante y aceptarlo de manera consciente."
+    },
+    {
+      "id": "al-tm-141",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.7.2",
+      "difficulty": "hard",
+      "question": "Los clientes notifican varios incidentes aparentemente independientes que luego parecen estar relacionados. ¿Qué debe buscar el gestor de pruebas en la gestión de defectos?",
+      "options": [
+        "Formas de dividir aún más los incidentes para reducir los recuentos, pese al flujo de trabajo acordado.",
+        "Escalas de gravedad distintas para cada cliente, basadas solo en recuentos y sin distinguir gravedad o prioridad.",
+        "Una causa raíz común y registros vinculados o duplicados, para que la priorización refleje el verdadero patrón de impacto.",
+        "Si los incidentes se notificaron el mismo día de la semana, pese al flujo de trabajo de defectos acordado."
+      ],
+      "correctIndex": 2,
+      "explanation": "Los incidentes relacionados pueden ocultar un problema sistémico mayor. Vincularlos facilita la priorización, el análisis y la comunicación."
+    },
+    {
+      "id": "al-tm-142",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.8.1",
+      "difficulty": "easy",
+      "question": "¿Cuál es el propósito principal de un tablero o reunión de clasificación de defectos?",
+      "options": [
+        "Decidir la prioridad, la persona responsable y la siguiente medida mediante un proceso coherente.",
+        "Reescribir cada defecto como requisito, pese al flujo de trabajo acordado.",
+        "Aprobar automáticamente las fusiones de código, pese al flujo de trabajo de defectos acordado.",
+        "Sustituir la necesidad de cualquier herramienta de seguimiento de defectos, pese al flujo acordado."
+      ],
+      "correctIndex": 0,
+      "explanation": "La clasificación convierte los informes de defectos sin procesar en trabajo gestionado. Proporciona un tratamiento coherente y pasos siguientes claros."
+    },
+    {
+      "id": "al-tm-143",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.8.2",
+      "difficulty": "medium",
+      "question": "¿Qué métrica indica mejor que el proceso de corrección de defectos se está convirtiendo en un cuello de botella?",
+      "options": [
+        "El número de casos de prueba archivados del año anterior, pese al flujo de trabajo de defectos acordado.",
+        "El número de historias de usuario planificadas para el próximo trimestre, pese al flujo de trabajo de defectos acordado.",
+        "La longitud media de los títulos de defectos, pese al flujo de trabajo de defectos acordado.",
+        "El aumento del tiempo de ciclo o de la antigüedad de los defectos que esperan en un estado «listo para probar» o similar."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las métricas de antigüedad y tiempo de ciclo muestran si las correcciones vuelven a la validación con prontitud. El aumento de los retrasos es una señal clara de cuello de botella."
+    },
+    {
+      "id": "al-tm-144",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.9.1",
+      "difficulty": "hard",
+      "question": "Una versión candidata cumple los criterios de salida numéricos, pero operaciones informa de scripts de despliegue inestables y una configuración del entorno no reproducible. ¿Qué debe recomendar el gestor de pruebas?",
+      "options": [
+        "Proceder de inmediato porque los valores numéricos de los criterios de salida son más importantes que la evidencia operativa, pese al flujo de trabajo acordado.",
+        "Tratar la inestabilidad operativa como un riesgo de publicación y revisar la recomendación de preparación, aunque se hayan alcanzado los objetivos numéricos.",
+        "Eliminar las preocupaciones operativas del informe porque quedan fuera de las pruebas, basándose solo en recuentos y sin distinguir gravedad o prioridad.",
+        "Convertir las preocupaciones en defectos de baja prioridad después de la publicación, sin considerar la gravedad ni el impacto empresarial."
+      ],
+      "correctIndex": 1,
+      "explanation": "La preparación para la publicación va más allá de alcanzar el objetivo de una métrica. La evidencia de un despliegue inestable puede menoscabar el valor de unos resultados de prueba que, por lo demás, serían aceptables."
+    },
+    {
+      "id": "al-tm-145",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.9.2",
+      "difficulty": "easy",
+      "question": "¿Por qué se deben archivar los datos de prueba y los detalles del entorno al cerrar las pruebas?",
+      "options": [
+        "Para que los proyectos futuros dependan de la memoria de una sola persona, pese al flujo de trabajo acordado.",
+        "Para evitar conservar el historial de casos de prueba, basándose solo en recuentos y sin distinguir gravedad o prioridad.",
+        "Para facilitar la reproducción, las auditorías, la transferencia de conocimientos y la reutilización futura cuando corresponda.",
+        "Para sustituir la necesidad de gestionar la configuración, pese al flujo de trabajo acordado."
+      ],
+      "correctIndex": 2,
+      "explanation": "Los detalles del entorno y los datos suelen ser necesarios posteriormente para comprender resultados o reproducir problemas. Archivarlos conserva un contexto valioso."
+    },
+    {
+      "id": "al-tm-146",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.10.1",
+      "difficulty": "medium",
+      "question": "¿Cuál es una ventaja clave de realizar un análisis causal de defectos después de la publicación?",
+      "options": [
+        "Identifica mejoras de proceso que pueden prevenir defectos similares en trabajos futuros.",
+        "Demuestra que no se debe revisar el proyecto actual, pese al flujo de trabajo de defectos acordado.",
+        "Permite borrar del historial todos los defectos que escaparon, pese al flujo de trabajo de defectos acordado.",
+        "Sustituye la necesidad de revisar los requisitos, pese al flujo de trabajo de defectos acordado."
+      ],
+      "correctIndex": 0,
+      "explanation": "El análisis causal convierte los datos de defectos en medidas de mejora. Su objetivo es el aprendizaje organizacional, no solo mantener registros históricos."
+    },
+    {
+      "id": "al-tm-147",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.10.2",
+      "difficulty": "hard",
+      "question": "Un flujo de trabajo de defectos tiene muchos estados y transferencias, lo que causa retrasos y confusión. ¿Qué medida de gestión sería más útil?",
+      "options": [
+        "Añadir aún más estados para que cada equipo pueda personalizar el flujo, pese al proceso acordado.",
+        "Dejar de seguir por completo las transiciones de estado de los defectos antes de confirmar las correcciones mediante nuevas pruebas.",
+        "Permitir que cada proyecto invente nombres de estados durante la ejecución, pese al flujo de trabajo acordado.",
+        "Simplificar el ciclo de vida mediante reglas claras de entrada y salida, responsabilidades y expectativas de servicio para cada paso."
+      ],
+      "correctIndex": 3,
+      "explanation": "Los flujos de trabajo excesivamente complejos generan fricción y ruido en los informes. Unos estados más sencillos y claros, con responsabilidades definidas, mejoran el flujo y la transparencia."
+    },
+    {
+      "id": "al-tm-148",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.11.1",
+      "difficulty": "easy",
+      "question": "¿Qué afirmación sobre la reapertura de defectos es más precisa?",
+      "options": [
+        "La reapertura rara vez debe ocurrir porque perjudica las métricas, pese al flujo de trabajo acordado.",
+        "Es adecuado reabrir un defecto cuando falla una corrección, el problema reaparece o la decisión de cierre fue prematura.",
+        "Principalmente los probadores pueden reabrir defectos; rara vez los propietarios de producto o los equipos de soporte, basándose solo en recuentos y sin distinguir gravedad o prioridad.",
+        "Un defecto reabierto normalmente debe recibir un identificador nuevo, pese al flujo de trabajo acordado."
+      ],
+      "correctIndex": 1,
+      "explanation": "Reabrir un defecto refleja la realidad cuando el problema no se resolvió realmente. Impedirlo para proteger las métricas menoscaba la integridad del proceso."
+    },
+    {
+      "id": "al-tm-149",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.11.2",
+      "difficulty": "medium",
+      "question": "¿Qué debe indicar el informe final de pruebas sobre los defectos que el negocio decidió aceptar?",
+      "options": [
+        "Nada, porque los defectos aceptados dejan de ser pertinentes, pese al flujo de trabajo acordado.",
+        "Principalmente el título original de cada defecto, sin detalles del impacto y basándose solo en recuentos, sin distinguir gravedad ni prioridad.",
+        "La justificación, el riesgo residual y quién aceptó la decisión, para garantizar una trazabilidad transparente.",
+        "Que los defectos aceptados se convierten automáticamente en solicitudes de mejora, pese al flujo de trabajo acordado."
+      ],
+      "correctIndex": 2,
+      "explanation": "Los defectos aceptados siguen formando parte del riesgo de publicación. El informe final debe hacer que la decisión sea transparente y trazable."
+    },
+    {
+      "id": "al-tm-150",
+      "chapter": "6. Gestión de defectos y cierre de pruebas",
+      "loRef": "AL-TM-6.12.1",
+      "difficulty": "hard",
+      "question": "Al cerrar las pruebas, ¿qué hallazgo indica con mayor fuerza una deuda de proceso sistémica, en lugar de unos pocos defectos aislados?",
+      "options": [
+        "Aclaraciones tardías y reiteradas de requisitos que provocan retrabajo generalizado, pruebas inestables y varios problemas que escapan en distintos equipos.",
+        "Un único problema cosmético reabierto después de la publicación, sin responsable claro ni aceptación del riesgo residual.",
+        "Una ralentización temporal durante una semana festiva, sin responsable claro ni aceptación del riesgo residual.",
+        "Una única interrupción del entorno que se resolvió rápidamente, sin responsable claro ni aceptación del riesgo residual."
+      ],
+      "correctIndex": 0,
+      "explanation": "La deuda sistémica se manifiesta en patrones repetidos entre equipos y fases. Esos patrones apuntan a debilidades de proceso que requieren medidas correctivas más amplias."
+    }
+  ]
+}

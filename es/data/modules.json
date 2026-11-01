@@ -1,0 +1,95 @@
+{
+  "modules": [
+    {
+      "id": "ctfl",
+      "level": "Nivel Fundamentos",
+      "name": "Certified Tester Foundation Level (CTFL)",
+      "shortName": "CTFL",
+      "description": "Fundamentos de las pruebas: pruebas a lo largo del ciclo de vida del software, pruebas estáticas, técnicas de prueba, gestión de pruebas y herramientas de apoyo.",
+      "syllabusRef": "Programa de estudio ISTQB Certified Tester Foundation Level v4.0 (en inglés)",
+      "questionFile": "data/questions/ctfl.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 60,
+      "passPercentage": 65,
+      "status": "available"
+    },
+    {
+      "id": "agile-tester",
+      "level": "Extensión del Nivel Fundamentos",
+      "name": "Extensión Agile Tester",
+      "shortName": "Agile Tester",
+      "description": "Fundamentos ágiles, el rol del tester en equipos ágiles, y métodos, herramientas y técnicas de pruebas ágiles.",
+      "syllabusRef": "Programa de estudio ISTQB Foundation Level Agile Tester (en inglés)",
+      "questionFile": "data/questions/agile-tester.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 60,
+      "passPercentage": 65,
+      "status": "available"
+    },
+    {
+      "id": "al-ta",
+      "level": "Nivel Avanzado",
+      "name": "Advanced Level Test Analyst (Analista de Pruebas)",
+      "shortName": "AL Test Analyst",
+      "description": "Técnicas avanzadas de caja negra, pruebas basadas en defectos y en la experiencia, y el rol del analista de pruebas en las revisiones.",
+      "syllabusRef": "Programa de estudio ISTQB Advanced Level Test Analyst (en inglés)",
+      "questionFile": "data/questions/al-ta.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 90,
+      "passPercentage": 65,
+      "status": "available"
+    },
+    {
+      "id": "al-tta",
+      "level": "Nivel Avanzado",
+      "name": "Advanced Level Technical Test Analyst (Analista Técnico de Pruebas)",
+      "shortName": "AL Technical Test Analyst",
+      "description": "Técnicas de caja blanca, pruebas de características de calidad (rendimiento, seguridad, fiabilidad) y habilidades técnicas de revisión.",
+      "syllabusRef": "Programa de estudio ISTQB Advanced Level Technical Test Analyst (en inglés)",
+      "questionFile": "data/questions/al-tta.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 90,
+      "passPercentage": 65,
+      "status": "available"
+    },
+    {
+      "id": "al-tm",
+      "level": "Nivel Avanzado",
+      "name": "Advanced Level Test Manager (Gerente de Pruebas)",
+      "shortName": "AL Test Manager",
+      "description": "Planificación de pruebas, estimación, gestión de riesgos, seguimiento y control de las pruebas, y gestión del equipo para responsables de pruebas.",
+      "syllabusRef": "Programa de estudio ISTQB Advanced Level Test Manager (en inglés)",
+      "questionFile": "data/questions/al-tm.json",
+      "examQuestionCount": 65,
+      "examDurationMinutes": 180,
+      "passPercentage": 65,
+      "status": "available"
+    },
+    {
+      "id": "test-automation",
+      "level": "Especialista",
+      "name": "Certified Tester Test Automation Engineer (Ingeniero de Automatización de Pruebas)",
+      "shortName": "Test Automation",
+      "description": "Arquitectura de automatización de pruebas, frameworks, selección de herramientas y actividades genéricas y específicas de automatización.",
+      "syllabusRef": "Programa de estudio ISTQB Test Automation Engineer (en inglés)",
+      "questionFile": "data/questions/test-automation.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 60,
+      "passPercentage": 65,
+      "status": "available"
+    },
+    {
+      "id": "performance-testing",
+      "level": "Especialista",
+      "name": "Pruebas de rendimiento",
+      "shortName": "Performance Testing",
+      "description": "Tipos de pruebas de rendimiento, riesgos, planificación, métricas, herramientas de monitorización y análisis e informe de resultados.",
+      "syllabusRef": "Programa de estudio ISTQB Performance Testing (en inglés)",
+      "questionFile": "data/questions/performance-testing.json",
+      "examQuestionCount": 40,
+      "examDurationMinutes": 60,
+      "passPercentage": 65,
+      "status": "available"
+    }
+  ]
+}

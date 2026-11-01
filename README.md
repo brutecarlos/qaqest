@@ -28,6 +28,10 @@ straight to GitHub Pages.
   leaderboard, inline banner) sized for Google AdSense units, placed
   non-invasively around content rather than inside it.
 
+## Spanish version
+
+A complete Spanish translation lives in `es/` (served at `/qaqest/es/`): translated pages, scripts (`es/js/`), `es/data/` modules and all seven question banks, plus its own service worker (`es/sw.js`, cache `qaqest-es-v1`). It shares `css/`, `assets/` and `js/adsense-config.js` with the English site, and uses the same localStorage keys, so progress is shared. Question IDs, LO refs and `correctIndex` values are identical to the English banks. The Spanish content is an unofficial QAQEST translation; check the official provider for current exam rules. When editing an English question, update its `es/data/questions/` counterpart.
+
 ## Project structure
 
 ```

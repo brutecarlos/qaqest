@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <title>Herramientas de prueba — QAQEST</title>
+  <meta name="description" content="Elige y utiliza herramientas de prueba para facilitar un trabajo repetible, sin confundir la automatización con la calidad." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/es/guide-test-tools.html" />
+  <link rel="alternate" hreflang="es" href="https://brutecarlos.github.io/qaqest/es/guide-test-tools.html" />
+  <link rel="alternate" hreflang="en" href="https://brutecarlos.github.io/qaqest/guide-test-tools.html" />
+  <link rel="alternate" hreflang="x-default" href="https://brutecarlos.github.io/qaqest/guide-test-tools.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Herramientas de prueba — QAQEST" />
+  <meta property="og:description" content="Elige y utiliza herramientas de prueba para facilitar un trabajo repetible, sin confundir la automatización con la calidad." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/es/guide-test-tools.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Herramientas de prueba — QAQEST" />
+  <meta name="twitter:description" content="Elige y utiliza herramientas de prueba para facilitar un trabajo repetible, sin confundir la automatización con la calidad." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Herramientas de prueba</h1></section>
+    <h2>Las herramientas facilitan las actividades</h2>
+<p>Las herramientas de prueba pueden facilitar la planificación, el análisis y diseño de pruebas, la ejecución, el seguimiento de defectos, la elaboración de informes y la gestión de la configuración. Entre ellas se incluyen sistemas de gestión de pruebas, gestores de incidencias, analizadores estáticos, marcos de pruebas unitarias, clientes de API, herramientas de automatización del navegador, generadores de carga y procesos de compilación. Algunos productos cubren varias tareas; otros son intencionadamente pequeños y especializados. Una herramienta es útil si mejora un flujo de trabajo real, no solo porque tenga muchas funciones.</p>
+<h2>Ventajas y compensaciones</h2>
+<p>La automatización puede repetir comprobaciones rápidamente, reducir el trabajo manual en tareas estables, ampliar las combinaciones de datos y aumentar la coherencia de los resultados. También tiene costes: selección, configuración, integración, formación, mantenimiento, comportamiento inestable y riesgo de automatizar las comprobaciones equivocadas. Un script frágil que requiere reparaciones constantes puede acabar siendo más lento que una breve comprobación manual. Considera el coste total durante todo el ciclo de vida, no solo la primera demostración.</p>
+<p>Las herramientas pueden generar una falsa sensación de confianza. Una compilación correcta significa que las comprobaciones configuradas se superaron en sus condiciones específicas; no demuestra que el producto sea seguro, usable o adecuado para su propósito. La observación humana sigue siendo valiosa para cuestiones que requieren criterio, accesibilidad, comportamientos inesperados y expectativas cambiantes de las personas usuarias.</p>
+<h2>Evaluar antes de adoptar</h2>
+<p>Empieza por identificar una necesidad y definir criterios medibles: ¿qué actividad es lenta o propensa a errores?, ¿con qué sistemas debe integrarse?, ¿quién mantendrá la herramienta y cómo se evaluará su éxito? Compara las opciones mediante una pequeña prueba de concepto con personas usuarias y datos representativos. Comprueba las licencias, la compatibilidad con plataformas, la accesibilidad, la seguridad, los informes y el soporte del proveedor o de la comunidad. Incluye en la decisión a quienes utilizarán y operarán la herramienta.</p>
+<p>Implántala de forma gradual. Una prueba piloto puede revelar necesidades de formación y cambios ocultos en el flujo de trabajo antes del despliegue general. Ofrece orientación, define quién se responsabiliza y recoge opiniones. Comprueba si la herramienta reduce el tiempo del ciclo o mejora la cobertura útil. Si no lo hace, cambia su configuración o reconsidera la elección, en lugar de mantenerla solo porque ya se compró.</p>
+<h2>Ejemplo práctico: elegir una herramienta de automatización del navegador</h2>
+<p>Un equipo repite un flujo crítico de inicio de sesión y compra en cada versión. Se plantea automatizar el navegador. La prueba de concepto abarca un navegador representativo, una cuenta de prueba estable y algunas rutas de error. El equipo mide el tiempo de ejecución, los falsos fallos, el esfuerzo de reparación de scripts tras cambios en la interfaz y la facilidad para diagnosticar los resultados. Automatiza las rutas estables y de mayor valor, pero mantiene en el plan la revisión visual y las comprobaciones exploratorias. Así obtiene una cartera equilibrada, en lugar de perseguir la automatización total.</p>
+<h2>Diseño y mantenimiento de la automatización</h2>
+<p>Las comprobaciones automatizadas fiables son independientes siempre que sea práctico, utilizan datos y entornos controlados y producen evidencias de fallo fáciles de leer. Es preferible utilizar interfaces estables para la configuración y las aserciones, en lugar de depender de tiempos frágiles. Mantén las comprobaciones en el nivel adecuado: a menudo resulta más barato probar un cálculo como unidad que hacerlo mediante un navegador completo. Evita una única batería enorme, lenta y difícil de diagnosticar. Revisa pronto los fallos: repetir una comprobación inestable hasta que salga bien oculta una señal real.</p>
+<h2>Términos clave</h2>
+<ul><li><strong>Automatización de pruebas:</strong> uso de software para realizar o facilitar tareas de prueba.</li><li><strong>Productos de prueba:</strong> artefactos generados durante las pruebas, incluidos casos, scripts y datos.</li><li><strong>Prueba inestable:</strong> comprobación cuyo resultado varía sin que haya un cambio relevante en el producto.</li><li><strong>Prueba de concepto:</strong> ensayo pequeño que permite evaluar la viabilidad y adecuación.</li><li><strong>Batería de regresión:</strong> conjunto de comprobaciones seleccionadas que se repiten después de los cambios para detectar efectos no deseados.</li></ul>
+<p>El éxito de una herramienta depende de su adecuación, los procesos y las personas. Planifica la formación y la responsabilidad a largo plazo antes de depender de una herramienta nueva en una versión crítica.</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practicar con preguntas CTFL</a></p>
+    <p><a href="guides.html">Todas las guías de estudio</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="../js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

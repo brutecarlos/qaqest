@@ -1,0 +1,164 @@
+/**
+ * Results page: reads the most recent attempt from sessionStorage (written
+ * by quiz.js) and renders a pass/fail summary plus a reviewable breakdown
+ * of every question, with a filter for wrong-answers-only.
+ */
+(function () {
+  const main = document.getElementById("results-main");
+  const moduleId = QAQuest.qs("module");
+
+  function renderReviewItem(a, index) {
+    const issueUrl = QAQuest.reportIssueUrl(moduleId, a);
+    const statusLabel = a.isCorrect ? "Correcta" : a.selectedIndex === null ? "Sin responder" : "Incorrecta";
+    const statusClass = a.isCorrect ? "pass-pill" : "fail-pill";
+    const optionsHtml = a.options
+      .map((opt, i) => {
+        let line = QAQuest.escapeHTML(opt);
+        if (i === a.correctIndex) line = `<strong>${line}</strong> (respuesta correcta)`;
+        if (i === a.selectedIndex && i !== a.correctIndex) line += " (tu respuesta)";
+        if (i === a.selectedIndex && i === a.correctIndex) line += " (tu respuesta)";
+        return `<div class="review-answer-line">${i === a.correctIndex ? "✔" : i === a.selectedIndex ? "✘" : "&nbsp;&nbsp;"} ${line}</div>`;
+      })
+      .join("");
+
+    return `
+      <article class="review-item" data-correct="${a.isCorrect}" data-flagged="${!!a.flagged}">
+        <div class="question-meta">Pregunta ${index + 1} &middot; ${QAQuest.escapeHTML(a.chapter)} &middot;
+          <span class="${statusClass}">${statusLabel}</span>${a.flagged ? " &middot; <span>\u2691 Marcada</span>" : ""}
+        </div>
+        <div class="question-text">${QAQuest.escapeHTML(a.question)}</div>
+        ${optionsHtml}
+        <div class="feedback-box ${a.isCorrect ? "correct" : "incorrect"}" style="margin-top:0.75rem;">
+          ${QAQuest.escapeHTML(a.explanation)}
+        </div>
+        <div class="question-tools">
+          <a class="report-link" target="_blank" rel="noopener"
+             aria-label="Informar de un problema con la pregunta ${index + 1} (abre GitHub)"
+             href="${QAQuest.escapeHTML(issueUrl)}">Informar de un problema</a>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderChapterBreakdown(answers) {
+    const map = new Map();
+    answers.forEach((a) => {
+      const key = a.chapter || "Otros";
+      const c = map.get(key) || { name: key, correct: 0, total: 0 };
+      c.total++;
+      if (a.isCorrect) c.correct++;
+      map.set(key, c);
+    });
+    const rows = [...map.values()].sort((x, y) =>
+      x.name.localeCompare(y.name, undefined, { numeric: true })
+    );
+    if (rows.length < 2) return "";
+    const rate = (c) => c.correct / c.total;
+    const weakest = rows.reduce((w, c) => (rate(c) < rate(w) ? c : w), rows[0]);
+    const showWeak = rate(weakest) < 1;
+    const html = rows
+      .map((c) => {
+        const pct = Math.round(rate(c) * 100);
+        return `<div class="chapter-row ${showWeak && c === weakest ? "weakest" : ""}">
+          <span class="chapter-name">${QAQuest.escapeHTML(c.name)}${showWeak && c === weakest ? " (menor rendimiento)" : ""}</span>
+          <div class="chapter-bar" role="img" aria-label="${pct}% de respuestas correctas"><span style="width:${pct}%"></span></div>
+          <span>${c.correct}/${c.total} (${pct}%)</span>
+        </div>`;
+      })
+      .join("");
+    return `<h2 class="section-title">Resultados por capítulo</h2><div>${html}</div>`;
+  }
+
+  function applyFilter(mode) {
+    document.querySelectorAll(".review-item").forEach((el) => {
+      const isCorrect = el.dataset.correct === "true";
+      let show = true;
+      if (mode === "wrong") show = !isCorrect;
+      if (mode === "flagged") show = el.dataset.flagged === "true";
+      el.style.display = show ? "" : "none";
+    });
+    document.querySelectorAll(".filter-bar .btn").forEach((btn) => {
+      btn.classList.toggle("btn-secondary", btn.dataset.filter !== mode);
+    });
+  }
+
+  function init() {
+    const raw = sessionStorage.getItem("qaquest_last_result");
+    if (!raw) {
+      main.innerHTML = `<p class="empty-state">No se encontraron resultados recientes. <a href="module.html?module=${moduleId}">Iniciar un cuestionario</a>.</p>`;
+      return;
+    }
+    const { moduleName, attempt } = JSON.parse(raw);
+    const passClass = attempt.passed ? "pass" : "fail";
+    const statusText = attempt.passed ? "APROBADO" : "NO APROBADO";
+
+    const reviewHtml = attempt.answers.map(renderReviewItem).join("");
+    const flaggedCount = attempt.answers.filter((a) => a.flagged).length;
+    const wrongCount = attempt.answers.filter((a) => !a.isCorrect).length;
+
+    main.innerHTML = `
+      <div class="module-header">
+        <h1>${QAQuest.escapeHTML(moduleName)}</h1>
+        <p style="color:var(--color-muted);">
+          ${attempt.mode === "exam" ? "Examen cronometrado" : "Sesión de práctica"} &middot;
+          ${new Date(attempt.date).toLocaleDateString("es", { year: "numeric", month: "long", day: "numeric" })} &middot; ${QAQuest.formatDuration(attempt.durationSec)}
+          ${attempt.timedOut ? " &middot; tiempo agotado" : ""}
+        </p>
+      </div>
+
+      <div class="score-summary">
+        <div class="result-status ${passClass}-pill">${statusText}</div>
+        <div class="score-value ${passClass}">${Math.round(attempt.percentage)}%</div>
+        <p>${attempt.score} / ${attempt.total} respuestas correctas &middot; la nota mínima es ${attempt.passPercentage}%</p>
+        <p>La práctica en español no es oficial. Consulta al proveedor oficial para las reglas vigentes.</p>
+      </div>
+
+      <div id="badge-toast" class="badge-toast" role="status" aria-live="polite"></div>
+      <div id="scorecard-slot"></div>
+
+      ${renderChapterBreakdown(attempt.answers)}
+
+      <h2 class="section-title">Revisa tus respuestas</h2>
+      <div class="filter-bar">
+        <button class="btn" data-filter="all">Todas (${attempt.total})</button>
+        <button class="btn btn-secondary" data-filter="wrong">Para revisar (${wrongCount})</button>
+        <button class="btn btn-secondary" data-filter="flagged" aria-label="Mostrar solo las preguntas marcadas">Marcadas (${flaggedCount})</button>
+      </div>
+      <div id="review-list">${reviewHtml}</div>
+
+      <div class="quiz-nav">
+        <a class="btn btn-secondary" href="module.html?module=${moduleId}">&larr; Volver al módulo</a>
+        <a class="btn" href="quiz.html?module=${moduleId}&mode=${attempt.mode}">Intentarlo de nuevo</a>
+      </div>
+    `;
+
+    let streakLine = "";
+    try {
+      if (QAQuest.Badges) {
+        const sum = QAQuest.Badges.summary();
+        if (sum.stats.current > 1) streakLine = "\uD83D\uDD25 " + sum.stats.current + " días seguidos estudiando";
+        const newly = JSON.parse(sessionStorage.getItem("qaquest_new_badges") || "[]");
+        sessionStorage.removeItem("qaquest_new_badges");
+        const defs = newly.map((id) => QAQuest.Badges.def(id)).filter(Boolean);
+        if (defs.length) {
+          document.getElementById("badge-toast").innerHTML = defs
+            .map((d) => `<div class="badge-unlocked"><span aria-hidden="true">${d.icon}</span> Insignia desbloqueada: <strong>${QAQuest.escapeHTML(d.name)}</strong></div>`)
+            .join("");
+        }
+      }
+    } catch (e) { /* optional */ }
+    QAQuest.ScoreCard.render(document.getElementById("scorecard-slot"), {
+      moduleName, shortName: moduleName.match(/\(([^)]+)\)$/) ? moduleName.match(/\(([^)]+)\)$/)[1] : moduleName,
+      mode: attempt.mode, percentage: attempt.percentage, score: attempt.score, total: attempt.total,
+      passed: attempt.passed, passPercentage: attempt.passPercentage,
+      dateText: new Date(attempt.date).toLocaleDateString("es", { year: "numeric", month: "short", day: "numeric" }),
+      streakLine,
+    });
+
+    document.querySelectorAll(".filter-bar .btn").forEach((btn) => {
+      btn.addEventListener("click", () => applyFilter(btn.dataset.filter));
+    });
+  }
+
+  init();
+})();

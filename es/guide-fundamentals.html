@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <title>Fundamentos de las pruebas — QAQEST</title>
+  <meta name="description" content="Comprende por qué son importantes las pruebas, qué pueden demostrar y qué principios orientan un trabajo eficaz de calidad del software." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/es/guide-fundamentals.html" />
+  <link rel="alternate" hreflang="es" href="https://brutecarlos.github.io/qaqest/es/guide-fundamentals.html" />
+  <link rel="alternate" hreflang="en" href="https://brutecarlos.github.io/qaqest/guide-fundamentals.html" />
+  <link rel="alternate" hreflang="x-default" href="https://brutecarlos.github.io/qaqest/guide-fundamentals.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Fundamentos de las pruebas — QAQEST" />
+  <meta property="og:description" content="Comprende por qué son importantes las pruebas, qué pueden demostrar y qué principios orientan un trabajo eficaz de calidad del software." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/es/guide-fundamentals.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fundamentos de las pruebas — QAQEST" />
+  <meta name="twitter:description" content="Comprende por qué son importantes las pruebas, qué pueden demostrar y qué principios orientan un trabajo eficaz de calidad del software." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Fundamentos de las pruebas</h1></section>
+    <h2>Por qué realizan pruebas los equipos</h2>
+<p>Las pruebas son un conjunto de actividades que evalúa un producto y ayuda a tomar decisiones fundamentadas sobre su calidad. No son simplemente una fase final ni una búsqueda de defectos. Un equipo realiza pruebas para reducir la incertidumbre: ¿se comporta una funcionalidad como se esperaba?, ¿un cambio puede perjudicar algo que ya funcionaba?, ¿es aceptable el riesgo restante para publicar el producto? Las pruebas aportan evidencias, pero no garantizan que el software sea perfecto.</p>
+<p>La calidad depende del contexto. Un servicio de pagos puede requerir un alto nivel de seguridad y fiabilidad; un prototipo puede dar prioridad al aprendizaje rápido. Quienes utilizan, operan, mantienen y compran un producto pueden valorar cualidades distintas. Por ello, los objetivos de prueba deben relacionarse con las partes interesadas y las condiciones de uso reales, no con la idea abstracta de «cero errores».</p>
+<h2>Las pruebas y la depuración son actividades distintas</h2>
+<p>Las pruebas pueden ser estáticas, como examinar requisitos sin ejecutar la aplicación, o dinámicas, al ejecutar el software y observar los resultados. Una prueba puede revelar un fallo: una diferencia observable entre el comportamiento real y el esperado. A continuación, la investigación busca el defecto subyacente en un producto de trabajo. La depuración consiste en diagnosticar y corregir la causa. Una persona que prueba puede detectar un problema y aportar evidencias precisas; la depuración puede corresponder a un desarrollador u otra persona responsable.</p>
+<h2>Siete principios útiles</h2>
+<ul><li><strong>Las pruebas muestran la presencia de defectos, no su ausencia.</strong> Superar comprobaciones solo permite evaluar una muestra del comportamiento.</li><li><strong>Las pruebas exhaustivas suelen ser imposibles.</strong> Utiliza el riesgo y las técnicas para elegir una muestra manejable y valiosa.</li><li><strong>Empieza a probar pronto.</strong> Recibir comentarios tempranos puede evitar costosos retrabajos posteriores.</li><li><strong>Los defectos tienden a concentrarse.</strong> Un pequeño número de componentes suele acumular muchos de los problemas observados; ajusta el enfoque a medida que surjan evidencias.</li><li><strong>Las pruebas se desgastan.</strong> Repetir las mismas comprobaciones puede dejar de revelar problemas nuevos; revísalas y actualízalas de forma razonada.</li><li><strong>Las pruebas dependen del contexto.</strong> Un servicio crítico para la seguridad y una herramienta interna de corta duración requieren enfoques distintos.</li><li><strong>La ausencia de errores no es suficiente.</strong> Un producto sin defectos también puede decepcionar a sus usuarios si resuelve el problema equivocado.</li></ul>
+<h2>Ejemplo práctico: un proceso de reserva que «funciona»</h2>
+<p>Supongamos que todas las comprobaciones automatizadas de una reserva de hotel se superan. Al revisar los comentarios, se descubre que las fechas se muestran en un formato poco familiar y que los clientes suelen reservar la noche equivocada. El sistema puede cumplir las reglas escritas y, aun así, no ser adecuado para quienes lo utilizan. Esto ilustra la importancia tanto de verificar el cumplimiento de los requisitos como de validar que se satisfacen las necesidades de los usuarios. También sugiere un siguiente paso basado en el riesgo: probar la selección y confirmación de fechas con usuarios representativos, en distintas configuraciones regionales y zonas horarias.</p>
+<h2>Términos clave</h2>
+<ul><li><strong>Error:</strong> acción o decisión humana que produce un resultado incorrecto.</li><li><strong>Defecto:</strong> imperfección de un producto de trabajo que puede causar un fallo.</li><li><strong>Fallo:</strong> comportamiento observado que no cumple las expectativas.</li><li><strong>Verificación:</strong> comprobación de que un producto de trabajo cumple los requisitos especificados.</li><li><strong>Validación:</strong> comprobación de que el producto sirve para el uso previsto.</li><li><strong>Base de prueba:</strong> información utilizada para diseñar pruebas, como requisitos o diseños.</li></ul>
+<p>Al analizar un escenario, sigue la secuencia con atención: una persona puede cometer un error e introducir un defecto que, en determinadas condiciones, provoque un fallo. Una prueba puede revelar el fallo, pero solo una investigación confirma la causa. No utilices estos términos como sinónimos.</p>
+<h2>Haz que las evidencias sean útiles</h2>
+<p>Una prueba sólida tiene un propósito, una base clara, resultados esperados que puedan observarse y contexto suficiente para repetirla. Registra tanto los resultados positivos como las limitaciones: qué se probó, qué no y qué riesgos persisten. Así, los resultados se convierten en información útil para actuar y no en un simple «aprobado».</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practica con preguntas de CTFL</a></p>
+    <p><a href="guides.html">Todas las guías de estudio</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="../js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

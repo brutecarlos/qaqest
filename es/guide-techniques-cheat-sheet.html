@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <title>Resumen de técnicas de prueba — QAQEST</title>
+  <meta name="description" content="Guía concisa para elegir una técnica de prueba según las entradas, las reglas, los estados, la estructura y el trabajo exploratorio." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/es/guide-techniques-cheat-sheet.html" />
+  <link rel="alternate" hreflang="es" href="https://brutecarlos.github.io/qaqest/es/guide-techniques-cheat-sheet.html" />
+  <link rel="alternate" hreflang="en" href="https://brutecarlos.github.io/qaqest/guide-techniques-cheat-sheet.html" />
+  <link rel="alternate" hreflang="x-default" href="https://brutecarlos.github.io/qaqest/guide-techniques-cheat-sheet.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Resumen de técnicas de prueba — QAQEST" />
+  <meta property="og:description" content="Guía concisa para elegir una técnica de prueba según las entradas, las reglas, los estados, la estructura y el trabajo exploratorio." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/es/guide-techniques-cheat-sheet.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Resumen de técnicas de prueba — QAQEST" />
+  <meta name="twitter:description" content="Guía concisa para elegir una técnica de prueba según las entradas, las reglas, los estados, la estructura y el trabajo exploratorio." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Resumen de técnicas de prueba</h1></section>
+    <h2>Empieza por la pregunta que necesitas responder</h2>
+<p>Las técnicas sirven para elegir y organizar pruebas; no son recetas que garanticen encontrar defectos. Empieza por definir el comportamiento, la base de prueba disponible y el riesgo. ¿Vas a comprobar un rango numérico, combinaciones de reglas de negocio, secuencias de eventos, decisiones internas o una función poco conocida? Elige un método que haga visible la cobertura importante. Puedes combinar métodos cuando una sola perspectiva no sea suficiente.</p>
+<h2>Referencia rápida: caja negra</h2>
+<ul><li><strong>Partición de equivalencia:</strong> divide los valores en grupos que deberían comportarse de forma similar y elige valores representativos. Adecuada para amplios espacios de entrada y reglas de validación.</li><li><strong>Análisis de valores límite:</strong> prueba cerca de los extremos de las particiones ordenadas, donde son frecuentes los errores de desfase de una unidad. Cuando corresponda, incluye valores inmediatamente inferiores, iguales y superiores a un umbral.</li><li><strong>Pruebas con tablas de decisión:</strong> enumera las combinaciones de condiciones y las acciones esperadas. Son útiles cuando interactúan varias reglas, como la elegibilidad, el pago y el envío.</li><li><strong>Pruebas de transición de estado:</strong> modela los estados, los eventos y los estados resultantes. Comprueba las transiciones válidas, las secuencias importantes y los eventos rechazados.</li><li><strong>Pruebas de casos de uso:</strong> sigue los objetivos de las personas usuarias y las rutas alternativas de un flujo de trabajo, incluidos los fallos y la recuperación.</li></ul>
+<h2>Métodos de caja blanca y basados en la experiencia</h2>
+<ul><li><strong>Cobertura de sentencias:</strong> comprueba qué sentencias ejecutables se han ejecutado. No garantiza que se hayan ejercitado todos los resultados de las decisiones.</li><li><strong>Cobertura de ramas:</strong> ejercita cada resultado de una decisión, como verdadero y falso. A menudo requiere más pruebas que la cobertura de sentencias.</li><li><strong>Predicción de errores:</strong> utiliza conocimientos sobre modos de fallo probables para probar entradas y secuencias de riesgo.</li><li><strong>Pruebas exploratorias:</strong> aprende, diseña y ejecuta en paralelo, guiándote por una carta de pruebas específica. Registra los hallazgos y las ideas de prueba útiles.</li><li><strong>Pruebas basadas en listas de comprobación:</strong> utiliza una lista concisa y actualizada de riesgos o condiciones para dar coherencia a las comprobaciones recurrentes.</li></ul>
+<h2>Ejemplo práctico: política de contraseñas</h2>
+<p>Supongamos que una contraseña debe tener entre 10 y 64 caracteres y no puede estar entre las contraseñas bloqueadas habituales. Las particiones de equivalencia incluyen valores demasiado cortos, de longitud válida, demasiado largos y bloqueados. El análisis de valores límite sugiere probar longitudes de 9, 10, 64 y 65 caracteres. La regla de contraseñas bloqueadas añade otra dimensión: prueba una contraseña bloqueada de longitud válida y otra permitida también de longitud válida. Si la cuenta puede estar activa, bloqueada o pendiente de restablecimiento, las pruebas de transición de estado pueden examinar los cambios de contraseña y los intentos de inicio de sesión en esos estados. Esta combinación es más clara que seleccionar muchas cadenas arbitrarias.</p>
+<h2>Elegir la técnica</h2>
+<p>Para un rango o límite, empieza con particiones y valores límite. Si hay varias reglas booleanas o categóricas, crea una tabla de decisión y reduce las combinaciones solo cuando esté justificado. Para los flujos de trabajo, representa los estados y los objetivos de las personas usuarias. Para evaluar el código, analiza la cobertura de sentencias y ramas junto con las pruebas basadas en requisitos. En interfaces desconocidas, define una carta de pruebas exploratorias, como «investigar la recuperación tras interrumpir una compra», y registra el entorno y las observaciones.</p>
+<p>Todos los métodos tienen puntos ciegos. Una tabla completa puede contener una regla de negocio incorrecta. La cobertura total de ramas puede pasar por alto requisitos omitidos. Una lista de comprobación puede quedar desactualizada. Recurre a revisiones independientes y al contexto real de las personas usuarias para cuestionar el modelo en que se basan las pruebas.</p>
+<h2>Términos clave</h2>
+<ul><li><strong>Partición:</strong> grupo de entradas que se espera que reciban el mismo tratamiento.</li><li><strong>Límite:</strong> extremo entre grupos de entradas o resultados de reglas.</li><li><strong>Condición:</strong> regla o factor que influye en un resultado.</li><li><strong>Estado:</strong> situación definida que afecta a la forma de gestionar los eventos.</li><li><strong>Elemento de cobertura:</strong> elemento utilizado para evaluar cuánto se ha probado.</li><li><strong>Carta de pruebas:</strong> objetivo o límite que orienta una sesión exploratoria.</li></ul>
+<p>Antes de dar por concluida una técnica, indica qué cubrió y qué queda pendiente. Las cifras de cobertura solo tienen sentido cuando se conocen los elementos subyacentes y las exclusiones.</p>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practicar con preguntas CTFL</a></p>
+    <p><a href="guides.html">Todas las guías de estudio</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="../js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

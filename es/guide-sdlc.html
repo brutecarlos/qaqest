@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="shortcut icon" href="../assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <title>Pruebas a lo largo del ciclo de vida del desarrollo de software — QAQEST</title>
+  <meta name="description" content="Descubre cómo se integran las actividades de prueba en los distintos ciclos de vida del desarrollo y cómo los equipos incorporan la calidad desde el principio." />
+  <link rel="canonical" href="https://brutecarlos.github.io/qaqest/es/guide-sdlc.html" />
+  <link rel="alternate" hreflang="es" href="https://brutecarlos.github.io/qaqest/es/guide-sdlc.html" />
+  <link rel="alternate" hreflang="en" href="https://brutecarlos.github.io/qaqest/guide-sdlc.html" />
+  <link rel="alternate" hreflang="x-default" href="https://brutecarlos.github.io/qaqest/guide-sdlc.html" />
+  <meta name="theme-color" content="#1a56db" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="QAQEST" />
+  <meta property="og:title" content="Pruebas a lo largo del ciclo de vida del desarrollo de software — QAQEST" />
+  <meta property="og:description" content="Descubre cómo se integran las actividades de prueba en los distintos ciclos de vida del desarrollo y cómo los equipos incorporan la calidad desde el principio." />
+  <meta property="og:url" content="https://brutecarlos.github.io/qaqest/es/guide-sdlc.html" />
+  <meta property="og:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pruebas a lo largo del ciclo de vida del desarrollo de software — QAQEST" />
+  <meta name="twitter:description" content="Descubre cómo se integran las actividades de prueba en los distintos ciclos de vida del desarrollo y cómo los equipos incorporan la calidad desde el principio." />
+  <meta name="twitter:image" content="https://brutecarlos.github.io/qaqest/assets/og-image.png" />
+  <script>try{var t=localStorage.getItem("qaquest_theme_v1");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="container">
+    <section class="hero" style="text-align:left;"><h1>Pruebas a lo largo del ciclo de vida del desarrollo de software</h1></section>
+    <h2>La calidad no es una fase final</h2>
+<p>El ciclo de vida del desarrollo de software describe cómo evolucionan un producto y sus productos de trabajo, desde la idea hasta la operación y el mantenimiento. Las pruebas pueden contribuir en cada etapa: aclarar una necesidad de negocio, revisar un boceto de interfaz, comprobar un componente, evaluar un servicio completo o analizar comentarios de producción. Empezar pronto no significa ejecutar pruebas completas de extremo a extremo sobre software inacabado; significa plantear preguntas útiles sobre la calidad en cuanto se dispone de la información pertinente.</p>
+<p>Las actividades de desarrollo y prueba pueden organizarse de forma secuencial, iterativa, incremental o híbrida. El modelo influye en cuándo pueden los equipos ejecutar el software, con qué frecuencia reciben comentarios y cómo se coordinan. No elimina la necesidad de planificar, analizar, diseñar, implementar, ejecutar y completar las pruebas. Estas actividades pueden solaparse y repetirse.</p>
+<h2>Enfoques secuenciales e iterativos</h2>
+<p>En un ciclo de vida secuencial, el trabajo suele avanzar por etapas definidas. Una fase de prueba posterior puede utilizar requisitos y diseños elaborados antes, pero las revisiones estáticas también pueden detectar ambigüedades antes de que exista código. En el desarrollo iterativo, los equipos revisan requisitos, diseño, implementación y pruebas en ciclos cortos. La entrega incremental añade funcionalidades utilizables con el tiempo. Hay que comprobar cada incremento y considerar mediante pruebas de regresión si los cambios alteran el comportamiento existente.</p>
+<p>Los equipos iterativos suelen utilizar integración continua, en la que se fusionan y comprueban con frecuencia pequeños cambios de código. Las comprobaciones rápidas de unidades y componentes pueden ofrecer comentarios inmediatos, mientras que las pruebas más amplias de integración, sistema y aceptación pueden ejecutarse con menor frecuencia. Una cartera de pruebas razonable equilibra rapidez y cobertura: las comprobaciones fiables más rápidas se ejecutan a menudo y las costosas se reservan para los momentos adecuados.</p>
+<h2>Niveles y tipos de prueba</h2>
+<p>Los niveles de prueba agrupan el trabajo según su alcance y responsabilidad. Las pruebas de componentes examinan una unidad; las pruebas de integración se centran en las interacciones entre componentes o sistemas; las pruebas de sistema consideran el producto completo, y las pruebas de aceptación determinan si satisface las necesidades de los usuarios, del negocio o del contrato. Son perspectivas complementarias, no peldaños rígidos: en un producto basado en microservicios, un equipo puede probar un servicio de forma aislada y también sus contratos con los servicios relacionados.</p>
+<p>Los tipos de prueba describen el atributo de calidad en el que se centran. Las pruebas funcionales consideran qué hace el producto. Las pruebas no funcionales evalúan atributos como el rendimiento, la usabilidad, la compatibilidad, la seguridad y la fiabilidad. Las pruebas relacionadas con cambios incluyen las pruebas de confirmación, que comprueban si una corrección concreta funciona, y las pruebas de regresión, que buscan efectos imprevistos en otras partes. Una prueba puede corresponder a un nivel y abordar uno o varios tipos.</p>
+<h2>Ejemplo práctico: añadir una opción de entrega</h2>
+<p>Un equipo añade una opción de entrega en el mismo día. Antes de implementarla, la persona responsable del producto y quien prueba aclaran la hora límite, las direcciones válidas y lo que ve el cliente cuando no hay entrega disponible. Un desarrollador comprueba el cálculo de entrega como prueba de componente. Las comprobaciones de integración verifican la concordancia entre el servicio de pedidos y la cotización del transportista. Las pruebas de sistema recorren un pedido completo, incluido el pago. Las pruebas de aceptación confirman que la opción sea comprensible y esté disponible solo para usuarios que cumplan los requisitos. Tras corregir un defecto, el equipo repite el escenario afectado y realiza pruebas de regresión específicas sobre los precios y el proceso de compra.</p>
+<h2>Colaboración y comentarios</h2>
+<p>Desarrolladores, profesionales de pruebas, analistas, personal de operaciones y representantes del negocio aportan perspectivas distintas. Definir ejemplos en conjunto antes de programar puede revelar supuestos contradictorios. En un ciclo de vida colaborativo, quien prueba ayuda a convertir una solicitud general en ejemplos con resultados observables. Así se evita que el traspaso entre equipos sea el único momento en que se planteen cuestiones de calidad.</p>
+<p>La finalización de las pruebas no siempre significa que se hayan superado todas las comprobaciones posibles. Significa que el equipo compara los resultados y el riesgo residual con los criterios de salida acordados, comunica los problemas conocidos y aporta información para tomar una decisión. Una publicación puede seguir adelante si se documenta y acepta un riesgo; un riesgo crítico no cubierto puede justificar más trabajo. La decisión debe ser visible y basarse en evidencias.</p>
+<h2>Términos clave</h2>
+<ul><li><strong>Ciclo de vida del desarrollo de software:</strong> procesos y etapas mediante los que se desarrolla y mantiene el software.</li><li><strong>Nivel de prueba:</strong> alcance o etapa de las pruebas, como las pruebas de componentes o de sistema.</li><li><strong>Tipo de prueba:</strong> atributo de calidad en el que se centran las pruebas, como la funcionalidad o el rendimiento.</li><li><strong>Prueba de confirmación:</strong> comprobación de una corrección concreta.</li><li><strong>Prueba de regresión:</strong> comprobación para detectar efectos adversos de un cambio.</li></ul>
+    <p><a class="btn btn-primary" href="module.html?module=ctfl">Practica con preguntas de CTFL</a></p>
+    <p><a href="guides.html">Todas las guías de estudio</a></p>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/storage.js"></script>
+  <script src="../js/adsense-config.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>
