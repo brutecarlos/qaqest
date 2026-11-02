@@ -113,6 +113,14 @@
       : "Ads are off. Click to show ads and support QAQEST.";
   }
 
+  const ES_PAGES = ["index.html","about.html","faq.html","guides.html","module.html","planner.html","quiz.html","results.html","start.html"];
+  function spanishVersionHref() {
+    const segment = window.location.pathname.split("/").filter(Boolean).pop() || "index.html";
+    const page = /\.html$/.test(segment) ? segment : "index.html";
+    const ok = ES_PAGES.indexOf(page) !== -1 || /^guide-.*\.html$/.test(page);
+    return "es/" + (ok ? page + window.location.search + window.location.hash : "index.html");
+  }
+
   function renderHeader() {
     const el = document.getElementById("site-header");
     if (!el) return;
@@ -132,6 +140,7 @@
               <a href="faq.html">FAQ</a>
               <a href="about.html">About</a>
             </nav>
+            <a class="btn btn-secondary" id="language-switch" lang="es" hreflang="es" href="${spanishVersionHref()}">Español</a>
             <button type="button" class="btn btn-secondary" id="theme-toggle" aria-label="Toggle dark mode"></button>
             <button type="button" class="btn btn-secondary btn-ads-toggle" id="ads-toggle"></button>
           </div>
