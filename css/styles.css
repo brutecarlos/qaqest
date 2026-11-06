@@ -104,6 +104,24 @@ a:hover {
   font-size: 0.95rem;
 }
 
+.language-menu { position: relative; }
+.language-menu summary, .theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 2.5rem; border: 1px solid var(--color-border); border-radius: 8px;
+  background: var(--color-surface); color: var(--color-text); cursor: pointer;
+  font: inherit; font-size: 0.9rem; font-weight: 600;
+}
+.language-menu summary { gap: 0.5rem; padding: 0.4rem 0.7rem; list-style: none; }
+.language-menu summary::-webkit-details-marker { display: none; }
+.language-menu summary::after { content: ""; width: 0.4rem; height: 0.4rem; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: translateY(-0.15rem) rotate(45deg); }
+.language-options { position: absolute; top: calc(100% + 0.35rem); right: 0; z-index: 1; min-width: 100%; padding: 0.3rem; border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-surface); box-shadow: 0 4px 14px #0003; }
+.language-options a, .language-options span { display: block; padding: 0.4rem 0.6rem; border-radius: 5px; white-space: nowrap; }
+.language-options span { color: var(--color-muted); }
+.language-options a:hover { background: var(--color-bg); text-decoration: none; }
+.theme-toggle { width: 2.5rem; padding: 0.5rem; }
+.theme-toggle svg { width: 1.2rem; height: 1.2rem; }
+.language-menu summary:hover, .theme-toggle:hover { background: var(--color-bg); }
+
 .btn-ads-toggle {
   padding: 0.4rem 0.75rem;
   font-size: 0.8rem;

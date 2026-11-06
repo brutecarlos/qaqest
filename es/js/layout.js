@@ -114,7 +114,7 @@
   }
 
   function englishVersionHref() {
-    const segment = window.location.pathname.split("/").filter(Boolean).pop() || "index.html";
+    const segment = window.location.pathname.endsWith("/") ? "index.html" : window.location.pathname.split("/").pop();
     return "../" + segment + window.location.search + window.location.hash;
   }
 
@@ -137,8 +137,14 @@
               <a href="faq.html">FAQs</a>
               <a href="about.html">Acerca de</a>
             </nav>
-            <a class="btn btn-secondary" id="language-switch" lang="en" hreflang="en" href="${englishVersionHref()}">English</a>
-            <button type="button" class="btn btn-secondary" id="theme-toggle" aria-label="Cambiar el modo oscuro"></button>
+            <details class="language-menu">
+              <summary aria-label="Elegir idioma">Español</summary>
+              <div class="language-options">
+                <a id="language-switch" lang="en" hreflang="en">English</a>
+                <span lang="es" aria-current="true">Español</span>
+              </div>
+            </details>
+            <button type="button" class="theme-toggle" id="theme-toggle"></button>
             <button type="button" class="btn btn-secondary btn-ads-toggle" id="ads-toggle"></button>
           </div>
         </div>
@@ -146,14 +152,30 @@
       <div id="header-ad-mount"></div>
     `;
 
+    const languageMenu = el.querySelector(".language-menu");
+    document.getElementById("language-switch").href = englishVersionHref();
+    languageMenu.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && languageMenu.open) {
+        languageMenu.open = false;
+        languageMenu.querySelector("summary").focus();
+      }
+    });
+    document.addEventListener("click", (event) => {
+      if (!languageMenu.contains(event.target)) languageMenu.open = false;
+    });
+
     const themeBtn = document.getElementById("theme-toggle");
     const isDark = () => {
       const t = document.documentElement.getAttribute("data-theme");
       return t ? t === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
     };
     const syncTheme = () => {
-      themeBtn.textContent = isDark() ? "\u2600\uFE0F Claro" : "\uD83C\uDF19 Oscuro";
-      themeBtn.setAttribute("aria-pressed", String(isDark()));
+      const dark = isDark();
+      themeBtn.innerHTML = dark
+        ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>'
+        : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>';
+      themeBtn.setAttribute("aria-label", dark ? "Cambiar al modo claro" : "Cambiar al modo oscuro");
+      themeBtn.title = dark ? "Cambiar al modo claro" : "Cambiar al modo oscuro";
     };
     syncTheme();
     themeBtn.addEventListener("click", () => {
@@ -200,13 +222,14 @@
             <a href="about.html">Acerca de</a> &middot;
             <a href="https://brutecarlos.github.io/">Acerca del autor (en inglés)</a> &middot;
             <a href="https://github.com/brutecarlos/qaqest" target="_blank" rel="noopener">Código fuente en GitHub</a> &middot;
-            <a lang="en" hreflang="en" href="${englishVersionHref()}">English version</a>
+            <a id="footer-language-link" lang="en" hreflang="en">English version</a>
           </p>
         </div>
       </footer>
     `;
     const yearEl = document.getElementById("footer-year");
     if (yearEl) yearEl.textContent = new Date().getFullYear().toLocaleString("es");
+    document.getElementById("footer-language-link").href = englishVersionHref();
   }
 
   document.addEventListener("DOMContentLoaded", () => {
