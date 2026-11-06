@@ -130,7 +130,7 @@
           </a>
           <div class="header-actions">
             <nav class="main-nav">
-              <a href="start.html">Empieza aquí</a>
+              <a href="start.html">Empezar</a>
               <a href="index.html">Módulos</a>
               <a href="planner.html">Planificador de estudio</a>
               <a href="guides.html">Guías</a>
@@ -215,7 +215,7 @@
           <p>
             &copy; <span id="footer-year"></span> QAQEST &middot;
             <a href="https://brutecarlos.github.io/privacy.html">Privacidad (en inglés)</a> &middot;
-            <a href="start.html">Empieza aquí</a> &middot;
+            <a href="start.html">Empezar</a> &middot;
             <a href="planner.html">Planificador de estudio</a> &middot;
             <a href="guides.html">Guías</a> &middot;
             <a href="faq.html">FAQs</a> &middot;
