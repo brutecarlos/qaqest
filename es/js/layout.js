@@ -134,7 +134,7 @@
               <a href="index.html">Módulos</a>
               <a href="planner.html">Planificador de estudio</a>
               <a href="guides.html">Guías</a>
-              <a href="faq.html">Preguntas frecuentes</a>
+              <a href="faq.html">FAQs</a>
               <a href="about.html">Acerca de</a>
             </nav>
             <a class="btn btn-secondary" id="language-switch" lang="en" hreflang="en" href="${englishVersionHref()}">English</a>
@@ -196,7 +196,7 @@
             <a href="start.html">Empieza aquí</a> &middot;
             <a href="planner.html">Planificador de estudio</a> &middot;
             <a href="guides.html">Guías</a> &middot;
-            <a href="faq.html">Preguntas frecuentes</a> &middot;
+            <a href="faq.html">FAQs</a> &middot;
             <a href="about.html">Acerca de</a> &middot;
             <a href="https://brutecarlos.github.io/">Acerca del autor (en inglés)</a> &middot;
             <a href="https://github.com/brutecarlos/qaqest" target="_blank" rel="noopener">Código fuente en GitHub</a> &middot;

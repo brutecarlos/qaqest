@@ -1,4 +1,4 @@
-const CACHE = "qaqest-es-v3";
+const CACHE = "qaqest-es-v4";
 const SHELL = [
   "./",
   "index.html",
