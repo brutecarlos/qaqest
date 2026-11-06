@@ -49,30 +49,32 @@
       realizada por QAQEST y no son material oficial; consulta al proveedor oficial para las reglas vigentes del examen.
     </div>
 
-    <section class="module-card home-start" aria-labelledby="start-heading">
-      <h2 id="start-heading">¿Eres nuevo? Empieza aquí</h2>
-      <p class="module-desc">¿No sabes con qué certificación empezar? Responde un cuestionario de 1 minuto y obtén una ruta de estudio.</p>
-      <p><a class="btn btn-primary" href="start.html">Empieza aquí</a> <a href="planner.html">Planificador de estudio</a></p>
-    </section>
-
-    <section class="module-card" aria-labelledby="guides-heading">
-      <h2 id="guides-heading">Guías de estudio</h2>
-      <p class="module-desc">Consulta apuntes originales de CTFL en lenguaje sencillo, ejemplos resueltos, consejos para el examen y una referencia rápida de técnicas de prueba.</p>
-      <p><a class="btn btn-primary" href="guides.html">Explorar las guías de estudio</a> <a href="faq.html">Leer las preguntas frecuentes</a></p>
+    <section class="home-guides" aria-labelledby="guides-heading">
+      <div>
+        <h2 id="guides-heading">Guías de estudio</h2>
+        <p class="module-desc">Consulta apuntes originales de CTFL en lenguaje sencillo, ejemplos resueltos, consejos para el examen y una referencia rápida de técnicas de prueba.</p>
+      </div>
+      <a class="btn btn-primary" href="guides.html">Explorar las guías de estudio</a>
     </section>
 
     <h2 class="section-title">Elige un módulo de certificación</h2>
     <div id="module-grid" class="module-grid">
       <p>Cargando módulos&hellip;</p>
     </div>
-
-    <section id="daily-question-card" class="module-card daily-question" aria-labelledby="daily-question-heading" hidden>
-      <h2 id="daily-question-heading">Pregunta del día</h2>
-      <div id="daily-question-content" aria-live="polite"></div>
-    </section>
   </main>
 
   <div id="site-footer"></div>
+
+  <details class="home-progress">
+    <summary>Mi progreso</summary>
+    <div class="home-progress-content" id="progress-dashboard">
+      <p>Cargando progreso&hellip;</p>
+    </div>
+  </details>
+  <div class="beginner-float" id="beginner-float" hidden>
+    <a class="btn" href="start.html">¿Eres nuevo? Empieza aquí</a>
+    <button type="button" class="beginner-dismiss" aria-label="Cerrar el acceso para principiantes" data-error="No se pudo guardar tu preferencia. Activa el almacenamiento del navegador e inténtalo de nuevo.">&times;</button>
+  </div>
 
   <script src="js/storage.js"></script>
   <script src="js/badges.js"></script>
@@ -80,5 +82,6 @@
   <script src="../js/adsense-config.js"></script>
   <script src="js/layout.js"></script>
   <script src="js/home.js"></script>
+  <script src="../js/home-controls.js"></script>
 </body>
 </html>

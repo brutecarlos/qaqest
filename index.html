@@ -44,30 +44,32 @@
       are referenced only to describe the topics covered.
     </div>
 
-    <section class="module-card home-start" aria-labelledby="start-heading">
-      <h2 id="start-heading">New here? Start here</h2>
-      <p class="module-desc">Not sure which certification to begin with? Take a 1-minute questionnaire and get a study path.</p>
-      <p><a class="btn btn-primary" href="start.html">Start here</a> <a href="planner.html">Study planner</a></p>
-    </section>
-
-    <section class="module-card" aria-labelledby="guides-heading">
-      <h2 id="guides-heading">Study guides</h2>
-      <p class="module-desc">Review original, plain-language CTFL study notes, worked examples, exam tips, and a quick test-techniques reference.</p>
-      <p><a class="btn btn-primary" href="guides.html">Explore study guides</a> <a href="faq.html">Read the FAQ</a></p>
+    <section class="home-guides" aria-labelledby="guides-heading">
+      <div>
+        <h2 id="guides-heading">Study guides</h2>
+        <p class="module-desc">Review original, plain-language CTFL study notes, worked examples, exam tips, and a quick test-techniques reference.</p>
+      </div>
+      <a class="btn btn-primary" href="guides.html">Explore study guides</a>
     </section>
 
     <h2 class="section-title">Choose a certification module</h2>
     <div id="module-grid" class="module-grid">
       <p>Loading modules&hellip;</p>
     </div>
-
-    <section id="daily-question-card" class="module-card daily-question" aria-labelledby="daily-question-heading" hidden>
-      <h2 id="daily-question-heading">Question of the day</h2>
-      <div id="daily-question-content" aria-live="polite"></div>
-    </section>
   </main>
 
   <div id="site-footer"></div>
+
+  <details class="home-progress">
+    <summary>My progress</summary>
+    <div class="home-progress-content" id="progress-dashboard">
+      <p>Loading progress&hellip;</p>
+    </div>
+  </details>
+  <div class="beginner-float" id="beginner-float" hidden>
+    <a class="btn" href="start.html">New here? Start here</a>
+    <button type="button" class="beginner-dismiss" aria-label="Dismiss the new here shortcut" data-error="Could not save your preference. Please enable browser storage and try again.">&times;</button>
+  </div>
 
   <script src="js/storage.js"></script>
   <script src="js/badges.js"></script>
@@ -75,5 +77,6 @@
   <script src="js/adsense-config.js"></script>
   <script src="js/layout.js"></script>
   <script src="js/home.js"></script>
+  <script src="js/home-controls.js"></script>
 </body>
 </html>
