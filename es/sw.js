@@ -1,4 +1,4 @@
-const CACHE = "qaqest-es-v2";
+const CACHE = "qaqest-es-v3";
 const SHELL = [
   "./",
   "index.html",
@@ -24,6 +24,7 @@ const SHELL = [
   "js/scorecard.js",
   "js/layout.js",
   "js/home.js",
+  "../js/home-controls.js",
   "js/module.js",
   "js/quiz.js",
   "js/results.js",
