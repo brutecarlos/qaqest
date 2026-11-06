@@ -32,6 +32,8 @@ straight to GitHub Pages.
 
 A complete Spanish translation lives in `es/` (served at `/qaqest/es/`): translated pages, scripts (`es/js/`), `es/data/` modules and all seven question banks, plus its own service worker (`es/sw.js`). It shares `css/`, `assets/` and selected scripts with the English site, and uses the same localStorage keys, so progress is shared. Question IDs, LO refs and `correctIndex` values are identical to the English banks. The Spanish content is an unofficial QAQEST translation; check the official provider for current exam rules. When editing an English question, update its `es/data/questions/` counterpart.
 
+The header language dropdown is rendered by `js/layout.js` and `es/js/layout.js`. When adding a language, add its option and the corresponding page URL handling to each localized layout.
+
 ## Project structure
 
 ```
